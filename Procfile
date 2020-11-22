@@ -1,1 +1,1 @@
-web: gunicorn src/timetabled.wsgi
+web: cd /src && gunicorn timetabled.wsgi
