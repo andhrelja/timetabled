@@ -51,12 +51,12 @@ class Program(models.Model):
     )
 
     name        = models.CharField("Naziv", max_length=128)
-    type        = models.CharField("Tip programa", choices=TYPE_CHOICES, max_length=50)
+    type        = models.CharField("Tip studija", choices=TYPE_CHOICES, max_length=50)
     department  = models.ForeignKey("departments.Department", verbose_name="Odjel", on_delete=models.CASCADE)
 
     class Meta:
-        verbose_name = "Program"
-        verbose_name_plural = "Programi"
+        verbose_name = "Studij"
+        verbose_name_plural = "Studiji"
 
     def __str__(self):
         return self.name

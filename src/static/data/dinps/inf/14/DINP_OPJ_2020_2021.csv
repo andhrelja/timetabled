@@ -1,0 +1,34 @@
+Datum|Vrijeme|Prostor|Tema|Nastava|Bodovi|Izvođač
+07.10.2020.|12:15 - 14:00|O-S32|Opće informacije, Obveze studenata, Software. Temeljni elementi jezika. Usporedba Java i C++. Java aplikacije.|P||dr.sc. Marina Ivašić-Kos
+08.10.2020.||online|Rad u Java IDE, Izrada Java projekata, Usporedba Java i C++|V||Ivona Franković
+14.10.2020.|12:15 - 14:00|O-S32|Definiranje i uporaba klasa, Objekti, Konstruktori, Apstraktne klase, Nasljeđivanje. Iznimke i obrada iznimaka|P||dr.sc. Marina Ivašić-Kos
+15.10.2020.|14:15 - 15:45|O-366|Definiranje i uporaba klasa, Objekti, Konstruktori, Apstraktne klase, Nasljeđivanje. Iznimke|V||Ivona Franković
+21.10.2020.|12:15 - 14:00|O-S32|Bibiloteke klasa. Paketi java.lang, java.util, java.io, java.text (Math, Arrays, Scanner, String, Vector)|P||dr.sc. Marina Ivašić-Kos
+22.10.2020.|14:15 - 15:45|O-366|Bibiloteke klasa. Paketi java.lang, java.util, java.io, java.text (Math, Arrays, Scanner, String, Vector)|V||Ivona Franković
+28.10.2020.|12:15 - 14:00|O-366|Java Forme, Grafička sučelja, Likovi, Stilizirani tekst. Dodavanje slika i zvuka. Programske niti.|P||dr.sc. Marina Ivašić-Kos
+29.10.2020.|14:15 - 15:45|O-366|Java Forme, Grafička sučelja, Likovi, Stilizirani tekst. Dodavanje slika i zvuka. Programske niti. Animacija|V||Ivona Franković
+04.11.2020.|12:15 - 14:00|online|Korisnička sučelja, Tekstualna polja, Izbornici, Liste. Swing komponente.|P||dr.sc. Marina Ivašić-Kos
+05.11.2020.||online|Korisnička sučelja, Tekstualna polja, Izbornici, Liste. Swing komponente.|V||Ivona Franković
+11.11.2020.|12:15 - 14:00|O-S32|Događaji i upravljanje događajima na korisničkom sučelju|P||dr.sc. Marina Ivašić-Kos
+12.11.2020.|14:15 - 15:45|O-366|Događaji i upravljanje događajima na korisničkom sučelju|V||Ivona Franković
+19.11.2020.|14:15 - 15:45|O-366|1. kolokvij|Z|30|Ivona Franković
+25.11.2020.||online|Veza Java - SQL|P||dr.sc. Marina Ivašić-Kos
+26.11.2020.|14:15 - 15:45|O-366|Veza Java - SQL|V||Ivona Franković
+02.12.2020.|12:15 - 14:00|online|Model-View-Controller obrasci dizajna, Projektni zadaci|P||dr.sc. Marina Ivašić-Kos
+03.12.2020.||online|AndroidStudio i uvod u mobilne aplikacije|V||Ivona Franković
+09.12.2020.|12:15 - 14:00|online|Uvod u mobilne aplikacije (Activities, Intents, Events)|P||dr.sc. Marina Ivašić-Kos
+10.12.2020.|14:15 - 15:45|O-366|Izrada Android aplikacije (Activities, Intents, Events)|V||Ivona Franković
+16.12.2020.|12:15 - 14:00|online|Izrada Android aplikacije. Case study.|P||dr.sc. Marina Ivašić-Kos
+17.12.2020.|14:15 - 15:45|O-366|Android UI Design ( Graphics, View, Widgets)|V||Ivona Franković
+23.12.2020.|12:15 - 14:00|online|Android UI Design (Graphics, View, Widgets)|P||dr.sc. Marina Ivašić-Kos
+07.01.2021.|14:15 - 15:45|O-366|Korištenje senzora, mapa, lokacije|V||Ivona Franković
+13.01.2021.|12:15 - 14:00|online|Korištenje senzora, mapa, lokacije|P||dr.sc. Marina Ivašić-Kos
+14.01.2021.||online|Distribucija Android aplikacije|V||Ivona Franković
+20.01.2021.|12:15 - 14:00|O-S32|Projektni zadatak, Izrada Java (mobilne) aplikacije|P||dr.sc. Marina Ivašić-Kos
+21.01.2021.|14:15 - 15:45|O-366|Izrada Android aplikacije|V||Ivona Franković
+27.01.2021.|12:15 - 14:00|O-S32|Analiza projekata|P||dr.sc. Marina Ivašić-Kos
+28.01.2021.|14:15 - 15:45|O-366|2. kolokvij|Z|30|Ivona Franković
+12.02.2021.|00:00 - 23:59|online|Završni ispit (1. redoviti rok)|Z|40|dr.sc. Marina Ivašić-Kos i Ivona Franković
+26.02.2021.|00:00 - 23:59|online|Završni ispit (1. redoviti rok)|Z||dr.sc. Marina Ivašić-Kos i Ivona Franković
+29.03.2021.|00:00 - 23:59|online|Završni ispit (1. redoviti rok)|Z||dr.sc. Marina Ivašić-Kos i Ivona Franković
+10.09.2021.|00:00 - 23:59|online|Završni ispit (1. redoviti rok)|Z||dr.sc. Marina Ivašić-Kos i Ivona Franković

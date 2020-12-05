@@ -1,0 +1,32 @@
+Datum|Vrijeme|Prostor|Tema|Nastava|Bodovi|Izvođač
+07.10.2020.|10:15-12:00|O-S32|Opće informacije. Uvod u predmet.|P+V||izv. prof. dr. sc. Marina Ivašić-Kos / Kristina Host
+14.10.2020.|10:15-12:00|O-S32|Inteligentni sustavi, definicije, povijest, područja|P||izv. prof. dr. sc. Marina Ivašić-Kos
+14.10.2020.|08:30-10:00|O-366|Alati za strojno učenje: Matlab, TensorFlow, Python xy (scikit, mlpy), R, Colab|V||Kristina Host
+21.10.2020.|10:15-12:00|O-S32|Područja primjene umjetne inteligencije|P||izv. prof. dr. sc. Marina Ivašić-Kos
+21.10.2020.|08:30-10:00|O-366|Biblioteke, rad s funkcijama, učitavanje podataka|V||Kristina Host
+28.10.2020.|10:15-12:00|O-S32|Uvod u strojno učenje.|P||izv. prof. dr. sc. Marina Ivašić-Kos
+28.10.2020.|08:30-10:00|O-366|Priprema podataka za strojno učenje|V||Kristina Host
+04.11.2020.|10:15-12:00|O-S32|Grupiranje. Algoritmi k-srednjih vrijednosti, EM algoritam, hijerarhijsko grupiranje|P||izv. prof. dr. sc. Marina Ivašić-Kos
+04.11.2020.|08:30-10:00|O-366|Grupiranje|V||Kristina Host
+11.11.2020.|10:15-12:00|online|Regresija. Linearna regresija. Kvadratna regresija.|P||izv. prof. dr. sc. Marina Ivašić-Kos
+11.11.2020.|08:30-10:00|O-366|Linearna i kvadratna regresija. Evaluacija i analiza modela regresije.|V||Kristina Host
+25.11.2020.|10:15-12:00|online|Klasifikacija. Analiza i priprema podataka za izvođenje eksperimenta. Izlučivanje značajki.Ne parametarske metode, k-NN|P||izv. prof. dr. sc. Marina Ivašić-Kos
+25.11.2020.|08:30-10:00|O-366|Kolokvij|Z|15|Kristina Host
+02.12.2020.|10:15-12:00|online|Logistička regresija. Naivni Bayesov klasifikator. Stroj s potpornim vektorima (SVM)|P||izv. prof. dr. sc. Marina Ivašić-Kos
+02.12.2020.|08:30-10:00|O-366|Korištenje metoda klasifikacije. Evaluacija i analiza modela klasifikacije.|V||Kristina Host
+09.12.2020.|10:15-12:00|O-S32|Neuronske mreže. Jednoslojni i višeslojni perceptron. Duboke neuronske mreže: CNN|P||izv. prof. dr. sc. Marina Ivašić-Kos
+09.12.2020.|08:30-10:00|online|Korištenje metoda klasifikacije. Evaluacija i analiza modela klasifikacije.|V||Kristina Host
+16.12.2020.|10:15-12:00|online|Faze provedbe eksperimenta. Učenje modela. Evaluacija, analiza i unaprjeđenje modela|P||izv. prof. dr. sc. Marina Ivašić-Kos
+16.12.2020.|08:30-10:00|O-366|Neuronske mreže i duboke neuronske mreže|V||Kristina Host
+23.12.2020.|10:15-12:00|online|Duboke neuronske mreže: Case Study|P||izv. prof. dr. sc. Marina Ivašić-Kos
+23.12.2020.|08:30-10:00|O-366|Kolokvij|Z|30|Kristina Host
+13.01.2021.|10:15-12:00|online|Područja primjene inteligentnih sustava (biometrija, raspoznavanje uzoraka, računalni vid)|P||izv. prof. dr. sc. Marina Ivašić-Kos
+13.01.2021.|08:30-10:00|O-366|Primjene strojnog i dubokog učenja u praksi|V||Kristina Host
+20.01.2021.|10:15-12:00|online|Područja primjene inteligentnih sustava (robotika, NLP, ES,… )|P||izv. prof. dr. sc. Marina Ivašić-Kos
+20.01.2021.|08:30-10:00|O-366|Primjene strojnog i dubokog učenja u praksi|V||Kristina Host
+27.01.2021.|10:15-12:00|online|Područja primjene inteligentnih sustava (meko računarstvo, prirodom inspirirani algoritmi, pretraživanja prostora A*, BFS, DFS)|P||izv. prof. dr. sc. Marina Ivašić-Kos
+27.01.2021.|08:30-10:00|online|Primjene strojnog i dubokog učenja u praksi|V||Kristina Host
+11.02.2021.|00:00 - 23:59|online|Završni ispit (1. redoviti rok)|Z|50|izv. prof. dr. sc. Marina Ivašić-Kos / Kristina Host
+25.02.2021.|00:00 - 23:59|online|Završni ispit (2. redoviti rok)|Z||izv. prof. dr. sc. Marina Ivašić-Kos / Kristina Host
+18.03.2021.|00:00 - 23:59|online|Završni ispit (1. izvanredni rok)|Z||izv. prof. dr. sc. Marina Ivašić-Kos / Kristina Host
+09.09.2021.|00:00 - 23:59|online|Završni ispit (2. izvanredni rok)|Z||izv. prof. dr. sc. Marina Ivašić-Kos / Kristina Host

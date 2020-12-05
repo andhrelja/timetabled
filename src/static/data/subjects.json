@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "program_id": 14,
         "name": "Elektroničko gospodarstvo",
         "code": "EG",
@@ -9,9 +10,10 @@
         "semester": "1",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/diplomski_iks/csvs/DINP_EG_2020_2021.csv"
+        "csv_file": "dinps/inf/14/DINP_EG_2020_2021.csv"
     },
     {
+        "id": 2,
         "program_id": 14,
         "name": "Inteligentni sustavi 1",
         "code": "IS1",
@@ -21,9 +23,10 @@
         "semester": "1",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/diplomski_iks/csvs/DINP_IS1_2020_2021.csv"
+        "csv_file": "dinps/inf/14/DINP_IS1_2020_2021.csv"
     },
     {
+        "id": 3,
         "program_id": 14,
         "name": "Operacijska istraživanja 1",
         "code": "OPI1",
@@ -33,9 +36,10 @@
         "semester": "1",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/diplomski_iks/csvs/DINP_OPI1_2020_2021.csv"
+        "csv_file": "dinps/inf/14/DINP_OPI1_2020_2021.csv"
     },
     {
+        "id": 4,
         "program_id": 14,
         "name": "Programsko inženjerstvo",
         "code": "PI",
@@ -45,9 +49,10 @@
         "semester": "1",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/diplomski_iks/csvs/DINP_PI_2020_2021.csv"
+        "csv_file": "dinps/inf/14/DINP_PI_2020_2021.csv"
     },
     {
+        "id": 5,
         "program_id": 14,
         "name": "Distribuirani sustavi",
         "code": "DS",
@@ -57,9 +62,10 @@
         "semester": "1",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/diplomski_iks/csvs/DINP_DS_2020_2021.csv"
+        "csv_file": "dinps/inf/14/DINP_DS_2020_2021.csv"
     },
     {
+        "id": 6,
         "program_id": 14,
         "name": "Objektni programski jezici",
         "code": "OPJ",
@@ -69,9 +75,10 @@
         "semester": "1",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/diplomski_iks/csvs/DINP_OPJ_2020_2021.csv"
+        "csv_file": "dinps/inf/14/DINP_OPJ_2020_2021.csv"
     },
     {
+        "id": 7,
         "program_id": 14,
         "name": "Osnove e-obrazovanja",
         "code": "OeO",
@@ -81,9 +88,10 @@
         "semester": "1",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/diplomski_iks/csvs/DINP_OeO_2020_2021.csv"
+        "csv_file": "dinps/inf/14/DINP_OeO_2020_2021.csv"
     },
     {
+        "id": 8,
         "program_id": 14,
         "name": "Ekonomika poslovanja",
         "code": "EP",
@@ -93,9 +101,10 @@
         "semester": "1",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/diplomski_iks/csvs/DINP_EP_2020_2021.csv"
+        "csv_file": "dinps/inf/14/DINP_EP_2020_2021.csv"
     },
     {
+        "id": 9,
         "program_id": 14,
         "name": "Inteligentni sustavi 2",
         "code": "IS2",
@@ -105,9 +114,10 @@
         "semester": "2",
         "optional": 0,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/diplomski_iks/csvs/DINP_IS2_2019_2020.csv"
+        "csv_file": "dinps/inf/14/DINP_IS2_2019_2020.csv"
     },
     {
+        "id": 10,
         "program_id": 14,
         "name": "Strateško planiranje informacijskih sustava",
         "code": "SPIS",
@@ -117,9 +127,10 @@
         "semester": "2",
         "optional": 0,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/diplomski_iks/csvs/DINP_SPIS_2019_2020.csv"
+        "csv_file": "dinps/inf/14/DINP_SPIS_2019_2020.csv"
     },
     {
+        "id": 11,
         "program_id": 14,
         "name": "Multimedijski i hipermedijski sustavi",
         "code": "MHS",
@@ -129,9 +140,10 @@
         "semester": "2",
         "optional": 1,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/diplomski_iks/csvs/DINP_MHS_2019_2020.csv"
+        "csv_file": "dinps/inf/14/DINP_MHS_2019_2020.csv"
     },
     {
+        "id": 12,
         "program_id": 14,
         "name": "Skladišta podataka",
         "code": "SP",
@@ -141,9 +153,10 @@
         "semester": "2",
         "optional": 1,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/diplomski_iks/csvs/DINP_SP_2019_2020.csv"
+        "csv_file": "dinps/inf/14/DINP_SP_2019_2020.csv"
     },
     {
+        "id": 13,
         "program_id": 14,
         "name": "Osnove digitalne obrade govora i slika",
         "code": "ODOGS",
@@ -153,9 +166,10 @@
         "semester": "2",
         "optional": 0,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/diplomski_iks/csvs/DINP_ODOGS_2019_2020.csv"
+        "csv_file": "dinps/inf/14/DINP_ODOGS_2019_2020.csv"
     },
     {
+        "id": 14,
         "program_id": 14,
         "name": "Sustavi za podršku odlučivanju",
         "code": "SPO",
@@ -165,9 +179,10 @@
         "semester": "2",
         "optional": 0,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/diplomski_iks/csvs/DINP_SPO_2019_2020.csv"
+        "csv_file": "dinps/inf/14/DINP_SPO_2019_2020.csv"
     },
     {
+        "id": 15,
         "program_id": 14,
         "name": "Operacijska istraživanja 2",
         "code": "OPI2",
@@ -177,9 +192,10 @@
         "semester": "2",
         "optional": 1,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/diplomski_iks/csvs/DINP_OPI2_2019_2020.csv"
+        "csv_file": "dinps/inf/14/DINP_OPI2_2019_2020.csv"
     },
     {
+        "id": 16,
         "program_id": 14,
         "name": "Logistika",
         "code": "LOG",
@@ -189,9 +205,10 @@
         "semester": "2",
         "optional": 1,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/diplomski_iks/csvs/DINP_LOG_2019_2020.csv"
+        "csv_file": "dinps/inf/14/DINP_LOG_2019_2020.csv"
     },
     {
+        "id": 17,
         "program_id": 14,
         "name": "Računalna analiza prirodnog jezika",
         "code": "RAPJ",
@@ -201,9 +218,10 @@
         "semester": "2",
         "optional": 1,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/diplomski_iks/csvs/DINP_RAPJ_2019_2020.csv"
+        "csv_file": "dinps/inf/14/DINP_RAPJ_2019_2020.csv"
     },
     {
+        "id": 18,
         "program_id": 14,
         "name": "Menadžment i upravljanje",
         "code": "MIU",
@@ -213,9 +231,10 @@
         "semester": "3",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/diplomski_iks/csvs/DINP_MIU_2020_2021.csv"
+        "csv_file": "dinps/inf/14/DINP_MIU_2020_2021.csv"
     },
     {
+        "id": 19,
         "program_id": 14,
         "name": "Upravljanje informatičkim projektima",
         "code": "UIP",
@@ -225,9 +244,10 @@
         "semester": "3",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/diplomski_iks/csvs/DINP_UIP_2020_2021.csv"
+        "csv_file": "dinps/inf/14/DINP_UIP_2020_2021.csv"
     },
     {
+        "id": 20,
         "program_id": 14,
         "name": "Informacijska tehnologija i društvo",
         "code": "ITID",
@@ -237,9 +257,10 @@
         "semester": "3",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/diplomski_iks/csvs/DINP_ITID_2020_2021.csv"
+        "csv_file": "dinps/inf/14/DINP_ITID_2020_2021.csv"
     },
     {
+        "id": 21,
         "program_id": 14,
         "name": "Komunikacija čovjek stroj",
         "code": "KCS",
@@ -249,9 +270,10 @@
         "semester": "3",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/diplomski_iks/csvs/DINP_KCS_2020_2021.csv"
+        "csv_file": "dinps/inf/14/DINP_KCS_2020_2021.csv"
     },
     {
+        "id": 22,
         "program_id": 14,
         "name": "Otkrivanje znanja u podacima",
         "code": "OZUP",
@@ -261,9 +283,10 @@
         "semester": "3",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/diplomski_iks/csvs/DINP_OZUP_2020_2021.csv"
+        "csv_file": "dinps/inf/14/DINP_OZUP_2020_2021.csv"
     },
     {
+        "id": 23,
         "program_id": 14,
         "name": "Upravljanje mrežnim sustavima",
         "code": "UMS",
@@ -273,9 +296,10 @@
         "semester": "3",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/diplomski_iks/csvs/DINP_UMS_2020_2021.csv"
+        "csv_file": "dinps/inf/14/DINP_UMS_2020_2021.csv"
     },
     {
+        "id": 24,
         "program_id": 14,
         "name": "Upravljanje znanjem",
         "code": "UPZ",
@@ -285,9 +309,10 @@
         "semester": "3",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/diplomski_iks/csvs/DINP_UPZ_2020_2021.csv"
+        "csv_file": "dinps/inf/14/DINP_UPZ_2020_2021.csv"
     },
     {
+        "id": 25,
         "program_id": 14,
         "name": "Informacijski sustav organizacije",
         "code": "ISO",
@@ -297,9 +322,10 @@
         "semester": "3",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/diplomski_iks/csvs/DINP_ISO_2020_2021.csv"
+        "csv_file": "dinps/inf/14/DINP_ISO_2020_2021.csv"
     },
     {
+        "id": 26,
         "program_id": 14,
         "name": "Diplomski rad",
         "code": "Zavrsni",
@@ -312,6 +338,7 @@
         "csv_file": ""
     },
     {
+        "id": 27,
         "program_id": 14,
         "name": "Stručna praksa",
         "code": "StrucnaPraksa",
@@ -321,9 +348,10 @@
         "semester": "4",
         "optional": 0,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/diplomski_iks/csvs/DINP_StrucnaPraksa_2019_2020.csv"
+        "csv_file": "dinps/inf/14/DINP_StrucnaPraksa_2019_2020.csv"
     },
     {
+        "id": 1,
         "program_id": 13,
         "name": "Elektroničko gospodarstvo",
         "code": "EG",
@@ -333,9 +361,10 @@
         "semester": "1",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/diplomski_pi/csvs/DINP_EG_2020_2021.csv"
+        "csv_file": "dinps/inf/13/DINP_EG_2020_2021.csv"
     },
     {
+        "id": 2,
         "program_id": 13,
         "name": "Inteligentni sustavi 1",
         "code": "IS1",
@@ -345,9 +374,10 @@
         "semester": "1",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/diplomski_pi/csvs/DINP_IS1_2020_2021.csv"
+        "csv_file": "dinps/inf/13/DINP_IS1_2020_2021.csv"
     },
     {
+        "id": 3,
         "program_id": 13,
         "name": "Operacijska istraživanja 1",
         "code": "OPI1",
@@ -357,9 +387,10 @@
         "semester": "1",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/diplomski_pi/csvs/DINP_OPI1_2020_2021.csv"
+        "csv_file": "dinps/inf/13/DINP_OPI1_2020_2021.csv"
     },
     {
+        "id": 4,
         "program_id": 13,
         "name": "Programsko inženjerstvo",
         "code": "PI",
@@ -369,9 +400,10 @@
         "semester": "1",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/diplomski_pi/csvs/DINP_PI_2020_2021.csv"
+        "csv_file": "dinps/inf/13/DINP_PI_2020_2021.csv"
     },
     {
+        "id": 5,
         "program_id": 13,
         "name": "Distribuirani sustavi",
         "code": "DS",
@@ -381,9 +413,10 @@
         "semester": "1",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/diplomski_pi/csvs/DINP_DS_2020_2021.csv"
+        "csv_file": "dinps/inf/13/DINP_DS_2020_2021.csv"
     },
     {
+        "id": 6,
         "program_id": 13,
         "name": "Objektni programski jezici",
         "code": "OPJ",
@@ -393,9 +426,10 @@
         "semester": "1",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/diplomski_pi/csvs/DINP_OPJ_2020_2021.csv"
+        "csv_file": "dinps/inf/13/DINP_OPJ_2020_2021.csv"
     },
     {
+        "id": 7,
         "program_id": 13,
         "name": "Osnove e-obrazovanja",
         "code": "OeO",
@@ -405,9 +439,10 @@
         "semester": "1",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/diplomski_pi/csvs/DINP_OeO_2020_2021.csv"
+        "csv_file": "dinps/inf/13/DINP_OeO_2020_2021.csv"
     },
     {
+        "id": 8,
         "program_id": 13,
         "name": "Ekonomika poslovanja",
         "code": "EP",
@@ -417,9 +452,10 @@
         "semester": "1",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/diplomski_pi/csvs/DINP_EP_2020_2021.csv"
+        "csv_file": "dinps/inf/13/DINP_EP_2020_2021.csv"
     },
     {
+        "id": 9,
         "program_id": 13,
         "name": "Inteligentni sustavi 2",
         "code": "IS2",
@@ -429,9 +465,10 @@
         "semester": "2",
         "optional": 0,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/diplomski_pi/csvs/DINP_IS2_2019_2020.csv"
+        "csv_file": "dinps/inf/13/DINP_IS2_2019_2020.csv"
     },
     {
+        "id": 10,
         "program_id": 13,
         "name": "Strateško planiranje informacijskih sustava",
         "code": "SPIS",
@@ -441,9 +478,10 @@
         "semester": "2",
         "optional": 0,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/diplomski_pi/csvs/DINP_SPIS_2019_2020.csv"
+        "csv_file": "dinps/inf/13/DINP_SPIS_2019_2020.csv"
     },
     {
+        "id": 11,
         "program_id": 13,
         "name": "Multimedijski i hipermedijski sustavi",
         "code": "MHS",
@@ -453,9 +491,10 @@
         "semester": "2",
         "optional": 0,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/diplomski_pi/csvs/DINP_MHS_2019_2020.csv"
+        "csv_file": "dinps/inf/13/DINP_MHS_2019_2020.csv"
     },
     {
+        "id": 12,
         "program_id": 13,
         "name": "Skladišta podataka",
         "code": "SP",
@@ -465,9 +504,10 @@
         "semester": "2",
         "optional": 0,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/diplomski_pi/csvs/DINP_SP_2019_2020.csv"
+        "csv_file": "dinps/inf/13/DINP_SP_2019_2020.csv"
     },
     {
+        "id": 13,
         "program_id": 13,
         "name": "Osnove digitalne obrade govora i slika",
         "code": "ODOGS",
@@ -477,9 +517,10 @@
         "semester": "2",
         "optional": 1,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/diplomski_pi/csvs/DINP_ODOGS_2019_2020.csv"
+        "csv_file": "dinps/inf/13/DINP_ODOGS_2019_2020.csv"
     },
     {
+        "id": 14,
         "program_id": 13,
         "name": "Sustavi za podršku odlučivanju",
         "code": "SPO",
@@ -489,9 +530,10 @@
         "semester": "2",
         "optional": 1,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/diplomski_pi/csvs/DINP_SPO_2019_2020.csv"
+        "csv_file": "dinps/inf/13/DINP_SPO_2019_2020.csv"
     },
     {
+        "id": 15,
         "program_id": 13,
         "name": "Operacijska istraživanja 2",
         "code": "OPI2",
@@ -501,9 +543,10 @@
         "semester": "2",
         "optional": 1,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/diplomski_pi/csvs/DINP_OPI2_2019_2020.csv"
+        "csv_file": "dinps/inf/13/DINP_OPI2_2019_2020.csv"
     },
     {
+        "id": 16,
         "program_id": 13,
         "name": "Logistika",
         "code": "LOG",
@@ -513,9 +556,10 @@
         "semester": "2",
         "optional": 1,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/diplomski_pi/csvs/DINP_LOG_2019_2020.csv"
+        "csv_file": "dinps/inf/13/DINP_LOG_2019_2020.csv"
     },
     {
+        "id": 17,
         "program_id": 13,
         "name": "Računalna analiza prirodnog jezika",
         "code": "RAPJ",
@@ -525,9 +569,10 @@
         "semester": "2",
         "optional": 1,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/diplomski_pi/csvs/DINP_RAPJ_2019_2020.csv"
+        "csv_file": "dinps/inf/13/DINP_RAPJ_2019_2020.csv"
     },
     {
+        "id": 18,
         "program_id": 13,
         "name": "Menadžment i upravljanje",
         "code": "MIU",
@@ -537,9 +582,10 @@
         "semester": "3",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/diplomski_pi/csvs/DINP_MIU_2020_2021.csv"
+        "csv_file": "dinps/inf/13/DINP_MIU_2020_2021.csv"
     },
     {
+        "id": 19,
         "program_id": 13,
         "name": "Upravljanje informatičkim projektima",
         "code": "UIP",
@@ -549,9 +595,10 @@
         "semester": "3",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/diplomski_pi/csvs/DINP_UIP_2020_2021.csv"
+        "csv_file": "dinps/inf/13/DINP_UIP_2020_2021.csv"
     },
     {
+        "id": 20,
         "program_id": 13,
         "name": "Informacijska tehnologija i društvo",
         "code": "ITID",
@@ -561,9 +608,10 @@
         "semester": "3",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/diplomski_pi/csvs/DINP_ITID_2020_2021.csv"
+        "csv_file": "dinps/inf/13/DINP_ITID_2020_2021.csv"
     },
     {
+        "id": 21,
         "program_id": 13,
         "name": "Komunikacija čovjek stroj",
         "code": "KCS",
@@ -573,9 +621,10 @@
         "semester": "3",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/diplomski_pi/csvs/DINP_KCS_2020_2021.csv"
+        "csv_file": "dinps/inf/13/DINP_KCS_2020_2021.csv"
     },
     {
+        "id": 22,
         "program_id": 13,
         "name": "Otkrivanje znanja u podacima",
         "code": "OZUP",
@@ -585,9 +634,10 @@
         "semester": "3",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/diplomski_pi/csvs/DINP_OZUP_2020_2021.csv"
+        "csv_file": "dinps/inf/13/DINP_OZUP_2020_2021.csv"
     },
     {
+        "id": 23,
         "program_id": 13,
         "name": "Upravljanje mrežnim sustavima",
         "code": "UMS",
@@ -597,9 +647,10 @@
         "semester": "3",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/diplomski_pi/csvs/DINP_UMS_2020_2021.csv"
+        "csv_file": "dinps/inf/13/DINP_UMS_2020_2021.csv"
     },
     {
+        "id": 24,
         "program_id": 13,
         "name": "Upravljanje znanjem",
         "code": "UPZ",
@@ -609,9 +660,10 @@
         "semester": "3",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/diplomski_pi/csvs/DINP_UPZ_2020_2021.csv"
+        "csv_file": "dinps/inf/13/DINP_UPZ_2020_2021.csv"
     },
     {
+        "id": 25,
         "program_id": 13,
         "name": "Informacijski sustav organizacije",
         "code": "ISO",
@@ -621,9 +673,10 @@
         "semester": "3",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/diplomski_pi/csvs/DINP_ISO_2020_2021.csv"
+        "csv_file": "dinps/inf/13/DINP_ISO_2020_2021.csv"
     },
     {
+        "id": 26,
         "program_id": 13,
         "name": "Diplomski rad",
         "code": "Zavrsni",
@@ -636,6 +689,7 @@
         "csv_file": ""
     },
     {
+        "id": 27,
         "program_id": 13,
         "name": "Stručna praksa",
         "code": "StrucnaPraksa",
@@ -645,6 +699,6 @@
         "semester": "4",
         "optional": 0,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/diplomski_pi/csvs/DINP_StrucnaPraksa_2019_2020.csv"
+        "csv_file": "dinps/inf/13/DINP_StrucnaPraksa_2019_2020.csv"
     }
 ]

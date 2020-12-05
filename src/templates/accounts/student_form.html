@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetabled | Postavljanje računa</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' media='screen' href='{% static "css/style.css" %}'>
+</head>
+<body style="background-color: #0066CC; height: 100vh">
+    <div class="container">
+        <div class="row p-5">
+            <div class="col-md-5" style="padding-top: 100px;">
+                <div class="register-image text-center">
+                    <img src="{% static 'images/timetabled_logo.png' %}" alt="timetabled_logo.png" style="max-height: 220px; margin: 5%;">
+                    <h1 class="h1 font-weight-bold text-light">Timetabled</h1>
+                    <p class="lead text-light">Postavljanje računa</p>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="card p-5">
+                    <form method="post" action="">
+                        {% csrf_token %}
+                        {% include 'partials/form_snippet.html' %}
+                        <div class="register-buttons">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-arrow-right"></i>
+                                <span>Registriraj se</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="https://kit.fontawesome.com/4951590161.js" crossorigin="anonymous"></script>
+<script>
+
+let universities = {};
+let departments = {};
+
+let programsSelect = document.getElementById('id_program');
+let programsLabel = findLabel('id_program');
+let departmentsSelect = document.getElementById('id_department');
+
+programsLabel.hidden = true;
+programsSelect.hidden = true;
+
+fetch('{% static 'data/universities.json' %}')
+    .then((universities_data) => universities_data.json())
+    .then((json_data) => universities = json_data)
+    .then(() => fetch('{% static 'data/departments.json' %}')
+        .then((departments_data) => departments_data.json())
+        .then((json_data) => departments = json_data)
+        .then(() => toggleDepartments())
+        .then(() => togglePrograms()));
+
+function findLabel(for_id) {
+    var labels = document.getElementsByTagName('label');
+    for(label of labels) {
+        if (label.htmlFor == for_id)
+            return label;
+    }
+}
+
+function toggleDepartments() {
+    let universitiesSelect = document.getElementById('id_university');
+    departmentsSelect.innerText = "";
+    let selectedOption = null;
+
+    for(option of universitiesSelect) {
+        if (option.selected == true) {
+            selectedOption = option;
+            break;
+        }
+    }
+
+    let universityId = null;
+    for (university of universities) {
+        if (university.id == selectedOption.value) {
+            universityId = university.id;
+        }
+    }
+
+    let defaultDepartmentOption = document.createElement('option');
+    defaultDepartmentOption.selected = true;
+    defaultDepartmentOption.value = 0;
+    defaultDepartmentOption.innerText = "---------";
+    departmentsSelect.appendChild(defaultDepartmentOption);
+
+
+    const selectedDepartments = [];
+    for (department of departments) {
+        if (department.university_id == universityId) {
+            console.log(selectedDepartments)
+            selectedDepartments.push(department);
+        }
+    }
+
+    
+    for (department of selectedDepartments) {
+        let option = document.createElement('option');
+        option.value = department.id
+        option.innerText = department.name;
+        departmentsSelect.appendChild(option);
+    }
+}
+
+function togglePrograms() {
+    let studyingYearSelect = document.getElementById('id_studying_year');
+    studyingYearSelect.innerText = "";
+    programsSelect.innerText = "";
+
+    let universitiesSelect = document.getElementById('id_university');
+    let scholarType = document.getElementById('id_type');
+    let selectedScholarType = null;
+    let selectedOption = null;
+
+    for (option of scholarType) {
+        if (option.selected == true) {
+            selectedScholarType = option;
+            break;
+        }
+    }
+
+    if (selectedScholarType.value.toLowerCase() == 'preddiplomski') {
+        for (let i = 1; i < 4; i++) {
+            let option = document.createElement('option');
+            option.value = i;
+            option.innerText = i.toString();
+            studyingYearSelect.appendChild(option);
+        }
+    }
+    else if (selectedScholarType.value.toLowerCase() == 'diplomski') {
+        for (let i = 1; i < 3; i++) {
+            let option = document.createElement('option');
+            option.value = i;
+            option.innerText = i.toString();
+            studyingYearSelect.appendChild(option);
+        }
+    }
+
+    for(option of universitiesSelect) {
+        if (option.selected == true) {
+            selectedOption = option;
+            break;
+        }
+    }
+
+    let universityId = null;
+    for (university of universities) {
+        if (university.id == selectedOption.value) {
+            universityId = university.id;
+        }
+    }
+
+    let selectedDepartment = null;
+    for (option of departmentsSelect) {
+        if (option.selected == true && option.value != 0) {
+            selectedDepartment = option;
+            programsLabel.hidden = false;
+            programsSelect.hidden = false;
+            break;
+        }
+    }
+
+    if (selectedDepartment != null) {
+        let defaultProgramOption = document.createElement('option');
+        defaultProgramOption.selected = true;
+        defaultProgramOption.innerText = "---------";
+        programsSelect.appendChild(defaultProgramOption);
+
+        let departmentId = selectedDepartment.value;
+        
+        for(department of departments) {
+            if (department.id == departmentId) {
+                for (program of department.programs) {
+                    if (program.type == selectedScholarType.value.toLowerCase()) {
+                        let programOption = document.createElement('option');
+                        programOption.value = program.id;
+                        programOption.innerText = program.name;
+                        programsSelect.appendChild(programOption);
+                    }
+                }
+            }
+        }
+    }
+}
+
+</script>
+</html>

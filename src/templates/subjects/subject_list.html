@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="h1">Popis upisanih kolegija</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Naziv</th>
+                        <th>ECTS</th>
+                        <th>Nositelj</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for subject in subject_list %}
+                    <tr>
+                        <td>{{ subject.name }}</td>
+                        <td>{{ subject.ects }}</td>
+                        <td>{{ subject.professor }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+{% endblock body %}
