@@ -52,7 +52,7 @@ class Program(models.Model):
 
     name        = models.CharField("Naziv", max_length=128)
     type        = models.CharField("Tip programa", choices=TYPE_CHOICES, max_length=50)
-    department  = models.ForeignKey("subjects.Department", verbose_name="Odjel", on_delete=models.CASCADE)
+    department  = models.ForeignKey("departments.Department", verbose_name="Odjel", on_delete=models.CASCADE)
 
     class Meta:
         verbose_name = "Program"
