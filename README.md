@@ -36,11 +36,11 @@ to quickly navigate especially long or detailed READMEs.
 
 Kloniranjem se pokreće download repozitorija u direktorij iz kojeg je zadana `git clone` komanda. 
   
-  ```
-  $ git clone https://github.com/andhrelja/notraction
+```
+  $ git clone https://github.com/andhrelja/timetabled
   $ pip install -r requirements.txt && cd src/ 
   # python manage.py runserver
-  ```
+```
 
 Provjeru uspješne instalacije moguće je obaviti pokretanjem `requirements_check.py` Python skripte u root folderu repozitorija.
 

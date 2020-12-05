@@ -25,7 +25,7 @@ def main(filepath="requirements.txt"):
     if len(missing_packages) == 0:
         print("Svi potrebni paketi su instalirani")
     elif len(missing_packages) > 20:
-        print("Potrebno je pokrenuti pip install -r requirements")
+        print("Potrebno je pokrenuti pip install -r requirements.txt")
     else:
         for missing in missing_packages:
             print("Potrebno je pokrenuti pip install {}".format(missing))
