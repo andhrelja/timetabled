@@ -111,7 +111,7 @@
             {
                 "id": 16,
                 "type": "diplomski",
-                "name": "Informatika (nastavnički smjer) – dvopredmetni studij u kombinaciji sa studies  Filozofskog fakulteta u Rijeci"
+                "name": "Informatika (nastavnički smjer) – dvopredmetni studij u kombinaciji sa studijem Filozofskog fakulteta u Rijeci"
             }
         ]
     },
@@ -405,102 +405,102 @@
             {
                 "id": 58,
                 "type": "preddiplomski",
-                "name": "Dvopredmetni studies s Hrvatski jezik i književnost"
+                "name": "Dvopredmetni studij s Hrvatski jezik i književnost"
             },
             {
                 "id": 59,
                 "type": "preddiplomski",
-                "name": "Dvopredmetni studies s Engleski jezik i književnost"
+                "name": "Dvopredmetni studij s Engleski jezik i književnost"
             },
             {
                 "id": 60,
                 "type": "preddiplomski",
-                "name": "Dvopredmetni studies s Njemački jezik i književnost"
+                "name": "Dvopredmetni studij s Njemački jezik i književnost"
             },
             {
                 "id": 61,
                 "type": "preddiplomski",
-                "name": "Dvopredmetni studies s Talijanski jezik i književnost"
+                "name": "Dvopredmetni studij s Talijanski jezik i književnost"
             },
             {
                 "id": 62,
                 "type": "preddiplomski",
-                "name": "Dvopredmetni studies s Filozofija"
+                "name": "Dvopredmetni studij s Filozofija"
             },
             {
                 "id": 63,
                 "type": "preddiplomski",
-                "name": "Dvopredmetni studies s Povijest"
+                "name": "Dvopredmetni studij s Povijest"
             },
             {
                 "id": 64,
                 "type": "preddiplomski",
-                "name": "Dvopredmetni studies s Povijest umjetnosti"
+                "name": "Dvopredmetni studij s Povijest umjetnosti"
             },
             {
                 "id": 65,
                 "type": "preddiplomski",
-                "name": "Dvopredmetni studies s Pedagogija"
+                "name": "Dvopredmetni studij s Pedagogija"
             },
             {
                 "id": 66,
                 "type": "diplomski",
-                "name": "Jednopredmetni studies s Hrvatski jezik i književnost smjer nastavnički, kroatistički"
+                "name": "Jednopredmetni studij s Hrvatski jezik i književnost smjer nastavnički, kroatistički"
             },
             {
                 "id": 67,
                 "type": "diplomski",
-                "name": "Jednopredmetni studies s Psihologija"
+                "name": "Jednopredmetni studij s Psihologija"
             },
             {
                 "id": 68,
                 "type": "diplomski",
-                "name": "Jednopredmetni studies s Pedagogija"
+                "name": "Jednopredmetni studij s Pedagogija"
             },
             {
                 "id": 69,
                 "type": "diplomski",
-                "name": "Jednopredmetni studies s Kulturologija"
+                "name": "Jednopredmetni studij s Kulturologija"
             },
             {
                 "id": 70,
                 "type": "diplomski",
-                "name": "Jednopredmetni studies s Talijanski jezik i knjževnost"
+                "name": "Jednopredmetni studij s Talijanski jezik i knjževnost"
             },
             {
                 "id": 71,
                 "type": "diplomski",
-                "name": "Dvopredmetni studies s Hrvatski jezik i književnost"
+                "name": "Dvopredmetni studij s Hrvatski jezik i književnost"
             },
             {
                 "id": 72,
                 "type": "diplomski",
-                "name": "Dvopredmetni studies s Engleski jezik i književnost"
+                "name": "Dvopredmetni studij s Engleski jezik i književnost"
             },
             {
                 "id": 73,
                 "type": "diplomski",
-                "name": "Dvopredmetni studies s Njemački jezik i književnost"
+                "name": "Dvopredmetni studij s Njemački jezik i književnost"
             },
             {
                 "id": 74,
                 "type": "diplomski",
-                "name": "Dvopredmetni studies s Filozofija"
+                "name": "Dvopredmetni studij s Filozofija"
             },
             {
                 "id": 75,
                 "type": "diplomski",
-                "name": "Dvopredmetni studies s Povijest"
+                "name": "Dvopredmetni studij s Povijest"
             },
             {
                 "id": 76,
                 "type": "diplomski",
-                "name": "Dvopredmetni studies s Povijest umjetnosti"
+                "name": "Dvopredmetni studij s Povijest umjetnosti"
             },
             {
                 "id": 77,
                 "type": "diplomski",
-                "name": "Dvopredmetni studies s Pedagogija"
+                "name": "Dvopredmetni studij s Pedagogija"
             },
             {
                 "id": 78,
@@ -537,37 +537,37 @@
             {
                 "id": 82,
                 "type": "preddiplomski",
-                "name": "Dvopredmetni studies s Engleski jezik i književnost"
+                "name": "Dvopredmetni studij s Engleski jezik i književnost"
             },
             {
                 "id": 83,
                 "type": "preddiplomski",
-                "name": "Dvopredmetni studies s Njemački jezik i književnost"
+                "name": "Dvopredmetni studij s Njemački jezik i književnost"
             },
             {
                 "id": 84,
                 "type": "preddiplomski",
-                "name": "Dvopredmetni studies s Talijanski jezik i književnost"
+                "name": "Dvopredmetni studij s Talijanski jezik i književnost"
             },
             {
                 "id": 85,
                 "type": "preddiplomski",
-                "name": "Dvopredmetni studies s Filozofija"
+                "name": "Dvopredmetni studij s Filozofija"
             },
             {
                 "id": 86,
                 "type": "preddiplomski",
-                "name": "Dvopredmetni studies s Povijest"
+                "name": "Dvopredmetni studij s Povijest"
             },
             {
                 "id": 87,
                 "type": "preddiplomski",
-                "name": "Dvopredmetni studies s Povijest umjetnosti"
+                "name": "Dvopredmetni studij s Povijest umjetnosti"
             },
             {
                 "id": 88,
                 "type": "preddiplomski",
-                "name": "Dvopredmetni studies s Pedagogija"
+                "name": "Dvopredmetni studij s Pedagogija"
             },
             {
                 "id": 89,
@@ -582,62 +582,62 @@
             {
                 "id": 91,
                 "type": "diplomski",
-                "name": "Jednopredmetni studies s Hrvatski jezik i književnost smjer nastavnički, kroatistički"
+                "name": "Jednopredmetni studij s Hrvatski jezik i književnost smjer nastavnički, kroatistički"
             },
             {
                 "id": 92,
                 "type": "diplomski",
-                "name": "Jednopredmetni studies s Psihologija"
+                "name": "Jednopredmetni studij s Psihologija"
             },
             {
                 "id": 93,
                 "type": "diplomski",
-                "name": "Jednopredmetni studies s Pedagogija"
+                "name": "Jednopredmetni studij s Pedagogija"
             },
             {
                 "id": 94,
                 "type": "diplomski",
-                "name": "Jednopredmetni studies s Kulturologija"
+                "name": "Jednopredmetni studij s Kulturologija"
             },
             {
                 "id": 95,
                 "type": "diplomski",
-                "name": "Jednopredmetni studies  Talijanski jezik i knjževnost"
+                "name": "Jednopredmetni studij  Talijanski jezik i knjževnost"
             },
             {
                 "id": 96,
                 "type": "diplomski",
-                "name": "Dvopredmetni studies s Hrvatski jezik i književnost"
+                "name": "Dvopredmetni studij s Hrvatski jezik i književnost"
             },
             {
                 "id": 97,
                 "type": "diplomski",
-                "name": "Dvopredmetni studies s Engleski jezik i književnost"
+                "name": "Dvopredmetni studij s Engleski jezik i književnost"
             },
             {
                 "id": 98,
                 "type": "diplomski",
-                "name": "Dvopredmetni studies s Njemački jezik i književnost"
+                "name": "Dvopredmetni studij s Njemački jezik i književnost"
             },
             {
                 "id": 99,
                 "type": "diplomski",
-                "name": "Dvopredmetni studies s Filozofija"
+                "name": "Dvopredmetni studij s Filozofija"
             },
             {
                 "id": 100,
                 "type": "diplomski",
-                "name": "Dvopredmetni studies s Povijest"
+                "name": "Dvopredmetni studij s Povijest"
             },
             {
                 "id": 101,
                 "type": "diplomski",
-                "name": "Dvopredmetni studies s Povijest umjetnosti"
+                "name": "Dvopredmetni studij s Povijest umjetnosti"
             },
             {
                 "id": 102,
                 "type": "diplomski",
-                "name": "Dvopredmetni studies s  Pedagogija"
+                "name": "Dvopredmetni studij s  Pedagogija"
             },
             {
                 "id": 103,

@@ -75,14 +75,14 @@ WSGI_APPLICATION = 'timetabled.wsgi.application'
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 DATABASES = {
-    'local': {
+    'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'timetabled',
         'USER': 'andrea',
         'PASSWORD': 'user',
         'HOST': 'localhost'
     },
-    'default': {
+    'heroku': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'df16bkol28mnf5',
         'USER': 'lxdgrdhrhvktov',
