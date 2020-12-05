@@ -1,0 +1,891 @@
+[
+    {
+        "id": 1,
+        "university_id": 1,
+        "name": "Odjel za biotehnologiju",
+        "code": "BIOTECH",
+        "address": "Ul. Radmile Matejčić 2, 51000, Rijeka",
+        "email": "ured@biotech.uniri.hr",
+        "contact": "+385 51 584 550",
+        "web": "https://biotech.uniri.hr",
+        "programs": [
+            {
+                "id": 1,
+                "type": "preddiplomski",
+                "name": "Biotehnologija i istraživanje lijekova"
+            },
+            {
+                "id": 2,
+                "type": "diplomski",
+                "name": "Istraživanje i razvoj lijekova"
+            },
+            {
+                "id": 3,
+                "type": "diplomski",
+                "name": "Biotehnologija u medicini"
+            },
+            {
+                "id": 4,
+                "type": "diplomski",
+                "name": "Medicinska kemija"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "university_id": 1,
+        "name": "Odjel za fiziku",
+        "code": "PHY",
+        "address": "Ul. Radmile Matejčić 2, 51000, Rijeka",
+        "email": "ured@phy.uniri.hr",
+        "contact": "+385 51 584 600",
+        "web": "https://phy.uniri.hr",
+        "programs": [
+            {
+                "id": 5,
+                "type": "preddiplomski",
+                "name": "Fizika"
+            },
+            {
+                "id": 6,
+                "type": "diplomski",
+                "name": "Fizika"
+            },
+            {
+                "id": 7,
+                "type": "diplomski",
+                "name": "Fizika i matematika (nastavnički smjer)"
+            },
+            {
+                "id": 8,
+                "type": "diplomski",
+                "name": "Fizika i informatika (nastavnički smjer)"
+            },
+            {
+                "id": 9,
+                "type": "diplomski",
+                "name": "Fizika i filozofija (nastavnički smjer)"
+            },
+            {
+                "id": 10,
+                "type": "diplomski",
+                "name": "Inženjerstvo i fizika materijala"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "university_id": 1,
+        "name": "Odjel za informatiku",
+        "code": "INF",
+        "address": "Ul. Radmile Matejčić 2, 51000, Rijeka",
+        "email": "ured@inf.uniri.hr",
+        "contact": "+385 51 584 700",
+        "web": "https://inf.uniri.hr",
+        "programs": [
+            {
+                "id": 11,
+                "type": "preddiplomski",
+                "name": "Jednopredmetna informatika"
+            },
+            {
+                "id": 12,
+                "type": "preddiplomski",
+                "name": "Dvopredmetna informatika"
+            },
+            {
+                "id": 13,
+                "type": "diplomski",
+                "name": "Informatika (modul: Poslovna informatika)"
+            },
+            {
+                "id": 14,
+                "type": "diplomski",
+                "name": "Informatika (modul: Informacijski i komunikacijski sustavi)"
+            },
+            {
+                "id": 15,
+                "type": "diplomski",
+                "name": "Informatika (nastavnički smjer)"
+            },
+            {
+                "id": 16,
+                "type": "diplomski",
+                "name": "Informatika (nastavnički smjer) – dvopredmetni studij u kombinaciji sa studies  Filozofskog fakulteta u Rijeci"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "university_id": 1,
+        "name": "Odjel za matematiku",
+        "code": "MATH",
+        "address": "Ul. Radmile Matejčić 2, 51000, Rijeka",
+        "email": "math@math.uniri.hr",
+        "contact": "+385 51 584 650",
+        "web": "https://math.uniri.hr",
+        "programs": [
+            {
+                "id": 17,
+                "type": "preddiplomski",
+                "name": "Matematika"
+            },
+            {
+                "id": 18,
+                "type": "diplomski",
+                "name": "Matematika i informatika (nastavnički smjer)"
+            },
+            {
+                "id": 19,
+                "type": "diplomski",
+                "name": "Diskretna matematika i primjene"
+            },
+            {
+                "id": 20,
+                "type": "diplomski",
+                "name": "Diskretna matematika i primjene (na engleskom jeziku)"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "university_id": 1,
+        "name": "Akademija primijenjenih umjetnosti",
+        "code": "APURI",
+        "address": "Ulica Slavka Krautzeka 83, 51000, Rijeka",
+        "email": "pravna@apuri.uniri.hr",
+        "contact": "+385 51 228 881",
+        "web": "https://apuri.hr",
+        "programs": [
+            {
+                "id": 21,
+                "type": "preddiplomski",
+                "name": "Likovna pedagogija"
+            },
+            {
+                "id": 22,
+                "type": "preddiplomski",
+                "name": "Primijenjena umjetnost"
+            },
+            {
+                "id": 23,
+                "type": "preddiplomski",
+                "name": "Gluma i mediji"
+            },
+            {
+                "id": 24,
+                "type": "diplomski",
+                "name": "Likovna pedagogija"
+            },
+            {
+                "id": 25,
+                "type": "diplomski",
+                "name": "Primijenjena umjetnost"
+            },
+            {
+                "id": 26,
+                "type": "diplomski",
+                "name": "Medijske umjetnosti i prakse"
+            },
+            {
+                "id": 27,
+                "type": "diplomski",
+                "name": "Vizualne komunikacije i grafički dizajn"
+            },
+            {
+                "id": 28,
+                "type": "diplomski",
+                "name": "Gluma i mediji"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "university_id": 1,
+        "name": "Ekonomski fakultet",
+        "code": "EFRI",
+        "address": "Ivana Filipovića 4, 51000, Rijeka",
+        "email": "efri@efri.hr",
+        "contact": "+385 51 355 111",
+        "web": "https://efri.uniri.hr",
+        "programs": [
+            {
+                "id": 29,
+                "type": "preddiplomski",
+                "name": "Ekonomija"
+            },
+            {
+                "id": 30,
+                "type": "preddiplomski",
+                "name": "Poslovna ekonomija"
+            },
+            {
+                "id": 31,
+                "type": "diplomski",
+                "name": "Ekonomija"
+            },
+            {
+                "id": 32,
+                "type": "diplomski",
+                "name": "Poslovna ekonomija"
+            },
+            {
+                "id": 33,
+                "type": "diplomski",
+                "name": "Poslovna ekonomija, smjer Poduzetništvo – online studij"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "university_id": 1,
+        "name": "Fakultet dentalne medicine",
+        "code": "FDMRI",
+        "address": "Krešimirova 40/42, 51000, Rijeka",
+        "email": "dekanat@fdmri.uniri.hr",
+        "contact": "+385 51 345 631",
+        "web": "https://fdmri.uniri.hr",
+        "programs": [
+            {
+                "id": 34,
+                "type": "preddiplomski",
+                "name": "Dentalna medicina"
+            },
+            {
+                "id": 35,
+                "type": "preddiplomski",
+                "name": "Dentalna higijena"
+            },
+            {
+                "id": 36,
+                "type": "preddiplomski",
+                "name": "Dental medicine in English"
+            },
+            {
+                "id": 37,
+                "type": "diplomski",
+                "name": "Fizioterapija"
+            },
+            {
+                "id": 38,
+                "type": "diplomski",
+                "name": "Sestrinstvo – Promicanje i zaštita mentalnog zdravlja"
+            },
+            {
+                "id": 39,
+                "type": "diplomski",
+                "name": "Sestrinstvo – Menadžment u sestrinstvu"
+            },
+            {
+                "id": 40,
+                "type": "diplomski",
+                "name": "Medicinsko laboratorijska dijagnostika"
+            },
+            {
+                "id": 41,
+                "type": "diplomski",
+                "name": "Klinički nutricionizam"
+            },
+            {
+                "id": 42,
+                "type": "diplomski",
+                "name": "Primaljstvo"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "university_id": 1,
+        "name": "Fakultet za menadžment u turizmu i ugostiteljstvu",
+        "code": "FTHM",
+        "address": "Krešimirova 40/42, 51000, Rijeka",
+        "email": "dekanat@fthm.hr",
+        "contact": "+385 51 294 700",
+        "web": "https://fthm.uniri.hr",
+        "programs": [
+            {
+                "id": 43,
+                "type": "preddiplomski",
+                "name": "Poslovna ekonomija u turizmu i ugostiteljstvu (Opatija i Zabok)"
+            },
+            {
+                "id": 44,
+                "type": "preddiplomski",
+                "name": "Menadžment održivog razvoja"
+            },
+            {
+                "id": 45,
+                "type": "diplomski",
+                "name": "Marketing u turizmu"
+            },
+            {
+                "id": 46,
+                "type": "diplomski",
+                "name": "Menadžment u turizmu"
+            },
+            {
+                "id": 47,
+                "type": "diplomski",
+                "name": "Menadžment u hotelijerstvu"
+            },
+            {
+                "id": 48,
+                "type": "diplomski",
+                "name": "Održivi razvoj turizma"
+            },
+            {
+                "id": 49,
+                "type": "diplomski",
+                "name": "Turizam (združeni studij)"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "university_id": 1,
+        "name": "Fakultet zdravstvenih studija",
+        "code": "FZSRI",
+        "address": "Ul. Viktora cara Emina 5, 51000, Rijeka",
+        "email": "dekanatfzsri@uniri.hr",
+        "contact": "+385 51 688 266",
+        "web": "https://fzsri.uniri.hr",
+        "programs": [
+            {
+                "id": 50,
+                "type": "preddiplomski",
+                "name": "Sestrinstvo"
+            },
+            {
+                "id": 51,
+                "type": "preddiplomski",
+                "name": "Fizioterapija"
+            },
+            {
+                "id": 52,
+                "type": "preddiplomski",
+                "name": "Radiološka tehnologija"
+            },
+            {
+                "id": 53,
+                "type": "preddiplomski",
+                "name": "Primaljstvo"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "university_id": 1,
+        "name": "Filozofski fakultet",
+        "code": "FFRI",
+        "address": "Sveučilišna Avenija 4, 51000, Rijeka",
+        "email": "pmatic@ffri.hr",
+        "contact": "+385 51 265 600",
+        "web": "https://ffri.uniri.hr",
+        "programs": [
+            {
+                "id": 54,
+                "type": "preddiplomski",
+                "name": "Jednopredmetni studij – Hrvatski jezik i književnost"
+            },
+            {
+                "id": 55,
+                "type": "preddiplomski",
+                "name": "Jednopredmetni studij – Psihologija"
+            },
+            {
+                "id": 56,
+                "type": "preddiplomski",
+                "name": "Jednopredmetni studij – Pedagogija"
+            },
+            {
+                "id": 57,
+                "type": "preddiplomski",
+                "name": "Jednopredmetni studij – Kulturlogija"
+            },
+            {
+                "id": 58,
+                "type": "preddiplomski",
+                "name": "Dvopredmetni studies s Hrvatski jezik i književnost"
+            },
+            {
+                "id": 59,
+                "type": "preddiplomski",
+                "name": "Dvopredmetni studies s Engleski jezik i književnost"
+            },
+            {
+                "id": 60,
+                "type": "preddiplomski",
+                "name": "Dvopredmetni studies s Njemački jezik i književnost"
+            },
+            {
+                "id": 61,
+                "type": "preddiplomski",
+                "name": "Dvopredmetni studies s Talijanski jezik i književnost"
+            },
+            {
+                "id": 62,
+                "type": "preddiplomski",
+                "name": "Dvopredmetni studies s Filozofija"
+            },
+            {
+                "id": 63,
+                "type": "preddiplomski",
+                "name": "Dvopredmetni studies s Povijest"
+            },
+            {
+                "id": 64,
+                "type": "preddiplomski",
+                "name": "Dvopredmetni studies s Povijest umjetnosti"
+            },
+            {
+                "id": 65,
+                "type": "preddiplomski",
+                "name": "Dvopredmetni studies s Pedagogija"
+            },
+            {
+                "id": 66,
+                "type": "diplomski",
+                "name": "Jednopredmetni studies s Hrvatski jezik i književnost smjer nastavnički, kroatistički"
+            },
+            {
+                "id": 67,
+                "type": "diplomski",
+                "name": "Jednopredmetni studies s Psihologija"
+            },
+            {
+                "id": 68,
+                "type": "diplomski",
+                "name": "Jednopredmetni studies s Pedagogija"
+            },
+            {
+                "id": 69,
+                "type": "diplomski",
+                "name": "Jednopredmetni studies s Kulturologija"
+            },
+            {
+                "id": 70,
+                "type": "diplomski",
+                "name": "Jednopredmetni studies s Talijanski jezik i knjževnost"
+            },
+            {
+                "id": 71,
+                "type": "diplomski",
+                "name": "Dvopredmetni studies s Hrvatski jezik i književnost"
+            },
+            {
+                "id": 72,
+                "type": "diplomski",
+                "name": "Dvopredmetni studies s Engleski jezik i književnost"
+            },
+            {
+                "id": 73,
+                "type": "diplomski",
+                "name": "Dvopredmetni studies s Njemački jezik i književnost"
+            },
+            {
+                "id": 74,
+                "type": "diplomski",
+                "name": "Dvopredmetni studies s Filozofija"
+            },
+            {
+                "id": 75,
+                "type": "diplomski",
+                "name": "Dvopredmetni studies s Povijest"
+            },
+            {
+                "id": 76,
+                "type": "diplomski",
+                "name": "Dvopredmetni studies s Povijest umjetnosti"
+            },
+            {
+                "id": 77,
+                "type": "diplomski",
+                "name": "Dvopredmetni studies s Pedagogija"
+            },
+            {
+                "id": 78,
+                "type": "diplomski",
+                "name": "Dvopredmetni – Prevoditeljski studij"
+            },
+            {
+                "id": 79,
+                "type": "diplomski",
+                "name": "Dvopredmetni – Povijest i interpretacija baštine"
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "university_id": 1,
+        "name": "Građevinski fakultet",
+        "code": "GRADRI",
+        "address": "Ul. Radmile Matejčić 3, 51000, Rijeka",
+        "email": "info@gradri.uniri.hr",
+        "contact": "+385 51 265 900",
+        "web": "https://gradri.uniri.hr",
+        "programs": [
+            {
+                "id": 80,
+                "type": "preddiplomski",
+                "name": "Građevinarstvo"
+            },
+            {
+                "id": 81,
+                "type": "preddiplomski",
+                "name": "Građevinarstvo (stručni)"
+            },
+            {
+                "id": 82,
+                "type": "preddiplomski",
+                "name": "Dvopredmetni studies s Engleski jezik i književnost"
+            },
+            {
+                "id": 83,
+                "type": "preddiplomski",
+                "name": "Dvopredmetni studies s Njemački jezik i književnost"
+            },
+            {
+                "id": 84,
+                "type": "preddiplomski",
+                "name": "Dvopredmetni studies s Talijanski jezik i književnost"
+            },
+            {
+                "id": 85,
+                "type": "preddiplomski",
+                "name": "Dvopredmetni studies s Filozofija"
+            },
+            {
+                "id": 86,
+                "type": "preddiplomski",
+                "name": "Dvopredmetni studies s Povijest"
+            },
+            {
+                "id": 87,
+                "type": "preddiplomski",
+                "name": "Dvopredmetni studies s Povijest umjetnosti"
+            },
+            {
+                "id": 88,
+                "type": "preddiplomski",
+                "name": "Dvopredmetni studies s Pedagogija"
+            },
+            {
+                "id": 89,
+                "type": "diplomski",
+                "name": "Građevinarstvo"
+            },
+            {
+                "id": 90,
+                "type": "diplomski",
+                "name": "Građevinarstvo (specijalistički diplomski stručni studij)"
+            },
+            {
+                "id": 91,
+                "type": "diplomski",
+                "name": "Jednopredmetni studies s Hrvatski jezik i književnost smjer nastavnički, kroatistički"
+            },
+            {
+                "id": 92,
+                "type": "diplomski",
+                "name": "Jednopredmetni studies s Psihologija"
+            },
+            {
+                "id": 93,
+                "type": "diplomski",
+                "name": "Jednopredmetni studies s Pedagogija"
+            },
+            {
+                "id": 94,
+                "type": "diplomski",
+                "name": "Jednopredmetni studies s Kulturologija"
+            },
+            {
+                "id": 95,
+                "type": "diplomski",
+                "name": "Jednopredmetni studies  Talijanski jezik i knjževnost"
+            },
+            {
+                "id": 96,
+                "type": "diplomski",
+                "name": "Dvopredmetni studies s Hrvatski jezik i književnost"
+            },
+            {
+                "id": 97,
+                "type": "diplomski",
+                "name": "Dvopredmetni studies s Engleski jezik i književnost"
+            },
+            {
+                "id": 98,
+                "type": "diplomski",
+                "name": "Dvopredmetni studies s Njemački jezik i književnost"
+            },
+            {
+                "id": 99,
+                "type": "diplomski",
+                "name": "Dvopredmetni studies s Filozofija"
+            },
+            {
+                "id": 100,
+                "type": "diplomski",
+                "name": "Dvopredmetni studies s Povijest"
+            },
+            {
+                "id": 101,
+                "type": "diplomski",
+                "name": "Dvopredmetni studies s Povijest umjetnosti"
+            },
+            {
+                "id": 102,
+                "type": "diplomski",
+                "name": "Dvopredmetni studies s  Pedagogija"
+            },
+            {
+                "id": 103,
+                "type": "diplomski",
+                "name": "Dvopredmetni – Prevoditeljski studij"
+            },
+            {
+                "id": 104,
+                "type": "diplomski",
+                "name": "Dvopredmetni – Povijest i interpretacija diplomskine"
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "university_id": 1,
+        "name": "Medicinski fakultet",
+        "code": "MEDRI",
+        "address": "Ul. Braće Branchetta 20/1, 51000, Rijeka",
+        "email": "dekanat_medri@uniri.hr",
+        "contact": "+385 51 651 111",
+        "web": "https://medri.uniri.hr",
+        "programs": [
+            {
+                "id": 105,
+                "type": "preddiplomski",
+                "name": "Medicina"
+            },
+            {
+                "id": 106,
+                "type": "preddiplomski",
+                "name": "Medicina na engleskom jeziku"
+            },
+            {
+                "id": 107,
+                "type": "preddiplomski",
+                "name": "Dentalna medicina"
+            },
+            {
+                "id": 108,
+                "type": "preddiplomski",
+                "name": "Dentalna medicina na engleskom jeziku"
+            },
+            {
+                "id": 109,
+                "type": "preddiplomski",
+                "name": "Sanitarno inžinjerstvo"
+            },
+            {
+                "id": 110,
+                "type": "preddiplomski",
+                "name": "Dentalna higijena"
+            },
+            {
+                "id": 111,
+                "type": "diplomski",
+                "name": "Sanitarno inžinjerstvo"
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "university_id": 1,
+        "name": "Pravni fakultet",
+        "code": "PRAVRI",
+        "address": "Hahlić 6, 51000, Rijeka",
+        "email": "dekanat@pravri.hr",
+        "contact": "+385 51 359 500",
+        "web": "https://pravri.uniri.hr",
+        "programs": [
+            {
+                "id": 112,
+                "type": "preddiplomski",
+                "name": "Pravo"
+            },
+            {
+                "id": 113,
+                "type": "preddiplomski",
+                "name": "Upravni studij"
+            },
+            {
+                "id": 114,
+                "type": "diplomski",
+                "name": "Javna uprava"
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "university_id": 1,
+        "name": "Pomorski fakultet",
+        "code": "PFRI",
+        "address": "Studentska ul. 2, 51000, Rijeka",
+        "email": "dekanat@pfri.hr",
+        "contact": "+385 51 338 411",
+        "web": "https://pfri.uniri.hr",
+        "programs": [
+            {
+                "id": 115,
+                "type": "preddiplomski",
+                "name": "Tehnologija i organizacija prometa"
+            },
+            {
+                "id": 116,
+                "type": "preddiplomski",
+                "name": "Logistika i menadžment u pomorstvu i prometu"
+            },
+            {
+                "id": 117,
+                "type": "preddiplomski",
+                "name": "Nautika i tehnologija pomorskog prometa"
+            },
+            {
+                "id": 118,
+                "type": "preddiplomski",
+                "name": "Brodostrojarstvo"
+            },
+            {
+                "id": 119,
+                "type": "preddiplomski",
+                "name": "Elektroničke i informatičke tehnologije u pomorstvu"
+            },
+            {
+                "id": 120,
+                "type": "diplomski",
+                "name": "Tehnologija i organizacija prometa"
+            },
+            {
+                "id": 121,
+                "type": "diplomski",
+                "name": "Logistika i menadžment u pomorstvu i prometu "
+            },
+            {
+                "id": 122,
+                "type": "diplomski",
+                "name": "Nautika i tehnologija pomorskog prometa "
+            },
+            {
+                "id": 123,
+                "type": "diplomski",
+                "name": "Brodostrojarstvo i tehnologija pomorskog prometa "
+            },
+            {
+                "id": 124,
+                "type": "diplomski",
+                "name": "Elektroničke i informatičke tehnologije u pomorstvu "
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "university_id": 1,
+        "name": "Tehnički fakultet",
+        "code": "RITEH",
+        "address": "Vukovarska ul. 58, 51000, Rijeka",
+        "email": "dekanat@riteh.hr",
+        "contact": "+385 51 651 444",
+        "web": "https://riteh.uniri.hr",
+        "programs": [
+            {
+                "id": 125,
+                "type": "preddiplomski",
+                "name": "Strojarstvo"
+            },
+            {
+                "id": 126,
+                "type": "preddiplomski",
+                "name": "Brodogradnja"
+            },
+            {
+                "id": 127,
+                "type": "preddiplomski",
+                "name": "Elektrotehnika"
+            },
+            {
+                "id": 128,
+                "type": "preddiplomski",
+                "name": "Računarstvo"
+            },
+            {
+                "id": 129,
+                "type": "diplomski",
+                "name": "Strojarstvo"
+            },
+            {
+                "id": 130,
+                "type": "diplomski",
+                "name": "Brodogradnja"
+            },
+            {
+                "id": 131,
+                "type": "diplomski",
+                "name": "Elektrotehnika"
+            },
+            {
+                "id": 132,
+                "type": "diplomski",
+                "name": "Računarstvo"
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "university_id": 1,
+        "name": "Učiteljski fakultet",
+        "code": "UFRI",
+        "address": "Sveučilišna Avenija 6, 51000, Rijeka",
+        "email": "dekanat@ufri.hr",
+        "contact": "+385 51 265 800",
+        "web": "https://ufri.uniri.hr",
+        "programs": [
+            {
+                "id": 133,
+                "type": "preddiplomski",
+                "name": "Učiteljski studij"
+            },
+            {
+                "id": 134,
+                "type": "preddiplomski",
+                "name": "Rani i predškolski odgoj"
+            },
+            {
+                "id": 135,
+                "type": "diplomski",
+                "name": "Rani i predškolski odgoj i obrazovanje"
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "university_id": 1,
+        "name": "Sveučilište u Rijeci",
+        "code": "UNI",
+        "address": "Trg braće Mažuranića 10, 51000, Rijeka",
+        "email": "ured@uniri.hr",
+        "contact": "+385 51 406 500",
+        "web": "https://uniri.hr",
+        "programs": [
+            {
+                "id": 136,
+                "type": "preddiplomski",
+                "name": "Politehnika"
+            },
+            {
+                "id": 137,
+                "type": "diplomski",
+                "name": "Politehnika i informatika (nastavnički smjer)"
+            }
+        ]
+    }
+]
