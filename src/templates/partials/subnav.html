@@ -48,7 +48,7 @@
             </li>
         {% elif type == "detail" and type_name == "activities_class" %}
             <li class="nav-item">
-                <a class="nav-link d-flex" href="#{% comment %}{% url 'activities_class:student-update' activity.id %}{% endcomment %}">
+                <a class="nav-link d-flex" href="{{ activity.get_update_url }}">
                     <div class="fas-icon subnav">
                         <i class="fas fa-pen text-primary" aria-hidden="true"></i>
                     </div>

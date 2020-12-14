@@ -39,6 +39,9 @@ class StudentScoreActivity(models.Model):
 
     def get_absolute_url(self):
         return reverse('activities_score:student-detail', kwargs={"pk": self.pk})
+    
+    def get_update_url(self):
+        return reverse('activities_score:student-update', kwargs={"pk": self.pk})
 
     def __str__(self):
         string = "{} - {}".format(self.subject.code, self.get_type_display())

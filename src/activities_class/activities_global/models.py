@@ -29,6 +29,9 @@ class GlobalClassActivity(models.Model):
 
     def get_absolute_url(self):
         return reverse('activities_class:global-detail', kwargs={"pk": self.pk})
+    
+    def get_update_url(self):
+        return reverse('activities_class:global-update', kwargs={"pk": self.pk})
 
     def __str__(self):
         return self.name.strip()

@@ -39,14 +39,11 @@ class GlobalClassActivityUpdateView(UpdateView):
             'due_date':     self.object.due_date,
             'start_time':   self.object.start_time,
             'end_time':     self.object.end_time,
-            'completed':    self.object.completed,
             'subject':      self.object.subject,
             'student':      student,
             'global_activity':      self.object,
-            'points_accomplished':  self.object.points_accomplished,
-            'points_total':         self.object.points_total,
         }
 
-        activity = StudentScoreActivity.objects.create(**kwargs)
-        messages.success(self.request, 'Ispitna aktivnost uspješno izmijenjena')
+        activity = StudentClassActivity.objects.create(**kwargs)
+        messages.success(self.request, 'Nastavna aktivnost uspješno izmijenjena')
         return redirect(activity.get_absolute_url())        

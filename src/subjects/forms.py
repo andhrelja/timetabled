@@ -9,8 +9,8 @@ class TimeInput(forms.TimeInput):
 
 
 class SubjectEnrollForm(forms.Form):
-    #subjects = forms.MultipleChoiceField(choices=((s.id, s) for s in Subject.objects.all()),
-     #   widget=forms.CheckboxSelectMultiple(attrs={'class': ''}))
+    subjects = forms.MultipleChoiceField(choices=((s.id, s) for s in Subject.objects.all()),
+        widget=forms.CheckboxSelectMultiple(attrs={'class': ''}))
 
     def __init__(self, *args, **kwargs):
         self.request = kwargs.pop('request')
