@@ -11,7 +11,7 @@ from django.views.generic import (
 from datetime import date
 
 from .forms import AuthenticationForm, RegisterForm, StudentForm
-from .models import Student
+from .models import Student, StudentSubjects
 from subjects.models import Subject, SubjectPrograms
 
 
@@ -56,8 +56,9 @@ class StudentSetupView(FormView):
         subject_ids     = SubjectPrograms.objects.filter(program=program, optional=False).values_list('subject_id')
         subjects        = Subject.objects.filter(id__in=subject_ids, academic_year=academic_year, semester=semester)
         
-        student.subjects.set(subjects)
-        student.save()
+        for subject in subjects:
+            ss = StudentSubjects.objects.create(student=student, subject=subject)
+            ss.ingest_points()
 
         messages.success(self.request, "Dobrodošli na Timetabled stranice")
         return super(StudentSetupView, self).form_valid(form)

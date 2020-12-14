@@ -1,0 +1,140 @@
+{% load static %}
+
+<!-- Side navigation -->
+<nav id="sidebar" class="bg-primary">
+    <div class="sidebar-header text-center">
+        <img src="{% static 'images/logo_timetabled_white.png' %}" alt="timetabled_logo.png" height="120">
+    </div>
+
+    <ul class="list-unstyled components">
+        {% comment %}
+        <li id="dashboard-nav-item" class="nav-item active">
+            <a class="nav-link d-flex" href="{% url 'schedules:dashboard' %}">
+                <div class="text-center" style="width: 25px">
+                    <div class="fas-icon">
+                        <i class="fa fa-dashboard pr-1" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <span>Dashboard</span>
+            </a>
+        </li>
+        {% endcomment %}
+        <li id="subjects-nav-item" class="nav-item d-flex">
+            <div class="link" style="width: 80%">
+                <a class="nav-link d-flex" href="#subjectsDropdown" data-toggle="collapse" aria-expanded="false" >
+                    <div class="fas-icon">
+                        <i class="fas fa-graduation-cap pr-1" aria-hidden="true"></i>
+                    </div>
+                    <span>Moji kolegiji</span>
+                </a>
+            </div>
+            <div class="caret m-auto text-center" style="width: 20%">
+                <a class="" href="#subjectsDropdown" data-toggle="collapse" aria-expanded="false" >
+                    <div class="fas-icon">
+                        <i class="fas fa-angle-down text-light w-100 h-100"></i>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li class="collapse" id="subjectsDropdown">
+            <ul class="list-unstyled">
+                <li>
+                    <a class="nav-link d-flex dropdown-item" href="{% url 'subjects:list' %}">
+                        <small class="pl-3">Svi kolegiji</small>
+                    </a>
+                </li>
+                {% for subject in user.student.subjects.all %}
+                    <li>
+                        <a class="nav-link d-flex dropdown-item" href="{{ subject.get_absolute_url }}">
+                            <small class="pl-3">{{ subject }}</small>
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </li>
+        <li id="activities-nav-item" class="nav-item d-flex">
+            <div class="link" style="width: 80%">
+                <a class="nav-link d-flex" href="#activitiesDropdown" data-toggle="collapse" aria-expanded="false" >
+                    <div class="fas-icon">
+                        <i class="fas fa-tasks pr-1" aria-hidden="true"></i>
+                    </div>
+                    <span>Aktivnosti</span>
+                </a>
+            </div>
+            <div class="caret m-auto text-center" style="width: 20%">
+                <a class="" href="#activitiesDropdown" data-toggle="collapse" aria-expanded="false" >
+                    <div class="fas-icon">
+                        <i class="fas fa-angle-down text-light w-100 h-100"></i>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li class="collapse" id="activitiesDropdown">
+            <ul class="list-unstyled">
+                <li>
+                    <a class="nav-link d-flex dropdown-item" href="#">
+                        <div class="text-center" style="width: 25px">
+                            <div class="fas-icon">
+                                <i class="fas fa-calendar-alt fa-sm pr-1" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <span class="text-m mt-1 pl-1">Bodovne aktivnosti</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link d-flex dropdown-item" href="#">
+                        <div class="text-center" style="width: 25px">
+                            <div class="fas-icon">
+                                <i class="fas fa-calendar fa-sm pr-1" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <span class="text-m mt-1 pl-1">Nebodovne aktivnosti</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <ul class="list-unstyled component" style="position:absolute; bottom:0; width:100%">
+        <li class="collapse" id="acccountsDropdown">
+            <ul class="list-unstyled">
+                <li>
+                    <a class="nav-link d-flex dropdown-item" href="#">
+                        <div class="text-center" style="width: 25px">
+                            <div class="fas-icon">
+                                <i class="fas fa-info pr-1" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <span>Moj račun</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link d-flex dropdown-item" href="#">
+                        <div class="text-center" style="width: 25px">
+                            <div class="fas-icon">
+                                <i class="fas fa-sign-out-alt pr-1" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <span>Odjava</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li id="accounts-nav-item" class="nav-item d-flex">
+            <div class="link" style="width: 80%">
+                <a class="nav-link d-flex" href="#acccountsDropdown" data-toggle="collapse" aria-expanded="false" >
+                    <div class="fas-icon">
+                        <i class="fas fa-user-circle pr-1 fa-lg" aria-hidden="true"></i>
+                    </div>
+                    <span>{{ user.get_full_name }}</span>
+                </a>
+            </div>
+            <div class="caret m-auto text-center" style="width: 20%">
+                <a class="" href="#acccountsDropdown" data-toggle="collapse" aria-expanded="false" >
+                    <div class="fas-icon">
+                        <i class="fas fa-angle-up text-light w-100 h-100"></i>
+                    </div>
+                </a>
+            </div>
+        </li>
+    </ul>
+</nav>

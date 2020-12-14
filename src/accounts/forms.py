@@ -39,10 +39,11 @@ class StudentForm(forms.Form):
         widget=forms.Select(attrs={'class': 'custom-select', 'onchange': 'togglePrograms()'}))
     type = forms.CharField(label="Tip studija", widget=forms.Select(
         choices=Program.TYPE_CHOICES, attrs={'class': 'custom-select', 'onchange': 'togglePrograms()'}))
-    studying_year = forms.IntegerField(label="Godina studija", widget=forms.Select(
-        choices=((i, i) for i in range(1, 4)), attrs={'class': 'custom-select'}))
     program = forms.ModelChoiceField(label="Studij", queryset=Program.objects.all(),
         widget=forms.Select(attrs={'class': 'custom-select'}))
+    studying_year = forms.IntegerField(label="Godina studija", widget=forms.Select(
+        choices=((i, i) for i in range(1, 4)), attrs={'class': 'custom-select'}))
+    
 
 
 class AuthenticationForm(AuthenticationForm):

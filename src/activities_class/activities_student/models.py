@@ -1,37 +1,7 @@
 from django.db import models
-from django.shortcuts import reverse
+from django.urls import reverse
 from datetime import timedelta
-
-TYPE_CHOICES = ((0, "Predavanja"), (1, "Vježbe"), (2, "Predavanja i vježbe"), (3, "Ostalo"))
-
-class GlobalClassActivity(models.Model):
-
-    name        = models.CharField("Naziv", max_length=64)
-    location    = models.CharField("Prostor", max_length=128)
-    type        = models.IntegerField("Tip aktivnosti", choices=TYPE_CHOICES)
-    details     = models.TextField("Dodatne informacije", null=True)
-    
-    subject     = models.ForeignKey("subjects.Subject", verbose_name="Kolegij", on_delete=models.CASCADE)
-
-    date        = models.DateField("Datum")
-    start_time  = models.TimeField("Vrijeme početka")
-    end_time    = models.TimeField("Vrijeme završetka")
-
-    class Meta:
-        verbose_name = "Global - Nebodovna aktivnost"
-        verbose_name_plural = "Global - Nebodovne aktivnosti"
-
-    @property
-    def duration(self):
-        start = timedelta(hours=self.start_time.hour, minutes=self.start_time.minute)
-        end = timedelta(hours=self.end_time.hour, minutes=self.end_time.minute)
-        return end - start
-
-    def get_absolute_url(self):
-        return reverse('activities_class:global-detail', kwargs={"pk": self.pk})
-
-    def __str__(self):
-        return self.name.strip()
+from activities_class import constraints
 
 
 class StudentClassActivity(models.Model):
@@ -44,12 +14,12 @@ class StudentClassActivity(models.Model):
 
     name        = models.CharField("Naziv", max_length=64)
     location    = models.CharField("Prostor", max_length=128)
-    type        = models.IntegerField("Tip aktivnosti", choices=TYPE_CHOICES)
+    type        = models.IntegerField("Tip aktivnosti", choices=constraints.TYPE_CHOICES)
     details     = models.TextField("Dodatne informacije", null=True)
     
     subject     = models.ForeignKey("subjects.Subject", verbose_name="Kolegij", on_delete=models.CASCADE)
 
-    date        = models.DateField("Datum")
+    due_date    = models.DateField("Datum")
     start_time  = models.TimeField("Vrijeme početka")
     end_time    = models.TimeField("Vrijeme završetka")
 

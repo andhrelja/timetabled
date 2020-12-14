@@ -1,0 +1,77 @@
+.bg-primary {
+    background-color: #0071BC !important;
+}
+
+.bg-danger {
+    background-color: #FF421D !important;
+}
+
+.bg-secondary {
+    /* background-color: #FE8700 !important; */
+    background-color: #743801 !important;
+}
+
+.bg-info {
+    background-color: #6CBAC6 !important;
+}
+
+
+.fas-icon {
+    width: 25px !important;
+    text-align: center !important;
+}
+
+#messages {
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+}
+
+.card {
+    /* margin: 2%; */
+    box-shadow: 0 0 2px 0px;
+}
+
+.card.head {
+    border-bottom-left-radius:0; 
+    border-bottom-right-radius:0;
+}
+
+
+.form-buttons {
+    margin-top: 3%;
+}
+
+.clickable-row {
+    cursor:pointer;
+}
+
+.clickable-row:hover {
+    background-color: #0071BC;
+    color: #e6e6e6;
+}
+
+.text-m {
+    font-size: 14px;
+}
+
+
+.detail-list-group.inline {
+    flex-direction: row !important;
+}
+
+.detail-item-group {
+    padding-bottom: 14%;
+}
+
+.detail-item-group h5 {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.detail-item-group.inline {
+    padding-left: 0;
+    padding-right: 4%;
+}

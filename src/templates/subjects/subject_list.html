@@ -1,35 +1,88 @@
 {% extends 'base.html' %}
 
+
 {% block body %}
 
-<div class="container">
+{% include 'partials/subjects/navbar.html' with title="Upisani kolegiji" type="list" type_name="subjects" %}
+
+<div class="container-fluid pt-3">
     <div class="row">
         <div class="col-md-12">
-            <h1 class="h1">Popis upisanih kolegija</h1>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12">
-            <table class="table table-striped">
-                <thead>
+            <table class="table w-100">
+                <thead class="bg-secondary">
                     <tr>
-                        <th>Naziv</th>
-                        <th>ECTS</th>
-                        <th>Nositelj</th>
+                        <th class="text-light" style="border-right:none">Naziv</th>
+                        <th class="text-light" style="border-left:none">Ostvareni bodovi</th>
                     </tr>
                 </thead>
                 <tbody>
                 {% for subject in subject_list %}
                     <tr>
-                        <td>{{ subject.name }}</td>
-                        <td>{{ subject.ects }}</td>
-                        <td>{{ subject.professor }}</td>
+                        <td class="clickable-row" onclick="location.href='{% url 'subjects:detail' subject.id %}'">{{ subject.name }}</td>
+                        <td>{{ subject.points_accomplished }} / {{ subject.points_total }}</td>
                     </tr>
+                {% empty %}
+                    <p>Još nema upisanih kolegija</p>
                 {% endfor %}
                 </tbody>
             </table>
         </div>
     </div>
 </div>
+<div class="container-fluid pt-3">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card m-2">
+                <div class="card head bg-dark p-2">
+                    <h5 class="text-light">Nadolazeće ispitne aktivnosti</h5>
+                </div>
+                <div class="card-body">
+                    {% include 'partials/activities/score_list_snippet.html' with activities=request.user.student.upcoming_score_activities %}
+                    <div class="form-buttons text-center">
+                        <a href="{% url 'activities_calendar:score-monthly' %}" class="btn btn-sm btn-primary w-100">
+                            <i class="fas fa-calendar-alt text-light" aria-hidden="true"></i>
+                            <span class="text-light">Prikaži sve</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card m-2">
+                <div class="card head bg-dark p-2">
+                    <h5 class="text-light">Ispitne aktivnosti u zakašnjenju</h5>
+                </div>
+                <div class="card-body">
+                    {% include 'partials/activities/score_list_snippet.html' with activities=request.user.student.past_score_activities %}
+                    <div class="form-buttons text-center">
+                        <a href="{% url 'activities_calendar:score-monthly' %}" class="btn btn-sm btn-primary w-100">
+                            <i class="fas fa-calendar-alt text-light" aria-hidden="true"></i>
+                            <span class="text-light">Prikaži sve</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card m-2">
+                <div class="card head bg-dark p-2">
+                    <h5 class="text-light">Nadolazeća predavanja/vježbe</h5>
+                </div>
+                <div class="card-body">
+                    {% include 'partials/activities/class_list_snippet.html' with activities=request.user.student.upcoming_class_activities %}
+                    <div class="form-buttons text-center">
+                        <a href="{% url 'activities_calendar:class-monthly' %}" class="btn btn-sm btn-primary w-100">
+                            <i class="fas fa-calendar-alt text-light" aria-hidden="true"></i>
+                            <span class="text-light">Prikaži sve</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
 
 {% endblock body %}

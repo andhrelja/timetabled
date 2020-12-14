@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <h3 class="navbar-brand h3 font-weight-bold mb-0" href="#">{{ title }}</h3>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-angle-down text-light"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav subnav ml-auto">
+        {% if type == "list" %}
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'subjects:enroll' %}">
+                    <i class="fas fa-plus-circle text-light" aria-hidden="true"></i>
+                    <span class="text-light">Upiši izborni kolegij</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-book text-light" aria-hidden="true"></i>
+                    <span class="text-light">Materijali</span>
+                </a>
+            </li>
+        {% elif type == "form" %}
+        {% else %}
+        Greška
+        {% endif %}
+        </ul>
+    </div>
+</nav>

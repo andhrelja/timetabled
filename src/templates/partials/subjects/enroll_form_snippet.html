@@ -1,0 +1,44 @@
+<div class="form-snippet pb-2">
+{% if form.non_field_errors %}
+    <ul class="list-unstyled">
+    {% for error in form.non_field_errors %}
+        <li class="text-danger"><strong>Greška:</strong> {{ error }}</li>
+    {% endfor %}
+    </ul>
+{% endif %}
+<table class="table table-bordered m-3" style="max-width:96%">
+    <thead class="bg-secondary">
+        <tr>
+            <th style="color: #fff; border:none;">Naziv</th>
+            <th style="color: #fff; border:none;">ECTS</th>
+            <th style="color: #fff; border:none;">Nositelj</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% if form.subjects.errors %}
+        <ul class="ml-0">
+        {% for error in form.subjects.errors %}
+            <li class="text-danger">{{ error }}</li>
+        {% endfor %}
+        </ul>
+        {% endif %}
+
+        {% if form.subjects.help_text %}
+        <small class="help">{{ form.subjects.help_text|safe }}</small>
+        {% endif %}
+
+        {% for subject in form.subjects %}
+        <tr>
+            <td>
+                {{ subject }}
+            </td>
+            <td>{{ subject.data.label.ects }}</td>
+            <td>{{ subject.data.label.professor }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% for field in form.hidden_fields %}
+    <div style="display:none">{{ field }}</div>
+{% endfor %}
+</div>

@@ -1,0 +1,54 @@
+<nav class="navbar navbar-expand-sm navbar-light bg-light" height="20px">
+    <ul class="navbar-nav subnav">
+        <li class="nav-item hover-dark">
+            <a class="nav-link date-previous p-1" href="{% url calendar_url start=prev_date%}">
+                <small>
+                    <div class="fas-icon subnav">
+                        <i class="fas fa-caret-left" aria-hidden="true"></i>
+                    </div>
+                </small>
+            </a>
+        </li>
+        <li class="nav-item hover-dark">
+            <a class="nav-link date-next p-1" href="{% url calendar_url start=next_date%}">
+                <small>
+                    <div class="fas-icon subnav">
+                        <i class="fas fa-caret-right" aria-hidden="true"></i>
+                    </div>
+                </small>
+            </a>
+        </li>
+    </ul>
+    
+    <div class="mx-auto order-0">
+        {% if type == "monthly" %}
+        <h3 class="navbar-brand h3 font-weight-bold mb-0 p-2" href="#">{{ start_date|date:"F, Y" }}</h3>
+        {% elif type == "weekly" %}
+        <h3 class="navbar-brand h3 font-weight-bold mb-0 p-2" href="#">{{ start_date|date:"F, Y" }}</h3>
+        {% elif type == "daily" %}
+        <h3 class="navbar-brand h3 font-weight-bold mb-0 p-2" href="#">{{ start_date }} - {{ end_date }}</h3>
+        {% endif %}
+    </div>
+    <!-- Collapse content -->
+    <!-- <div class="collapse navbar-collapse" id="navbarCollapse"> -->
+
+        <ul class="navbar-nav subnav ml-auto">
+            <li class="nav-item hover-dark">
+                <a class="nav-link d-flex p-1" href="#">
+                    <small>Mjesečno</small>
+                </a>
+            </li>
+            <li class="nav-item hover-dark">
+                <a class="nav-link d-flex p-1" href="#">
+                    <small>Tjedno</small>
+                </a>
+            </li>
+            <li class="nav-item hover-dark">
+                <a class="nav-link d-flex p-1" href="#">
+                    <small>Dnevno</small>
+                </a>
+            </li>
+        </ul>
+    <!-- </div> -->
+    <!-- End of Collapse content -->
+</nav>

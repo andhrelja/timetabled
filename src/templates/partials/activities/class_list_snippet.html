@@ -1,0 +1,27 @@
+<ul class="list-group">
+{% for activity in activities %}
+    <li class="list-group-item d-flex justify-content-between align-items-center clickable-row" onclick="location.href='{{ activity.get_absolute_url }}'">
+        <div class="text">
+            <p class="mb-0">{{ activity.get_type_display }}</p>
+            <small class="help-text">{{ activity.subject }}</small>
+        </div>
+        {% if activity.due_date > today %}
+        <span class="badge badge-primary badge-pill">{{ activity.due_date|date:"d.m.Y" }}</span>
+        {% elif activity.due_date == today %}
+        <span class="badge badge-warning badge-pill">{{ activity.due_date|date:"d.m.Y" }}</span>
+        {% elif activity.due_date < today %}
+        <span class="badge badge-danger badge-pill">{{ activity.due_date|date:"d.m.Y" }}</span>
+        {% endif %}
+        
+    </li>
+{% empty %}
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        <div class="text">
+            <span>Nema aktivnosti u sljedećih 7 dana</span>
+        </div>
+        <span class="badge badge-success badge-pill">
+            <i class="fas fa-check"></i>
+        </span> 
+    </li>
+{% endfor %}
+</ul>

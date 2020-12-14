@@ -1,0 +1,64 @@
+table { 
+    border-spacing: 1; 
+    border-collapse: collapse; 
+    background:white;
+    border-radius:6px;
+    overflow:hidden;
+    /* width:100%;*/
+    margin:0 auto;
+    /*position:relative;*/
+}
+    
+    
+td,th {
+    padding-left:8px
+}
+
+thead tr { 
+    height:60px;
+    background:#ffc266;
+    font-size:16px;
+}
+
+tbody tr {
+    height:48px;
+    border-bottom:1px solid #E3F1D5;
+}
+tbody tr:last-child  { border:0; }
+
+
+@media (max-width: 768px) {
+
+    table { 
+        display:block;
+    }
+    table > *,tr,td,th { 
+        display:block;
+    }
+        
+    thead { 
+        display:none;
+    }
+
+    tbody tr {
+        height:auto; 
+        padding:8px 0;
+    }
+
+    tbody tr td { 
+        padding-left:45%; 
+        margin-bottom:12px;
+    }
+
+    tbody tr td:last-child { 
+        margin-bottom:0;
+    }
+
+    tbody tr td:before {
+        position:absolute;
+        font-weight:700;
+        width:40%;
+        left:10px;
+        top:0
+    } 
+}
