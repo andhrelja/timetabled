@@ -89,7 +89,7 @@ class Subject(models.Model):
                         .only("id", "due_date", "name", "points_total", "points_accomplished")
 
         global_activities = self.globalscoreactivity_set.only("id", "due_date", "name", "points_total", "points_accomplished") \
-                        .exclude(id__in=updated_global_activities.values_list('global_activity_id'))
+                        .exclude(id__in=updated_global_activities.values_list('global_activity_id'), points_total=0)
 
         return sorted(chain(custom_activities, updated_global_activities, global_activities), key=lambda instance: instance.due_date, reverse=False)
 
