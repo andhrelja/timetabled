@@ -11,7 +11,7 @@
                     <h4 class="card-title mb-0">{{ object.subject }} - {{ object.get_type_display }}</h4>
                     <span class="badge badge-primary badge-pill">{{ object.points_accomplished|floatformat }} / {{ object.points_total|floatformat }}</span>
                 </div>
-                <h6 class="card-subtitle mb-2 text-muted">{{ object.due_date }} od {{ object.start_time }}</h6>
+                <h6 class="card-subtitle mb-2 text-muted">{{ object.due_date|date:"l" }}, {{ object.due_date }} od {{ object.start_time }}</h6>
                 <p class="card-text">{{ object.details }}</p>
                 <a href="#" class="card-link">Informacije o kolegiju</a>
             </div>
@@ -24,7 +24,7 @@
                 <h5 class="text-light mb-0">{{ object.subject }} - Dosadašnje aktivnosti</h5>
             </div>
             <div class="card-body">
-                {% include 'partials/activities_score/activity_list_snippet.html' with activities=object.subject.past_score_activities %}
+                {% include 'partials/activities/score_list_snippet.html' with activities=object.subject.past_score_activities %}
                 <div class="form-buttons text-center">
                     <a href="#" class="btn btn-sm btn-primary w-100">
                         <i class="fas fa-calendar-alt text-light" aria-hidden="true"></i>
