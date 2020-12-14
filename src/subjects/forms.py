@@ -1,6 +1,12 @@
 from django import forms
 from .models import Subject, SubjectPrograms
 
+class DateInput(forms.DateInput):
+    input_type = "date"
+
+class TimeInput(forms.TimeInput):
+    input_type = "time"
+
 
 class SubjectEnrollForm(forms.Form):
     #subjects = forms.MultipleChoiceField(choices=((s.id, s) for s in Subject.objects.all()),
