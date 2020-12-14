@@ -34,12 +34,12 @@
         <div class="col-md-6">
             <div class="card m-2">
                 <div class="card head bg-dark p-2">
-                    <h5 class="text-light mb-0">Nadolazeće ispitne aktivnosti</h5>
+                    <h5 class="text-light">Nadolazeće ispitne aktivnosti</h5>
                 </div>
                 <div class="card-body">
-                {% include 'partials/activities_score/activity_list_snippet.html' with activities=request.user.student.upcoming_score_activities %}
-                <div class="form-buttons text-center">
-                        <a href="#" class="btn btn-sm btn-primary w-100">
+                    {% include 'partials/activities/score_list_snippet.html' with activities=request.user.student.upcoming_score_activities %}
+                    <div class="form-buttons text-center">
+                        <a href="{% url 'activities_calendar:score-monthly' %}" class="btn btn-sm btn-primary w-100">
                             <i class="fas fa-calendar-alt text-light" aria-hidden="true"></i>
                             <span class="text-light">Prikaži sve</span>
                         </a>
@@ -50,12 +50,12 @@
         <div class="col-md-6">
             <div class="card m-2">
                 <div class="card head bg-dark p-2">
-                    <h5 class="text-light mb-0">Ispitne aktivnosti u zakašnjenju</h5>
+                    <h5 class="text-light">Ispitne aktivnosti u zakašnjenju</h5>
                 </div>
                 <div class="card-body">
-                    {% include 'partials/activities_score/activity_list_snippet.html' with activities=request.user.student.past_score_activities %}
+                    {% include 'partials/activities/score_list_snippet.html' with activities=request.user.student.past_score_activities %}
                     <div class="form-buttons text-center">
-                        <a href="#" class="btn btn-sm btn-primary w-100">
+                        <a href="{% url 'activities_calendar:score-monthly' %}" class="btn btn-sm btn-primary w-100">
                             <i class="fas fa-calendar-alt text-light" aria-hidden="true"></i>
                             <span class="text-light">Prikaži sve</span>
                         </a>
@@ -68,12 +68,12 @@
         <div class="col-md-12">
             <div class="card m-2">
                 <div class="card head bg-dark p-2">
-                    <h5 class="text-light mb-0">Nadolazeća predavanja/vježbe</h5>
+                    <h5 class="text-light">Nadolazeća predavanja/vježbe</h5>
                 </div>
                 <div class="card-body">
-                    {% include 'partials/activities_class/activity_list_snippet.html' with activities=request.user.student.upcoming_class_activities %}
+                    {% include 'partials/activities/class_list_snippet.html' with activities=request.user.student.upcoming_class_activities %}
                     <div class="form-buttons text-center">
-                        <a href="#" class="btn btn-sm btn-primary w-100">
+                        <a href="{% url 'activities_calendar:class-monthly' %}" class="btn btn-sm btn-primary w-100">
                             <i class="fas fa-calendar-alt text-light" aria-hidden="true"></i>
                             <span class="text-light">Prikaži sve</span>
                         </a>

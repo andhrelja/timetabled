@@ -6,7 +6,7 @@
 {% include 'partials/subnav.html' with title="Aktivnosti" type="form" %}
 {% include 'partials/activities/calendar_navbar.html' with calendar_url="activities_calendar:score-monthly-navigate" prev_date=start_date|add_months:-1 next_date=start_date|add_months:1 %}
 
-<table class="table" style="table-layout:fixed">
+<table class="table table-bordered" style="table-layout:fixed">
     <thead>
         <tr>
         {% for th in header %}
@@ -19,14 +19,14 @@
         <tr>
         {% for day in week %}
             {% with day|first as date_ %}
-                <td width="60px" class="p-1">{{ date_|date:"d.m." }}</td>
+                <td class="p-0">{{ date_|date:"d.m." }}</td>
             {% endwith %}
         {% endfor %}
         </tr>
         <tr style="height:60px; min-height:60px;">
         {% for day in week %}
             {% with day|first as date_ %}
-            <td width="60px" class="p-1">
+            <td class="p-0">
             {% for activity in day %}
                 {% if not activity == date_ %}
                 
