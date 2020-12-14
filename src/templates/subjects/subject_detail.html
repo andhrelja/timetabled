@@ -54,7 +54,7 @@
                 <h5 class="text-light mb-0">Ispitne aktivnosti</h5>
             </div>
             <div class="card-body">
-                {% include 'partials/activities_class/activity_list_snippet.html' with activities=subject.upcoming_score_activities %}
+                {% include 'partials/activities/score_list_snippet.html' with activities=subject.upcoming_score_activities %}
             </div>
         </div>
     </div>
@@ -64,7 +64,7 @@
                 <h5 class="text-light mb-0">Predavanja / Vježbe</h5>
             </div>
             <div class="card-body">
-                {% include 'partials/activities_class/activity_list_snippet.html' with activities=subject.upcoming_class_activities %}
+                {% include 'partials/activities/class_list_snippet.html' with activities=subject.upcoming_class_activities %}
             </div>
         </div>
     </div>
@@ -79,7 +79,7 @@
                 <h5 class="text-light mb-0">Ispitne aktivnosti</h5>
             </div>
             <div class="card-body">
-                {% include 'partials/activities_class/activity_list_snippet.html' with activities=subject.all_score_activities %}
+                {% include 'partials/activities/score_list_snippet.html' with activities=subject.all_score_activities %}
             </div>
         </div>
     </div>
@@ -89,7 +89,7 @@
                 <h5 class="text-light mb-0">Predavanja / Vježbe</h5>
             </div>
             <div class="card-body">
-                {% include 'partials/activities_class/activity_list_snippet.html' with activities=subject.all_upcoming_class_activities %}
+                {% include 'partials/activities/class_list_snippet.html' with activities=subject.all_upcoming_class_activities %}
             </div>
         </div>
     </div>
