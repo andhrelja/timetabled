@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% load calendar_extras %}
+
+{% block body %}
+{% include 'partials/subnav.html' with title="Aktivnosti" type="form" %}
+{% include 'partials/activities/calendar_navbar.html' with calendar_url="activities_calendar:score-monthly-navigate" prev_date=start_date|add_months:-1 next_date=start_date|add_months:1 %}
+
+<table class="table" style="table-layout:fixed">
+    <thead>
+        <tr>
+        {% for th in header %}
+            <th style="width: 60px">{{ th }}</th>
+        {% endfor %}
+        </tr>
+    </thead>
+    <tbody>
+    {% for week in full_table %}
+        <tr>
+        {% for day in week %}
+            {% with day|first as date_ %}
+                <td width="60px" class="p-1">{{ date_|date:"d.m." }}</td>
+            {% endwith %}
+        {% endfor %}
+        </tr>
+        <tr style="height:60px; min-height:60px;">
+        {% for day in week %}
+            {% with day|first as date_ %}
+            <td width="60px" class="p-1">
+            {% for activity in day %}
+                {% if not activity == date_ %}
+                
+                <div title="Broj bodova: {{ activity.points_total }}" onclick="location.href='{{ activity.get_absolute_url }}'" class="d-flex clickable-row">
+                    <div class="fas-icon subnav">
+                        {% if activity.completed %}
+                        <i class="fas fa-check-circle text-success" aria-hidden="true"></i>
+                        {% else %}
+                        <i class="fas fa-exclamation-circle text-warning" aria-hidden="true"></i>
+                        {% endif %}
+                    </div>
+                    <span class="font-weight-bold">{{ activity }}</span>
+                </div>
+                {% endif %}
+            {% endfor %}
+            </td>            
+            {% endwith %}
+        {% endfor %}
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+
+<br>
+
+
+{% endblock body %}

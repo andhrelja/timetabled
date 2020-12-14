@@ -5,15 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timetabled</title>
+    <link rel="icon" href="{% static 'images/timetabled_icon.png' %}">
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel='stylesheet' type='text/css' media='screen' href='{% static "css/style.css" %}'>
+    <link rel='stylesheet' type='text/css' media='screen' href='{% static "css/navigation.css" %}'>
+    {% comment %}
+    <link rel='stylesheet' type='text/css' media='screen' href='{% static "css/tables.css" %}'>
+    {% endcomment %}
 </head>
 <body>
-    {% block body %}
-    {% endblock body %}
+    <div class="wrapper">
+
+    {% include 'partials/sidenav.html' %}
+    <div id="content" class="active">
+        {% include 'partials/main_navbar.html' %}
+
+        {% block body %}
+        {% endblock body %}
+    </div>
+    </div>
 </body>
 
 <script src="https://kit.fontawesome.com/4951590161.js" crossorigin="anonymous"></script>

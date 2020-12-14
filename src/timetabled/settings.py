@@ -32,12 +32,16 @@ INSTALLED_APPS = [
     
     # Created Apps
     'accounts.apps.AccountsConfig',
+    'activities_score.apps.ActivitiesScoreConfig',
     'activities_class.apps.ActivitiesClassConfig',
     'activities_group.apps.ActivitiesGroupConfig',
-    'activities_score.apps.ActivitiesScoreConfig',
+    'activities_calendar.apps.ActivitiesCalendarConfig',
     'materials_score.apps.MaterialsScoreConfig',
     'departments.apps.DepartmentsConfig',
     'subjects.apps.SubjectsConfig',
+
+    # Third pary
+    #'django_extensions',
 ]
 
 MIDDLEWARE = [
@@ -75,18 +79,18 @@ WSGI_APPLICATION = 'timetabled.wsgi.application'
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
+    'local': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'timetabled',
         'USER': 'andrea',
         'PASSWORD': 'user',
         'HOST': 'localhost'
     },
-    'heroku': {
+    'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'df16bkol28mnf5',
-        'USER': 'lxdgrdhrhvktov',
-        'PASSWORD': '745f756d4bebdd340156e286d78894cb5cd7acb8297b1c820efca07bdfb93c67',
+        'NAME': 'd752f1bihll8hq',
+        'USER': 'cjhwxfatsglikf',
+        'PASSWORD': 'd63ed365ec6985ca83341425f013eb0e2a63f0dc60a828f4431ee6409cc519fe',
         'HOST': 'ec2-176-34-97-213.eu-west-1.compute.amazonaws.com'
     }
 }

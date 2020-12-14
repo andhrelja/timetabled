@@ -8,8 +8,8 @@ Datum|Vrijeme|Prostor|Tema|Nastava|Bodovi|Izvođač
 27.10.2020.|08:30 - 10:00|S32|Rješavanje problema linearnog programiranja pomoću simpleks metode: nalaženje maksimuma.|P||doc. dr. sc. Martina Holenko Dlab
 27.10.2020.|10:15 - 11:45|O-350|Rješavanje problemskih zadataka alatom LPSolve.|V||doc. dr. sc. Martina Holenko Dlab
 03.11.2020.|08:30 - 10:00|S32|Rješavanje problema linearnog programiranjapomoću simpleks metode: nalaženje minimuma i alternativnih rješenja.|P||doc. dr. sc. Martina Holenko Dlab
-03.11.2020.|10:15 - 11:45|O-350|Rješavanje problemskih zadataka alatom LPSolve i priprema za 1. kolokvij (DZ).|Z|5|doc. dr. sc. Martina Holenko Dlab
-10.11.2020.|08:00 - 11:45|O-350|1. kolokvij|Z|25|doc. dr. sc. Martina Holenko Dlab
+03.11.2020.|10:15 - 11:45|O-350|Rješavanje problemskih zadataka alatom LPSolve i priprema za 1. kolokvij (DZ).|dz|5|doc. dr. sc. Martina Holenko Dlab
+10.11.2020.|08:00 - 11:45|O-350|1. kolokvij|k|25|doc. dr. sc. Martina Holenko Dlab
 17.11.2020.|08:30 - 10:00|S32|Modeliranje složenijih problema LP.|P||doc. dr. sc. Martina Holenko Dlab
 17.11.2020.|10:15 - 11:45|O-350|Rješavanje problemskih zadataka: izrada složenijih modela problema LP.|V||doc. dr. sc. Martina Holenko Dlab
 24.11.2020.|08:30 - 10:00|S32|Degeneracija.|P||doc. dr. sc. Martina Holenko Dlab
@@ -20,14 +20,14 @@ Datum|Vrijeme|Prostor|Tema|Nastava|Bodovi|Izvođač
 08.12.2020.|10:15 - 11:45|O-350|Rješavanje problemskih zadataka: analiza osjetljivosti.|V||doc. dr. sc. Martina Holenko Dlab
 15.12.2020.||online|Primjena i interpretacija rezultata analizeosjetljivosti.|P||doc. dr. sc. Martina Holenko Dlab
 15.12.2020.||online|Priprema za 2. kolokvij (DZ).|V|5|doc. dr. sc. Martina Holenko Dlab
-22.12.2020.|08:00 - 11:45|O-350|2. kolokvij|Z|20|doc. dr. sc. Martina Holenko Dlab
+22.12.2020.|08:00 - 11:45|O-350|2. kolokvij|k|20|doc. dr. sc. Martina Holenko Dlab
 15.12.2020.|08:30 - 10:00|S32|Uvod u transportni problem. Metode za postavljanje početnog rješenja. Metode za testiranje rješenja i pronalaženje optimalnogrješenja.|P||doc. dr. sc. Martina Holenko Dlab
 15.12.2020.|10:15 - 11:45|O-350|Rješavanje problemskih zadataka: transportni problemi.|V||doc. dr. sc. Martina Holenko Dlab
 22.12.2020.|08:30 - 10:00|S32|Degeneracija kod transportnog problema. Posebni slučajevi transportnih problema.|P||doc. dr. sc. Martina Holenko Dlab
 22.12.2020.|10:15 - 11:45|O-350|Rješavanje problemskih zadataka:degeneracija, posebni slučajevi transportnih problema (DZ).|V|5|doc. dr. sc. Martina Holenko Dlab
 12.01.2021.||online|Metode za nalaženje maksimalne vrijednosti funkcije cilja kod transportnog problema.|P||doc. dr. sc. Martina Holenko Dlab
 12.01.2021.||online|Priprema za završni ispit (DZ)|V|10|doc. dr. sc. Martina Holenko Dlab
-09.02.2021.|00:00 - 23:50|online|Završni ispit (1. redoviti rok)|Z|30|doc. dr. sc. Martina Holenko Dlab
-23.02.2021.|00:00 - 23:50|online|Završni ispit (2. redoviti rok)|Z||doc. dr. sc. Martina Holenko Dlab
-23.03.2021.|00:00 - 23:50|online|Završni ispit (1. izvanredni rok)|Z||doc. dr. sc. Martina Holenko Dlab
-07.09.2021.|00:00 - 23:50|online|Završni ispit (2. izvanredni rok)|Z||doc. dr. sc. Martina Holenko Dlab
+09.02.2021.|00:00 - 23:50|online|Završni ispit (1. redoviti rok)||30|doc. dr. sc. Martina Holenko Dlab
+23.02.2021.|00:00 - 23:50|online|Završni ispit (2. redoviti rok)|||doc. dr. sc. Martina Holenko Dlab
+23.03.2021.|00:00 - 23:50|online|Završni ispit (1. izvanredni rok)|||doc. dr. sc. Martina Holenko Dlab
+07.09.2021.|00:00 - 23:50|online|Završni ispit (2. izvanredni rok)|||doc. dr. sc. Martina Holenko Dlab

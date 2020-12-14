@@ -1,19 +1,15 @@
-from itertools import chain
-from django.shortcuts import reverse, redirect, render
-from django.urls import reverse_lazy
-from django.contrib import messages
+from django.contrib.messages.views import SuccessMessageMixin
 from django.views.generic import (
     ListView,
     DetailView,
     FormView
 )
-from django.db.models import Q
 
-from subjects.forms import StudentEnrollForm
-
+from subjects.forms import SubjectEnrollForm
+from accounts.models import StudentSubjects
 from .models import Subject
-from datetime import date
 
+from datetime import date
 
 class SubjectListView(ListView):
     model = Subject
@@ -27,28 +23,30 @@ class SubjectListView(ListView):
 class SubjectDetailView(DetailView):
     model = Subject
 
-class SubjectEnrollView(FormView):
-    form_class = StudentEnrollForm
-    template_name = 'subjects/student_enroll_form.html'
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["today"] = date.today()
+        return context    
+
+class SubjectEnrollView(SuccessMessageMixin, FormView):
+    form_class = SubjectEnrollForm
+    template_name = 'subjects/subject_enroll_form.html'
+    success_url = '/subjects/'
+    success_message = "Kolegiji uspješno upisani"
+
+    def get_form_kwargs(self):
+        kwargs = super(SubjectEnrollView, self).get_form_kwargs()
+        kwargs["request"] = self.request
+        return kwargs
+    
 
     def form_valid(self, form):
+        subject_ids = form.cleaned_data['subjects']
+        for subject_id in subject_ids:
+            student = self.request.user.student
+            subject = Subject.objects.get(id=subject_id)
+
+            ss = StudentSubjects.objects.create(student=student, subject=subject)
+            ss.ingest_points()
         return super(SubjectEnrollView, self).form_valid(form)
-
-
-def enroll(request):
-    student = request.user.student
-    subjects = Subject.objects.filter(program=student.program, optional=True, academic_year=academic_year, semester=semester)
-    subjects = subjects.exclude(id__in=student.subjects.values('id'))
     
-    if request.method == "POST":
-        for subject_id in request.POST.getlist('subject_ids', []):
-            subject = subjects.get(id=subject_id)
-            student.subjects.add(subject)
-            student.save()
-            messages.success(request, "Subject {} successfully enrolled".format(subject))
-        return redirect("subjects:list")
-
-    context = {
-        'subjects': subjects
-    }
-    return render(request, "subjects/enroll_form.html", context)
