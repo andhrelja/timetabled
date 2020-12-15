@@ -1,24 +1,11 @@
-.bg-primary {
-    background-color: #0071BC !important;
-}
-
-.bg-danger {
-    background-color: #FF421D !important;
-}
-
-.bg-secondary {
-    /* background-color: #FE8700 !important; */
-    background-color: #743801 !important;
-}
-
-.bg-info {
-    background-color: #6CBAC6 !important;
-}
 
 .navbar {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 0px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
+.navbar.bg-dark {
+    background-color: #193441 !important;
+}
 
 .wrapper {
     display: flex;
@@ -26,7 +13,7 @@
 }
 
 #sidebar {
-    width: 210px;
+    width: 230px;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -37,18 +24,19 @@
 }
 
 #sidebar.active {
-    margin-left: -210px;
+    margin-left: -230px;
 }
 
 .sidebar-header {
 	color: #fff;
-	margin-left: 4px;
+	margin-left: 0px;
 	padding: 3%;
 }
 
 a[data-toggle="collapse"] {
     position: relative;
 }
+
 
 .dropdown-toggle-down::after {
 	content: "\f107";
@@ -81,7 +69,7 @@ a[data-toggle="collapse"] {
 
 
 #content.active {
-    margin-left: 210px;
+    margin-left: 230px;
     width: 100%;
 }
 
@@ -101,11 +89,11 @@ a[data-toggle="collapse"] {
 }
 
 #sidebar .nav-item {
-	border-left: 4px solid transparent;
+	border-left: 0px solid transparent;
 }
 
 #sidebar .nav-item.active {
-	border-left: 4px solid #fff;
+	border-left: 0px solid #fff;
 }
 
 #sidebar .nav-item.active .nav-link {
@@ -129,30 +117,44 @@ a[data-toggle="collapse"] {
 
 
 
+
 .navbar .nav-item.active .nav-link {
 	color: #1a1a1a !important;
 }
 
 .navbar .nav-link {
-	color:  #343a40 !important;
+	color:  #37393b !important;
 	transition: all 0.3s;
 }
 
 .navbar .nav-link:hover {
-	color: #e6e6e6 !important;
+	color: #37393b !important;
+}
+
+li.nav-item  {
+    border-radius: 0.8em;
+}
+
+.subnav .nav-item .nav-link {
+	color: #d1cece !important;
 }
 
 .subnav .nav-item:hover {
-	background-color: #743801 !important;
+	background-color: #d1cece !important;
 }
 
-.navbar .nav-link:hover {
-	color: #e6e6e6 !important;
+.subnav .nav-item:hover .nav-link {
+	color: #37393b !important;
 }
+
 
 .nav-item.hover-dark {
     box-shadow: 0 0 1px 0px;
     background-image: linear-gradient(#d1cece, #e6e6e6);
+}
+
+.nav-item.hover-dark small {
+    color: #37393b !important;
 }
 
 .nav-item.hover-dark:hover {
@@ -160,14 +162,20 @@ a[data-toggle="collapse"] {
 	background-color: #343a40 !important;
 }
 
+.nav-item.hover-dark:hover small,
+.nav-item.hover-dark:hover h3 {
+    color: #d1cece !important;
+}
+
 .main-navbar {
     flex-flow: row !important;
 }
 
 
+
 @media (max-width: 768px) {
     #sidebar {
-        margin-left: -210px;
+        margin-left: -230px;
     }
     #sidebar.active {
         margin-left: 0px;
@@ -178,33 +186,41 @@ a[data-toggle="collapse"] {
 	}
 
 	#content {
-		margin-left: 210px !important;
+		margin-left: 230px !important;
     }
     
 
 }
 
 
-@media (max-width: 976px) {
-    .nav-item.hover-dark:first-child {
-        border-top-left-radius: 4px;
-        border-top-right-radius: 4px;
+@media (max-width: 580px) {
+    .nav-item.hover-dark:last-child {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
     }
 
-    .nav-item.hover-dark:last-child {
-        border-bottom-left-radius: 4px;
-        border-bottom-right-radius: 4px;
+    .nav-item.hover-dark.second-child {
+        border-radius: 0px;
+    }
+
+    .nav-item.hover-dark:first-child {
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
     }
 }
 
-@media (min-width: 976px) {
-    .nav-item.hover-dark:first-child {
-        border-top-left-radius: 4px;
-        border-bottom-left-radius: 4px;
+@media (min-width: 580px) {
+    .nav-item.hover-dark:last-child {
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
     }
 
-    .nav-item.hover-dark:last-child {
-        border-top-right-radius: 4px;
-        border-bottom-right-radius: 4px;
+    .nav-item.hover-dark.second-child {
+        border-radius: 0px;
+    }
+
+    .nav-item.hover-dark:first-child {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
     }
 }

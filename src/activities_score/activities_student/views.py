@@ -1,4 +1,10 @@
+from django.shortcuts import redirect
+from django.contrib import messages
+from subjects.models import Subject
 from .models import StudentScoreActivity
+from .forms import StudentScoreActivityForm
+
+from django.contrib.messages.views import SuccessMessageMixin
 from django.views.generic import (
     DetailView,
     CreateView,
@@ -19,6 +25,23 @@ class StudentScoreActivityDetailView(DetailView):
         return context
 
 
-class StudentScoreActivityCreateView(CreateView):
+class StudentScoreActivityCreateView(SuccessMessageMixin, CreateView):
     model = StudentScoreActivity
+    form_class = StudentScoreActivityForm
     template_name = "activities_score/score_activity_form.html"
+
+    def form_valid(self, form):
+        self.object = form.save(commit=False)
+        subject_id = self.kwargs.get('subject_pk')
+        self.object.subject = Subject.objects.get(id=subject_id)
+        self.object.student = self.request.user.student
+        self.object.save()
+        messages.success(self.request, "Ispitna aktivnost uspješno unesena")
+        return redirect(self.object.get_absolute_url())
+
+
+class StudentScoreActivityUpdateView(SuccessMessageMixin, UpdateView):
+    model = StudentScoreActivity
+    form_class = StudentScoreActivityForm
+    template_name = "activities_score/score_activity_form.html"
+    success_message = "Ispitna aktivnost uspješno izmijenjena"

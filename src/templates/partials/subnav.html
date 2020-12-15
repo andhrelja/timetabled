@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark" height="20px">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" height="20px" style="">
     <!-- Naslov -->
     <h3 class="navbar-brand h3 font-weight-bold mb-0 p-2" href="#">{{ title }}</h3>
     <!-- End of Naslov -->
@@ -18,7 +18,7 @@
                     <div class="fas-icon subnav">
                         <i class="fas fa-plus-circle text-light" aria-hidden="true"></i>
                     </div>
-                    <span class="text-light">Upiši izborni kolegij</span>
+                    <span>Upiši izborni kolegij</span>
                 </a>
             </li>
             <li class="nav-item">
@@ -26,16 +26,24 @@
                     <div class="fas-icon subnav">
                         <i class="fas fa-book text-light" aria-hidden="true"></i>
                     </div>
-                    <span class="text-light">Materijali</span>
+                    <span>Materijali</span>
                 </a>
             </li>
         {% elif type == "detail" and type_name == "subjects" %}
+            <li class="nav-item">
+                <a class="nav-link d-flex" href="{% url 'activities_score:student-create' subject.id %}">
+                    <div class="fas-icon subnav">
+                        <i class="fas fa-plus-circle text-light" aria-hidden="true"></i>
+                    </div>
+                    <span>Nova ispitna aktivnost</span>
+                </a>
+            </li>
             <li class="nav-item">
                 <a class="nav-link d-flex" href="{% url 'activities_calendar:score-monthly' %}">
                     <div class="fas-icon subnav">
                         <i class="fas fa-clipboard-list text-light" aria-hidden="true"></i>
                     </div>
-                    <span class="text-light">Prikaži sve ispitne aktivnosti</span>
+                    <span>Ispitne aktivnosti</span>
                 </a>
             </li>
             <li class="nav-item">
@@ -43,7 +51,7 @@
                     <div class="fas-icon subnav">
                         <i class="fas fa-list-ul text-light" aria-hidden="true"></i>
                     </div>
-                    <span class="text-light">Prikaži sve neispitne aktivnosti</span>
+                    <span>Nastavne aktivnosti</span>
                 </a>
             </li>
         {% elif type == "detail" and type_name == "activities_class" %}
@@ -52,7 +60,7 @@
                     <div class="fas-icon subnav">
                         <i class="fas fa-pen text-primary" aria-hidden="true"></i>
                     </div>
-                    <span class="text-light">Uredi aktivnost</span>
+                    <span>Uredi aktivnost</span>
                 </a>
             </li>
             <li class="nav-item">
@@ -60,16 +68,16 @@
                     <div class="fas-icon subnav">
                         <i class="fas fa-trash-alt text-danger" aria-hidden="true"></i>
                     </div>
-                    <span class="text-light">Izbriši aktivnost</span>
+                    <span>Izbriši aktivnost</span>
                 </a>
             </li>
         {% elif type == "detail" and type_name == "activities_score" %}
             <li class="nav-item">
-                <a class="nav-link d-flex" href="#{% comment %}{% url 'activities_score:student-update' activity.id %}{% endcomment %}">
+                <a class="nav-link d-flex" href="{{ activity.get_update_url }}">
                     <div class="fas-icon subnav">
                         <i class="fas fa-pen text-primary" aria-hidden="true"></i>
                     </div>
-                    <span class="text-light">Uredi aktivnost</span>
+                    <span>Uredi aktivnost</span>
                 </a>
             </li>
             <li class="nav-item">
@@ -77,7 +85,7 @@
                     <div class="fas-icon subnav">
                         <i class="fas fa-trash-alt text-danger" aria-hidden="true"></i>
                     </div>
-                    <span class="text-light">Izbriši aktivnost</span>
+                    <span>Izbriši aktivnost</span>
                 </a>
             </li>
         {% elif type == "form" %}

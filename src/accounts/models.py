@@ -38,6 +38,21 @@ class Student(models.Model):
             activities += list(subject_class_activities)
         return sorted(activities, key=lambda instance: instance.due_date)
     
+    def score_activities_completed_count(self):
+        completed_count = 0
+        all_score_activities = self.all_score_activities
+        for score_activity in all_score_activities:
+            if score_activity.completed or score_activity.points_accomplished != 0:
+                completed_count += 1
+        return completed_count
+        
+    def class_activities_completed_count(self):
+        completed_count = 0
+        all_class_activities = self.all_class_activities
+        for class_activity in all_class_activities:
+            if class_activity.due_date < date.today():
+                completed_count += 1
+        return completed_count
 
     def upcoming_score_activities(self, days=7):
         activities = list()

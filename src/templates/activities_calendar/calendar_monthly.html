@@ -8,7 +8,7 @@
 
 <table class="table table-bordered" style="table-layout:fixed">
     <thead>
-        <tr>
+        <tr class="bg-light">
         {% for th in header %}
             <th style="width: 60px">{{ th }}</th>
         {% endfor %}
@@ -23,7 +23,7 @@
             {% endwith %}
         {% endfor %}
         </tr>
-        <tr style="height:60px; min-height:60px;">
+        <tr class="bg-light" style="height:60px; min-height:60px;">
         {% for day in week %}
             {% with day|first as date_ %}
             <td class="p-0">

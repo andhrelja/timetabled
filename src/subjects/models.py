@@ -83,7 +83,7 @@ class Subject(models.Model):
 
     
     def activities_score(self):
-        custom_activities = self.studentscoreactivity_set.filter(subject=self, global_activity_id__isnull=True, type=0) \
+        custom_activities = self.studentscoreactivity_set.filter(subject=self, global_activity_id__isnull=True) \
                         .only("id", "due_date", "name", "points_total", "points_accomplished")
         updated_global_activities = self.studentscoreactivity_set.filter(subject=self, global_activity_id__isnull=False) \
                         .only("id", "due_date", "name", "points_total", "points_accomplished")
@@ -94,7 +94,7 @@ class Subject(models.Model):
         return sorted(chain(custom_activities, updated_global_activities, global_activities), key=lambda instance: instance.due_date, reverse=False)
 
     def activities_class(self):
-        custom_activities = self.studentclassactivity_set.filter(subject=self, global_activity_id__isnull=True, type=0) \
+        custom_activities = self.studentclassactivity_set.filter(subject=self, global_activity_id__isnull=True) \
                         .only("id", "due_date", "start_time", "end_time", "name")
         updated_global_activities = self.studentclassactivity_set.filter(subject=self, global_activity_id__isnull=False) \
                         .only("id", "due_date", "start_time", "end_time", "name")

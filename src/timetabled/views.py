@@ -1,5 +1,5 @@
-from django.shortcuts import redirect
+from django.shortcuts import render
 from django.conf import settings
 
 def index(request):
-    return redirect(settings.LOGIN_REDIRECT_URL)
+    return render(request, 'index.html')

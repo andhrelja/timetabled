@@ -1,11 +1,12 @@
 {% load static %}
 
 <!-- Side navigation -->
-<nav id="sidebar" class="bg-primary">
-    <div class="sidebar-header text-center">
-        <img src="{% static 'images/logo_timetabled_white.png' %}" alt="timetabled_logo.png" height="120">
+<nav id="sidebar" class="" style="background: linear-gradient(rgb(26, 41, 128) 0%, rgb(38, 208, 206) 100%); ">
+    <div class="sidebar-header text-center" onclick="location.href='{% url 'subjects:list' %}'" style="cursor:pointer">
+        <img src="{% static 'images/logo_timetabled_clean.png' %}" alt="logo_timetabled_clean.png" height="110">
+        <img src="{% static 'images/timetabled_char_xl.png' %}" alt="timetabled_char_xl.png" height="25">
     </div>
-
+    <br>
     <ul class="list-unstyled components">
         {% comment %}
         <li id="dashboard-nav-item" class="nav-item active">
@@ -108,7 +109,7 @@
                     </a>
                 </li>
                 <li>
-                    <a class="nav-link d-flex dropdown-item" href="#">
+                    <a class="nav-link d-flex dropdown-item" href="{% url 'accounts:logout' %}">
                         <div class="text-center" style="width: 25px">
                             <div class="fas-icon">
                                 <i class="fas fa-sign-out-alt pr-1" aria-hidden="true"></i>

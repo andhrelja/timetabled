@@ -2,15 +2,17 @@
 {% for activity in activities %}
     <li class="list-group-item d-flex justify-content-between align-items-center clickable-row" onclick="location.href='{{ activity.get_absolute_url }}'">
         <div class="text">
-            <p class="mb-0">{{ activity.get_type_display }}</p>
-            <small class="help-text">{{ activity.subject }}</small>
+            <p class="mb-0">{{ activity.subject }}</p>
+            <small class="help-text">{{ activity.get_type_display }}</small>
         </div>
-        {% if activity.points_total >= 10 %}
+        {% if activity.points_total >= 10 and not activity.completed %}
             <span class="badge badge-danger badge-pill">{{ activity.points_total|floatformat }}</span>
-        {% elif activity.points_total < 10 and activity.points_total >= 5 %}
+        {% elif activity.points_total < 10 and activity.points_total >= 5 and not activity.completed %}
             <span class="badge badge-warning badge-pill">{{ activity.points_total|floatformat }}</span>
-        {% elif activity.points_total < 5 %}
+        {% elif activity.points_total < 5 and not activity.completed %}
             <span class="badge badge-primary badge-pill">{{ activity.points_total|floatformat }}</span>
+        {% elif activity.completed %}
+            <span class="badge badge-success badge-pill">{{activity.points_accomplished|floatformat }} / {{activity.points_total|floatformat }}</span>
         {% endif %}
     </li>
 {% empty %}

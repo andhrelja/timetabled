@@ -8,7 +8,7 @@ class StudentScoreActivity(models.Model):
     name        = models.CharField("Naziv", max_length=64)
     location    = models.CharField("Prostor", max_length=128)
     type        = models.IntegerField("Tip aktivnosti", choices=constraints.TYPE_CHOICES)
-    details     = models.TextField("Dodatne informacije", null=True)
+    details     = models.TextField("Dodatne informacije", null=True, blank=True)
 
     points_accomplished = models.FloatField("Ostvareni bodovi", default=0)
     points_total    = models.FloatField("Moguće ostvarivi bodovi", default=0)

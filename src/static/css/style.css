@@ -1,20 +1,15 @@
-.bg-primary {
-    background-color: #0071BC !important;
+* {
+    font-family: 'Inter' sans-serif !important;
 }
 
-.bg-danger {
-    background-color: #FF421D !important;
+p {
+    font-family: 'Inter' sans-serif !important;
 }
 
-.bg-secondary {
-    /* background-color: #FE8700 !important; */
-    background-color: #743801 !important;
-}
 
-.bg-info {
-    background-color: #6CBAC6 !important;
+.bg-dark {
+    background-color: #193441 !important;
 }
-
 
 .fas-icon {
     width: 25px !important;
@@ -23,6 +18,7 @@
 
 #messages {
     position: absolute;
+    z-index: 9999;
     bottom: 1%;
     right: 1%;
 }
@@ -35,6 +31,7 @@
 .card.head {
     border-bottom-left-radius:0; 
     border-bottom-right-radius:0;
+    padding: 2% 0 2% 2%;
 }
 
 
@@ -47,7 +44,7 @@
 }
 
 .clickable-row:hover {
-    background-color: #0071BC;
+    background-color: rgb(26, 41, 128) ;
     color: #e6e6e6;
 }
 
@@ -74,4 +71,11 @@
 .detail-item-group.inline {
     padding-left: 0;
     padding-right: 4%;
+}
+
+.fas-icon-lg {
+    border-radius: 50%;
+    height: 37px;
+    width: 37px;
+    padding: 5px;
 }

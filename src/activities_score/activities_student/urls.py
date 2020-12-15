@@ -4,5 +4,6 @@ from . import views
 
 urlpatterns = [
     path('<int:pk>/detail/',         views.StudentScoreActivityDetailView.as_view(), name="student-detail"),
+    path('<int:pk>/update/',         views.StudentScoreActivityUpdateView.as_view(), name="student-update"),
     path('create/<int:subject_pk>/', views.StudentScoreActivityCreateView.as_view(), name="student-create"),
 ]

@@ -1,18 +1,18 @@
 from django import forms
 from subjects.forms import DateInput, TimeInput
-from .models import GlobalScoreActivity
+from .models import StudentScoreActivity
 
 
-class GlobalScoreActivityForm(forms.ModelForm):
+class StudentScoreActivityForm(forms.ModelForm):
 
     def clean(self):
-        cleaned_data = super(GlobalScoreActivityForm, self).clean()
+        cleaned_data = super(StudentScoreActivityForm, self).clean()
         if cleaned_data.get('start_time') > cleaned_data.get('end_time'):
             self.add_error("end_time", "Neispravan unos početnog ili završnog vremena")
         return cleaned_data
 
     class Meta:
-        model = GlobalScoreActivity
+        model = StudentScoreActivity
         fields = ('name', 'location', 'type', 'details', 'points_accomplished', 'points_total', 'due_date', 'start_time', 'end_time', 'completed')
         widgets = {
             'name':     forms.TextInput(attrs={'class': 'form-control'}),

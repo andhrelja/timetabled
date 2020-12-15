@@ -3,21 +3,22 @@
 
 {% block body %}
 
-{% include 'partials/subjects/navbar.html' with title="Upisani kolegiji" type="list" type_name="subjects" %}
+{% include 'partials/subnav.html' with title="Upisani kolegiji" type="list" type_name="subjects" %}
 
 <div class="container-fluid pt-3">
     <div class="row">
         <div class="col-md-12">
-            <table class="table w-100">
-                <thead class="bg-secondary">
-                    <tr>
-                        <th class="text-light" style="border-right:none">Naziv</th>
+            <div class="card">
+            <table class="table w-100 mb-1">
+                <thead>
+                    <tr class="bg-dark">
+                        <th class="text-light rounded-top" style="border-right:none">Naziv</th>
                         <th class="text-light" style="border-left:none">Ostvareni bodovi</th>
                     </tr>
                 </thead>
                 <tbody>
                 {% for subject in subject_list %}
-                    <tr>
+                    <tr class="bg-light">
                         <td class="clickable-row" onclick="location.href='{% url 'subjects:detail' subject.id %}'">{{ subject.name }}</td>
                         <td>{{ subject.points_accomplished }} / {{ subject.points_total }}</td>
                     </tr>
@@ -26,6 +27,56 @@
                 {% endfor %}
                 </tbody>
             </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid pt-3">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card p-2 m-auto">
+                <small class="font-weight-bold w-100 text-center">
+                        Bodovne aktivnosti
+                </small>
+                <div class="icon-text m-auto p-2">
+                    <div class="fas-icon-lg text-center bg-danger">
+                        <i class="fas fa-clipboard-list text-light fa-lg"></i>
+                    </div>
+                </div>
+                <span class="font-weight-bold w-100 text-center">
+                    {{ score_activities_completed }} / {{ score_activities_total }}
+                </span>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card p-2 m-auto">
+                <small class="font-weight-bold w-100 text-center">
+                        Nastavne aktivnosti
+                </small>
+                <div class="icon-text m-auto p-2">
+                    <div class="fas-icon-lg text-center bg-success">
+                        <i class="fas fa-list-ul text-light fa-lg"></i>
+                    </div>
+                </div>
+                <span class="font-weight-bold w-100 text-center">
+                    {{ class_activities_completed }} / {{ class_activities_total }}
+                </span>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card p-2 m-auto">
+                <small class="font-weight-bold w-100 text-center">
+                        Preostalo dana u semestru
+                </small>
+                <div class="icon-text m-auto p-2">
+                    <div class="fas-icon-lg text-center bg-success">
+                        <i class="fas fa-calendar-day text-light fa-lg"></i>
+                    </div>
+                </div>
+                <span class="font-weight-bold w-100 text-center">
+                    {{ semester_days_remaining.days }}
+                </span>
+            </div>
         </div>
     </div>
 </div>
@@ -33,10 +84,10 @@
     <div class="row">
         <div class="col-md-6">
             <div class="card m-2">
-                <div class="card head bg-dark p-2">
-                    <h5 class="text-light">Nadolazeće ispitne aktivnosti</h5>
-                </div>
                 <div class="card-body">
+                    <div class="card-title">
+                        <h5 class="h5">Nadolazeće ispitne aktivnosti</h5>
+                    </div>
                     {% include 'partials/activities/score_list_snippet.html' with activities=request.user.student.upcoming_score_activities %}
                     <div class="form-buttons text-center">
                         <a href="{% url 'activities_calendar:score-monthly' %}" class="btn btn-sm btn-primary w-100">
@@ -49,10 +100,10 @@
         </div>
         <div class="col-md-6">
             <div class="card m-2">
-                <div class="card head bg-dark p-2">
-                    <h5 class="text-light">Ispitne aktivnosti u zakašnjenju</h5>
-                </div>
                 <div class="card-body">
+                    <div class="card-title">
+                        <h5 class="h5">Ispitne aktivnosti u zakašnjenju</h5>
+                    </div>
                     {% include 'partials/activities/score_list_snippet.html' with activities=request.user.student.past_score_activities %}
                     <div class="form-buttons text-center">
                         <a href="{% url 'activities_calendar:score-monthly' %}" class="btn btn-sm btn-primary w-100">
@@ -67,10 +118,10 @@
     <div class="row">
         <div class="col-md-12">
             <div class="card m-2">
-                <div class="card head bg-dark p-2">
-                    <h5 class="text-light">Nadolazeća predavanja/vježbe</h5>
-                </div>
                 <div class="card-body">
+                    <div class="card-title">
+                        <h5 class="h5">Nadolazeće nastavne aktivnosti</h5>
+                    </div>
                     {% include 'partials/activities/class_list_snippet.html' with activities=request.user.student.upcoming_class_activities %}
                     <div class="form-buttons text-center">
                         <a href="{% url 'activities_calendar:class-monthly' %}" class="btn btn-sm btn-primary w-100">
