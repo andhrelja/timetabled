@@ -64,7 +64,7 @@ class Subject(models.Model):
         today = date.today()
         score_activities = self.activities_score()
         for activity in score_activities:
-            if activity.due_date <= today:
+            if activity.due_date <= today or not activity.completed:
                 yield activity
 
     def upcoming_class_activities(self, days=7):
