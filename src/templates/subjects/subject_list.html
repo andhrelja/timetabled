@@ -1,11 +1,12 @@
 {% extends 'base.html' %}
 
+{% load subjects_extras %}
 
 {% block body %}
 
 {% include 'partials/subnav.html' with title="Upisani kolegiji" type="list" type_name="subjects" %}
 
-<div class="container-fluid pt-3">
+<div class="container-fluid mt-3">
     <div class="row">
         <div class="col-md-12">
             <div class="card">
@@ -20,7 +21,7 @@
                 {% for subject in subject_list %}
                     <tr class="bg-light">
                         <td class="clickable-row" onclick="location.href='{% url 'subjects:detail' subject.id %}'">{{ subject.name }}</td>
-                        <td>{{ subject.points_accomplished }} / {{ subject.points_total }}</td>
+                        <td>{{ subject|points_accomplished:request.user.student|floatformat }} / {{ subject|points_total:request.user.student|floatformat }}</td>
                     </tr>
                 {% empty %}
                     <p>Još nema upisanih kolegija</p>
@@ -30,11 +31,9 @@
             </div>
         </div>
     </div>
-</div>
-<div class="container-fluid pt-3">
-    <div class="row">
-        <div class="col-md-4">
-            <div class="card p-2 m-auto">
+    <div class="row mt-3">
+        <div class="col-sm-4">
+            <div class="card h-100 p-2 m-auto">
                 <small class="font-weight-bold w-100 text-center">
                         Bodovne aktivnosti
                 </small>
@@ -48,8 +47,8 @@
                 </span>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="card p-2 m-auto">
+        <div class="col-sm-4">
+            <div class="card h-100 p-2 m-auto">
                 <small class="font-weight-bold w-100 text-center">
                         Nastavne aktivnosti
                 </small>
@@ -63,8 +62,8 @@
                 </span>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="card p-2 m-auto">
+        <div class="col-sm-4">
+            <div class="card h-100 p-2 m-auto">
                 <small class="font-weight-bold w-100 text-center">
                         Preostalo dana u semestru
                 </small>
@@ -79,11 +78,10 @@
             </div>
         </div>
     </div>
-</div>
-<div class="container-fluid pt-3">
-    <div class="row">
+    <hr>
+    <div class="row mt-3">
         <div class="col-md-6">
-            <div class="card m-2">
+            <div class="card">
                 <div class="card-body">
                     <div class="card-title">
                         <h5 class="h5">Nadolazeće ispitne aktivnosti</h5>
@@ -99,7 +97,7 @@
             </div>
         </div>
         <div class="col-md-6">
-            <div class="card m-2">
+            <div class="card">
                 <div class="card-body">
                     <div class="card-title">
                         <h5 class="h5">Ispitne aktivnosti u zakašnjenju</h5>
@@ -115,9 +113,10 @@
             </div>
         </div>
     </div>
-    <div class="row">
+    <hr>
+    <div class="row mt-3">
         <div class="col-md-12">
-            <div class="card m-2">
+            <div class="card">
                 <div class="card-body">
                     <div class="card-title">
                         <h5 class="h5">Nadolazeće nastavne aktivnosti</h5>

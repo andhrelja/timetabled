@@ -32,6 +32,10 @@ class StudentScoreActivity(models.Model):
         verbose_name_plural = "Global - Bodovne aktivnosti"
 
     @property
+    def points_percentage(self):
+        return self.points_accomplished / self.points_total
+
+    @property
     def duration(self):
         start = timedelta(hours=self.start_time.hour, minutes=self.start_time.minute)
         end = timedelta(hours=self.end_time.hour, minutes=self.end_time.minute)

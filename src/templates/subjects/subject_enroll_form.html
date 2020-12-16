@@ -2,14 +2,14 @@
 
 
 {% block body %}
-{% include 'partials/subjects/navbar.html' with title="Upiši izborne kolegije" type="form" %}
+{% include 'partials/subnav.html' with title="Upiši izborne kolegije" type="form" %}
 {% include 'messages.html' %}
 
-<div class="container-fluid">
+<div class="container-fluid mt-3">
     <div class="row">
         <div class="col-md-12">
             <form method="post" action=""> {% csrf_token %}
-                <div class="card p-2">
+                <div class="card">
                     {% include 'partials/subjects/enroll_form_snippet.html' %}
                 </div>
                 <div class="form-buttons">
@@ -22,5 +22,7 @@
         </div>
     </div>
 </div>
+
+
 
 {% endblock body %}

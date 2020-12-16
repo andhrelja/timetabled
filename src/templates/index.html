@@ -16,21 +16,19 @@
     </head>     
     <body data-spy="scroll" data-target="nav">
         <div class="container-fluid" style="background-color: rgba(52, 152, 219, 0.8);">
-            <div class="row text-center p-5">
+            <div class="row text-center pt-5 pb-5">
                 <div class="col-lg-12">
                     <h2 class="text-light" style="font-size: 20px;">ORGANIZIRAJ SVOJE VRIJEME</h2>
-                    <div class="image-responsive m-auto p-3 pb-5">
-                        <img src="{% static 'images/timetabled_char_xl.png' %}" alt="timetabled_char_xl.png" class="responsive" style="height: 60px; position:relative; margin:0">
+                    <div class="image-responsive m-auto">
+                        <img src="{% static 'images/timetabled_char_xl.png' %}" alt="timetabled_char_xl.png" class="responsive mt-3 mb-5" style="height: 60px; width: auto; position:relative; margin:0">
                     </div>
                 </div>
-                <div class="col-md-6 text-right">
-                    <a href="{% url 'accounts:register' %}" class="btn btn-outline-light btn-outline-lg font-weight-bold" style="width: 35%; border:2px solid #fff; font-size: 13pt;">
-                        REGISTRIRAJ SE
+                <div class="col-md-12">
+                    <a href="{% url 'accounts:register' %}" class="btn btn-outline-light btn-outline-lg mb-2" style="width: 200px; border:2px solid #fff; font-size: 13pt;">
+                        <span class="font-weight-bold">REGISTRIRAJ SE</span>
                     </a>
-                </div>
-                <div class="col-md-6 text-left">
-                    <a href="{% url 'accounts:login' %}" class="btn btn-outline-light btn-outline-lg font-weight-bold" style="width: 35%; border:2px solid #fff; font-size: 13pt;">
-                        PRIJAVI SE
+                    <a href="{% url 'accounts:login' %}" class="btn btn-outline-light btn-outline-lg mb-2" style="width: 200px; border:2px solid #fff; font-size: 13pt;">
+                        <span class="font-weight-bold">PRIJAVI SE</span>
                     </a>
                 </div>
             </div>
@@ -55,16 +53,16 @@
                         Primite obavijest kada krenemo s&nbsp;<strong class="font-weight-bold">radom</strong>
                     </p>
                 </div>
-                <div class="col-lg-12 p-4 mb-5 text-center d-flex">
-                    <div class="form-inline m-auto">
-                        <form method="post" action="#">
-                            <input type="email" name="email" class="form-control-lg text-light bg-dark" required>
-                            <button type="submit" class="btn btn-outline-light btn-lg ml-3">
-                                Pošalji svoj e-mail
-                            </button>
-                        </form>
+            </div>
+            <div class="row">
+                <form method="post" action="#" class="d-flex w-100">
+                    <div class="col-md-12 pb-5 text-center">
+                        <input type="email" name="email" class="form-control-lg text-light bg-dark mb-3" required>
+                        <button type="submit" class="btn btn-outline-light btn-lg">
+                            Pošalji svoj e-mail
+                        </button>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
         <div class="container-fluid bg-warning">

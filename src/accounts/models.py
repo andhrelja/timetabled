@@ -26,7 +26,7 @@ class Student(models.Model):
     def all_score_activities(self):
         activities = list()
         for subject in self.subjects:
-            subject_score_activities = subject.all_score_activities
+            subject_score_activities = subject.all_score_activities(self)
             activities += list(subject_score_activities)
         return sorted(activities, key=lambda instance: instance.due_date)
     
@@ -34,7 +34,7 @@ class Student(models.Model):
     def all_class_activities(self):
         activities = list()
         for subject in self.subjects:
-            subject_class_activities = subject.all_class_activities
+            subject_class_activities = subject.all_class_activities(self)
             activities += list(subject_class_activities)
         return sorted(activities, key=lambda instance: instance.due_date)
     
@@ -57,21 +57,21 @@ class Student(models.Model):
     def upcoming_score_activities(self, days=7):
         activities = list()
         for subject in self.subjects:
-            subject_score_activities = subject.upcoming_score_activities(days)
+            subject_score_activities = subject.upcoming_score_activities(self, days)
             activities += list(subject_score_activities)
         return sorted(activities, key=lambda instance: instance.due_date)
 
     def past_score_activities(self):
         activities = list()
         for subject in self.subjects:
-            subject_score_activities = subject.past_score_activities()
+            subject_score_activities = subject.past_score_activities(self)
             activities += list(subject_score_activities)
         return sorted(activities, key=lambda instance: instance.due_date)
 
     def upcoming_class_activities(self, days=7):
         activities = list()
         for subject in self.subjects:
-            subject_class_activities = subject.upcoming_class_activities(days)
+            subject_class_activities = subject.upcoming_class_activities(self, days)
             activities += list(subject_class_activities)
         return sorted(activities, key=lambda instance: instance.due_date)
     

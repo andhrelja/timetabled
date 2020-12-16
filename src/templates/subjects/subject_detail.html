@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+{% load subject_extras %}
+
 {% block body %}
 {% include 'partials/subnav.html' with title="Kolegij" type="detail" type_name="subjects" %}
 
@@ -54,7 +56,7 @@
                 <h5 class="text-light mb-0">Ispitne aktivnosti</h5>
             </div>
             <div class="card-body">
-                {% include 'partials/activities/score_list_snippet.html' with activities=subject.upcoming_score_activities %}
+                {% include 'partials/activities/score_list_snippet.html' with activities=subject|upcoming_score_activities:request.user.student %}
             </div>
         </div>
     </div>
@@ -64,7 +66,7 @@
                 <h5 class="text-light mb-0">Predavanja / Vježbe</h5>
             </div>
             <div class="card-body">
-                {% include 'partials/activities/class_list_snippet.html' with activities=subject.upcoming_class_activities %}
+                {% include 'partials/activities/class_list_snippet.html' with activities=subject|upcoming_class_activities:request.user.student %}
             </div>
         </div>
     </div>
@@ -79,7 +81,7 @@
                 <h5 class="text-light mb-0">Ispitne aktivnosti</h5>
             </div>
             <div class="card-body">
-                {% include 'partials/activities/score_list_snippet.html' with activities=subject.all_score_activities %}
+                {% include 'partials/activities/score_list_snippet.html' with activities=subject|all_score_activities:request.user.student %}
             </div>
         </div>
     </div>
@@ -89,7 +91,7 @@
                 <h5 class="text-light mb-0">Predavanja / Vježbe</h5>
             </div>
             <div class="card-body">
-                {% include 'partials/activities/class_list_snippet.html' with activities=subject.all_upcoming_class_activities %}
+                {% include 'partials/activities/class_list_snippet.html' with activities=subject|all_upcoming_class_activities:request.user.student %}
             </div>
         </div>
     </div>

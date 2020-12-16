@@ -27,6 +27,10 @@ class GlobalScoreActivity(models.Model):
     class Meta:
         verbose_name = "Global - Bodovna aktivnost"
         verbose_name_plural = "Global - Bodovne aktivnosti"
+    
+    @property
+    def points_percentage(self):
+        return self.points_accomplished / self.points_total
 
     @property
     def duration(self):
