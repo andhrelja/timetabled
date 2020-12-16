@@ -11,30 +11,39 @@
     <link rel='stylesheet' type='text/css' media='screen' href='{% static "css/bootstrap.min.css" %}'>
     <link rel='stylesheet' type='text/css' media='screen' href='{% static "css/style.css" %}'>
 </head>
-<body style="background-color: #0066CC; height: 100vh">
-    <div class="container">
-        <div class="row p-5">
-            <div class="col-md-5" style="padding-top: 100px;">
+<body style="height: 100%;  min-height: 100vh; background: -webkit-linear-gradient(90deg, rgb(84, 51, 255) 0%, rgb(110, 227, 225) 78.9474%, rgb(165, 254, 203) 100%); ">
+    <div class="container-fluid login-container">
+        <div class="row">
+            <div class="col-md-5 text-center">
                 <div class="register-image text-center">
-                    <img src="{% static 'images/logo_timetabled_white.png' %}" alt="timetabled_logo.png" style="max-height: 220px; margin: 0 5%;">
-                    <p class="lead text-light">Registracija</p>
+                    <img src="{% static 'images/logo_timetabled_clean.png' %}" class="login-logo" alt="logo_timetabled_clean.png" style="height: 350px; max-height: 350px; margin: 0;">
+                    <br>
+                    <img src="{% static 'images/timetabled_char_xl.png' %}" alt="timetabled_char_xl.png" style="height: 50px; max-height: 50px; ;margin: 0 5%;">
                 </div>
             </div>
-            <div class="col-md-7">
-                <div class="card p-5">
+            <div class="col-md-7 mt-4">
+                <div class="card p-5 mb-5">
+                    <div class="card-title">
+                        <h5 class="h5 font-weight-bold">Registracija</h5>
+                    </div>
                     <form method="post" action="">
                         {% csrf_token %}
                         {% include 'partials/form_snippet.html' %}
                         <small class="text-danger mb-3">* Sva polja su obavezna</small>
-                        <div class="register-buttons">
-                            <button type="submit" class="btn btn-primary">
-                                <i class="fas fa-arrow-right"></i>
-                                <span>Nastavi</span>
-                            </button>
-                            <span class="pl-3">Već imate račun?</span>
-                            <a href="{% url 'accounts:login' %}" class="btn btn-default">
-                                Prijava
-                            </a>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <button type="submit" class="btn btn-primary">
+                                    <span>Nastavi</span>
+                                </button>
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="d-flex float-right">
+                                    <span class="pr-3">Već imate račun?</span>
+                                    <a href="{% url 'accounts:login' %}" class="btn btn-default btn-outline-dark" style="height: max-content">
+                                        Prijava
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </form>
                 </div>

@@ -80,3 +80,22 @@ p {
     width: 37px;
     padding: 5px;
 }
+
+
+@media (max-width: 580px) {
+    .register-image .login-logo{
+        height: 300px !important;
+    }
+
+}
+
+
+@media (min-width: 580px) {
+    .login-container {
+        margin-top: 5%;
+    }
+
+    .login-container .card {
+        margin-right: 30% !important;
+    }
+}
