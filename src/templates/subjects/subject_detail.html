@@ -5,67 +5,117 @@
 {% block body %}
 {% include 'partials/subnav.html' with title="Kolegij" type="detail" type_name="subjects" %}
 
-<div class="row p-2">
-    <div class="col-lg-12">
-        <div class="card m-2">
-            <div class="card-body">
-                <div class="row mt-3 mb-3">
-                    <div class="col-lg-12">
-                        <h4 class="card-title font-weight-bold mb-3">{{ object.name }}</h4>
-                    </div>
-                    <div class="col m-3">
-                        <div class="detail-item-group">
-                            <h5 class="h5 mb-1">SKRAĆENI NAZIV</h5>
-                            <p class="card-text">{{ object.code }}</p>
+<div class="container-fluid">
+    <div class="row mt-3">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row mt-3 mb-3">
+                        <div class="col-lg-12">
+                            <h4 class="card-title font-weight-bold mb-3">{{ object.name }}</h4>
                         </div>
-                        <div class="detail-item-group">
-                            <h5 class="h5 mb-1">ECTS bodovi</h5>
-                            <p class="card-text">{{ object.ects }}</p>
+                        <div class="col m-3">
+                            <div class="detail-item-group">
+                                <h5 class="h5 mb-1">SKRAĆENI NAZIV</h5>
+                                <p class="card-text">{{ object.code }}</p>
+                            </div>
+                            <div class="detail-item-group">
+                                <h5 class="h5 mb-1">ECTS bodovi</h5>
+                                <p class="card-text">{{ object.ects }}</p>
+                            </div>
+                            <div class="detail-item-group">
+                                <h5 class="h5 mb-1">BOJA</h5>
+                                <p class="card-text text-danger">Crvena</p>
+                            </div>
                         </div>
-                        <div class="detail-item-group">
-                            <h5 class="h5 mb-1">BOJA</h5>
-                            <p class="card-text text-danger">Crvena</p>
-                        </div>
-                    </div>
-                    <div class="col m-3">
-                        <div class="detail-item-group">
-                            <h5 class="h5 mb-1">PROFESOR</h5>
-                            <p class="card-text">{{ object.professor }}</p>
-                        </div>
-                        <div class="detail-item-group">
-                            <h5 class="h5 mb-1">ASISTENT</h5>
-                            <p class="card-text">{{ object.assistant }}</p>
-                        </div>
-                        <div class="detail-item-group">
-                            <h5 class="h5 mb-1">OSTVARENI BODOVI</h5>
-                            <p class="card-text">{{ object.points_accomplished|floatformat }} / {{ object.points_total|floatformat }}</p>
+                        <div class="col m-3">
+                            <div class="detail-item-group">
+                                <h5 class="h5 mb-1">PROFESOR</h5>
+                                <p class="card-text">{{ object.professor }}</p>
+                            </div>
+                            <div class="detail-item-group">
+                                <h5 class="h5 mb-1">ASISTENT</h5>
+                                <p class="card-text">{{ object.assistant }}</p>
+                            </div>
+                            <div class="detail-item-group">
+                                <h5 class="h5 mb-1">OSTVARENI BODOVI</h5>
+                                <p class="card-text">{{ object|points_accomplished:request.user.student|floatformat }} / {{ object|points_total:request.user.student|floatformat }}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="row mt-3 mb-3">
+        <div class="col-sm-4">
+            <div class="card h-100 p-2 m-auto">
+                <small class="font-weight-bold w-100 text-center">
+                        Bodovne aktivnosti
+                </small>
+                <div class="icon-text m-auto p-2">
+                    <div class="fas-icon-lg text-center bg-danger">
+                        <i class="fas fa-clipboard-list text-light fa-lg"></i>
+                    </div>
+                </div>
+                <span class="font-weight-bold w-100 text-center">
+                    {{ score_activities_completed }} / {{ score_activities_total }}
+                </span>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card h-100 p-2 m-auto">
+                <small class="font-weight-bold w-100 text-center">
+                        Nastavne aktivnosti
+                </small>
+                <div class="icon-text m-auto p-2">
+                    <div class="fas-icon-lg text-center bg-success">
+                        <i class="fas fa-list-ul text-light fa-lg"></i>
+                    </div>
+                </div>
+                <span class="font-weight-bold w-100 text-center">
+                    {{ class_activities_completed }} / {{ class_activities_total }}
+                </span>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card h-100 p-2 m-auto">
+                <small class="font-weight-bold w-100 text-center">
+                        Ostvareni postotak
+                </small>
+                <div class="icon-text m-auto p-2">
+                    <div class="fas-icon-lg text-center bg-success">
+                        <i class="fas fa-percentage text-light fa-lg"></i>
+                    </div>
+                </div>
+                <span class="font-weight-bold w-100 text-center">
+                    {{ points_percentage|floatformat }}
+                </span>
+            </div>
+        </div>
+    </div>
 </div>
+
 
 {% include 'partials/subnav.html' with title="Nadolazeće aktivnosti" type="form" type_name="" %}
 
-<div class="row p-2">
+<div class="row mt-3">
     <div class="col-lg-6">
         <div class="card m-2">
-            <div class="card head bg-dark p-2">
-                <h5 class="text-light mb-0">Ispitne aktivnosti</h5>
-            </div>
             <div class="card-body">
+                <div class="card-title">
+                    <h5 class="h5">Ispitne aktivnosti</h5>
+                </div>
                 {% include 'partials/activities/score_list_snippet.html' with activities=subject|upcoming_score_activities:request.user.student %}
             </div>
         </div>
     </div>
     <div class="col-lg-6">
         <div class="card m-2">
-            <div class="card head bg-dark p-2">
-                <h5 class="text-light mb-0">Predavanja / Vježbe</h5>
-            </div>
             <div class="card-body">
+                <div class="card-title">
+                    <h5 class="h5">Nastavne aktivnosti</h5>
+                </div>
                 {% include 'partials/activities/class_list_snippet.html' with activities=subject|upcoming_class_activities:request.user.student %}
             </div>
         </div>
@@ -74,23 +124,23 @@
 
 {% include 'partials/subnav.html' with title="Sve aktivnosti" type="form" type_name="" %}
 
-<div class="row p-2">
+<div class="row mb-3">
     <div class="col-lg-6">
         <div class="card m-2">
-            <div class="card head bg-dark p-2">
-                <h5 class="text-light mb-0">Ispitne aktivnosti</h5>
-            </div>
             <div class="card-body">
+                <div class="card-title">
+                    <h5 class="h5">Ispitne aktivnosti</h5>
+                </div>
                 {% include 'partials/activities/score_list_snippet.html' with activities=subject|all_score_activities:request.user.student %}
             </div>
         </div>
     </div>
     <div class="col-lg-6">
         <div class="card m-2">
-            <div class="card head bg-dark p-2">
-                <h5 class="text-light mb-0">Predavanja / Vježbe</h5>
-            </div>
             <div class="card-body">
+                <div class="card-title">
+                    <h5 class="h5">Nastavne aktivnosti</h5>
+                </div>
                 {% include 'partials/activities/class_list_snippet.html' with activities=subject|all_upcoming_class_activities:request.user.student %}
             </div>
         </div>

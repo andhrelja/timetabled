@@ -28,6 +28,11 @@ class Subject(models.Model):
     csv_file        = models.CharField("DINP - CSV datoteka", null=True, max_length=254)
     
     
+    def points_percentage(self, student):
+        points_accomplished = self.points_accomplished(student)
+        points_total = self.points_total(student)
+        return points_accomplished / points_total
+
     def points_accomplished(self, student):
         score_activities = self.activities_score(student)
         return sum((sa.points_accomplished for sa in score_activities))

@@ -37,8 +37,16 @@ class Student(models.Model):
             subject_class_activities = subject.all_class_activities(self)
             activities += list(subject_class_activities)
         return sorted(activities, key=lambda instance: instance.due_date)
+
+    def subject_score_activities(self, subject):
+        subject_score_activities = subject.all_score_activities(self)
+        return sorted(subject_score_activities, key=lambda instance: instance.due_date)
     
-    def score_activities_completed_count(self):
+    def subject_class_activities(self, subject):
+        subject_class_activities = subject.all_class_activities(self)
+        return sorted(subject_class_activities, key=lambda instance: instance.due_date)
+
+    def all_score_activities_completed_count(self):
         completed_count = 0
         all_score_activities = self.all_score_activities
         for score_activity in all_score_activities:
@@ -46,13 +54,31 @@ class Student(models.Model):
                 completed_count += 1
         return completed_count
         
-    def class_activities_completed_count(self):
+    def all_class_activities_completed_count(self):
         completed_count = 0
         all_class_activities = self.all_class_activities
         for class_activity in all_class_activities:
             if class_activity.due_date < date.today():
                 completed_count += 1
         return completed_count
+
+
+    def subject_score_activities_completed_count(self, subject):
+        completed_count = 0
+        subject_score_activities = self.subject_score_activities(subject)
+        for score_activity in subject_score_activities:
+            if score_activity.completed or score_activity.points_accomplished != 0:
+                completed_count += 1
+        return completed_count
+        
+    def subject_class_activities_completed_count(self, subject):
+        completed_count = 0
+        subject_class_activities = self.subject_class_activities(subject)
+        for class_activity in subject_class_activities:
+            if class_activity.due_date < date.today():
+                completed_count += 1
+        return completed_count
+
 
     def upcoming_score_activities(self, days=7):
         activities = list()

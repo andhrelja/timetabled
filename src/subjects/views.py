@@ -24,10 +24,10 @@ class SubjectListView(ListView):
         context = super(SubjectListView, self).get_context_data(**kwargs)
         student = self.request.user.student
         score_activities_total = len(student.all_score_activities)
-        score_activities_completed = student.score_activities_completed_count()
+        score_activities_completed = student.all_score_activities_completed_count()
 
         class_activities_total = len(student.all_class_activities)
-        class_activities_completed = student.class_activities_completed_count()
+        class_activities_completed = student.all_class_activities_completed_count()
 
         semester_days_remaining = datetime(2021, 2, 28, 0, 0) - datetime.now()
 
@@ -45,9 +45,25 @@ class SubjectDetailView(DetailView):
     model = Subject
 
     def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context["today"] = date.today()
-        return context    
+        context = super(SubjectDetailView, self).get_context_data(**kwargs)
+        student = self.request.user.student
+        score_activities_total = len(student.subject_score_activities(self.object))
+        score_activities_completed = student.subject_score_activities_completed_count(self.object)
+
+        class_activities_total = len(student.subject_class_activities(self.object))
+        class_activities_completed = student.subject_class_activities_completed_count(self.object)
+
+        points_percentage = self.object.points_percentage(student)
+
+        context.update({
+            'score_activities_total':     score_activities_total,
+            'score_activities_completed': score_activities_completed,
+            'class_activities_total':     class_activities_total,
+            'class_activities_completed': class_activities_completed,
+            'points_percentage':          points_percentage,
+            'today': date.today()
+        })
+        return context
 
 class SubjectEnrollView(SuccessMessageMixin, FormView):
     form_class = SubjectEnrollForm
