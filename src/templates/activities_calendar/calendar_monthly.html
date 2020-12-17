@@ -3,7 +3,7 @@
 {% load calendar_extras %}
 
 {% block body %}
-{% include 'partials/subnav.html' with title="Aktivnosti" type="form" %}
+{% include 'partials/subnav.html' with title="Bodovne aktivnosti" type="form" %}
 {% include 'partials/activities/calendar_navbar.html' with calendar_url="activities_calendar:score-monthly-navigate" prev_date=start_date|add_months:-1 next_date=start_date|add_months:1 %}
 
 <table class="table table-bordered" style="table-layout:fixed">
