@@ -2,6 +2,9 @@ from django import template
 from datetime import datetime, timedelta
 from dateutil.relativedelta import relativedelta
 
+TYPES = {
+    'datetime': datetime
+}
 
 register = template.Library()
 
@@ -14,3 +17,7 @@ def add_days(start_date, days):
 def add_months(start_date, months):
     delta = start_date + relativedelta(months=months)
     return datetime.strftime(delta, "%d-%m-%Y")
+
+@register.filter
+def is_instance(obj, type_name):
+    return isinstance(obj, TYPES[type_name])

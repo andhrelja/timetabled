@@ -57,7 +57,7 @@ class EmptyCalendar(dict):
     
     def get_header(self):
         if self.type == 'weekly':
-            return ('', 'Ponedjeljak', 'Utorak', 'Srijeda', 'Četvrtak', 'Petak')
+            return ('Ponedjeljak', 'Utorak', 'Srijeda', 'Četvrtak', 'Petak')
         elif self.type == 'monthly':
             return ('Ponedjeljak', 'Utorak', 'Srijeda', 'Četvrtak', 'Petak', 'Subota', 'Nedjelja')
         elif self.type == 'daily':
@@ -104,14 +104,14 @@ class EmptyCalendar(dict):
                 kwargs = {'hours': int(i / 2), 'minutes': 30}
 
             table_week = list()
-            for j in range(0, 7):
+            for j in range(0, 5):
                 curr_date = _datetime + timedelta(days=j, **kwargs)
                 if curr_date.weekday() == j:
-                    table_week.append(curr_date)
+                    table_week.append([curr_date])
                 else:
-                    table_week.append(None)
+                    table_week.append([None])
             
-            week = [_datetime + timedelta(**kwargs)] + table_week
+            week = [[_datetime + timedelta(**kwargs)]] + table_week
             hours.append(week)
         return hours
 
@@ -172,10 +172,14 @@ class Calendar(EmptyCalendar):
 
     def fill_weekly_table(self):
         for table_week in self.table:
-            for _date in table_week:
-                for activity in self.activities:
-                    if _date == activity.due_date:
-                        self.full_table.append(activity)
+            for i, _date in enumerate(table_week[1:]):
+                if _date[0] is not None:
+                    for activity in self.activities:
+                        if not activity in table_week[i+1] and _date[0].date() == activity.due_date and \
+                            (activity.start_time >= _date[0].time() and activity.end_time <= _date[0].time() \
+                                or activity.start_time <= _date[0].time() and activity.end_time >= _date[0].time()) :
+                            table_week[i+1].append(activity)
+            self.full_table.append(table_week)
 
     def fill_daily_table(self):
         for dt in self.table:
@@ -190,11 +194,10 @@ class Calendar(EmptyCalendar):
 
 
 class CalendarScore(Calendar):
+    type = "monthly"
 
-    def fill_calendar(self):
-        print(self)
-
-
+class CalendarClass(Calendar):
+    type = "weekly"
 
 
 

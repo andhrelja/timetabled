@@ -34,4 +34,5 @@ class GlobalClassActivity(models.Model):
         return reverse('activities_class:global-update', kwargs={"pk": self.pk})
 
     def __str__(self):
-        return self.name.strip()
+        string = "{} - {}".format(self.subject.code, self.get_type_display())
+        return string.strip()

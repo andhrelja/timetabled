@@ -1,7 +1,8 @@
+from django.contrib.auth.decorators import login_required
 from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('monthly/',  views.score_activities_monthly, name="score-monthly"),
-    path('monthly/<str:start>/',  views.score_activities_monthly, name="score-monthly-navigate"),
+    path('monthly/',                login_required(views.score_activities_monthly), name="score-monthly"),
+    path('monthly/<str:start>/',    login_required(views.score_activities_monthly), name="score-monthly-navigate"),
 ]

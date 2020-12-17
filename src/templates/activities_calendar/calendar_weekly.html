@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% load calendar_extras %}
+
+{% block body %}
+{% include 'partials/subnav.html' with title="Nastavne aktivnosti" type="form" %}
+{% include 'partials/activities/calendar_navbar.html' with type="weekly" calendar_url="activities_calendar:class-weekly-navigate" prev_date=start_date|add_days:-7 next_date=start_date|add_days:7 %}
+
+<table class="table table-bordered" style="table-layout:fixed">
+    <thead>
+        <tr class="bg-light">
+            <th style="width: 20px"></th>
+        {% for th in header %}
+            <th style="width: 60px">{{ th }}</th>
+        {% endfor %}
+        </tr>
+    </thead>
+    <tbody>
+    {% for hour_of_day in full_table %}
+        <tr class="bg-light">
+        {% with hour_of_day|first as first_column %}
+            <td class="text-center p-0" style="width: 20px">
+                {{ first_column.0|date:"H:i" }}
+            </td>
+        
+            {% for day in hour_of_day %}
+                {% if not forloop.counter0 == 0 %}
+
+                <td class="p-0" style="min-height: 40px; height: 40px">
+                
+                {% for activity in day %}
+                    {% if not activity|is_instance:"datetime" %}
+                    <div title="{{ activity.subject }} ({{ activity.start_time }} - {{ activity.end_time }})" onclick="location.href='{{ activity.get_absolute_url }}'" class="d-flex clickable-row">
+                        <div class="fas-icon subnav">
+                            {% if activity.completed %}
+                            <i class="fas fa-check-circle text-success" aria-hidden="true"></i>
+                            {% else %}
+                            <i class="fas fa-exclamation-circle text-warning" aria-hidden="true"></i>
+                            {% endif %}
+                        </div>
+                        <span class="font-weight-bold">{{ activity }}</span>
+                    </div>
+                    {% endif %}
+                {% endfor %}
+                </td>
+                {% endif %}
+            {% endfor %}
+        {% endwith %}
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+
+<br>
+
+
+{% endblock body %}

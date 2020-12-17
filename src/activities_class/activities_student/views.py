@@ -1,4 +1,5 @@
 from .models import StudentClassActivity
+from .forms import StudentClassActivityForm
 from django.views.generic import (
     DetailView,
     CreateView,
@@ -20,4 +21,9 @@ class StudentClassActivityDetailView(DetailView):
 
 class StudentClassActivityCreateView(CreateView):
     model = StudentClassActivity
+    template_name = "activities_class/class_activity_form.html"
+
+class StudentClassActivityUpdateView(UpdateView):
+    model = StudentClassActivity
+    form_class = StudentClassActivityForm
     template_name = "activities_class/class_activity_form.html"

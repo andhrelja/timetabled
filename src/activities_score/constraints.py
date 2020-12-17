@@ -9,5 +9,6 @@ TYPE_CHOICES = (
     (7, "Projekt"),
     (8, "Rasprava"),
     (9, "Timski rad"),
-    (10, "Ostalo")
+    (10, "Kviz"), 
+    (11, "Ostalo")
 )

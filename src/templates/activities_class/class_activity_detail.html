@@ -10,7 +10,7 @@
                 <div class="d-flex justify-content-between align-items-center mb-2">
                     <h4 class="card-title mb-0">{{ object.subject }} - {{ object.get_type_display }}</h4>
                 </div>
-                <h6 class="card-subtitle mb-2 text-muted">{{ object.due_date|date:"l" }}, {{ object.due_date }} od {{ object.start_time }}</h6>
+                <h6 class="card-subtitle mb-2 text-muted">{{ object.due_date|date:"l" }}, {{ object.due_date }} od {{ object.start_time }}, {{ object.location }}</h6>
                 <p class="card-text">{{ object.details }}</p>
                 <a href="{{ object.subject.get_absolute_url }}" class="card-link">Informacije o kolegiju</a>
             </div>

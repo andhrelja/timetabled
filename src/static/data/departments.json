@@ -89,11 +89,6 @@
                 "name": "Jednopredmetna informatika"
             },
             {
-                "id": 12,
-                "type": "preddiplomski",
-                "name": "Dvopredmetna informatika"
-            },
-            {
                 "id": 13,
                 "type": "diplomski",
                 "name": "Informatika (modul: Poslovna informatika)"
@@ -107,11 +102,6 @@
                 "id": 15,
                 "type": "diplomski",
                 "name": "Informatika (nastavnički smjer)"
-            },
-            {
-                "id": 16,
-                "type": "diplomski",
-                "name": "Informatika (nastavnički smjer) – dvopredmetni studij u kombinaciji sa studijem Filozofskog fakulteta u Rijeci"
             }
         ]
     },

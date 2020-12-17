@@ -45,7 +45,7 @@ class DateTime:
         return self.datetime(_date)
 
     def weekly_end_date(self):
-        _date = self._date + timedelta(days=6)
+        _date = self._date + timedelta(days=4)
         return self.datetime(_date)
 
     def day_name(self):

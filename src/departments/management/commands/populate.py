@@ -46,7 +46,8 @@ TYPE_SWITCH = {
     'pr'    : lambda choice: find_type('Projekt', choice)[0],
     'tr'    : lambda choice: find_type('Timski rad', choice)[0],
     'r'     : lambda choice: find_type('Rasprava', choice)[0],
-    ''     : lambda choice: find_type('Ostalo', choice)[0],
+    'kv'    : lambda choice: find_type('Kviz', choice)[0],
+    ''      : lambda choice: find_type('Ostalo', choice)[0],
 }
 
 class Command(BaseCommand):
@@ -111,6 +112,11 @@ class Command(BaseCommand):
         dictionary_list = self.read_json('subjects.json')
         
         for dictionary in dictionary_list:
+            try:
+                dinp        = dictionary.pop('dinp') # TODO: add dinps to subjects
+            except KeyError:
+                pass
+
             subject_id  = dictionary.pop('id')
             optional    = dictionary.pop('optional')
             program_id  = dictionary.pop('program_id')
@@ -162,8 +168,8 @@ class Command(BaseCommand):
                 if type_key in ('p', 'v', 'p+v'):
                     final_dictionary.pop('points_total')
                     GlobalClassActivity.objects.get_or_create(**final_dictionary)
-                    self.stdout.write(self.style.SUCCESS('[SUCCESS] (Nebodana): "{}" kolegija "{}" uspješno stvorena'.format(final_dictionary['name'], subject.name)))
+                    self.stdout.write(self.style.SUCCESS('[SUCCESS] (Nastavna): "{}" kolegija "{}" uspješno stvorena'.format(final_dictionary['name'], subject.name)))
                 else:
                     GlobalScoreActivity.objects.get_or_create(**final_dictionary)
-                    self.stdout.write(self.style.SUCCESS('[SUCCESS] (Bodovana): "{}" kolegija "{}" uspješno stvorena'.format(final_dictionary['name'], subject.name)))
+                    self.stdout.write(self.style.SUCCESS('[SUCCESS] (Bodovna): "{}" kolegija "{}" uspješno stvorena'.format(final_dictionary['name'], subject.name)))
                 

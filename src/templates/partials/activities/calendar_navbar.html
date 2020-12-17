@@ -24,7 +24,7 @@
         {% if type == "monthly" %}
         <h3 class="navbar-brand h3 font-weight-bold mb-0 p-2" href="#">{{ start_date|date:"F, Y" }}</h3>
         {% elif type == "weekly" %}
-        <h3 class="navbar-brand h3 font-weight-bold mb-0 p-2" href="#">{{ start_date|date:"F, Y" }}</h3>
+        <h3 class="navbar-brand h3 font-weight-bold mb-0 p-2" href="#">{{ start_date|date:"l, d.m." }} - {{ end_date|date:"l, d.m." }}</h3>
         {% elif type == "daily" %}
         <h3 class="navbar-brand h3 font-weight-bold mb-0 p-2" href="#">{{ start_date }} - {{ end_date }}</h3>
         {% endif %}
