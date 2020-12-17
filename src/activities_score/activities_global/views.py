@@ -28,6 +28,12 @@ class GlobalScoreActivityUpdateView(UpdateView):
     form_class = GlobalScoreActivityForm
     template_name = "activities_score/score_activity_form.html"
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["subject"] = self.object.subject
+        return context
+    
+
     def form_valid(self, form):
         self.object = form.save(commit=False)
         student = self.request.user.student

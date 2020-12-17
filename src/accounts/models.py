@@ -120,7 +120,7 @@ class StudentSubjects(models.Model):
     points_total        = models.FloatField("Ukupno bodovi", default=0)
 
     def ingest_points(self):
-        total_points = self.subject.points_total
+        total_points = self.subject.points_total(self.student)
         self.points_total = total_points
         self.save()
 

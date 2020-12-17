@@ -30,6 +30,12 @@ class StudentScoreActivityCreateView(SuccessMessageMixin, CreateView):
     form_class = StudentScoreActivityForm
     template_name = "activities_score/score_activity_form.html"
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        subject_id = self.kwargs.get('subject_pk')
+        context["subject"] = Subject.objects.get(id=subject_id)
+        return context
+
     def form_valid(self, form):
         self.object = form.save(commit=False)
         subject_id = self.kwargs.get('subject_pk')
@@ -45,3 +51,8 @@ class StudentScoreActivityUpdateView(SuccessMessageMixin, UpdateView):
     form_class = StudentScoreActivityForm
     template_name = "activities_score/score_activity_form.html"
     success_message = "Ispitna aktivnost uspješno izmijenjena"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["subject"] = self.object.subject
+        return context

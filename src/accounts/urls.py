@@ -6,7 +6,7 @@ from . import views
 app_name = 'accounts'
 urlpatterns = [
     path("register/",   views.UserCreateView.as_view(),                     name="register"),
-    path("student/",    login_required(views.StudentSetupView.as_view()),   name="student-setup"),
+    path("setup/",      login_required(views.StudentSetupView.as_view()),   name="student-setup"),
     path("logout/",     login_required(LogoutView.as_view()),               name="logout"),
     path("login/",      views.LoginView.as_view(),                          name="login"),
 

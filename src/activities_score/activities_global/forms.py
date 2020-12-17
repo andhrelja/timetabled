@@ -13,7 +13,7 @@ class GlobalScoreActivityForm(forms.ModelForm):
 
     class Meta:
         model = GlobalScoreActivity
-        fields = ('name', 'location', 'type', 'details', 'points_accomplished', 'points_total', 'due_date', 'start_time', 'end_time', 'completed')
+        fields = ('name', 'location', 'type', 'details', 'points_accomplished', 'points_total', 'completed', 'due_date', 'start_time', 'end_time')
         widgets = {
             'name':     forms.TextInput(attrs={'class': 'form-control'}),
             'location': forms.TextInput(attrs={'class': 'form-control'}),
@@ -21,9 +21,9 @@ class GlobalScoreActivityForm(forms.ModelForm):
             'details':  forms.Textarea(attrs={'class': 'form-control'}),
             'points_accomplished':  forms.NumberInput(attrs={'class': 'form-control'}),
             'points_total':         forms.NumberInput(attrs={'class': 'form-control'}),
+            'completed':    forms.CheckboxInput(attrs={'class': 'form-control'}),
             'due_date':     DateInput(attrs={'class': 'form-control'}),
             'start_time':   TimeInput(attrs={'class': 'form-control'}),
             'end_time':     TimeInput(attrs={'class': 'form-control'}),
             'subject':      forms.TextInput(attrs={'class': 'form-control'}),
-            'completed':    forms.CheckboxInput(attrs={'class': 'form-control'}),
         }

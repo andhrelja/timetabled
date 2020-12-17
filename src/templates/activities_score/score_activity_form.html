@@ -7,9 +7,12 @@
 
 <div class="container-fluid">
     <div class="row mt-3">
-        <div class="col-md-12">
+        <div class="col-md-12 mb-3">
             <form method="post" action=""> {% csrf_token %}
-                <div class="card p-3">
+                <div class="card activity-form">
+                    <div class="card-title">
+                        <h5 class="h5 font-weight-bold mb-4">{{ subject }}</h5>
+                    </div>
                     {% include 'partials/form_snippet.html' %}
                 </div>
                 <div class="form-buttons">

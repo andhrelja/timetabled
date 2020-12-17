@@ -9,12 +9,11 @@
     <div class="row">
         <div class="col-md-12">
             <form method="post" action=""> {% csrf_token %}
-                <div class="card">
+                <div class="card pb-0">
                     {% include 'partials/subjects/enroll_form_snippet.html' %}
                 </div>
                 <div class="form-buttons">
                     <button type="submit" class="btn btn-primary">
-                        <i class="fas fa-arrow-right"></i>
                         <span>Upiši kolegije</span>
                     </button>
                 </div>

@@ -1,4 +1,6 @@
 from django.contrib.messages.views import SuccessMessageMixin
+from django.shortcuts import redirect, render
+from django.conf import settings
 from django.views.generic import (
     ListView,
     DetailView,
@@ -13,6 +15,12 @@ from datetime import date, datetime
 
 class SubjectListView(ListView):
     model = Subject
+
+    def get(self, request, *args, **kwargs):
+        if request.user.is_authenticated and not request.user.student:
+            return redirect('accounts:student-setup')
+        else:
+            return super(SubjectListView, self).get(request, *args, **kwargs)
 
     def get_queryset(self):
         student         = self.request.user.student
