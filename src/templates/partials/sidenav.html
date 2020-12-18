@@ -1,8 +1,8 @@
 {% load static %}
 
 <!-- Side navigation -->
-<nav id="sidebar" class="" style="background: linear-gradient(rgb(26, 41, 128) 0%, rgb(38, 208, 206) 100%); ">
-    <div class="sidebar-header text-center" onclick="location.href='{% url 'subjects:list' %}'" style="cursor:pointer">
+<nav id="sidebar">
+    <div class="sidebar-header text-center" onclick="location.href='{% url 'subjects:list' %}'">
         <img src="{% static 'images/logo_timetabled_clean.png' %}" alt="logo_timetabled_clean.png" height="110">
         <img src="{% static 'images/timetabled_char_xl.png' %}" alt="timetabled_char_xl.png" height="25">
     </div>
@@ -20,16 +20,16 @@
             </a>
         </li>
         {% endcomment %}
-        <li id="subjects-nav-item" class="nav-item d-flex">
-            <div class="link" style="width: 80%">
+        <li id="subjectsDropdownButton" class="nav-item d-flex">
+            <div class="link" style="width: 85%">
                 <a class="nav-link d-flex" href="#subjectsDropdown" data-toggle="collapse" aria-expanded="false" >
                     <div class="fas-icon">
                         <i class="fas fa-graduation-cap pr-1" aria-hidden="true"></i>
                     </div>
-                    <span>Moji kolegiji</span>
+                    <span class="pl-2">Moji kolegiji</span>
                 </a>
             </div>
-            <div class="caret m-auto text-center" style="width: 20%">
+            <div class="caret m-auto text-center" style="width: 15%">
                 <a class="" href="#subjectsDropdown" data-toggle="collapse" aria-expanded="false" >
                     <div class="fas-icon">
                         <i class="fas fa-angle-down text-light w-100 h-100"></i>
@@ -53,16 +53,16 @@
                 {% endfor %}
             </ul>
         </li>
-        <li id="activities-nav-item" class="nav-item d-flex">
-            <div class="link" style="width: 80%">
+        <li id="activitiesDropdownButton" class="nav-item d-flex">
+            <div class="link" style="width: 85%">
                 <a class="nav-link d-flex" href="#activitiesDropdown" data-toggle="collapse" aria-expanded="false" >
                     <div class="fas-icon">
                         <i class="fas fa-calendar-alt pr-1" aria-hidden="true"></i>
                     </div>
-                    <span>Kalendari</span>
+                    <span class="pl-2">Kalendari</span>
                 </a>
             </div>
-            <div class="caret m-auto text-center" style="width: 20%">
+            <div class="caret m-auto text-center" style="width: 15%">
                 <a class="" href="#activitiesDropdown" data-toggle="collapse" aria-expanded="false" >
                     <div class="fas-icon">
                         <i class="fas fa-angle-down text-light w-100 h-100"></i>
@@ -71,7 +71,7 @@
             </div>
         </li>
         <li class="collapse" id="activitiesDropdown">
-            <ul class="list-unstyled">
+            <ul class="list-unstyled components">
                 <li>
                     <a class="nav-link d-flex dropdown-item" href="{% url 'activities_calendar:score-monthly' %}">
                         <div class="text-center" style="width: 25px">
@@ -100,20 +100,16 @@
             <ul class="list-unstyled">
                 <li>
                     <a class="nav-link d-flex dropdown-item" href="#">
-                        <div class="text-center" style="width: 25px">
-                            <div class="fas-icon">
-                                <i class="fas fa-info pr-1" aria-hidden="true"></i>
-                            </div>
+                        <div class="fas-icon">
+                            <i class="fas fa-info pr-1" aria-hidden="true"></i>
                         </div>
                         <span>Moj račun</span>
                     </a>
                 </li>
                 <li>
                     <a class="nav-link d-flex dropdown-item" href="{% url 'accounts:logout' %}">
-                        <div class="text-center" style="width: 25px">
-                            <div class="fas-icon">
-                                <i class="fas fa-sign-out-alt pr-1" aria-hidden="true"></i>
-                            </div>
+                        <div class="fas-icon">
+                            <i class="fas fa-sign-out-alt pr-1" aria-hidden="true"></i>
                         </div>
                         <span>Odjava</span>
                     </a>
@@ -121,15 +117,15 @@
             </ul>
         </li>
         <li id="accounts-nav-item" class="nav-item d-flex">
-            <div class="link" style="width: 80%">
+            <div class="link" style="width: 85%">
                 <a class="nav-link d-flex" href="#acccountsDropdown" data-toggle="collapse" aria-expanded="false" >
-                    <div class="fas-icon">
-                        <i class="fas fa-user-circle pr-1 fa-lg" aria-hidden="true"></i>
+                    <div class="fas-icon pr-2">
+                        <i class="fas fa-user-circle fa-lg" aria-hidden="true"></i>
                     </div>
-                    <span>{{ user.get_full_name }}</span>
+                    <span class="pl-2">{{ user.get_full_name }}</span>
                 </a>
             </div>
-            <div class="caret m-auto text-center" style="width: 20%">
+            <div class="caret m-auto text-center" style="width: 15%">
                 <a class="" href="#acccountsDropdown" data-toggle="collapse" aria-expanded="false" >
                     <div class="fas-icon">
                         <i class="fas fa-angle-up text-light w-100 h-100"></i>
