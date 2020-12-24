@@ -24,9 +24,7 @@ class SubjectListView(ListView):
 
     def get_queryset(self):
         student         = self.request.user.student
-        academic_year   = self.request.session.get('academic_year')
-        semester        = self.request.session.get('semester')
-        return student.subjects.filter(academic_year=academic_year, semester=semester)
+        return student.subjects
 
     def get_context_data(self, **kwargs):
         context = super(SubjectListView, self).get_context_data(**kwargs)
@@ -91,7 +89,7 @@ class SubjectEnrollView(SuccessMessageMixin, FormView):
             student = self.request.user.student
             subject = Subject.objects.get(id=subject_id)
 
-            ss = StudentSubjects.objects.create(student=student, subject=subject)
-            ss.ingest_points()
+            ss = StudentSubjects.objects.create(student=student, subject=subject, academic_year=subject.academic_year)
+            ss.ingest_points(subject, student)
         return super(SubjectEnrollView, self).form_valid(form)
     

@@ -1,6 +1,6 @@
 from django.core.management.base import BaseCommand
 from django.conf import settings
-from datetime import datetime
+from datetime import datetime, timedelta, date
 import json
 import csv
 
@@ -9,6 +9,7 @@ from activities_class.activities_global.models import GlobalClassActivity
 from activities_score.constraints import TYPE_CHOICES as SCORE_TYPE_CHOICES
 from activities_score.activities_global.models import GlobalScoreActivity
 
+from accounts.models import Student, StudentSubjects
 from subjects.models import Subject, SubjectPrograms
 from departments.models import (
     University,
@@ -24,8 +25,8 @@ VALIDATE_ACTIVITIES = {
     'details'    : lambda details      : details.strip(),
     'subject'    : lambda subject      : subject,
     'due_date'   : lambda datum        : datetime.strptime(datum, '%d.%m.%Y.'),
-    'start_time' : lambda time_string  : time_string.split('-')[0].strip() if time_string != '' else '10:15',
-    'end_time'   : lambda time_string  : time_string.split('-')[1].strip() if time_string != '' else '11:45',
+    'start_time' : lambda time_string  : time_string.split('-')[0].strip(),
+    'end_time'   : lambda time_string  : time_string.split('-')[1].strip(),
     'type'       : lambda type_key, choice : TYPE_SWITCH[type_key](choice)[0],
     'points_total' : lambda points_total   : float(points_total) if points_total != '' else 0,
 }
@@ -50,15 +51,17 @@ TYPE_SWITCH = {
     ''      : lambda choice: find_type('Ostalo', choice)[0],
 }
 
+
 class Command(BaseCommand):
     help = 'Populates Universities, Departments and Programs for the `departments` app'
 
     def handle(self, *args, **options):
-        self.populate_universities()
-        self.populate_departments()
+        #self.populate_universities()
+        #self.populate_departments()
 
-        self.populate_subjects()
-        self.populate_activities()
+        # self.populate_subjects()
+        # self.populate_activities()
+        self.bind_subjects_students()
     
     def read_json(self, filename):
         json_path = settings.BASE_DIR / 'static' / 'data' / filename
@@ -79,9 +82,9 @@ class Command(BaseCommand):
         for dictionary in dictionary_list:
             obj, created = University.objects.get_or_create(**dictionary)
             if created:
-                self.stdout.write(self.style.SUCCESS('Successfully created university "{}"'.format(obj.code)))
+                self.stdout.write(self.style.SUCCESS('[SUCCESS] University Created "{}"'.format(obj.code)))
             else:
-                self.stdout.write(self.style.SUCCESS('University "{}" already existed'.format(obj.code)))
+                self.stdout.write(self.style.SUCCESS('[NOTICE] University "{}" already existed'.format(obj.code)))
             
 
     def populate_departments(self):
@@ -91,9 +94,9 @@ class Command(BaseCommand):
             programs = dictionary.pop('programs')
             obj, created = Department.objects.get_or_create(**dictionary)
             if created:
-                self.stdout.write(self.style.SUCCESS('Successfully created department "{}"'.format(obj.code)))
+                self.stdout.write(self.style.SUCCESS('[SUCCESS] Department Created "{}"'.format(obj.code)))
             else:
-                self.stdout.write(self.style.SUCCESS('Department "{}" already existed'.format(obj.code)))
+                self.stdout.write(self.style.SUCCESS('[NOTICE] Department "{}" already existed'.format(obj.code)))
             
             self.populate_programs(programs, obj.id)
         
@@ -103,30 +106,26 @@ class Command(BaseCommand):
             obj, created = Program.objects.get_or_create(
                 department_id=department_id, **dictionary)
             if created:
-                self.stdout.write(self.style.SUCCESS('Successfully created program "{}"'.format(obj.name)))
+                self.stdout.write(self.style.SUCCESS('[SUCCESS] Program Created "{}"'.format(obj.name)))
             else:
-                self.stdout.write(self.style.SUCCESS('Program "{}" already existed'.format(obj.name)))
+                self.stdout.write(self.style.SUCCESS('[NOTICE] Program "{}" already existed'.format(obj.name)))
     
 
     def populate_subjects(self):
         dictionary_list = self.read_json('subjects.json')
         
         for dictionary in dictionary_list:
-            try:
-                dinp        = dictionary.pop('dinp') # TODO: add dinps to subjects
-            except KeyError:
-                pass
-
             subject_id  = dictionary.pop('id')
             optional    = dictionary.pop('optional')
             program_id  = dictionary.pop('program_id')
             program     = Program.objects.get(id=program_id)
+            dictionary['assistant'] = ", ".join(dictionary['assistant'])
             subject, created = Subject.objects.get_or_create(id=subject_id, defaults=dictionary)
 
             if created:
-                self.stdout.write(self.style.SUCCESS('Successfully created subject "{}"'.format(subject.code)))
+                self.stdout.write(self.style.SUCCESS('[SUCCESS] Subject Created "{}"'.format(subject.code)))
             else:
-                self.stdout.write(self.style.SUCCESS('Subject "{}" already existed'.format(subject.code)))
+                self.stdout.write(self.style.SUCCESS('[NOTICE] Subject "{}" already existed'.format(subject.code)))
             
             SubjectPrograms.objects.get_or_create(subject=subject, program=program, optional=optional)
 
@@ -145,7 +144,7 @@ class Command(BaseCommand):
                 else:
                     choice = None
                     raise ValueError("Unknown activity type:", type_key)
-     
+                
                 stage_dictionary = {
                     'name'       : "{} - {}".format(TYPE_SWITCH[type_key](choice)[1], dictionary['Prostor']),
                     'location'   : dictionary['Prostor'],
@@ -153,17 +152,50 @@ class Command(BaseCommand):
                     'details'    : dictionary['Tema'],
                     'subject'    : subject,
                     'due_date'   : dictionary['Datum'],
-                    'start_time' : dictionary['Vrijeme'],
-                    'end_time'   : dictionary['Vrijeme'],
                     'points_total' : dictionary['Bodovi']
                 }
 
+                vrijeme_ukupno = dictionary['Vrijeme']
+                if vrijeme_ukupno == '':
+                    if type_key in ('p', 'p+v'):
+                        start_time = subject.predavanja_vrijeme
+                        tdelta = subject.predavanja_trajanje
+                    elif type_key == 'v':
+                        start_time = subject.vjezbe_vrijeme
+                        tdelta = subject.vjezbe_trajanje
+                    else:
+                        start_time = subject.vjezbe_vrijeme
+                        tdelta = subject.vjezbe_trajanje
+                    end_time = datetime.combine(date(1, 1, 1), start_time) + tdelta
+
+                    stage_dictionary.update({
+                        'start_time' : start_time,
+                        'end_time'   : end_time
+                    })
+                else:
+                    stage_dictionary.update({
+                        'start_time' : dictionary['Vrijeme'],
+                        'end_time'   : dictionary['Vrijeme']
+                    })
+
+
+
                 final_dictionary = dict()
                 for key, value in stage_dictionary.items():
-                    if key == 'type':
-                        final_dictionary[key] = VALIDATE_ACTIVITIES[key](value, choice)
+                    if type_key not in ('p', 'v', 'p+v') and dictionary['Vrijeme'] != '':
+                        if key == 'type':
+                            final_dictionary['type'] = VALIDATE_ACTIVITIES[key](value, choice)
+                        else:
+                            final_dictionary[key] = VALIDATE_ACTIVITIES[key](value)
                     else:
-                        final_dictionary[key] = VALIDATE_ACTIVITIES[key](value)
+                        if key == 'start_time':
+                            final_dictionary['start_time'] = value
+                        elif key == 'end_time':
+                            final_dictionary['end_time'] = value
+                        elif key == 'type':
+                            final_dictionary['type'] = VALIDATE_ACTIVITIES[key](value, choice)
+                        else:
+                            final_dictionary[key] = VALIDATE_ACTIVITIES[key](value)
 
                 if type_key in ('p', 'v', 'p+v'):
                     final_dictionary.pop('points_total')
@@ -172,4 +204,13 @@ class Command(BaseCommand):
                 else:
                     GlobalScoreActivity.objects.get_or_create(**final_dictionary)
                     self.stdout.write(self.style.SUCCESS('[SUCCESS] (Bodovna): "{}" kolegija "{}" uspješno stvorena'.format(final_dictionary['name'], subject.name)))
-                
+        
+        
+    def bind_subjects_students(self):
+        for student in Student.objects.all():
+            subject_ids = SubjectPrograms.objects.filter(program=student.program, optional=False).values_list('subject_id')
+
+            for subject in Subject.objects.filter(id__in=subject_ids):
+                ss, _ = StudentSubjects.objects.get_or_create(subject=subject, student=student, academic_year=2020)
+                ss.ingest_points(subject, student)
+                self.stdout.write(self.style.SUCCESS('[SUCCESS] (Bind) Student: "{}" - Subject: {}" uspješno stvorena'.format(student, subject.name)))

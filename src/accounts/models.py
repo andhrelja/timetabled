@@ -2,7 +2,7 @@ from django.db import models
 from django.urls import reverse
 from itertools import chain
 
-from subjects.models import Subject
+from subjects.models import Subject, ACADEMIC_YEAR_CHOICES
 from datetime import date
 
 # Create your models here.
@@ -18,9 +18,9 @@ class Student(models.Model):
     @property
     def subjects(self):
         subject_ids = set()
-        for ss in self.studentsubjects_set.all():
+        for ss in self.studentsubjects_set.filter():
             subject_ids.add(ss.subject.id)
-        return Subject.objects.filter(id__in=subject_ids)
+        return Subject.objects.filter(id__in=subject_ids, semester=self.get_active_semester())
     
     @property
     def all_score_activities(self):
@@ -101,6 +101,32 @@ class Student(models.Model):
             activities += list(subject_class_activities)
         return sorted(activities, key=lambda instance: instance.due_date)
     
+    def get_active_semester(self):
+        today = date.today()
+
+        if today.month > 9:
+            year = today.year
+            if self.studying_year == 1:
+                semester = "1"
+            elif self.studying_year == 2:
+                semester = "3"
+            elif self.studying_year == 3:
+                semester = "5"
+            else:
+                semester = None
+        else:
+            year = today.year - 1
+            if self.studying_year == 1:
+                semester = "2"
+            elif self.studying_year == 2:
+                semester = "5"
+            elif self.studying_year == 3:
+                semester = "6"
+            else:
+                semester = None
+
+        return semester
+
     class Meta:
         verbose_name = "Student"
         verbose_name_plural = "Studenti"
@@ -115,18 +141,22 @@ class StudentSubjects(models.Model):
 
     student = models.ForeignKey("accounts.Student", verbose_name="Student", on_delete=models.CASCADE)
     subject = models.ForeignKey("subjects.Subject", verbose_name="Kolegij", on_delete=models.CASCADE)
+    academic_year = models.IntegerField("Akademska godina", choices=ACADEMIC_YEAR_CHOICES, default=2020)
 
     points_accomplished = models.FloatField("Osvojeni bodovi", default=0)
     points_total        = models.FloatField("Ukupno bodovi", default=0)
 
-    def ingest_points(self):
-        total_points = self.subject.points_total(self.student)
+    def ingest_points(self, subject, student):
+        total_points = subject.points_total(student)
+        self.subject = subject
+        self.student = student
         self.points_total = total_points
         self.save()
 
     class Meta:
         verbose_name = "Student - Kolegiji"
         verbose_name_plural = "Studenti - Kolegiji"
+        unique_together = ['student', 'subject', 'academic_year']
 
 
     def get_absolute_url(self):

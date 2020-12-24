@@ -14,17 +14,37 @@ SEMESTER_CHOICES = (
     ('6', "6. semester"),
 )
 
+DAY_CHOICES = (
+    ('ponedjeljkom', 'Ponedjeljak'),
+    ('utorkom', 'Utorak'),
+    ('srijedom', 'Srijeda'),
+    ('četvrtkom', 'Četvrtak'),
+    ('petkom', 'Petak'),
+    ('subotom', 'Subota'),
+    ('nedjeljom', 'Nedjelja'),
+)
+
 
 class Subject(models.Model):
 
     name            = models.CharField("Naziv", max_length=128)
+    code            = models.CharField("Kod", max_length=14)
     ects            = models.IntegerField("ECTS bodovi")
+
     professor       = models.CharField("Profesor", null=True, max_length=128)
     assistant       = models.CharField("Asistent", null=True, max_length=128)
     #completed       = models.BooleanField("Kolegij završen", default=False)
-    academic_year   = models.IntegerField("Akademska godina", choices=ACADEMIC_YEAR_CHOICES)
     semester        = models.CharField("Semestar", choices=SEMESTER_CHOICES, max_length=1)
-    code            = models.CharField("Kod", max_length=14)
+    academic_year   = models.IntegerField("Akademska godina", choices=ACADEMIC_YEAR_CHOICES)
+    
+    predavanja_dan  = models.CharField("Predavanja - dan u tjednu", choices=DAY_CHOICES, null=True, max_length=64)
+    predavanja_vrijeme  = models.TimeField("Predavanja - vrijeme početka", auto_now=False, null=True, auto_now_add=False)
+    predavanja_trajanje = models.DurationField("Predavanja - trajanje", default="1:30")
+    vjezbe_dan      = models.CharField("Vježbe - dan u tjednu", choices=DAY_CHOICES, null=True, max_length=64)
+    vjezbe_vrijeme      = models.TimeField("Vježbe - vrijeme početka", auto_now=False, null=True, auto_now_add=False)
+    vjezbe_trajanje     = models.DurationField("Vježbe - trajanje", default="1:30")
+
+    dinp_link       = models.CharField("DINP - Download link", null=True, max_length=254)
     csv_file        = models.CharField("DINP - CSV datoteka", null=True, max_length=254)
     
     

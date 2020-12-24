@@ -1,212 +1,226 @@
 [
     {
-        "id": 28,
-        "program_id": 15,
-        "name": "Edukacijska psihologija 1",
-        "code": "EP1",
-        "ects": 5,
-        "professor": "dr. sc. Rosanda Pahljina-Reinić",
-        "assistant": "Martina Bažon ",
+        "naziv": "Edukacijska psihologija 1",
+        "nositelj": "dr. sc. Rosanda Pahljina-Reinić",
         "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/NM/Edukacijska_psihologija_1_20_21.pdf",
         "semestar": 1,
-        "optional": 0,
-        "academic_year": 2020,
-        "csv_file": "dinps/inf/15/Edukacijska_psihologija_1_20_21.csv"
+
+        "predavanja_dan": "četvrtkom",
+        "predavanja_vrijeme": "14:30",
+        "predavanja_trajanje": "1:20",
+        "vjezbe_dan": "ponedjeljkom",
+        "vjezbe_vrijeme": "16:30",
+        "vjezbe_trajanje": "1:40",
+
+        "izborni": false
     },
     {
-        "id": 2,
-        "program_id": 15,
-        "name": "Inteligentni sustavi 1",
-        "code": "IS1",
-        "ects": 5,
-        "professor": "dr. sc. Marina Ivašić-Kos",
-        "assistant": "Kristina Host",
+        "naziv": "Inteligentni sustavi 1",
+        "nositelj": "dr. sc. Marina Ivašić-Kos",
         "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/IS1_DINP_2020_2021_.pdf",
         "semestar": 1,
-        "optional": 0,
-        "academic_year": 2020,
-        "csv_file": "dinps/inf/15/IS1_DINP_2020_2021_.csv"
+
+        "predavanja_dan": "srijedom",
+        "predavanja_vrijeme": "10:15",
+        "predavanja_trajanje": "1:30",
+        "vjezbe_dan": "srijedom",
+        "vjezbe_vrijeme": "08:30",
+        "vjezbe_trajanje": "1:30",
+
+        "izborni": false
     },
     {
-        "id": 3,
-        "program_id": 15,
-        "name": "Operacijska istraživanja 1",
-        "code": "OPI1",
-        "ects": 5,
-        "professor": "doc. dr. sc. Martina Holenko Dlab",
-        "assistant": "doc. dr. sc. Martina Holenko Dlab",
+        "naziv": "Operacijska istraživanja 1",
+        "nositelj": "dr. sc. Martina Holenko Dlab",
         "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/DINP_OPI1_2020_2021.pdf",
         "semestar": 1,
-        "optional": 0,
-        "academic_year": 2020,
-        "csv_file": "dinps/inf/15/DINP_OPI1_2020_2021.csv"
+
+        "predavanja_dan": "utorkom",
+        "predavanja_vrijeme": "08:30",
+        "predavanja_trajanje": "1:30",
+        "vjezbe_dan": "utorkom",
+        "vjezbe_vrijeme": "10:15",
+        "vjezbe_trajanje": "1:30",
+
+        "izborni": false
     },
     {
-        "id": 29,
-        "program_id": 15,
-        "name": "Opća pedagogija",
-        "code": "OPED",
-        "ects": 5,
-        "professor": "dr. sc. Sofija Vrcelj",
-        "assistant": "Ines Begić",
+        "naziv": "Opća pedagogija",
+        "nositelj": "dr. sc. Sofija Vrcelj",
         "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/NM/Opca_pedagogija__20_21.pdf",
         "semestar": 1,
-        "optional": 0,
-        "academic_year": 2020,
-        "csv_file": "dinps/inf/15/Opca_pedagogija__20_21.csv"
+
+        "predavanja_dan": "utorkom",
+        "predavanja_vrijeme": "12:40",
+        "predavanja_trajanje": "1:30",
+        "vjezbe_dan": "srijedom",
+        "vjezbe_vrijeme": "14:15",
+        "vjezbe_trajanje": "3:45",
+
+        "izborni": false
     },
     {
-        "id": 30,
-        "program_id": 15,
-        "name": "Primjena hipermedije u obrazovanju 1",
-        "code": "HMS1",
-        "ects": 5,
-        "professor": "dr. sc. Nataša Hoić-Božić",
-        "assistant": "dr. sc. Nataša Hoić-Božić",
+        "naziv": "Primjena hipermedije u obrazovanju 1",
+        "nositelj": "dr. sc. Nataša Hoić-Božić",
         "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/NM/DINP_HMS1_2020_2021.pdf",
         "semestar": 1,
-        "optional": 0,
-        "academic_year": 2020,
-        "csv_file": "dinps/inf/15/DINP_HMS1_2020_2021.csv"
+
+        "predavanja_dan": "ponedjeljkom",
+        "predavanja_vrijeme": "08:30",
+        "predavanja_trajanje": "1:30",
+        "vjezbe_dan": "ponedjeljkom",
+        "vjezbe_vrijeme": "08:30",
+        "vjezbe_trajanje": "1:30",
+
+        "izborni": false
     },
     {
-        "id": 31,
-        "program_id": 15,
-        "name": "Razvojna psihologija",
-        "code": "RP",
-        "ects": 5,
-        "professor": "dr. sc. Sanja Smojver-Ažić",
-        "assistant": "dr.sc. Sanja Bradić, vanjski suradnik",
+        "naziv": "Razvojna psihologija",
+        "nositelj": "dr. sc. Sanja Smojver-Ažić",
         "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/NM/Razvojna_psihologija_20_21.pdf",
         "semestar": 1,
-        "optional": 0,
-        "academic_year": 2020,
-        "csv_file": "dinps/inf/15/Razvojna_psihologija_20_21.csv"
+
+        "predavanja_dan": "ponedjeljkom",
+        "predavanja_vrijeme": "14:15",
+        "predavanja_trajanje": "1:30",
+        "vjezbe_dan": "četvrtkom/2",
+        "vjezbe_vrijeme": "16:30",
+        "vjezbe_trajanje": "1:40",
+
+        "izborni": false
     },
     {
-        "id": 32,
-        "program_id": 15,
-        "name": "Didaktika 2",
-        "code": "DID2",
-        "ects": 4,
-        "professor": "dr. sc. Vesna Kovač",
-        "assistant": "Petra Berlot",
+        "naziv": "Didaktika 2",
+        "nositelj": "dr. sc. Vesna Kovač",
         "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/NM/Didaktika_2_20_21.pdf",
         "semestar": 3,
-        "optional": 0,
-        "academic_year": 2020,
-        "csv_file": "dinps/inf/15/Didaktika_2_20_21.csv"
+
+        "predavanja_dan": "ponedjeljkom",
+        "predavanja_vrijeme": "14:15",
+        "predavanja_trajanje": "1:30",
+        "vjezbe_dan": "utorkom/2",
+        "vjezbe_vrijeme": "16:15",
+        "vjezbe_trajanje": "3:45",
+
+        "izborni": false
     },
     {
-        "id": 21,
-        "program_id": 15,
-        "name": "Komunikacija čovjek stroj",
-        "code": "KCS",
-        "ects": 6,
-        "professor": "dr. sc. Ivo Ipšić",
-        "assistant": "doc. dr. sc. Miran Pobar",
+        "naziv": "Komunikacija čovjek stroj",
+        "nositelj": "dr. sc. Ivo Ipšić",
+
+        "predavanja_dan": "četvrtkom",
+        "predavanja_vrijeme": "08:30",
+        "predavanja_trajanje": "1:30",
+        "vjezbe_dan": "četvrtkom",
+        "vjezbe_vrijeme": "10:00",
+        "vjezbe_trajanje": "1:30",
+
         "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/2_godina/DINP_KCS_2020_2021.pdf",
         "semestar": 3,
-        "optional": 0,
-        "academic_year": 2020,
-        "csv_file": "dinps/inf/15/DINP_KCS_2020_2021.csv"
+        "izborni": false
     },
     {
-        "id": 33,
-        "program_id": 15,
-        "name": "Metodika nastave informatike 1",
-        "code": "MNI1",
-        "ects": 4,
-        "professor": "dr. sc. Nataša Hoić-Božić",
-        "assistant": "doc. dr. sc. Martina Holenko Dlab",
+        "naziv": "Metodika nastave informatike 1",
+        "nositelj": "dr. sc. Nataša Hoić-Božić",
         "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/NM/DINP_MNI1_2020_2021.pdf",
         "semestar": 3,
-        "optional": 0,
-        "academic_year": 2020,
-        "csv_file": "dinps/inf/15/DINP_MNI1_2020_2021.csv"
+
+        "predavanja_dan": "ponedjeljkom",
+        "predavanja_vrijeme": "10:15",
+        "predavanja_trajanje": "1:30",
+        "vjezbe_dan": "ponedjeljkom",
+        "vjezbe_vrijeme": "10:15",
+        "vjezbe_trajanje": "1:30",
+
+        "izborni": false
     },
     {
-        "id": 34,
-        "program_id": 15,
-        "name": "Osnove jezične kulture",
-        "code": "OJK",
-        "ects": 3,
-        "professor": "dr. sc. Borana Morić-Mohorovičić",
-        "assistant": "doc. dr. sc. Borana Morić-Mohorovičić",
+        "naziv": "Osnove jezične kulture",
+        "nositelj": "dr. sc. Borana Morić-Mohorovičić",
         "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/NM/OJK_20-21.pdf",
         "semestar": 3,
-        "optional": 0,
-        "academic_year": 2020,
-        "csv_file": "dinps/inf/15/21.csv"
+
+        "predavanja_dan": "petkom",
+        "predavanja_vrijeme": "10:15",
+        "predavanja_trajanje": "1:30",
+        "vjezbe_dan": "petkom",
+        "vjezbe_vrijeme": "10:15",
+        "vjezbe_trajanje": "1:30",
+
+        "izborni": false
     },
     {
-        "id": 5,
-        "program_id": 15,
-        "name": "Distribuirani sustavi",
-        "code": "DS",
-        "ects": 5,
-        "professor": "dr. sc. Božidar Kovačić",
-        "assistant": "v. pred. dr. sc. Vedran Miletić",
+        "naziv": "Distribuirani sustavi",
+        "nositelj": "dr. sc. Božidar Kovačić",
         "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/DINP_DS_2020_2021.pdf",
         "semestar": 3,
-        "optional": 1,
-        "academic_year": 2020,
-        "csv_file": "dinps/inf/15/DINP_DS_2020_2021.csv"
+        "predavanja_dan": "utorkom",
+        "predavanja_vrijeme": "12:15",
+        "predavanja_trajanje": "1:30",
+        "vjezbe_dan": "četvrtkom",
+        "vjezbe_vrijeme": "16:15",
+        "vjezbe_trajanje": "1:30",
+
+        "izborni": true
     },
     {
-        "id": 1,
-        "program_id": 15,
-        "name": "Elektroničko gospodarstvo",
-        "code": "EG",
-        "ects": 5,
-        "professor": "dr. sc. Dragan Čišić",
-        "assistant": "doc. dr. sc. Vanja Slavuj",
+        "naziv": "Elektroničko gospodarstvo",
+        "nositelj": "dr. sc. Dragan Čišić",
         "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/DINP_EG_2020_2021.pdf",
         "semestar": 3,
-        "optional": 1,
-        "academic_year": 2020,
-        "csv_file": "dinps/inf/15/DINP_EG_2020_2021.csv"
+
+        "predavanja_dan": "četvrtkom",
+        "predavanja_vrijeme": "10:15",
+        "predavanja_trajanje": "1:30",
+        "vjezbe_dan": "četvrtkom",
+        "vjezbe_vrijeme": "12:15",
+        "vjezbe_trajanje": "1:30",
+
+        "izborni": true
     },
     {
-        "id": 19,
-        "program_id": 15,
-        "name": "Upravljanje informatičkim projektima",
-        "code": "UIP",
-        "ects": 5,
-        "professor": "dr. sc. Sanda Martinčić-Ipšić",
-        "assistant": "Karlo Babić",
+        "naziv": "Upravljanje informatičkim projektima",
+        "nositelj": "dr. sc. Sanda Martinčić-Ipšić",
         "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/2_godina/DINP_UIP_2020_2021.pdf",
         "semestar": 3,
-        "optional": 1,
-        "academic_year": 2020,
-        "csv_file": "dinps/inf/15/DINP_UIP_2020_2021.csv"
+
+        "predavanja_dan": "četvrtkom",
+        "predavanja_vrijeme": "12:00",
+        "predavanja_trajanje": "1:30",
+        "vjezbe_dan": "četvrtkom",
+        "vjezbe_vrijeme": "14:00",
+        "vjezbe_trajanje": "1:30",
+
+        "izborni": true
     },
     {
-        "id": 22,
-        "program_id": 15,
-        "name": "Otkrivanje znanja u podacima",
-        "code": "OZUP",
-        "ects": 5,
-        "professor": "dr. sc. Maja Matetić",
-        "assistant": "mag. educ. math. et inf. Dejan Ljubobratović",
+        "naziv": "Otkrivanje znanja u podacima",
+        "nositelj": "dr. sc. Maja Matetić",
         "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/2_godina/DINP_OZUP_2020_2021.pdf",
         "semestar": 3,
-        "optional": 1,
-        "academic_year": 2020,
-        "csv_file": "dinps/inf/15/DINP_OZUP_2020_2021.csv"
+
+        "predavanja_dan": "petkom",
+        "predavanja_vrijeme": "08:15",
+        "predavanja_trajanje": "1:30",
+        "vjezbe_dan": "petkom",
+        "vjezbe_vrijeme": "10:00",
+        "vjezbe_trajanje": "1:30",
+
+        "izborni": true
     },
     {
-        "id": 6,
-        "program_id": 15,
-        "name": "Objektni programski jezici",
-        "code": "OPJ",
-        "ects": 5,
-        "professor": "dr. sc. Marina Ivašić-Kos",
-        "assistant": "Ivona Franković",
+        "naziv": "Objektni programski jezici",
+        "nositelj": "dr. sc. Marina Ivašić-Kos",
         "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/DINP_OPJ_2020_2021.pdf",
         "semestar": 3,
-        "optional": 1,
-        "academic_year": 2020,
-        "csv_file": "dinps/inf/15/DINP_OPJ_2020_2021.csv"
+
+        "predavanja_dan": "srijedom",
+        "predavanja_vrijeme": "12:15",
+        "predavanja_trajanje": "1:30",
+        "vjezbe_dan": "četvrtkom",
+        "vjezbe_vrijeme": "14:15",
+        "vjezbe_trajanje": "1:30",
+
+        "izborni": true
     }
 ]

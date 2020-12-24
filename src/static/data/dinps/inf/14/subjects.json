@@ -1,0 +1,242 @@
+[
+    {
+        "naziv": "Distribuirani sustavi",
+        "nositelj": "dr. sc. Božidar Kovačić",
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/DINP_DS_2020_2021.pdf",
+        "semestar": 1,
+
+        "predavanja_dan": "utorkom",
+        "predavanja_vrijeme": "12:15",
+        "predavanja_trajanje": "1:30",
+        "vjezbe_dan": "četvrtkom",
+        "vjezbe_vrijeme": "16:15",
+        "vjezbe_trajanje": "1:30",
+
+        "izborni": false
+    },
+    {
+        "naziv": "Inteligentni sustavi 1",
+        "nositelj": "dr. sc. Marina Ivašić-Kos",
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/IS1_DINP_2020_2021_.pdf",
+        "semestar": 1,
+
+        "predavanja_dan": "srijedom",
+        "predavanja_vrijeme": "10:15",
+        "predavanja_trajanje": "1:30",
+        "vjezbe_dan": "srijedom",
+        "vjezbe_vrijeme": "08:30",
+        "vjezbe_trajanje": "1:30",
+
+        "izborni": false
+    },
+    {
+        "naziv": "Objektni programski jezici",
+        "nositelj": "dr. sc. Marina Ivašić-Kos",
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/OPJ_DINP_2020_2021.pdf",
+        "semestar": 1,
+
+        "predavanja_dan": "srijedom",
+        "predavanja_vrijeme": "12:15",
+        "predavanja_trajanje": "1:30",
+        "vjezbe_dan": "četvrtkom",
+        "vjezbe_vrijeme": "14:15",
+        "vjezbe_trajanje": "1:30",
+
+        "izborni": false
+    },
+    {
+        "naziv": "Operacijska istraživanja 1",
+        "nositelj": "dr. sc. Martina Holenko Dlab",
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/DINP_OPI1_2020_2021.pdf",
+        "semestar": 1,
+
+        "predavanja_dan": "utorkom",
+        "predavanja_vrijeme": "08:30",
+        "predavanja_trajanje": "1:30",
+        "vjezbe_dan": "utorkom",
+        "vjezbe_vrijeme": "10:15",
+        "vjezbe_trajanje": "1:30",
+
+        "izborni": false
+    },
+    {
+        "naziv": "Elektroničko gospodarstvo",
+        "nositelj": "dr. sc. Dragan Čišić",
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/DINP_EG_2020_2021.pdf",
+        "semestar": 1,
+
+        "predavanja_dan": "četvrtkom",
+        "predavanja_vrijeme": "10:15",
+        "predavanja_trajanje": "1:30",
+        "vjezbe_dan": "četvrtkom",
+        "vjezbe_vrijeme": "12:15",
+        "vjezbe_trajanje": "1:30",
+
+        "izborni": true
+    },
+    {
+        "naziv": "Programsko inženjerstvo",
+        "nositelj": "dr. sc. Sanja Čandrlić",
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/DINP_PI_2020_2021.pdf",
+        "semestar": 1,
+
+        "predavanja_dan": "petkom",
+        "predavanja_vrijeme": "10:15",
+        "predavanja_trajanje": "1:30",
+        "vjezbe_dan": "petkom",
+        "vjezbe_vrijeme": "10:15",
+        "vjezbe_trajanje": "1:30",
+
+        "izborni": true
+    },
+    {
+        "naziv": "Ekonomika poslovanja",
+        "nositelj": "dr. sc. Borna Debelić",
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/DINP_Ekonomika_poslovanja_2020_2021.pdf",
+        "semestar": 1,
+
+        "predavanja_dan": "utorkom",
+        "predavanja_vrijeme": "14:15",
+        "predavanja_trajanje": "1:30",
+        "vjezbe_dan": "utorkom",
+        "vjezbe_vrijeme": "16:15",
+        "vjezbe_trajanje": "1:30",
+
+        "izborni": true
+    },
+    {
+        "naziv": "Osnove e-obrazovanja",
+        "nositelj": "dr. sc. Nataša Hoić-Božić",
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/DINP_OeO_2020_2021.pdf",
+        "semestar": 1,
+
+        "predavanja_dan": "ponedjeljkom",
+        "predavanja_vrijeme": "08:30",
+        "predavanja_trajanje": "1:30",
+        "vjezbe_dan": "ponedjeljkom",
+        "vjezbe_vrijeme": "08:30",
+        "vjezbe_trajanje": "1:30",
+
+        "izborni": true
+    },
+    {
+        "naziv": "Komunikacija čovjek stroj",
+        "nositelj": "dr. sc. Ivo Ipšić",
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/2_godina/DINP_KCS_2020_2021.pdf",
+        "semestar": 3,
+
+        "predavanja_dan": "četvrtkom",
+        "predavanja_vrijeme": "08:30",
+        "predavanja_trajanje": "1:30",
+        "vjezbe_dan": "četvrtkom",
+        "vjezbe_vrijeme": "10:00",
+        "vjezbe_trajanje": "1:30",
+
+        "izborni": false
+    },
+    {
+        "naziv": "Upravljanje mrežnim sustavima",
+        "nositelj": "dr. sc. Vedran Mietić",
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/2_godina/DINP_UMS_2020_2021.pdf",
+        "semestar": 3,
+
+        "predavanja_dan": "ponedjeljkom",
+        "predavanja_vrijeme": "12:15",
+        "predavanja_trajanje": "1:30",
+        "vjezbe_dan": "ponedjeljkom",
+        "vjezbe_vrijeme": "16:00",
+        "vjezbe_trajanje": "1:30",
+
+        "izborni": false
+    },
+    {
+        "naziv": "Upravljanje znanjem",
+        "nositelj": "dr. sc. Ana Meštrović",
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/2_godina/DINP_UPZ_2020_2021.pdf",
+        "semestar": 3,
+
+        "predavanja_dan": "utorkom",
+        "predavanja_vrijeme": "08:15",
+        "predavanja_trajanje": "1:30",
+        "vjezbe_dan": "utorkom",
+        "vjezbe_vrijeme": "10:00",
+        "vjezbe_trajanje": "1:30",
+
+        "izborni": false
+    },
+    {
+        "naziv": "Informacijska tehnologija i društvo",
+        "nositelj": "dr. sc. Danijela Jakšić",
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/2_godina/DINP_ITID_2020_2021.pdf",
+        "semestar": 3,
+        
+        "predavanja_dan": "srijedom",
+        "predavanja_vrijeme": "10:00",
+        "predavanja_trajanje": "1:30",
+        "vjezbe_dan": "srijedom",
+        "vjezbe_vrijeme": "12:00",
+        "vjezbe_trajanje": "1:30",
+
+        "izborni": false
+    },
+    {
+        "naziv": "Informacijski sustav organizacije",
+        "nositelj": "dr. sc. Mile Pavlić",
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/2_godina/DINP_ISO_2020_2021.pdf",
+        "semestar": 3,
+
+        "predavanja_dan": "petkom",
+        "predavanja_vrijeme": "12:15",
+        "predavanja_trajanje": "1:30",
+        "vjezbe_dan": "petkom",
+        "vjezbe_vrijeme": "14:15",
+        "vjezbe_trajanje": "1:30",
+
+        "izborni": true
+    },
+    {
+        "naziv": "Menadžment i upravljanje",
+        "nositelj": "dr. sc. Patrizia Poščić",
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/2_godina/MIU_DINP_2020_2021.pdf",
+        "semestar": 3,
+
+        "predavanja_dan": "ponedjeljkom",
+        "predavanja_vrijeme": "10:00",
+        "predavanja_trajanje": "1:30",
+        "vjezbe_dan": "ponedjeljkom",
+        "vjezbe_vrijeme": "08:00",
+        "vjezbe_trajanje": "1:30",
+
+        "izborni": true
+    },
+    {
+        "naziv": "Otkrivanje znanja u podacima",
+        "nositelj": "dr. sc. Maja Matetić",
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/2_godina/DINP_OZUP_2020_2021.pdf",
+        "semestar": 3,
+
+        "predavanja_dan": "petkom",
+        "predavanja_vrijeme": "08:15",
+        "predavanja_trajanje": "1:30",
+        "vjezbe_dan": "petkom",
+        "vjezbe_vrijeme": "10:00",
+        "vjezbe_trajanje": "1:30",
+
+        "izborni": true
+    },
+    {
+        "naziv": "Upravljanje informatičkim projektima",
+        "nositelj": "dr. sc. Sanda Martinčić-Ipšić",
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/2_godina/DINP_UIP_2020_2021.pdf",
+        "semestar": 3,
+
+        "predavanja_dan": "ponedjeljkom",
+        "predavanja_vrijeme": "12:15",
+        "predavanja_trajanje": "1:30",
+        "vjezbe_dan": "ponedjeljkom",
+        "vjezbe_vrijeme": "16:00",
+        "vjezbe_trajanje": "1:30",
+
+        "izborni": true
+    }
+]

@@ -6,20 +6,11 @@
         "code": "EG",
         "ects": 6,
         "professor": "dr. sc. Dragan Čišić",
-        "assistant": [
-            "doc. dr. sc. Vanja Slavuj"
-        ],
+        "assistant": ["doc. dr. sc. Vanja Slavuj"],
         "semester": "1",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/14/DINP_EG_2020_2021.csv",
-        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/DINP_EG_2020_2021.pdf",
-        "predavanja_dan": "četvrtkom",
-        "predavanja_vrijeme": "10:15",
-        "predavanja_trajanje": "1:30:00",
-        "vjezbe_dan": "četvrtkom",
-        "vjezbe_vrijeme": "12:15",
-        "vjezbe_trajanje": "1:30:00"
+        "csv_file": "dinps/inf/14/DINP_EG_2020_2021.csv"
     },
     {
         "id": 2,
@@ -28,20 +19,11 @@
         "code": "IS1",
         "ects": 6,
         "professor": "dr. sc. Marina Ivašić-Kos",
-        "assistant": [
-            "Kristina Host"
-        ],
+        "assistant": ["Kristina Host"],
         "semester": "1",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/14/DINP_IS1_2020_2021.csv",
-        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/IS1_DINP_2020_2021_.pdf",
-        "predavanja_dan": "srijedom",
-        "predavanja_vrijeme": "10:15",
-        "predavanja_trajanje": "1:30:00",
-        "vjezbe_dan": "srijedom",
-        "vjezbe_vrijeme": "08:30",
-        "vjezbe_trajanje": "1:30:00"
+        "csv_file": "dinps/inf/14/DINP_IS1_2020_2021.csv"
     },
     {
         "id": 3,
@@ -50,20 +32,11 @@
         "code": "OPI1",
         "ects": 6,
         "professor": "doc. dr. sc. Martina Holenko Dlab",
-        "assistant": [
-            "doc. dr. sc. Martina Holenko Dlab"
-        ],
+        "assistant": ["doc. dr. sc. Martina Holenko Dlab"],
         "semester": "1",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/14/DINP_OPI1_2020_2021.csv",
-        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/DINP_OPI1_2020_2021.pdf",
-        "predavanja_dan": "utorkom",
-        "predavanja_vrijeme": "08:30",
-        "predavanja_trajanje": "1:30:00",
-        "vjezbe_dan": "utorkom",
-        "vjezbe_vrijeme": "10:15",
-        "vjezbe_trajanje": "1:30:00"
+        "csv_file": "dinps/inf/14/DINP_OPI1_2020_2021.csv"
     },
     {
         "id": 4,
@@ -72,20 +45,11 @@
         "code": "PI",
         "ects": 6,
         "professor": "izv. prof. dr. sc. Sanja Čandrlić",
-        "assistant": [
-            "doc. dr. sc. Martina Ašenbrener Katić"
-        ],
+        "assistant": ["doc. dr. sc. Martina Ašenbrener Katić"],
         "semester": "1",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/14/DINP_PI_2020_2021.csv",
-        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/DINP_PI_2020_2021.pdf",
-        "predavanja_dan": "petkom",
-        "predavanja_vrijeme": "10:15",
-        "predavanja_trajanje": "1:30:00",
-        "vjezbe_dan": "petkom",
-        "vjezbe_vrijeme": "10:15",
-        "vjezbe_trajanje": "1:30:00"
+        "csv_file": "dinps/inf/14/DINP_PI_2020_2021.csv"
     },
     {
         "id": 5,
@@ -94,20 +58,11 @@
         "code": "DS",
         "ects": 6,
         "professor": "dr. sc. Božidar Kovačić",
-        "assistant": [
-            "v. pred. dr. sc. Vedran Miletić"
-        ],
+        "assistant": ["v. pred. dr. sc. Vedran Miletić"],
         "semester": "1",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/14/DINP_DS_2020_2021.csv",
-        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/DINP_DS_2020_2021.pdf",
-        "predavanja_dan": "utorkom",
-        "predavanja_vrijeme": "12:15",
-        "predavanja_trajanje": "1:30:00",
-        "vjezbe_dan": "četvrtkom",
-        "vjezbe_vrijeme": "16:15",
-        "vjezbe_trajanje": "1:30:00"
+        "csv_file": "dinps/inf/14/DINP_DS_2020_2021.csv"
     },
     {
         "id": 6,
@@ -116,20 +71,11 @@
         "code": "OPJ",
         "ects": 6,
         "professor": "dr. sc. Marina Ivašić-Kos",
-        "assistant": [
-            "Ivona Franković"
-        ],
+        "assistant": ["Ivona Franković"],
         "semester": "1",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/14/DINP_OPJ_2020_2021.csv",
-        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/DINP_OPJ_2020_2021.pdf",
-        "predavanja_dan": "srijedom",
-        "predavanja_vrijeme": "12:15",
-        "predavanja_trajanje": "1:30:00",
-        "vjezbe_dan": "četvrtkom",
-        "vjezbe_vrijeme": "14:15",
-        "vjezbe_trajanje": "1:30:00"
+        "csv_file": "dinps/inf/14/DINP_OPJ_2020_2021.csv"
     },
     {
         "id": 7,
@@ -138,20 +84,11 @@
         "code": "OeO",
         "ects": 6,
         "professor": "dr. sc. Nataša Hoić-Božić",
-        "assistant": [
-            "dr. sc. Nataša Hoić-Božić"
-        ],
+        "assistant": ["dr. sc. Nataša Hoić-Božić"],
         "semester": "1",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/14/DINP_OeO_2020_2021.csv",
-        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/DINP_OeO_2020_2021.pdf",
-        "predavanja_dan": "ponedjeljkom",
-        "predavanja_vrijeme": "08:30",
-        "predavanja_trajanje": "1:30:00",
-        "vjezbe_dan": "ponedjeljkom",
-        "vjezbe_vrijeme": "08:30",
-        "vjezbe_trajanje": "1:30:00"
+        "csv_file": "dinps/inf/14/DINP_OeO_2020_2021.csv"
     },
     {
         "id": 8,
@@ -160,20 +97,11 @@
         "code": "EP",
         "ects": 6,
         "professor": "dr. sc. Borna Debelić",
-        "assistant": [
-            "Gordana Bugarinović"
-        ],
+        "assistant": ["Gordana Bugarinović"],
         "semester": "1",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/14/DINP_EP_2020_2021.csv",
-        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/DINP_Ekonomika_poslovanja_2020_2021.pdf",
-        "predavanja_dan": "utorkom",
-        "predavanja_vrijeme": "14:15",
-        "predavanja_trajanje": "1:30:00",
-        "vjezbe_dan": "utorkom",
-        "vjezbe_vrijeme": "16:15",
-        "vjezbe_trajanje": "1:30:00"
+        "csv_file": "dinps/inf/14/DINP_EP_2020_2021.csv"
     },
     {
         "id": 9,
@@ -182,9 +110,7 @@
         "code": "IS2",
         "ects": 6,
         "professor": "dr. sc. Maja Matetić",
-        "assistant": [
-            "mag. educ. math. et inf. Dejan Ljubobratović"
-        ],
+        "assistant": ["mag. educ. math. et inf. Dejan Ljubobratović"],
         "semester": "2",
         "optional": 0,
         "academic_year": 2019,
@@ -197,9 +123,7 @@
         "code": "SPIS",
         "ects": 6,
         "professor": "izv. prof. dr. sc. Sanja Čandrlić",
-        "assistant": [
-            "mag. inf. Kristian Stančin"
-        ],
+        "assistant": ["mag. inf. Kristian Stančin"],
         "semester": "2",
         "optional": 0,
         "academic_year": 2019,
@@ -212,9 +136,7 @@
         "code": "MHS",
         "ects": 6,
         "professor": "prof. dr. sc. Nataša Hoić-Božić",
-        "assistant": [
-            "doc. dr. sc. Vanja Slavuj"
-        ],
+        "assistant": ["doc. dr. sc. Vanja Slavuj"],
         "semester": "2",
         "optional": 1,
         "academic_year": 2019,
@@ -227,9 +149,7 @@
         "code": "SP",
         "ects": 6,
         "professor": "prof. dr. sc. Patrizia Poščić",
-        "assistant": [
-            "doc. dr. sc. Danijela Jakšić"
-        ],
+        "assistant": ["doc. dr. sc. Danijela Jakšić"],
         "semester": "2",
         "optional": 1,
         "academic_year": 2019,
@@ -242,9 +162,7 @@
         "code": "ODOGS",
         "ects": 6,
         "professor": "doc. dr. sc. Miran Pobar",
-        "assistant": [
-            "doc. dr. sc. Miran Pobar"
-        ],
+        "assistant": ["doc. dr. sc. Miran Pobar"],
         "semester": "2",
         "optional": 0,
         "academic_year": 2019,
@@ -257,9 +175,7 @@
         "code": "SPO",
         "ects": 6,
         "professor": "dr. sc. Sanda Martinčić-Ipšić",
-        "assistant": [
-            "Karlo Babić"
-        ],
+        "assistant": ["Karlo Babić"],
         "semester": "2",
         "optional": 0,
         "academic_year": 2019,
@@ -272,9 +188,7 @@
         "code": "OPI2",
         "ects": 6,
         "professor": "doc. dr. sc. Martina Holenko Dlab",
-        "assistant": [
-            "doc. dr. sc. Martina Holenko Dlab"
-        ],
+        "assistant": ["doc. dr. sc. Martina Holenko Dlab"],
         "semester": "2",
         "optional": 1,
         "academic_year": 2019,
@@ -287,9 +201,7 @@
         "code": "LOG",
         "ects": 6,
         "professor": "dr. sc. Dragan Čišić",
-        "assistant": [
-            "dr. sc. Dragan Čišić"
-        ],
+        "assistant": ["dr. sc. Dragan Čišić"],
         "semester": "2",
         "optional": 1,
         "academic_year": 2019,
@@ -302,9 +214,7 @@
         "code": "RAPJ",
         "ects": 6,
         "professor": "dr. sc. Sanda Martinčić-Ipšić",
-        "assistant": [
-            "Karlo Babić"
-        ],
+        "assistant": ["Karlo Babić"],
         "semester": "2",
         "optional": 1,
         "academic_year": 2019,
@@ -317,20 +227,11 @@
         "code": "MIU",
         "ects": 6,
         "professor": "dr. sc. Patrizia Poščić",
-        "assistant": [
-            "mag. inf. Kristian Stančin"
-        ],
+        "assistant": ["mag. inf. Kristian Stančin"],
         "semester": "3",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/14/DINP_MIU_2020_2021.csv",
-        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/2_godina/MIU_DINP_2020_2021.pdf",
-        "predavanja_dan": "ponedjeljkom",
-        "predavanja_vrijeme": "10:00",
-        "predavanja_trajanje": "1:30:00",
-        "vjezbe_dan": "ponedjeljkom",
-        "vjezbe_vrijeme": "08:00",
-        "vjezbe_trajanje": "1:30:00"
+        "csv_file": "dinps/inf/14/DINP_MIU_2020_2021.csv"
     },
     {
         "id": 19,
@@ -339,20 +240,11 @@
         "code": "UIP",
         "ects": 6,
         "professor": "dr. sc. Sanda Martinčić-Ipšić",
-        "assistant": [
-            "Karlo Babić"
-        ],
+        "assistant": ["Karlo Babić"],
         "semester": "3",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/14/DINP_UIP_2020_2021.csv",
-        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/2_godina/DINP_UIP_2020_2021.pdf",
-        "predavanja_dan": "četvrtkom",
-        "predavanja_vrijeme": "12:00",
-        "predavanja_trajanje": "1:30:00",
-        "vjezbe_dan": "četvrtkom",
-        "vjezbe_vrijeme": "14:00",
-        "vjezbe_trajanje": "1:30:00"
+        "csv_file": "dinps/inf/14/DINP_UIP_2020_2021.csv"
     },
     {
         "id": 20,
@@ -361,20 +253,11 @@
         "code": "ITID",
         "ects": 6,
         "professor": "dr. cs. Danijela Jakšić",
-        "assistant": [
-            "doc. dr. sc. Danijela Jakšić"
-        ],
+        "assistant": ["doc. dr. sc. Danijela Jakšić"],
         "semester": "3",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/14/DINP_ITID_2020_2021.csv",
-        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/2_godina/DINP_ITID_2020_2021.pdf",
-        "predavanja_dan": "srijedom",
-        "predavanja_vrijeme": "10:00",
-        "predavanja_trajanje": "1:30:00",
-        "vjezbe_dan": "srijedom",
-        "vjezbe_vrijeme": "12:00",
-        "vjezbe_trajanje": "1:30:00"
+        "csv_file": "dinps/inf/14/DINP_ITID_2020_2021.csv"
     },
     {
         "id": 21,
@@ -383,20 +266,11 @@
         "code": "KCS",
         "ects": 6,
         "professor": "dr. sc. Ivo Ipšić",
-        "assistant": [
-            "doc. dr. sc. Miran Pobar"
-        ],
+        "assistant": ["doc. dr. sc. Miran Pobar"],
         "semester": "3",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/14/DINP_KCS_2020_2021.csv",
-        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/2_godina/DINP_KCS_2020_2021.pdf",
-        "predavanja_dan": "četvrtkom",
-        "predavanja_vrijeme": "08:30",
-        "predavanja_trajanje": "1:30:00",
-        "vjezbe_dan": "četvrtkom",
-        "vjezbe_vrijeme": "10:00",
-        "vjezbe_trajanje": "1:30:00"
+        "csv_file": "dinps/inf/14/DINP_KCS_2020_2021.csv"
     },
     {
         "id": 22,
@@ -405,20 +279,11 @@
         "code": "OZUP",
         "ects": 6,
         "professor": "dr. sc. Maja Matetić",
-        "assistant": [
-            "mag. educ. math. et inf. Dejan Ljubobratović"
-        ],
+        "assistant": ["mag. educ. math. et inf. Dejan Ljubobratović"],
         "semester": "3",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/14/DINP_OZUP_2020_2021.csv",
-        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/2_godina/DINP_OZUP_2020_2021.pdf",
-        "predavanja_dan": "petkom",
-        "predavanja_vrijeme": "08:15",
-        "predavanja_trajanje": "1:30:00",
-        "vjezbe_dan": "petkom",
-        "vjezbe_vrijeme": "10:00",
-        "vjezbe_trajanje": "1:30:00"
+        "csv_file": "dinps/inf/14/DINP_OZUP_2020_2021.csv"
     },
     {
         "id": 23,
@@ -427,20 +292,11 @@
         "code": "UMS",
         "ects": 6,
         "professor": "dr. sc. Vedran Miletić",
-        "assistant": [
-            "dr. sc. Vedran Miletić"
-        ],
+        "assistant": ["dr. sc. Vedran Miletić"],
         "semester": "3",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/14/DINP_UMS_2020_2021.csv",
-        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/2_godina/DINP_UMS_2020_2021.pdf",
-        "predavanja_dan": "ponedjeljkom",
-        "predavanja_vrijeme": "12:15",
-        "predavanja_trajanje": "1:30:00",
-        "vjezbe_dan": "ponedjeljkom",
-        "vjezbe_vrijeme": "16:00",
-        "vjezbe_trajanje": "1:30:00"
+        "csv_file": "dinps/inf/14/DINP_UMS_2020_2021.csv"
     },
     {
         "id": 24,
@@ -449,20 +305,11 @@
         "code": "UPZ",
         "ects": 6,
         "professor": "dr. sc. Ana Meštrović",
-        "assistant": [
-            "dr. sc. Slobodan Beliga"
-        ],
+        "assistant": ["dr. sc. Slobodan Beliga"],
         "semester": "3",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/14/DINP_UPZ_2020_2021.csv",
-        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/2_godina/DINP_UPZ_2020_2021.pdf",
-        "predavanja_dan": "utorkom",
-        "predavanja_vrijeme": "08:15",
-        "predavanja_trajanje": "1:30:00",
-        "vjezbe_dan": "utorkom",
-        "vjezbe_vrijeme": "10:00",
-        "vjezbe_trajanje": "1:30:00"
+        "csv_file": "dinps/inf/14/DINP_UPZ_2020_2021.csv"
     },
     {
         "id": 25,
@@ -471,20 +318,11 @@
         "code": "ISO",
         "ects": 6,
         "professor": "dr. sc. Mile Pavlić",
-        "assistant": [
-            "izv. prof. dr. sc. Sanja Čandrlić"
-        ],
+        "assistant": ["izv. prof. dr. sc. Sanja Čandrlić"],
         "semester": "3",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/14/DINP_ISO_2020_2021.csv",
-        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/2_godina/DINP_ISO_2020_2021.pdf",
-        "predavanja_dan": "petkom",
-        "predavanja_vrijeme": "12:15",
-        "predavanja_trajanje": "1:30:00",
-        "vjezbe_dan": "petkom",
-        "vjezbe_vrijeme": "14:15",
-        "vjezbe_trajanje": "1:30:00"
+        "csv_file": "dinps/inf/14/DINP_ISO_2020_2021.csv"
     },
     {
         "id": 26,
@@ -494,7 +332,7 @@
         "ects": 24,
         "professor": "",
         "assistant": "",
-        "semester": "4",
+        "semester": ["4"],
         "optional": 0,
         "academic_year": 2020,
         "csv_file": ""
@@ -506,9 +344,7 @@
         "code": "StrucnaPraksa",
         "ects": 6,
         "professor": "dr. sc. Nataša Hoić-Božić",
-        "assistant": [
-            "dr. sc. Nataša Hoić-Božić"
-        ],
+        "assistant": ["dr. sc. Nataša Hoić-Božić"],
         "semester": "4",
         "optional": 0,
         "academic_year": 2019,
@@ -521,9 +357,7 @@
         "code": "EG",
         "ects": 6,
         "professor": "dr. sc. Dragan Čišić",
-        "assistant": [
-            "doc. dr. sc. Vanja Slavuj"
-        ],
+        "assistant": ["doc. dr. sc. Vanja Slavuj"],
         "semester": "1",
         "optional": 0,
         "academic_year": 2020,
@@ -536,9 +370,7 @@
         "code": "IS1",
         "ects": 6,
         "professor": "dr. sc. Marina Ivašić-Kos",
-        "assistant": [
-            "Kristina Host"
-        ],
+        "assistant": ["Kristina Host"],
         "semester": "1",
         "optional": 0,
         "academic_year": 2020,
@@ -551,9 +383,7 @@
         "code": "OPI1",
         "ects": 6,
         "professor": "doc. dr. sc. Martina Holenko Dlab",
-        "assistant": [
-            "doc. dr. sc. Martina Holenko Dlab"
-        ],
+        "assistant": ["doc. dr. sc. Martina Holenko Dlab"],
         "semester": "1",
         "optional": 0,
         "academic_year": 2020,
@@ -566,9 +396,7 @@
         "code": "PI",
         "ects": 6,
         "professor": "izv. prof. dr. sc. Sanja Čandrlić",
-        "assistant": [
-            "doc. dr. sc. Martina Ašenbrener Katić"
-        ],
+        "assistant": ["doc. dr. sc. Martina Ašenbrener Katić"],
         "semester": "1",
         "optional": 0,
         "academic_year": 2020,
@@ -581,9 +409,7 @@
         "code": "DS",
         "ects": 6,
         "professor": "dr. sc. Božidar Kovačić",
-        "assistant": [
-            "v. pred. dr. sc. Vedran Miletić"
-        ],
+        "assistant": ["v. pred. dr. sc. Vedran Miletić"],
         "semester": "1",
         "optional": 1,
         "academic_year": 2020,
@@ -596,9 +422,7 @@
         "code": "OPJ",
         "ects": 6,
         "professor": "dr. sc. Marina Ivašić-Kos",
-        "assistant": [
-            "Ivona Franković"
-        ],
+        "assistant": ["Ivona Franković"],
         "semester": "1",
         "optional": 1,
         "academic_year": 2020,
@@ -611,9 +435,7 @@
         "code": "OeO",
         "ects": 6,
         "professor": "dr. sc. Nataša Hoić-Božić",
-        "assistant": [
-            "dr. sc. Nataša Hoić-Božić"
-        ],
+        "assistant": ["dr. sc. Nataša Hoić-Božić"],
         "semester": "1",
         "optional": 1,
         "academic_year": 2020,
@@ -626,9 +448,7 @@
         "code": "EP",
         "ects": 6,
         "professor": "dr. sc. Borna Debelić",
-        "assistant": [
-            "Gordana Bugarinović"
-        ],
+        "assistant": ["Gordana Bugarinović"],
         "semester": "1",
         "optional": 1,
         "academic_year": 2020,
@@ -641,9 +461,7 @@
         "code": "IS2",
         "ects": 6,
         "professor": "dr. sc. Maja Matetić",
-        "assistant": [
-            "mag. educ. math. et inf. Dejan Ljubobratović"
-        ],
+        "assistant": ["mag. educ. math. et inf. Dejan Ljubobratović"],
         "semester": "2",
         "optional": 0,
         "academic_year": 2019,
@@ -656,9 +474,7 @@
         "code": "SPIS",
         "ects": 6,
         "professor": "izv. prof. dr. sc. Sanja Čandrlić",
-        "assistant": [
-            "mag. inf. Kristian Stančin"
-        ],
+        "assistant": ["mag. inf. Kristian Stančin"],
         "semester": "2",
         "optional": 0,
         "academic_year": 2019,
@@ -671,9 +487,7 @@
         "code": "MHS",
         "ects": 6,
         "professor": "prof. dr. sc. Nataša Hoić-Božić",
-        "assistant": [
-            "doc. dr. sc. Vanja Slavuj"
-        ],
+        "assistant": ["doc. dr. sc. Vanja Slavuj"],
         "semester": "2",
         "optional": 0,
         "academic_year": 2019,
@@ -686,9 +500,7 @@
         "code": "SP",
         "ects": 6,
         "professor": "prof. dr. sc. Patrizia Poščić",
-        "assistant": [
-            "doc. dr. sc. Danijela Jakšić"
-        ],
+        "assistant": ["doc. dr. sc. Danijela Jakšić"],
         "semester": "2",
         "optional": 0,
         "academic_year": 2019,
@@ -701,9 +513,7 @@
         "code": "ODOGS",
         "ects": 6,
         "professor": "doc. dr. sc. Miran Pobar",
-        "assistant": [
-            "doc. dr. sc. Miran Pobar"
-        ],
+        "assistant": ["doc. dr. sc. Miran Pobar"],
         "semester": "2",
         "optional": 1,
         "academic_year": 2019,
@@ -716,9 +526,7 @@
         "code": "SPO",
         "ects": 6,
         "professor": "dr. sc. Sanda Martinčić-Ipšić",
-        "assistant": [
-            "Karlo Babić"
-        ],
+        "assistant": ["Karlo Babić"],
         "semester": "2",
         "optional": 1,
         "academic_year": 2019,
@@ -731,9 +539,7 @@
         "code": "OPI2",
         "ects": 6,
         "professor": "doc. dr. sc. Martina Holenko Dlab",
-        "assistant": [
-            "doc. dr. sc. Martina Holenko Dlab"
-        ],
+        "assistant": ["doc. dr. sc. Martina Holenko Dlab"],
         "semester": "2",
         "optional": 1,
         "academic_year": 2019,
@@ -746,9 +552,7 @@
         "code": "LOG",
         "ects": 6,
         "professor": "dr. sc. Dragan Čišić",
-        "assistant": [
-            "dr. sc. Dragan Čišić"
-        ],
+        "assistant": ["dr. sc. Dragan Čišić"],
         "semester": "2",
         "optional": 1,
         "academic_year": 2019,
@@ -761,9 +565,7 @@
         "code": "RAPJ",
         "ects": 6,
         "professor": "dr. sc. Sanda Martinčić-Ipšić",
-        "assistant": [
-            "Karlo Babić"
-        ],
+        "assistant": ["Karlo Babić"],
         "semester": "2",
         "optional": 1,
         "academic_year": 2019,
@@ -776,9 +578,7 @@
         "code": "MIU",
         "ects": 6,
         "professor": "dr. sc. Patrizia Poščić",
-        "assistant": [
-            "mag. inf. Kristian Stančin"
-        ],
+        "assistant": ["mag. inf. Kristian Stančin"],
         "semester": "3",
         "optional": 0,
         "academic_year": 2020,
@@ -791,9 +591,7 @@
         "code": "UIP",
         "ects": 6,
         "professor": "dr. sc. Sanda Martinčić-Ipšić",
-        "assistant": [
-            "Karlo Babić"
-        ],
+        "assistant": ["Karlo Babić"],
         "semester": "3",
         "optional": 0,
         "academic_year": 2020,
@@ -806,9 +604,7 @@
         "code": "ITID",
         "ects": 6,
         "professor": "dr. cs. Danijela Jakšić",
-        "assistant": [
-            "doc. dr. sc. Danijela Jakšić"
-        ],
+        "assistant": ["doc. dr. sc. Danijela Jakšić"],
         "semester": "3",
         "optional": 0,
         "academic_year": 2020,
@@ -821,9 +617,7 @@
         "code": "KCS",
         "ects": 6,
         "professor": "dr. sc. Ivo Ipšić",
-        "assistant": [
-            "doc. dr. sc. Miran Pobar"
-        ],
+        "assistant": ["doc. dr. sc. Miran Pobar"],
         "semester": "3",
         "optional": 1,
         "academic_year": 2020,
@@ -836,9 +630,7 @@
         "code": "OZUP",
         "ects": 6,
         "professor": "dr. sc. Maja Matetić",
-        "assistant": [
-            "mag. educ. math. et inf. Dejan Ljubobratović"
-        ],
+        "assistant": ["mag. educ. math. et inf. Dejan Ljubobratović"],
         "semester": "3",
         "optional": 1,
         "academic_year": 2020,
@@ -851,9 +643,7 @@
         "code": "UMS",
         "ects": 6,
         "professor": "dr. sc. Vedran Miletić",
-        "assistant": [
-            "dr. sc. Vedran Miletić"
-        ],
+        "assistant": ["dr. sc. Vedran Miletić"],
         "semester": "3",
         "optional": 1,
         "academic_year": 2020,
@@ -866,9 +656,7 @@
         "code": "UPZ",
         "ects": 6,
         "professor": "dr. sc. Ana Meštrović",
-        "assistant": [
-            "dr. sc. Slobodan Beliga"
-        ],
+        "assistant": ["dr. sc. Slobodan Beliga"],
         "semester": "3",
         "optional": 1,
         "academic_year": 2020,
@@ -881,9 +669,7 @@
         "code": "ISO",
         "ects": 6,
         "professor": "dr. sc. Mile Pavlić",
-        "assistant": [
-            "izv. prof. dr. sc. Sanja Čandrlić"
-        ],
+        "assistant": ["izv. prof. dr. sc. Sanja Čandrlić"],
         "semester": "3",
         "optional": 1,
         "academic_year": 2020,
@@ -897,9 +683,7 @@
         "ects": 24,
         "professor": "",
         "assistant": "",
-        "semester": [
-            "4"
-        ],
+        "semester": ["4"],
         "optional": 0,
         "academic_year": 2020,
         "csv_file": ""
@@ -911,9 +695,7 @@
         "code": "StrucnaPraksa",
         "ects": 6,
         "professor": "dr. sc. Nataša Hoić-Božić",
-        "assistant": [
-            "dr. sc. Nataša Hoić-Božić"
-        ],
+        "assistant": ["dr. sc. Nataša Hoić-Božić"],
         "semester": "4",
         "optional": 0,
         "academic_year": 2019,
@@ -926,20 +708,12 @@
         "code": "EP1",
         "ects": 5,
         "professor": "dr. sc. Rosanda Pahljina-Reinić",
-        "assistant": [
-            "Martina Bažon "
-        ],
+        "assistant": ["Martina Bažon "],
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/NM/Edukacijska_psihologija_1_20_21.pdf",
         "semester": 1,
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/15/Edukacijska_psihologija_1_20_21.csv",
-        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/NM/Edukacijska_psihologija_1_20_21.pdf",
-        "predavanja_dan": "četvrtkom",
-        "predavanja_vrijeme": "14:30",
-        "predavanja_trajanje": "1:20:00",
-        "vjezbe_dan": "ponedjeljkom",
-        "vjezbe_vrijeme": "16:30",
-        "vjezbe_trajanje": "1:40:00"
+        "csv_file": "dinps/inf/15/Edukacijska_psihologija_1_20_21.csv"
     },
     {
         "id": 2,
@@ -948,9 +722,8 @@
         "code": "IS1",
         "ects": 5,
         "professor": "dr. sc. Marina Ivašić-Kos",
-        "assistant": [
-            "Kristina Host"
-        ],
+        "assistant": ["Kristina Host"],
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/IS1_DINP_2020_2021_.pdf",
         "semester": 1,
         "optional": 0,
         "academic_year": 2020,
@@ -963,9 +736,8 @@
         "code": "OPI1",
         "ects": 5,
         "professor": "doc. dr. sc. Martina Holenko Dlab",
-        "assistant": [
-            "doc. dr. sc. Martina Holenko Dlab"
-        ],
+        "assistant": ["doc. dr. sc. Martina Holenko Dlab"],
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/DINP_OPI1_2020_2021.pdf",
         "semester": 1,
         "optional": 0,
         "academic_year": 2020,
@@ -978,20 +750,12 @@
         "code": "OPED",
         "ects": 5,
         "professor": "dr. sc. Sofija Vrcelj",
-        "assistant": [
-            "Ines Begić"
-        ],
+        "assistant": ["Ines Begić"],
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/NM/Opca_pedagogija__20_21.pdf",
         "semester": 1,
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/15/Opca_pedagogija__20_21.csv",
-        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/NM/Opca_pedagogija__20_21.pdf",
-        "predavanja_dan": "utorkom",
-        "predavanja_vrijeme": "12:40",
-        "predavanja_trajanje": "1:30:00",
-        "vjezbe_dan": "srijedom",
-        "vjezbe_vrijeme": "14:15",
-        "vjezbe_trajanje": "3:45:00"
+        "csv_file": "dinps/inf/15/Opca_pedagogija__20_21.csv"
     },
     {
         "id": 30,
@@ -1000,20 +764,12 @@
         "code": "HMS1",
         "ects": 5,
         "professor": "dr. sc. Nataša Hoić-Božić",
-        "assistant": [
-            "dr. sc. Nataša Hoić-Božić"
-        ],
+        "assistant": ["dr. sc. Nataša Hoić-Božić"],
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/NM/DINP_HMS1_2020_2021.pdf",
         "semester": 1,
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/15/DINP_HMS1_2020_2021.csv",
-        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/NM/DINP_HMS1_2020_2021.pdf",
-        "predavanja_dan": "ponedjeljkom",
-        "predavanja_vrijeme": "08:30",
-        "predavanja_trajanje": "1:30:00",
-        "vjezbe_dan": "ponedjeljkom",
-        "vjezbe_vrijeme": "08:30",
-        "vjezbe_trajanje": "1:30:00"
+        "csv_file": "dinps/inf/15/DINP_HMS1_2020_2021.csv"
     },
     {
         "id": 31,
@@ -1022,20 +778,12 @@
         "code": "RP",
         "ects": 5,
         "professor": "dr. sc. Sanja Smojver-Ažić",
-        "assistant": [
-            "dr.sc. Sanja Bradić, vanjski suradnik"
-        ],
+        "assistant": ["dr.sc. Sanja Bradić, vanjski suradnik"],
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/NM/Razvojna_psihologija_20_21.pdf",
         "semester": 1,
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/15/Razvojna_psihologija_20_21.csv",
-        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/NM/Razvojna_psihologija_20_21.pdf",
-        "predavanja_dan": "ponedjeljkom",
-        "predavanja_vrijeme": "14:15",
-        "predavanja_trajanje": "1:30:00",
-        "vjezbe_dan": "četvrtkom/2",
-        "vjezbe_vrijeme": "16:30",
-        "vjezbe_trajanje": "1:40:00"
+        "csv_file": "dinps/inf/15/Razvojna_psihologija_20_21.csv"
     },
     {
         "id": 32,
@@ -1044,20 +792,12 @@
         "code": "DID2",
         "ects": 4,
         "professor": "dr. sc. Vesna Kovač",
-        "assistant": [
-            "Petra Berlot"
-        ],
+        "assistant": ["Petra Berlot"],
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/NM/Didaktika_2_20_21.pdf",
         "semester": 3,
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/15/Didaktika_2_20_21.csv",
-        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/NM/Didaktika_2_20_21.pdf",
-        "predavanja_dan": "ponedjeljkom",
-        "predavanja_vrijeme": "14:15",
-        "predavanja_trajanje": "1:30:00",
-        "vjezbe_dan": "utorkom/2",
-        "vjezbe_vrijeme": "16:15",
-        "vjezbe_trajanje": "3:45:00"
+        "csv_file": "dinps/inf/15/Didaktika_2_20_21.csv"
     },
     {
         "id": 21,
@@ -1066,9 +806,8 @@
         "code": "KCS",
         "ects": 6,
         "professor": "dr. sc. Ivo Ipšić",
-        "assistant": [
-            "doc. dr. sc. Miran Pobar"
-        ],
+        "assistant": ["doc. dr. sc. Miran Pobar"],
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/2_godina/DINP_KCS_2020_2021.pdf",
         "semester": 3,
         "optional": 0,
         "academic_year": 2020,
@@ -1081,20 +820,12 @@
         "code": "MNI1",
         "ects": 4,
         "professor": "dr. sc. Nataša Hoić-Božić",
-        "assistant": [
-            "doc. dr. sc. Martina Holenko Dlab"
-        ],
+        "assistant": ["doc. dr. sc. Martina Holenko Dlab"],
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/NM/DINP_MNI1_2020_2021.pdf",
         "semester": 3,
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/15/DINP_MNI1_2020_2021.csv",
-        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/NM/DINP_MNI1_2020_2021.pdf",
-        "predavanja_dan": "ponedjeljkom",
-        "predavanja_vrijeme": "10:15",
-        "predavanja_trajanje": "1:30:00",
-        "vjezbe_dan": "ponedjeljkom",
-        "vjezbe_vrijeme": "10:15",
-        "vjezbe_trajanje": "1:30:00"
+        "csv_file": "dinps/inf/15/DINP_MNI1_2020_2021.csv"
     },
     {
         "id": 34,
@@ -1103,20 +834,12 @@
         "code": "OJK",
         "ects": 3,
         "professor": "dr. sc. Borana Morić-Mohorovičić",
-        "assistant": [
-            "doc. dr. sc. Borana Morić-Mohorovičić"
-        ],
+        "assistant": ["doc. dr. sc. Borana Morić-Mohorovičić"],
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/NM/OJK_20-21.pdf",
         "semester": 3,
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/15/21.csv",
-        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/NM/OJK_20-21.pdf",
-        "predavanja_dan": "petkom",
-        "predavanja_vrijeme": "10:15",
-        "predavanja_trajanje": "1:30:00",
-        "vjezbe_dan": "petkom",
-        "vjezbe_vrijeme": "10:15",
-        "vjezbe_trajanje": "1:30:00"
+        "csv_file": "dinps/inf/15/21.csv"
     },
     {
         "id": 5,
@@ -1125,9 +848,8 @@
         "code": "DS",
         "ects": 5,
         "professor": "dr. sc. Božidar Kovačić",
-        "assistant": [
-            "v. pred. dr. sc. Vedran Miletić"
-        ],
+        "assistant": ["v. pred. dr. sc. Vedran Miletić"],
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/DINP_DS_2020_2021.pdf",
         "semester": 3,
         "optional": 1,
         "academic_year": 2020,
@@ -1140,9 +862,8 @@
         "code": "EG",
         "ects": 5,
         "professor": "dr. sc. Dragan Čišić",
-        "assistant": [
-            "doc. dr. sc. Vanja Slavuj"
-        ],
+        "assistant": ["doc. dr. sc. Vanja Slavuj"],
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/DINP_EG_2020_2021.pdf",
         "semester": 3,
         "optional": 1,
         "academic_year": 2020,
@@ -1155,9 +876,8 @@
         "code": "UIP",
         "ects": 5,
         "professor": "dr. sc. Sanda Martinčić-Ipšić",
-        "assistant": [
-            "Karlo Babić"
-        ],
+        "assistant": ["Karlo Babić"],
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/2_godina/DINP_UIP_2020_2021.pdf",
         "semester": 3,
         "optional": 1,
         "academic_year": 2020,
@@ -1170,9 +890,8 @@
         "code": "OZUP",
         "ects": 5,
         "professor": "dr. sc. Maja Matetić",
-        "assistant": [
-            "mag. educ. math. et inf. Dejan Ljubobratović"
-        ],
+        "assistant": ["mag. educ. math. et inf. Dejan Ljubobratović"],
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/2_godina/DINP_OZUP_2020_2021.pdf",
         "semester": 3,
         "optional": 1,
         "academic_year": 2020,
@@ -1185,9 +904,8 @@
         "code": "OPJ",
         "ects": 5,
         "professor": "dr. sc. Marina Ivašić-Kos",
-        "assistant": [
-            "Ivona Franković"
-        ],
+        "assistant": ["Ivona Franković"],
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/DINP_OPJ_2020_2021.pdf",
         "semester": 3,
         "optional": 1,
         "academic_year": 2020,
@@ -1200,460 +918,291 @@
         "code": "MAT1",
         "ects": 6,
         "professor": "doc. dr. sc. Milena Sošić",
-        "assistant": [
-            "doc. dr. sc. Milena Sošić"
-        ],
+        "assistant": ["doc. dr. sc. Milena Sošić"],
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/1_godina/DINP_2020_2021_MAT1.pdf",
         "semester": 1,
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/11/DINP_2020_2021_MAT1.csv",
-        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/1_godina/DINP_2020_2021_MAT1.pdf",
-        "predavanja_dan": "ponedjeljkom",
-        "predavanja_vrijeme": "14:15",
-        "predavanja_trajanje": "1:30:00",
-        "vjezbe_dan": "ponedjeljkom",
-        "vjezbe_vrijeme": "10:15",
-        "vjezbe_trajanje": "3:30:00"
+        "csv_file": "dinps/inf/11/DINP_2020_2021_MAT1.csv"
     },
     {
-        "id": 34,
+        "id": 34, 
         "program_id": 11,
         "name": "Programiranje 1",
         "code": "PROG1",
         "ects": 6,
         "professor": "dr. sc. Maja Matetić",
-        "assistant": [
-            "mag. educ. math. et inf. Dejan Ljubobratović"
-        ],
+        "assistant": ["mag. educ. math. et inf. Dejan Ljubobratović"],
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/1_godina/DINP_2020_2021_PROG1.pdf",
         "semester": 1,
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/11/DINP_2020_2021_PROG1.csv",
-        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/1_godina/DINP_2020_2021_PROG1.pdf",
-        "predavanja_dan": "srijedom",
-        "predavanja_vrijeme": "08:15",
-        "predavanja_trajanje": "1:30:00",
-        "vjezbe_dan": "petkom",
-        "vjezbe_vrijeme": "12:15",
-        "vjezbe_trajanje": "3:30:00"
+        "csv_file": "dinps/inf/11/DINP_2020_2021_PROG1.csv"
     },
     {
-        "id": 35,
+        "id": 35, 
         "program_id": 11,
         "name": "Osnove informatike",
         "code": "OI",
         "ects": 5,
         "professor": "dr. sc. Sanda Martinčić-Ipšić",
-        "assistant": [
-            "dr. sc. Slobodan Beliga"
-        ],
+        "assistant": ["dr. sc. Slobodan Beliga"],
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/1_godina/DINP_2020_2021_OI.pdf",
         "semester": 1,
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/11/DINP_2020_2021_OI.csv",
-        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/1_godina/DINP_2020_2021_OI.pdf",
-        "predavanja_dan": "utorkom",
-        "predavanja_vrijeme": "12:00",
-        "predavanja_trajanje": "1:30:00",
-        "vjezbe_dan": "petkom",
-        "vjezbe_vrijeme": "08:00",
-        "vjezbe_trajanje": "3:30:00"
+        "csv_file": "dinps/inf/11/DINP_2020_2021_OI.csv"
     },
     {
-        "id": 36,
+        "id": 36, 
         "program_id": 11,
         "name": "Multimedijski sustavi",
         "code": "MMS",
         "ects": 5,
         "professor": "dr. sc. Nataša Hoić-Božić",
-        "assistant": [
-            "dr. sc. Slobodan Beliga"
-        ],
+        "assistant": ["dr. sc. Slobodan Beliga"],
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/1_godina/DINP_2020_2021_MMS.pdf",
         "semester": 1,
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/11/DINP_2020_2021_MMS.csv",
-        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/1_godina/DINP_2020_2021_MMS.pdf",
-        "predavanja_dan": "srijedom",
-        "predavanja_vrijeme": "14:15",
-        "predavanja_trajanje": "1:30:00",
-        "vjezbe_dan": "srijedom",
-        "vjezbe_vrijeme": "10:15",
-        "vjezbe_trajanje": "3:30:00"
+        "csv_file": "dinps/inf/11/DINP_2020_2021_MMS.csv"
     },
     {
-        "id": 37,
+        "id": 37, 
         "program_id": 11,
         "name": "Osnove ekonomike za informatičare",
         "code": "OE",
         "ects": 5,
         "professor": "dr. sc. Borna Debelić",
-        "assistant": [
-            "Gordana Bugarinović"
-        ],
+        "assistant": ["Gordana Bugarinović"],
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/1_godina/DINP_2020_2021_OE.pdf",
         "semester": 1,
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/11/DINP_2020_2021_OE.csv",
-        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/1_godina/DINP_2020_2021_OE.pdf",
-        "predavanja_dan": "utorkom",
-        "predavanja_vrijeme": "16:15",
-        "predavanja_trajanje": "1:30:00",
-        "vjezbe_dan": "ponedjeljkom",
-        "vjezbe_vrijeme": "16:15",
-        "vjezbe_trajanje": "1:30:00"
+        "csv_file": "dinps/inf/11/DINP_2020_2021_OE.csv"
     },
     {
-        "id": 38,
+        "id": 38, 
         "program_id": 11,
         "name": "Engleski za potrebe IT struke",
         "code": "ENG",
         "ects": 4,
         "professor": "doc. dr. sc. Lucia Načinović Prskalo",
-        "assistant": [
-            "doc. dr. sc. Lucia Načinović Prskalo"
-        ],
+        "assistant": ["doc. dr. sc. Lucia Načinović Prskalo"],
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/1_godina/DINP_2020_2021_ENG_v3.pdf",
         "semester": 1,
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/11/DINP_2020_2021_ENG_v3.csv",
-        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/1_godina/DINP_2020_2021_ENG_v3.pdf",
-        "predavanja_dan": "utorkom",
-        "predavanja_vrijeme": "14:15",
-        "predavanja_trajanje": "1:30:00",
-        "vjezbe_dan": "petkom",
-        "vjezbe_vrijeme": "12:15",
-        "vjezbe_trajanje": "3:30:00"
+        "csv_file": "dinps/inf/11/DINP_2020_2021_ENG_v3.csv"
     },
     {
-        "id": 39,
+        "id": 39, 
         "program_id": 11,
         "name": "Tjelesni 1",
         "code": "TZK",
         "ects": 5,
         "professor": "Sergio de Privitellio",
-        "assistant": [
-            ""
-        ],
+        "assistant": [""],
+        "dinp": "https://inf.uniri.hr/404",
         "semester": 1,
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/11/hr.csv",
-        "dinp_link": "https://inf.uniri.hr/404",
-        "predavanja_dan": null,
-        "predavanja_vrijeme": null,
-        "predavanja_trajanje": "1:30:00",
-        "vjezbe_dan": null,
-        "vjezbe_vrijeme": null,
-        "vjezbe_trajanje": "1:30:00"
+        "csv_file": "dinps/inf/11/hr.csv"
     },
     {
-        "id": 40,
+        "id": 40, 
         "program_id": 11,
         "name": "Matematika 3",
         "code": "MAT3",
         "ects": 5,
         "professor": "dr. sc. Marija Maksimović",
-        "assistant": [
-            "Matea Zubović"
-        ],
+        "assistant": ["Matea Zubović"],
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/2_godina/DINP_2020_2021_MAT3_v3.pdf",
         "semester": 3,
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/11/DINP_2020_2021_MAT3_v3.csv",
-        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/2_godina/DINP_2020_2021_MAT3_v3.pdf",
-        "predavanja_dan": "ponedjeljkom",
-        "predavanja_vrijeme": "10:15",
-        "predavanja_trajanje": "1:30:00",
-        "vjezbe_dan": "ponedjeljkom",
-        "vjezbe_vrijeme": "14:15",
-        "vjezbe_trajanje": "3:30:00"
+        "csv_file": "dinps/inf/11/DINP_2020_2021_MAT3_v3.csv"
     },
     {
-        "id": 41,
+        "id": 41, 
         "program_id": 11,
         "name": "Analiza poslovnih procesa",
         "code": "APP",
         "ects": 5,
         "professor": "dr. sc. Mile Pavlić",
-        "assistant": [
-            "Rebeka Lerga"
-        ],
+        "assistant": ["Rebeka Lerga"],
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/2_godina/DINP_2020_2021_APP.pdf",
         "semester": 3,
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/11/DINP_2020_2021_APP.csv",
-        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/2_godina/DINP_2020_2021_APP.pdf",
-        "predavanja_dan": "petkom",
-        "predavanja_vrijeme": "10:15",
-        "predavanja_trajanje": "1:30:00",
-        "vjezbe_dan": "petkom",
-        "vjezbe_vrijeme": "12:15",
-        "vjezbe_trajanje": "1:30:00"
+        "csv_file": "dinps/inf/11/DINP_2020_2021_APP.csv"
     },
     {
-        "id": 42,
+        "id": 42, 
         "program_id": 11,
         "name": "Objektno programiranje",
         "code": "OP",
         "ects": 5,
         "professor": "dr. sc. Marina Ivašić-Kos",
-        "assistant": [
-            "doc. dr. sc. Miran Pobar"
-        ],
+        "assistant": ["doc. dr. sc. Miran Pobar"],
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/2_godina/DINP_2020_2021_OP.pdf",
         "semester": 3,
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/11/DINP_2020_2021_OP.csv",
-        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/2_godina/DINP_2020_2021_OP.pdf",
-        "predavanja_dan": "utorkom",
-        "predavanja_vrijeme": "08:15",
-        "predavanja_trajanje": "1:30:00",
-        "vjezbe_dan": "četvrtkom",
-        "vjezbe_vrijeme": "10:15",
-        "vjezbe_trajanje": "3:30:00"
+        "csv_file": "dinps/inf/11/DINP_2020_2021_OP.csv"
     },
     {
-        "id": 43,
+        "id": 43, 
         "program_id": 11,
         "name": "Računalne mreže",
         "code": "RM",
         "ects": 5,
         "professor": "v.pred. dr. sc. Vedran Miletić",
-        "assistant": [
-            "v.pred. dr. sc. Vedran Miletić"
-        ],
+        "assistant": ["v.pred. dr. sc. Vedran Miletić"],
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/2_godina/DINP_2020_2021_RM.pdf",
         "semester": 3,
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/11/DINP_2020_2021_RM.csv",
-        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/2_godina/DINP_2020_2021_RM.pdf",
-        "predavanja_dan": "utorkom",
-        "predavanja_vrijeme": "10:15",
-        "predavanja_trajanje": "1:30:00",
-        "vjezbe_dan": "petkom",
-        "vjezbe_vrijeme": "14:15",
-        "vjezbe_trajanje": "3:30:00"
+        "csv_file": "dinps/inf/11/DINP_2020_2021_RM.csv"
     },
     {
-        "id": 44,
+        "id": 44, 
         "program_id": 11,
         "name": "Baze podataka",
         "code": "BP",
         "ects": 5,
         "professor": "dr. sc. Patrizia Poščić",
-        "assistant": [
-            "doc. dr. sc. Danijela Jakšić",
-            "mag. inf. Kristian Stančin"
-        ],
+        "assistant": ["doc. dr. sc. Danijela Jakšić", "mag. inf. Kristian Stančin"],
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/2_godina/DINP_2020_2021_BP.pdf",
         "semester": 3,
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/11/DINP_2020_2021_BP.csv",
-        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/2_godina/DINP_2020_2021_BP.pdf",
-        "predavanja_dan": "ponedjeljkom",
-        "predavanja_vrijeme": "08:30",
-        "predavanja_trajanje": "1:30:00",
-        "vjezbe_dan": "četvrtkom",
-        "vjezbe_vrijeme": "08:00",
-        "vjezbe_trajanje": "5:30:00"
+        "csv_file": "dinps/inf/11/DINP_2020_2021_BP.csv"
     },
     {
-        "id": 45,
+        "id": 45, 
         "program_id": 11,
         "name": "Uvod u programsko inženjerstvo",
         "code": "UPI",
         "ects": 5,
         "professor": "izv. prof. dr. sc. Sanja Čandrlić",
-        "assistant": [
-            "doc. dr. sc. Martina Ašenbrener Katić"
-        ],
+        "assistant": ["doc. dr. sc. Martina Ašenbrener Katić"],
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/2_godina/DINP_2020_2021_UPI.pdf",
         "semester": 3,
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/11/DINP_2020_2021_UPI.csv",
-        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/2_godina/DINP_2020_2021_UPI.pdf",
-        "predavanja_dan": "ponedjeljkom",
-        "predavanja_vrijeme": "12:15",
-        "predavanja_trajanje": "1:30:00",
-        "vjezbe_dan": "utorkom",
-        "vjezbe_vrijeme": "12:15",
-        "vjezbe_trajanje": "3:30:00"
+        "csv_file": "dinps/inf/11/DINP_2020_2021_UPI.csv"
     },
     {
-        "id": 46,
+        "id": 46, 
         "program_id": 11,
         "name": "Kombinatorika (stari program)",
         "code": "KOMB",
         "ects": 5,
         "professor": "dr. sc. Marija Maksimović",
-        "assistant": [
-            "dr. sc. Marija Maksimović"
-        ],
+        "assistant": ["dr. sc. Marija Maksimović"],
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/2_godina/DINP_2020_2021_KOMB.pdf",
         "semester": 3,
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/11/DINP_2020_2021_KOMB.csv",
-        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/2_godina/DINP_2020_2021_KOMB.pdf",
-        "predavanja_dan": "četvrtkom",
-        "predavanja_vrijeme": "14:15",
-        "predavanja_trajanje": "1:30:00",
-        "vjezbe_dan": "četvrtkom",
-        "vjezbe_vrijeme": "15:15",
-        "vjezbe_trajanje": "1:30:00"
+        "csv_file": "dinps/inf/11/DINP_2020_2021_KOMB.csv"
     },
     {
-        "id": 47,
+        "id": 47, 
         "program_id": 11,
         "name": "Dinamičke web aplikacije 1",
         "code": "DWA1",
         "ects": 5,
         "professor": "doc. dr. sc. Lucia Načinović Prskalo",
-        "assistant": [
-            "doc. dr. sc. Lucia Načinović Prskalo"
-        ],
+        "assistant": ["doc. dr. sc. Lucia Načinović Prskalo"],
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/3_godina/DINP_DWA1_2020_2021-3.pdf",
         "semester": 5,
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/11/3.csv",
-        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/3_godina/DINP_DWA1_2020_2021-3.pdf",
-        "predavanja_dan": "utorkom",
-        "predavanja_vrijeme": "12:15",
-        "predavanja_trajanje": "1:30:00",
-        "vjezbe_dan": "ponedjeljkom",
-        "vjezbe_vrijeme": "12:15",
-        "vjezbe_trajanje": "3:30:00"
+        "csv_file": "dinps/inf/11/3.csv"
     },
     {
-        "id": 48,
+        "id": 48, 
         "program_id": 11,
         "name": "Formalni jezici i jezični procesori 1",
         "code": "FJJP1",
         "ects": 5,
         "professor": "dr. sc. Sanda Martinčić-Ipšić",
-        "assistant": [
-            "Karlo Babić"
-        ],
+        "assistant": ["Karlo Babić"],
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/3_godina/DINP_FJJP1_2020_2021.pdf",
         "semester": 5,
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/11/DINP_FJJP1_2020_2021.csv",
-        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/3_godina/DINP_FJJP1_2020_2021.pdf",
-        "predavanja_dan": "srijedom",
-        "predavanja_vrijeme": "10:00",
-        "predavanja_trajanje": "1:30:00",
-        "vjezbe_dan": "srijedom",
-        "vjezbe_vrijeme": "12:00",
-        "vjezbe_trajanje": "1:30:00"
+        "csv_file": "dinps/inf/11/DINP_FJJP1_2020_2021.csv"
     },
     {
-        "id": 49,
+        "id": 49, 
         "program_id": 11,
         "name": "Modeliranje procesa",
         "code": "MP",
         "ects": 5,
         "professor": "dr. sc. Mile Pavlić",
-        "assistant": [
-            "izv. prof. dr. sc. Sanja Čandrlić"
-        ],
+        "assistant": ["izv. prof. dr. sc. Sanja Čandrlić"],
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/3_godina/DINP_MP_2020_2021.pdf",
         "semester": 5,
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/11/DINP_MP_2020_2021.csv",
-        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/3_godina/DINP_MP_2020_2021.pdf",
-        "predavanja_dan": "petkom",
-        "predavanja_vrijeme": "10:00",
-        "predavanja_trajanje": "1:30:00",
-        "vjezbe_dan": "petkom",
-        "vjezbe_vrijeme": "10:30",
-        "vjezbe_trajanje": "1:30:00"
+        "csv_file": "dinps/inf/11/DINP_MP_2020_2021.csv"
     },
     {
-        "id": 50,
+        "id": 50, 
         "program_id": 11,
         "name": "Numerička matematika",
         "code": "NM",
         "ects": 5,
         "professor": "doc. dr. sc. Sanda Bujačić Babić",
-        "assistant": [
-            "doc. dr. sc. Sanda Bujačić Babić"
-        ],
+        "assistant": ["doc. dr. sc. Sanda Bujačić Babić"],
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/3_godina/DINP_Numericka_matematika_2020_2021.pdf",
         "semester": 5,
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/11/DINP_Numericka_matematika_2020_2021.csv",
-        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/3_godina/DINP_Numericka_matematika_2020_2021.pdf",
-        "predavanja_dan": "utorkom",
-        "predavanja_vrijeme": "08:15",
-        "predavanja_trajanje": "1:30:00",
-        "vjezbe_dan": "utorkom",
-        "vjezbe_vrijeme": "10:15",
-        "vjezbe_trajanje": "3:30:00"
+        "csv_file": "dinps/inf/11/DINP_Numericka_matematika_2020_2021.csv"
     },
     {
-        "id": 51,
+        "id": 51, 
         "program_id": 11,
         "name": "Objektno orijentirano programiranje",
         "code": "OOP",
         "ects": 5,
         "professor": "dr. sc. Marina Ivašić-Kos",
-        "assistant": [
-            "Ivona Franković"
-        ],
+        "assistant": ["Ivona Franković"],
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/3_godina/DINP_OOP_2020_2021.pdf",
         "semester": 5,
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/11/DINP_OOP_2020_2021.csv",
-        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/3_godina/DINP_OOP_2020_2021.pdf",
-        "predavanja_dan": "ponedjeljkom",
-        "predavanja_vrijeme": "12:00",
-        "predavanja_trajanje": "1:30:00",
-        "vjezbe_dan": "četvrtkom",
-        "vjezbe_vrijeme": "12:00",
-        "vjezbe_trajanje": "3:30:00"
+        "csv_file": "dinps/inf/11/DINP_OOP_2020_2021.csv"
     },
     {
-        "id": 52,
+        "id": 52, 
         "program_id": 11,
         "name": "Logičko programiranje",
         "code": "LPR",
         "ects": 5,
         "professor": "izv. prof. dr. sc. Ana Meštrović",
-        "assistant": [
-            "izv. prof. dr. sc. Ana Meštrović"
-        ],
+        "assistant": ["izv. prof. dr. sc. Ana Meštrović"],
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/3_godina/DINP_LPR_2020_2021.pdf",
         "semester": 5,
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/11/DINP_LPR_2020_2021.csv",
-        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/3_godina/DINP_LPR_2020_2021.pdf",
-        "predavanja_dan": "srijedom",
-        "predavanja_vrijeme": "08:15",
-        "predavanja_trajanje": "1:30:00",
-        "vjezbe_dan": "ponedjeljkom",
-        "vjezbe_vrijeme": "10:15",
-        "vjezbe_trajanje": "1:30:00"
+        "csv_file": "dinps/inf/11/DINP_LPR_2020_2021.csv"
     },
     {
-        "id": 53,
+        "id": 53, 
         "program_id": 11,
         "name": "Paralelno programiranje na heterogenim sustavima",
         "code": "PPHS",
         "ects": 5,
         "professor": "izv. prof. dr. sc. Božidar Kovačić",
-        "assistant": [
-            "v. pred. dr. sc. Vedran Miletić"
-        ],
+        "assistant": ["v. pred. dr. sc. Vedran Miletić"],
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/3_godina/DINP_PPHS_2020_2021.pdf",
         "semester": 5,
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/11/DINP_PPHS_2020_2021.csv",
-        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/3_godina/DINP_PPHS_2020_2021.pdf",
-        "predavanja_dan": "srijedom",
-        "predavanja_vrijeme": "08:15",
-        "predavanja_trajanje": "1:30:00",
-        "vjezbe_dan": "srijedom",
-        "vjezbe_vrijeme": "14:15",
-        "vjezbe_trajanje": "1:30:00"
+        "csv_file": "dinps/inf/11/DINP_PPHS_2020_2021.csv"
     }
 ]
