@@ -58,7 +58,7 @@ class StudentSetupView(FormView):
         
         for subject in subjects:
             ss = StudentSubjects.objects.create(student=student, subject=subject)
-            ss.ingest_points()
+            ss.ingest_points(subject, student)
 
         messages.success(self.request, "Dobrodošli na Timetabled stranice")
         return super(StudentSetupView, self).form_valid(form)
