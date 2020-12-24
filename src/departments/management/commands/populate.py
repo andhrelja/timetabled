@@ -56,11 +56,11 @@ class Command(BaseCommand):
     help = 'Populates Universities, Departments and Programs for the `departments` app'
 
     def handle(self, *args, **options):
-        #self.populate_universities()
-        #self.populate_departments()
+        self.populate_universities()
+        self.populate_departments()
 
-        # self.populate_subjects()
-        # self.populate_activities()
+        self.populate_subjects()
+        self.populate_activities()
         self.bind_subjects_students()
     
     def read_json(self, filename):
