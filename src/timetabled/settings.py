@@ -18,7 +18,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 LOGIN_URL = '/accounts/login/'
-LOGIN_REDIRECT_URL = '/subjects/'
+LOGIN_REDIRECT_URL = '/'
 
 # Application definition
 
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'materials_score.apps.MaterialsScoreConfig',
     'departments.apps.DepartmentsConfig',
     'subjects.apps.SubjectsConfig',
+    'dashboard.apps.DashboardConfig',
 
     # Third pary
     #'django_extensions',

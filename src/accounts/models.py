@@ -1,9 +1,8 @@
 from django.db import models
 from django.urls import reverse
-from itertools import chain
 
 from subjects.models import Subject, ACADEMIC_YEAR_CHOICES
-from datetime import date
+from datetime import date, datetime
 
 # Create your models here.
 class Student(models.Model):
@@ -13,8 +12,12 @@ class Student(models.Model):
     
     studying_year   = models.IntegerField("Godina studija", choices=STUDY_YEAR_CHOICES)
     program         = models.ForeignKey("departments.Program", verbose_name="Program", on_delete=models.CASCADE)
-    # subjects        = models.ManyToManyField("subjects.Subject", verbose_name="Upisani kolegiji")
-    
+
+    class Meta:
+        verbose_name = "Student"
+        verbose_name_plural = "Studenti"
+
+
     @property
     def subjects(self):
         subject_ids = set()
@@ -22,6 +25,15 @@ class Student(models.Model):
             subject_ids.add(ss.subject.id)
         return Subject.objects.filter(id__in=subject_ids, semester=self.get_active_semester())
     
+    @property
+    def gpa(self):
+        sum_total, sum_accomplished = 0, 0
+        for activity in self.all_score_activities:
+            sum_total += activity.points_total
+            sum_accomplished += activity.points_accomplished
+        return sum_accomplished * (5 / sum_total)
+    
+
     @property
     def all_score_activities(self):
         activities = list()
@@ -81,6 +93,8 @@ class Student(models.Model):
 
 
     def upcoming_score_activities(self, days=7):
+        if days is None:
+            days = self.get_remaining_semester_days()
         activities = list()
         for subject in self.subjects:
             subject_score_activities = subject.upcoming_score_activities(self, days)
@@ -95,6 +109,8 @@ class Student(models.Model):
         return sorted(activities, key=lambda instance: instance.due_date)
 
     def upcoming_class_activities(self, days=7):
+        if days is None:
+            days = self.get_remaining_semester_days()
         activities = list()
         for subject in self.subjects:
             subject_class_activities = subject.upcoming_class_activities(self, days)
@@ -105,7 +121,6 @@ class Student(models.Model):
         today = date.today()
 
         if today.month > 9:
-            year = today.year
             if self.studying_year == 1:
                 semester = "1"
             elif self.studying_year == 2:
@@ -115,7 +130,6 @@ class Student(models.Model):
             else:
                 semester = None
         else:
-            year = today.year - 1
             if self.studying_year == 1:
                 semester = "2"
             elif self.studying_year == 2:
@@ -126,16 +140,35 @@ class Student(models.Model):
                 semester = None
 
         return semester
+    
+    def get_active_academic_year(self):
+        today = date.today()
 
-    class Meta:
-        verbose_name = "Student"
-        verbose_name_plural = "Studenti"
+        if today.month > 9:
+            year = today.year
+        else:
+            year = today.year - 1
+        return "{}/{}".format(year, year+1)
+
+    def get_remaining_semester_days(self):
+        today = date.today()
+
+        if today.month > 9:
+            year = today.year
+            end_date = datetime(year + 1, 2, 28, 0, 0)
+        else:
+            year = today.year
+            end_date = datetime(year, 9, 30, 0, 0)
+        tdelta = end_date - datetime.now()
+        return tdelta.days
+
 
     def __str__(self):
         return self.user.get_full_name()
 
     def get_absolute_url(self):
         return reverse("accounts:detail", kwargs={"pk": self.pk})
+
 
 class StudentSubjects(models.Model):
 

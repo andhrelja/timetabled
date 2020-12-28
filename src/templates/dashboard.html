@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+
+<div class="container-fluid">
+    <div class="row mt-3 mb-3">
+        <div class="col-lg-3 mb-2">
+        {% include 'partials/dashboard/number_display.html' with variable=subjects.count title="Broj upisanih kolegija" color="success" %}
+        </div>
+        <div class="col-lg-3 mb-2">
+        {% include 'partials/dashboard/number_display.html' with variable=student.gpa|floatformat title="Trenutni prosjek ocjena" color="info" %}
+        </div>
+        <div class="col-lg-3 mb-2">
+        {% include 'partials/dashboard/number_display.html' with variable=upcoming_score_activities title="Preostalo ispitnih aktivnosti" color="danger" %}
+        </div>
+        <div class="col-lg-3 mb-2">
+        {% include 'partials/dashboard/number_display.html' with variable=upcoming_class_activities title="Preostalo nastavnih aktivnosti" color="warning" %}
+        </div>
+    </div>
+
+    <div class="row mt-3 mb-3">
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-header bg-info text-light">
+                    <h5 class="h5">Prosjek po kolegiju</h5>
+                </div>
+                <div class="card-body">
+                    <embed type="image/svg+xml" src={{ subjects_gpa_bar|safe }}>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-header bg-success text-light">
+                    <h5 class="h5">Broj aktivnosti po kolegiju</h5>
+                </div>
+                <div class="card-body">
+                    <embed type="image/svg+xml" src={{ subjects_activities_treemap|safe }}>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-3 mb-3">
+        <div class="col-lg-4">
+            <div class="card h-100">
+                <div class="card-header bg-danger text-light">
+                    <h5 class="h5">Predane ispitne aktivnosti</h5>
+                </div>
+                <div class="card-body">
+                    <embed type="image/svg+xml" src={{ score_activity_pie|safe }}>
+                </div>
+            </div>            
+        </div>
+        <div class="col-lg-4">
+            <div class="card h-100">
+                <div class="card-header bg-warning text-light">
+                    <h5 class="h5">Prisustvo na nastavnim aktivnostima</h5>
+                </div>
+                <div class="card-body">
+                    <embed type="image/svg+xml" src={{ class_activity_pie|safe }}>
+                </div>
+            </div>        
+        </div>
+    </div>
+</div>
+
+{% include 'messages.html' %}
+
+{% endblock body %}

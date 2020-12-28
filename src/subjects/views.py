@@ -34,15 +34,13 @@ class SubjectListView(ListView):
 
         class_activities_total = len(student.all_class_activities)
         class_activities_completed = student.all_class_activities_completed_count()
-
-        semester_days_remaining = datetime(2021, 2, 28, 0, 0) - datetime.now()
-
+        
         context.update({
             'score_activities_total':     score_activities_total,
             'score_activities_completed': score_activities_completed,
             'class_activities_total':     class_activities_total,
             'class_activities_completed': class_activities_completed,
-            'semester_days_remaining':    semester_days_remaining,
+            'semester_days_remaining':    student.get_remaining_semester_days(),
             'today': date.today()
         })
         return context

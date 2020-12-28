@@ -44,8 +44,19 @@ p {
     cursor:pointer;
 }
 
+.clickable-row.hover-success {
+    background-color: #029760;
+    color: #e6e6e6;
+}
+
 .clickable-row:hover {
     background-color: rgb(26, 41, 128) ;
+    color: #e6e6e6;
+}
+
+
+.clickable-row.hover-success:hover {
+    background-color: #016540;
     color: #e6e6e6;
 }
 
