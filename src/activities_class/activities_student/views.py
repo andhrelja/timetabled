@@ -1,5 +1,7 @@
 from .models import StudentClassActivity
-from .forms import StudentClassActivityForm
+from .forms import StudentClassActivityForm, StudentClassActivityAttendanceForm
+
+from django.contrib.messages.views import SuccessMessageMixin
 from django.views.generic import (
     DetailView,
     CreateView,
@@ -19,11 +21,33 @@ class StudentClassActivityDetailView(DetailView):
         return context
 
 
-class StudentClassActivityCreateView(CreateView):
+class StudentClassActivityCreateView(SuccessMessageMixin, CreateView):
     model = StudentClassActivity
     template_name = "activities_class/class_activity_form.html"
+    success_message = "Nastavna aktivnost uspješno spremljena"
 
-class StudentClassActivityUpdateView(UpdateView):
+class StudentClassActivityUpdateView(SuccessMessageMixin, UpdateView):
     model = StudentClassActivity
     form_class = StudentClassActivityForm
+    success_message = "Nastavna aktivnost uspješno spremljena"
     template_name = "activities_class/class_activity_form.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["subject"] = self.object.subject
+        context["title"] = "Uredi nastavnu aktivnost"
+        return context
+    
+
+class StudentClassActivityAttendedView(SuccessMessageMixin, UpdateView):
+    model = StudentClassActivity
+    form_class = StudentClassActivityAttendanceForm
+    success_message = "Nastavna aktivnost uspješno spremljena"
+    template_name = "activities_class/class_activity_form.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["subject"] = self.object.subject
+        context["title"] = "Zabilježi prisustvo"
+        return context
+    

@@ -8,9 +8,11 @@
         {% if activity.due_date > today %}
         <span class="badge badge-primary badge-pill">{{ activity.due_date|date:"d.m.Y" }}</span>
         {% elif activity.due_date == today %}
-        <span class="badge badge-warning badge-pill">{{ activity.due_date|date:"d.m.Y" }}</span>
-        {% elif activity.due_date < today %}
+        <span class="badge badge-warning badge-pill">Danas</span>
+        {% elif activity.due_date < today and not activity.attended %}
         <span class="badge badge-danger badge-pill">{{ activity.due_date|date:"d.m.Y" }}</span>
+        {% elif activity.due_date < today and activity.attended %}
+        <span class="badge badge-success badge-pill">{{ activity.due_date|date:"d.m.Y" }}</span>
         {% endif %}
         
     </li>

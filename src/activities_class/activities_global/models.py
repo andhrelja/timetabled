@@ -33,6 +33,9 @@ class GlobalClassActivity(models.Model):
     
     def get_update_url(self):
         return reverse('activities_class:global-update', kwargs={"pk": self.pk})
+    
+    def get_attendance_url(self):
+        return reverse('activities_class:global-attend', kwargs={"pk": self.pk})
 
     def __str__(self):
         string = "{} - {}".format(self.subject.code, self.get_type_display())

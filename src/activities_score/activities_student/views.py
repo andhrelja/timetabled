@@ -55,6 +55,7 @@ class StudentScoreActivityUpdateView(SuccessMessageMixin, UpdateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context["subject"] = self.object.subject
+        context["title"] = "Uredi bodovnu aktivnost"
         return context
 
 
@@ -67,4 +68,5 @@ class StudentScoreActivitySubmitView(SuccessMessageMixin, UpdateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context["subject"] = self.object.subject
+        context["title"] = "Predaj bodovnu aktivnost"
         return context

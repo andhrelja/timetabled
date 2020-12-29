@@ -24,3 +24,12 @@ class StudentClassActivityForm(forms.ModelForm):
             'end_time':     TimeInput(attrs={'class': 'form-control'}),
             'subject':      forms.TextInput(attrs={'class': 'form-control'}),
         }
+
+
+
+class StudentClassActivityAttendanceForm(StudentClassActivityForm):
+
+    class Meta(StudentClassActivityForm.Meta):
+        fields = (
+            'type', 'attended'
+        )

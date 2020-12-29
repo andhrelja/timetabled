@@ -49,22 +49,34 @@
                 </a>
             </li>
         {% elif type == "detail" and type_name == "activities_class" %}
+            {% if not activity.attended %}
+            <li class="nav-item">
+                <a class="nav-link d-flex" href="{{ activity.get_attendance_url }}">
+                    <div class="fas-icon subnav">
+                        <i class="fas fa-check" aria-hidden="true"></i>
+                    </div>
+                    <span>Zabilježi prisustvo</span>
+                </a>
+            </li>
+            {% endif %}
             <li class="nav-item">
                 <a class="nav-link d-flex" href="{{ activity.get_update_url }}">
                     <div class="fas-icon subnav">
-                        <i class="fas fa-pen text-primary" aria-hidden="true"></i>
+                        <i class="fas fa-pen" aria-hidden="true"></i>
                     </div>
                     <span>Uredi aktivnost</span>
                 </a>
             </li>
+            {% if activity.global_activity %}
             <li class="nav-item">
-                <a class="nav-link d-flex" href="#{% comment %}{% url 'activities_class:student-delete' activity.id %}{% endcomment %}">
+                <a class="nav-link d-flex" href="#{% comment %}{% url 'activities_score:student-delete' activity.id %}{% endcomment %}">
                     <div class="fas-icon subnav">
-                        <i class="fas fa-trash-alt text-danger" aria-hidden="true"></i>
+                        <i class="fas fa-trash-alt" aria-hidden="true"></i>
                     </div>
                     <span>Izbriši aktivnost</span>
                 </a>
             </li>
+            {% endif %}
         {% elif type == "detail" and type_name == "activities_score" %}
             {% if not activity.completed %}
             <li class="nav-item">

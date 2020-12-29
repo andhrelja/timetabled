@@ -32,6 +32,7 @@ class GlobalScoreActivityUpdateView(UpdateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context["subject"] = self.object.subject
+        context["title"] = "Uredi bodovnu aktivnost"
         return context
     
 
@@ -69,6 +70,7 @@ class GlobalScoreActivitySubmitView(UpdateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context["subject"] = self.object.subject
+        context["title"] = "Predaj bodovnu aktivnost"
         return context
     
     def form_valid(self, form):

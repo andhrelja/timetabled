@@ -39,6 +39,9 @@ class StudentClassActivity(models.Model):
     
     def get_update_url(self):
         return reverse('activities_class:student-update', kwargs={"pk": self.pk})
+    
+    def get_attendance_url(self):
+        return reverse('activities_class:student-attend', kwargs={"pk": self.pk})
 
     def __str__(self):
         return self.name.strip()
