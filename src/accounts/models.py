@@ -32,6 +32,7 @@ class Student(models.Model):
             if activity.completed:
                 sum_total += activity.points_total
                 sum_accomplished += activity.points_accomplished
+        sum_total = 1 if sum_total == 0 else sum_total
         return sum_accomplished * (5 / sum_total)
     
 

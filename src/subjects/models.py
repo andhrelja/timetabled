@@ -39,7 +39,7 @@ class Subject(models.Model):
     predavanja_dan  = models.CharField("Predavanja - dan u tjednu", choices=DAY_CHOICES, null=True, max_length=64)
     predavanja_vrijeme  = models.TimeField("Predavanja - vrijeme početka", auto_now=False, null=True, auto_now_add=False)
     predavanja_trajanje = models.DurationField("Predavanja - trajanje", default="1:30")
-    
+
     vjezbe_dan      = models.CharField("Vježbe - dan u tjednu", choices=DAY_CHOICES, null=True, max_length=64)
     vjezbe_vrijeme      = models.TimeField("Vježbe - vrijeme početka", auto_now=False, null=True, auto_now_add=False)
     vjezbe_trajanje     = models.DurationField("Vježbe - trajanje", default="1:30")
@@ -54,6 +54,7 @@ class Subject(models.Model):
             if activity.completed:
                 sum_total += activity.points_total
                 sum_accomplished += activity.points_accomplished
+        sum_total = 1 if sum_total == 0 else sum_total
         return sum_accomplished * (5 / sum_total)
 
 
