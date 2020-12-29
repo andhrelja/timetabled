@@ -33,27 +33,19 @@
             </li>
         {% elif type == "detail" and type_name == "subjects" %}
             <li class="nav-item">
+                <a class="nav-link d-flex" href="#{% comment %}{% url 'subjects:update' %}{% endcomment %}">
+                    <div class="fas-icon subnav">
+                        <i class="fas fa-pen text-light" aria-hidden="true"></i>
+                    </div>
+                    <span>Uredi kolegij</span>
+                </a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link d-flex" href="{% url 'activities_score:student-create' subject.id %}">
                     <div class="fas-icon subnav">
-                        <i class="fas fa-plus-circle text-light" aria-hidden="true"></i>
+                        <i class="fas fa-plus text-light" aria-hidden="true"></i>
                     </div>
                     <span>Nova ispitna aktivnost</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link d-flex" href="{% url 'activities_calendar:score-monthly' %}">
-                    <div class="fas-icon subnav">
-                        <i class="fas fa-clipboard-list text-light" aria-hidden="true"></i>
-                    </div>
-                    <span>Ispitne aktivnosti</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link d-flex" href="{% url 'activities_calendar:class-weekly' %}">
-                    <div class="fas-icon subnav">
-                        <i class="fas fa-list-ul text-light" aria-hidden="true"></i>
-                    </div>
-                    <span>Nastavne aktivnosti</span>
                 </a>
             </li>
         {% elif type == "detail" and type_name == "activities_class" %}
@@ -74,22 +66,35 @@
                 </a>
             </li>
         {% elif type == "detail" and type_name == "activities_score" %}
+            {% if not activity.completed %}
+            <li class="nav-item">
+                <a class="nav-link d-flex" href="{{ activity.get_submission_url }}">
+                    <div class="fas-icon subnav">
+                        <i class="fas fa-check" aria-hidden="true"></i>
+                    </div>
+                    <span>Predaj aktivnost</span>
+                </a>
+            </li>
+            {% endif %}
+            
             <li class="nav-item">
                 <a class="nav-link d-flex" href="{{ activity.get_update_url }}">
                     <div class="fas-icon subnav">
-                        <i class="fas fa-pen text-primary" aria-hidden="true"></i>
+                        <i class="fas fa-pen" aria-hidden="true"></i>
                     </div>
                     <span>Uredi aktivnost</span>
                 </a>
             </li>
+            {% if activity.global_activity %}
             <li class="nav-item">
                 <a class="nav-link d-flex" href="#{% comment %}{% url 'activities_score:student-delete' activity.id %}{% endcomment %}">
                     <div class="fas-icon subnav">
-                        <i class="fas fa-trash-alt text-danger" aria-hidden="true"></i>
+                        <i class="fas fa-trash-alt" aria-hidden="true"></i>
                     </div>
                     <span>Izbriši aktivnost</span>
                 </a>
             </li>
+            {% endif %}
         {% elif type == "form" %}
         {% else %}
         Greška

@@ -27,3 +27,11 @@ class StudentScoreActivityForm(forms.ModelForm):
             'end_time':     TimeInput(attrs={'class': 'form-control'}),
             'subject':      forms.TextInput(attrs={'class': 'form-control'}),
         }
+
+
+class StudentScoreActivitySubmitForm(StudentScoreActivityForm):
+
+    class Meta(StudentScoreActivityForm.Meta):
+        fields = (
+            'name', 'points_accomplished', 'points_total'
+        )

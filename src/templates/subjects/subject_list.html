@@ -31,6 +31,20 @@
             </div>
         </div>
     </div>
+
+    <div class="row mt-3">
+        <div class="col-lg-4">
+        {% include 'partials/dashboard/gauge_card.html' with src=student_score_activities_pie color="danger" %}
+        </div>
+        <div class="col-lg-4">
+        {% include 'partials/dashboard/gauge_card.html' with src=student_class_activities_pie color="info" %}
+        </div>
+        <div class="col-lg-4">
+        {% include 'partials/dashboard/gauge_card.html' with src=remaining_semester_days_pie color="success" %}
+        </div>
+    </div>
+
+
     <div class="row mt-3">
         <div class="col-sm-4">
             <div class="card h-100 p-2 m-auto">

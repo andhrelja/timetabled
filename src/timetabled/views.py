@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from dashboard import pies, bars, treemaps
+from dashboard import pies, bars, treemaps, gauges
 
 
 def index(request):
@@ -15,24 +15,25 @@ def get_dashboard_context(student):
     score_activities = student.all_score_activities
     class_activities = student.all_class_activities
 
+    # TODO: Confidence intervals
     context = {
         'student': student,
         'subjects': subjects,
         'score_activities': score_activities,
         'class_activities': class_activities,
+        'upcoming_score_activities': len(student.upcoming_score_activities(days=None)),
+        'upcoming_class_activities': len(student.upcoming_class_activities(days=None)),
 
         #Bars
         'subjects_gpa_bar': bars.get_subject_gpa(student),
         
         # Treemaps
-        'subjects_activities_treemap': treemaps.get_subjects_activities(student),
+        'subjects_activities_pie': pies.get_subjects_activities(student),
 
         # Pies
         'score_activity_pie': pies.get_score_activities(student.all_score_activities),
         'class_activity_pie': pies.get_class_activities(student.all_class_activities),
 
-        'upcoming_score_activities': len(student.upcoming_score_activities(days=None)),
-        'upcoming_class_activities': len(student.upcoming_class_activities(days=None))
     }
 
     return context

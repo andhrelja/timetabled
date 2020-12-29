@@ -49,13 +49,19 @@ class Subject(models.Model):
     
     
     def gpa_student(self, student):
-        sum_total, sum_accomplished = 0, 0
+        sum_total, sum_accomplished_total, sum_accomplished = 0, 0, 0
         for activity in self.all_score_activities(student):
+            sum_total += activity.points_total
             if activity.completed:
-                sum_total += activity.points_total
+                sum_accomplished_total += activity.points_total
                 sum_accomplished += activity.points_accomplished
+            
         sum_total = 1 if sum_total == 0 else sum_total
-        return sum_accomplished * (5 / sum_total)
+        sum_accomplished_total = 1 if sum_accomplished_total == 0 else sum_accomplished_total
+
+        gpa_accomplished = sum_accomplished * (5 / sum_accomplished_total)
+        gpa_total = sum_accomplished * (5 / sum_total)
+        return round(gpa_accomplished, 2), round(gpa_total, 2)
 
 
     def points_percentage(self, student):
@@ -77,6 +83,25 @@ class Subject(models.Model):
     
     def all_class_activities(self, student):
         return self.activities_class(student)
+    
+
+    
+    def all_score_activities_completed_count(self, student):
+        completed_count = 0
+        all_score_activities = self.activities_score(student)
+        for score_activity in all_score_activities:
+            if score_activity.completed or score_activity.points_accomplished != 0:
+                completed_count += 1
+        return completed_count
+        
+    def all_class_activities_completed_count(self, student):
+        completed_count = 0
+        all_class_activities = self.activities_class(student)
+        for class_activity in all_class_activities:
+            if class_activity.due_date < date.today():
+                completed_count += 1
+        return completed_count
+
 
 
     def all_upcoming_score_activities(self, student, days=365):
@@ -93,12 +118,6 @@ class Subject(models.Model):
             if activity.due_date >= today and activity.due_date <= today + timedelta(days=days):
                 yield activity
 
-    def past_score_activities(self, student):
-        today = date.today()
-        score_activities = self.activities_score(student)
-        for activity in score_activities:
-            if activity.due_date <= today and not activity.completed:
-                yield activity
 
     def upcoming_class_activities(self, student, days=7):
         today = date.today()
@@ -107,6 +126,13 @@ class Subject(models.Model):
             if activity.due_date >= today and activity.due_date <= today + timedelta(days=days):
                 yield activity
 
+    def past_score_activities(self, student):
+        today = date.today()
+        score_activities = self.activities_score(student)
+        for activity in score_activities:
+            if activity.due_date <= today:
+                yield activity
+    
     def past_class_activities(self, student):
         today = date.today()
         class_activities = self.activities_class(student)
@@ -116,9 +142,9 @@ class Subject(models.Model):
 
     
     def activities_score(self, student):
-        custom_activities = self.studentscoreactivity_set.filter(student=student, subject=self, global_activity_id__isnull=True) \
+        custom_activities = self.studentscoreactivity_set.filter(student=student, global_activity_id__isnull=True) \
                         .only("id", "due_date", "name", "points_total", "points_accomplished")
-        updated_global_activities = self.studentscoreactivity_set.filter(student=student, subject=self, global_activity_id__isnull=False) \
+        updated_global_activities = self.studentscoreactivity_set.filter(student=student, global_activity_id__isnull=False) \
                         .only("id", "due_date", "name", "points_total", "points_accomplished")
 
         global_activities = self.globalscoreactivity_set.only("id", "due_date", "name", "points_total", "points_accomplished") \
@@ -127,9 +153,9 @@ class Subject(models.Model):
         return sorted(chain(custom_activities, updated_global_activities, global_activities), key=lambda instance: instance.due_date, reverse=False)
 
     def activities_class(self, student):
-        custom_activities = self.studentclassactivity_set.filter(student=student, subject=self, global_activity_id__isnull=True) \
+        custom_activities = self.studentclassactivity_set.filter(student=student, global_activity_id__isnull=True) \
                         .only("id", "due_date", "start_time", "end_time", "name")
-        updated_global_activities = self.studentclassactivity_set.filter(student=student, subject=self, global_activity_id__isnull=False) \
+        updated_global_activities = self.studentclassactivity_set.filter(student=student, global_activity_id__isnull=False) \
                         .only("id", "due_date", "start_time", "end_time", "name")
 
         global_activities = self.globalclassactivity_set.only("id", "due_date", "start_time", "end_time", "name") \

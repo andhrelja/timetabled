@@ -8,9 +8,23 @@ from .styles import (
 
 
 def get_subject_gpa(student):
-    bar_chart = pygal.Bar(range=(0, 5, 0.5), legend_at_bottom=True, style=style_score_activities_bar)
     subjects = student.subjects.annotate(Count('globalscoreactivity'))
-    # bar_chart.x_labels = [subject.name for subject in subjects.order_by('-globalscoreactivity__count')]
-    for subject in subjects.order_by('-globalscoreactivity__count'):
-        bar_chart.add(subject.name, subject.gpa_student(student))
+    subjects = subjects.order_by('-globalscoreactivity__count')
+
+    bar_chart = pygal.Bar(range=(0, 5, 0.5), style=style_score_activities_bar, height=401)
+    bar_chart.x_labels = [subject.name for subject in subjects]
+    
+    
+    temp_gpa, total_gpa = list(), list()
+    for subject in subjects:
+        temp, _ = subject.gpa_student(student)
+        temp_gpa.append(temp)
+
+    for subject in subjects:
+        _, total = subject.gpa_student(student)
+        total_gpa.append(total)
+
+    bar_chart.add("Trenutni prosjek", temp_gpa)
+    bar_chart.add("Ukupni prosjek", total_gpa)
+    
     return bar_chart.render_data_uri()

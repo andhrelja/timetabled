@@ -29,7 +29,7 @@ def all_upcoming_class_activities(subject, student):
 
 @register.filter
 def upcoming_score_activities(subject, student):
-    return subject.upcoming_score_activities(student)
+    return subject.upcoming_score_activities(student, days=student.get_remaining_semester_days())
 
 @register.filter
 def past_score_activities(subject, student):
@@ -37,7 +37,7 @@ def past_score_activities(subject, student):
 
 @register.filter
 def upcoming_class_activities(subject, student):
-    return subject.upcoming_class_activities(student)
+    return subject.upcoming_class_activities(student, days=student.get_remaining_semester_days())
 
 @register.filter
 def past_class_activities(subject, student):

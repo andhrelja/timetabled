@@ -1,0 +1,3490 @@
+[
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$216000$FIYBS1a7rsOv$p3ZtrHwT3oWFu9FEnnWTkXImhN1rJwEnxkfiSGA2y9k=",
+        "last_login": null,
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "admin@email.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2020-12-24T16:49:48.317Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$216000$GNy5dQPOfRVh$7NH23gp9s2kZWo8j6SpEs/T1C7vWzvfui4IKUNOfdAg=",
+        "last_login": "2020-12-25T13:53:57.656Z",
+        "is_superuser": false,
+        "username": "andhrelja",
+        "first_name": "Andrea",
+        "last_name": "Hrelja",
+        "email": "andhrelja@hotmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2020-12-24T16:56:34.863Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "5bi429egy62s2q3yxyrsx9fr85ru2vlk",
+    "fields": {
+        "session_data": ".eJxVjDsOgzAQRO-yNbIW2_iTMn3OYC32OpAEkDAUUZS7x5FoKKZ582Y-UHjisvEKF2ihAYqUeBpjeDNVJlFiA4H2bQh74TWMqYoKTqyn-OT5X6QHzfdFxGXe1rEXf0UcbRG3JfHrering4HKUNfoZecyGosmkbSWPWbFsZWqd74GHWXtEVFrHaVm20lU5Iwz2aZOM3x_CAtBuQ:1ksnXZ:-y3DawEEZTM4CKLb1pDvUT9F7x2HlBcarH0wdFmV5x4",
+        "expire_date": "2021-01-08T13:53:57.660Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "iaio8pje08x9wvnmq9bsy3pz8eci37sk",
+    "fields": {
+        "session_data": ".eJxVjL0OgzAQg9_lZhQdScgPY_c-AzqSS6EtIBEYqqrv3iAxtIMH-7P9ho72bej2zGs3RmhBQfWb9RQePB8g3mm-LSIs87aOvTgq4qRZXJfIz8vZ_TsYKA9ljV42LqGxaCJJa9ljUhxqqXrni9BR0h4RtdZBaraNREXOOJNsbDSXUwoUeRpD92JaoZUosYLME-eNi4caPl8wa0G5:1ksTuu:DCECBjDROLPFBrmQFviGpFsxCyDLxxV9nuKb8Od1-08",
+        "expire_date": "2021-01-07T16:56:44.039Z"
+    }
+},
+{
+    "model": "accounts.student",
+    "pk": 2,
+    "fields": {
+        "user": [
+            "andhrelja"
+        ],
+        "studying_year": 1,
+        "program": 13
+    }
+},
+{
+    "model": "accounts.studentsubjects",
+    "pk": 2,
+    "fields": {
+        "student": 2,
+        "subject": 1,
+        "academic_year": 2020,
+        "points_accomplished": 0.0,
+        "points_total": 61.0
+    }
+},
+{
+    "model": "accounts.studentsubjects",
+    "pk": 3,
+    "fields": {
+        "student": 2,
+        "subject": 2,
+        "academic_year": 2020,
+        "points_accomplished": 0.0,
+        "points_total": 95.0
+    }
+},
+{
+    "model": "accounts.studentsubjects",
+    "pk": 4,
+    "fields": {
+        "student": 2,
+        "subject": 3,
+        "academic_year": 2020,
+        "points_accomplished": 0.0,
+        "points_total": 80.0
+    }
+},
+{
+    "model": "accounts.studentsubjects",
+    "pk": 5,
+    "fields": {
+        "student": 2,
+        "subject": 4,
+        "academic_year": 2020,
+        "points_accomplished": 0.0,
+        "points_total": 100.0
+    }
+},
+{
+    "model": "accounts.studentsubjects",
+    "pk": 6,
+    "fields": {
+        "student": 2,
+        "subject": 6,
+        "academic_year": 2020,
+        "points_accomplished": 0.0,
+        "points_total": 100.0
+    }
+},
+{
+    "model": "departments.university",
+    "pk": 1,
+    "fields": {
+        "name": "Sveučilište u Rijeci",
+        "code": "UNIRI",
+        "address": "Trg braće Mažuranića 10, 51000, Rijeka",
+        "email": "ured@uniri.hr",
+        "contact": "+385 51 406 500"
+    }
+},
+{
+    "model": "departments.department",
+    "pk": 1,
+    "fields": {
+        "name": "Odjel za biotehnologiju",
+        "code": "BIOTECH",
+        "address": "Ul. Radmile Matejčić 2, 51000, Rijeka",
+        "email": "ured@biotech.uniri.hr",
+        "contact": "+385 51 584 550",
+        "web": "https://biotech.uniri.hr",
+        "university": 1
+    }
+},
+{
+    "model": "departments.department",
+    "pk": 2,
+    "fields": {
+        "name": "Odjel za fiziku",
+        "code": "PHY",
+        "address": "Ul. Radmile Matejčić 2, 51000, Rijeka",
+        "email": "ured@phy.uniri.hr",
+        "contact": "+385 51 584 600",
+        "web": "https://phy.uniri.hr",
+        "university": 1
+    }
+},
+{
+    "model": "departments.department",
+    "pk": 3,
+    "fields": {
+        "name": "Odjel za informatiku",
+        "code": "INF",
+        "address": "Ul. Radmile Matejčić 2, 51000, Rijeka",
+        "email": "ured@inf.uniri.hr",
+        "contact": "+385 51 584 700",
+        "web": "https://inf.uniri.hr",
+        "university": 1
+    }
+},
+{
+    "model": "departments.department",
+    "pk": 4,
+    "fields": {
+        "name": "Odjel za matematiku",
+        "code": "MATH",
+        "address": "Ul. Radmile Matejčić 2, 51000, Rijeka",
+        "email": "math@math.uniri.hr",
+        "contact": "+385 51 584 650",
+        "web": "https://math.uniri.hr",
+        "university": 1
+    }
+},
+{
+    "model": "departments.department",
+    "pk": 5,
+    "fields": {
+        "name": "Akademija primijenjenih umjetnosti",
+        "code": "APURI",
+        "address": "Ulica Slavka Krautzeka 83, 51000, Rijeka",
+        "email": "pravna@apuri.uniri.hr",
+        "contact": "+385 51 228 881",
+        "web": "https://apuri.hr",
+        "university": 1
+    }
+},
+{
+    "model": "departments.department",
+    "pk": 6,
+    "fields": {
+        "name": "Ekonomski fakultet",
+        "code": "EFRI",
+        "address": "Ivana Filipovića 4, 51000, Rijeka",
+        "email": "efri@efri.hr",
+        "contact": "+385 51 355 111",
+        "web": "https://efri.uniri.hr",
+        "university": 1
+    }
+},
+{
+    "model": "departments.department",
+    "pk": 7,
+    "fields": {
+        "name": "Fakultet dentalne medicine",
+        "code": "FDMRI",
+        "address": "Krešimirova 40/42, 51000, Rijeka",
+        "email": "dekanat@fdmri.uniri.hr",
+        "contact": "+385 51 345 631",
+        "web": "https://fdmri.uniri.hr",
+        "university": 1
+    }
+},
+{
+    "model": "departments.department",
+    "pk": 8,
+    "fields": {
+        "name": "Fakultet za menadžment u turizmu i ugostiteljstvu",
+        "code": "FTHM",
+        "address": "Krešimirova 40/42, 51000, Rijeka",
+        "email": "dekanat@fthm.hr",
+        "contact": "+385 51 294 700",
+        "web": "https://fthm.uniri.hr",
+        "university": 1
+    }
+},
+{
+    "model": "departments.department",
+    "pk": 9,
+    "fields": {
+        "name": "Fakultet zdravstvenih studija",
+        "code": "FZSRI",
+        "address": "Ul. Viktora cara Emina 5, 51000, Rijeka",
+        "email": "dekanatfzsri@uniri.hr",
+        "contact": "+385 51 688 266",
+        "web": "https://fzsri.uniri.hr",
+        "university": 1
+    }
+},
+{
+    "model": "departments.department",
+    "pk": 10,
+    "fields": {
+        "name": "Filozofski fakultet",
+        "code": "FFRI",
+        "address": "Sveučilišna Avenija 4, 51000, Rijeka",
+        "email": "pmatic@ffri.hr",
+        "contact": "+385 51 265 600",
+        "web": "https://ffri.uniri.hr",
+        "university": 1
+    }
+},
+{
+    "model": "departments.department",
+    "pk": 11,
+    "fields": {
+        "name": "Građevinski fakultet",
+        "code": "GRADRI",
+        "address": "Ul. Radmile Matejčić 3, 51000, Rijeka",
+        "email": "info@gradri.uniri.hr",
+        "contact": "+385 51 265 900",
+        "web": "https://gradri.uniri.hr",
+        "university": 1
+    }
+},
+{
+    "model": "departments.department",
+    "pk": 12,
+    "fields": {
+        "name": "Medicinski fakultet",
+        "code": "MEDRI",
+        "address": "Ul. Braće Branchetta 20/1, 51000, Rijeka",
+        "email": "dekanat_medri@uniri.hr",
+        "contact": "+385 51 651 111",
+        "web": "https://medri.uniri.hr",
+        "university": 1
+    }
+},
+{
+    "model": "departments.department",
+    "pk": 13,
+    "fields": {
+        "name": "Pravni fakultet",
+        "code": "PRAVRI",
+        "address": "Hahlić 6, 51000, Rijeka",
+        "email": "dekanat@pravri.hr",
+        "contact": "+385 51 359 500",
+        "web": "https://pravri.uniri.hr",
+        "university": 1
+    }
+},
+{
+    "model": "departments.department",
+    "pk": 14,
+    "fields": {
+        "name": "Pomorski fakultet",
+        "code": "PFRI",
+        "address": "Studentska ul. 2, 51000, Rijeka",
+        "email": "dekanat@pfri.hr",
+        "contact": "+385 51 338 411",
+        "web": "https://pfri.uniri.hr",
+        "university": 1
+    }
+},
+{
+    "model": "departments.department",
+    "pk": 15,
+    "fields": {
+        "name": "Tehnički fakultet",
+        "code": "RITEH",
+        "address": "Vukovarska ul. 58, 51000, Rijeka",
+        "email": "dekanat@riteh.hr",
+        "contact": "+385 51 651 444",
+        "web": "https://riteh.uniri.hr",
+        "university": 1
+    }
+},
+{
+    "model": "departments.department",
+    "pk": 16,
+    "fields": {
+        "name": "Učiteljski fakultet",
+        "code": "UFRI",
+        "address": "Sveučilišna Avenija 6, 51000, Rijeka",
+        "email": "dekanat@ufri.hr",
+        "contact": "+385 51 265 800",
+        "web": "https://ufri.uniri.hr",
+        "university": 1
+    }
+},
+{
+    "model": "departments.department",
+    "pk": 17,
+    "fields": {
+        "name": "Sveučilište u Rijeci",
+        "code": "UNI",
+        "address": "Trg braće Mažuranića 10, 51000, Rijeka",
+        "email": "ured@uniri.hr",
+        "contact": "+385 51 406 500",
+        "web": "https://uniri.hr",
+        "university": 1
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 1,
+    "fields": {
+        "name": "Biotehnologija i istraživanje lijekova",
+        "type": "preddiplomski",
+        "department": 1
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 2,
+    "fields": {
+        "name": "Istraživanje i razvoj lijekova",
+        "type": "diplomski",
+        "department": 1
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 3,
+    "fields": {
+        "name": "Biotehnologija u medicini",
+        "type": "diplomski",
+        "department": 1
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 4,
+    "fields": {
+        "name": "Medicinska kemija",
+        "type": "diplomski",
+        "department": 1
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 5,
+    "fields": {
+        "name": "Fizika",
+        "type": "preddiplomski",
+        "department": 2
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 6,
+    "fields": {
+        "name": "Fizika",
+        "type": "diplomski",
+        "department": 2
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 7,
+    "fields": {
+        "name": "Fizika i matematika (nastavnički smjer)",
+        "type": "diplomski",
+        "department": 2
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 8,
+    "fields": {
+        "name": "Fizika i informatika (nastavnički smjer)",
+        "type": "diplomski",
+        "department": 2
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 9,
+    "fields": {
+        "name": "Fizika i filozofija (nastavnički smjer)",
+        "type": "diplomski",
+        "department": 2
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 10,
+    "fields": {
+        "name": "Inženjerstvo i fizika materijala",
+        "type": "diplomski",
+        "department": 2
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 11,
+    "fields": {
+        "name": "Jednopredmetna informatika",
+        "type": "preddiplomski",
+        "department": 3
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 13,
+    "fields": {
+        "name": "Informatika (modul: Poslovna informatika)",
+        "type": "diplomski",
+        "department": 3
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 14,
+    "fields": {
+        "name": "Informatika (modul: Informacijski i komunikacijski sustavi)",
+        "type": "diplomski",
+        "department": 3
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 15,
+    "fields": {
+        "name": "Informatika (nastavnički smjer)",
+        "type": "diplomski",
+        "department": 3
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 17,
+    "fields": {
+        "name": "Matematika",
+        "type": "preddiplomski",
+        "department": 4
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 18,
+    "fields": {
+        "name": "Matematika i informatika (nastavnički smjer)",
+        "type": "diplomski",
+        "department": 4
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 19,
+    "fields": {
+        "name": "Diskretna matematika i primjene",
+        "type": "diplomski",
+        "department": 4
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 20,
+    "fields": {
+        "name": "Diskretna matematika i primjene (na engleskom jeziku)",
+        "type": "diplomski",
+        "department": 4
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 21,
+    "fields": {
+        "name": "Likovna pedagogija",
+        "type": "preddiplomski",
+        "department": 5
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 22,
+    "fields": {
+        "name": "Primijenjena umjetnost",
+        "type": "preddiplomski",
+        "department": 5
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 23,
+    "fields": {
+        "name": "Gluma i mediji",
+        "type": "preddiplomski",
+        "department": 5
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 24,
+    "fields": {
+        "name": "Likovna pedagogija",
+        "type": "diplomski",
+        "department": 5
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 25,
+    "fields": {
+        "name": "Primijenjena umjetnost",
+        "type": "diplomski",
+        "department": 5
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 26,
+    "fields": {
+        "name": "Medijske umjetnosti i prakse",
+        "type": "diplomski",
+        "department": 5
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 27,
+    "fields": {
+        "name": "Vizualne komunikacije i grafički dizajn",
+        "type": "diplomski",
+        "department": 5
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 28,
+    "fields": {
+        "name": "Gluma i mediji",
+        "type": "diplomski",
+        "department": 5
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 29,
+    "fields": {
+        "name": "Ekonomija",
+        "type": "preddiplomski",
+        "department": 6
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 30,
+    "fields": {
+        "name": "Poslovna ekonomija",
+        "type": "preddiplomski",
+        "department": 6
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 31,
+    "fields": {
+        "name": "Ekonomija",
+        "type": "diplomski",
+        "department": 6
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 32,
+    "fields": {
+        "name": "Poslovna ekonomija",
+        "type": "diplomski",
+        "department": 6
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 33,
+    "fields": {
+        "name": "Poslovna ekonomija, smjer Poduzetništvo – online studij",
+        "type": "diplomski",
+        "department": 6
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 34,
+    "fields": {
+        "name": "Dentalna medicina",
+        "type": "preddiplomski",
+        "department": 7
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 35,
+    "fields": {
+        "name": "Dentalna higijena",
+        "type": "preddiplomski",
+        "department": 7
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 36,
+    "fields": {
+        "name": "Dental medicine in English",
+        "type": "preddiplomski",
+        "department": 7
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 37,
+    "fields": {
+        "name": "Fizioterapija",
+        "type": "diplomski",
+        "department": 7
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 38,
+    "fields": {
+        "name": "Sestrinstvo – Promicanje i zaštita mentalnog zdravlja",
+        "type": "diplomski",
+        "department": 7
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 39,
+    "fields": {
+        "name": "Sestrinstvo – Menadžment u sestrinstvu",
+        "type": "diplomski",
+        "department": 7
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 40,
+    "fields": {
+        "name": "Medicinsko laboratorijska dijagnostika",
+        "type": "diplomski",
+        "department": 7
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 41,
+    "fields": {
+        "name": "Klinički nutricionizam",
+        "type": "diplomski",
+        "department": 7
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 42,
+    "fields": {
+        "name": "Primaljstvo",
+        "type": "diplomski",
+        "department": 7
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 43,
+    "fields": {
+        "name": "Poslovna ekonomija u turizmu i ugostiteljstvu (Opatija i Zabok)",
+        "type": "preddiplomski",
+        "department": 8
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 44,
+    "fields": {
+        "name": "Menadžment održivog razvoja",
+        "type": "preddiplomski",
+        "department": 8
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 45,
+    "fields": {
+        "name": "Marketing u turizmu",
+        "type": "diplomski",
+        "department": 8
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 46,
+    "fields": {
+        "name": "Menadžment u turizmu",
+        "type": "diplomski",
+        "department": 8
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 47,
+    "fields": {
+        "name": "Menadžment u hotelijerstvu",
+        "type": "diplomski",
+        "department": 8
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 48,
+    "fields": {
+        "name": "Održivi razvoj turizma",
+        "type": "diplomski",
+        "department": 8
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 49,
+    "fields": {
+        "name": "Turizam (združeni studij)",
+        "type": "diplomski",
+        "department": 8
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 50,
+    "fields": {
+        "name": "Sestrinstvo",
+        "type": "preddiplomski",
+        "department": 9
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 51,
+    "fields": {
+        "name": "Fizioterapija",
+        "type": "preddiplomski",
+        "department": 9
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 52,
+    "fields": {
+        "name": "Radiološka tehnologija",
+        "type": "preddiplomski",
+        "department": 9
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 53,
+    "fields": {
+        "name": "Primaljstvo",
+        "type": "preddiplomski",
+        "department": 9
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 54,
+    "fields": {
+        "name": "Jednopredmetni studij – Hrvatski jezik i književnost",
+        "type": "preddiplomski",
+        "department": 10
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 55,
+    "fields": {
+        "name": "Jednopredmetni studij – Psihologija",
+        "type": "preddiplomski",
+        "department": 10
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 56,
+    "fields": {
+        "name": "Jednopredmetni studij – Pedagogija",
+        "type": "preddiplomski",
+        "department": 10
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 57,
+    "fields": {
+        "name": "Jednopredmetni studij – Kulturlogija",
+        "type": "preddiplomski",
+        "department": 10
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 58,
+    "fields": {
+        "name": "Dvopredmetni studij s Hrvatski jezik i književnost",
+        "type": "preddiplomski",
+        "department": 10
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 59,
+    "fields": {
+        "name": "Dvopredmetni studij s Engleski jezik i književnost",
+        "type": "preddiplomski",
+        "department": 10
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 60,
+    "fields": {
+        "name": "Dvopredmetni studij s Njemački jezik i književnost",
+        "type": "preddiplomski",
+        "department": 10
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 61,
+    "fields": {
+        "name": "Dvopredmetni studij s Talijanski jezik i književnost",
+        "type": "preddiplomski",
+        "department": 10
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 62,
+    "fields": {
+        "name": "Dvopredmetni studij s Filozofija",
+        "type": "preddiplomski",
+        "department": 10
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 63,
+    "fields": {
+        "name": "Dvopredmetni studij s Povijest",
+        "type": "preddiplomski",
+        "department": 10
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 64,
+    "fields": {
+        "name": "Dvopredmetni studij s Povijest umjetnosti",
+        "type": "preddiplomski",
+        "department": 10
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 65,
+    "fields": {
+        "name": "Dvopredmetni studij s Pedagogija",
+        "type": "preddiplomski",
+        "department": 10
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 66,
+    "fields": {
+        "name": "Jednopredmetni studij s Hrvatski jezik i književnost smjer nastavnički, kroatistički",
+        "type": "diplomski",
+        "department": 10
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 67,
+    "fields": {
+        "name": "Jednopredmetni studij s Psihologija",
+        "type": "diplomski",
+        "department": 10
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 68,
+    "fields": {
+        "name": "Jednopredmetni studij s Pedagogija",
+        "type": "diplomski",
+        "department": 10
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 69,
+    "fields": {
+        "name": "Jednopredmetni studij s Kulturologija",
+        "type": "diplomski",
+        "department": 10
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 70,
+    "fields": {
+        "name": "Jednopredmetni studij s Talijanski jezik i knjževnost",
+        "type": "diplomski",
+        "department": 10
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 71,
+    "fields": {
+        "name": "Dvopredmetni studij s Hrvatski jezik i književnost",
+        "type": "diplomski",
+        "department": 10
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 72,
+    "fields": {
+        "name": "Dvopredmetni studij s Engleski jezik i književnost",
+        "type": "diplomski",
+        "department": 10
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 73,
+    "fields": {
+        "name": "Dvopredmetni studij s Njemački jezik i književnost",
+        "type": "diplomski",
+        "department": 10
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 74,
+    "fields": {
+        "name": "Dvopredmetni studij s Filozofija",
+        "type": "diplomski",
+        "department": 10
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 75,
+    "fields": {
+        "name": "Dvopredmetni studij s Povijest",
+        "type": "diplomski",
+        "department": 10
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 76,
+    "fields": {
+        "name": "Dvopredmetni studij s Povijest umjetnosti",
+        "type": "diplomski",
+        "department": 10
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 77,
+    "fields": {
+        "name": "Dvopredmetni studij s Pedagogija",
+        "type": "diplomski",
+        "department": 10
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 78,
+    "fields": {
+        "name": "Dvopredmetni – Prevoditeljski studij",
+        "type": "diplomski",
+        "department": 10
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 79,
+    "fields": {
+        "name": "Dvopredmetni – Povijest i interpretacija baštine",
+        "type": "diplomski",
+        "department": 10
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 80,
+    "fields": {
+        "name": "Građevinarstvo",
+        "type": "preddiplomski",
+        "department": 11
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 81,
+    "fields": {
+        "name": "Građevinarstvo (stručni)",
+        "type": "preddiplomski",
+        "department": 11
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 82,
+    "fields": {
+        "name": "Dvopredmetni studij s Engleski jezik i književnost",
+        "type": "preddiplomski",
+        "department": 11
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 83,
+    "fields": {
+        "name": "Dvopredmetni studij s Njemački jezik i književnost",
+        "type": "preddiplomski",
+        "department": 11
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 84,
+    "fields": {
+        "name": "Dvopredmetni studij s Talijanski jezik i književnost",
+        "type": "preddiplomski",
+        "department": 11
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 85,
+    "fields": {
+        "name": "Dvopredmetni studij s Filozofija",
+        "type": "preddiplomski",
+        "department": 11
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 86,
+    "fields": {
+        "name": "Dvopredmetni studij s Povijest",
+        "type": "preddiplomski",
+        "department": 11
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 87,
+    "fields": {
+        "name": "Dvopredmetni studij s Povijest umjetnosti",
+        "type": "preddiplomski",
+        "department": 11
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 88,
+    "fields": {
+        "name": "Dvopredmetni studij s Pedagogija",
+        "type": "preddiplomski",
+        "department": 11
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 89,
+    "fields": {
+        "name": "Građevinarstvo",
+        "type": "diplomski",
+        "department": 11
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 90,
+    "fields": {
+        "name": "Građevinarstvo (specijalistički diplomski stručni studij)",
+        "type": "diplomski",
+        "department": 11
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 91,
+    "fields": {
+        "name": "Jednopredmetni studij s Hrvatski jezik i književnost smjer nastavnički, kroatistički",
+        "type": "diplomski",
+        "department": 11
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 92,
+    "fields": {
+        "name": "Jednopredmetni studij s Psihologija",
+        "type": "diplomski",
+        "department": 11
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 93,
+    "fields": {
+        "name": "Jednopredmetni studij s Pedagogija",
+        "type": "diplomski",
+        "department": 11
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 94,
+    "fields": {
+        "name": "Jednopredmetni studij s Kulturologija",
+        "type": "diplomski",
+        "department": 11
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 95,
+    "fields": {
+        "name": "Jednopredmetni studij  Talijanski jezik i knjževnost",
+        "type": "diplomski",
+        "department": 11
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 96,
+    "fields": {
+        "name": "Dvopredmetni studij s Hrvatski jezik i književnost",
+        "type": "diplomski",
+        "department": 11
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 97,
+    "fields": {
+        "name": "Dvopredmetni studij s Engleski jezik i književnost",
+        "type": "diplomski",
+        "department": 11
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 98,
+    "fields": {
+        "name": "Dvopredmetni studij s Njemački jezik i književnost",
+        "type": "diplomski",
+        "department": 11
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 99,
+    "fields": {
+        "name": "Dvopredmetni studij s Filozofija",
+        "type": "diplomski",
+        "department": 11
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 100,
+    "fields": {
+        "name": "Dvopredmetni studij s Povijest",
+        "type": "diplomski",
+        "department": 11
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 101,
+    "fields": {
+        "name": "Dvopredmetni studij s Povijest umjetnosti",
+        "type": "diplomski",
+        "department": 11
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 102,
+    "fields": {
+        "name": "Dvopredmetni studij s  Pedagogija",
+        "type": "diplomski",
+        "department": 11
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 103,
+    "fields": {
+        "name": "Dvopredmetni – Prevoditeljski studij",
+        "type": "diplomski",
+        "department": 11
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 104,
+    "fields": {
+        "name": "Dvopredmetni – Povijest i interpretacija diplomskine",
+        "type": "diplomski",
+        "department": 11
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 105,
+    "fields": {
+        "name": "Medicina",
+        "type": "preddiplomski",
+        "department": 12
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 106,
+    "fields": {
+        "name": "Medicina na engleskom jeziku",
+        "type": "preddiplomski",
+        "department": 12
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 107,
+    "fields": {
+        "name": "Dentalna medicina",
+        "type": "preddiplomski",
+        "department": 12
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 108,
+    "fields": {
+        "name": "Dentalna medicina na engleskom jeziku",
+        "type": "preddiplomski",
+        "department": 12
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 109,
+    "fields": {
+        "name": "Sanitarno inžinjerstvo",
+        "type": "preddiplomski",
+        "department": 12
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 110,
+    "fields": {
+        "name": "Dentalna higijena",
+        "type": "preddiplomski",
+        "department": 12
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 111,
+    "fields": {
+        "name": "Sanitarno inžinjerstvo",
+        "type": "diplomski",
+        "department": 12
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 112,
+    "fields": {
+        "name": "Pravo",
+        "type": "preddiplomski",
+        "department": 13
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 113,
+    "fields": {
+        "name": "Upravni studij",
+        "type": "preddiplomski",
+        "department": 13
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 114,
+    "fields": {
+        "name": "Javna uprava",
+        "type": "diplomski",
+        "department": 13
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 115,
+    "fields": {
+        "name": "Tehnologija i organizacija prometa",
+        "type": "preddiplomski",
+        "department": 14
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 116,
+    "fields": {
+        "name": "Logistika i menadžment u pomorstvu i prometu",
+        "type": "preddiplomski",
+        "department": 14
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 117,
+    "fields": {
+        "name": "Nautika i tehnologija pomorskog prometa",
+        "type": "preddiplomski",
+        "department": 14
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 118,
+    "fields": {
+        "name": "Brodostrojarstvo",
+        "type": "preddiplomski",
+        "department": 14
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 119,
+    "fields": {
+        "name": "Elektroničke i informatičke tehnologije u pomorstvu",
+        "type": "preddiplomski",
+        "department": 14
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 120,
+    "fields": {
+        "name": "Tehnologija i organizacija prometa",
+        "type": "diplomski",
+        "department": 14
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 121,
+    "fields": {
+        "name": "Logistika i menadžment u pomorstvu i prometu ",
+        "type": "diplomski",
+        "department": 14
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 122,
+    "fields": {
+        "name": "Nautika i tehnologija pomorskog prometa ",
+        "type": "diplomski",
+        "department": 14
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 123,
+    "fields": {
+        "name": "Brodostrojarstvo i tehnologija pomorskog prometa ",
+        "type": "diplomski",
+        "department": 14
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 124,
+    "fields": {
+        "name": "Elektroničke i informatičke tehnologije u pomorstvu ",
+        "type": "diplomski",
+        "department": 14
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 125,
+    "fields": {
+        "name": "Strojarstvo",
+        "type": "preddiplomski",
+        "department": 15
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 126,
+    "fields": {
+        "name": "Brodogradnja",
+        "type": "preddiplomski",
+        "department": 15
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 127,
+    "fields": {
+        "name": "Elektrotehnika",
+        "type": "preddiplomski",
+        "department": 15
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 128,
+    "fields": {
+        "name": "Računarstvo",
+        "type": "preddiplomski",
+        "department": 15
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 129,
+    "fields": {
+        "name": "Strojarstvo",
+        "type": "diplomski",
+        "department": 15
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 130,
+    "fields": {
+        "name": "Brodogradnja",
+        "type": "diplomski",
+        "department": 15
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 131,
+    "fields": {
+        "name": "Elektrotehnika",
+        "type": "diplomski",
+        "department": 15
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 132,
+    "fields": {
+        "name": "Računarstvo",
+        "type": "diplomski",
+        "department": 15
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 133,
+    "fields": {
+        "name": "Učiteljski studij",
+        "type": "preddiplomski",
+        "department": 16
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 134,
+    "fields": {
+        "name": "Rani i predškolski odgoj",
+        "type": "preddiplomski",
+        "department": 16
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 135,
+    "fields": {
+        "name": "Rani i predškolski odgoj i obrazovanje",
+        "type": "diplomski",
+        "department": 16
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 136,
+    "fields": {
+        "name": "Politehnika",
+        "type": "preddiplomski",
+        "department": 17
+    }
+},
+{
+    "model": "departments.program",
+    "pk": 137,
+    "fields": {
+        "name": "Politehnika i informatika (nastavnički smjer)",
+        "type": "diplomski",
+        "department": 17
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 1,
+    "fields": {
+        "name": "Elektroničko gospodarstvo",
+        "code": "EG",
+        "ects": 6,
+        "professor": "dr. sc. Dragan Čišić",
+        "assistant": "doc. dr. sc. Vanja Slavuj",
+        "semester": "1",
+        "academic_year": 2020,
+        "predavanja_dan": "četvrtkom",
+        "predavanja_vrijeme": "10:15:00",
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": "četvrtkom",
+        "vjezbe_vrijeme": "12:15:00",
+        "vjezbe_trajanje": "01:30:00",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/DINP_EG_2020_2021.pdf",
+        "csv_file": "dinps/inf/14/DINP_EG_2020_2021.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 2,
+    "fields": {
+        "name": "Inteligentni sustavi 1",
+        "code": "IS1",
+        "ects": 6,
+        "professor": "dr. sc. Marina Ivašić-Kos",
+        "assistant": "Kristina Host",
+        "semester": "1",
+        "academic_year": 2020,
+        "predavanja_dan": "srijedom",
+        "predavanja_vrijeme": "10:15:00",
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": "srijedom",
+        "vjezbe_vrijeme": "08:30:00",
+        "vjezbe_trajanje": "01:30:00",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/IS1_DINP_2020_2021_.pdf",
+        "csv_file": "dinps/inf/14/DINP_IS1_2020_2021.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 3,
+    "fields": {
+        "name": "Operacijska istraživanja 1",
+        "code": "OPI1",
+        "ects": 6,
+        "professor": "doc. dr. sc. Martina Holenko Dlab",
+        "assistant": "doc. dr. sc. Martina Holenko Dlab",
+        "semester": "1",
+        "academic_year": 2020,
+        "predavanja_dan": "utorkom",
+        "predavanja_vrijeme": "08:30:00",
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": "utorkom",
+        "vjezbe_vrijeme": "10:15:00",
+        "vjezbe_trajanje": "01:30:00",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/DINP_OPI1_2020_2021.pdf",
+        "csv_file": "dinps/inf/14/DINP_OPI1_2020_2021.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 4,
+    "fields": {
+        "name": "Programsko inženjerstvo",
+        "code": "PI",
+        "ects": 6,
+        "professor": "izv. prof. dr. sc. Sanja Čandrlić",
+        "assistant": "doc. dr. sc. Martina Ašenbrener Katić",
+        "semester": "1",
+        "academic_year": 2020,
+        "predavanja_dan": "petkom",
+        "predavanja_vrijeme": "10:15:00",
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": "petkom",
+        "vjezbe_vrijeme": "10:15:00",
+        "vjezbe_trajanje": "01:30:00",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/DINP_PI_2020_2021.pdf",
+        "csv_file": "dinps/inf/14/DINP_PI_2020_2021.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 5,
+    "fields": {
+        "name": "Distribuirani sustavi",
+        "code": "DS",
+        "ects": 6,
+        "professor": "dr. sc. Božidar Kovačić",
+        "assistant": "v. pred. dr. sc. Vedran Miletić",
+        "semester": "1",
+        "academic_year": 2020,
+        "predavanja_dan": "utorkom",
+        "predavanja_vrijeme": "12:15:00",
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": "četvrtkom",
+        "vjezbe_vrijeme": "16:15:00",
+        "vjezbe_trajanje": "01:30:00",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/DINP_DS_2020_2021.pdf",
+        "csv_file": "dinps/inf/14/DINP_DS_2020_2021.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 6,
+    "fields": {
+        "name": "Objektni programski jezici",
+        "code": "OPJ",
+        "ects": 6,
+        "professor": "dr. sc. Marina Ivašić-Kos",
+        "assistant": "Ivona Franković",
+        "semester": "1",
+        "academic_year": 2020,
+        "predavanja_dan": "srijedom",
+        "predavanja_vrijeme": "12:15:00",
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": "četvrtkom",
+        "vjezbe_vrijeme": "14:15:00",
+        "vjezbe_trajanje": "01:30:00",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/DINP_OPJ_2020_2021.pdf",
+        "csv_file": "dinps/inf/14/DINP_OPJ_2020_2021.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 7,
+    "fields": {
+        "name": "Osnove e-obrazovanja",
+        "code": "OeO",
+        "ects": 6,
+        "professor": "dr. sc. Nataša Hoić-Božić",
+        "assistant": "dr. sc. Nataša Hoić-Božić",
+        "semester": "1",
+        "academic_year": 2020,
+        "predavanja_dan": "ponedjeljkom",
+        "predavanja_vrijeme": "08:30:00",
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": "ponedjeljkom",
+        "vjezbe_vrijeme": "08:30:00",
+        "vjezbe_trajanje": "01:30:00",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/DINP_OeO_2020_2021.pdf",
+        "csv_file": "dinps/inf/14/DINP_OeO_2020_2021.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 8,
+    "fields": {
+        "name": "Ekonomika poslovanja",
+        "code": "EP",
+        "ects": 6,
+        "professor": "dr. sc. Borna Debelić",
+        "assistant": "Gordana Bugarinović",
+        "semester": "1",
+        "academic_year": 2020,
+        "predavanja_dan": "utorkom",
+        "predavanja_vrijeme": "14:15:00",
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": "utorkom",
+        "vjezbe_vrijeme": "16:15:00",
+        "vjezbe_trajanje": "01:30:00",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/DINP_Ekonomika_poslovanja_2020_2021.pdf",
+        "csv_file": "dinps/inf/14/DINP_EP_2020_2021.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 9,
+    "fields": {
+        "name": "Inteligentni sustavi 2",
+        "code": "IS2",
+        "ects": 6,
+        "professor": "dr. sc. Maja Matetić",
+        "assistant": "mag. educ. math. et inf. Dejan Ljubobratović",
+        "semester": "2",
+        "academic_year": 2019,
+        "predavanja_dan": null,
+        "predavanja_vrijeme": null,
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": null,
+        "vjezbe_vrijeme": null,
+        "vjezbe_trajanje": "01:30:00",
+        "dinp_link": null,
+        "csv_file": "dinps/inf/14/DINP_IS2_2019_2020.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 10,
+    "fields": {
+        "name": "Strateško planiranje informacijskih sustava",
+        "code": "SPIS",
+        "ects": 6,
+        "professor": "izv. prof. dr. sc. Sanja Čandrlić",
+        "assistant": "mag. inf. Kristian Stančin",
+        "semester": "2",
+        "academic_year": 2019,
+        "predavanja_dan": null,
+        "predavanja_vrijeme": null,
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": null,
+        "vjezbe_vrijeme": null,
+        "vjezbe_trajanje": "01:30:00",
+        "dinp_link": null,
+        "csv_file": "dinps/inf/14/DINP_SPIS_2019_2020.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 11,
+    "fields": {
+        "name": "Multimedijski i hipermedijski sustavi",
+        "code": "MHS",
+        "ects": 6,
+        "professor": "prof. dr. sc. Nataša Hoić-Božić",
+        "assistant": "doc. dr. sc. Vanja Slavuj",
+        "semester": "2",
+        "academic_year": 2019,
+        "predavanja_dan": null,
+        "predavanja_vrijeme": null,
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": null,
+        "vjezbe_vrijeme": null,
+        "vjezbe_trajanje": "01:30:00",
+        "dinp_link": null,
+        "csv_file": "dinps/inf/14/DINP_MHS_2019_2020.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 12,
+    "fields": {
+        "name": "Skladišta podataka",
+        "code": "SP",
+        "ects": 6,
+        "professor": "prof. dr. sc. Patrizia Poščić",
+        "assistant": "doc. dr. sc. Danijela Jakšić",
+        "semester": "2",
+        "academic_year": 2019,
+        "predavanja_dan": null,
+        "predavanja_vrijeme": null,
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": null,
+        "vjezbe_vrijeme": null,
+        "vjezbe_trajanje": "01:30:00",
+        "dinp_link": null,
+        "csv_file": "dinps/inf/14/DINP_SP_2019_2020.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 13,
+    "fields": {
+        "name": "Osnove digitalne obrade govora i slika",
+        "code": "ODOGS",
+        "ects": 6,
+        "professor": "doc. dr. sc. Miran Pobar",
+        "assistant": "doc. dr. sc. Miran Pobar",
+        "semester": "2",
+        "academic_year": 2019,
+        "predavanja_dan": null,
+        "predavanja_vrijeme": null,
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": null,
+        "vjezbe_vrijeme": null,
+        "vjezbe_trajanje": "01:30:00",
+        "dinp_link": null,
+        "csv_file": "dinps/inf/14/DINP_ODOGS_2019_2020.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 14,
+    "fields": {
+        "name": "Sustavi za podršku odlučivanju",
+        "code": "SPO",
+        "ects": 6,
+        "professor": "dr. sc. Sanda Martinčić-Ipšić",
+        "assistant": "Karlo Babić",
+        "semester": "2",
+        "academic_year": 2019,
+        "predavanja_dan": null,
+        "predavanja_vrijeme": null,
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": null,
+        "vjezbe_vrijeme": null,
+        "vjezbe_trajanje": "01:30:00",
+        "dinp_link": null,
+        "csv_file": "dinps/inf/14/DINP_SPO_2019_2020.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 15,
+    "fields": {
+        "name": "Operacijska istraživanja 2",
+        "code": "OPI2",
+        "ects": 6,
+        "professor": "doc. dr. sc. Martina Holenko Dlab",
+        "assistant": "doc. dr. sc. Martina Holenko Dlab",
+        "semester": "2",
+        "academic_year": 2019,
+        "predavanja_dan": null,
+        "predavanja_vrijeme": null,
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": null,
+        "vjezbe_vrijeme": null,
+        "vjezbe_trajanje": "01:30:00",
+        "dinp_link": null,
+        "csv_file": "dinps/inf/14/DINP_OPI2_2019_2020.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 16,
+    "fields": {
+        "name": "Logistika",
+        "code": "LOG",
+        "ects": 6,
+        "professor": "dr. sc. Dragan Čišić",
+        "assistant": "dr. sc. Dragan Čišić",
+        "semester": "2",
+        "academic_year": 2019,
+        "predavanja_dan": null,
+        "predavanja_vrijeme": null,
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": null,
+        "vjezbe_vrijeme": null,
+        "vjezbe_trajanje": "01:30:00",
+        "dinp_link": null,
+        "csv_file": "dinps/inf/14/DINP_LOG_2019_2020.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 17,
+    "fields": {
+        "name": "Računalna analiza prirodnog jezika",
+        "code": "RAPJ",
+        "ects": 6,
+        "professor": "dr. sc. Sanda Martinčić-Ipšić",
+        "assistant": "Karlo Babić",
+        "semester": "2",
+        "academic_year": 2019,
+        "predavanja_dan": null,
+        "predavanja_vrijeme": null,
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": null,
+        "vjezbe_vrijeme": null,
+        "vjezbe_trajanje": "01:30:00",
+        "dinp_link": null,
+        "csv_file": "dinps/inf/14/DINP_RAPJ_2019_2020.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 18,
+    "fields": {
+        "name": "Menadžment i upravljanje",
+        "code": "MIU",
+        "ects": 6,
+        "professor": "dr. sc. Patrizia Poščić",
+        "assistant": "mag. inf. Kristian Stančin",
+        "semester": "3",
+        "academic_year": 2020,
+        "predavanja_dan": "ponedjeljkom",
+        "predavanja_vrijeme": "10:00:00",
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": "ponedjeljkom",
+        "vjezbe_vrijeme": "08:00:00",
+        "vjezbe_trajanje": "01:30:00",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/2_godina/MIU_DINP_2020_2021.pdf",
+        "csv_file": "dinps/inf/14/DINP_MIU_2020_2021.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 19,
+    "fields": {
+        "name": "Upravljanje informatičkim projektima",
+        "code": "UIP",
+        "ects": 6,
+        "professor": "dr. sc. Sanda Martinčić-Ipšić",
+        "assistant": "Karlo Babić",
+        "semester": "3",
+        "academic_year": 2020,
+        "predavanja_dan": "četvrtkom",
+        "predavanja_vrijeme": "12:00:00",
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": "četvrtkom",
+        "vjezbe_vrijeme": "14:00:00",
+        "vjezbe_trajanje": "01:30:00",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/2_godina/DINP_UIP_2020_2021.pdf",
+        "csv_file": "dinps/inf/14/DINP_UIP_2020_2021.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 20,
+    "fields": {
+        "name": "Informacijska tehnologija i društvo",
+        "code": "ITID",
+        "ects": 6,
+        "professor": "dr. cs. Danijela Jakšić",
+        "assistant": "doc. dr. sc. Danijela Jakšić",
+        "semester": "3",
+        "academic_year": 2020,
+        "predavanja_dan": "srijedom",
+        "predavanja_vrijeme": "10:00:00",
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": "srijedom",
+        "vjezbe_vrijeme": "12:00:00",
+        "vjezbe_trajanje": "01:30:00",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/2_godina/DINP_ITID_2020_2021.pdf",
+        "csv_file": "dinps/inf/14/DINP_ITID_2020_2021.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 21,
+    "fields": {
+        "name": "Komunikacija čovjek stroj",
+        "code": "KCS",
+        "ects": 6,
+        "professor": "dr. sc. Ivo Ipšić",
+        "assistant": "doc. dr. sc. Miran Pobar",
+        "semester": "3",
+        "academic_year": 2020,
+        "predavanja_dan": "četvrtkom",
+        "predavanja_vrijeme": "08:30:00",
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": "četvrtkom",
+        "vjezbe_vrijeme": "10:00:00",
+        "vjezbe_trajanje": "01:30:00",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/2_godina/DINP_KCS_2020_2021.pdf",
+        "csv_file": "dinps/inf/14/DINP_KCS_2020_2021.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 22,
+    "fields": {
+        "name": "Otkrivanje znanja u podacima",
+        "code": "OZUP",
+        "ects": 6,
+        "professor": "dr. sc. Maja Matetić",
+        "assistant": "mag. educ. math. et inf. Dejan Ljubobratović",
+        "semester": "3",
+        "academic_year": 2020,
+        "predavanja_dan": "petkom",
+        "predavanja_vrijeme": "08:15:00",
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": "petkom",
+        "vjezbe_vrijeme": "10:00:00",
+        "vjezbe_trajanje": "01:30:00",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/2_godina/DINP_OZUP_2020_2021.pdf",
+        "csv_file": "dinps/inf/14/DINP_OZUP_2020_2021.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 23,
+    "fields": {
+        "name": "Upravljanje mrežnim sustavima",
+        "code": "UMS",
+        "ects": 6,
+        "professor": "dr. sc. Vedran Miletić",
+        "assistant": "dr. sc. Vedran Miletić",
+        "semester": "3",
+        "academic_year": 2020,
+        "predavanja_dan": "ponedjeljkom",
+        "predavanja_vrijeme": "12:15:00",
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": "ponedjeljkom",
+        "vjezbe_vrijeme": "16:00:00",
+        "vjezbe_trajanje": "01:30:00",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/2_godina/DINP_UMS_2020_2021.pdf",
+        "csv_file": "dinps/inf/14/DINP_UMS_2020_2021.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 24,
+    "fields": {
+        "name": "Upravljanje znanjem",
+        "code": "UPZ",
+        "ects": 6,
+        "professor": "dr. sc. Ana Meštrović",
+        "assistant": "dr. sc. Slobodan Beliga",
+        "semester": "3",
+        "academic_year": 2020,
+        "predavanja_dan": "utorkom",
+        "predavanja_vrijeme": "08:15:00",
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": "utorkom",
+        "vjezbe_vrijeme": "10:00:00",
+        "vjezbe_trajanje": "01:30:00",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/2_godina/DINP_UPZ_2020_2021.pdf",
+        "csv_file": "dinps/inf/14/DINP_UPZ_2020_2021.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 25,
+    "fields": {
+        "name": "Informacijski sustav organizacije",
+        "code": "ISO",
+        "ects": 6,
+        "professor": "dr. sc. Mile Pavlić",
+        "assistant": "izv. prof. dr. sc. Sanja Čandrlić",
+        "semester": "3",
+        "academic_year": 2020,
+        "predavanja_dan": "petkom",
+        "predavanja_vrijeme": "12:15:00",
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": "petkom",
+        "vjezbe_vrijeme": "14:15:00",
+        "vjezbe_trajanje": "01:30:00",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/2_godina/DINP_ISO_2020_2021.pdf",
+        "csv_file": "dinps/inf/14/DINP_ISO_2020_2021.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 26,
+    "fields": {
+        "name": "Diplomski rad",
+        "code": "Zavrsni",
+        "ects": 24,
+        "professor": "",
+        "assistant": "",
+        "semester": "4",
+        "academic_year": 2020,
+        "predavanja_dan": null,
+        "predavanja_vrijeme": null,
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": null,
+        "vjezbe_vrijeme": null,
+        "vjezbe_trajanje": "01:30:00",
+        "dinp_link": null,
+        "csv_file": ""
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 27,
+    "fields": {
+        "name": "Stručna praksa",
+        "code": "StrucnaPraksa",
+        "ects": 6,
+        "professor": "dr. sc. Nataša Hoić-Božić",
+        "assistant": "dr. sc. Nataša Hoić-Božić",
+        "semester": "4",
+        "academic_year": 2019,
+        "predavanja_dan": null,
+        "predavanja_vrijeme": null,
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": null,
+        "vjezbe_vrijeme": null,
+        "vjezbe_trajanje": "01:30:00",
+        "dinp_link": null,
+        "csv_file": "dinps/inf/14/DINP_StrucnaPraksa_2019_2020.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 28,
+    "fields": {
+        "name": "Edukacijska psihologija 1",
+        "code": "EP1",
+        "ects": 5,
+        "professor": "dr. sc. Rosanda Pahljina-Reinić",
+        "assistant": "Martina Bažon ",
+        "semester": "1",
+        "academic_year": 2020,
+        "predavanja_dan": "četvrtkom",
+        "predavanja_vrijeme": "14:30:00",
+        "predavanja_trajanje": "01:20:00",
+        "vjezbe_dan": "ponedjeljkom",
+        "vjezbe_vrijeme": "16:30:00",
+        "vjezbe_trajanje": "01:40:00",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/NM/Edukacijska_psihologija_1_20_21.pdf",
+        "csv_file": "dinps/inf/15/Edukacijska_psihologija_1_20_21.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 29,
+    "fields": {
+        "name": "Opća pedagogija",
+        "code": "OPED",
+        "ects": 5,
+        "professor": "dr. sc. Sofija Vrcelj",
+        "assistant": "Ines Begić",
+        "semester": "1",
+        "academic_year": 2020,
+        "predavanja_dan": "utorkom",
+        "predavanja_vrijeme": "12:40:00",
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": "srijedom",
+        "vjezbe_vrijeme": "14:15:00",
+        "vjezbe_trajanje": "03:45:00",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/NM/Opca_pedagogija__20_21.pdf",
+        "csv_file": "dinps/inf/15/Opca_pedagogija__20_21.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 30,
+    "fields": {
+        "name": "Primjena hipermedije u obrazovanju 1",
+        "code": "HMS1",
+        "ects": 5,
+        "professor": "dr. sc. Nataša Hoić-Božić",
+        "assistant": "dr. sc. Nataša Hoić-Božić",
+        "semester": "1",
+        "academic_year": 2020,
+        "predavanja_dan": "ponedjeljkom",
+        "predavanja_vrijeme": "08:30:00",
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": "ponedjeljkom",
+        "vjezbe_vrijeme": "08:30:00",
+        "vjezbe_trajanje": "01:30:00",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/NM/DINP_HMS1_2020_2021.pdf",
+        "csv_file": "dinps/inf/15/DINP_HMS1_2020_2021.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 31,
+    "fields": {
+        "name": "Razvojna psihologija",
+        "code": "RP",
+        "ects": 5,
+        "professor": "dr. sc. Sanja Smojver-Ažić",
+        "assistant": "dr.sc. Sanja Bradić, vanjski suradnik",
+        "semester": "1",
+        "academic_year": 2020,
+        "predavanja_dan": "ponedjeljkom",
+        "predavanja_vrijeme": "14:15:00",
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": "četvrtkom/2",
+        "vjezbe_vrijeme": "16:30:00",
+        "vjezbe_trajanje": "01:40:00",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/NM/Razvojna_psihologija_20_21.pdf",
+        "csv_file": "dinps/inf/15/Razvojna_psihologija_20_21.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 32,
+    "fields": {
+        "name": "Didaktika 2",
+        "code": "DID2",
+        "ects": 4,
+        "professor": "dr. sc. Vesna Kovač",
+        "assistant": "Petra Berlot",
+        "semester": "3",
+        "academic_year": 2020,
+        "predavanja_dan": "ponedjeljkom",
+        "predavanja_vrijeme": "14:15:00",
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": "utorkom/2",
+        "vjezbe_vrijeme": "16:15:00",
+        "vjezbe_trajanje": "03:45:00",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/NM/Didaktika_2_20_21.pdf",
+        "csv_file": "dinps/inf/15/Didaktika_2_20_21.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 33,
+    "fields": {
+        "name": "Metodika nastave informatike 1",
+        "code": "MNI1",
+        "ects": 4,
+        "professor": "dr. sc. Nataša Hoić-Božić",
+        "assistant": "doc. dr. sc. Martina Holenko Dlab",
+        "semester": "3",
+        "academic_year": 2020,
+        "predavanja_dan": "ponedjeljkom",
+        "predavanja_vrijeme": "10:15:00",
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": "ponedjeljkom",
+        "vjezbe_vrijeme": "10:15:00",
+        "vjezbe_trajanje": "01:30:00",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/NM/DINP_MNI1_2020_2021.pdf",
+        "csv_file": "dinps/inf/15/DINP_MNI1_2020_2021.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 34,
+    "fields": {
+        "name": "Osnove jezične kulture",
+        "code": "OJK",
+        "ects": 3,
+        "professor": "dr. sc. Borana Morić-Mohorovičić",
+        "assistant": "doc. dr. sc. Borana Morić-Mohorovičić",
+        "semester": "3",
+        "academic_year": 2020,
+        "predavanja_dan": "petkom",
+        "predavanja_vrijeme": "10:15:00",
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": "petkom",
+        "vjezbe_vrijeme": "10:15:00",
+        "vjezbe_trajanje": "01:30:00",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/NM/OJK_20-21.pdf",
+        "csv_file": "dinps/inf/15/21.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 35,
+    "fields": {
+        "name": "Osnove informatike",
+        "code": "OI",
+        "ects": 5,
+        "professor": "dr. sc. Sanda Martinčić-Ipšić",
+        "assistant": "dr. sc. Slobodan Beliga",
+        "semester": "1",
+        "academic_year": 2020,
+        "predavanja_dan": "utorkom",
+        "predavanja_vrijeme": "12:00:00",
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": "petkom",
+        "vjezbe_vrijeme": "08:00:00",
+        "vjezbe_trajanje": "03:30:00",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/1_godina/DINP_2020_2021_OI.pdf",
+        "csv_file": "dinps/inf/11/DINP_2020_2021_OI.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 36,
+    "fields": {
+        "name": "Multimedijski sustavi",
+        "code": "MMS",
+        "ects": 5,
+        "professor": "dr. sc. Nataša Hoić-Božić",
+        "assistant": "dr. sc. Slobodan Beliga",
+        "semester": "1",
+        "academic_year": 2020,
+        "predavanja_dan": "srijedom",
+        "predavanja_vrijeme": "14:15:00",
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": "srijedom",
+        "vjezbe_vrijeme": "10:15:00",
+        "vjezbe_trajanje": "03:30:00",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/1_godina/DINP_2020_2021_MMS.pdf",
+        "csv_file": "dinps/inf/11/DINP_2020_2021_MMS.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 37,
+    "fields": {
+        "name": "Osnove ekonomike za informatičare",
+        "code": "OE",
+        "ects": 5,
+        "professor": "dr. sc. Borna Debelić",
+        "assistant": "Gordana Bugarinović",
+        "semester": "1",
+        "academic_year": 2020,
+        "predavanja_dan": "utorkom",
+        "predavanja_vrijeme": "16:15:00",
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": "ponedjeljkom",
+        "vjezbe_vrijeme": "16:15:00",
+        "vjezbe_trajanje": "01:30:00",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/1_godina/DINP_2020_2021_OE.pdf",
+        "csv_file": "dinps/inf/11/DINP_2020_2021_OE.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 38,
+    "fields": {
+        "name": "Engleski za potrebe IT struke",
+        "code": "ENG",
+        "ects": 4,
+        "professor": "doc. dr. sc. Lucia Načinović Prskalo",
+        "assistant": "doc. dr. sc. Lucia Načinović Prskalo",
+        "semester": "1",
+        "academic_year": 2020,
+        "predavanja_dan": "utorkom",
+        "predavanja_vrijeme": "14:15:00",
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": "petkom",
+        "vjezbe_vrijeme": "12:15:00",
+        "vjezbe_trajanje": "03:30:00",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/1_godina/DINP_2020_2021_ENG_v3.pdf",
+        "csv_file": "dinps/inf/11/DINP_2020_2021_ENG_v3.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 39,
+    "fields": {
+        "name": "Tjelesni 1",
+        "code": "TZK",
+        "ects": 5,
+        "professor": "Sergio de Privitellio",
+        "assistant": "",
+        "semester": "1",
+        "academic_year": 2020,
+        "predavanja_dan": null,
+        "predavanja_vrijeme": null,
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": null,
+        "vjezbe_vrijeme": null,
+        "vjezbe_trajanje": "01:30:00",
+        "dinp_link": "https://inf.uniri.hr/404",
+        "csv_file": "dinps/inf/11/hr.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 40,
+    "fields": {
+        "name": "Matematika 3",
+        "code": "MAT3",
+        "ects": 5,
+        "professor": "dr. sc. Marija Maksimović",
+        "assistant": "Matea Zubović",
+        "semester": "3",
+        "academic_year": 2020,
+        "predavanja_dan": "ponedjeljkom",
+        "predavanja_vrijeme": "10:15:00",
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": "ponedjeljkom",
+        "vjezbe_vrijeme": "14:15:00",
+        "vjezbe_trajanje": "03:30:00",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/2_godina/DINP_2020_2021_MAT3_v3.pdf",
+        "csv_file": "dinps/inf/11/DINP_2020_2021_MAT3_v3.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 41,
+    "fields": {
+        "name": "Analiza poslovnih procesa",
+        "code": "APP",
+        "ects": 5,
+        "professor": "dr. sc. Mile Pavlić",
+        "assistant": "Rebeka Lerga",
+        "semester": "3",
+        "academic_year": 2020,
+        "predavanja_dan": "petkom",
+        "predavanja_vrijeme": "10:15:00",
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": "petkom",
+        "vjezbe_vrijeme": "12:15:00",
+        "vjezbe_trajanje": "01:30:00",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/2_godina/DINP_2020_2021_APP.pdf",
+        "csv_file": "dinps/inf/11/DINP_2020_2021_APP.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 42,
+    "fields": {
+        "name": "Objektno programiranje",
+        "code": "OP",
+        "ects": 5,
+        "professor": "dr. sc. Marina Ivašić-Kos",
+        "assistant": "doc. dr. sc. Miran Pobar",
+        "semester": "3",
+        "academic_year": 2020,
+        "predavanja_dan": "utorkom",
+        "predavanja_vrijeme": "08:15:00",
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": "četvrtkom",
+        "vjezbe_vrijeme": "10:15:00",
+        "vjezbe_trajanje": "03:30:00",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/2_godina/DINP_2020_2021_OP.pdf",
+        "csv_file": "dinps/inf/11/DINP_2020_2021_OP.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 43,
+    "fields": {
+        "name": "Računalne mreže",
+        "code": "RM",
+        "ects": 5,
+        "professor": "v.pred. dr. sc. Vedran Miletić",
+        "assistant": "v.pred. dr. sc. Vedran Miletić",
+        "semester": "3",
+        "academic_year": 2020,
+        "predavanja_dan": "utorkom",
+        "predavanja_vrijeme": "10:15:00",
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": "petkom",
+        "vjezbe_vrijeme": "14:15:00",
+        "vjezbe_trajanje": "03:30:00",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/2_godina/DINP_2020_2021_RM.pdf",
+        "csv_file": "dinps/inf/11/DINP_2020_2021_RM.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 44,
+    "fields": {
+        "name": "Baze podataka",
+        "code": "BP",
+        "ects": 5,
+        "professor": "dr. sc. Patrizia Poščić",
+        "assistant": "doc. dr. sc. Danijela Jakšić, mag. inf. Kristian Stančin",
+        "semester": "3",
+        "academic_year": 2020,
+        "predavanja_dan": "ponedjeljkom",
+        "predavanja_vrijeme": "08:30:00",
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": "četvrtkom",
+        "vjezbe_vrijeme": "08:00:00",
+        "vjezbe_trajanje": "05:30:00",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/2_godina/DINP_2020_2021_BP.pdf",
+        "csv_file": "dinps/inf/11/DINP_2020_2021_BP.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 45,
+    "fields": {
+        "name": "Uvod u programsko inženjerstvo",
+        "code": "UPI",
+        "ects": 5,
+        "professor": "izv. prof. dr. sc. Sanja Čandrlić",
+        "assistant": "doc. dr. sc. Martina Ašenbrener Katić",
+        "semester": "3",
+        "academic_year": 2020,
+        "predavanja_dan": "ponedjeljkom",
+        "predavanja_vrijeme": "12:15:00",
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": "utorkom",
+        "vjezbe_vrijeme": "12:15:00",
+        "vjezbe_trajanje": "03:30:00",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/2_godina/DINP_2020_2021_UPI.pdf",
+        "csv_file": "dinps/inf/11/DINP_2020_2021_UPI.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 46,
+    "fields": {
+        "name": "Kombinatorika (stari program)",
+        "code": "KOMB",
+        "ects": 5,
+        "professor": "dr. sc. Marija Maksimović",
+        "assistant": "dr. sc. Marija Maksimović",
+        "semester": "3",
+        "academic_year": 2020,
+        "predavanja_dan": "četvrtkom",
+        "predavanja_vrijeme": "14:15:00",
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": "četvrtkom",
+        "vjezbe_vrijeme": "15:15:00",
+        "vjezbe_trajanje": "01:30:00",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/2_godina/DINP_2020_2021_KOMB.pdf",
+        "csv_file": "dinps/inf/11/DINP_2020_2021_KOMB.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 47,
+    "fields": {
+        "name": "Dinamičke web aplikacije 1",
+        "code": "DWA1",
+        "ects": 5,
+        "professor": "doc. dr. sc. Lucia Načinović Prskalo",
+        "assistant": "doc. dr. sc. Lucia Načinović Prskalo",
+        "semester": "5",
+        "academic_year": 2020,
+        "predavanja_dan": "utorkom",
+        "predavanja_vrijeme": "12:15:00",
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": "ponedjeljkom",
+        "vjezbe_vrijeme": "12:15:00",
+        "vjezbe_trajanje": "03:30:00",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/3_godina/DINP_DWA1_2020_2021-3.pdf",
+        "csv_file": "dinps/inf/11/3.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 48,
+    "fields": {
+        "name": "Formalni jezici i jezični procesori 1",
+        "code": "FJJP1",
+        "ects": 5,
+        "professor": "dr. sc. Sanda Martinčić-Ipšić",
+        "assistant": "Karlo Babić",
+        "semester": "5",
+        "academic_year": 2020,
+        "predavanja_dan": "srijedom",
+        "predavanja_vrijeme": "10:00:00",
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": "srijedom",
+        "vjezbe_vrijeme": "12:00:00",
+        "vjezbe_trajanje": "01:30:00",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/3_godina/DINP_FJJP1_2020_2021.pdf",
+        "csv_file": "dinps/inf/11/DINP_FJJP1_2020_2021.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 49,
+    "fields": {
+        "name": "Modeliranje procesa",
+        "code": "MP",
+        "ects": 5,
+        "professor": "dr. sc. Mile Pavlić",
+        "assistant": "izv. prof. dr. sc. Sanja Čandrlić",
+        "semester": "5",
+        "academic_year": 2020,
+        "predavanja_dan": "petkom",
+        "predavanja_vrijeme": "10:00:00",
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": "petkom",
+        "vjezbe_vrijeme": "10:30:00",
+        "vjezbe_trajanje": "01:30:00",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/3_godina/DINP_MP_2020_2021.pdf",
+        "csv_file": "dinps/inf/11/DINP_MP_2020_2021.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 50,
+    "fields": {
+        "name": "Numerička matematika",
+        "code": "NM",
+        "ects": 5,
+        "professor": "doc. dr. sc. Sanda Bujačić Babić",
+        "assistant": "doc. dr. sc. Sanda Bujačić Babić",
+        "semester": "5",
+        "academic_year": 2020,
+        "predavanja_dan": "utorkom",
+        "predavanja_vrijeme": "08:15:00",
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": "utorkom",
+        "vjezbe_vrijeme": "10:15:00",
+        "vjezbe_trajanje": "03:30:00",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/3_godina/DINP_Numericka_matematika_2020_2021.pdf",
+        "csv_file": "dinps/inf/11/DINP_Numericka_matematika_2020_2021.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 51,
+    "fields": {
+        "name": "Objektno orijentirano programiranje",
+        "code": "OOP",
+        "ects": 5,
+        "professor": "dr. sc. Marina Ivašić-Kos",
+        "assistant": "Ivona Franković",
+        "semester": "5",
+        "academic_year": 2020,
+        "predavanja_dan": "ponedjeljkom",
+        "predavanja_vrijeme": "12:00:00",
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": "četvrtkom",
+        "vjezbe_vrijeme": "12:00:00",
+        "vjezbe_trajanje": "03:30:00",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/3_godina/DINP_OOP_2020_2021.pdf",
+        "csv_file": "dinps/inf/11/DINP_OOP_2020_2021.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 52,
+    "fields": {
+        "name": "Logičko programiranje",
+        "code": "LPR",
+        "ects": 5,
+        "professor": "izv. prof. dr. sc. Ana Meštrović",
+        "assistant": "izv. prof. dr. sc. Ana Meštrović",
+        "semester": "5",
+        "academic_year": 2020,
+        "predavanja_dan": "srijedom",
+        "predavanja_vrijeme": "08:15:00",
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": "ponedjeljkom",
+        "vjezbe_vrijeme": "10:15:00",
+        "vjezbe_trajanje": "01:30:00",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/3_godina/DINP_LPR_2020_2021.pdf",
+        "csv_file": "dinps/inf/11/DINP_LPR_2020_2021.csv"
+    }
+},
+{
+    "model": "subjects.subject",
+    "pk": 53,
+    "fields": {
+        "name": "Paralelno programiranje na heterogenim sustavima",
+        "code": "PPHS",
+        "ects": 5,
+        "professor": "izv. prof. dr. sc. Božidar Kovačić",
+        "assistant": "v. pred. dr. sc. Vedran Miletić",
+        "semester": "5",
+        "academic_year": 2020,
+        "predavanja_dan": "srijedom",
+        "predavanja_vrijeme": "08:15:00",
+        "predavanja_trajanje": "01:30:00",
+        "vjezbe_dan": "srijedom",
+        "vjezbe_vrijeme": "14:15:00",
+        "vjezbe_trajanje": "01:30:00",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/3_godina/DINP_PPHS_2020_2021.pdf",
+        "csv_file": "dinps/inf/11/DINP_PPHS_2020_2021.csv"
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 1,
+    "fields": {
+        "subject": 1,
+        "program": 14,
+        "optional": true
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 2,
+    "fields": {
+        "subject": 2,
+        "program": 14,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 3,
+    "fields": {
+        "subject": 3,
+        "program": 14,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 4,
+    "fields": {
+        "subject": 4,
+        "program": 14,
+        "optional": true
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 5,
+    "fields": {
+        "subject": 5,
+        "program": 14,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 6,
+    "fields": {
+        "subject": 6,
+        "program": 14,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 7,
+    "fields": {
+        "subject": 7,
+        "program": 14,
+        "optional": true
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 8,
+    "fields": {
+        "subject": 8,
+        "program": 14,
+        "optional": true
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 9,
+    "fields": {
+        "subject": 9,
+        "program": 14,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 10,
+    "fields": {
+        "subject": 10,
+        "program": 14,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 11,
+    "fields": {
+        "subject": 11,
+        "program": 14,
+        "optional": true
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 12,
+    "fields": {
+        "subject": 12,
+        "program": 14,
+        "optional": true
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 13,
+    "fields": {
+        "subject": 13,
+        "program": 14,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 14,
+    "fields": {
+        "subject": 14,
+        "program": 14,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 15,
+    "fields": {
+        "subject": 15,
+        "program": 14,
+        "optional": true
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 16,
+    "fields": {
+        "subject": 16,
+        "program": 14,
+        "optional": true
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 17,
+    "fields": {
+        "subject": 17,
+        "program": 14,
+        "optional": true
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 18,
+    "fields": {
+        "subject": 18,
+        "program": 14,
+        "optional": true
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 19,
+    "fields": {
+        "subject": 19,
+        "program": 14,
+        "optional": true
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 20,
+    "fields": {
+        "subject": 20,
+        "program": 14,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 21,
+    "fields": {
+        "subject": 21,
+        "program": 14,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 22,
+    "fields": {
+        "subject": 22,
+        "program": 14,
+        "optional": true
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 23,
+    "fields": {
+        "subject": 23,
+        "program": 14,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 24,
+    "fields": {
+        "subject": 24,
+        "program": 14,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 25,
+    "fields": {
+        "subject": 25,
+        "program": 14,
+        "optional": true
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 26,
+    "fields": {
+        "subject": 26,
+        "program": 14,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 27,
+    "fields": {
+        "subject": 27,
+        "program": 14,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 28,
+    "fields": {
+        "subject": 1,
+        "program": 13,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 29,
+    "fields": {
+        "subject": 2,
+        "program": 13,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 30,
+    "fields": {
+        "subject": 3,
+        "program": 13,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 31,
+    "fields": {
+        "subject": 4,
+        "program": 13,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 32,
+    "fields": {
+        "subject": 5,
+        "program": 13,
+        "optional": true
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 33,
+    "fields": {
+        "subject": 6,
+        "program": 13,
+        "optional": true
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 34,
+    "fields": {
+        "subject": 7,
+        "program": 13,
+        "optional": true
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 35,
+    "fields": {
+        "subject": 8,
+        "program": 13,
+        "optional": true
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 36,
+    "fields": {
+        "subject": 9,
+        "program": 13,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 37,
+    "fields": {
+        "subject": 10,
+        "program": 13,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 38,
+    "fields": {
+        "subject": 11,
+        "program": 13,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 39,
+    "fields": {
+        "subject": 12,
+        "program": 13,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 40,
+    "fields": {
+        "subject": 13,
+        "program": 13,
+        "optional": true
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 41,
+    "fields": {
+        "subject": 14,
+        "program": 13,
+        "optional": true
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 42,
+    "fields": {
+        "subject": 15,
+        "program": 13,
+        "optional": true
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 43,
+    "fields": {
+        "subject": 16,
+        "program": 13,
+        "optional": true
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 44,
+    "fields": {
+        "subject": 17,
+        "program": 13,
+        "optional": true
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 45,
+    "fields": {
+        "subject": 18,
+        "program": 13,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 46,
+    "fields": {
+        "subject": 19,
+        "program": 13,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 47,
+    "fields": {
+        "subject": 20,
+        "program": 13,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 48,
+    "fields": {
+        "subject": 21,
+        "program": 13,
+        "optional": true
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 49,
+    "fields": {
+        "subject": 22,
+        "program": 13,
+        "optional": true
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 50,
+    "fields": {
+        "subject": 23,
+        "program": 13,
+        "optional": true
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 51,
+    "fields": {
+        "subject": 24,
+        "program": 13,
+        "optional": true
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 52,
+    "fields": {
+        "subject": 25,
+        "program": 13,
+        "optional": true
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 53,
+    "fields": {
+        "subject": 26,
+        "program": 13,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 54,
+    "fields": {
+        "subject": 27,
+        "program": 13,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 55,
+    "fields": {
+        "subject": 28,
+        "program": 15,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 56,
+    "fields": {
+        "subject": 2,
+        "program": 15,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 57,
+    "fields": {
+        "subject": 3,
+        "program": 15,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 58,
+    "fields": {
+        "subject": 29,
+        "program": 15,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 59,
+    "fields": {
+        "subject": 30,
+        "program": 15,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 60,
+    "fields": {
+        "subject": 31,
+        "program": 15,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 61,
+    "fields": {
+        "subject": 32,
+        "program": 15,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 62,
+    "fields": {
+        "subject": 21,
+        "program": 15,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 63,
+    "fields": {
+        "subject": 33,
+        "program": 15,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 64,
+    "fields": {
+        "subject": 34,
+        "program": 15,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 65,
+    "fields": {
+        "subject": 5,
+        "program": 15,
+        "optional": true
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 66,
+    "fields": {
+        "subject": 1,
+        "program": 15,
+        "optional": true
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 67,
+    "fields": {
+        "subject": 19,
+        "program": 15,
+        "optional": true
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 68,
+    "fields": {
+        "subject": 22,
+        "program": 15,
+        "optional": true
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 69,
+    "fields": {
+        "subject": 6,
+        "program": 15,
+        "optional": true
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 70,
+    "fields": {
+        "subject": 33,
+        "program": 11,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 71,
+    "fields": {
+        "subject": 34,
+        "program": 11,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 72,
+    "fields": {
+        "subject": 35,
+        "program": 11,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 73,
+    "fields": {
+        "subject": 36,
+        "program": 11,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 74,
+    "fields": {
+        "subject": 37,
+        "program": 11,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 75,
+    "fields": {
+        "subject": 38,
+        "program": 11,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 76,
+    "fields": {
+        "subject": 39,
+        "program": 11,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 77,
+    "fields": {
+        "subject": 40,
+        "program": 11,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 78,
+    "fields": {
+        "subject": 41,
+        "program": 11,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 79,
+    "fields": {
+        "subject": 42,
+        "program": 11,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 80,
+    "fields": {
+        "subject": 43,
+        "program": 11,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 81,
+    "fields": {
+        "subject": 44,
+        "program": 11,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 82,
+    "fields": {
+        "subject": 45,
+        "program": 11,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 83,
+    "fields": {
+        "subject": 46,
+        "program": 11,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 84,
+    "fields": {
+        "subject": 47,
+        "program": 11,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 85,
+    "fields": {
+        "subject": 48,
+        "program": 11,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 86,
+    "fields": {
+        "subject": 49,
+        "program": 11,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 87,
+    "fields": {
+        "subject": 50,
+        "program": 11,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 88,
+    "fields": {
+        "subject": 51,
+        "program": 11,
+        "optional": false
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 89,
+    "fields": {
+        "subject": 52,
+        "program": 11,
+        "optional": true
+    }
+},
+{
+    "model": "subjects.subjectprograms",
+    "pk": 90,
+    "fields": {
+        "subject": 53,
+        "program": 11,
+        "optional": true
+    }
+}
+]

@@ -95,7 +95,7 @@ DATABASES = {
         'HOST': 'ec2-176-34-97-213.eu-west-1.compute.amazonaws.com'
     },
     # Test DB
-    'localtst': {
+    'local-tst': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'timetabledtst',
         'USER': 'andrea',

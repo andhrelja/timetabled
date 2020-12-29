@@ -1,5 +1,5 @@
 from django.contrib.messages.views import SuccessMessageMixin
-from django.shortcuts import redirect, render
+from django.shortcuts import redirect
 from django.conf import settings
 from django.views.generic import (
     ListView,
@@ -10,8 +10,9 @@ from django.views.generic import (
 from subjects.forms import SubjectEnrollForm
 from accounts.models import StudentSubjects
 from .models import Subject
+from dashboard import pies
 
-from datetime import date, datetime
+from datetime import date
 
 class SubjectListView(ListView):
     model = Subject
@@ -36,6 +37,10 @@ class SubjectListView(ListView):
         class_activities_completed = student.all_class_activities_completed_count()
         
         context.update({
+            'student_score_activities_pie': pies.get_score_activities(student.all_score_activities, title="Bodovne aktivnosti"),
+            'student_class_activities_pie': pies.get_class_activities(student.all_class_activities, title="Nastavne aktivnosti"),
+            'remaining_semester_days_pie': pies.get_remaining_semester_days(student, title="Dani u semestru"),
+
             'score_activities_total':     score_activities_total,
             'score_activities_completed': score_activities_completed,
             'class_activities_total':     class_activities_total,
@@ -64,7 +69,7 @@ class SubjectDetailView(DetailView):
             'score_activities_completed': score_activities_completed,
             'class_activities_total':     class_activities_total,
             'class_activities_completed': class_activities_completed,
-            'points_percentage':          points_percentage,
+            'points_percentage':          points_percentage * 100,
             'today': date.today()
         })
         return context

@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+{% load subjects_extras %}
+
 {% block body %}
 {% include 'partials/subnav.html' with title="Bodovna aktivnost" type="detail" type_name="activities_score" activity=object %}
 
@@ -57,14 +59,15 @@
             </div>
         </div>
     </div>
+    <hr>
     <div class="row">
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-body">
                     <div class="card-title">
-                        <h5 class="h5">{{ object.subject }} - Prethodne aktivnosti</h5>
+                        <h5 class="h5">{{ object.subject }} - Sve bodovne aktivnosti</h5>
                     </div>
-                    {% include 'partials/activities/score_list_snippet.html' with activities=object.subject.past_score_activities type="past" %}
+                    {% include 'partials/activities/score_list_snippet.html' with activities=object.subject|all_score_activities:user.student type="all" %}
                     <div class="form-buttons text-center">
                         <a href="{% url 'activities_calendar:score-monthly' %}" class="btn btn-sm btn-primary w-100">
                             <i class="fas fa-calendar-alt text-light" aria-hidden="true"></i>

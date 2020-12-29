@@ -164,6 +164,20 @@ class Student(models.Model):
         tdelta = end_date - datetime.now()
         return tdelta.days
 
+    def get_total_semester_days(self):
+        today = date.today()
+
+        if today.month > 9:
+            year = today.year
+            start_date = datetime(year, 10, 1, 0, 0)
+            end_date = datetime(year + 1, 2, 28, 0, 0)
+        else:
+            year = today.year
+            start_date = datetime(year, 3, 1, 0, 0)
+            end_date = datetime(year, 9, 30, 0, 0)
+        tdelta = end_date - start_date
+        return tdelta.days
+    
 
     def __str__(self):
         return self.user.get_full_name()

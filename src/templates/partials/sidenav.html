@@ -8,18 +8,14 @@
     </div>
     <br>
     <ul class="list-unstyled components">
-        {% comment %}
-        <li id="dashboard-nav-item" class="nav-item active">
-            <a class="nav-link d-flex" href="{% url 'schedules:dashboard' %}">
-                <div class="text-center" style="width: 25px">
-                    <div class="fas-icon">
-                        <i class="fa fa-dashboard pr-1" aria-hidden="true"></i>
-                    </div>
+        <li id="dashboardNavItem" class="nav-item active">
+            <a class="nav-link d-flex" href="{% url 'index' %}">
+                <div class="fas-icon">
+                    <i class="fas fa-chart-line pr-1" aria-hidden="true"></i>
                 </div>
-                <span>Dashboard</span>
+                <span class="pl-2">Početna</span>
             </a>
         </li>
-        {% endcomment %}
         <li id="subjectsDropdownButton" class="nav-item d-flex">
             <div class="link" style="width: 85%">
                 <a class="nav-link d-flex" href="#subjectsDropdown" data-toggle="collapse" aria-expanded="false" >
