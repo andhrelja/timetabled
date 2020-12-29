@@ -29,8 +29,9 @@ class Student(models.Model):
     def gpa(self):
         sum_total, sum_accomplished = 0, 0
         for activity in self.all_score_activities:
-            sum_total += activity.points_total
-            sum_accomplished += activity.points_accomplished
+            if activity.completed:
+                sum_total += activity.points_total
+                sum_accomplished += activity.points_accomplished
         return sum_accomplished * (5 / sum_total)
     
 

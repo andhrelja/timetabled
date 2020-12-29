@@ -33,13 +33,13 @@ class Subject(models.Model):
 
     professor       = models.CharField("Profesor", null=True, max_length=128)
     assistant       = models.CharField("Asistent", null=True, max_length=128)
-    #completed       = models.BooleanField("Kolegij završen", default=False)
     semester        = models.CharField("Semestar", choices=SEMESTER_CHOICES, max_length=1)
     academic_year   = models.IntegerField("Akademska godina", choices=ACADEMIC_YEAR_CHOICES)
     
     predavanja_dan  = models.CharField("Predavanja - dan u tjednu", choices=DAY_CHOICES, null=True, max_length=64)
     predavanja_vrijeme  = models.TimeField("Predavanja - vrijeme početka", auto_now=False, null=True, auto_now_add=False)
     predavanja_trajanje = models.DurationField("Predavanja - trajanje", default="1:30")
+    
     vjezbe_dan      = models.CharField("Vježbe - dan u tjednu", choices=DAY_CHOICES, null=True, max_length=64)
     vjezbe_vrijeme      = models.TimeField("Vježbe - vrijeme početka", auto_now=False, null=True, auto_now_add=False)
     vjezbe_trajanje     = models.DurationField("Vježbe - trajanje", default="1:30")
@@ -51,8 +51,9 @@ class Subject(models.Model):
     def gpa_student(self, student):
         sum_total, sum_accomplished = 0, 0
         for activity in self.all_score_activities(student):
-            sum_total += activity.points_total
-            sum_accomplished += activity.points_accomplished
+            if activity.completed:
+                sum_total += activity.points_total
+                sum_accomplished += activity.points_accomplished
         return sum_accomplished * (5 / sum_total)
 
 
