@@ -47,7 +47,12 @@ class Subject(models.Model):
     dinp_link       = models.CharField("DINP - Download link", null=True, max_length=254)
     csv_file        = models.CharField("DINP - CSV datoteka", null=True, max_length=254)
     
-    
+    class Meta:
+        verbose_name = "Kolegij"
+        verbose_name_plural = "Kolegiji"
+        ordering = ('-academic_year',)
+
+
     def gpa_student(self, student):
         sum_total, sum_accomplished_total, sum_accomplished = 0, 0, 0
         for activity in self.all_score_activities(student):
@@ -163,10 +168,6 @@ class Subject(models.Model):
 
         return sorted(chain(custom_activities, updated_global_activities, global_activities), key=lambda instance: (instance.due_date, instance.start_time), reverse=False)
 
-
-    class Meta:
-        verbose_name = "Kolegij"
-        verbose_name_plural = "Kolegiji"
 
     def __str__(self):
         return self.name

@@ -1,7 +1,7 @@
 from django.db import models
 from django.urls import reverse
 
-from subjects.models import Subject, ACADEMIC_YEAR_CHOICES
+from subjects.models import Subject, ACADEMIC_YEAR_CHOICES, SubjectPrograms
 from datetime import date, datetime
 
 # Create your models here.
@@ -16,6 +16,12 @@ class Student(models.Model):
     class Meta:
         verbose_name = "Student"
         verbose_name_plural = "Studenti"
+    
+
+    def bind_subjects(self):
+        sps = SubjectPrograms.objects.filter(program=self.program, optional=False)
+        for obj in sps.distinct():
+            StudentSubjects.objects.create(student=self, subject=obj.subject)
 
 
     @property
@@ -118,39 +124,6 @@ class Student(models.Model):
             subject_class_activities = subject.upcoming_class_activities(self, days)
             activities += list(subject_class_activities)
         return sorted(activities, key=lambda instance: instance.due_date)
-    
-    def get_active_semester(self):
-        today = date.today()
-
-        if today.month > 9:
-            if self.studying_year == 1:
-                semester = "1"
-            elif self.studying_year == 2:
-                semester = "3"
-            elif self.studying_year == 3:
-                semester = "5"
-            else:
-                semester = None
-        else:
-            if self.studying_year == 1:
-                semester = "2"
-            elif self.studying_year == 2:
-                semester = "5"
-            elif self.studying_year == 3:
-                semester = "6"
-            else:
-                semester = None
-
-        return semester
-    
-    def get_active_academic_year(self):
-        today = date.today()
-
-        if today.month > 9:
-            year = today.year
-        else:
-            year = today.year - 1
-        return "{}/{}".format(year, year+1)
 
     def get_remaining_semester_days(self):
         today = date.today()
@@ -178,6 +151,36 @@ class Student(models.Model):
         tdelta = end_date - start_date
         return tdelta.days
     
+    
+    def get_active_semester(self):
+        today = date.today()
+
+        if today.month <= 9 and today >= date(today.year, 3, 1):
+            if self.studying_year == 1:
+                semester = "2"
+            elif self.studying_year == 2:
+                semester = "5"
+            elif self.studying_year == 3:
+                semester = "6"
+        else:
+            if self.studying_year == 1:
+                semester = "1"
+            elif self.studying_year == 2:
+                semester = "3"
+            elif self.studying_year == 3:
+                semester = "5"
+
+        return semester
+    
+    def get_active_academic_year(self):
+        today = date.today()
+
+        if today.month > 9:
+            year = today.year
+        else:
+            year = today.year - 1
+        return "{}/{}".format(year, year+1)
+
 
     def __str__(self):
         return self.user.get_full_name()

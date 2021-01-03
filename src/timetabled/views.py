@@ -1,9 +1,12 @@
 from django.shortcuts import render
-from dashboard import pies, bars, treemaps, gauges
+
+from dashboard import pies, bars
+from accounts.views import set_session
 
 
 def index(request):
     if request.user.is_authenticated:
+        set_session(request, request.user.student)
         context = get_dashboard_context(request.user.student)
         return render(request, 'dashboard.html', context)
     else:

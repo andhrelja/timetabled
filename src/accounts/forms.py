@@ -52,34 +52,3 @@ class AuthenticationForm(AuthenticationForm):
         super(AuthenticationForm, self).__init__(request, *args, **kwargs)
         self.fields['username'].widget.attrs['class'] = "form-control"
         self.fields['password'].widget.attrs['class'] = "form-control"
-
-    def clean(self):
-        cleaned_data = super(AuthenticationForm, self).clean()
-        user = self.get_user()
-        student = user.student
-
-        today = date.today()
-        if today.month > 9:
-            year = today.year
-            if student.studying_year == 1:
-                semester = "1"
-            elif student.studying_year == 2:
-                semester = "3"
-            elif student.studying_year == 3:
-                semester = "5"
-            else:
-                semester = None
-        else:
-            year = today.year - 1
-            if student.studying_year == 1:
-                semester = "2"
-            elif student.studying_year == 2:
-                semester = "5"
-            elif student.studying_year == 3:
-                semester = "6"
-            else:
-                semester = None
-
-        self.request.session['semester'] = semester
-        self.request.session['academic_year'] = year
-        return cleaned_data
