@@ -1,3 +1,7 @@
 from django.contrib import admin
+from .activities_global.models import GlobalScoreActivity
+from .activities_student.models import StudentScoreActivity
 
-# Register your models here.
+
+admin.site.register(GlobalScoreActivity)
+admin.site.register(StudentScoreActivity)

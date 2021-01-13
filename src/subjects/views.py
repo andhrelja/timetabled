@@ -37,15 +37,12 @@ class SubjectListView(ListView):
         class_activities_completed = student.all_class_activities_completed_count()
         
         context.update({
-            'student_score_activities_pie': pies.get_score_activities(student.all_score_activities, title="Bodovne aktivnosti"),
-            'student_class_activities_pie': pies.get_class_activities(student.all_class_activities, title="Nastavne aktivnosti"),
-            'remaining_semester_days_pie': pies.get_remaining_semester_days(student, title="Dani u semestru"),
-
             'score_activities_total':     score_activities_total,
             'score_activities_completed': score_activities_completed,
             'class_activities_total':     class_activities_total,
             'class_activities_completed': class_activities_completed,
             'semester_days_remaining':    student.get_remaining_semester_days(),
+            'semester_days_total':        student.get_total_semester_days(),
             'today': date.today()
         })
         return context

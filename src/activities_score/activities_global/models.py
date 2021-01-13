@@ -22,7 +22,7 @@ class GlobalScoreActivity(models.Model):
     subject     = models.ForeignKey("subjects.Subject", verbose_name="Kolegij", on_delete=models.CASCADE)
     
     # Defaults
-    completed   = models.BooleanField("Predano", default=False)
+    completed   = models.BooleanField("Predano", null=True)
 
     class Meta:
         verbose_name = "Global - Bodovna aktivnost"

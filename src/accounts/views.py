@@ -22,8 +22,8 @@ class UserCreateView(FormView):
 
     def form_valid(self, form):
         user = User.objects.create_user(
-            first_name=form.cleaned_data['first_name'],
-            last_name=form.cleaned_data['last_name'],
+            first_name=form.cleaned_data['first_name'].title(),
+            last_name=form.cleaned_data['last_name'].title(),
             username=form.cleaned_data['username'],
             email=form.cleaned_data['email'],
             password=form.cleaned_data['password']
@@ -82,7 +82,7 @@ class LoginView(LoginView):
 def set_session(request, student):
     today = date.today()
 
-    if today.month > 9:
+    if today.month <= 9 and today >= date(today.year, 3, 1):
         year = today.year
         if student.studying_year == 1:
             semester = "1"

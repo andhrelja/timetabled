@@ -19,13 +19,12 @@ class StudentScoreActivity(models.Model):
 
     # Foreign keys
     subject     = models.ForeignKey("subjects.Subject", verbose_name="Kolegij", on_delete=models.CASCADE)
-    student     = models.ForeignKey("accounts.Student", verbose_name="Student", 
-        related_name="student_score_activity", on_delete=models.CASCADE)
-    global_activity = models.ForeignKey("activities_score.GlobalScoreActivity", verbose_name="Bodovna aktivnost", 
-        related_name="global_score_activity", null=True, blank=True, on_delete=models.CASCADE)
+    student     = models.ForeignKey("accounts.Student", verbose_name="Student", on_delete=models.CASCADE)
+    global_activity = models.ForeignKey("activities_score.GlobalScoreActivity", 
+        verbose_name="Bodovna aktivnost", null=True, blank=True, on_delete=models.CASCADE)
 
     # Defaults
-    completed   = models.BooleanField("Predano", default=False)
+    completed   = models.BooleanField("Predano", null=True)
 
     class Meta:
         verbose_name = "Global - Bodovna aktivnost"

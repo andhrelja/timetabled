@@ -21,7 +21,8 @@ class Student(models.Model):
     def bind_subjects(self):
         sps = SubjectPrograms.objects.filter(program=self.program, optional=False)
         for obj in sps.distinct():
-            StudentSubjects.objects.create(student=self, subject=obj.subject)
+            ss = StudentSubjects()
+            ss.ingest_points(subject=obj.subject, student=self)
 
 
     @property
@@ -128,7 +129,7 @@ class Student(models.Model):
     def get_remaining_semester_days(self):
         today = date.today()
 
-        if today.month > 9:
+        if today.month <= 9 and today >= date(today.year, 3, 1):
             year = today.year
             end_date = datetime(year + 1, 2, 28, 0, 0)
         else:
@@ -140,7 +141,7 @@ class Student(models.Model):
     def get_total_semester_days(self):
         today = date.today()
 
-        if today.month > 9:
+        if today.month <= 9 and today >= date(today.year, 3, 1):
             year = today.year
             start_date = datetime(year, 10, 1, 0, 0)
             end_date = datetime(year + 1, 2, 28, 0, 0)
