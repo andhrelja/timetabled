@@ -64,7 +64,6 @@ class StudentScoreActivitySubmitView(SuccessMessageMixin, UpdateView):
     form_class = StudentScoreActivitySubmitForm
     template_name = "activities_score/score_activity_form.html"
 
-
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context["subject"] = self.object.subject

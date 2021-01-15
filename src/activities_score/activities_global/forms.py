@@ -6,10 +6,13 @@ from .models import GlobalScoreActivity
 
 class GlobalScoreActivityForm(forms.ModelForm):
 
-    def clean_end_time(self):
+    def clean(self):
         cleaned_data = super(GlobalScoreActivityForm, self).clean()
-        if cleaned_data.get('start_time') > cleaned_data.get('end_time'):
-            self.add_error("end_time", "Neispravan unos početnog ili završnog vremena")
+        start_time = cleaned_data.get('start_time')
+        end_time = cleaned_data.get('end_time')
+        if start_time and end_time:
+            if start_time > end_time:
+                self.add_error("end_time", "Neispravan unos trajanja aktivnosti")
         return cleaned_data
 
     class Meta:

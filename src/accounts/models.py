@@ -1,8 +1,11 @@
 from django.db import models
 from django.urls import reverse
+from django.utils import timezone
 
 from subjects.models import Subject, ACADEMIC_YEAR_CHOICES, SubjectPrograms
-from datetime import date, datetime
+
+from datetime import datetime, date
+import pytz
 
 # Create your models here.
 class Student(models.Model):
@@ -127,36 +130,45 @@ class Student(models.Model):
         return sorted(activities, key=lambda instance: instance.due_date)
 
     def get_remaining_semester_days(self):
-        today = date.today()
+        today = timezone.now()
+        year = today.year
 
-        if today.month <= 9 and today >= date(today.year, 3, 1):
-            year = today.year
-            end_date = datetime(year + 1, 2, 28, 0, 0)
+        if today.month <= 9 and today >= datetime(today.year, 3, 1, 0, 0, tzinfo=pytz.UTC):
+            # Ljetni semestar
+            end_date = datetime(year, 10, 1, 0, 0, tzinfo=pytz.UTC)
+        elif today.month <= 9 and today < datetime(today.year, 3, 1, 0, 0, tzinfo=pytz.UTC):
+            # Zimski semestar (dio u novoj godini)
+            end_date = datetime(year, 3, 1, 0, 0, tzinfo=pytz.UTC)
         else:
-            year = today.year
-            end_date = datetime(year, 9, 30, 0, 0)
-        tdelta = end_date - datetime.now()
+            # Zimski semestar (dio u staroj godini)
+            end_date = datetime(year + 1, 3, 1, 0, 0, tzinfo=pytz.UTC)
+        tdelta = end_date - today
         return tdelta.days
 
     def get_total_semester_days(self):
-        today = date.today()
+        today = timezone.now()
+        year = today.year
 
-        if today.month <= 9 and today >= date(today.year, 3, 1):
-            year = today.year
-            start_date = datetime(year, 10, 1, 0, 0)
-            end_date = datetime(year + 1, 2, 28, 0, 0)
+        if today.month <= 9 and today >= datetime(today.year, 3, 1, 0, 0, tzinfo=pytz.UTC):
+            # Ljetni semestar
+            start_date = datetime(year, 3, 1, 0, 0, tzinfo=pytz.UTC)
+            end_date = datetime(year, 10, 1, 0, 0, tzinfo=pytz.UTC)
+        elif today.month <= 9 and today < datetime(today.year, 3, 1, 0, 0, tzinfo=pytz.UTC):
+            # Zimski semestar (dio u novoj godini)
+            start_date = datetime(year - 1, 10, 1, 0, 0, tzinfo=pytz.UTC)
+            end_date = datetime(year, 3, 1, 0, 0, tzinfo=pytz.UTC)
         else:
-            year = today.year
-            start_date = datetime(year, 3, 1, 0, 0)
-            end_date = datetime(year, 9, 30, 0, 0)
+            # Zimski semestar (dio u staroj godini)
+            start_date = datetime(year - 1, 10, 1, 0, 0, tzinfo=pytz.UTC)
+            end_date = datetime(year, 3, 1, 0, 0, tzinfo=pytz.UTC)
         tdelta = end_date - start_date
         return tdelta.days
     
     
     def get_active_semester(self):
-        today = date.today()
+        today = timezone.now()
 
-        if today.month <= 9 and today >= date(today.year, 3, 1):
+        if today.month <= 9 and today >= datetime(today.year, 3, 1, 0, 0, tzinfo=pytz.UTC):
             if self.studying_year == 1:
                 semester = "2"
             elif self.studying_year == 2:
@@ -174,7 +186,7 @@ class Student(models.Model):
         return semester
     
     def get_active_academic_year(self):
-        today = date.today()
+        today = timezone.now()
 
         if today.month > 9:
             year = today.year
