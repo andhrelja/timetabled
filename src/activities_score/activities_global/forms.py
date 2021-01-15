@@ -35,7 +35,12 @@ class GlobalScoreActivityForm(forms.ModelForm):
 
 class GlobalScoreActivitySubmitForm(GlobalScoreActivityForm):
 
+    def __init__(self, *args, **kwargs):
+        super(GlobalScoreActivitySubmitForm, self).__init__(*args, **kwargs)
+        self.fields['completed'].widget = forms.HiddenInput()
+        self.initial['completed'] = True
+
     class Meta(GlobalScoreActivityForm.Meta):
         fields = (
-            'type', 'points_accomplished', 'points_total'
+            'type', 'points_accomplished', 'points_total', 'completed'
         )

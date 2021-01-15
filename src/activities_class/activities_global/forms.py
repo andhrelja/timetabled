@@ -32,6 +32,9 @@ class GlobalClassActivityForm(forms.ModelForm):
 
 class GlobalClassActivityAttendanceForm(GlobalClassActivityForm):
 
+    def __init__(self, *args, **kwargs):
+        super(GlobalClassActivityAttendanceForm, self).__init__(*args, **kwargs)
+        self.initial['attended'] = True
     class Meta(GlobalClassActivityForm.Meta):
         fields = (
             'type', 'attended'
