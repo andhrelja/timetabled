@@ -623,7 +623,7 @@
     "model": "departments.program",
     "pk": 33,
     "fields": {
-        "name": "Poslovna ekonomija, smjer Poduzetništvo – online studij",
+        "name": "Poslovna ekonomija, smjer Poduzetništvo - online studij",
         "type": "diplomski",
         "department": 6
     }
@@ -668,7 +668,7 @@
     "model": "departments.program",
     "pk": 38,
     "fields": {
-        "name": "Sestrinstvo – Promicanje i zaštita mentalnog zdravlja",
+        "name": "Sestrinstvo - Promicanje i zaštita mentalnog zdravlja",
         "type": "diplomski",
         "department": 7
     }
@@ -677,7 +677,7 @@
     "model": "departments.program",
     "pk": 39,
     "fields": {
-        "name": "Sestrinstvo – Menadžment u sestrinstvu",
+        "name": "Sestrinstvo - Menadžment u sestrinstvu",
         "type": "diplomski",
         "department": 7
     }
@@ -812,7 +812,7 @@
     "model": "departments.program",
     "pk": 54,
     "fields": {
-        "name": "Jednopredmetni studij – Hrvatski jezik i književnost",
+        "name": "Jednopredmetni studij - Hrvatski jezik i književnost",
         "type": "preddiplomski",
         "department": 10
     }
@@ -821,7 +821,7 @@
     "model": "departments.program",
     "pk": 55,
     "fields": {
-        "name": "Jednopredmetni studij – Psihologija",
+        "name": "Jednopredmetni studij - Psihologija",
         "type": "preddiplomski",
         "department": 10
     }
@@ -830,7 +830,7 @@
     "model": "departments.program",
     "pk": 56,
     "fields": {
-        "name": "Jednopredmetni studij – Pedagogija",
+        "name": "Jednopredmetni studij - Pedagogija",
         "type": "preddiplomski",
         "department": 10
     }
@@ -839,7 +839,7 @@
     "model": "departments.program",
     "pk": 57,
     "fields": {
-        "name": "Jednopredmetni studij – Kulturlogija",
+        "name": "Jednopredmetni studij - Kulturlogija",
         "type": "preddiplomski",
         "department": 10
     }
@@ -1028,7 +1028,7 @@
     "model": "departments.program",
     "pk": 78,
     "fields": {
-        "name": "Dvopredmetni – Prevoditeljski studij",
+        "name": "Dvopredmetni - Prevoditeljski studij",
         "type": "diplomski",
         "department": 10
     }
@@ -1037,7 +1037,7 @@
     "model": "departments.program",
     "pk": 79,
     "fields": {
-        "name": "Dvopredmetni – Povijest i interpretacija baštine",
+        "name": "Dvopredmetni - Povijest i interpretacija baštine",
         "type": "diplomski",
         "department": 10
     }
@@ -1253,7 +1253,7 @@
     "model": "departments.program",
     "pk": 103,
     "fields": {
-        "name": "Dvopredmetni – Prevoditeljski studij",
+        "name": "Dvopredmetni - Prevoditeljski studij",
         "type": "diplomski",
         "department": 11
     }
@@ -1262,7 +1262,7 @@
     "model": "departments.program",
     "pk": 104,
     "fields": {
-        "name": "Dvopredmetni – Povijest i interpretacija diplomskine",
+        "name": "Dvopredmetni - Povijest i interpretacija diplomskine",
         "type": "diplomski",
         "department": 11
     }
@@ -2094,7 +2094,7 @@
     "pk": 26,
     "fields": {
         "name": "Diplomski rad",
-        "code": "Zavrsni",
+        "code": "Završni",
         "ects": 24,
         "professor": "",
         "assistant": "",

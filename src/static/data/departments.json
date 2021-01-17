@@ -222,7 +222,7 @@
             {
                 "id": 33,
                 "type": "diplomski",
-                "name": "Poslovna ekonomija, smjer Poduzetništvo – online studij"
+                "name": "Poslovna ekonomija, smjer Poduzetništvo - online studij"
             }
         ]
     },
@@ -259,12 +259,12 @@
             {
                 "id": 38,
                 "type": "diplomski",
-                "name": "Sestrinstvo – Promicanje i zaštita mentalnog zdravlja"
+                "name": "Sestrinstvo - Promicanje i zaštita mentalnog zdravlja"
             },
             {
                 "id": 39,
                 "type": "diplomski",
-                "name": "Sestrinstvo – Menadžment u sestrinstvu"
+                "name": "Sestrinstvo - Menadžment u sestrinstvu"
             },
             {
                 "id": 40,
@@ -375,22 +375,22 @@
             {
                 "id": 54,
                 "type": "preddiplomski",
-                "name": "Jednopredmetni studij – Hrvatski jezik i književnost"
+                "name": "Jednopredmetni studij - Hrvatski jezik i književnost"
             },
             {
                 "id": 55,
                 "type": "preddiplomski",
-                "name": "Jednopredmetni studij – Psihologija"
+                "name": "Jednopredmetni studij - Psihologija"
             },
             {
                 "id": 56,
                 "type": "preddiplomski",
-                "name": "Jednopredmetni studij – Pedagogija"
+                "name": "Jednopredmetni studij - Pedagogija"
             },
             {
                 "id": 57,
                 "type": "preddiplomski",
-                "name": "Jednopredmetni studij – Kulturlogija"
+                "name": "Jednopredmetni studij - Kulturlogija"
             },
             {
                 "id": 58,
@@ -495,12 +495,12 @@
             {
                 "id": 78,
                 "type": "diplomski",
-                "name": "Dvopredmetni – Prevoditeljski studij"
+                "name": "Dvopredmetni - Prevoditeljski studij"
             },
             {
                 "id": 79,
                 "type": "diplomski",
-                "name": "Dvopredmetni – Povijest i interpretacija baštine"
+                "name": "Dvopredmetni - Povijest i interpretacija baštine"
             }
         ]
     },
@@ -632,12 +632,12 @@
             {
                 "id": 103,
                 "type": "diplomski",
-                "name": "Dvopredmetni – Prevoditeljski studij"
+                "name": "Dvopredmetni - Prevoditeljski studij"
             },
             {
                 "id": 104,
                 "type": "diplomski",
-                "name": "Dvopredmetni – Povijest i interpretacija diplomskine"
+                "name": "Dvopredmetni - Povijest i interpretacija diplomskine"
             }
         ]
     },

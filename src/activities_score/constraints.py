@@ -1,14 +1,15 @@
 TYPE_CHOICES = (
-    (0, "Kolokvij"), 
-    (1, "Seminar"), 
-    (2, "Esej"), 
+    (0, "Kolokvij"),
+    (1, "Završni ispit"), 
+    (2, "Seminar"), 
     (3, "Prezentacija"), 
     (4, "Domaća zadaća"), 
     (5, "Laboratorijske vježbe"), 
-    (6, "Završni ispit"),
+    (6, "Rasprava"),
     (7, "Projekt"),
-    (8, "Rasprava"),
-    (9, "Timski rad"),
-    (10, "Kviz"), 
-    (11, "Ostalo")
+    (8, "Grupni rad"),
+    (9, "Kviz"),
+    (10, "Aktivnost"),
+    (11, "Popravna aktivnost"),
+    (12, "Ostalo")
 )

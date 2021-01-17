@@ -83,7 +83,19 @@ def set_session(request, student):
     today = date.today()
 
     if today.month <= 9 and today >= date(today.year, 3, 1):
-        year = today.year
+        # Ljetni semestar
+        year = today.year - 1
+        if student.studying_year == 1:
+            semester = "2"
+        elif student.studying_year == 2:
+            semester = "4"
+        elif student.studying_year == 3:
+            semester = "6"
+        else:
+            semester = None
+    elif today.month <= 9 and today < date(today.year, 3, 1):
+        # Zimski semestar (dio u novoj godini)
+        year = today.year - 1
         if student.studying_year == 1:
             semester = "1"
         elif student.studying_year == 2:
@@ -93,13 +105,14 @@ def set_session(request, student):
         else:
             semester = None
     else:
-        year = today.year - 1
+        # Zimski semestar (dio u staroj godini)
+        year = today.year
         if student.studying_year == 1:
-            semester = "2"
+            semester = "1"
         elif student.studying_year == 2:
-            semester = "5"
+            semester = "3"
         elif student.studying_year == 3:
-            semester = "6"
+            semester = "5"
         else:
             semester = None
 

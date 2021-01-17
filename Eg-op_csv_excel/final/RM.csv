@@ -1,0 +1,49 @@
+﻿Datum|Vrijeme|Prostor|Tema|Nastava|Bodovi|Izvođač
+6.10.2020.|10:15-11:45|O-028|Uvodne informacije o kolegiju. Osnovni pojmovi računalnih mreža i interneta. Rub i jezgra mreže.|p||v. pred. dr. sc. Vedran Miletić
+9.10.2020.|14:15-17:45|O-350|Priprema radne okoline za vježbe na računalima studenata|v||v. pred. dr. sc. Vedran Miletić
+13.10.2020.|10:15-11:45|O-028|Osnovna svojstva mreža. Povijest razvoja umrežavanja računala i interneta.|p||v. pred. dr. sc. Vedran Miletić
+16.10.2020.|14:15-17:45|O-350|Instalacija softvera za vježbe na računalima studenata|v||v. pred. dr. sc. Vedran Miletić
+20.10.2020.|10:15-11:45|O-028|Aplikacijski sloj. Web. Elektronička pošta.|p||v. pred. dr. sc. Vedran Miletić
+23.10.2020.|14:15-17:45|O-350|Auditorna vježba 1: Analiza računalnih mreža (IMUNES/CORE)|v||v. pred. dr. sc. Vedran Miletić
+27.10.2020.|10:15-11:45|O-028|Sustav imena domena. Peer-to- peer aplikacije. Programiranje mrežnih aplikacija.|p||v. pred. dr. sc. Vedran Miletić
+30.10.2020.|14:15-17:45|online|Laboratorijska vježba 1: Snimanje i pregledavanje mrežnog prometa (Wireshark)|v||v. pred. dr. sc. Vedran Miletić
+30.10.2020.|14:15-17:45|online|Laboratorijska vježba 1: Snimanje i pregledavanje mrežnog prometa (Wireshark)|lz|4|v. pred. dr. sc. Vedran Miletić
+3.11.2020.|10:15-11:45|O-028|Transportni sloj. Multipleksiranje i demultipleksiranje. Prijenos podataka bez uspostave veze.|p||v. pred. dr. sc. Vedran Miletić
+6.11.2020.|14:15-17:45|online|"Laboratorijska vježba 2: Komunikacija HTTP klijenta i poslužitelja (cURL, PHP)"|v||v. pred. dr. sc. Vedran Miletić
+6.11.2020.|14:15-17:45|online|Laboratorijska vježba 2: Komunikacija HTTP klijenta i poslužitelja (cURL, PHP)|lz|4|v. pred. dr. sc. Vedran Miletić
+10.10.2020.|10:15-11:45|O-028|Pouzdani prijenos podataka. Prijenos podataka s uspostavom veze. Upravljanje zagušenjem. |p||v. pred. dr. sc. Vedran Miletić
+13.11.2020.|14:15-17:45|online|Laboratorijska vježba 3: Konfiguracija HTTP poslužitelja (Apache)|v||v. pred. dr. sc. Vedran Miletić
+13.11.2020.|14:15-17:45|online|Laboratorijska vježba 3: Konfiguracija HTTP poslužitelja (Apache)|lz|4|v. pred. dr. sc. Vedran Miletić
+17.11.2020.|10:15-11:45|O-028|Mrežni sloj. Virtualni krug i datagram.|p||v. pred. dr. sc. Vedran Miletić
+20.11.2020.|14:15-17:45|online|Laboratorijska vježba 4: Programiranje mrežnih aplikacija (Python)|v||v. pred. dr. sc. Vedran Miletić
+20.11.2020.|14:15-17:45|online|Laboratorijska vježba 4: Programiranje mrežnih aplikacija (Python)|lz|4|v. pred. dr. sc. Vedran Miletić
+24.11.2020.|10:15-11:45|O-028|Usmjerivač. Prosljeđivanje paketa i adresiranje na internetu.|p||v. pred. dr. sc. Vedran Miletić
+27.11.2020.|14:15-17:45|O-350|Auditorna vježba 2: Analiza TCP- ovih algoritama za upravljanje zagušenjem (ns-3)|v||v. pred. dr. sc. Vedran Miletić
+1.12.2020.|10:15-11:45|O-359|Online test na Merlinu|p||v. pred. dr. sc. Vedran Miletić
+1.12.2020.|10:15-11:45|O-359|Online test na Merlinu|k|20|v. pred. dr. sc. Vedran Miletić
+4.12.2020.|14:15-17:45|online|Laboratorijska vježba 5: Konfiguracija svojstava i adresiranje podmreža (IMUNES/CORE)|v||v. pred. dr. sc. Vedran Miletić
+4.12.2020.|14:15-17:45|online|Laboratorijska vježba 5: Konfiguracija svojstava i adresiranje podmreža (IMUNES/CORE)|lz|4|v. pred. dr. sc. Vedran Miletić
+8.12.2020.|10:15-11:45|O-028|Unutardomensko usmjeravanje. Broadcast i multicast.|p||v. pred. dr. sc. Vedran Miletić
+11.12.2020.|14:15-17:45|online|Laboratorijska vježba 6: Prevođenje mrežnih adresa i filtriranje paketa vatrozidom na mrežnom sloju (IMUNES/CORE)|v||v. pred. dr. sc. Vedran Miletić
+11.12.2020.|14:15-17:45|online|Laboratorijska vježba 6: Prevođenje mrežnih adresa i filtriranje paketa vatrozidom na mrežnom sloju (IMUNES/CORE)|lz|4|v. pred. dr. sc. Vedran Miletić
+15.12.2020.|10:15-11:45|O-028|Međudomensko usmjeravanje. Softverski definirano umrežavanje. |p||v. pred. dr. sc. Vedran Miletić
+18.12.2020.|14:15-17:45|online|Laboratorijska vježba 7: Usmjeravanje (IMUNES/CORE)|v||v. pred. dr. sc. Vedran Miletić
+18.12.2020.|14:15-17:45|online|Laboratorijska vježba 7: Usmjeravanje (IMUNES/CORE)|lz|4|v. pred. dr. sc. Vedran Miletić
+22.12.2020.|10:15-11:45|O-028|Sloj veze podataka. Raspoznavanje i ispravak pogrešaka. Veze i protokoli višestrukog pristupa.|p||v. pred. dr. sc. Vedran Miletić
+8.1.2020.|14:15-17:45|online|Laboratorijska vježba 8: Dinamička dodjela mrežnih adresa (IMUNES/CORE)|v||v. pred. dr. sc. Vedran Miletić
+8.1.2020.|14:15-17:45|online|Laboratorijska vježba 8: Dinamička dodjela mrežnih adresa (IMUNES/CORE)|lz|4|v. pred. dr. sc. Vedran Miletić
+12.1.2020.|10:15-11:45|O-028|Preklopnici i lokalne mreže. Mreže podatkovnih centara.|p||v. pred. dr. sc. Vedran Miletić
+15.1.2020.|14:15-17:45|online|Laboratorijska vježba 9: Premošćenje i filtriranje okvira vatrozidom na veznom sloju (IMUNES/CORE)|v||v. pred. dr. sc. Vedran Miletić
+15.1.2020.|14:15-17:45|online|Laboratorijska vježba 9: Premošćenje i filtriranje okvira vatrozidom na veznom sloju (IMUNES/CORE)|lz|4|v. pred. dr. sc. Vedran Miletić
+19.1.2020.|10:15-11:45|O-028|Bežične i mobilne mreže. Bežične veze. Bežične lokalne mreže.|p||v. pred. dr. sc. Vedran Miletić
+22.1.2020.|14:15-17:45|online|Laboratorijska vježba 10: Mobilnost čvorova u bežičnim mrežama (IMUNES/CORE)|v||v. pred. dr. sc. Vedran Miletić
+22.1.2020.|14:15-17:45|online|Laboratorijska vježba 10: Mobilnost čvorova u bežičnim mrežama (IMUNES/CORE)|lz|4|v. pred. dr. sc. Vedran Miletić
+26.1.2020.|10:15-11:45|O-028|Pristup internetu putem mobilne mreže. Mobilnost.|p||v. pred. dr. sc. Vedran Miletić
+29.1.2020.|14:15-17:45|O-350|Nadoknada laboratorijske vježbe|v||v. pred. dr. sc. Vedran Miletić
+29.1.2020.|14:15-17:45|O-350|Nadoknada laboratorijske vježbe|pa||v. pred. dr. sc. Vedran Miletić
+9.2.2021.|00:00-23:59|O-350|Završni ispit (1. redovni rok)|z|30|v. pred. dr. sc. Vedran Miletić
+23.2.2021.|00:00-23:59|O-350|Završni ispit (2. redovni rok)|z||v. pred. dr. sc. Vedran Miletić
+30.3.2021.|00:00-23:59|O-350|Završni ispit (1. izvanredni rok)|z||v. pred. dr. sc. Vedran Miletić
+7.9.2021.|00:00-23:59|O-350|Završni ispit (2. izvanredni rok)|z||v. pred. dr. sc. Vedran Miletić
+|00:00-23:59|online|Domaća zadaća|dz|5|v. pred. dr. sc. Vedran Miletić
+|00:00-23:59|online|Domaća zadaća|dz|5|v. pred. dr. sc. Vedran Miletić

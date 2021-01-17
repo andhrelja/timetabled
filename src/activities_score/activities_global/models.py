@@ -8,13 +8,14 @@ class GlobalScoreActivity(models.Model):
 
     name        = models.CharField("Naziv", max_length=64)
     location    = models.CharField("Prostor", max_length=128)
+    group       = models.CharField("Grupa", max_length=2, null=True, blank=True)
     type        = models.IntegerField("Tip aktivnosti", choices=constraints.TYPE_CHOICES)
     details     = models.TextField("Dodatne informacije", null=True)
 
     points_accomplished = models.FloatField("Ostvareni bodovi", default=0)
     points_total    = models.FloatField("Moguće ostvarivi bodovi", default=0)
 
-    due_date    = models.DateField("Datum")
+    due_date    = models.DateField("Datum", null=True)
     start_time  = models.TimeField("Vrijeme početka")
     end_time    = models.TimeField("Vrijeme završetka")
 

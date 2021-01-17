@@ -66,13 +66,13 @@ def zadace():
 
     print("Zadaće: ", len(zadace))
 
-def zavrsni():
-    zavrsni = []
+def Završni():
+    Završni = []
     for tema in sorted(commons):
         if 'završni' in tema.lower():
-            zavrsni.append(tema)
+            Završni.append(tema)
 
-    print("Završni: ", len(zavrsni))
+    print("Završni: ", len(Završni))
 
 def seminari():
     seminari = []

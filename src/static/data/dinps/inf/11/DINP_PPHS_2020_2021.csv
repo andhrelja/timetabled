@@ -1,0 +1,41 @@
+﻿Datum|Vrijeme|Prostor|Tema|Nastava|Bodovi|Izvođač
+5.10.2020.|10:15-11:45|O-366|Postavljanje okoline za razvoj programa na platformi ROCm (CUDA). Standardi C++11, C++14 i C++17. Formatiranje znakovnih nizova bibliotekom{fmt}|V||v. pred. dr. sc. Vedran Miletić
+7.10.2020.|8:15-9:45|O-358|Uvod. Pojam i osnovne ideje računanja na grafičkim procesorima|P||izv. prof. dr. sc.
+12.10.2020.|10:15-11:45|O-366|Arhitektura platforme ROCm (CUDA). Prevođenje i pokretanje gotovih programa otvorenog koda. Mjerenje performansi|V||v. pred. dr. sc. Vedran Miletić.
+14.10.2020.|8:15-9:45|O-358|Povijest razvoja grafike i računanja na grafičkim procesorima|P||izv. prof. dr. sc. Božidar Kovačić
+19.10.2020.|10:15-11:45|O-366|Osnove rada s grafičkim procesorom: biblioteka rocPRIM (ugrađene funkcije CUDA-e)|V||v. pred. dr. sc. Vedran Miletić
+21.10.2020.|8:15-9:45|O-358|Paralelizam zasnovan na podacima. Struktura programa. Množenje matrica|P||izv. prof. dr. sc. Božidar Kovačić
+26.10.2020.|10:15-11:45|online|Generiranje slučajnih brojeva: C++11 biblioteka random i biblioteka rocRAND|V||v. pred. dr. sc. Vedran Miletić
+28.10.2020.|8:15-9:45|online|Memorije uređaja i prijenos podataka. Zrna i višenitni rad |P||izv. prof. dr. sc. Božidar Kovačić
+2.11.2020.|10:15-11:45|online|Dokumentiranje programskog koda alatom Doxygen. Dokumentiranje programa alatom MkDocs|V||v. pred. dr. sc. Vedran Miletić
+4.11.2020.|8:15-9:45|online|Indeksi blokova i niti. Redanje izvođenja zrna|P||izv. prof. dr. sc. Božidar Kovačić
+9.11.2020.|10:15-11:45|online|1. kontrolna zadaća|v||v. pred. dr. sc. Vedran Miletić
+9.11.2020.|10:15-11:45|online|1. kontrolna zadaća|k|15|
+11.11.2020.|8:15-9:45|online|Tipovi memorija. Tehnike za smanjenje korištenja globalne memorije. Memorija kao ograničavajući faktor kod paralelizacije|P||izv. prof. dr. sc. Božidar Kovačić
+16.11.2020.|10:15-11:45|online|Operacije na vektorima i matricama: aplikacijska programska sučelja BLAS i LAPACK. C++ biblioteka Eigen|V||v. pred. dr. sc. Vedran Miletić
+23.11.2020.|10:15-11:45|online|Operacije na vektorima i matricama: biblioteka rocBLAS (cuBLAS)|V||v. pred. dr. sc. Vedran Miletić
+25.11.2020.|8:15-9:45|online|Tehnike za poboljšanje performansi. Dinamičko particioniranje resursa. Pretpreuzimanje podataka. Granularnosti niti|P||izv. prof. dr. sc. Božidar Kovačić
+30.11.2020.|10:15-11:45|online|Objavljene ponuđene teme projekata|p||v. pred. dr. sc. Vedran Miletić
+30.11.2020.|10:15-11:45|online|Rješavanje sustava linearnih jednadžbi: biblioteka rocSOLVER (cuSOLVER)|V||v. pred. dr. sc. Vedran Miletić
+2.12.2020.|8:15-9:45|online|1. kolokvij|p||izv. prof. dr. sc. Božidar Kovačić
+2.12.2020.|8:15-9:45|online|1. kolokvij|k|20|izv. prof. dr. sc. Božidar Kovačić
+7.12.2020.|10:15-11:45|online|Rijetke matrice: biblioteke rocSPARSE i rocALUTION (cuSPARSE)|V||v. pred. dr. sc. Vedran Miletić
+9.12.2020.|8:15-9:45|online|Problemi računanja s pomičnim zarezom: preciznost i zaokruživanje brojeva|P||izv. prof. dr. sc. Božidar Kovačić
+14.12.2020.|10:15-11:45|online|Rok za odabir teme projekta|p||v. pred. dr. sc. Vedran Miletić
+14.12.2020.|10:15-11:45|online|Brza Fourierova transformacija: rocFFT (cuFFT)|V||v. pred. dr. sc. Vedran Miletić
+16.12.2020.|8:15-9:45|online|Studijski slučajevi: obrada slika magnetske rezonance te vizualizacija i analiza molekula|P||izv. prof. dr. sc. Božidar Kovačić
+21.12.2020.|10:15-11:45|online|2. kontrolna zadaća|v||v. pred. dr. sc. Vedran Miletić
+21.12.2020.|10:15-11:45|online|2. kontrolna zadaća|k|15|v. pred. dr. sc. Vedran Miletić
+23.12.2020.|8:15-9:45|online|Paralelno programiranje i računsko razmišljanje|P||izv. prof. dr. sc. Božidar Kovačić
+11.1.2021.|10:15-11:45|online|Prevođenje OpenCL C koda u LLVM-ovu srednju reprezentaciju|V||v. pred. dr. sc. Vedran Miletić
+13.1.2021.|8:15-9:45|online|Programiranje aplikacija za heterogena superračunala|P||izv. prof. dr. sc. Božidar Kovačić
+18.1.2021.|10:15-11:45|online|Prevođenje LLVM-ove srednje reprezentacije u strojni kod za mikroarhitekture GCN i RDNA|V||v. pred. dr. sc. Vedran Miletić
+20.1.2021.|8:15-9:45|online|Pogled u budućnost: evolucija heterogenih arhitektura i programskih okruženja|P||izv. prof. dr. sc. Božidar Kovačić
+25.1.2021.|10:15-11:45|online|LLVM-ovi analitički i transformacijski prolazi kod prevođenja koda|V||v. pred. dr. sc. Vedran Miletić
+27.1.2021.|8:15-9:45|online|2. kolokvij|p||izv. prof. dr. sc. Božidar Kovačić
+27.1.2021.|8:15-9:45|online|2. kolokvij|k|20|izv. prof. dr. sc. Božidar Kovačić
+1.2.2021.|10:15-11:45|online|Rok za predaju projekta|p||v. pred. dr. sc. Vedran Miletić
+3.2.2021.|00:00-23:59|online|Završni ispit (1. redovni rok)|z|30|izv. prof. dr. sc. Božidar Kovačić
+17.2.2021.|00:00-23:59|online|Završni ispit (2. redovni rok)|z||izv. prof. dr. sc. Božidar Kovačić
+31.3.2021.|00:00-23:59|online|Završni ispit (1. izvanredni rok)|z||izv. prof. dr. sc. Božidar Kovačić
+15.9.2021.|00:00-23:59|online|Završni ispit (2. izvanredni rok)|z||izv. prof. dr. sc. Božidar Kovačić

@@ -1,0 +1,46 @@
+﻿Datum|Vrijeme|Prostor|Tema|Nastava|Bodovi|Izvođač
+7.10.2020|08:15-09:45|365|Uvod. Programski jezici i programske paradigme. Deklarativna i imperativna paradigma.|P||Ana Meštrović
+12.10.2020|10:15-11:45|365|Usporedba deklarativne i imperativne programske paradigme|V||Ana Meštrović
+14.10.2020|08:15-09:45|365|Uvod u funkcijske jezike. Funkcija. Funkcijsko programiranje. Kratki pregled povijesnog razvoja funkcijskih jezika. Primjeri programa|P||Ana Meštrović
+19.10.2020|10:15-11:45|365|Uvod u Haskell. Prevoditelji i interpreteri HUGS i GHC. Biblioteka. Prelude. Sintaksa i konvencije. Pisanje skripti u Haskelu. Primjeri programa. Vježba 1 - predaja riješenih zadataka|V||Ana Meštrović
+19.10.2020|10:15-11:45|365|Uvod u Haskell. Prevoditelji i interpreteri HUGS i GHC. Biblioteka. Prelude. Sintaksa i konvencije. Pisanje skripti u Haskelu. Primjeri programa. Vježba 1 - predaja riješenih zadataka|kv|1|Ana Meštrović
+21.10.2020||online|Tipovi i klase podataka u Haskellu. Liste List comprehensions; Rekurzivne funkcije|P||Ana Meštrović
+26.10.2020|10:15-11:45|365|Tipovi podataka u Haskellu Liste. Definiranje funkcija. Uvjetni izrazi. Čuvari. Uzorci. Lambda izrazi. Vježba 2 - predaja riješenih zadataka|V||Ana Meštrović
+26.10.2020|10:15-11:45|365|Tipovi podataka u Haskellu Liste. Definiranje funkcija. Uvjetni izrazi. Čuvari. Uzorci. Lambda izrazi. Vježba 2 - predaja riješenih zadataka|kv|2|Ana Meštrović
+28.10.2020|08:15-09:45|365|Funkcije višeg reda.|P||Ana Meštrović
+2.11.2020|10:15-11:45|365|List comprehensions; Rekurzivne funkcije Vježba 3 - predaja riješenih zadataka|V||Ana Meštrović
+2.11.2020|10:15-11:45|365|List comprehensions; Rekurzivne funkcije Vježba 3 - predaja riješenih zadataka|kv|2|Ana Meštrović
+4.11.2020|08:15-09:45|365|1. Kolokvij - teorija|P||Ana Meštrović
+4.11.2020|08:15-09:45|365|1. Kolokvij - teorija|k|10|Ana Meštrović
+9.11.2020|10:15-11:45|365|Funkcije višeg reda.- zadaci. Vježba 4 - predaja riješenih zadataka|V||Ana Meštrović
+9.11.2020|10:15-11:45|365|Funkcije višeg reda.- zadaci. Vježba 4 - predaja riješenih zadataka|kv|2|Ana Meštrović
+11.11.2020||online|Pregled primjene funkcijskog stila programiranja u drugim programskim jezicima.|P||Ana Meštrović
+16.11.2020||online|Funkcije višeg reda.- složeniji zadaci Vježba 5 - predaja riješenih zadataka|V||Ana Meštrović
+16.11.2020||online|Funkcije višeg reda.- složeniji zadaci Vježba 5 - predaja riješenih zadataka|kv|2|Ana Meštrović
+18.11.2020||online|Primjeri drugih funkcijskih jezika - usporedbe. Seminarski rad.|P||Ana Meštrović
+23.11.2020||online|Pisanje interaktivnih programa Vježba 6 - predaja riješenih zadataka|V||Ana Meštrović
+23.11.2020||online|Pisanje interaktivnih programa Vježba 6 - predaja riješenih zadataka|kv|2|Ana Meštrović
+25.11.2020||online|Lambda račun. Teorija izračunljivosti.|P||Ana Meštrović
+30.11.2020||online|Rješavanje složenijih problemskih zadataka.|V||Ana Meštrović
+2.12.2020||online|Zadavanje projektnih zadataka|P||Ana Meštrović
+7.12.2020||online|Rad na projektnom zadatku|V||Ana Meštrović
+9.12.2020|08:15-09:45|365|2. Kolokvij - teorija|P||Ana Meštrović
+9.12.2020|08:15-09:45|365|2. Kolokvij - teorija|k|10|Ana Meštrović
+14.12.2020||online|Rad na projektnom zadatku|V||Ana Meštrović
+16.12.2020||online|Rad na projektnom zadatku|P||Ana Meštrović
+21.12.2020|10:15-11:45|365|1. Kolokvij - zadaci|V||Ana Meštrović
+21.12.2020|10:15-11:45|365|1. Kolokvij - zadaci|k|20|Ana Meštrović
+23.12.2020|08:15-09:45|365|Prezentacije projektnih zadaka|P||Ana Meštrović
+11.1.2021|10:15-11:45|365|Prezentacije projektnih zadaka|V||Ana Meštrović
+11.1.2021|10:15-11:45|365|Prezentacije projektnih zadaka|pr|15|Ana Meštrović
+13.1.2021|08:15-09:45|365|Uvod u logičko programiranje Predikatna logika. Osnovni elementi jezika. Sintaksa i semantika jezika Prolog. Definicije činjenica, pravila i upita: Pojam klauzule, hornova klauzula|P||Ana Meštrović
+18.1.2021|10:15-11:45|365|Uvod u Prolog. Pisanje prvog programa u Prologu. Termi u prologu. Klauzule, predikati, varijable Zapis činjenica, pravila i upita. Vježba 7 - predaja riješenih zadataka|V||Ana Meštrović
+18.1.2021|10:15-11:45|365|Uvod u Prolog. Pisanje prvog programa u Prologu. Termi u prologu. Klauzule, predikati, varijable Zapis činjenica, pravila i upita. Vježba 7 - predaja riješenih zadataka|kv|2|Ana Meštrović
+20.1.2021|08:15-09:45|365|Postupak unifikacije. Supstitucija. Operatori i aritmetika u Prologu. Rekurzija.|P||Ana Meštrović
+25.1.2021||online|Ugrađeni predikati Aritmetičke i logičke operacije. Operator jednakosti. Liste Definiranje rekurzivnih pravila. Vježba 8 - predaja riješenih zadataka|V||Ana Meštrović
+25.1.2021||online|Ugrađeni predikati Aritmetičke i logičke operacije. Operator jednakosti. Liste Definiranje rekurzivnih pravila. Vježba 8 - predaja riješenih zadataka|kv|2|Ana Meštrović
+27.1.2021|08:15-09:45|365|Pojam logičke posljedice. Zadovoljavanje cilja (pronalaženje odgovora na upite), unifikacija, rezolucija u Prologu. Ulančavanje unatrag (backtracking). Redoslijed klauzula.|P||Ana Meštrović
+10.02.2021.|00:00-23:59|365|Završni ispit (1. redovni rok)|z|30|Ana Meštrović
+24.02.2021.|00:00-23:59|365|Završni ispit (2. redovni rok)|z||Ana Meštrović
+10.03.2021.|00:00-23:59|365|Završni ispit (1. izvanredni rok)|z||Ana Meštrović
+01.09.2021.|00:00-23:59|365|Završni ispit (2. izvanredni rok)|z||Ana Meštrović

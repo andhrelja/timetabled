@@ -7,6 +7,7 @@ class StudentScoreActivity(models.Model):
     
     name        = models.CharField("Naziv", max_length=64)
     location    = models.CharField("Prostor", max_length=128)
+    group       = models.CharField("Grupa", max_length=2, null=True, blank=True)
     type        = models.IntegerField("Tip aktivnosti", choices=constraints.TYPE_CHOICES)
     details     = models.TextField("Dodatne informacije", null=True, blank=True)
 

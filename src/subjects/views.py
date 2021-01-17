@@ -10,7 +10,6 @@ from django.views.generic import (
 from subjects.forms import SubjectEnrollForm
 from accounts.models import StudentSubjects
 from .models import Subject
-from dashboard import pies
 
 from datetime import date
 

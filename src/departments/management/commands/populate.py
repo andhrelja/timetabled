@@ -6,8 +6,10 @@ import csv
 
 from activities_class.constraints import TYPE_CHOICES as CLASS_TYPE_CHOICES
 from activities_class.activities_global.models import GlobalClassActivity
+
 from activities_score.constraints import TYPE_CHOICES as SCORE_TYPE_CHOICES
 from activities_score.activities_global.models import GlobalScoreActivity
+
 
 from accounts.models import Student, StudentSubjects
 from subjects.models import Subject, SubjectPrograms
@@ -17,39 +19,68 @@ from departments.models import (
     Program
 )
 
+# Find type - Django choice
 find_type = lambda value, choices: [item for item in choices if value == item[1]]
+
+TYPE_NAMES = {
+    # Class
+    'p+v'   : 'Predavanja i vježbe',
+    'p'     : 'Predavanja',
+    'v'     : 'Vježbe',
+
+    # Score
+    'z'     : 'Završni ispit',
+    'dz'    : 'Domaća zadaća',
+    'k'     : 'Kolokvij',
+    's'     : 'Seminar',
+    'prez'  : 'Prezentacija',
+    'lz'    : 'Laboratorijske vježbe',
+    
+    'pr'    : 'Projekt',
+    'tr'    : 'Grupni rad',
+    'r'     : 'Rasprava',
+    'kv'    : 'Kviz',
+    'a'     : 'Aktivnost',
+    'pa'    : 'Popravna aktivnost',
+    ''      : 'Ostalo',
+}
+
+TYPE_SWITCH = {
+    # Class
+    'p+v'    : find_type('Predavanja i vježbe', CLASS_TYPE_CHOICES)[0],
+    'p'     : find_type('Predavanja', CLASS_TYPE_CHOICES)[0],
+    'v'     : find_type('Vježbe', CLASS_TYPE_CHOICES)[0],
+
+    # Score
+    'z'     : find_type('Završni ispit', SCORE_TYPE_CHOICES)[0],
+    'dz'    : find_type('Domaća zadaća', SCORE_TYPE_CHOICES)[0],
+    'k'     : find_type('Kolokvij',      SCORE_TYPE_CHOICES)[0],
+    's'     : find_type('Seminar',       SCORE_TYPE_CHOICES)[0],
+    'prez'  : find_type('Prezentacija',  SCORE_TYPE_CHOICES)[0],
+    'lz'    : find_type('Laboratorijske vježbe', SCORE_TYPE_CHOICES)[0],
+    
+    'pr'    : find_type('Projekt',      SCORE_TYPE_CHOICES)[0],
+    'tr'    : find_type('Grupni rad',   SCORE_TYPE_CHOICES)[0],
+    'r'     : find_type('Rasprava',     SCORE_TYPE_CHOICES)[0],
+    'kv'    : find_type('Kviz',         SCORE_TYPE_CHOICES)[0],
+    'a'     : find_type('Aktivnost',    SCORE_TYPE_CHOICES)[0],
+    'pa'    : find_type('Popravna aktivnost', SCORE_TYPE_CHOICES)[0],
+    ''      : find_type('Ostalo',       SCORE_TYPE_CHOICES)[0],
+}
 
 VALIDATE_ACTIVITIES = {
     'name'       : lambda name         : name,
     'location'   : lambda location     : location,
     'details'    : lambda details      : details.strip(),
     'subject'    : lambda subject      : subject,
-    'due_date'   : lambda datum        : datetime.strptime(datum, '%d.%m.%Y.'),
+    'group'      : lambda group        : group,
+    'due_date'   : lambda datum        : datetime.strptime(datum, '%d.%m.%Y.') if datum != '' else datetime(1, 1, 1, 0, 0),
     'start_time' : lambda time_string  : time_string.split('-')[0].strip(),
     'end_time'   : lambda time_string  : time_string.split('-')[1].strip(),
-    'type'       : lambda type_key, choice : TYPE_SWITCH[type_key](choice)[0],
+    'type'       : lambda type_key, choice : find_type(TYPE_NAMES[type_key], choice)[0],
     'points_total' : lambda points_total   : float(points_total) if points_total != '' else 0,
 }
 
-TYPE_SWITCH = {
-    # Class
-    'p'     : lambda choice: find_type('Predavanja', choice)[0],
-    'v'     : lambda choice: find_type('Vježbe', choice)[0],
-    'p+v'   : lambda choice: find_type('Predavanja i vježbe', choice)[0],
-    # Score
-    'k'     : lambda choice: find_type('Kolokvij', choice)[0],
-    's'     : lambda choice: find_type('Seminar', choice)[0],
-    'e'     : lambda choice: find_type('Esej', choice)[0],
-    'prez'  : lambda choice: find_type('Prezentacija', choice)[0],
-    'dz'    : lambda choice: find_type('Domaća zadaća', choice)[0],
-    'lz'    : lambda choice: find_type('Laboratorijske vježbe', choice)[0],
-    'z'     : lambda choice: find_type('Završni ispit', choice)[0],
-    'pr'    : lambda choice: find_type('Projekt', choice)[0],
-    'tr'    : lambda choice: find_type('Timski rad', choice)[0],
-    'r'     : lambda choice: find_type('Rasprava', choice)[0],
-    'kv'    : lambda choice: find_type('Kviz', choice)[0],
-    ''      : lambda choice: find_type('Ostalo', choice)[0],
-}
 
 
 class Command(BaseCommand):
@@ -71,11 +102,12 @@ class Command(BaseCommand):
     def read_csv(self, filename):
         csv_path = settings.BASE_DIR / 'static' / 'data' / filename
         if csv_path.is_file():
-            csv_file = open(csv_path, 'r', encoding='utf8')
+            csv_file = open(csv_path, 'r', encoding='utf-8-sig')
             return csv.DictReader(csv_file, delimiter='|')
         else:
             return []
     
+
     def populate_universities(self):
         dictionary_list = self.read_json('universities.json')
         
@@ -103,8 +135,12 @@ class Command(BaseCommand):
 
     def populate_programs(self, programs, department_id):
         for dictionary in programs:
+            program_id = dictionary.pop('id')
+            dictionary.update({
+                'department_id': department_id
+            })
             obj, created = Program.objects.get_or_create(
-                department_id=department_id, **dictionary)
+                id=program_id, defaults=dictionary)
             if created:
                 self.stdout.write(self.style.SUCCESS('[SUCCESS] Program Created "{}"'.format(obj.name)))
             else:
@@ -133,78 +169,95 @@ class Command(BaseCommand):
     def populate_activities(self):
         for subject in Subject.objects.all():
             dictionary_list = self.read_csv(subject.csv_file)
-            total_points_total = 0
-            for dictionary in dictionary_list:
-                type_key = dictionary['Nastava'].lower()
+            try:
+                for dictionary in dictionary_list:
+                    type_key = dictionary['Nastava'].lower()
 
-                if type_key in ('p', 'v', 'p+v'):
-                    choice = CLASS_TYPE_CHOICES
-                elif type_key in ('k', 's', 'e', 'prez', 'dz', 'lz', 'z', 'pr', 'tr', 'r', 'o', ''):
-                    choice = SCORE_TYPE_CHOICES
-                else:
-                    choice = None
-                    raise ValueError("Unknown activity type:", type_key)
-                
-                stage_dictionary = {
-                    'name'       : "{} - {}".format(TYPE_SWITCH[type_key](choice)[1], dictionary['Prostor']),
-                    'location'   : dictionary['Prostor'],
-                    'type'       : type_key,
-                    'details'    : dictionary['Tema'],
-                    'subject'    : subject,
-                    'due_date'   : dictionary['Datum'],
-                    'points_total' : dictionary['Bodovi']
-                }
+                    if type_key not in TYPE_NAMES.keys():
+                        raise ValueError("Unknown activity type:", type_key)
+                    
+                    stage_dictionary = {
+                        'name'       : TYPE_NAMES[type_key],
+                        'location'   : dictionary['Prostor'],
+                        'type'       : type_key,
+                        'details'    : dictionary['Tema'],
+                        'subject'    : subject,
+                        'due_date'   : dictionary['Datum'],
+                        'points_total' : dictionary['Bodovi']
+                    }
 
-                vrijeme_ukupno = dictionary['Vrijeme']
-                if vrijeme_ukupno == '':
-                    if type_key in ('p', 'p+v'):
-                        start_time = subject.predavanja_vrijeme
-                        tdelta = subject.predavanja_trajanje
-                    elif type_key == 'v':
-                        start_time = subject.vjezbe_vrijeme
-                        tdelta = subject.vjezbe_trajanje
-                    else:
-                        start_time = subject.vjezbe_vrijeme
-                        tdelta = subject.vjezbe_trajanje
-                    end_time = datetime.combine(date(1, 1, 1), start_time) + tdelta
+                    try:
+                        stage_dictionary.update({
+                            'group': dictionary['Grupa']
+                        })
+                    except KeyError:
+                        pass
 
-                    stage_dictionary.update({
-                        'start_time' : start_time,
-                        'end_time'   : end_time
-                    })
-                else:
-                    stage_dictionary.update({
-                        'start_time' : dictionary['Vrijeme'],
-                        'end_time'   : dictionary['Vrijeme']
-                    })
-
-
-
-                final_dictionary = dict()
-                for key, value in stage_dictionary.items():
-                    if type_key not in ('p', 'v', 'p+v') and dictionary['Vrijeme'] != '':
-                        if key == 'type':
-                            final_dictionary['type'] = VALIDATE_ACTIVITIES[key](value, choice)
+                    vrijeme_ukupno = dictionary['Vrijeme']
+                    if vrijeme_ukupno == '':
+                        if type_key in ('p', 'p+v'):
+                            start_time = subject.predavanja_vrijeme
+                            tdelta = subject.predavanja_trajanje
+                        elif type_key == 'v':
+                            start_time = subject.vjezbe_vrijeme
+                            tdelta = subject.vjezbe_trajanje
                         else:
-                            final_dictionary[key] = VALIDATE_ACTIVITIES[key](value)
-                    else:
-                        if key == 'start_time':
-                            final_dictionary['start_time'] = value
-                        elif key == 'end_time':
-                            final_dictionary['end_time'] = value
-                        elif key == 'type':
-                            final_dictionary['type'] = VALIDATE_ACTIVITIES[key](value, choice)
-                        else:
-                            final_dictionary[key] = VALIDATE_ACTIVITIES[key](value)
+                            start_time = subject.vjezbe_vrijeme
+                            tdelta = subject.vjezbe_trajanje
+                        end_time = datetime.combine(date(1, 1, 1), start_time) + tdelta
 
-                if type_key in ('p', 'v', 'p+v'):
-                    final_dictionary.pop('points_total')
-                    GlobalClassActivity.objects.get_or_create(**final_dictionary)
-                    self.stdout.write(self.style.SUCCESS('[SUCCESS] (Nastavna): "{}" kolegija "{}" uspješno stvorena'.format(final_dictionary['name'], subject.name)))
-                else:
-                    GlobalScoreActivity.objects.get_or_create(**final_dictionary)
-                    self.stdout.write(self.style.SUCCESS('[SUCCESS] (Bodovna): "{}" kolegija "{}" uspješno stvorena'.format(final_dictionary['name'], subject.name)))
-        
+                        stage_dictionary.update({
+                            'start_time' : start_time,
+                            'end_time'   : end_time
+                        })
+                    else:
+                        stage_dictionary.update({
+                            'start_time' : dictionary['Vrijeme'],
+                            'end_time'   : dictionary['Vrijeme']
+                        })
+
+
+
+                    final_dictionary = dict()
+                    for key, value in stage_dictionary.items():
+                        if type_key not in ('p', 'v', 'p+v') and dictionary['Vrijeme'] != '':
+                            if key == 'type':
+                                final_dictionary['type'] = VALIDATE_ACTIVITIES[key](value, SCORE_TYPE_CHOICES)[0]
+                            else:
+                                final_dictionary[key] = VALIDATE_ACTIVITIES[key](value)
+                        elif type_key in ('p', 'v', 'p+v') and dictionary['Vrijeme'] != '':
+                            if key == 'type':
+                                final_dictionary['type'] = VALIDATE_ACTIVITIES[key](value, CLASS_TYPE_CHOICES)[0]
+                            else:
+                                final_dictionary[key] = VALIDATE_ACTIVITIES[key](value)
+                        elif type_key not in ('p', 'v', 'p+v') and dictionary['Vrijeme'] == '':
+                            if key == 'start_time':
+                                final_dictionary['start_time'] = value
+                            elif key == 'end_time':
+                                final_dictionary['end_time'] = value
+                            elif key == 'type':
+                                final_dictionary['type'] = VALIDATE_ACTIVITIES[key](value, SCORE_TYPE_CHOICES)[0]
+                            else:
+                                final_dictionary[key] = VALIDATE_ACTIVITIES[key](value)
+                        elif type_key in ('p', 'v', 'p+v') and dictionary['Vrijeme'] == '':
+                            if key == 'start_time':
+                                final_dictionary['start_time'] = value
+                            elif key == 'end_time':
+                                final_dictionary['end_time'] = value
+                            elif key == 'type':
+                                final_dictionary['type'] = VALIDATE_ACTIVITIES[key](value, CLASS_TYPE_CHOICES)[0]
+                            else:
+                                final_dictionary[key] = VALIDATE_ACTIVITIES[key](value)
+
+                    if type_key in ('p', 'v', 'p+v'):
+                        final_dictionary.pop('points_total')
+                        GlobalClassActivity.objects.get_or_create(**final_dictionary)
+                        self.stdout.write(self.style.SUCCESS('[SUCCESS] (Nastavna): "{}" kolegija "{}" uspješno stvorena'.format(final_dictionary['name'], subject.name)))
+                    else:
+                        GlobalScoreActivity.objects.get_or_create(**final_dictionary)
+                        self.stdout.write(self.style.SUCCESS('[SUCCESS] (Bodovna): "{}" kolegija "{}" uspješno stvorena'.format(final_dictionary['name'], subject.name)))
+            except UnicodeDecodeError:
+                print(subject, "UnicodeDecodeError")
         
     def bind_subjects_students(self):
         for student in Student.objects.all():
