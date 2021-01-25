@@ -20,12 +20,13 @@ from datetime import date
 
 
 def notification_call(request):
-    notification_message = "<h4>Hej {},</h4><br>".format(request.user.student)
-    notification_message += "<h4>Kroz idućih 7 dana na redu su sljedeće aktivnosti:</h4><br><ul>"
-
     students = Student.objects.all()
+    messages = str()
 
     for student in students:
+        notification_message = "<h4>Hej {},</h4><br>".format(student)
+        notification_message += "<h4>Kroz idućih 7 dana na redu su sljedeće aktivnosti:</h4><br><ul>"
+        
         due_activities = list()
         for subject in student.subjects:
             due_activities += subject.upcoming_score_activities(student)
@@ -35,8 +36,9 @@ def notification_call(request):
         notification_message += "</ul><br>"
         notification_message += "<h4>Puno uspjeha u narednom tjednu!</h4>"
         notification_message += "<h5>Srdačan pozdrav od Timetabled tima</h5>"
+        messages += notification_message
         send_mail(subject='Timetabled - tjedna obavijest', message="", html_message=notification_message, from_email=settings.EMAIL_HOST_USER, recipient_list=[student.user.email], )
-    return HttpResponse(notification_message)
+    return HttpResponse(messages)
 
 class SubjectListView(ListView):
     model = Subject
