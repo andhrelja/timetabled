@@ -5,9 +5,7 @@
 {% block body %}
 {% include 'partials/subnav.html' with title="Kolegij" type="detail" type_name="subjects" %}
 
-{% if object|has_empty_activity:user.student %}
 {% include 'messages.html' %}
-{% endif %}
 
 <div class="container-fluid">
     <div class="row mt-3">

@@ -54,7 +54,7 @@ class Subject(models.Model):
     
 
 
-    def has_empty_activity(self, student):
+    def has_empty_activities(self, student):
         for activity in self.all_score_activities(student):
             if activity.due_date.year == 1:
                 return True
