@@ -51,6 +51,14 @@ class Subject(models.Model):
         verbose_name = "Kolegij"
         verbose_name_plural = "Kolegiji"
         ordering = ('-academic_year',)
+    
+
+
+    def has_empty_activity(self, student):
+        for activity in self.all_score_activities(student):
+            if activity.due_date.year == 1:
+                return True
+        return False
 
 
     def gpa_student(self, student):

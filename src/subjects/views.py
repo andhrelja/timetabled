@@ -1,3 +1,6 @@
+from django.contrib import messages
+from django.core.mail import send_mail
+from django.http.response import HttpResponse
 from django.contrib.messages.views import SuccessMessageMixin
 from django.shortcuts import redirect
 from django.conf import settings
@@ -7,11 +10,33 @@ from django.views.generic import (
     FormView
 )
 
-from subjects.forms import SubjectEnrollForm
-from accounts.models import StudentSubjects
-from .models import Subject
 
+from accounts.models import Student, StudentSubjects
+from .models import Subject
+from .forms import SubjectEnrollForm
+
+from django.template.defaultfilters import date as _date
 from datetime import date
+
+
+def notification_call(request):
+    notification_message = "<h4>Hej {},</h4><br>".format(request.user.student)
+    notification_message += "<h4>Kroz idućih 7 dana na redu su sljedeće aktivnosti:</h4><br><ul>"
+
+    students = Student.objects.all()
+
+    for student in students:
+        due_activities = list()
+        for subject in student.subjects:
+            due_activities += subject.upcoming_score_activities(student)
+    
+        for activity in due_activities:
+            notification_message += "<li>{} - {}, {}</li>".format(activity.get_type_display(), activity.subject, _date(activity.due_date, "l d.m.Y"))
+        notification_message += "</ul><br>"
+        notification_message += "<h4>Puno uspjeha u narednom tjednu!</h4>"
+        notification_message += "<h5>Srdačan pozdrav od Timetabled tima</h5>"
+        send_mail(subject='Timetabled - tjedna obavijest', message="", html_message=notification_message, from_email=settings.EMAIL_HOST_USER, recipient_list=[student.user.email], )
+    return HttpResponse(notification_message)
 
 class SubjectListView(ListView):
     model = Subject
@@ -23,7 +48,7 @@ class SubjectListView(ListView):
             return super(SubjectListView, self).get(request, *args, **kwargs)
 
     def get_queryset(self):
-        student         = self.request.user.student
+        student = self.request.user.student
         return student.subjects
 
     def get_context_data(self, **kwargs):
@@ -49,6 +74,10 @@ class SubjectListView(ListView):
 class SubjectDetailView(DetailView):
     model = Subject
 
+    def get(self, request, *args, **kwargs):
+        messages.warning(request, 'Ovaj kolegij sadrži ispitne aktivnosti koje nemaju datum izvođenja')
+        return super(SubjectDetailView, self).get(request, *args, **kwargs)
+
     def get_context_data(self, **kwargs):
         context = super(SubjectDetailView, self).get_context_data(**kwargs)
         student = self.request.user.student
@@ -62,11 +91,10 @@ class SubjectDetailView(DetailView):
 
         context.update({
             'score_activities_total':     score_activities_total,
-            'score_activities_completed': score_activities_completed,
             'class_activities_total':     class_activities_total,
+            'score_activities_completed': score_activities_completed,
             'class_activities_completed': class_activities_completed,
-            'points_percentage':          points_percentage * 100,
-            'today': date.today()
+            'points_percentage':          points_percentage * 100
         })
         return context
 

@@ -124,7 +124,7 @@
     left: 0;
     z-index: 999;
     font-weight: bold;
-    transition: all 0.3s;
+    transition: all 0.33s;
 
     box-shadow: 0 1px 2px rgba(0,0,0,0.16), 
                 0 2px 4px rgba(0,0,0,0.16), 
@@ -166,26 +166,22 @@
 
 #sidebar .nav-link {
 	color:  #e6e6e6 !important;
-    transition: all 0.3s;
+    
     position: relative;
     z-index : 1;
 }
 
-#sidebar .nav-link.dropdown-item:hover {
-	background-color:  rgb(30, 104, 153);
-    transition: all 0.3s; 
-}
 
-#sidebar .nav-link.dropdown-item:hover:before {
-    content : "";
-    position: absolute;
-    left    : 10%;
-    bottom  : 0;
-    height  : 1px;
-    width   : 100%;  /* or 100px */
+#sidebar .nav-link.dropdown-item:hover {
+    background-color:  rgb(30, 104, 153);
     border-bottom: 2px solid #E6E6E6;
 }
 
+#sidebar .nav-link.dropdown-item:focus,
+#sidebar .nav-link.dropdown-item:focus-within {
+    background-color:  rgb(30, 104, 153, 0.2) !important;
+    border-bottom: 2px solid #E6E6E6;
+}
 
 /* eo Sidebar */
 

@@ -1,26 +1,37 @@
 {% if messages %}
-<div id="messages" class="mt-2">
-    <div class="row m-0">
-        {% for message in messages %}
-        <div class="col-md-12 bg-{{ message.tags }} p-0">
-            {% if message.tags == "success" %}
-            <div class="alert alert-dismissible alert-{{ message.tags }} mb-0">
-                <button type="button" class="close" data-dismiss="alert">&times;</button>
-                <i class="fas fa-check-circle"></i> {{ message }}
+<div class="container-fluid">
+    <div id="messages" class="mt-2">
+        <div class="row m-0">
+            <div class="col-md-12 bg-{{ message.tags }} p-0">
+            {% for message in messages %}
+                {% if message.tags == "success" %}
+                <div class="alert d-flex alert-dismissible alert-{{ message.tags }} p-3 mb-0">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    <div class="fas-icon">
+                        <i class="fas fa-check-circle fa-lg"></i> 
+                    </div>
+                    <p class="pl-2 mb-0">{{ message }}</p>
+                </div>
+                {% elif message.tags == "warning" %}
+                <div class="alert d-flex alert-dismissible alert-{{ message.tags }} p-3 mb-0">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    <div class="fas-icon">
+                        <i class="fas fa-exclamation-circle fa-lg"></i> 
+                    </div>
+                    <p class="pl-2 mb-0">{{ message }}</p>
+                </div>
+                {% elif message.tags == "danger" %}
+                <div class="alert d-flex alert-dismissible alert-{{ message.tags }} p-3 mb-0">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    <div class="fas-icon">
+                        <i class="fas fa-times-circle fa-lg"></i> 
+                    </div>
+                    <p class="pl-2 mb-0">{{ message }}</p>
+                </div>
+                {% endif %}
+            {% endfor %}
             </div>
-            {% elif message.tags == "warning" %}
-            <div class="alert alert-dismissible alert-{{ message.tags }} mb-0">
-                <button type="button" class="close" data-dismiss="alert">&times;</button>
-                <i class="fas fa-exclamation-circle"></i> {{ message }}
-            </div>
-            {% elif message.tags == "danger" %}
-            <div class="alert alert-dismissible alert-{{ message.tags }} mb-0">
-                <button type="button" class="close" data-dismiss="alert">&times;</button>
-                <i class="fas fa-times-circle"></i> {{ message }}
-            </div>
-            {% endif %}
         </div>
-        {% endfor %}
     </div>
 </div>
 {% endif %}

@@ -31,7 +31,7 @@ class GlobalScoreActivity(models.Model):
     
     @property
     def points_percentage(self):
-        return self.points_accomplished / self.points_total
+        return (self.points_accomplished / self.points_total) * 100
 
     @property
     def duration(self):

@@ -1,13 +1,13 @@
 from django.contrib import admin
 from django.urls import path, include
-from .views import index
+from . import views
 
 urlpatterns = [
     # Admin
     path('admin/',               admin.site.urls),
 
     # Home
-    path('',                     index, name="index"),
+    path('',                     views.index, name="index"),
 
     # Students
     path('accounts/',            include('accounts.urls')),

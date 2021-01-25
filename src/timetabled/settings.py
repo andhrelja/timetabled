@@ -20,9 +20,23 @@ ALLOWED_HOSTS = []
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
 
+LOGOUT_URL = '/accounts/logout/'
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'timetabled2021@gmail.com'
+EMAIL_HOST_PASSWORD = 'qcrejnjsvyfcowgm'
+EMAIL_USE_TLS = True
+
 # Application definition
 
 INSTALLED_APPS = [
+    # Third pary
+    #'django_extensions',
+    
+    'adminlte3',
+    'adminlte3_theme',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -40,9 +54,6 @@ INSTALLED_APPS = [
     'departments.apps.DepartmentsConfig',
     'subjects.apps.SubjectsConfig',
     'dashboard.apps.DashboardConfig',
-
-    # Third pary
-    #'django_extensions',
 ]
 
 MIDDLEWARE = [
@@ -99,6 +110,14 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'timetabledtst',
         'USER': 'andrea',
+        'PASSWORD': 'user',
+        'HOST': 'localhost'
+    },
+    # Work PC
+    'local-work': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'timetabled',
+        'USER': 'postgres',
         'PASSWORD': 'user',
         'HOST': 'localhost'
     }

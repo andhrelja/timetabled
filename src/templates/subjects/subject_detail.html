@@ -5,6 +5,10 @@
 {% block body %}
 {% include 'partials/subnav.html' with title="Kolegij" type="detail" type_name="subjects" %}
 
+{% if object|has_empty_activity:user.student %}
+{% include 'messages.html' %}
+{% endif %}
+
 <div class="container-fluid">
     <div class="row mt-3">
         <div class="col-lg-7">
@@ -24,9 +28,15 @@
                                 <p class="card-text">{{ object.ects }}</p>
                             </div>
                             <div class="detail-item-group">
+                                <h5 class="h5 mb-1">OSTVARENI BODOVI</h5>
+                                <p class="card-text">{{ object|points_accomplished:user.student|floatformat }} / {{ object|points_total:user.student|floatformat }}</p>
+                            </div>
+                            <!--
+                            <div class="detail-item-group">
                                 <h5 class="h5 mb-1">BOJA</h5>
                                 <p class="card-text text-danger">Crvena</p>
                             </div>
+                            -->
                         </div>
                         <div class="col m-3">
                             <div class="detail-item-group">
@@ -37,10 +47,6 @@
                                 <h5 class="h5 mb-1">ASISTENT</h5>
                                 <p class="card-text">{{ object.assistant }}</p>
                             </div>
-                            <div class="detail-item-group">
-                                <h5 class="h5 mb-1">OSTVARENI BODOVI</h5>
-                                <p class="card-text">{{ object|points_accomplished:user.student|floatformat }} / {{ object|points_total:user.student|floatformat }}</p>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -48,7 +54,7 @@
         </div>
         <div class="col-lg-5">
             <div class="card mb-2">
-                <div class="card-body">
+                <div class="card-body bordered-top">
                     <div class="card-title">
                         <h5 class="h5">Protekle bodovne aktivnosti</h5>
                     </div>
@@ -56,7 +62,7 @@
                 </div>
             </div>
             <div class="card">
-                <div class="card-body">
+                <div class="card-body bordered-top">
                     <div class="card-title">
                         <h5 class="h5">Nadolazeće bodovne aktivnosti</h5>
                     </div>
@@ -114,31 +120,25 @@
     </div>
 </div>
 
+<div class="container-fluid">
+    <div class="row mt-3 mb-3">
+        <div class="col-lg-12">
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header bg-dark d-flex justify-content-between align-items-center" id="headingOne" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <h4 class="text-light mb-0">Sve nastavne aktivnosti</h4>
+                        <i class="fas fa-angle-down fa-2x text-light"></i>
+                    </div>
 
-{% include 'partials/subnav.html' with title="Nastavne aktivnosti" type="form" type_name="" %}
-
-<div class="row mt-3">
-    <div class="col-lg-6">
-        <div class="card m-2">
-            <div class="card-body">
-                <div class="card-title">
-                    <h5 class="h5">Sve nastavne aktivnosti</h5>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            {% include 'partials/activities/class_list_snippet.html' with activities=subject|all_class_activities:user.student %}
+                        </div>
+                    </div>
                 </div>
-                {% include 'partials/activities/class_list_snippet.html' with activities=subject|all_class_activities:user.student %}
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-6">
-        <div class="card m-2">
-            <div class="card-body">
-                <div class="card-title">
-                    <h5 class="h5">Nadolazeće nastavne aktivnosti</h5>
-                </div>
-                {% include 'partials/activities/class_list_snippet.html' with activities=subject|upcoming_class_activities:user.student %}
             </div>
         </div>
     </div>
 </div>
-
 
 {% endblock body %}

@@ -12,18 +12,36 @@
         <ul class="navbar-nav ml-auto">
             {% if user.is_authenticated %}
             <li class="nav-item">
-                <a class="nav-link" href="#">
-                {% if request.session.deadline_tasks > 0 %}
-                    <div style="position: relative" onclick="location.href='{% url 'tasks:notifications' %}'">
-                        <i class="fas fa-bell fa-lg" aria-hidden="true"></i>
-                        <span class="dot bg-danger"></span>
-                    </div>
+                {% if user.student.upcoming_score_activities  %}
+                    <li class="nav-item dropleft show">
+                        <a style="position:relative" class="nav-link dropdown-toggle notification-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true">
+                            <i class="fas fa-bell fa-lg" aria-hidden="true"></i>
+                            <span class="dot bg-danger"></span>
+                        </a>
+                        <ul class="dropdown-menu p-2" class="list-group" style="width: 350px; min-width: 200px;">
+                        {% for activity in user.student.upcoming_score_activities  %}
+                            <li class="dropdown-item clickable-row hover-light list-group-item d-flex justify-content-between align-items-center" onclick="location.href='{{ activity.get_absolute_url }}'">
+                                {% if activity.points_total >= 10  %}
+                                    <span class="badge badge-danger badge-pill">{{ activity.points_total|floatformat }}</span>
+                                {% elif activity.points_total < 10 and activity.points_total >= 5 %}
+                                    <span class="badge badge-warning badge-pill">{{ activity.points_total|floatformat }}</span>
+                                {% elif activity.points_total < 5 %}
+                                    <span class="badge badge-primary badge-pill">{{ activity.points_total|floatformat }}</span>
+                                {% endif %}
+                                <div class="list-item-description mr-auto ml-3">
+                                    <div class="card-title mb-0">{{ activity }}</div>
+                                    <small class="card-subtitle text-muted">{{ activity.due_date }}</small>
+                                </div>
+                            </li>
+                        {% endfor %}
+                        </ul>
+                    </li>
                 {% else %}
-                    <div onclick="location.href='#'">
+                    <div style="position: relative">
                         <i class="fas fa-bell fa-lg" aria-hidden="true"></i>
                     </div>
+                    
                 {% endif %}
-                </a>
             </li>          
             {% endif %}
         </ul>

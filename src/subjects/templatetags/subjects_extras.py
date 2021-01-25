@@ -42,3 +42,7 @@ def upcoming_class_activities(subject, student):
 @register.filter
 def past_class_activities(subject, student):
     return subject.past_class_activities(student)
+
+@register.filter
+def has_empty_activity(subject, student):
+    return subject.has_empty_activity(student)
