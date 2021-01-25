@@ -1,5 +1,6 @@
 .vscode/
 staticfiles/
+Eg-op_csv_excel/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

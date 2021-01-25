@@ -30,9 +30,12 @@ def notification_call(request):
         due_activities = list()
         for subject in student.subjects:
             due_activities += subject.upcoming_score_activities(student)
-    
-        for activity in due_activities:
-            notification_message += "<li>{} - {}, {}</li>".format(activity.get_type_display(), activity.subject, _date(activity.due_date, "l d.m.Y"))
+
+        if due_activities:
+            for activity in due_activities:
+                notification_message += "<li>{} - {}, {}</li>".format(activity.get_type_display(), activity.subject, _date(activity.due_date, "l d.m.Y"))
+        else:
+            notification_message += "<li>Ovog tjedna nema ispitnih aktivnosti</li>"
         notification_message += "</ul><br>"
         notification_message += "<h4>Puno uspjeha u narednom tjednu!</h4>"
         notification_message += "<h5>Srdačan pozdrav od Timetabled tima</h5>"
