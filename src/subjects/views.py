@@ -80,6 +80,7 @@ class SubjectDetailView(DetailView):
     model = Subject
 
     def get(self, request, *args, **kwargs):
+        self.object = self.get_object()
         if self.object.has_empty_activities(request.user.student):
             messages.warning(request, 'Ovaj kolegij sadrži ispitne aktivnosti koje nemaju datum izvođenja')
         return super(SubjectDetailView, self).get(request, *args, **kwargs)
