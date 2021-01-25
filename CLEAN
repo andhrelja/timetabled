@@ -2,3 +2,22 @@ find . -path "*/migrations/*.pyc"  -delete
 find . -path "*/__pycache__/*.pyc"  -delete
 find . -path "*/migrations/*.pyc"  -delete
 find . -path "*/migrations/*.py" -not -name "__init__.py" -delete
+
+
+from activities_score.activities_global.models import GlobalScoreActivity
+from activities_score.activities_student.models import StudentScoreActivity
+
+from activities_class.activities_global.models import GlobalClassActivity
+from activities_class.activities_student.models import StudentClassActivity
+
+svi = GlobalScoreActivity.objects.all()
+svi.delete()
+
+svi = StudentScoreActivity.objects.all()
+svi.delete()
+
+svi = GlobalClassActivity.objects.all()
+svi.delete()
+
+svi = StudentClassActivity.objects.all()
+svi.delete()
