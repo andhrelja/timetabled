@@ -16,11 +16,16 @@
                     <button type="submit" class="btn btn-primary">
                         <span>Upiši kolegije</span>
                     </button>
+                    <a href="{% url 'subjects:list' %}" class="btn btn-danger">
+                        Odustani
+                    </a>
                 </div>
             </form>
         </div>
     </div>
 </div>
+
+<br>
 
 {% load static %}
 <script type="module">
@@ -28,7 +33,5 @@ import { makeActive } from '{% static 'js/sidenavItemActive.js' %}';
 
 window.onload = makeActive('subjectsSidenav', true, false, '{{ subject.id }}');
 </script>
-
-{% endblock body %}
 
 {% endblock body %}

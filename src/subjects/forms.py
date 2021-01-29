@@ -9,7 +9,7 @@ class TimeInput(forms.TimeInput):
 
 
 class SubjectEnrollOptionalForm(forms.Form):
-    subjects = forms.MultipleChoiceField(widget=forms.CheckboxSelectMultiple(attrs={'class': ''}))
+    subjects = forms.ModelChoiceField(queryset=None, widget=forms.CheckboxSelectMultiple(attrs={'class': ''}), empty_label=None)
 
     def __init__(self, *args, **kwargs):
         self.request = kwargs.pop('request')
@@ -22,12 +22,25 @@ class SubjectEnrollOptionalForm(forms.Form):
             semester=self.request.session.get('semester')
         )
 
-        self.fields['subjects'].choices = ((s.id, s) for s in subjects.exclude(id__in=student.subjects.values_list('id')))
+        self.fields['subjects'].queryset = subjects.exclude(id__in=student.subjects.values_list('id'))
 
 
 class SubjectEnrollForm(forms.Form):
-    subjects_endrolled = forms.MultipleChoiceField(choices=((s.id, s.name) for s in Subject.objects.all()),
-        widget=forms.CheckboxSelectMultiple(attrs={'class': ''}))
+    subjects = forms.ModelMultipleChoiceField(queryset=None, widget=forms.CheckboxSelectMultiple(attrs={'class': ''}))
 
-    subjects_available = forms.MultipleChoiceField(choices=((s.id, s.name) for s in Subject.objects.all()),
-        widget=forms.CheckboxSelectMultiple(attrs={'class': ''}))
+    def __init__(self, *args, **kwargs):
+        self.request = kwargs.pop('request')
+        super(SubjectEnrollForm, self).__init__(*args, **kwargs)
+        student = self.request.user.student
+
+        subject_ids     = SubjectPrograms.objects.filter(program=student.program).values_list('subject_id')
+        subjects_available = Subject.objects.filter(id__in=subject_ids, 
+            academic_year=self.request.session.get('academic_year'), 
+        ).order_by('semester')
+
+        self.fields['subjects'].queryset = subjects_available
+        self.fields['subjects'].initial = [s.id for s in student.subjects]
+    
+    def clean(self):
+        cleaned_data = super(SubjectEnrollForm, self).clean()
+        return cleaned_data

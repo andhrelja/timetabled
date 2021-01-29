@@ -32,7 +32,7 @@
             </div>
         </li>
         <li id="subjectsSidenavDropdown" class="collapse">
-            <ul class="list-unstyled">
+            <ul class="list-unstyled" style="overflow: auto; white-space: nowrap;">
                 <li id="subjectsListSidenav">
                     <a class="nav-link d-flex dropdown-item" href="{% url 'subjects:list' %}">
                         <small class="pl-3">Svi kolegiji</small>
@@ -99,7 +99,7 @@
                     </a>
                 </li>
                 <li>
-                    <a class="nav-link d-flex dropdown-item" href="#">
+                    <a class="nav-link d-flex dropdown-item" href="{% url 'departments:problem-report' %}">
                         <div class="fas-icon">
                             <i class="fas fa-exclamation pr-1" aria-hidden="true"></i>
                         </div>

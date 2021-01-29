@@ -10,25 +10,27 @@
         <div class="col-md-12">
             <form method="post" action=""> {% csrf_token %}
                 <div class="card pb-0">
-                    {% include 'partials/subjects/enroll_form_snippet.html' %}
+                    {% include 'partials/subjects/enroll_all_form_snippet.html' %}
                 </div>
                 <div class="form-buttons">
                     <button type="submit" class="btn btn-primary">
                         <span>Upis/ispis dodatnih kolegija</span>
                     </button>
+                    <a href="{% url 'subjects:list' %}" class="btn btn-danger">
+                        Odustani
+                    </a>
                 </div>
             </form>
         </div>
     </div>
 </div>
 
+<br>
 {% load static %}
 <script type="module">
 import { makeActive } from '{% static 'js/sidenavItemActive.js' %}';
 
 window.onload = makeActive('subjectsSidenav', true, false);
 </script>
-
-{% endblock body %}
 
 {% endblock body %}

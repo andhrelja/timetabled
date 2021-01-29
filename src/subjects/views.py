@@ -133,3 +133,20 @@ class SubjectEnrollView(SuccessMessageMixin, FormView):
     template_name = 'subjects/subject_enroll_all_form.html'
     success_url = '/subjects/'
     success_message = "Kolegiji uspješno upisani"
+
+    def get_form_kwargs(self):
+        kwargs = super(SubjectEnrollView, self).get_form_kwargs()
+        kwargs["request"] = self.request
+        return kwargs
+
+    def form_valid(self, form):
+        subjects = form.cleaned_data['subjects']
+        for ss in StudentSubjects.objects.filter(student=self.request.user.student, academic_year=2020): #TODO: Hardcoded academic_year
+            if ss.subject not in subjects:
+                ss.delete()
+                
+        student = self.request.user.student
+        for subject in subjects:
+            ss, _ = StudentSubjects.objects.get_or_create(student=student, subject=subject, academic_year=subject.academic_year)
+            ss.ingest_points(subject, student)
+        return super(SubjectEnrollView, self).form_valid(form)

@@ -114,7 +114,7 @@ DATABASES = {
         'HOST': 'localhost'
     },
     # Work PC
-    '': {
+    'local-work': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'timetabled',
         'USER': 'postgres',

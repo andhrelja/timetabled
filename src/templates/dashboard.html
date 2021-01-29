@@ -3,6 +3,8 @@
 
 {% block body %}
 
+{% include 'messages.html' %}
+
 <div class="container-fluid">
     <div class="row mt-3 mb-3">
         <div class="col-lg-3 mb-2">
@@ -62,7 +64,6 @@
     </div>
 </div>
 
-{% include 'messages.html' %}
 
 {% load static %}
 <script type="module" src="{% static 'js/sidenavItemActive.js' %}" />

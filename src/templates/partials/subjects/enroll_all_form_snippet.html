@@ -10,6 +10,8 @@
     <thead class="bg-dark">
         <tr>
             <th style="color: #fff; border:none;">Naziv</th>
+            <th style="color: #fff; border:none;">Semestar</th>
+            <th style="color: #fff; border:none;">Vrsta</th>
             <th style="color: #fff; border:none;">ECTS</th>
             <th style="color: #fff; border:none;">Nositelj</th>
         </tr>
@@ -29,9 +31,13 @@
 
         {% for subject in form.subjects %}
         <tr>
-            <td>
-                {{ subject }}
-            </td>
+            <td>{{ subject }}</td>
+            <td>{{ subject.data.value.instance.semester }}</td>
+            {% if subject.data.value.instance.optional %}
+            <td>Izborni</td>
+            {% else %}
+            <td>Obavezni</td>
+            {% endif %}
             <td>{{ subject.data.value.instance.ects }}</td>
             <td>{{ subject.data.value.instance.professor }}</td>
         </tr>

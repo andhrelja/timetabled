@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+{% include 'partials/subnav.html' with title="Prijava problema" type="form" %}
+{% include 'messages.html' %}
+
+<div class="container-fluid">
+    <div class="row mt-3">
+        <div class="col-md-12 mb-3">
+            <form method="post" action=""> {% csrf_token %}
+                <div class="card activity-form">
+                    {% include 'partials/form_snippet.html' %}
+                </div>
+                <div class="form-buttons">
+                    <button type="submit" class="btn btn-primary">
+                        <span>Pošalji</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% load static %}
+
+
+<script type="module">
+import { makeActive } from '{% static 'js/sidenavItemActive.js' %}';
+
+window.onload = makeActive('accountsSidenav', false, false);
+</script>
+
+
+{% endblock body %}

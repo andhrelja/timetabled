@@ -1,3 +1,4 @@
+from typing import Optional
 from django.db import models
 from django.urls import reverse
 from datetime import date, timedelta
@@ -53,6 +54,12 @@ class Subject(models.Model):
         ordering = ('-academic_year',)
     
 
+    @property
+    def optional(self):
+        optional = list()
+        for sp in self.subjectprograms_set.all(): # TODO: Hardcoded academic_year / user student
+            optional.append(sp.optional)
+        return all(optional)
 
     def has_empty_activities(self, student):
         for activity in self.all_score_activities(student):
