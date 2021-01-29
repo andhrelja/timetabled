@@ -26,4 +26,13 @@
     </div>
 </div>
 
+{% load static %}
+
+<script type="module">
+import { makeActive } from '{% static 'js/sidenavItemActive.js' %}';
+
+window.onload = makeActive('subjectsSidenav', true, false, '{{ subject.id }}');
+</script>
+
+
 {% endblock body %}

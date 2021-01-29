@@ -16,7 +16,7 @@
         <ul class="navbar-nav subnav ml-auto">
         {% if type == "list" and type_name == "subjects" %}
             <li class="nav-item">
-                <a class="nav-link d-flex" href="{% url 'subjects:enroll' %}">
+                <a class="nav-link d-flex" href="{% url 'subjects:enroll-optional' %}">
                     <div class="fas-icon subnav">
                         <i class="fas fa-plus-circle text-light" aria-hidden="true"></i>
                     </div>
@@ -24,11 +24,11 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link d-flex" href="#">
+                <a class="nav-link d-flex" href="{% url 'subjects:enroll' %}">
                     <div class="fas-icon subnav">
-                        <i class="fas fa-book text-light" aria-hidden="true"></i>
+                        <i class="fas fa-pen text-light" aria-hidden="true"></i>
                     </div>
-                    <span>Materijali</span>
+                    <span>Uredi upisane kolegije</span>
                 </a>
             </li>
         {% elif type == "detail" and type_name == "subjects" %}

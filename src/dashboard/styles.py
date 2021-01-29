@@ -14,7 +14,7 @@ style_score_activities_pie = CleanStyle(
     label_font_size=16,
     major_label_font_size=12,
     tooltip_font_size=20,
-    legend_font_size=22,
+    legend_font_size=20,
 )
 
 style_class_activities_pie = CleanStyle(
@@ -24,7 +24,7 @@ style_class_activities_pie = CleanStyle(
     label_font_size=16,
     major_label_font_size=12,
     tooltip_font_size=20,
-    legend_font_size=22,
+    legend_font_size=20,
 )
 
 style_score_activities_bar = CleanStyle(
@@ -34,7 +34,7 @@ style_score_activities_bar = CleanStyle(
     label_font_size=16,
     major_label_font_size=12,
     tooltip_font_size=20,
-    legend_font_size=22,
+    legend_font_size=18,
 )
 
 style_class_activities_bar = CleanStyle(
@@ -44,7 +44,7 @@ style_class_activities_bar = CleanStyle(
     label_font_size=16,
     major_label_font_size=12,
     tooltip_font_size=20,
-    legend_font_size=28,
+    legend_font_size=18,
 )
 
 style_semester_days_pie = CleanStyle(
@@ -54,7 +54,7 @@ style_semester_days_pie = CleanStyle(
     label_font_size=16,
     major_label_font_size=12,
     tooltip_font_size=20,
-    legend_font_size=22,
+    legend_font_size=18,
 )
 
 style_number_gauge = CleanStyle(
@@ -64,5 +64,5 @@ style_number_gauge = CleanStyle(
     label_font_size=16,
     major_label_font_size=12,
     tooltip_font_size=20,
-    legend_font_size=22,
+    legend_font_size=18,
 )

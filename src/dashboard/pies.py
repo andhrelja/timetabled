@@ -58,7 +58,7 @@ def get_subjects_activities(student):
     subjects = student.subjects.annotate(Count('globalscoreactivity'))
     subjects = subjects.order_by('-globalscoreactivity__count')
 
-    pie_chart = pygal.Pie(style=style_class_activities_bar)
+    pie_chart = pygal.Pie(style=style_class_activities_bar, legend_at_bottom=True)
     pie_chart.inner_radius = 0.65
 
     for subject in subjects:

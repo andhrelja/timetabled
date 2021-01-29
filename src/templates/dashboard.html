@@ -20,11 +20,35 @@
     </div>
 
     <div class="row mt-3 mb-3">
+        {% if user.student.upcoming_score_activities %}
+        <div class="col-lg-8 mb-3">
+            {% include 'partials/dashboard/plot_card.html' with title="Prosjek po kolegiju" src=subjects_gpa_bar color="info" %}
+        </div>
+        <div class="col-lg-4 mb-3">
+            <div class="card h-100">
+                <div class="card-header bg-primary text-light">
+                    <h5 class="h5">Nadolazeće ispitne aktivnosti</h5>
+                </div>
+                <div class="card-body">
+                    {% include 'partials/activities/score_list_snippet.html' with activities=user.student.upcoming_score_activities %}
+                </div>
+                <div class="card-footer">
+                    <div class="text-center">
+                        <a href="{% url 'activities_calendar:score-monthly' %}" class="btn btn-sm btn-primary w-100">
+                            <i class="fas fa-calendar-alt text-light" aria-hidden="true"></i>
+                            <span class="text-light">Prikaži kalendar</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        {% else %}
         <div class="col-lg-7 mb-3">
-        {% include 'partials/dashboard/plot_card.html' with title="Prosjek po kolegiju" src=subjects_gpa_bar color="info" %}
+            {% include 'partials/dashboard/plot_card.html' with title="Prosjek po kolegiju" src=subjects_gpa_bar color="info" %}
         </div>
         <div class="col-lg-5 mb-3">
         {% include 'partials/dashboard/plot_card.html' with title="Broj aktivnosti po kolegiju" src=subjects_activities_pie color="success" %}
+        </div>
+        {% endif %}
         </div>
     </div>
 
@@ -39,5 +63,12 @@
 </div>
 
 {% include 'messages.html' %}
+
+{% load static %}
+<script type="module" src="{% static 'js/sidenavItemActive.js' %}" />
+
+<script>
+window.onload = makeActive('homeSidenav');
+</script>
 
 {% endblock body %}

@@ -2,13 +2,13 @@
 
 <!-- Side navigation -->
 <nav id="sidebar">
-    <div class="sidebar-header text-center" onclick="location.href='{% url 'subjects:list' %}'">
+    <div class="sidebar-header text-center" onclick="location.href='{% url 'index' %}'">
         <img src="{% static 'images/logo_timetabled_clean.png' %}" alt="logo_timetabled_clean.png" height="110">
         <img src="{% static 'images/timetabled_char_xl.png' %}" alt="timetabled_char_xl.png" height="25">
     </div>
     <br>
     <ul class="list-unstyled components">
-        <li id="dashboardNavItem" class="nav-item active">
+        <li id="homeSidenav" class="nav-item active">
             <a class="nav-link d-flex" href="{% url 'index' %}">
                 <div class="fas-icon">
                     <i class="fas fa-chart-line pr-1" aria-hidden="true"></i>
@@ -16,9 +16,9 @@
                 <span class="pl-2">Početna</span>
             </a>
         </li>
-        <li id="subjectsDropdownButton" class="nav-item d-flex">
+        <li id="subjectsSidenav" class="nav-item d-flex clickable-row" href="#subjectsSidenavDropdown" data-toggle="collapse" aria-expanded="false">
             <div class="link" style="width: 85%">
-                <a class="nav-link d-flex" href="#subjectsDropdown" data-toggle="collapse" aria-expanded="false" >
+                <a class="nav-link d-flex">
                     <div class="fas-icon">
                         <i class="fas fa-graduation-cap pr-1" aria-hidden="true"></i>
                     </div>
@@ -26,22 +26,20 @@
                 </a>
             </div>
             <div class="caret m-auto text-center" style="width: 15%">
-                <a class="" href="#subjectsDropdown" data-toggle="collapse" aria-expanded="false" >
-                    <div class="fas-icon">
-                        <i class="fas fa-angle-down text-light w-100 h-100"></i>
-                    </div>
-                </a>
+                <div class="fas-icon">
+                    <i class="fas fa-angle-down text-light w-100 h-100"></i>
+                </div>
             </div>
         </li>
-        <li class="collapse" id="subjectsDropdown">
+        <li id="subjectsSidenavDropdown" class="collapse">
             <ul class="list-unstyled">
-                <li>
+                <li id="subjectsListSidenav">
                     <a class="nav-link d-flex dropdown-item" href="{% url 'subjects:list' %}">
                         <small class="pl-3">Svi kolegiji</small>
                     </a>
                 </li>
                 {% for subject in user.student.subjects.all %}
-                    <li>
+                    <li id="subject-{{ subject.id }}" code="{{ subject.code }}">
                         <a class="nav-link d-flex dropdown-item" href="{{ subject.get_absolute_url }}">
                             <small class="pl-3">{{ subject }}</small>
                         </a>
@@ -49,9 +47,9 @@
                 {% endfor %}
             </ul>
         </li>
-        <li id="activitiesDropdownButton" class="nav-item d-flex">
+        <li id="activitiesSidenav" class="nav-item d-flex clickable-row" href="#activitiesSidenavDropdown" data-toggle="collapse" aria-expanded="false">
             <div class="link" style="width: 85%">
-                <a class="nav-link d-flex" href="#activitiesDropdown" data-toggle="collapse" aria-expanded="false" >
+                <a class="nav-link d-flex">
                     <div class="fas-icon">
                         <i class="fas fa-calendar-alt pr-1" aria-hidden="true"></i>
                     </div>
@@ -59,16 +57,14 @@
                 </a>
             </div>
             <div class="caret m-auto text-center" style="width: 15%">
-                <a class="" href="#activitiesDropdown" data-toggle="collapse" aria-expanded="false" >
-                    <div class="fas-icon">
-                        <i class="fas fa-angle-down text-light w-100 h-100"></i>
-                    </div>
-                </a>
+                <div class="fas-icon">
+                    <i class="fas fa-angle-down text-light w-100 h-100"></i>
+                </div>
             </div>
         </li>
-        <li class="collapse" id="activitiesDropdown">
+        <li id="activitiesSidenavDropdown" class="collapse">
             <ul class="list-unstyled components">
-                <li>
+                <li id="activitiesSidenavIspitne">
                     <a class="nav-link d-flex dropdown-item" href="{% url 'activities_calendar:score-monthly' %}">
                         <div class="text-center" style="width: 25px">
                             <div class="fas-icon">
@@ -78,7 +74,7 @@
                         <span class="text-m mt-1 pl-1">Ispitne aktivnosti</span>
                     </a>
                 </li>
-                <li>
+                <li id="activitiesSidenavNastavne">
                     <a class="nav-link d-flex dropdown-item" href="{% url 'activities_calendar:class-weekly' %}">
                         <div class="text-center" style="width: 25px">
                             <div class="fas-icon">
@@ -92,7 +88,7 @@
         </li>
     </ul>
     <ul class="list-unstyled component" style="position:absolute; bottom:0; width:100%">
-        <li class="collapse" id="acccountsDropdown">
+        <li id="acccountsSidenavDropdown" class="collapse">
             <ul class="list-unstyled">
                 <li>
                     <a class="nav-link d-flex dropdown-item" href="#">
@@ -120,9 +116,9 @@
                 </li>
             </ul>
         </li>
-        <li id="accounts-nav-item" class="nav-item d-flex">
+        <li id="accountsSidenav" class="nav-item d-flex clickable-row" href="#acccountsSidenavDropdown" data-toggle="collapse" aria-expanded="false">
             <div class="link" style="width: 85%">
-                <a class="nav-link d-flex" href="#acccountsDropdown" data-toggle="collapse" aria-expanded="false" >
+                <a class="nav-link d-flex">
                     <div class="fas-icon pr-2">
                         <i class="fas fa-user-circle fa-lg" aria-hidden="true"></i>
                     </div>
@@ -130,11 +126,9 @@
                 </a>
             </div>
             <div class="caret m-auto text-center" style="width: 15%">
-                <a class="" href="#acccountsDropdown" data-toggle="collapse" aria-expanded="false" >
-                    <div class="fas-icon">
-                        <i class="fas fa-angle-up text-light w-100 h-100"></i>
-                    </div>
-                </a>
+                <div class="fas-icon">
+                    <i class="fas fa-angle-up text-light w-100 h-100"></i>
+                </div>
             </div>
         </li>
     </ul>

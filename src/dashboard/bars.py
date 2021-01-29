@@ -11,7 +11,7 @@ def get_subject_gpa(student):
     subjects = student.subjects.annotate(Count('globalscoreactivity'))
     subjects = subjects.order_by('-globalscoreactivity__count')
 
-    bar_chart = pygal.Bar(range=(0, 5, 0.5), style=style_score_activities_bar, height=401)
+    bar_chart = pygal.Bar(range=(0, 5, 0.5), style=style_score_activities_bar, height=401, legend_at_bottom=True)
     bar_chart.x_labels = [subject.name for subject in subjects]
     
     

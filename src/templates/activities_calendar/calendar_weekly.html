@@ -3,7 +3,7 @@
 {% load calendar_extras %}
 
 {% block body %}
-{% include 'partials/subnav.html' with title="Nastavne aktivnosti" type="form" %}
+{% include 'partials/subnav.html' with type="form" %}
 {% include 'partials/activities/calendar_navbar.html' with type="weekly" calendar_url="activities_calendar:class-weekly-navigate" prev_date=start_date|add_days:-7 next_date=start_date|add_days:7 %}
 
 <table class="table table-bordered" style="table-layout:fixed">
@@ -11,7 +11,11 @@
         <tr class="bg-light">
             <th style="width: 20px"></th>
         {% for th in header %}
+            {% if th == today|date:"l" %}
+            <th class="bg-info text-light" style="width: 60px">{{ th }}</th>
+            {% else %}
             <th style="width: 60px">{{ th }}</th>
+            {% endif %}
         {% endfor %}
         </tr>
     </thead>
@@ -54,5 +58,11 @@
 
 <br>
 
+{% load static %}
+<script type="module">
+import { makeActive } from '{% static 'js/sidenavItemActive.js' %}';
+
+window.onload = makeActive('activitiesSidenav', false, true, null, '{{ title }}');
+</script>
 
 {% endblock body %}

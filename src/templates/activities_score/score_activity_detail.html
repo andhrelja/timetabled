@@ -24,7 +24,14 @@
                     </div>
                     <h6 class="card-subtitle mb-2 text-muted">{{ object.due_date|date:"l" }}, {{ object.due_date }} od {{ object.start_time }}, {{ object.location }}</h6>
                     <p class="card-text">{{ object.details }}</p>
-                    <a href="{{ object.subject.get_absolute_url }}" class="card-link">Informacije o kolegiju</a>
+                </div>
+                <div class="card-footer">
+                    <div class="text-center">
+                        <a href="{{ object.subject.get_absolute_url }}" class="btn btn-sm btn-primary w-100">
+                            <i class="fas fa-graduation-cap text-light" aria-hidden="true"></i>
+                            <span class="text-light">Informacije o kolegiju</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -48,36 +55,48 @@
                                 {{ object.points_percentage|floatformat }}&nbsp;%
                             </span>
                         </li>
-                        <!--
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            Morbi leo risus
-                            <span class="badge badge-primary badge-pill">1</span>
-                        </li>
-                        -->
                     </ul>
                 </div>
             </div>
         </div>
     </div>
     <hr>
-    <div class="row">
+</div>
+
+<div class="container-fluid">
+    <div class="row mt-3 mb-3">
         <div class="col-lg-12">
-            <div class="card">
-                <div class="card-body">
-                    <div class="card-title">
-                        <h5 class="h5">{{ object.subject }} - Sve bodovne aktivnosti</h5>
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header bg-dark d-flex justify-content-between align-items-center" id="headingOne" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <h4 class="text-light mb-0">Sve bodovne aktivnosti</h4>
+                        <i class="fas fa-angle-down fa-2x text-light"></i>
                     </div>
-                    {% include 'partials/activities/score_list_snippet.html' with activities=object.subject|all_score_activities:user.student type="all" %}
-                    <div class="form-buttons text-center">
-                        <a href="{% url 'activities_calendar:score-monthly' %}" class="btn btn-sm btn-primary w-100">
-                            <i class="fas fa-calendar-alt text-light" aria-hidden="true"></i>
-                            <span class="text-light">Prikaži sve</span>
-                        </a>
+
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            {% include 'partials/activities/score_list_snippet.html' with activities=object.subject|all_score_activities:user.student type="all" %}
+                        </div>
+                        <div class="card-footer">
+                            <div class="text-center">
+                                <a href="{% url 'activities_calendar:score-monthly' %}" class="btn btn-sm btn-primary w-100">
+                                    <i class="fas fa-calendar-alt text-light" aria-hidden="true"></i>
+                                    <span class="text-light">Prikaži kalendar</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+{% load static %}
+<script type="module">
+import { makeActive } from '{% static 'js/sidenavItemActive.js' %}';
+
+window.onload = makeActive('subjectsSidenav', true, false, '{{ object.subject.id }}');
+</script>
 
 {% endblock body %}

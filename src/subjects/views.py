@@ -13,7 +13,7 @@ from django.views.generic import (
 
 from accounts.models import Student, StudentSubjects
 from .models import Subject
-from .forms import SubjectEnrollForm
+from .forms import SubjectEnrollForm, SubjectEnrollOptionalForm
 
 from django.template.defaultfilters import date as _date
 from datetime import date
@@ -82,7 +82,7 @@ class SubjectDetailView(DetailView):
     def get(self, request, *args, **kwargs):
         self.object = self.get_object()
         if self.object.has_empty_activities(request.user.student):
-            messages.warning(request, 'Ovaj kolegij sadrži ispitne aktivnosti koje nemaju datum izvođenja')
+            messages.warning(request, 'Ovaj kolegij sadrži ispitne aktivnosti* koje nemaju datum izvođenja')
         return super(SubjectDetailView, self).get(request, *args, **kwargs)
 
     def get_context_data(self, **kwargs):
@@ -101,18 +101,19 @@ class SubjectDetailView(DetailView):
             'class_activities_total':     class_activities_total,
             'score_activities_completed': score_activities_completed,
             'class_activities_completed': class_activities_completed,
-            'points_percentage':          points_percentage * 100
+            'points_percentage':          points_percentage * 100,
+            'today': date.today()
         })
         return context
 
-class SubjectEnrollView(SuccessMessageMixin, FormView):
-    form_class = SubjectEnrollForm
+class SubjectEnrollOptionalView(SuccessMessageMixin, FormView):
+    form_class = SubjectEnrollOptionalForm
     template_name = 'subjects/subject_enroll_form.html'
     success_url = '/subjects/'
     success_message = "Kolegiji uspješno upisani"
 
     def get_form_kwargs(self):
-        kwargs = super(SubjectEnrollView, self).get_form_kwargs()
+        kwargs = super(SubjectEnrollOptionalView, self).get_form_kwargs()
         kwargs["request"] = self.request
         return kwargs
     
@@ -125,5 +126,10 @@ class SubjectEnrollView(SuccessMessageMixin, FormView):
 
             ss = StudentSubjects.objects.create(student=student, subject=subject, academic_year=subject.academic_year)
             ss.ingest_points(subject, student)
-        return super(SubjectEnrollView, self).form_valid(form)
+        return super(SubjectEnrollOptionalView, self).form_valid(form)
     
+class SubjectEnrollView(SuccessMessageMixin, FormView):
+    form_class = SubjectEnrollForm
+    template_name = 'subjects/subject_enroll_all_form.html'
+    success_url = '/subjects/'
+    success_message = "Kolegiji uspješno upisani"

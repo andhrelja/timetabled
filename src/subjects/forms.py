@@ -8,13 +8,12 @@ class TimeInput(forms.TimeInput):
     input_type = "time"
 
 
-class SubjectEnrollForm(forms.Form):
-    subjects = forms.MultipleChoiceField(choices=((s.id, s.name) for s in Subject.objects.all()),
-        widget=forms.CheckboxSelectMultiple(attrs={'class': ''}))
+class SubjectEnrollOptionalForm(forms.Form):
+    subjects = forms.MultipleChoiceField(widget=forms.CheckboxSelectMultiple(attrs={'class': ''}))
 
     def __init__(self, *args, **kwargs):
         self.request = kwargs.pop('request')
-        super(SubjectEnrollForm, self).__init__(*args, **kwargs)
+        super(SubjectEnrollOptionalForm, self).__init__(*args, **kwargs)
         student = self.request.user.student
 
         subject_ids     = SubjectPrograms.objects.filter(program=student.program, optional=True).values_list('subject_id')
@@ -24,3 +23,11 @@ class SubjectEnrollForm(forms.Form):
         )
 
         self.fields['subjects'].choices = ((s.id, s) for s in subjects.exclude(id__in=student.subjects.values_list('id')))
+
+
+class SubjectEnrollForm(forms.Form):
+    subjects_endrolled = forms.MultipleChoiceField(choices=((s.id, s.name) for s in Subject.objects.all()),
+        widget=forms.CheckboxSelectMultiple(attrs={'class': ''}))
+
+    subjects_available = forms.MultipleChoiceField(choices=((s.id, s.name) for s in Subject.objects.all()),
+        widget=forms.CheckboxSelectMultiple(attrs={'class': ''}))

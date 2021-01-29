@@ -16,6 +16,12 @@ p {
     text-align: center !important;
 }
 
+.btn:focus,
+.btn.focus {
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgb(25, 52, 65, 0.25);
+}
+
 /*
 #messages {
     position: absolute;
@@ -131,6 +137,7 @@ p {
     position: absolute;
 }
 
+
 @media (max-width: 580px) {
     .register-image .login-logo{
         height: 300px !important;
@@ -138,6 +145,14 @@ p {
 
     .login-container .card {
         padding: 5%;
+    }
+
+    .notification.dropdown-menu.show {
+        width: 250px !important;
+    }
+
+    .search-form input {
+        width: 80% !important;
     }
 }
 
@@ -150,6 +165,10 @@ p {
     .login-container .card {
         margin-right: 30% !important;
         padding: 7%;
+    }
+
+    .search-form input {
+        width: 100% !important;
     }
 
 }

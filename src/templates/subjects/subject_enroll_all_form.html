@@ -2,7 +2,7 @@
 
 
 {% block body %}
-{% include 'partials/subnav.html' with title="Upiši izborne kolegije" type="form" %}
+{% include 'partials/subnav.html' with title="Uredi upisane kolegije" type="form" %}
 {% include 'messages.html' %}
 
 <div class="container-fluid mt-3">
@@ -14,7 +14,7 @@
                 </div>
                 <div class="form-buttons">
                     <button type="submit" class="btn btn-primary">
-                        <span>Upiši kolegije</span>
+                        <span>Upis/ispis dodatnih kolegija</span>
                     </button>
                 </div>
             </form>
@@ -26,7 +26,7 @@
 <script type="module">
 import { makeActive } from '{% static 'js/sidenavItemActive.js' %}';
 
-window.onload = makeActive('subjectsSidenav', true, false, '{{ subject.id }}');
+window.onload = makeActive('subjectsSidenav', true, false);
 </script>
 
 {% endblock body %}
