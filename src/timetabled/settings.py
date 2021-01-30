@@ -54,8 +54,6 @@ INSTALLED_APPS = [
     'departments.apps.DepartmentsConfig',
     'subjects.apps.SubjectsConfig',
     'dashboard.apps.DashboardConfig',
-
-    'crispy_forms',
 ]
 
 MIDDLEWARE = [
