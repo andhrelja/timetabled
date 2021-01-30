@@ -2,7 +2,7 @@ from django.contrib import messages
 from django.core.mail import send_mail
 from django.http.response import HttpResponse
 from django.contrib.messages.views import SuccessMessageMixin
-from django.shortcuts import redirect
+from django.shortcuts import redirect, render
 from django.conf import settings
 from django.views.generic import (
     ListView,
@@ -42,6 +42,36 @@ def notification_call(request):
         messages += notification_message
         send_mail(subject='Timetabled - tjedna obavijest', message="", html_message=notification_message, from_email=settings.EMAIL_HOST_USER, recipient_list=[student.user.email], )
     return HttpResponse(messages)
+
+
+def search(request):
+    student = request.user.student
+
+    if request.method == "POST":
+        query = request.POST.get('query')
+        score_activities = student.all_score_activities
+        class_activities = student.all_class_activities
+
+        _score_activities = list()
+        _class_activities = list()
+
+        for score_activity in score_activities:
+            if query.lower() in score_activity.name.lower() or query.lower() in score_activity.details.lower():
+                _score_activities.append(score_activity)
+
+        for class_activity in class_activities:
+            if query.lower() in class_activity.name.lower() or query.lower() in class_activity.details.lower():
+                _class_activities.append(class_activity)
+
+        context = {
+            'results': {
+                'Kolegiji': student.subjects.filter(name__icontains=query),
+                'Bodovne aktivnosti': _score_activities,
+                'Nastavne aktivnosti': _class_activities
+            }
+        }
+
+        return render(request, 'subjects/search.html', context)
 
 class SubjectListView(ListView):
     model = Subject

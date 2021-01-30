@@ -86,6 +86,16 @@
                 </li>
             </ul>
         </li>
+        {% if user.is_authenticated and user.is_staff or user.is_superuser %}
+        <li id="departmentsSidenav" class="nav-item active">
+            <a class="nav-link d-flex" href="{% url 'departments:list' %}">
+                <div class="fas-icon">
+                    <i class="fas fa-building pr-1" aria-hidden="true"></i>
+                </div>
+                <span class="pl-2">Odjeli</span>
+            </a>
+        </li>
+        {% endif %}
     </ul>
     <ul class="list-unstyled component" style="position:absolute; bottom:0; width:100%">
         <li id="acccountsSidenavDropdown" class="collapse">

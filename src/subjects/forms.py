@@ -39,6 +39,7 @@ class SubjectEnrollForm(forms.Form):
         ).order_by('semester')
 
         self.fields['subjects'].queryset = subjects_available
+        print(subjects_available.query)
         self.fields['subjects'].initial = [s.id for s in student.subjects]
     
     def clean(self):

@@ -4,7 +4,8 @@ export { makeActive };
 const SidenavItems = [
     'homeSidenav', 'subjectsSidenav', 'activitiesSidenav', 'accountsSidenav',
     'subjectsSidenavDropdown', 'activitiesSidenavDropdown', 'acccountsSidenavDropdown',
-    'subjectsListSidenav', 'activitiesSidenavIspitne', 'activitiesSidenavNastavne'
+    'subjectsListSidenav', 'activitiesSidenavIspitne', 'activitiesSidenavNastavne',
+    'departmentsSidenav'
 ]
 
 function disableActive() {

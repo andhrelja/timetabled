@@ -4,8 +4,8 @@
             <span class="navbar-toggler-icon text-dark"></span>
         </button>
         <div class="navbar-nav w-100">
-            <form class="form-inline search-form" style="flex-flow: row; width:100%">
-                <input class="form-control form-control-sm" type="text" placeholder="Pretraži" aria-label="Search">
+            <form method="post" action="{% url 'subjects:search' %}" class="form-inline search-form" style="flex-flow: row; width:100%">{% csrf_token %}
+                <input class="form-control form-control-sm" type="text" placeholder="Pretraži" name="query" aria-label="Search">
                 <button type="submit" class="btn btn-default"><i class="fas fa-search" aria-hidden="true"></i></button>
             </form>
         </div>
@@ -18,7 +18,7 @@
                             <i class="fas fa-bell fa-lg" aria-hidden="true"></i>
                             <span class="dot bg-danger"></span>
                         </a>
-                        <ul class="notification dropdown-menu p-2" class="list-group" style="width: 350px; min-width: 200px;">
+                        <ul class="notification dropdown-menu p-2" style="width: 350px; min-width: 200px;">
                         {% for activity in user.student.upcoming_score_activities  %}
                             <li class="dropdown-item clickable-row hover-light list-group-item d-flex justify-content-between align-items-center" onclick="location.href='{{ activity.get_absolute_url }}'">
                                 {% if activity.points_total >= 10  %}
@@ -40,7 +40,6 @@
                     <div style="position: relative">
                         <i class="fas fa-bell fa-lg" aria-hidden="true"></i>
                     </div>
-                    
                 {% endif %}
             </li>          
             {% endif %}

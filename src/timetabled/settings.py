@@ -54,6 +54,8 @@ INSTALLED_APPS = [
     'departments.apps.DepartmentsConfig',
     'subjects.apps.SubjectsConfig',
     'dashboard.apps.DashboardConfig',
+
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -114,7 +116,7 @@ DATABASES = {
         'HOST': 'localhost'
     },
     # Work PC
-    'local-work': {
+    '': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'timetabled',
         'USER': 'postgres',

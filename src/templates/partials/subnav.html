@@ -31,6 +31,15 @@
                     <span>Uredi upisane kolegije</span>
                 </a>
             </li>
+        {% elif type == "list" and type_name == "departments" %}
+            <li class="nav-item">
+                <a class="nav-link d-flex" href="{% url 'departments:create' %}">
+                    <div class="fas-icon subnav">
+                        <i class="fas fa-plus text-light" aria-hidden="true"></i>
+                    </div>
+                    <span>Novi odjel</span>
+                </a>
+            </li>
         {% elif type == "detail" and type_name == "subjects" %}
             <li class="nav-item">
                 <a class="nav-link d-flex" href="#{% comment %}{% url 'subjects:update' %}{% endcomment %}">

@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+{% include 'partials/subnav.html' with title="Popis dostupnih odjela" type="list" type_name="departments" %}
+
+<div class="container-fluid mt-3">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+            <table class="table w-100 mb-1">
+                <thead>
+                    <tr class="bg-dark">
+                        <th class="text-light rounded-top" style="border-right:none">Naziv</th>
+                        <th class="text-light">Kod</th>
+                        <th class="text-light">Email</th>
+                        <th class="text-light">Sveučilište</th>
+                        <th class="text-light text-center rounded-top" style="border-left:none">Akcije</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for department in department_list %}
+                    <tr class="bg-light">
+                        <td>{{ department.name }}</td>
+                        <td>{{ department.code }}</td>
+                        <td>{{ department.email }}</td>
+                        <td>{{ department.university }}</td>
+                        <td class="text-center">
+                            <a href="{% url 'departments:update' department.id %}" class="btn btn-outline-primary">
+                                <div class="fas-icon">
+                                    <i class="fas fa-pen"></i>
+                                </div>
+                            </a>
+                            <a href="{% url 'departments:delete' department.id %}" class="btn btn-outline-danger">
+                                <div class="fas-icon">
+                                    <i class="fas fa-trash"></i>
+                                </div>
+                            </a>
+                        </td>
+                    </tr>
+                {% empty %}
+                    <p>Još nema upisanih kolegija</p>
+                {% endfor %}
+                </tbody>
+            </table>
+            </div>
+        </div>
+    </div>   
+</div>
+
+{% load static %}
+
+<script type="module">
+import { makeActive } from '{% static 'js/sidenavItemActive.js' %}';
+
+window.onload = makeActive('departmentsSidenav', false, false);
+</script>
+
+{% endblock body %}

@@ -26,7 +26,7 @@ class Department(models.Model):
 
     name        = models.CharField("Naziv", max_length=128)
     code        = models.CharField("Kod", max_length=8)
-    address     = models.TextField("Adreasa")
+    address     = models.CharField("Adresa", max_length=254)
     email       = models.EmailField("Email", max_length=254)
     contact     = models.CharField("Kontakt broj", max_length=16)
     web         = models.CharField("Web", max_length=254)
@@ -41,7 +41,7 @@ class Department(models.Model):
         return self.name
 
     def get_absolute_url(self):
-        return reverse("departments:department-list")
+        return reverse("departments:list")
 
 
 class Program(models.Model):

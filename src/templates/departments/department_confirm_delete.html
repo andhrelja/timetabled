@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block body %}
+{% include 'partials/subnav.html' with title="Brisanje odjela" type="form" type_name="departments" %}
+
+<div class="container-fluid">
+    <div class="row mt-3">
+        <div class="col-md-12 text-center mb-3">
+            <form method="POST">{% csrf_token %}
+                <div class="card">
+                    <div class="card-body">
+                <fieldset class="form-group">
+                    <h2>Jeste sigurni da zelite izbrisati odjel "{{ object.name }}"?</h2>
+                </fieldset>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Da</button>
+                    <a href="{% url 'departments:list' %}" class="btn btn-danger">Ne</a>
+                </div>
+                </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% load static %}
+
+<script type="module">
+import { makeActive } from '{% static 'js/sidenavItemActive.js' %}';
+
+window.onload = makeActive('departmentsSidenav', false, false);
+</script>
+
+
+{% endblock body %}

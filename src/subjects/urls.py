@@ -10,4 +10,5 @@ urlpatterns = [
     path("detail/<int:pk>/",    login_required(views.SubjectDetailView.as_view()), name="detail"),
 
     path('notification-call/',  views.notification_call, name="notification_call"),
+    path("search/",             login_required(views.search), name="search"),
 ]
