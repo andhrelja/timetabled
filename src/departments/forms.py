@@ -16,7 +16,7 @@ class ProblemReportForm(forms.Form):
             cleaned_data['title'],
             cleaned_data['description'],
             settings.EMAIL_HOST_USER,
-            ['andhrelja@hotmail.com']
+            ['andhrelja@hotmail.com', 'lea.lakicevic716@gmail.com', 'vicenco.toma@gmail.com', 'toni.percan@gmail.com']
         )
 
 class DepartmentCreateForm(forms.ModelForm):

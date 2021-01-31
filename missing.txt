@@ -1,0 +1,1 @@
+C:\Users\AndreaHrelja\Documents\Django\timetabled\src\static\data\dinps\inf\14\DINP_ODOGS_2019_2020.csv

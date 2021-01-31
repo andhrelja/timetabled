@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "program_id": 14,
         "name": "Elektroničko gospodarstvo",
         "code": "EG",
@@ -18,10 +19,10 @@
         "predavanja_trajanje": "1:30:00",
         "vjezbe_dan": "četvrtkom",
         "vjezbe_vrijeme": "12:15",
-        "vjezbe_trajanje": "1:30:00",
-        "id": 1
+        "vjezbe_trajanje": "1:30:00"
     },
     {
+        "id": 2,
         "program_id": 14,
         "name": "Inteligentni sustavi 1",
         "code": "IS1",
@@ -40,10 +41,10 @@
         "predavanja_trajanje": "1:30:00",
         "vjezbe_dan": "srijedom",
         "vjezbe_vrijeme": "08:30",
-        "vjezbe_trajanje": "1:30:00",
-        "id": 2
+        "vjezbe_trajanje": "1:30:00"
     },
     {
+        "id": 3,
         "program_id": 14,
         "name": "Operacijska istraživanja 1",
         "code": "OPI1",
@@ -62,10 +63,10 @@
         "predavanja_trajanje": "1:30:00",
         "vjezbe_dan": "utorkom",
         "vjezbe_vrijeme": "10:15",
-        "vjezbe_trajanje": "1:30:00",
-        "id": 3
+        "vjezbe_trajanje": "1:30:00"
     },
     {
+        "id": 4,
         "program_id": 14,
         "name": "Programsko inženjerstvo",
         "code": "PI",
@@ -84,10 +85,10 @@
         "predavanja_trajanje": "1:30:00",
         "vjezbe_dan": "petkom",
         "vjezbe_vrijeme": "10:15",
-        "vjezbe_trajanje": "1:30:00",
-        "id": 4
+        "vjezbe_trajanje": "1:30:00"
     },
     {
+        "id": 5,
         "program_id": 14,
         "name": "Distribuirani sustavi",
         "code": "DS",
@@ -106,10 +107,10 @@
         "predavanja_trajanje": "1:30:00",
         "vjezbe_dan": "četvrtkom",
         "vjezbe_vrijeme": "16:15",
-        "vjezbe_trajanje": "1:30:00",
-        "id": 5
+        "vjezbe_trajanje": "1:30:00"
     },
     {
+        "id": 6,
         "program_id": 14,
         "name": "Objektni programski jezici",
         "code": "OPJ",
@@ -128,10 +129,10 @@
         "predavanja_trajanje": "1:30:00",
         "vjezbe_dan": "četvrtkom",
         "vjezbe_vrijeme": "14:15",
-        "vjezbe_trajanje": "1:30:00",
-        "id": 6
+        "vjezbe_trajanje": "1:30:00"
     },
     {
+        "id": 7,
         "program_id": 14,
         "name": "Osnove e-obrazovanja",
         "code": "OeO",
@@ -150,10 +151,10 @@
         "predavanja_trajanje": "1:30:00",
         "vjezbe_dan": "ponedjeljkom",
         "vjezbe_vrijeme": "08:30",
-        "vjezbe_trajanje": "1:30:00",
-        "id": 7
+        "vjezbe_trajanje": "1:30:00"
     },
     {
+        "id": 8,
         "program_id": 14,
         "name": "Ekonomika poslovanja",
         "code": "EP",
@@ -172,10 +173,10 @@
         "predavanja_trajanje": "1:30:00",
         "vjezbe_dan": "utorkom",
         "vjezbe_vrijeme": "16:15",
-        "vjezbe_trajanje": "1:30:00",
-        "id": 8
+        "vjezbe_trajanje": "1:30:00"
     },
     {
+        "id": 9,
         "program_id": 14,
         "name": "Inteligentni sustavi 2",
         "code": "IS2",
@@ -187,10 +188,10 @@
         "semester": "2",
         "optional": 0,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/14/DINP_IS2_2019_2020.csv",
-        "id": 9
+        "csv_file": "dinps/inf/14/DINP_IS2_2019_2020.csv"
     },
     {
+        "id": 10,
         "program_id": 14,
         "name": "Strateško planiranje informacijskih sustava",
         "code": "SPIS",
@@ -202,10 +203,10 @@
         "semester": "2",
         "optional": 0,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/14/DINP_SPIS_2019_2020.csv",
-        "id": 10
+        "csv_file": "dinps/inf/14/DINP_SPIS_2019_2020.csv"
     },
     {
+        "id": 11,
         "program_id": 14,
         "name": "Multimedijski i hipermedijski sustavi",
         "code": "MHS",
@@ -217,10 +218,10 @@
         "semester": "2",
         "optional": 1,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/14/DINP_MHS_2019_2020.csv",
-        "id": 11
+        "csv_file": "dinps/inf/14/DINP_MHS_2019_2020.csv"
     },
     {
+        "id": 12,
         "program_id": 14,
         "name": "Skladišta podataka",
         "code": "SP",
@@ -232,10 +233,10 @@
         "semester": "2",
         "optional": 1,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/14/DINP_SP_2019_2020.csv",
-        "id": 12
+        "csv_file": "dinps/inf/14/DINP_SP_2019_2020.csv"
     },
     {
+        "id": 13,
         "program_id": 14,
         "name": "Osnove digitalne obrade govora i slika",
         "code": "ODOGS",
@@ -247,10 +248,10 @@
         "semester": "2",
         "optional": 0,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/14/DINP_ODOGS_2019_2020.csv",
-        "id": 13
+        "csv_file": "dinps/inf/14/DINP_ODOGS_2019_2020.csv"
     },
     {
+        "id": 14,
         "program_id": 14,
         "name": "Sustavi za podršku odlučivanju",
         "code": "SPO",
@@ -262,10 +263,10 @@
         "semester": "2",
         "optional": 0,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/14/DINP_SPO_2019_2020.csv",
-        "id": 14
+        "csv_file": "dinps/inf/14/DINP_SPO_2019_2020.csv"
     },
     {
+        "id": 15,
         "program_id": 14,
         "name": "Operacijska istraživanja 2",
         "code": "OPI2",
@@ -277,10 +278,10 @@
         "semester": "2",
         "optional": 1,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/14/DINP_OPI2_2019_2020.csv",
-        "id": 15
+        "csv_file": "dinps/inf/14/DINP_OPI2_2019_2020.csv"
     },
     {
+        "id": 16,
         "program_id": 14,
         "name": "Logistika",
         "code": "LOG",
@@ -292,10 +293,10 @@
         "semester": "2",
         "optional": 1,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/14/DINP_LOG_2019_2020.csv",
-        "id": 16
+        "csv_file": "dinps/inf/14/DINP_LOG_2019_2020.csv"
     },
     {
+        "id": 17,
         "program_id": 14,
         "name": "Računalna analiza prirodnog jezika",
         "code": "RAPJ",
@@ -307,10 +308,10 @@
         "semester": "2",
         "optional": 1,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/14/DINP_RAPJ_2019_2020.csv",
-        "id": 17
+        "csv_file": "dinps/inf/14/DINP_RAPJ_2019_2020.csv"
     },
     {
+        "id": 18,
         "program_id": 14,
         "name": "Menadžment i upravljanje",
         "code": "MIU",
@@ -329,10 +330,10 @@
         "predavanja_trajanje": "1:30:00",
         "vjezbe_dan": "ponedjeljkom",
         "vjezbe_vrijeme": "08:00",
-        "vjezbe_trajanje": "1:30:00",
-        "id": 18
+        "vjezbe_trajanje": "1:30:00"
     },
     {
+        "id": 19,
         "program_id": 14,
         "name": "Upravljanje informatičkim projektima",
         "code": "UIP",
@@ -351,10 +352,10 @@
         "predavanja_trajanje": "1:30:00",
         "vjezbe_dan": "četvrtkom",
         "vjezbe_vrijeme": "14:00",
-        "vjezbe_trajanje": "1:30:00",
-        "id": 19
+        "vjezbe_trajanje": "1:30:00"
     },
     {
+        "id": 20,
         "program_id": 14,
         "name": "Informacijska tehnologija i društvo",
         "code": "ITID",
@@ -373,10 +374,10 @@
         "predavanja_trajanje": "1:30:00",
         "vjezbe_dan": "srijedom",
         "vjezbe_vrijeme": "12:00",
-        "vjezbe_trajanje": "1:30:00",
-        "id": 20
+        "vjezbe_trajanje": "1:30:00"
     },
     {
+        "id": 21,
         "program_id": 14,
         "name": "Komunikacija čovjek stroj",
         "code": "KCS",
@@ -395,10 +396,10 @@
         "predavanja_trajanje": "1:30:00",
         "vjezbe_dan": "četvrtkom",
         "vjezbe_vrijeme": "10:00",
-        "vjezbe_trajanje": "1:30:00",
-        "id": 21
+        "vjezbe_trajanje": "1:30:00"
     },
     {
+        "id": 22,
         "program_id": 14,
         "name": "Otkrivanje znanja u podacima",
         "code": "OZUP",
@@ -417,10 +418,10 @@
         "predavanja_trajanje": "1:30:00",
         "vjezbe_dan": "petkom",
         "vjezbe_vrijeme": "10:00",
-        "vjezbe_trajanje": "1:30:00",
-        "id": 22
+        "vjezbe_trajanje": "1:30:00"
     },
     {
+        "id": 23,
         "program_id": 14,
         "name": "Upravljanje mrežnim sustavima",
         "code": "UMS",
@@ -439,10 +440,10 @@
         "predavanja_trajanje": "1:30:00",
         "vjezbe_dan": "ponedjeljkom",
         "vjezbe_vrijeme": "16:00",
-        "vjezbe_trajanje": "1:30:00",
-        "id": 23
+        "vjezbe_trajanje": "1:30:00"
     },
     {
+        "id": 24,
         "program_id": 14,
         "name": "Upravljanje znanjem",
         "code": "UPZ",
@@ -461,10 +462,10 @@
         "predavanja_trajanje": "1:30:00",
         "vjezbe_dan": "utorkom",
         "vjezbe_vrijeme": "10:00",
-        "vjezbe_trajanje": "1:30:00",
-        "id": 24
+        "vjezbe_trajanje": "1:30:00"
     },
     {
+        "id": 25,
         "program_id": 14,
         "name": "Informacijski sustav organizacije",
         "code": "ISO",
@@ -483,10 +484,10 @@
         "predavanja_trajanje": "1:30:00",
         "vjezbe_dan": "petkom",
         "vjezbe_vrijeme": "14:15",
-        "vjezbe_trajanje": "1:30:00",
-        "id": 25
+        "vjezbe_trajanje": "1:30:00"
     },
     {
+        "id": 26,
         "program_id": 14,
         "name": "Diplomski rad",
         "code": "Završni",
@@ -496,10 +497,10 @@
         "semester": "4",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "",
-        "id": 26
+        "csv_file": ""
     },
     {
+        "id": 27,
         "program_id": 14,
         "name": "Stručna praksa",
         "code": "StrucnaPraksa",
@@ -511,10 +512,10 @@
         "semester": "4",
         "optional": 0,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/14/DINP_StrucnaPraksa_2019_2020.csv",
-        "id": 27
+        "csv_file": "dinps/inf/14/DINP_StrucnaPraksa_2019_2020.csv"
     },
     {
+        "id": 1,
         "program_id": 13,
         "name": "Elektroničko gospodarstvo",
         "code": "EG",
@@ -526,10 +527,10 @@
         "semester": "1",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/13/DINP_EG_2020_2021.csv",
-        "id": 1
+        "csv_file": "dinps/inf/13/DINP_EG_2020_2021.csv"
     },
     {
+        "id": 2,
         "program_id": 13,
         "name": "Inteligentni sustavi 1",
         "code": "IS1",
@@ -541,10 +542,10 @@
         "semester": "1",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/13/DINP_IS1_2020_2021.csv",
-        "id": 2
+        "csv_file": "dinps/inf/13/DINP_IS1_2020_2021.csv"
     },
     {
+        "id": 3,
         "program_id": 13,
         "name": "Operacijska istraživanja 1",
         "code": "OPI1",
@@ -556,10 +557,10 @@
         "semester": "1",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/13/DINP_OPI1_2020_2021.csv",
-        "id": 3
+        "csv_file": "dinps/inf/13/DINP_OPI1_2020_2021.csv"
     },
     {
+        "id": 4,
         "program_id": 13,
         "name": "Programsko inženjerstvo",
         "code": "PI",
@@ -571,10 +572,10 @@
         "semester": "1",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/13/DINP_PI_2020_2021.csv",
-        "id": 4
+        "csv_file": "dinps/inf/13/DINP_PI_2020_2021.csv"
     },
     {
+        "id": 5,
         "program_id": 13,
         "name": "Distribuirani sustavi",
         "code": "DS",
@@ -586,10 +587,10 @@
         "semester": "1",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/13/DINP_DS_2020_2021.csv",
-        "id": 5
+        "csv_file": "dinps/inf/13/DINP_DS_2020_2021.csv"
     },
     {
+        "id": 6,
         "program_id": 13,
         "name": "Objektni programski jezici",
         "code": "OPJ",
@@ -601,10 +602,10 @@
         "semester": "1",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/13/DINP_OPJ_2020_2021.csv",
-        "id": 6
+        "csv_file": "dinps/inf/13/DINP_OPJ_2020_2021.csv"
     },
     {
+        "id": 7,
         "program_id": 13,
         "name": "Osnove e-obrazovanja",
         "code": "OeO",
@@ -616,10 +617,10 @@
         "semester": "1",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/13/DINP_OeO_2020_2021.csv",
-        "id": 7
+        "csv_file": "dinps/inf/13/DINP_OeO_2020_2021.csv"
     },
     {
+        "id": 8,
         "program_id": 13,
         "name": "Ekonomika poslovanja",
         "code": "EP",
@@ -631,10 +632,10 @@
         "semester": "1",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/13/DINP_EP_2020_2021.csv",
-        "id": 8
+        "csv_file": "dinps/inf/13/DINP_EP_2020_2021.csv"
     },
     {
+        "id": 9,
         "program_id": 13,
         "name": "Inteligentni sustavi 2",
         "code": "IS2",
@@ -646,10 +647,10 @@
         "semester": "2",
         "optional": 0,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/13/DINP_IS2_2019_2020.csv",
-        "id": 9
+        "csv_file": "dinps/inf/13/DINP_IS2_2019_2020.csv"
     },
     {
+        "id": 10,
         "program_id": 13,
         "name": "Strateško planiranje informacijskih sustava",
         "code": "SPIS",
@@ -661,10 +662,10 @@
         "semester": "2",
         "optional": 0,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/13/DINP_SPIS_2019_2020.csv",
-        "id": 10
+        "csv_file": "dinps/inf/13/DINP_SPIS_2019_2020.csv"
     },
     {
+        "id": 11,
         "program_id": 13,
         "name": "Multimedijski i hipermedijski sustavi",
         "code": "MHS",
@@ -676,10 +677,10 @@
         "semester": "2",
         "optional": 0,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/13/DINP_MHS_2019_2020.csv",
-        "id": 11
+        "csv_file": "dinps/inf/13/DINP_MHS_2019_2020.csv"
     },
     {
+        "id": 12,
         "program_id": 13,
         "name": "Skladišta podataka",
         "code": "SP",
@@ -691,10 +692,10 @@
         "semester": "2",
         "optional": 0,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/13/DINP_SP_2019_2020.csv",
-        "id": 12
+        "csv_file": "dinps/inf/13/DINP_SP_2019_2020.csv"
     },
     {
+        "id": 13,
         "program_id": 13,
         "name": "Osnove digitalne obrade govora i slika",
         "code": "ODOGS",
@@ -706,10 +707,10 @@
         "semester": "2",
         "optional": 1,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/13/DINP_ODOGS_2019_2020.csv",
-        "id": 13
+        "csv_file": "dinps/inf/13/DINP_ODOGS_2019_2020.csv"
     },
     {
+        "id": 14,
         "program_id": 13,
         "name": "Sustavi za podršku odlučivanju",
         "code": "SPO",
@@ -721,10 +722,10 @@
         "semester": "2",
         "optional": 1,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/13/DINP_SPO_2019_2020.csv",
-        "id": 14
+        "csv_file": "dinps/inf/13/DINP_SPO_2019_2020.csv"
     },
     {
+        "id": 15,
         "program_id": 13,
         "name": "Operacijska istraživanja 2",
         "code": "OPI2",
@@ -736,10 +737,10 @@
         "semester": "2",
         "optional": 1,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/13/DINP_OPI2_2019_2020.csv",
-        "id": 15
+        "csv_file": "dinps/inf/13/DINP_OPI2_2019_2020.csv"
     },
     {
+        "id": 16,
         "program_id": 13,
         "name": "Logistika",
         "code": "LOG",
@@ -751,10 +752,10 @@
         "semester": "2",
         "optional": 1,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/13/DINP_LOG_2019_2020.csv",
-        "id": 16
+        "csv_file": "dinps/inf/13/DINP_LOG_2019_2020.csv"
     },
     {
+        "id": 17,
         "program_id": 13,
         "name": "Računalna analiza prirodnog jezika",
         "code": "RAPJ",
@@ -766,10 +767,10 @@
         "semester": "2",
         "optional": 1,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/13/DINP_RAPJ_2019_2020.csv",
-        "id": 17
+        "csv_file": "dinps/inf/13/DINP_RAPJ_2019_2020.csv"
     },
     {
+        "id": 18,
         "program_id": 13,
         "name": "Menadžment i upravljanje",
         "code": "MIU",
@@ -781,10 +782,10 @@
         "semester": "3",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/13/DINP_MIU_2020_2021.csv",
-        "id": 18
+        "csv_file": "dinps/inf/13/DINP_MIU_2020_2021.csv"
     },
     {
+        "id": 19,
         "program_id": 13,
         "name": "Upravljanje informatičkim projektima",
         "code": "UIP",
@@ -796,10 +797,10 @@
         "semester": "3",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/13/DINP_UIP_2020_2021.csv",
-        "id": 19
+        "csv_file": "dinps/inf/13/DINP_UIP_2020_2021.csv"
     },
     {
+        "id": 20,
         "program_id": 13,
         "name": "Informacijska tehnologija i društvo",
         "code": "ITID",
@@ -811,10 +812,10 @@
         "semester": "3",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/13/DINP_ITID_2020_2021.csv",
-        "id": 20
+        "csv_file": "dinps/inf/13/DINP_ITID_2020_2021.csv"
     },
     {
+        "id": 21,
         "program_id": 13,
         "name": "Komunikacija čovjek stroj",
         "code": "KCS",
@@ -826,10 +827,10 @@
         "semester": "3",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/13/DINP_KCS_2020_2021.csv",
-        "id": 21
+        "csv_file": "dinps/inf/13/DINP_KCS_2020_2021.csv"
     },
     {
+        "id": 22,
         "program_id": 13,
         "name": "Otkrivanje znanja u podacima",
         "code": "OZUP",
@@ -841,10 +842,10 @@
         "semester": "3",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/13/DINP_OZUP_2020_2021.csv",
-        "id": 22
+        "csv_file": "dinps/inf/13/DINP_OZUP_2020_2021.csv"
     },
     {
+        "id": 23,
         "program_id": 13,
         "name": "Upravljanje mrežnim sustavima",
         "code": "UMS",
@@ -856,10 +857,10 @@
         "semester": "3",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/13/DINP_UMS_2020_2021.csv",
-        "id": 23
+        "csv_file": "dinps/inf/13/DINP_UMS_2020_2021.csv"
     },
     {
+        "id": 24,
         "program_id": 13,
         "name": "Upravljanje znanjem",
         "code": "UPZ",
@@ -871,10 +872,10 @@
         "semester": "3",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/13/DINP_UPZ_2020_2021.csv",
-        "id": 24
+        "csv_file": "dinps/inf/13/DINP_UPZ_2020_2021.csv"
     },
     {
+        "id": 25,
         "program_id": 13,
         "name": "Informacijski sustav organizacije",
         "code": "ISO",
@@ -886,10 +887,10 @@
         "semester": "3",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/13/DINP_ISO_2020_2021.csv",
-        "id": 25
+        "csv_file": "dinps/inf/13/DINP_ISO_2020_2021.csv"
     },
     {
+        "id": 26,
         "program_id": 13,
         "name": "Diplomski rad",
         "code": "Završni",
@@ -901,10 +902,10 @@
         ],
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "",
-        "id": 26
+        "csv_file": ""
     },
     {
+        "id": 27,
         "program_id": 13,
         "name": "Stručna praksa",
         "code": "StrucnaPraksa",
@@ -916,10 +917,10 @@
         "semester": "4",
         "optional": 0,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/13/DINP_StrucnaPraksa_2019_2020.csv",
-        "id": 27
+        "csv_file": "dinps/inf/13/DINP_StrucnaPraksa_2019_2020.csv"
     },
     {
+        "id": 28,
         "program_id": 15,
         "name": "Edukacijska psihologija 1",
         "code": "EP1",
@@ -938,10 +939,10 @@
         "predavanja_trajanje": "1:20:00",
         "vjezbe_dan": "ponedjeljkom",
         "vjezbe_vrijeme": "16:30",
-        "vjezbe_trajanje": "1:40:00",
-        "id": 28
+        "vjezbe_trajanje": "1:40:00"
     },
     {
+        "id": 2,
         "program_id": 15,
         "name": "Inteligentni sustavi 1",
         "code": "IS1",
@@ -953,10 +954,10 @@
         "semester": 1,
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/15/IS1_DINP_2020_2021_.csv",
-        "id": 2
+        "csv_file": "dinps/inf/15/IS1_DINP_2020_2021_.csv"
     },
     {
+        "id": 3,
         "program_id": 15,
         "name": "Operacijska istraživanja 1",
         "code": "OPI1",
@@ -968,10 +969,10 @@
         "semester": 1,
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/15/DINP_OPI1_2020_2021.csv",
-        "id": 3
+        "csv_file": "dinps/inf/15/DINP_OPI1_2020_2021.csv"
     },
     {
+        "id": 29,
         "program_id": 15,
         "name": "Opća pedagogija",
         "code": "OPED",
@@ -990,10 +991,10 @@
         "predavanja_trajanje": "1:30:00",
         "vjezbe_dan": "srijedom",
         "vjezbe_vrijeme": "14:15",
-        "vjezbe_trajanje": "3:45:00",
-        "id": 29
+        "vjezbe_trajanje": "3:45:00"
     },
     {
+        "id": 30,
         "program_id": 15,
         "name": "Primjena hipermedije u obrazovanju 1",
         "code": "HMS1",
@@ -1012,10 +1013,10 @@
         "predavanja_trajanje": "1:30:00",
         "vjezbe_dan": "ponedjeljkom",
         "vjezbe_vrijeme": "08:30",
-        "vjezbe_trajanje": "1:30:00",
-        "id": 30
+        "vjezbe_trajanje": "1:30:00"
     },
     {
+        "id": 31,
         "program_id": 15,
         "name": "Razvojna psihologija",
         "code": "RP",
@@ -1034,10 +1035,10 @@
         "predavanja_trajanje": "1:30:00",
         "vjezbe_dan": "četvrtkom/2",
         "vjezbe_vrijeme": "16:30",
-        "vjezbe_trajanje": "1:40:00",
-        "id": 31
+        "vjezbe_trajanje": "1:40:00"
     },
     {
+        "id": 32,
         "program_id": 15,
         "name": "Didaktika 2",
         "code": "DID2",
@@ -1056,10 +1057,10 @@
         "predavanja_trajanje": "1:30:00",
         "vjezbe_dan": "utorkom/2",
         "vjezbe_vrijeme": "16:15",
-        "vjezbe_trajanje": "3:45:00",
-        "id": 32
+        "vjezbe_trajanje": "3:45:00"
     },
     {
+        "id": 21,
         "program_id": 15,
         "name": "Komunikacija čovjek stroj",
         "code": "KCS",
@@ -1071,10 +1072,10 @@
         "semester": 3,
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/15/DINP_KCS_2020_2021.csv",
-        "id": 21
+        "csv_file": "dinps/inf/15/DINP_KCS_2020_2021.csv"
     },
     {
+        "id": 33,
         "program_id": 15,
         "name": "Metodika nastave informatike 1",
         "code": "MNI1",
@@ -1093,10 +1094,10 @@
         "predavanja_trajanje": "1:30:00",
         "vjezbe_dan": "ponedjeljkom",
         "vjezbe_vrijeme": "10:15",
-        "vjezbe_trajanje": "1:30:00",
-        "id": 33
+        "vjezbe_trajanje": "1:30:00"
     },
     {
+        "id": 34,
         "program_id": 15,
         "name": "Osnove jezične kulture",
         "code": "OJK",
@@ -1115,10 +1116,10 @@
         "predavanja_trajanje": "1:30:00",
         "vjezbe_dan": "petkom",
         "vjezbe_vrijeme": "10:15",
-        "vjezbe_trajanje": "1:30:00",
-        "id": 34
+        "vjezbe_trajanje": "1:30:00"
     },
     {
+        "id": 5,
         "program_id": 15,
         "name": "Distribuirani sustavi",
         "code": "DS",
@@ -1130,10 +1131,10 @@
         "semester": 3,
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/15/DINP_DS_2020_2021.csv",
-        "id": 5
+        "csv_file": "dinps/inf/15/DINP_DS_2020_2021.csv"
     },
     {
+        "id": 1,
         "program_id": 15,
         "name": "Elektroničko gospodarstvo",
         "code": "EG",
@@ -1145,10 +1146,10 @@
         "semester": 3,
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/15/DINP_EG_2020_2021.csv",
-        "id": 1
+        "csv_file": "dinps/inf/15/DINP_EG_2020_2021.csv"
     },
     {
+        "id": 19,
         "program_id": 15,
         "name": "Upravljanje informatičkim projektima",
         "code": "UIP",
@@ -1160,10 +1161,10 @@
         "semester": 3,
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/15/DINP_UIP_2020_2021.csv",
-        "id": 19
+        "csv_file": "dinps/inf/15/DINP_UIP_2020_2021.csv"
     },
     {
+        "id": 22,
         "program_id": 15,
         "name": "Otkrivanje znanja u podacima",
         "code": "OZUP",
@@ -1175,10 +1176,10 @@
         "semester": 3,
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/15/DINP_OZUP_2020_2021.csv",
-        "id": 22
+        "csv_file": "dinps/inf/15/DINP_OZUP_2020_2021.csv"
     },
     {
+        "id": 6,
         "program_id": 15,
         "name": "Objektni programski jezici",
         "code": "OPJ",
@@ -1190,10 +1191,10 @@
         "semester": 3,
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/15/DINP_OPJ_2020_2021.csv",
-        "id": 6
+        "csv_file": "dinps/inf/15/DINP_OPJ_2020_2021.csv"
     },
     {
+        "id": 34,
         "program_id": 11,
         "name": "Matematika 1",
         "code": "MAT1",
@@ -1212,10 +1213,10 @@
         "predavanja_trajanje": "1:30:00",
         "vjezbe_dan": "ponedjeljkom",
         "vjezbe_vrijeme": "10:15",
-        "vjezbe_trajanje": "3:30:00",
-        "id": 35
+        "vjezbe_trajanje": "3:30:00"
     },
     {
+        "id": 34,
         "program_id": 11,
         "name": "Programiranje 1",
         "code": "PROG1",
@@ -1234,10 +1235,10 @@
         "predavanja_trajanje": "1:30:00",
         "vjezbe_dan": "petkom",
         "vjezbe_vrijeme": "12:15",
-        "vjezbe_trajanje": "3:30:00",
-        "id": 36
+        "vjezbe_trajanje": "3:30:00"
     },
     {
+        "id": 35,
         "program_id": 11,
         "name": "Osnove informatike",
         "code": "OI",
@@ -1256,10 +1257,10 @@
         "predavanja_trajanje": "1:30:00",
         "vjezbe_dan": "petkom",
         "vjezbe_vrijeme": "08:00",
-        "vjezbe_trajanje": "3:30:00",
-        "id": 37
+        "vjezbe_trajanje": "3:30:00"
     },
     {
+        "id": 36,
         "program_id": 11,
         "name": "Multimedijski sustavi",
         "code": "MMS",
@@ -1278,10 +1279,10 @@
         "predavanja_trajanje": "1:30:00",
         "vjezbe_dan": "srijedom",
         "vjezbe_vrijeme": "10:15",
-        "vjezbe_trajanje": "3:30:00",
-        "id": 38
+        "vjezbe_trajanje": "3:30:00"
     },
     {
+        "id": 37,
         "program_id": 11,
         "name": "Osnove ekonomike za informatičare",
         "code": "OE",
@@ -1300,10 +1301,10 @@
         "predavanja_trajanje": "1:30:00",
         "vjezbe_dan": "ponedjeljkom",
         "vjezbe_vrijeme": "16:15",
-        "vjezbe_trajanje": "1:30:00",
-        "id": 39
+        "vjezbe_trajanje": "1:30:00"
     },
     {
+        "id": 38,
         "program_id": 11,
         "name": "Engleski za potrebe IT struke",
         "code": "ENG",
@@ -1322,10 +1323,10 @@
         "predavanja_trajanje": "1:30:00",
         "vjezbe_dan": "petkom",
         "vjezbe_vrijeme": "12:15",
-        "vjezbe_trajanje": "3:30:00",
-        "id": 40
+        "vjezbe_trajanje": "3:30:00"
     },
     {
+        "id": 39,
         "program_id": 11,
         "name": "Tjelesni 1",
         "code": "TZK",
@@ -1344,10 +1345,10 @@
         "predavanja_trajanje": "1:30:00",
         "vjezbe_dan": null,
         "vjezbe_vrijeme": null,
-        "vjezbe_trajanje": "1:30:00",
-        "id": 41
+        "vjezbe_trajanje": "1:30:00"
     },
     {
+        "id": 40,
         "program_id": 11,
         "name": "Matematika 3",
         "code": "MAT3",
@@ -1366,10 +1367,10 @@
         "predavanja_trajanje": "1:30:00",
         "vjezbe_dan": "ponedjeljkom",
         "vjezbe_vrijeme": "14:15",
-        "vjezbe_trajanje": "3:30:00",
-        "id": 42
+        "vjezbe_trajanje": "3:30:00"
     },
     {
+        "id": 41,
         "program_id": 11,
         "name": "Analiza poslovnih procesa",
         "code": "APP",
@@ -1388,10 +1389,10 @@
         "predavanja_trajanje": "1:30:00",
         "vjezbe_dan": "petkom",
         "vjezbe_vrijeme": "12:15",
-        "vjezbe_trajanje": "1:30:00",
-        "id": 43
+        "vjezbe_trajanje": "1:30:00"
     },
     {
+        "id": 42,
         "program_id": 11,
         "name": "Objektno programiranje",
         "code": "OP",
@@ -1410,10 +1411,10 @@
         "predavanja_trajanje": "1:30:00",
         "vjezbe_dan": "četvrtkom",
         "vjezbe_vrijeme": "10:15",
-        "vjezbe_trajanje": "3:30:00",
-        "id": 44
+        "vjezbe_trajanje": "3:30:00"
     },
     {
+        "id": 43,
         "program_id": 11,
         "name": "Računalne mreže",
         "code": "RM",
@@ -1432,10 +1433,10 @@
         "predavanja_trajanje": "1:30:00",
         "vjezbe_dan": "petkom",
         "vjezbe_vrijeme": "14:15",
-        "vjezbe_trajanje": "3:30:00",
-        "id": 45
+        "vjezbe_trajanje": "3:30:00"
     },
     {
+        "id": 44,
         "program_id": 11,
         "name": "Baze podataka",
         "code": "BP",
@@ -1455,10 +1456,10 @@
         "predavanja_trajanje": "1:30:00",
         "vjezbe_dan": "četvrtkom",
         "vjezbe_vrijeme": "08:00",
-        "vjezbe_trajanje": "5:30:00",
-        "id": 46
+        "vjezbe_trajanje": "5:30:00"
     },
     {
+        "id": 45,
         "program_id": 11,
         "name": "Uvod u programsko inženjerstvo",
         "code": "UPI",
@@ -1477,10 +1478,10 @@
         "predavanja_trajanje": "1:30:00",
         "vjezbe_dan": "utorkom",
         "vjezbe_vrijeme": "12:15",
-        "vjezbe_trajanje": "3:30:00",
-        "id": 47
+        "vjezbe_trajanje": "3:30:00"
     },
     {
+        "id": 46,
         "program_id": 11,
         "name": "Kombinatorika (stari program)",
         "code": "KOMB",
@@ -1499,10 +1500,10 @@
         "predavanja_trajanje": "1:30:00",
         "vjezbe_dan": "četvrtkom",
         "vjezbe_vrijeme": "15:15",
-        "vjezbe_trajanje": "1:30:00",
-        "id": 48
+        "vjezbe_trajanje": "1:30:00"
     },
     {
+        "id": 47,
         "program_id": 11,
         "name": "Dinamičke web aplikacije 1",
         "code": "DWA1",
@@ -1521,10 +1522,10 @@
         "predavanja_trajanje": "1:30:00",
         "vjezbe_dan": "ponedjeljkom",
         "vjezbe_vrijeme": "12:15",
-        "vjezbe_trajanje": "3:30:00",
-        "id": 49
+        "vjezbe_trajanje": "3:30:00"
     },
     {
+        "id": 48,
         "program_id": 11,
         "name": "Formalni jezici i jezični procesori 1",
         "code": "FJJP1",
@@ -1543,10 +1544,10 @@
         "predavanja_trajanje": "1:30:00",
         "vjezbe_dan": "srijedom",
         "vjezbe_vrijeme": "12:00",
-        "vjezbe_trajanje": "1:30:00",
-        "id": 50
+        "vjezbe_trajanje": "1:30:00"
     },
     {
+        "id": 49,
         "program_id": 11,
         "name": "Modeliranje procesa",
         "code": "MP",
@@ -1565,10 +1566,10 @@
         "predavanja_trajanje": "1:30:00",
         "vjezbe_dan": "petkom",
         "vjezbe_vrijeme": "10:30",
-        "vjezbe_trajanje": "1:30:00",
-        "id": 51
+        "vjezbe_trajanje": "1:30:00"
     },
     {
+        "id": 50,
         "program_id": 11,
         "name": "Numerička matematika",
         "code": "NM",
@@ -1587,10 +1588,10 @@
         "predavanja_trajanje": "1:30:00",
         "vjezbe_dan": "utorkom",
         "vjezbe_vrijeme": "10:15",
-        "vjezbe_trajanje": "3:30:00",
-        "id": 52
+        "vjezbe_trajanje": "3:30:00"
     },
     {
+        "id": 51,
         "program_id": 11,
         "name": "Objektno orijentirano programiranje",
         "code": "OOP",
@@ -1609,10 +1610,10 @@
         "predavanja_trajanje": "1:30:00",
         "vjezbe_dan": "četvrtkom",
         "vjezbe_vrijeme": "12:00",
-        "vjezbe_trajanje": "3:30:00",
-        "id": 53
+        "vjezbe_trajanje": "3:30:00"
     },
     {
+        "id": 52,
         "program_id": 11,
         "name": "Logičko programiranje",
         "code": "LPR",
@@ -1631,10 +1632,10 @@
         "predavanja_trajanje": "1:30:00",
         "vjezbe_dan": "ponedjeljkom",
         "vjezbe_vrijeme": "10:15",
-        "vjezbe_trajanje": "1:30:00",
-        "id": 54
+        "vjezbe_trajanje": "1:30:00"
     },
     {
+        "id": 53,
         "program_id": 11,
         "name": "Paralelno programiranje na heterogenim sustavima",
         "code": "PPHS",
@@ -1653,7 +1654,6 @@
         "predavanja_trajanje": "1:30:00",
         "vjezbe_dan": "srijedom",
         "vjezbe_vrijeme": "14:15",
-        "vjezbe_trajanje": "1:30:00",
-        "id": 55
+        "vjezbe_trajanje": "1:30:00"
     }
 ]

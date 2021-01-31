@@ -10,6 +10,8 @@ from activities_score.activities_student.models import StudentScoreActivity
 from activities_class.activities_global.models import GlobalClassActivity
 from activities_class.activities_student.models import StudentClassActivity
 
+from subjects.models import Subject
+
 svi = GlobalScoreActivity.objects.all()
 svi.delete()
 
@@ -20,4 +22,7 @@ svi = GlobalClassActivity.objects.all()
 svi.delete()
 
 svi = StudentClassActivity.objects.all()
+svi.delete()
+
+svi = Subject.objects.all()
 svi.delete()
