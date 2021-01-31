@@ -149,10 +149,9 @@ class SubjectEnrollOptionalView(SuccessMessageMixin, FormView):
     
 
     def form_valid(self, form):
-        subject_ids = form.cleaned_data['subjects']
-        for subject_id in subject_ids:
+        subjects = form.cleaned_data['subjects']
+        for subject in subjects:
             student = self.request.user.student
-            subject = Subject.objects.get(id=subject_id)
 
             ss = StudentSubjects.objects.create(student=student, subject=subject, academic_year=subject.academic_year)
             ss.ingest_points(subject, student)

@@ -9,7 +9,7 @@ class TimeInput(forms.TimeInput):
 
 
 class SubjectEnrollOptionalForm(forms.Form):
-    subjects = forms.ModelChoiceField(queryset=None, widget=forms.CheckboxSelectMultiple(attrs={'class': ''}), empty_label=None)
+    subjects = forms.ModelMultipleChoiceField(queryset=None, widget=forms.CheckboxSelectMultiple(attrs={'class': ''}))
 
     def __init__(self, *args, **kwargs):
         self.request = kwargs.pop('request')
@@ -23,7 +23,10 @@ class SubjectEnrollOptionalForm(forms.Form):
         )
 
         self.fields['subjects'].queryset = subjects.exclude(id__in=student.subjects.values_list('id'))
-
+    
+    def clean(self):
+        cleaned_data = super(SubjectEnrollOptionalForm, self).clean()
+        return cleaned_data
 
 class SubjectEnrollForm(forms.Form):
     subjects = forms.ModelMultipleChoiceField(queryset=None, widget=forms.CheckboxSelectMultiple(attrs={'class': ''}))
@@ -39,7 +42,6 @@ class SubjectEnrollForm(forms.Form):
         ).order_by('semester')
 
         self.fields['subjects'].queryset = subjects_available
-        print(subjects_available.query)
         self.fields['subjects'].initial = [s.id for s in student.subjects]
     
     def clean(self):
