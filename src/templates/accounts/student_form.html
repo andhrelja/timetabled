@@ -98,7 +98,7 @@ function toggleDepartments() {
 
     const selectedDepartments = [];
     for (department of departments) {
-        if (department.university_id == universityId) {
+        if (department.university_id == universityId && department.code == "INF") {
             console.log(selectedDepartments)
             selectedDepartments.push(department);
         }
