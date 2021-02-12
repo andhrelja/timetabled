@@ -48,44 +48,13 @@
                     {% endfor %}
                 </ul>
             </li>
-            <li id="activitiesSidenav" class="nav-item d-flex clickable-row" href="#activitiesSidenavDropdown" data-toggle="collapse" aria-expanded="false">
-                <div class="link" style="width: 85%">
-                    <a class="nav-link d-flex">
-                        <div class="fas-icon">
-                            <i class="fas fa-calendar-alt pr-1" aria-hidden="true"></i>
-                        </div>
-                        <span class="pl-2">Kalendari</span>
-                    </a>
-                </div>
-                <div class="caret m-auto text-center" style="width: 15%">
+            <li id="activitiesSidenav" class="nav-item">
+                <a class="nav-link d-flex" href="{% url 'activities_calendar:score-monthly' %}">
                     <div class="fas-icon">
-                        <i class="fas fa-angle-down text-light w-100 h-100"></i>
+                        <i class="fas fa-calendar-alt pr-1" aria-hidden="true"></i>
                     </div>
-                </div>
-            </li>
-            <li id="activitiesSidenavDropdown" class="collapse">
-                <ul class="list-unstyled components">
-                    <li id="activitiesSidenavIspitne">
-                        <a class="nav-link d-flex dropdown-item" href="{% url 'activities_calendar:score-monthly' %}">
-                            <div class="text-center" style="width: 25px">
-                                <div class="fas-icon">
-                                    <i class="fas fa-clipboard-list fa-sm pr-1" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                            <span class="text-m mt-1 pl-1">Ispitne aktivnosti</span>
-                        </a>
-                    </li>
-                    <li id="activitiesSidenavNastavne">
-                        <a class="nav-link d-flex dropdown-item" href="{% url 'activities_calendar:class-weekly' %}">
-                            <div class="text-center" style="width: 25px">
-                                <div class="fas-icon">
-                                    <i class="fas fa-list-ul fa-sm pr-1" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                            <span class="text-m mt-1 pl-1">Nastavne aktivnosti</span>
-                        </a>
-                    </li>
-                </ul>
+                    <span class="pl-2">Raspored ispita</span>
+                </a>
             </li>
             {% if user.is_authenticated and user.is_staff or user.is_superuser %}
             <li id="departmentsSidenav" class="nav-item">
