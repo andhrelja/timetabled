@@ -1,3 +1,4 @@
+from django.contrib.messages.views import SuccessMessageMixin
 from django.shortcuts import redirect
 from django.conf import settings
 from django.contrib import messages
@@ -6,14 +7,20 @@ from django.contrib.auth.models import User
 from django.contrib.auth import login, logout
 from django.views.generic import (
     FormView,
+    UpdateView,
     DetailView
 )
 from datetime import date
 
-from .forms import AuthenticationForm, RegisterForm, StudentForm
+from .forms import (
+    AuthenticationForm, 
+    RegisterForm, 
+    StudentForm,
+    UserForm
+)
+
 from .models import Student, StudentSubjects
 from subjects.models import Subject, SubjectPrograms
-
 
 
 class UserCreateView(FormView):
@@ -67,6 +74,22 @@ class StudentSetupView(FormView):
 class UserDetailView(DetailView):
     model = User
     template_name = "accounts/user_detail.html"
+
+class UserUpdateView(SuccessMessageMixin, UpdateView):
+    model = User
+    form_class = UserForm
+    success_message = "Promjene uspješno spremljene"
+    template_name = "accounts/user_form.html"
+
+    def get_initial(self):
+        object = self.get_object()
+        initial = {
+            'university': object.student.program.department.university,
+            'department': object.student.program.department,
+            'program': object.student.program,
+            'studying_year': object.student.studying_year
+        }
+        return initial
 
 
 class LoginView(LoginView):

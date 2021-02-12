@@ -33,7 +33,7 @@ class Student(models.Model):
         subject_ids = set()
         for ss in self.studentsubjects_set.filter():
             subject_ids.add(ss.subject.id)
-        return Subject.objects.filter(id__in=subject_ids, semester=self.get_active_semester())
+        return Subject.objects.filter(id__in=subject_ids)
     
     @property
     def gpa(self):

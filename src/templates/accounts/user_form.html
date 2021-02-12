@@ -1,0 +1,203 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% load subjects_extras %}
+
+{% block body %}
+{% include 'partials/subnav.html' with title="Uredi informacije" type="form" type_name="accounts" %}
+
+<div class="container-fluid">
+    <div class="container p-3">
+        <div class="card">
+            <form method="post" action="">{% csrf_token %}
+                <div class="card-body">
+                    <div class="row mb-3">
+                        <div class="col-md-12">
+                            <p class="card-subtitle text-muted">Član od: {{ object.date_joined }}</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                        {% include 'partials/form_snippet_alt.html' with index_start=0 index_end=4 %}
+                            <div class="form-group">
+                                <label for="id_lozinka" class="control-label">Lozinka</label>
+                                <a href="#">
+                                    <span type="text" class="form-control text-primary" id="id_lozinka">Promjena lozinke</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                        {% include 'partials/form_snippet_alt.html' with index_start=5 index_end=99 %}
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="card-footer-links">
+                        <input type="submit" class="btn btn-outline-primary" value="Spremi">
+                        <a class="btn btn-outline-danger" href="{% url 'accounts:detail' object.id %}">
+                            Odustani
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script type="module" src={% static 'js/studentDepartments.js' %}></script>
+<script>
+/*
+let universities = {};
+let departments = {};
+
+let programsSelect = document.getElementById('id_program');
+let programsLabel = findLabel('id_program');
+let departmentsSelect = document.getElementById('id_department');
+
+programsLabel.hidden = true;
+programsSelect.hidden = true;
+
+fetch('{% static 'data/universities.json' %}')
+    .then((universities_data) => universities_data.json())
+    .then((json_data) => universities = json_data)
+    .then(() => fetch('{% static 'data/departments.json' %}')
+        .then((departments_data) => departments_data.json())
+        .then((json_data) => departments = json_data)
+        .then(() => toggleDepartments())
+        .then(() => togglePrograms()));
+
+function findLabel(for_id) {
+    var labels = document.getElementsByTagName('label');
+    for(label of labels) {
+        if (label.htmlFor == for_id)
+            return label;
+    }
+}
+
+function toggleDepartments() {
+    let universitiesSelect = document.getElementById('id_university');
+    departmentsSelect.innerText = "";
+    let selectedOption = null;
+
+    for(option of universitiesSelect) {
+        if (option.selected == true) {
+            selectedOption = option;
+            break;
+        }
+    }
+
+    let universityId = null;
+    for (university of universities) {
+        if (university.id == selectedOption.value) {
+            universityId = university.id;
+        }
+    }
+
+    let defaultDepartmentOption = document.createElement('option');
+    defaultDepartmentOption.selected = true;
+    defaultDepartmentOption.value = 0;
+    defaultDepartmentOption.innerText = "---------";
+    departmentsSelect.appendChild(defaultDepartmentOption);
+
+
+    const selectedDepartments = [];
+    for (department of departments) {
+        if (department.university_id == universityId && department.code == "INF") {
+            console.log(selectedDepartments)
+            selectedDepartments.push(department);
+        }
+    }
+
+    
+    for (department of selectedDepartments) {
+        let option = document.createElement('option');
+        option.value = department.id
+        option.innerText = department.name;
+        departmentsSelect.appendChild(option);
+    }
+}
+
+function togglePrograms() {
+    let studyingYearSelect = document.getElementById('id_studying_year');
+    studyingYearSelect.innerText = "";
+    programsSelect.innerText = "";
+
+    let universitiesSelect = document.getElementById('id_university');
+    let scholarType = document.getElementById('id_type');
+    let selectedScholarType = null;
+    let selectedOption = null;
+
+    for (option of scholarType) {
+        if (option.selected == true) {
+            selectedScholarType = option;
+            break;
+        }
+    }
+
+    if (selectedScholarType.value.toLowerCase() == 'preddiplomski') {
+        for (let i = 1; i < 4; i++) {
+            let option = document.createElement('option');
+            option.value = i;
+            option.innerText = i.toString();
+            studyingYearSelect.appendChild(option);
+        }
+    }
+    else if (selectedScholarType.value.toLowerCase() == 'diplomski') {
+        for (let i = 1; i < 3; i++) {
+            let option = document.createElement('option');
+            option.value = i;
+            option.innerText = i.toString();
+            studyingYearSelect.appendChild(option);
+        }
+    }
+
+    for(option of universitiesSelect) {
+        if (option.selected == true) {
+            selectedOption = option;
+            break;
+        }
+    }
+
+    let universityId = null;
+    for (university of universities) {
+        if (university.id == selectedOption.value) {
+            universityId = university.id;
+        }
+    }
+
+    let selectedDepartment = null;
+    for (option of departmentsSelect) {
+        if (option.selected == true && option.value != 0) {
+            selectedDepartment = option;
+            programsLabel.hidden = false;
+            programsSelect.hidden = false;
+            break;
+        }
+    }
+
+    if (selectedDepartment != null) {
+        let defaultProgramOption = document.createElement('option');
+        defaultProgramOption.selected = true;
+        defaultProgramOption.innerText = "---------";
+        programsSelect.appendChild(defaultProgramOption);
+
+        let departmentId = selectedDepartment.value;
+        
+        for(department of departments) {
+            if (department.id == departmentId) {
+                for (program of department.programs) {
+                    if (program.type == selectedScholarType.value.toLowerCase()) {
+                        let programOption = document.createElement('option');
+                        programOption.value = program.id;
+                        programOption.innerText = program.name;
+                        programsSelect.appendChild(programOption);
+                    }
+                }
+            }
+        }
+    }
+}
+*/
+</script>
+
+{% endblock %}

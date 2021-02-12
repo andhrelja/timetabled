@@ -116,6 +116,15 @@
                 </a>
             </li>
             {% endif %}
+        {% elif type == "detail" and type_name == "accounts" %}
+            <li class="nav-item">
+                <a class="nav-link d-flex" href="{% url 'accounts:update' user.id %}">
+                    <div class="fas-icon subnav">
+                        <i class="fas fa-pen" aria-hidden="true"></i>
+                    </div>
+                    <span>Uredi informacije</span>
+                </a>
+            </li>
         {% elif type == "form" %}
         {% else %}
         Greška

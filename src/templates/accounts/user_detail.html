@@ -1,0 +1,88 @@
+{% extends 'base.html' %} 
+
+{% load subjects_extras %} 
+
+{% block body %} 
+{% include 'partials/subnav.html' with title="Detalji o korisniku" type="detail" type_name="accounts" %}
+
+<div class="container-fluid">
+  	<div class="container p-3">
+    	<div class="card">
+			<div class="card-body">
+				<div class="row mb-3">
+					<div class="col-md-12">
+						<p class="card-subtitle text-muted">Član od: {{ object.date_joined }}</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-snippet pb-2">
+							<div class="form-group">
+								<label for="id_first_name" class="control-label">Ime</label>
+								<input type="text" disabled name="first_name" value="{{ object.first_name }}" class="form-control" maxlength="150" id="id_first_name" />
+							</div>
+
+							<div class="form-group">
+								<label for="id_last_name" class="control-label">Prezime</label>
+								<input type="text" disabled name="last_name" value="{{ object.last_name }}" class="form-control" maxlength="150" id="id_last_name"/>
+							</div>
+
+							<div class="form-group">
+								<label for="id_email" class="control-label">E-mail adresa</label>
+								<input type="email" disabled name="email" value="{{ object.email }}" class="form-control" maxlength="254" id="id_email"/>
+							</div>
+
+							<div class="form-group">
+								<label for="id_username" class="control-label">Korisničko ime</label>
+
+								<input type="text" disabled name="username" value="{{ object.username }}" class="form-control" required disabled id="id_username" />
+							</div>
+						</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-snippet pb-2">
+						<div class="form-group">
+							<label for="id_university" class="control-label">Sveučilište</label>
+							<select name="university" disabled class="custom-select" id="id_university">
+								<option selected>{{ object.student.program.department.university }}</option>
+							</select>
+						</div>
+
+					<div class="form-group">
+						<label for="id_department" class="control-label">Odjel</label>
+
+						<select name="department" disabled class="custom-select" id="id_department" >
+							<option selected>{{ object.student.program.department.university }}</option>
+						</select>
+					</div>
+
+					<div class="form-group">
+						<label for="id_type" class="control-label">Tip studija</label>
+						<select name="type" disabled class="custom-select" id="id_type" >
+							<option selected>{{ object.student.program.get_type_display }}</option>
+						</select>
+					</div>
+
+					<div class="form-group">
+						<label for="id_program" class="control-label">Studij</label>
+
+						<select name="program" disabled class="custom-select" id="id_program" >
+							<option selected>{{ object.student.program }}</option>
+						</select>
+					</div>
+
+					<div class="form-group">
+						<label for="id_studying_year" class="control-label">Godina studija</label>
+						<select name="studying_year" disabled class="custom-select" id="id_studying_year" >
+							<option selected>{{ object.student.studying_year}}</option>
+						</select>
+					</div>
+					</div>
+				</div>
+			</div>
+      	</div>
+  	</div>
+</div>
+
+{% endblock %}
+

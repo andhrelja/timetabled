@@ -28,6 +28,10 @@ EMAIL_HOST_USER = 'timetabled2021@gmail.com'
 EMAIL_HOST_PASSWORD = 'qcrejnjsvyfcowgm'
 EMAIL_USE_TLS = True
 
+ABSOLUTE_URL_OVERRIDES = {
+    'auth.user': lambda user: "/accounts/detail/{}/".format(user.id)
+}
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -94,7 +98,7 @@ DATABASES = {
     'local': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'timetabled',
-        'USER': 'andrea',
+        'USER': 'postgres',
         'PASSWORD': 'user',
         'HOST': 'localhost'
     },
@@ -105,22 +109,6 @@ DATABASES = {
         'PASSWORD': 'd63ed365ec6985ca83341425f013eb0e2a63f0dc60a828f4431ee6409cc519fe',
         'HOST': 'ec2-176-34-97-213.eu-west-1.compute.amazonaws.com'
     },
-    # Test DB
-    'local-tst': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'timetabledtst',
-        'USER': 'andrea',
-        'PASSWORD': 'user',
-        'HOST': 'localhost'
-    },
-    # Work PC
-    '': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'timetabled',
-        'USER': 'postgres',
-        'PASSWORD': 'user',
-        'HOST': 'localhost'
-    }
 }
 
 

@@ -3,7 +3,6 @@ from django.db.models import Q
 from django.contrib.auth.forms import AuthenticationForm, UsernameField
 from django.contrib.auth.models import User
 from departments.models import Department, Program, University
-from datetime import date
 
 
 class RegisterForm(forms.Form):
@@ -44,8 +43,30 @@ class StudentForm(forms.Form):
     studying_year = forms.IntegerField(label="Godina studija", widget=forms.Select(
         choices=((i, i) for i in range(1, 4)), attrs={'class': 'custom-select'}))
     
+class UserForm(forms.ModelForm):
+    username = forms.CharField(label="Korisničko ime", disabled=True,
+        widget=forms.TextInput(attrs={'class': 'form-control'}))
 
-
+    university = forms.ModelChoiceField(label="Sveučilište", queryset=University.objects.all(), empty_label=None,
+        widget=forms.Select(attrs={'class': 'custom-select', 'onchange': 'toggleDepartments()'}))
+    department = forms.ModelChoiceField(label="Odjel", queryset=Department.objects.all(), empty_label=None,
+        widget=forms.Select(attrs={'class': 'custom-select', 'onchange': 'togglePrograms()'}))
+    type = forms.CharField(label="Tip studija", widget=forms.Select(
+        choices=Program.TYPE_CHOICES, attrs={'class': 'custom-select', 'onchange': 'togglePrograms()'}))
+    program = forms.ModelChoiceField(label="Studij", queryset=Program.objects.all(), empty_label=None,
+        widget=forms.Select(attrs={'class': 'custom-select'}))
+    studying_year = forms.IntegerField(label="Godina studija", widget=forms.Select(
+        choices=((i, i) for i in range(1, 4)), attrs={'class': 'custom-select'}))
+    
+    class Meta:
+        model = User
+        fields = ('first_name', 'last_name', 'email', 'username')
+        widgets = {
+            'first_name': forms.TextInput(attrs={'class': 'form-control'}),
+            'last_name': forms.TextInput(attrs={'class': 'form-control'}),
+            'email': forms.EmailInput(attrs={'class': 'form-control'})
+        }
+    
 class AuthenticationForm(AuthenticationForm):
 
     def __init__(self, request, *args, **kwargs):
