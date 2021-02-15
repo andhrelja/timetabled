@@ -1,0 +1,3 @@
+Link na aplikaciju: https://timetabled.herokuapp.com
+Username: aanic
+Password: 1234
