@@ -2,8 +2,8 @@ export { makeActive };
 
 
 const SidenavItems = [
-    'homeSidenav', 'subjectsSidenav', 'activitiesSidenav', 'accountsSidenav',
-    'subjectsSidenavDropdown', 'activitiesSidenav', 'acccountsSidenavDropdown',
+    'homeSidenav', 'subjectsSidenav', 'activitiesSidenavDropdown', 'accountsSidenav',
+    'subjectsSidenavDropdown', 'activitiesSidenavDropdown', 'acccountsSidenavDropdown',
     'subjectsListSidenav', 'activitiesSidenavIspitne', 'activitiesSidenavNastavne',
     'departmentsSidenav'
 ]
@@ -35,8 +35,8 @@ function makeActive(id, expandSubjects=false, expandActivities=false, subjectId=
     }
 
     if (expandActivities && activityName) {
-        document.getElementById('activitiesSidenav').classList.remove('active');
-        document.getElementById('activitiesSidenav').classList.add('show');
+        document.getElementById('activitiesSidenavDropdown').classList.remove('active');
+        document.getElementById('activitiesSidenavDropdown').classList.add('show');
         
         if (activityName.startsWith('Ispitne'))
             document.getElementById('activitiesSidenavIspitne').classList.add('active');
@@ -44,9 +44,9 @@ function makeActive(id, expandSubjects=false, expandActivities=false, subjectId=
             document.getElementById('activitiesSidenavNastavne').classList.add('active');
     }
     else if (expandActivities && activityName === null) {
-        document.getElementById('activitiesSidenav').classList.add('show');
+        document.getElementById('activitiesSidenavDropdown').classList.add('show');
     }
     else {
-        document.getElementById('activitiesSidenav').classList.remove('show');
+        document.getElementById('activitiesSidenavDropdown').classList.remove('show');
     }  
 }

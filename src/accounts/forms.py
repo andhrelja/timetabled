@@ -48,11 +48,11 @@ class UserForm(forms.ModelForm):
         widget=forms.TextInput(attrs={'class': 'form-control'}))
 
     university = forms.ModelChoiceField(label="Sveučilište", queryset=University.objects.all(), empty_label=None,
-        widget=forms.Select(attrs={'class': 'custom-select', 'onchange': 'toggleDepartments()'}))
+        widget=forms.Select(attrs={'class': 'custom-select'}))
     department = forms.ModelChoiceField(label="Odjel", queryset=Department.objects.all(), empty_label=None,
-        widget=forms.Select(attrs={'class': 'custom-select', 'onchange': 'togglePrograms()'}))
+        widget=forms.Select(attrs={'class': 'custom-select'}))
     type = forms.CharField(label="Tip studija", widget=forms.Select(
-        choices=Program.TYPE_CHOICES, attrs={'class': 'custom-select', 'onchange': 'togglePrograms()'}))
+        choices=Program.TYPE_CHOICES, attrs={'class': 'custom-select'}))
     program = forms.ModelChoiceField(label="Studij", queryset=Program.objects.all(), empty_label=None,
         widget=forms.Select(attrs={'class': 'custom-select'}))
     studying_year = forms.IntegerField(label="Godina studija", widget=forms.Select(

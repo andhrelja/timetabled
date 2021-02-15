@@ -7,23 +7,29 @@ const programSelect    = document.getElementById("id_program");
 const switcher = {
     'university': {
         'url': "/departments/api/filter/university/",
+        'toggle': departmentSelect,
         'id': "id_university"
     },
-    'department': {
+    'program': {
         'url': "/departments/api/filter/program/",
-        'id': "id_department",
+        'toggle': programSelect,
+        'id_program': "id_program",
+        'id_type': "id_type",
+        'id': "id_program"
     },
-    'program': () => console.log(data)
 }
 
 window.onload = main();
 
 function main() {
-    let departmentOption = getSelectedOption("id_department");
-    let programOption    = getSelectedOption("id_program");
-
-    document.getElementById("id_university").addEventListener("change", () => fetchUniversitiesData(switcher.university, displayUniversityDepartments))
-    document.getElementById("id_department").addEventListener("change", () => fetchUniversitiesData(switcher.department, displayUniversityDepartments))
+    document.getElementById("id_university")
+        .addEventListener("change", 
+            () => fetchContextData(switcher.university, displayUniversityDepartments));
+    
+    document.getElementById("id_type")
+        .addEventListener("change", 
+            () => fetchContextData2(switcher.program, displayUniversityDepartments));
+    
 }
 
 // Get selected
@@ -36,29 +42,37 @@ function getSelectedOption(selectId) {
     return false;
 }
 
-function dataFieldsSearch(pk, departments) {
-    for (let department of departments) {
-        if (department.pk == pk)
+function dataFieldsSearch(pk, array) {
+    for (let item of array) {
+        if (item.pk == pk)
             return true;
     }
     return false;
 }
 
-function fetchUniversitiesData(switcher, callback) {
-    let universityOption = getSelectedOption(switcher.id);
-    fetch(switcher.url + universityOption.value)
-        .then((universities_data) => universities_data.json())
-        .then((json_data) => callback(json_data, departmentSelect));
+function fetchContextData(context, callback) {
+    let selectedOption = getSelectedOption(context.id);
+    fetch(context.url + selectedOption.value)
+        .then((data) => data.json())
+        .then((json_data) => callback(json_data, context.toggle));
+}
+
+function fetchContextData2(context, callback) {
+    let selectedProgram = getSelectedOption(context.id_program);
+    let selectedType = getSelectedOption(context.id_type);
+    console.log(context.url, selectedProgram.value, selectedType.value);
+    fetch(context.url + selectedProgram.value + "/" + selectedType.value)
+        .then((data) => data.json())
+        .then((json_data) => callback(json_data, context));
 }
 
 // Display selected
-function displayUniversityDepartments(departmentData, Select) {
-    let departmentOption = getSelectedOption("id_department");
-    // console.log(departmentData);
-    if (!dataFieldsSearch(departmentOption.value, departmentData)) {
-        deleteSelectOptions(Select);
-    }
+function displayUniversityDepartments(data, context) {
+    let selectedOption = getSelectedOption(context.id);
     
+    if (!dataFieldsSearch(selectedOption.value, data)) {
+        deleteSelectOptions(context.toggle);
+    }
 }
 
 function deleteSelectOptions(Select) {

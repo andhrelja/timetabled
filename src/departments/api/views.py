@@ -15,8 +15,8 @@ def universities(request):
     return JsonResponse(json.loads(response), safe=False)
 
 @login_required
-def department_programs(request, department_pk):
-    response = serialize('json', Program.objects.filter(department_id=department_pk))
+def department_type_programs(request, department_pk, type_id):
+    response = serialize('json', Program.objects.filter(department_id=department_pk, type=type_id))
     return JsonResponse(json.loads(response), safe=False)
 
 @login_required
