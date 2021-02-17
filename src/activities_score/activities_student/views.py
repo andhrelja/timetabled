@@ -37,8 +37,10 @@ class StudentScoreActivityCreateView(SuccessMessageMixin, CreateView):
         return context
 
     def form_valid(self, form):
-        self.object = form.save(commit=False)
         subject_id = self.kwargs.get('subject_pk')
+        # TODO: Add points_accomplished to StudentSubjects
+
+        self.object = form.save(commit=False)
         self.object.subject = Subject.objects.get(id=subject_id)
         self.object.student = self.request.user.student
         self.object.save()

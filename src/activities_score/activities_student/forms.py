@@ -5,15 +5,6 @@ from .models import StudentScoreActivity
 
 class StudentScoreActivityForm(forms.ModelForm):
 
-    def clean(self):
-        cleaned_data = super(StudentScoreActivityForm, self).clean()
-        start_time = cleaned_data.get('start_time')
-        end_time = cleaned_data.get('end_time')
-        if start_time and end_time:
-            if start_time > end_time:
-                self.add_error("end_time", "Neispravan unos trajanja aktivnosti")
-        return cleaned_data
-
     class Meta:
         model = StudentScoreActivity
         fields = ('name', 'location', 'type', 'details', 'points_accomplished', 'points_total', 'completed', 'due_date', 'start_time', 'end_time')
@@ -32,13 +23,34 @@ class StudentScoreActivityForm(forms.ModelForm):
         }
 
 
+    def clean(self):
+        return super(StudentScoreActivityForm, self).clean()
+    
+    def clean_end_time(self):
+        cleaned_data = self.clean()
+        start_time = cleaned_data.get('start_time')
+        end_time = cleaned_data.get('end_time')
+        if start_time and end_time:
+            if start_time > end_time:
+                self.add_error("end_time", "Neispravan unos trajanja aktivnosti")
+        return cleaned_data
+    
+    def clean_points_total(self): # TODO: Clean points_total
+        cleaned_data = self.clean()
+        print(cleaned_data)
+
+
+
+
 class StudentScoreActivitySubmitForm(StudentScoreActivityForm):
+
+    class Meta(StudentScoreActivityForm.Meta):
+        fields = (
+            'name', 'points_accomplished', 'points_total', 'completed'
+        )
+
 
     def __init__(self, *args, **kwargs):
         super(StudentScoreActivitySubmitForm, self).__init__(*args, **kwargs)
         self.fields['completed'].widget = forms.HiddenInput()
         self.initial['completed'] = True
-    class Meta(StudentScoreActivityForm.Meta):
-        fields = (
-            'name', 'points_accomplished', 'points_total', 'completed'
-        )

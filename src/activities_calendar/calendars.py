@@ -1,4 +1,4 @@
-# from django.utils import timezone
+from django.utils import timezone
 from datetime import datetime, date, timedelta
 from .models import DateTime
 
@@ -8,19 +8,27 @@ class EmptyCalendar(dict):
 
     types = ("monthly", "weekly", "daily")
 
-    def __init__(self, type='monthly', start_date=None):        
-        if not start_date:
-            self.start_date = datetime.now()
-        else:
-            if isinstance(start_date, str):
-                self.start_date = datetime.strptime(start_date, "%d-%m-%Y")
-            elif isinstance(start_date, date) or isinstance(start_date, datetime):
-                self.start_date = start_date
-        
+    def __init__(self, type='monthly', start_date=None, end_date=None):
         self.type = self.validate_type(type)
+        self.start_date = timezone.now()
 
-        self.start_date = self.date_start
-        self.end_date = self.date_end
+        if start_date and end_date:
+            if isinstance(start_date, str):
+                self.start_date = self.get_start_date(datetime.strptime(start_date, "%d-%m-%Y"))
+            elif isinstance(start_date, date) or isinstance(start_date, datetime) or isinstance(start_date, timezone):
+                self.start_date = self.get_start_date(start_date)
+
+            if isinstance(end_date, str):
+                self.end_date = self.get_end_date(datetime.strptime(end_date, "%d-%m-%Y"))
+            elif isinstance(end_date, date) or isinstance(end_date, datetime) or isinstance(end_date, timezone):
+                self.end_date = self.get_end_date(end_date)
+
+        if not start_date:
+            self.start_date = self.get_start_date()
+
+        if not end_date:
+            self.end_date = self.get_end_date()
+
         self.header = self.get_header()
         self.table = self.get_table()
 
@@ -34,8 +42,10 @@ class EmptyCalendar(dict):
             return type_name
         raise ValueError('"{}" is not a valid type_name'.format(type_name))
 
-    @property
-    def date_start(self):
+    def get_start_date(self, _date=None):
+        if _date:
+            return _date
+
         _date = DateTime(self.start_date)
         start_date = {
             'monthly': _date.monthly_start_date(),
@@ -45,15 +55,17 @@ class EmptyCalendar(dict):
         return start_date[self.type]
 
 
-    @property
-    def date_end(self):
+    def get_end_date(self, _date=None):
+        if _date:
+            return _date
+
         _date = DateTime(self.start_date)
-        start_date = {
+        end_date = {
             'monthly': _date.monthly_end_date(),
             'weekly' : _date.weekly_end_date(),
             'daily'  : _date,
         }
-        return start_date[self.type]
+        return end_date[self.type]
     
     def get_header(self):
         if self.type == 'weekly':
@@ -81,7 +93,7 @@ class EmptyCalendar(dict):
         current_month = self.start_date.month
         
         curr_date = self.start_date
-        while curr_date.month == current_month:
+        while curr_date.month == current_month and curr_date <= self.end_date:
             week = list()
             for i in range(7):
                 if curr_date.weekday() == i:
@@ -132,6 +144,9 @@ class EmptyCalendar(dict):
 
     def to_dict(self):
         return self.__dict__
+    
+    def __str__(self):
+        return "<EmptyDictionary start={} end={}".format(self.start_date, self.end_date)
 
 
 class Calendar(EmptyCalendar):

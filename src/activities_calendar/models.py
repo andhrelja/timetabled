@@ -3,8 +3,9 @@ from datetime import date, datetime, timedelta
 
 class DateTime:
 
-    def __init__(self, _date):
-        super().__init__()
+    def __init__(self, _date=None):
+        if not _date:
+            _date = date.today()
         if isinstance(_date, date):
             self._date = _date
         else:
@@ -36,7 +37,6 @@ class DateTime:
         else:
             month = self._date.month + 1
         day   = 1
-
         _date = date(year, month, day)
         return self.datetime(_date) - timedelta(days=1)
 

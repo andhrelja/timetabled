@@ -7,17 +7,75 @@
 
 <div class="container-fluid">
     <div class="row mt-3 mb-3">
-        <div class="col-lg-3 mb-2">
-        {% include 'partials/dashboard/number_card.html' with variable=subjects.count title="Broj upisanih kolegija" color="success" %}
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-6 mb-2">
+                {% include 'partials/dashboard/number_card.html' with variable=student.gpa|floatformat title="Trenutni prosjek ocjena" color="info" %}
+                </div>
+                <div class="col-md-6 mb-2">
+                {% include 'partials/dashboard/number_card.html' with variable=upcoming_score_activities title="Preostalo ispitnih aktivnosti" color="warning" %}
+                </div>
+            </div>
         </div>
-        <div class="col-lg-3 mb-2">
-        {% include 'partials/dashboard/number_card.html' with variable=student.gpa|floatformat title="Trenutni prosjek ocjena" color="info" %}
+        <div class="col-md-6 mb-2">
+        {% include 'partials/dashboard/critical_card.html' with title="Kritični kolegiji" critical_subjects=critical_subjects %}
         </div>
-        <div class="col-lg-3 mb-2">
-        {% include 'partials/dashboard/number_card.html' with variable=upcoming_score_activities title="Preostalo ispitnih aktivnosti" color="danger" %}
-        </div>
-        <div class="col-lg-3 mb-2">
-        {% include 'partials/dashboard/number_card.html' with variable=upcoming_class_activities title="Preostalo nastavnih aktivnosti" color="warning" %}
+    </div>
+
+    <div class="rrow">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="h5 mb-0">Nadolazeći tjedan</h5>
+            </div>
+            <table class="table mb-0 table-bordered" style="table-layout:fixed">
+                <thead>
+                    <tr class="bg-light">
+                    {% for th in header %}
+                        <th style="width: 60px">{{ th }}</th>
+                    {% endfor %}
+                    </tr>
+                </thead>
+                <tbody>
+                {% for week in full_table %}
+                    <tr>
+                    {% for day in week %}
+                        {% with day|first as date_ %}
+                            <td class="p-0">{{ date_|date:"d.m." }}</td>
+                        {% endwith %}
+                    {% endfor %}
+                    </tr>
+                    <tr class="bg-light" style="height:60px; min-height:60px;">
+                    {% for day in week %}
+                        {% with day|first as date_ %}
+                        
+                        {% if date_|date:"d.m.Y" == today|date:"d.m.Y" %}
+                        <td class="p-0 bg-info text-light">
+                        {% else %}
+                        <td class="p-0">
+                        {% endif %}
+                        
+                        {% for activity in day %}
+                            {% if not activity == date_ %}
+                            
+                            <div title="Broj bodova: {{ activity.points_total }}" onclick="location.href='{{ activity.get_absolute_url }}'" class="d-flex clickable-row">
+                                <div class="fas-icon subnav">
+                                    {% if activity.completed %}
+                                    <i class="fas fa-check-circle text-success" aria-hidden="true"></i>
+                                    {% else %}
+                                    <i class="fas fa-exclamation-circle text-warning" aria-hidden="true"></i>
+                                    {% endif %}
+                                </div>
+                                <span class="font-weight-bold">{{ activity }}</span>
+                            </div>
+                            {% endif %}
+                        {% endfor %}
+                        </td>            
+                        {% endwith %}
+                    {% endfor %}
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
         </div>
     </div>
 
@@ -29,7 +87,7 @@
         <div class="col-lg-4 mb-3">
             <div class="card h-100">
                 <div class="card-header bg-primary text-light">
-                    <h5 class="h5">Nadolazeće ispitne aktivnosti</h5>
+                    <h5 class="h5 mb-0">Nadolazeće ispitne aktivnosti</h5>
                 </div>
                 <div class="card-body">
                     {% include 'partials/activities/score_list_snippet.html' with activities=user.student.upcoming_score_activities %}

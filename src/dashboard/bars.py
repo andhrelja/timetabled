@@ -1,10 +1,7 @@
 from django.db.models import Count
 
 import pygal
-from .styles import (
-    style_score_activities_bar,
-    style_class_activities_bar
-)
+from .styles import style_score_activities_bar
 
 
 def get_subject_gpa(student):

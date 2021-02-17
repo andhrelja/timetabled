@@ -5,9 +5,9 @@ from activities_calendar.calendars import CalendarScore
 from datetime import date
 
 
-def score_activities_monthly(request, start=None):
+def score_activities_monthly(request, start=None, end=None):
     student = request.user.student
-    calendar = CalendarScore(activities=student.all_score_activities, type="monthly", start_date=start)
+    calendar = CalendarScore(activities=student.all_score_activities, type="monthly", start_date=start, end_date=end)
     context = calendar.to_dict()
     context.update({
         'today': date.today(),
@@ -18,9 +18,9 @@ def score_activities_monthly(request, start=None):
     return render(request, 'activities_calendar/calendar_monthly.html', context)
 
 
-def score_activities_weekly(request, start=None):
+def score_activities_weekly(request, start=None, end=None):
     student = request.user.student
-    calendar = CalendarScore(activities=student.all_score_activities, type="weekly", start_date=start)
+    calendar = CalendarScore(activities=student.all_score_activities, type="weekly", start_date=start, end_date=end)
     context = calendar.to_dict()
     context.update({
         'today': date.today(),

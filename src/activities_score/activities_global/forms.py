@@ -6,15 +6,6 @@ from .models import GlobalScoreActivity
 
 class GlobalScoreActivityForm(forms.ModelForm):
 
-    def clean(self):
-        cleaned_data = super(GlobalScoreActivityForm, self).clean()
-        start_time = cleaned_data.get('start_time')
-        end_time = cleaned_data.get('end_time')
-        if start_time and end_time:
-            if start_time > end_time:
-                self.add_error("end_time", "Neispravan unos trajanja aktivnosti")
-        return cleaned_data
-
     class Meta:
         model = GlobalScoreActivity
         fields = ('name', 'location', 'type', 'details', 'points_accomplished', 'points_total', 'completed', 'due_date', 'start_time', 'end_time')
@@ -31,16 +22,27 @@ class GlobalScoreActivityForm(forms.ModelForm):
             'end_time':     TimeInput(attrs={'class': 'form-control'}),
             'subject':      forms.TextInput(attrs={'class': 'form-control'}),
         }
+    
+    def clean(self):
+        return super(GlobalScoreActivityForm, self).clean()
 
+    def clean_end_time(self):
+        cleaned_data = self.clean()
+        start_time = cleaned_data.get('start_time')
+        end_time = cleaned_data.get('end_time')
+        if start_time and end_time:
+            if start_time > end_time:
+                self.add_error("end_time", "Neispravan unos trajanja aktivnosti")
+        return cleaned_data
 
 class GlobalScoreActivitySubmitForm(GlobalScoreActivityForm):
-
-    def __init__(self, *args, **kwargs):
-        super(GlobalScoreActivitySubmitForm, self).__init__(*args, **kwargs)
-        self.fields['completed'].widget = forms.HiddenInput()
-        self.initial['completed'] = True
 
     class Meta(GlobalScoreActivityForm.Meta):
         fields = (
             'type', 'points_accomplished', 'points_total', 'completed'
         )
+    
+    def __init__(self, *args, **kwargs):
+        super(GlobalScoreActivitySubmitForm, self).__init__(*args, **kwargs)
+        self.fields['completed'].widget = forms.HiddenInput()
+        self.initial['completed'] = True

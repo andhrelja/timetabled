@@ -13,7 +13,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '+#@fju_rxn&#+ik-zb1lzahtqq(!f+()8p4%0qn-*iw92bmcvl'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -56,8 +56,7 @@ INSTALLED_APPS = [
     'activities_calendar.apps.ActivitiesCalendarConfig',
     'materials_score.apps.MaterialsScoreConfig',
     'departments.apps.DepartmentsConfig',
-    'subjects.apps.SubjectsConfig',
-    'dashboard.apps.DashboardConfig',
+    'subjects.apps.SubjectsConfig'
 ]
 
 MIDDLEWARE = [

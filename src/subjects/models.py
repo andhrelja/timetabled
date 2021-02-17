@@ -57,9 +57,22 @@ class Subject(models.Model):
     @property
     def optional(self):
         optional = list()
-        for sp in self.subjectprograms_set.all(): # TODO: Hardcoded academic_year / user student
+        for sp in self.subjectprograms_set.all():
             optional.append(sp.optional)
         return all(optional)
+    
+    def is_critical(self, student):
+        accomplished_score_activities_points = self.points_accomplished(student)
+        total_class_activities_count = self.all_class_activities_count(student)
+        completed_class_activities_count = self.all_class_activities_completed_count(student)
+
+        if completed_class_activities_count * 2 < total_class_activities_count:
+            return False
+        elif accomplished_score_activities_points > 35:
+            return False
+        
+        return True
+
 
     def has_empty_activities(self, student):
         for activity in self.all_score_activities(student):
@@ -104,6 +117,11 @@ class Subject(models.Model):
     def all_class_activities(self, student):
         return self.activities_class(student)
     
+    def all_score_activities_count(self, student):
+        return len(self.activities_score(student))
+    
+    def all_class_activities_count(self, student):
+        return len(self.activities_class(student))
 
     
     def all_score_activities_completed_count(self, student):

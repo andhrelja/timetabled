@@ -31,7 +31,7 @@ class Student(models.Model):
     @property
     def subjects(self):
         subject_ids = set()
-        for ss in self.studentsubjects_set.filter():
+        for ss in self.studentsubjects_set.filter(academic_year=self.get_active_academic_year()):
             subject_ids.add(ss.subject.id)
         return Subject.objects.filter(id__in=subject_ids)
     
@@ -69,6 +69,14 @@ class Student(models.Model):
     def subject_class_activities(self, subject):
         subject_class_activities = subject.all_class_activities(self)
         return sorted(subject_class_activities, key=lambda instance: instance.due_date)
+
+    def get_critical_subjects(self):
+        critical_subjects = list()
+        for subject in self.subjects:
+            if subject.is_critical(student=self):
+                critical_subjects.append(subject)
+        return critical_subjects
+
 
     def all_score_activities_completed_count(self):
         completed_count = 0
@@ -185,15 +193,17 @@ class Student(models.Model):
 
         return semester
     
+    def get_active_academic_year_display(self):
+        year = self.get_active_academic_year()
+        return "{}/{}".format(year, year+1)
+    
     def get_active_academic_year(self):
         today = timezone.now()
 
-        if today.month > 9:
-            year = today.year
+        if today.month <= 9 and today >= datetime(today.year, 3, 1, 0, 0, tzinfo=pytz.UTC):
+            return today.year
         else:
-            year = today.year - 1
-        return "{}/{}".format(year, year+1)
-
+            return today.year - 1
 
     def __str__(self):
         return self.user.get_full_name()

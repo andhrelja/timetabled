@@ -172,7 +172,7 @@ class SubjectEnrollView(SuccessMessageMixin, FormView):
         subjects = form.cleaned_data['subjects']
         student = self.request.user.student
 
-        for ss in StudentSubjects.objects.filter(student=student, academic_year=2020): #TODO: Hardcoded academic_year
+        for ss in StudentSubjects.objects.filter(student=student, academic_year=student.get_active_academic_year()):
             if ss.subject not in subjects:
                 ss.delete()
                 
