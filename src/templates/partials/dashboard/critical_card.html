@@ -17,7 +17,7 @@
             <div class="col">
                 {% for subject in critical_subjects %}
                 <ul class="list-group">
-                    <li class="list-group-item d-flex justify-content-between align-items-center clickable-row" onclick="location.href='{{ subject.get_absolute_url }}'">
+                    <li class="list-group-item d-flex justify-content-between align-items-center clickable-row hover-dark" onclick="location.href='{{ subject.get_absolute_url }}'">
                         <span class="text-dark">{{ subject }}</span>
                         <span class="badge badge-danger badge-pill">{{subject|points_accomplished:user.student|floatformat }}</span>
                     </li>

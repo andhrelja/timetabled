@@ -6,6 +6,59 @@ p {
     font-family: 'Inter' sans-serif !important;
 }
 
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(217, 84, 79, 0.7);
+	}
+	
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(217, 84, 79, 0);
+	}
+	
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(217, 84, 79, 0);
+	}
+}
+
+
+@media (max-width: 580px) {
+    .register-image .login-logo{
+        height: 300px !important;
+    }
+
+    .login-container .card {
+        padding: 5%;
+    }
+
+    .notification.dropdown-menu.show {
+        width: 250px !important;
+    }
+
+    .search-form input {
+        width: 80% !important;
+    }
+}
+
+
+@media (min-width: 580px) {
+    .login-container {
+        margin-top: 5%;
+    }
+
+    .login-container .card {
+        margin-right: 30% !important;
+        padding: 7%;
+    }
+
+    .search-form input {
+        width: 100% !important;
+    }
+
+}
+
 
 .bg-dark {
     background-color: #193441 !important;
@@ -68,9 +121,13 @@ p {
 
 .clickable-row:hover {
     background-color: rgb(26, 41, 128) ;
-    color: #e6e6e6;
+    color: #e6e6e6 ;
 }
 
+.clickable-row:hover span.text-dark{
+    background-color: rgb(26, 41, 128) ;
+    color: #e6e6e6 !important;
+}
 
 .clickable-row.hover-success:hover {
     background-color: #016540;
@@ -132,22 +189,6 @@ p {
 	animation: pulse 2s infinite;
 }
 
-@keyframes pulse {
-	0% {
-		transform: scale(0.95);
-		box-shadow: 0 0 0 0 rgba(217, 84, 79, 0.7);
-	}
-	
-	70% {
-		transform: scale(1);
-		box-shadow: 0 0 0 10px rgba(217, 84, 79, 0);
-	}
-	
-	100% {
-		transform: scale(0.95);
-		box-shadow: 0 0 0 0 rgba(217, 84, 79, 0);
-	}
-}
 
 .notification-toggle:before {
     display: none !important;
@@ -159,37 +200,3 @@ p {
 }
 
 
-@media (max-width: 580px) {
-    .register-image .login-logo{
-        height: 300px !important;
-    }
-
-    .login-container .card {
-        padding: 5%;
-    }
-
-    .notification.dropdown-menu.show {
-        width: 250px !important;
-    }
-
-    .search-form input {
-        width: 80% !important;
-    }
-}
-
-
-@media (min-width: 580px) {
-    .login-container {
-        margin-top: 5%;
-    }
-
-    .login-container .card {
-        margin-right: 30% !important;
-        padding: 7%;
-    }
-
-    .search-form input {
-        width: 100% !important;
-    }
-
-}
