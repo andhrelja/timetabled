@@ -10,22 +10,22 @@ class EmptyCalendar(dict):
 
     def __init__(self, type='monthly', start_date=None, end_date=None):
         self.type = self.validate_type(type)
-        self.start_date = timezone.now()
-
-        if start_date and end_date:
+        
+        if start_date:
             if isinstance(start_date, str):
                 self.start_date = self.get_start_date(datetime.strptime(start_date, "%d-%m-%Y"))
             elif isinstance(start_date, date) or isinstance(start_date, datetime) or isinstance(start_date, timezone):
                 self.start_date = self.get_start_date(start_date)
 
+        if end_date:
             if isinstance(end_date, str):
                 self.end_date = self.get_end_date(datetime.strptime(end_date, "%d-%m-%Y"))
             elif isinstance(end_date, date) or isinstance(end_date, datetime) or isinstance(end_date, timezone):
                 self.end_date = self.get_end_date(end_date)
 
         if not start_date:
+            self.start_date = timezone.now()
             self.start_date = self.get_start_date()
-
         if not end_date:
             self.end_date = self.get_end_date()
 

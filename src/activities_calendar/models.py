@@ -1,4 +1,5 @@
 from datetime import date, datetime, timedelta
+import pytz
 
 
 class DateTime:
@@ -7,7 +8,7 @@ class DateTime:
         if not _date:
             _date = date.today()
         if isinstance(_date, date):
-            self._date = _date
+            self._date = datetime(_date.year, _date.month, _date.day, 0, 0, tzinfo=pytz.UTC)
         else:
             raise TypeError('Type "{}" is not a valid date type'.format(type(_date)))
     
@@ -15,7 +16,7 @@ class DateTime:
     def datetime(cls, _date=None):
         if _date is None:
             _date = cls._date
-        return datetime(_date.year, _date.month,_date.day, 0, 0)
+        return datetime(_date.year, _date.month,_date.day, 0, 0, tzinfo=pytz.UTC)
     
     @property
     def date(self):

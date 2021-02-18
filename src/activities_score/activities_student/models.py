@@ -33,7 +33,10 @@ class StudentScoreActivity(models.Model):
 
     @property
     def points_percentage(self):
-        return (self.points_accomplished / self.points_total) * 100
+        if self.points_total == 0:
+            return 0
+        else:
+            return (self.points_accomplished / self.points_total) * 100
 
     @property
     def duration(self):

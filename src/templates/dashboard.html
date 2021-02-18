@@ -59,7 +59,7 @@
                             
                             <div title="Broj bodova: {{ activity.points_total }}" onclick="location.href='{{ activity.get_absolute_url }}'" class="d-flex clickable-row">
                                 <div class="fas-icon subnav">
-                                    {% if activity.completed %}
+                                    {% if activity.completed or activity.attended %}
                                     <i class="fas fa-check-circle text-success" aria-hidden="true"></i>
                                     {% else %}
                                     <i class="fas fa-exclamation-circle text-warning" aria-hidden="true"></i>
