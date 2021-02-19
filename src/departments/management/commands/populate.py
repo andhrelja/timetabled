@@ -127,7 +127,8 @@ class Command(BaseCommand):
         
         for dictionary in dictionary_list:
             programs = dictionary.pop('programs')
-            obj, created = Department.objects.get_or_create(**dictionary)
+            id = dictionary.pop('id')
+            obj, created = Department.objects.get_or_create(id=id, defaults=dictionary)
             if created:
                 self.stdout.write(self.style.SUCCESS('[SUCCESS] Department Created "{}"'.format(obj.code)))
             else:
@@ -155,113 +156,125 @@ class Command(BaseCommand):
         
         for dictionary in dictionary_list:
             subject_id  = dictionary.pop('id')
-            optional    = dictionary.pop('optional')
             program_id  = dictionary.pop('program_id')
+
             program     = Program.objects.get(id=program_id)
+            optional    = dictionary.pop('optional')
+            semester    = dictionary.pop('semester')
+            academic_year = dictionary.pop('academic_year')
             dictionary['assistant'] = ", ".join(dictionary['assistant'])
+
             subject, created = Subject.objects.get_or_create(id=subject_id, defaults=dictionary)
 
             if created:
-                self.stdout.write(self.style.SUCCESS('[SUCCESS] Subject Created "{}"'.format(subject.code)))
+                self.stdout.write(self.style.SUCCESS('[SUCCESS] Subject Created "{}"'.format(subject)))
             else:
                 self.stdout.write(self.style.SUCCESS('[NOTICE] Subject "{}" already existed'.format(subject.code)))
             
-            SubjectPrograms.objects.get_or_create(subject=subject, program=program, optional=optional)
+            sp, _ = SubjectPrograms.objects.get_or_create(subject=subject, program=program)
+            self.stdout.write(self.style.SUCCESS('[NOTICE] Setting up SubjectPrograms for subject={}, program={}'.format(program, subject)))
+            sp.optional = optional
+            try:
+                sp.semester = semester
+            except Exception as e:
+                print(e)
+            sp.academic_year = academic_year
+            sp.save()
 
 
     def populate_activities(self):
         for subject in Subject.objects.all():
-            if not subject.csv_file or ('/15/' in subject.csv_file or '404.csv' in subject.csv_file or int(subject.semester) % 2 == 0):
+            if not subject.csv_file or ('/15/' in subject.csv_file or '404.csv' in subject.csv_file):
                 continue
 
             dictionary_list = self.read_csv(subject.csv_file)
         
-            for dictionary in dictionary_list:
-                type_key = dictionary['Nastava'].lower()
+            if dictionary_list:
+                for dictionary in dictionary_list:
+                    type_key = dictionary['Nastava'].lower()
 
-                if type_key not in TYPE_NAMES.keys():
-                    raise ValueError("Unknown activity type:", type_key)
-                
-                stage_dictionary = {
-                    'name'       : TYPE_NAMES[type_key],
-                    'location'   : dictionary['Prostor'],
-                    'type'       : type_key,
-                    'details'    : dictionary['Tema'],
-                    'subject'    : subject,
-                    'due_date'   : dictionary['Datum'],
-                    'points_total' : dictionary['Bodovi']
-                }
+                    if type_key not in TYPE_NAMES.keys():
+                        raise ValueError("Unknown activity type:", type_key)
+                    
+                    stage_dictionary = {
+                        'name'       : TYPE_NAMES[type_key],
+                        'location'   : dictionary['Prostor'],
+                        'type'       : type_key,
+                        'details'    : dictionary['Tema'],
+                        'subject'    : subject,
+                        'due_date'   : dictionary['Datum'],
+                        'points_total' : dictionary['Bodovi']
+                    }
 
-                try:
-                    stage_dictionary.update({
-                        'group': dictionary['Grupa']
-                    })
-                except KeyError:
-                    pass
+                    try:
+                        stage_dictionary.update({
+                            'group': dictionary['Grupa']
+                        })
+                    except KeyError:
+                        pass
 
-                vrijeme_ukupno = dictionary['Vrijeme']
-                if vrijeme_ukupno == '':
-                    if type_key in ('p', 'p+v'):
-                        start_time = subject.predavanja_vrijeme
-                        tdelta = subject.predavanja_trajanje
-                    elif type_key == 'v':
-                        start_time = subject.vjezbe_vrijeme
-                        tdelta = subject.vjezbe_trajanje
+                    vrijeme_ukupno = dictionary['Vrijeme']
+                    if vrijeme_ukupno == '':
+                        if type_key in ('p', 'p+v'):
+                            start_time = subject.predavanja_vrijeme
+                            tdelta = subject.predavanja_trajanje
+                        elif type_key == 'v':
+                            start_time = subject.vjezbe_vrijeme
+                            tdelta = subject.vjezbe_trajanje
+                        else:
+                            start_time = subject.vjezbe_vrijeme
+                            tdelta = subject.vjezbe_trajanje
+                        end_time = datetime.combine(date(1, 1, 1), start_time) + tdelta
+
+                        stage_dictionary.update({
+                            'start_time' : start_time,
+                            'end_time'   : end_time
+                        })
                     else:
-                        start_time = subject.vjezbe_vrijeme
-                        tdelta = subject.vjezbe_trajanje
-                    end_time = datetime.combine(date(1, 1, 1), start_time) + tdelta
-
-                    stage_dictionary.update({
-                        'start_time' : start_time,
-                        'end_time'   : end_time
-                    })
-                else:
-                    stage_dictionary.update({
-                        'start_time' : dictionary['Vrijeme'],
-                        'end_time'   : dictionary['Vrijeme']
-                    })
+                        stage_dictionary.update({
+                            'start_time' : dictionary['Vrijeme'],
+                            'end_time'   : dictionary['Vrijeme']
+                        })
 
 
+                    final_dictionary = dict()
+                    for key, value in stage_dictionary.items():
+                        if type_key not in ('p', 'v', 'p+v') and dictionary['Vrijeme'] != '':
+                            if key == 'type':
+                                final_dictionary['type'] = VALIDATE_ACTIVITIES[key](value, SCORE_TYPE_CHOICES)[0]
+                            else:
+                                final_dictionary[key] = VALIDATE_ACTIVITIES[key](value)
+                        elif type_key in ('p', 'v', 'p+v') and dictionary['Vrijeme'] != '':
+                            if key == 'type':
+                                final_dictionary['type'] = VALIDATE_ACTIVITIES[key](value, CLASS_TYPE_CHOICES)[0]
+                            else:
+                                final_dictionary[key] = VALIDATE_ACTIVITIES[key](value)
+                        elif type_key not in ('p', 'v', 'p+v') and dictionary['Vrijeme'] == '':
+                            if key == 'start_time':
+                                final_dictionary['start_time'] = value
+                            elif key == 'end_time':
+                                final_dictionary['end_time'] = value
+                            elif key == 'type':
+                                final_dictionary['type'] = VALIDATE_ACTIVITIES[key](value, SCORE_TYPE_CHOICES)[0]
+                            else:
+                                final_dictionary[key] = VALIDATE_ACTIVITIES[key](value)
+                        elif type_key in ('p', 'v', 'p+v') and dictionary['Vrijeme'] == '':
+                            if key == 'start_time':
+                                final_dictionary['start_time'] = value
+                            elif key == 'end_time':
+                                final_dictionary['end_time'] = value
+                            elif key == 'type':
+                                final_dictionary['type'] = VALIDATE_ACTIVITIES[key](value, CLASS_TYPE_CHOICES)[0]
+                            else:
+                                final_dictionary[key] = VALIDATE_ACTIVITIES[key](value)
 
-                final_dictionary = dict()
-                for key, value in stage_dictionary.items():
-                    if type_key not in ('p', 'v', 'p+v') and dictionary['Vrijeme'] != '':
-                        if key == 'type':
-                            final_dictionary['type'] = VALIDATE_ACTIVITIES[key](value, SCORE_TYPE_CHOICES)[0]
-                        else:
-                            final_dictionary[key] = VALIDATE_ACTIVITIES[key](value)
-                    elif type_key in ('p', 'v', 'p+v') and dictionary['Vrijeme'] != '':
-                        if key == 'type':
-                            final_dictionary['type'] = VALIDATE_ACTIVITIES[key](value, CLASS_TYPE_CHOICES)[0]
-                        else:
-                            final_dictionary[key] = VALIDATE_ACTIVITIES[key](value)
-                    elif type_key not in ('p', 'v', 'p+v') and dictionary['Vrijeme'] == '':
-                        if key == 'start_time':
-                            final_dictionary['start_time'] = value
-                        elif key == 'end_time':
-                            final_dictionary['end_time'] = value
-                        elif key == 'type':
-                            final_dictionary['type'] = VALIDATE_ACTIVITIES[key](value, SCORE_TYPE_CHOICES)[0]
-                        else:
-                            final_dictionary[key] = VALIDATE_ACTIVITIES[key](value)
-                    elif type_key in ('p', 'v', 'p+v') and dictionary['Vrijeme'] == '':
-                        if key == 'start_time':
-                            final_dictionary['start_time'] = value
-                        elif key == 'end_time':
-                            final_dictionary['end_time'] = value
-                        elif key == 'type':
-                            final_dictionary['type'] = VALIDATE_ACTIVITIES[key](value, CLASS_TYPE_CHOICES)[0]
-                        else:
-                            final_dictionary[key] = VALIDATE_ACTIVITIES[key](value)
-
-                if type_key in ('p', 'v', 'p+v'):
-                    final_dictionary.pop('points_total')
-                    GlobalClassActivity.objects.get_or_create(**final_dictionary)
-                    self.stdout.write(self.style.SUCCESS('[SUCCESS] (Nastavna): "{}" kolegija "{}" uspješno stvorena'.format(final_dictionary['name'], subject.name)))
-                else:
-                    GlobalScoreActivity.objects.get_or_create(**final_dictionary)
-                    self.stdout.write(self.style.SUCCESS('[SUCCESS] (Bodovna): "{}" kolegija "{}" uspješno stvorena'.format(final_dictionary['name'], subject.name)))
+                    if type_key in ('p', 'v', 'p+v'):
+                        final_dictionary.pop('points_total')
+                        GlobalClassActivity.objects.get_or_create(**final_dictionary)
+                        self.stdout.write(self.style.SUCCESS('[SUCCESS] (Class): Created Activity "{}"'.format(final_dictionary['name'])))
+                    else:
+                        GlobalScoreActivity.objects.get_or_create(**final_dictionary)
+                        self.stdout.write(self.style.SUCCESS('[SUCCESS] (Score): Created Activity "{}"'.format(final_dictionary['name'])))
 
         
     def bind_subjects_students(self):
@@ -269,6 +282,10 @@ class Command(BaseCommand):
             subject_ids = SubjectPrograms.objects.filter(program=student.program, optional=False).values_list('subject_id')
 
             for subject in Subject.objects.filter(id__in=subject_ids):
-                ss, _ = StudentSubjects.objects.get_or_create(subject=subject, student=student, academic_year=2020)
+                ss, created = StudentSubjects.objects.get_or_create(subject=subject, student=student, academic_year=2020)
                 ss.ingest_points(subject, student)
-                self.stdout.write(self.style.SUCCESS('[SUCCESS] (Bind) Student: "{}" - Subject: {}" uspješno stvorena'.format(student, subject.name)))
+                if created:
+                    self.stdout.write(self.style.SUCCESS('[SUCCESS] (Bind) Student: "{}" - Subject: {}" created'.format(student, subject.name)))
+                else:
+                    self.stdout.write(self.style.SUCCESS('[SUCCESS] (Bind) Student: "{}" - Subject: {}" existed'.format(student, subject.name)))
+                

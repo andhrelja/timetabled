@@ -7,7 +7,42 @@ from subjects.models import Subject, ACADEMIC_YEAR_CHOICES, SubjectPrograms
 from datetime import datetime, date
 import pytz
 
-# Create your models here.
+
+
+class StudentSubjects(models.Model):
+    SEMESTER_CHOICES = (
+        ('1', "1. semester"),
+        ('2', "2. semester"),
+        ('3', "3. semester"),
+        ('4', "4. semester"),
+        ('5', "5. semester"),
+        ('6', "6. semester"),
+    )
+
+    student       = models.ForeignKey("accounts.Student", verbose_name="Student", on_delete=models.CASCADE)
+    subject       = models.ForeignKey("subjects.Subject", verbose_name="Kolegij", on_delete=models.CASCADE)
+    academic_year = models.IntegerField("Akademska godina", choices=ACADEMIC_YEAR_CHOICES, default=2020)
+    semester      = models.CharField("Semestar", choices=SEMESTER_CHOICES, max_length=1, null=True)
+
+    points_accomplished = models.FloatField("Osvojeni bodovi", default=0)
+    points_total        = models.FloatField("Ukupno bodovi", default=0)
+
+    class Meta:
+        verbose_name = "Student - Kolegiji"
+        verbose_name_plural = "Studenti - Kolegiji"
+        unique_together = ['student', 'subject', 'academic_year']
+
+    def ingest_points(self, subject, student):
+        self.subject = subject
+        self.student = student
+        self.accomplished_points = subject.points_accomplished(student)
+        self.points_total = subject.points_total(student)
+        self.save()
+
+    def get_absolute_url(self):
+        return reverse("StudentSubjects_detail", kwargs={"pk": self.pk})
+
+
 class Student(models.Model):
     STUDY_YEAR_CHOICES = ((i, i) for i in range(1, 4))
 
@@ -20,6 +55,12 @@ class Student(models.Model):
         verbose_name = "Student"
         verbose_name_plural = "Studenti"
     
+    def __str__(self):
+        return self.user.get_full_name()
+
+    def get_absolute_url(self):
+        return reverse("accounts:detail", kwargs={"pk": self.pk})
+
 
     def bind_subjects(self):
         sps = SubjectPrograms.objects.filter(program=self.program, optional=False)
@@ -27,11 +68,10 @@ class Student(models.Model):
             ss = StudentSubjects()
             ss.ingest_points(subject=obj.subject, student=self)
 
-
     @property
     def subjects(self):
         subject_ids = set()
-        for ss in self.studentsubjects_set.filter(academic_year=self.get_active_academic_year()):
+        for ss in self.studentsubjects_set.filter(academic_year=self.get_active_academic_year(), semester=self.get_active_semester()):
             subject_ids.add(ss.subject.id)
         return Subject.objects.filter(id__in=subject_ids)
     
@@ -172,7 +212,6 @@ class Student(models.Model):
         tdelta = end_date - start_date
         return tdelta.days
     
-    
     def get_active_semester(self):
         today = timezone.now()
 
@@ -204,35 +243,3 @@ class Student(models.Model):
             return today.year
         else:
             return today.year - 1
-
-    def __str__(self):
-        return self.user.get_full_name()
-
-    def get_absolute_url(self):
-        return reverse("accounts:detail", kwargs={"pk": self.pk})
-
-
-class StudentSubjects(models.Model):
-
-    student = models.ForeignKey("accounts.Student", verbose_name="Student", on_delete=models.CASCADE)
-    subject = models.ForeignKey("subjects.Subject", verbose_name="Kolegij", on_delete=models.CASCADE)
-    academic_year = models.IntegerField("Akademska godina", choices=ACADEMIC_YEAR_CHOICES, default=2020)
-
-    points_accomplished = models.FloatField("Osvojeni bodovi", default=0)
-    points_total        = models.FloatField("Ukupno bodovi", default=0)
-
-    def ingest_points(self, subject, student):
-        total_points = subject.points_total(student)
-        self.subject = subject
-        self.student = student
-        self.points_total = total_points
-        self.save()
-
-    class Meta:
-        verbose_name = "Student - Kolegiji"
-        verbose_name_plural = "Studenti - Kolegiji"
-        unique_together = ['student', 'subject', 'academic_year']
-
-
-    def get_absolute_url(self):
-        return reverse("StudentSubjects_detail", kwargs={"pk": self.pk})

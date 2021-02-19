@@ -6,15 +6,6 @@ from itertools import chain
 
 
 ACADEMIC_YEAR_CHOICES = ((year, f"{year}/{year+1}") for year in range(date.today().year, 2018, -1))
-SEMESTER_CHOICES = (
-    ('1', "1. semester"),
-    ('2', "2. semester"),
-    ('3', "3. semester"),
-    ('4', "4. semester"),
-    ('5', "5. semester"),
-    ('6', "6. semester"),
-)
-
 DAY_CHOICES = (
     ('ponedjeljkom', 'Ponedjeljak'),
     ('utorkom', 'Utorak'),
@@ -26,6 +17,29 @@ DAY_CHOICES = (
 )
 
 
+class SubjectPrograms(models.Model):
+    SEMESTER_CHOICES = (
+        ('1', "1. semester"),
+        ('2', "2. semester"),
+        ('3', "3. semester"),
+        ('4', "4. semester"),
+        ('5', "5. semester"),
+        ('6', "6. semester"),
+    )
+
+    subject  = models.ForeignKey("subjects.Subject", verbose_name="Kolegij", on_delete=models.CASCADE)
+    program  = models.ForeignKey("departments.Program", verbose_name="Program", on_delete=models.CASCADE)
+    optional = models.BooleanField("Izborni kolegij")
+
+    academic_year = models.IntegerField("Akademska godina", choices=ACADEMIC_YEAR_CHOICES, default=2020)
+    semester      = models.CharField("Semestar", choices=SEMESTER_CHOICES, max_length=1, null=True)
+
+    class Meta:
+        verbose_name = "Programi po kolegiju"
+        verbose_name_plural = "Programi po kolegijima"
+
+
+
 class Subject(models.Model):
 
     name            = models.CharField("Naziv", max_length=128)
@@ -34,14 +48,12 @@ class Subject(models.Model):
 
     professor       = models.CharField("Profesor", null=True, max_length=128)
     assistant       = models.CharField("Asistent", null=True, max_length=128)
-    semester        = models.CharField("Semestar", choices=SEMESTER_CHOICES, max_length=1)
-    academic_year   = models.IntegerField("Akademska godina", choices=ACADEMIC_YEAR_CHOICES)
     
-    predavanja_dan  = models.CharField("Predavanja - dan u tjednu", choices=DAY_CHOICES, null=True, max_length=64)
+    predavanja_dan      = models.CharField("Predavanja - dan u tjednu", choices=DAY_CHOICES, null=True, max_length=64)
     predavanja_vrijeme  = models.TimeField("Predavanja - vrijeme početka", auto_now=False, null=True, auto_now_add=False)
     predavanja_trajanje = models.DurationField("Predavanja - trajanje", default="1:30")
 
-    vjezbe_dan      = models.CharField("Vježbe - dan u tjednu", choices=DAY_CHOICES, null=True, max_length=64)
+    vjezbe_dan          = models.CharField("Vježbe - dan u tjednu", choices=DAY_CHOICES, null=True, max_length=64)
     vjezbe_vrijeme      = models.TimeField("Vježbe - vrijeme početka", auto_now=False, null=True, auto_now_add=False)
     vjezbe_trajanje     = models.DurationField("Vježbe - trajanje", default="1:30")
 
@@ -51,7 +63,14 @@ class Subject(models.Model):
     class Meta:
         verbose_name = "Kolegij"
         verbose_name_plural = "Kolegiji"
-        ordering = ('-academic_year',)
+        ordering = ('code',)
+    
+    
+    def __str__(self):
+        return self.name
+    
+    def get_absolute_url(self):
+        return reverse('subjects:detail', kwargs={'pk': self.pk})
     
 
     @property
@@ -200,22 +219,3 @@ class Subject(models.Model):
                         .exclude(id__in=updated_global_activities.values_list('global_activity_id'))
 
         return sorted(chain(custom_activities, updated_global_activities, global_activities), key=lambda instance: (instance.due_date, instance.start_time), reverse=False)
-
-
-    def __str__(self):
-        return self.name
-    
-    def get_absolute_url(self):
-        return reverse('subjects:detail', kwargs={'pk': self.pk})
-
-
-class SubjectPrograms(models.Model):
-
-    subject  = models.ForeignKey("subjects.Subject", verbose_name="Kolegij", on_delete=models.CASCADE)
-    program  = models.ForeignKey("departments.Program", verbose_name="Program", on_delete=models.CASCADE)
-    optional = models.BooleanField("Izborni kolegij")
-
-    class Meta:
-        verbose_name = "Programi po kolegiju"
-        verbose_name_plural = "Programi po kolegijima"
-

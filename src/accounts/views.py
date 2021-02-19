@@ -56,15 +56,14 @@ class StudentSetupView(FormView):
 
         student = Student.objects.create(user=self.request.user, program=program, studying_year=studying_year)
         set_session(self.request, student)
-
         academic_year   = self.request.session.get("academic_year")
         semester        = self.request.session.get("semester")
         
         subject_ids     = SubjectPrograms.objects.filter(program=program, optional=False).values_list('subject_id')
-        subjects        = Subject.objects.filter(id__in=subject_ids, academic_year=academic_year, semester=semester)
+        subjects        = Subject.objects.filter(id__in=subject_ids)
         
         for subject in subjects:
-            ss = StudentSubjects.objects.create(student=student, subject=subject)
+            ss = StudentSubjects.objects.create(student=student, subject=subject, academic_year=academic_year, semester=semester)
             ss.ingest_points(subject, student)
 
         messages.success(self.request, "Dobrodošli na Timetabled stranice")
