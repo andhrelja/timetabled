@@ -153,7 +153,8 @@ class SubjectEnrollOptionalView(SuccessMessageMixin, FormView):
         for subject in subjects:
             student = self.request.user.student
 
-            ss = StudentSubjects.objects.create(student=student, subject=subject, academic_year=student.get_active_academic_year())
+            ss, _ = StudentSubjects.objects.get_or_create(student=student, subject=subject, academic_year=student.get_active_academic_year())
+            ss.semester = student.get_active_semester()
             ss.ingest_points(subject, student)
         return super(SubjectEnrollOptionalView, self).form_valid(form)
     
