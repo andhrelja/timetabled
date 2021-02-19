@@ -926,7 +926,7 @@
         "assistant": [
             "Martina Bažon "
         ],
-        "semester": 1,
+        "semester": "1",
         "optional": 0,
         "academic_year": 2020,
         "csv_file": "dinps/inf/15/Edukacijska_psihologija_1_20_21.csv",
@@ -948,7 +948,7 @@
         "assistant": [
             "Kristina Host"
         ],
-        "semester": 1,
+        "semester": "1",
         "optional": 0,
         "academic_year": 2020,
         "csv_file": "dinps/inf/15/IS1_DINP_2020_2021_.csv",
@@ -963,7 +963,7 @@
         "assistant": [
             "doc. dr. sc. Martina Holenko Dlab"
         ],
-        "semester": 1,
+        "semester": "1",
         "optional": 0,
         "academic_year": 2020,
         "csv_file": "dinps/inf/15/DINP_OPI1_2020_2021.csv",
@@ -978,7 +978,7 @@
         "assistant": [
             "Ines Begić"
         ],
-        "semester": 1,
+        "semester": "1",
         "optional": 0,
         "academic_year": 2020,
         "csv_file": "dinps/inf/15/Opca_pedagogija__20_21.csv",
@@ -1000,7 +1000,7 @@
         "assistant": [
             "dr. sc. Nataša Hoić-Božić"
         ],
-        "semester": 1,
+        "semester": "1",
         "optional": 0,
         "academic_year": 2020,
         "csv_file": "dinps/inf/15/DINP_HMS1_2020_2021.csv",
@@ -1022,7 +1022,7 @@
         "assistant": [
             "dr.sc. Sanja Bradić, vanjski suradnik"
         ],
-        "semester": 1,
+        "semester": "1",
         "optional": 0,
         "academic_year": 2020,
         "csv_file": "dinps/inf/15/Razvojna_psihologija_20_21.csv",
@@ -1044,7 +1044,7 @@
         "assistant": [
             "Petra Berlot"
         ],
-        "semester": 3,
+        "semester": "3",
         "optional": 0,
         "academic_year": 2020,
         "csv_file": "dinps/inf/15/Didaktika_2_20_21.csv",
@@ -1066,7 +1066,7 @@
         "assistant": [
             "doc. dr. sc. Miran Pobar"
         ],
-        "semester": 3,
+        "semester": "3",
         "optional": 0,
         "academic_year": 2020,
         "csv_file": "dinps/inf/15/DINP_KCS_2020_2021.csv",
@@ -1081,7 +1081,7 @@
         "assistant": [
             "doc. dr. sc. Martina Holenko Dlab"
         ],
-        "semester": 3,
+        "semester": "3",
         "optional": 0,
         "academic_year": 2020,
         "csv_file": "dinps/inf/15/DINP_MNI1_2020_2021.csv",
@@ -1103,7 +1103,7 @@
         "assistant": [
             "doc. dr. sc. Borana Morić-Mohorovičić"
         ],
-        "semester": 3,
+        "semester": "3",
         "optional": 0,
         "academic_year": 2020,
         "csv_file": "dinps/inf/15/21.csv",
@@ -1125,7 +1125,7 @@
         "assistant": [
             "v. pred. dr. sc. Vedran Miletić"
         ],
-        "semester": 3,
+        "semester": "3",
         "optional": 1,
         "academic_year": 2020,
         "csv_file": "dinps/inf/15/DINP_DS_2020_2021.csv",
@@ -1140,7 +1140,7 @@
         "assistant": [
             "doc. dr. sc. Vanja Slavuj"
         ],
-        "semester": 3,
+        "semester": "3",
         "optional": 1,
         "academic_year": 2020,
         "csv_file": "dinps/inf/15/DINP_EG_2020_2021.csv",
@@ -1155,7 +1155,7 @@
         "assistant": [
             "Karlo Babić"
         ],
-        "semester": 3,
+        "semester": "3",
         "optional": 1,
         "academic_year": 2020,
         "csv_file": "dinps/inf/15/DINP_UIP_2020_2021.csv",
@@ -1170,7 +1170,7 @@
         "assistant": [
             "mag. educ. math. et inf. Dejan Ljubobratović"
         ],
-        "semester": 3,
+        "semester": "3",
         "optional": 1,
         "academic_year": 2020,
         "csv_file": "dinps/inf/15/DINP_OZUP_2020_2021.csv",
@@ -1185,7 +1185,7 @@
         "assistant": [
             "Ivona Franković"
         ],
-        "semester": 3,
+        "semester": "3",
         "optional": 1,
         "academic_year": 2020,
         "csv_file": "dinps/inf/15/DINP_OPJ_2020_2021.csv",
@@ -1200,7 +1200,7 @@
         "assistant": [
             "doc. dr. sc. Milena Sošić"
         ],
-        "semester": 1,
+        "semester": "1",
         "optional": 0,
         "academic_year": 2020,
         "csv_file": "dinps/inf/11/DINP_2020_2021_MAT1.csv",
@@ -1222,7 +1222,7 @@
         "assistant": [
             "mag. educ. math. et inf. Dejan Ljubobratović"
         ],
-        "semester": 1,
+        "semester": "1",
         "optional": 0,
         "academic_year": 2020,
         "csv_file": "dinps/inf/11/DINP_2020_2021_PROG1.csv",
@@ -1244,7 +1244,7 @@
         "assistant": [
             "dr. sc. Slobodan Beliga"
         ],
-        "semester": 1,
+        "semester": "1",
         "optional": 0,
         "academic_year": 2020,
         "csv_file": "dinps/inf/11/DINP_2020_2021_OI.csv",
@@ -1266,7 +1266,7 @@
         "assistant": [
             "dr. sc. Slobodan Beliga"
         ],
-        "semester": 1,
+        "semester": "1",
         "optional": 0,
         "academic_year": 2020,
         "csv_file": "dinps/inf/11/DINP_2020_2021_MMS.csv",
@@ -1288,7 +1288,7 @@
         "assistant": [
             "Gordana Bugarinović"
         ],
-        "semester": 1,
+        "semester": "1",
         "optional": 0,
         "academic_year": 2020,
         "csv_file": "dinps/inf/11/DINP_2020_2021_OE.csv",
@@ -1310,7 +1310,7 @@
         "assistant": [
             "doc. dr. sc. Lucia Načinović Prskalo"
         ],
-        "semester": 1,
+        "semester": "1",
         "optional": 0,
         "academic_year": 2020,
         "csv_file": "dinps/inf/11/DINP_2020_2021_ENG.csv",
@@ -1332,7 +1332,7 @@
         "assistant": [
             ""
         ],
-        "semester": 1,
+        "semester": "1",
         "optional": 0,
         "academic_year": 2020,
         "csv_file": "dinps/404.csv",
@@ -1354,7 +1354,7 @@
         "assistant": [
             "Matea Zubović"
         ],
-        "semester": 3,
+        "semester": "3",
         "optional": 0,
         "academic_year": 2020,
         "csv_file": "dinps/inf/11/DINP_2020_2021_MAT3_v3.csv",
@@ -1376,7 +1376,7 @@
         "assistant": [
             "Rebeka Lerga"
         ],
-        "semester": 3,
+        "semester": "3",
         "optional": 0,
         "academic_year": 2020,
         "csv_file": "dinps/inf/11/DINP_2020_2021_APP.csv",
@@ -1398,7 +1398,7 @@
         "assistant": [
             "doc. dr. sc. Miran Pobar"
         ],
-        "semester": 3,
+        "semester": "3",
         "optional": 0,
         "academic_year": 2020,
         "csv_file": "dinps/inf/11/DINP_2020_2021_OP.csv",
@@ -1420,7 +1420,7 @@
         "assistant": [
             "v.pred. dr. sc. Vedran Miletić"
         ],
-        "semester": 3,
+        "semester": "3",
         "optional": 0,
         "academic_year": 2020,
         "csv_file": "dinps/inf/11/DINP_2020_2021_RM.csv",
@@ -1443,7 +1443,7 @@
             "doc. dr. sc. Danijela Jakšić",
             "mag. inf. Kristian Stančin"
         ],
-        "semester": 3,
+        "semester": "3",
         "optional": 0,
         "academic_year": 2020,
         "csv_file": "dinps/inf/11/DINP_2020_2021_BP.csv",
@@ -1465,7 +1465,7 @@
         "assistant": [
             "doc. dr. sc. Martina Ašenbrener Katić"
         ],
-        "semester": 3,
+        "semester": "3",
         "optional": 0,
         "academic_year": 2020,
         "csv_file": "dinps/inf/11/DINP_2020_2021_UPI.csv",
@@ -1487,7 +1487,7 @@
         "assistant": [
             "dr. sc. Marija Maksimović"
         ],
-        "semester": 3,
+        "semester": "3",
         "optional": 0,
         "academic_year": 2020,
         "csv_file": "dinps/inf/11/DINP_2020_2021_KOMB.csv",
@@ -1509,7 +1509,7 @@
         "assistant": [
             "doc. dr. sc. Lucia Načinović Prskalo"
         ],
-        "semester": 5,
+        "semester": "5",
         "optional": 0,
         "academic_year": 2020,
         "csv_file": "dinps/inf/11/DINP_2020_2021_DWA1.csv",
@@ -1531,7 +1531,7 @@
         "assistant": [
             "Karlo Babić"
         ],
-        "semester": 5,
+        "semester": "5",
         "optional": 0,
         "academic_year": 2020,
         "csv_file": "dinps/inf/11/DINP_FJJP1_2020_2021.csv",
@@ -1553,7 +1553,7 @@
         "assistant": [
             "izv. prof. dr. sc. Sanja Čandrlić"
         ],
-        "semester": 5,
+        "semester": "5",
         "optional": 0,
         "academic_year": 2020,
         "csv_file": "dinps/inf/11/DINP_MP_2020_2021.csv",
@@ -1575,7 +1575,7 @@
         "assistant": [
             "doc. dr. sc. Sanda Bujačić Babić"
         ],
-        "semester": 5,
+        "semester": "5",
         "optional": 0,
         "academic_year": 2020,
         "csv_file": "dinps/inf/11/DINP_Numericka_matematika_2020_2021.csv",
@@ -1597,7 +1597,7 @@
         "assistant": [
             "Ivona Franković"
         ],
-        "semester": 5,
+        "semester": "5",
         "optional": 0,
         "academic_year": 2020,
         "csv_file": "dinps/inf/11/DINP_OOP_2020_2021.csv",
@@ -1619,7 +1619,7 @@
         "assistant": [
             "izv. prof. dr. sc. Ana Meštrović"
         ],
-        "semester": 5,
+        "semester": "5",
         "optional": 1,
         "academic_year": 2020,
         "csv_file": "dinps/inf/11/DINP_LPR_2020_2021.csv",
@@ -1641,7 +1641,7 @@
         "assistant": [
             "v. pred. dr. sc. Vedran Miletić"
         ],
-        "semester": 5,
+        "semester": "5",
         "optional": 1,
         "academic_year": 2020,
         "csv_file": "dinps/inf/11/DINP_PPHS_2020_2021.csv",

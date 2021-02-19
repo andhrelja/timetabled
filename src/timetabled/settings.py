@@ -20,6 +20,7 @@ ALLOWED_HOSTS = []
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
 
+
 LOGOUT_URL = '/accounts/logout/'
 
 EMAIL_HOST = 'smtp.gmail.com'

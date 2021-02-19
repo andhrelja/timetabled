@@ -1,6 +1,6 @@
 from django.core.management.base import BaseCommand
 from django.conf import settings
-from datetime import datetime, timedelta, date
+from datetime import datetime, date
 import json
 import csv
 
@@ -87,11 +87,11 @@ class Command(BaseCommand):
     help = 'Populates Universities, Departments and Programs for the `departments` app'
 
     def handle(self, *args, **options):
-        self.populate_universities()
-        self.populate_departments()
+        #self.populate_universities()
+        #self.populate_departments()
 
-        self.populate_subjects()
-        self.populate_activities()
+        #self.populate_subjects()
+        #self.populate_activities()
         self.bind_subjects_students()
     
     def read_json(self, filename):
@@ -174,10 +174,7 @@ class Command(BaseCommand):
             sp, _ = SubjectPrograms.objects.get_or_create(subject=subject, program=program)
             self.stdout.write(self.style.SUCCESS('[NOTICE] Setting up SubjectPrograms for subject={}, program={}'.format(program, subject)))
             sp.optional = optional
-            try:
-                sp.semester = semester
-            except Exception as e:
-                print(e)
+            sp.semester = semester
             sp.academic_year = academic_year
             sp.save()
 
@@ -278,14 +275,17 @@ class Command(BaseCommand):
 
         
     def bind_subjects_students(self):
+        #if not settings.DEBUG:
         for student in Student.objects.all():
-            subject_ids = SubjectPrograms.objects.filter(program=student.program, optional=False).values_list('subject_id')
+            subject_ids = SubjectPrograms.objects.filter(program=student.program).values_list('subject_id')
 
             for subject in Subject.objects.filter(id__in=subject_ids):
-                ss, created = StudentSubjects.objects.get_or_create(subject=subject, student=student, academic_year=2020)
+                ss, created = StudentSubjects.objects.get_or_create(subject=subject, student=student, academic_year=student.get_active_academic_year())
+                ss.semester = subject.subjectprograms_set.first().semester
                 ss.ingest_points(subject, student)
+
                 if created:
-                    self.stdout.write(self.style.SUCCESS('[SUCCESS] (Bind) Student: "{}" - Subject: {}" created'.format(student, subject.name)))
+                    self.stdout.write(self.style.SUCCESS('[SUCCESS][CREATE] (Bind) Student: {} - Subject: "{}"'.format(student, subject.name)))
                 else:
-                    self.stdout.write(self.style.SUCCESS('[SUCCESS] (Bind) Student: "{}" - Subject: {}" existed'.format(student, subject.name)))
+                    self.stdout.write(self.style.SUCCESS('[SUCCESS][EXISTS] (Bind) Student: {} - Subject: "{}"'.format(student, subject.name)))
                 

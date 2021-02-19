@@ -16,11 +16,13 @@ class SubjectEnrollOptionalForm(forms.Form):
         super(SubjectEnrollOptionalForm, self).__init__(*args, **kwargs)
         student = self.request.user.student
 
-        subject_ids     = SubjectPrograms.objects.filter(program=student.program, optional=True).values_list('subject_id')
-        subjects        = Subject.objects.filter(id__in=subject_ids, 
-            academic_year=self.request.session.get('academic_year'), 
+        subject_ids = SubjectPrograms.objects.filter(
+            program=student.program, 
+            academic_year=self.request.session.get('academic_year'),
             semester=self.request.session.get('semester')
-        )
+        ).values_list('subject_id')
+
+        subjects = Subject.objects.filter(id__in=subject_ids)
 
         self.fields['subjects'].queryset = subjects.exclude(id__in=student.subjects.values_list('id'))
     
@@ -36,13 +38,14 @@ class SubjectEnrollForm(forms.Form):
         super(SubjectEnrollForm, self).__init__(*args, **kwargs)
         student = self.request.user.student
 
-        subject_ids     = SubjectPrograms.objects.filter(program=student.program).values_list('subject_id')
-        subjects_available = Subject.objects.filter(id__in=subject_ids, 
-            academic_year=self.request.session.get('academic_year'), 
-        ).order_by('semester')
+        subject_ids = SubjectPrograms.objects.filter(
+            program=student.program, 
+            academic_year=self.request.session.get('academic_year')
+        ).values_list('subject_id')
 
+        subjects_available = Subject.objects.filter(id__in=subject_ids)
         self.fields['subjects'].queryset = subjects_available
-        self.fields['subjects'].initial = [s.id for s in student.subjects]
+        self.fields['subjects'].initial = student.subjects
     
     def clean(self):
         cleaned_data = super(SubjectEnrollForm, self).clean()

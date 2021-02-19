@@ -24,7 +24,7 @@ def notification_call(request):
     messages = str()
 
     for student in students:
-        notification_message = "<h4>Hej {},</h4><br>".format(student)
+        notification_message = "<h4>Hej {},</h4><br>".format(student.user.first_name)
         notification_message += "<h4>Kroz idućih 7 dana na redu su sljedeće aktivnosti:</h4><br><ul>"
         
         due_activities = list()
@@ -153,7 +153,7 @@ class SubjectEnrollOptionalView(SuccessMessageMixin, FormView):
         for subject in subjects:
             student = self.request.user.student
 
-            ss = StudentSubjects.objects.create(student=student, subject=subject, academic_year=subject.academic_year)
+            ss = StudentSubjects.objects.create(student=student, subject=subject, academic_year=student.get_active_academic_year())
             ss.ingest_points(subject, student)
         return super(SubjectEnrollOptionalView, self).form_valid(form)
     
@@ -177,6 +177,7 @@ class SubjectEnrollView(SuccessMessageMixin, FormView):
                 ss.delete()
                 
         for subject in subjects:
-            ss, _ = StudentSubjects.objects.get_or_create(student=student, subject=subject, academic_year=subject.academic_year)
+            ss, _ = StudentSubjects.objects.get_or_create(student=student, subject=subject, academic_year=student.get_active_academic_year())
+            ss.semester = student.get_active_semester()
             ss.ingest_points(subject, student)
         return super(SubjectEnrollView, self).form_valid(form)
