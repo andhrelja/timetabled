@@ -1,6 +1,5 @@
 import json
-from datetime import datetime, timedelta
-from os import extsep
+from datetime import timedelta
 
 
 scraped_jpinf_11 = 'C:\\Users\\andhr\\Documents\\Django\\timetabled\\src\\static\\data\\dinps\\inf\\11\\subjects.json'

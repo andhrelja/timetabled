@@ -18,8 +18,7 @@ class SubjectEnrollOptionalForm(forms.Form):
 
         subject_ids = SubjectPrograms.objects.filter(
             program=student.program, 
-            academic_year=self.request.session.get('academic_year'),
-            semester=self.request.session.get('semester')
+            active=True
         ).values_list('subject_id')
 
         subjects = Subject.objects.filter(id__in=subject_ids)
@@ -40,8 +39,8 @@ class SubjectEnrollForm(forms.Form):
 
         subject_ids = SubjectPrograms.objects.filter(
             program=student.program, 
-            academic_year=self.request.session.get('academic_year')
-        ).values_list('subject_id')
+            active=True
+        ).order_by('semester').values_list('subject_id')
 
         subjects_available = Subject.objects.filter(id__in=subject_ids)
         self.fields['subjects'].queryset = subjects_available

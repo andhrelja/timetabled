@@ -35,6 +35,7 @@ TYPE_NAMES = {
     's'     : 'Seminar',
     'prez'  : 'Prezentacija',
     'lz'    : 'Laboratorijske vježbe',
+    'sa'    : 'Samoprovjera',
     
     'pr'    : 'Projekt',
     'tr'    : 'Grupni rad',
@@ -90,8 +91,8 @@ class Command(BaseCommand):
         #self.populate_universities()
         #self.populate_departments()
 
-        #self.populate_subjects()
-        #self.populate_activities()
+        self.populate_subjects()
+        self.populate_activities()
         self.bind_subjects_students()
     
     def read_json(self, filename):
@@ -221,8 +222,12 @@ class Command(BaseCommand):
                         else:
                             start_time = subject.vjezbe_vrijeme
                             tdelta = subject.vjezbe_trajanje
+                        
                         end_time = datetime.combine(date(1, 1, 1), start_time) + tdelta
-
+                        """
+                        start_time = '00:00'
+                        end_time = '23:59'
+                        """
                         stage_dictionary.update({
                             'start_time' : start_time,
                             'end_time'   : end_time
@@ -277,7 +282,7 @@ class Command(BaseCommand):
     def bind_subjects_students(self):
         #if not settings.DEBUG:
         for student in Student.objects.all():
-            subject_ids = SubjectPrograms.objects.filter(program=student.program).values_list('subject_id')
+            subject_ids = SubjectPrograms.objects.filter(program=student.program, optional=False).values_list('subject_id')
 
             for subject in Subject.objects.filter(id__in=subject_ids):
                 ss, created = StudentSubjects.objects.get_or_create(subject=subject, student=student, academic_year=student.get_active_academic_year())

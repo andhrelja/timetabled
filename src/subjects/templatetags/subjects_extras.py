@@ -46,3 +46,11 @@ def past_class_activities(subject, student):
 @register.filter
 def has_empty_activities(subject, student):
     return subject.has_empty_activities(student)
+
+@register.filter
+def get_active_academic_year_display(subject, student):
+    return subject.get_active_academic_year_display(program=student.program)
+
+@register.filter
+def get_active_semester_display(subject, student):
+    return subject.get_active_semester_display(program=student.program)

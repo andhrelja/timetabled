@@ -13,7 +13,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '+#@fju_rxn&#+ik-zb1lzahtqq(!f+()8p4%0qn-*iw92bmcvl'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -117,15 +117,6 @@ else:
         },
     }
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd752f1bihll8hq',
-        'USER': 'cjhwxfatsglikf',
-        'PASSWORD': 'd63ed365ec6985ca83341425f013eb0e2a63f0dc60a828f4431ee6409cc519fe',
-        'HOST': 'ec2-176-34-97-213.eu-west-1.compute.amazonaws.com'
-    },
-}
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
 

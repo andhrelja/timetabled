@@ -4,12 +4,13 @@ TYPE_CHOICES = (
     (2, "Seminar"), 
     (3, "Prezentacija"), 
     (4, "Domaća zadaća"), 
-    (5, "Laboratorijske vježbe"), 
-    (6, "Rasprava"),
-    (7, "Projekt"),
-    (8, "Grupni rad"),
-    (9, "Kviz"),
-    (10, "Aktivnost"),
-    (11, "Popravna aktivnost"),
-    (12, "Ostalo")
+    (5, "Samoprovjera"),
+    (6, "Laboratorijske vježbe"), 
+    (7, "Rasprava"),
+    (8, "Projekt"),
+    (9, "Grupni rad"),
+    (10, "Kviz"),
+    (11, "Aktivnost"),
+    (12, "Popravna aktivnost"),
+    (13, "Ostalo")
 )

@@ -16,20 +16,30 @@ DAY_CHOICES = (
     ('nedjeljom', 'Nedjelja'),
 )
 
+SEMESTER_SWITCH = {
+    '1': 'zimski semestar',
+    '2': 'ljetni semestar',
+    '3': 'zimski semestar',
+    '4': 'ljetni semestar',
+    '5': 'zimski semestar',
+    '6': 'ljetni semestar',
+}
+
 
 class SubjectPrograms(models.Model):
     SEMESTER_CHOICES = (
-        ('1', "1. semester"),
-        ('2', "2. semester"),
-        ('3', "3. semester"),
-        ('4', "4. semester"),
-        ('5', "5. semester"),
-        ('6', "6. semester"),
+        ('1', "1. semestar"),
+        ('2', "2. semestar"),
+        ('3', "3. semestar"),
+        ('4', "4. semestar"),
+        ('5', "5. semestar"),
+        ('6', "6. semestar"),
     )
 
     subject  = models.ForeignKey("subjects.Subject", verbose_name="Kolegij", on_delete=models.CASCADE)
     program  = models.ForeignKey("departments.Program", verbose_name="Program", on_delete=models.CASCADE)
     optional = models.BooleanField("Izborni kolegij")
+    active   = models.BooleanField("Veza aktivna", default=True)
 
     academic_year = models.IntegerField("Akademska godina", choices=ACADEMIC_YEAR_CHOICES, default=2020)
     semester      = models.CharField("Semestar", choices=SEMESTER_CHOICES, max_length=1, null=True)
@@ -37,7 +47,14 @@ class SubjectPrograms(models.Model):
     class Meta:
         verbose_name = "Programi po kolegiju"
         verbose_name_plural = "Programi po kolegijima"
+        unique_together = ('subject', 'program', 'active')
 
+    def get_academic_year_display(self):
+        curr_academic_year = str(self.academic_year)
+        curr_academic_year1 = str(self.academic_year + 1)
+        ac_year = curr_academic_year[2:4]
+        ac_year1 = curr_academic_year1[2:4]
+        return "{}./{}.".format(ac_year, ac_year1)
 
 
 class Subject(models.Model):
@@ -119,7 +136,7 @@ class Subject(models.Model):
     def points_percentage(self, student):
         points_accomplished = self.points_accomplished(student)
         points_total = self.points_total(student)
-        return points_accomplished / points_total
+        return points_accomplished / points_total if points_total != 0 else 0
 
     def points_accomplished(self, student):
         score_activities = self.activities_score(student)
@@ -219,3 +236,12 @@ class Subject(models.Model):
                         .exclude(id__in=updated_global_activities.values_list('global_activity_id'))
 
         return sorted(chain(custom_activities, updated_global_activities, global_activities), key=lambda instance: (instance.due_date, instance.start_time), reverse=False)
+
+
+    def get_active_academic_year_display(self, program):
+        subject_program = self.subjectprograms_set.get(program=program, active=True)
+        return subject_program.get_academic_year_display()
+        
+    def get_active_semester_display(self, program):
+        subject_program = self.subjectprograms_set.get(program=program, active=True)
+        return subject_program.get_semester_display()

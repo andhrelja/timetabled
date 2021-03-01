@@ -71,7 +71,8 @@ class Student(models.Model):
     @property
     def subjects(self):
         subject_ids = set()
-        for ss in self.studentsubjects_set.filter(academic_year=self.get_active_academic_year(), semester=self.get_active_semester()):
+        print(self.studentsubjects_set.filter(academic_year=self.get_active_academic_year()).query)
+        for ss in self.studentsubjects_set.filter(academic_year=self.get_active_academic_year()):
             subject_ids.add(ss.subject.id)
         return Subject.objects.filter(id__in=subject_ids)
     
@@ -237,9 +238,14 @@ class Student(models.Model):
         return "{}/{}".format(year, year+1)
     
     def get_active_academic_year(self):
-        today = timezone.now()
+        today = date.today()
 
-        if today.month <= 9 and today >= datetime(today.year, 3, 1, 0, 0, tzinfo=pytz.UTC):
-            return today.year
-        else:
+        if today.month <= 9 and today >= date(today.year, 3, 1):
+            # Ljetni semestar
             return today.year - 1
+        elif today.month <= 9 and today < date(today.year, 3, 1):
+            # Zimski semestar (dio u novoj godini)
+            return today.year - 1
+        else:
+            # Zimski semestar (dio u staroj godini)
+            return today.year

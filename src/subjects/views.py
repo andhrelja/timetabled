@@ -83,8 +83,7 @@ class SubjectListView(ListView):
             return super(SubjectListView, self).get(request, *args, **kwargs)
 
     def get_queryset(self):
-        student = self.request.user.student
-        return student.subjects
+        return self.request.user.student.subjects
 
     def get_context_data(self, **kwargs):
         context = super(SubjectListView, self).get_context_data(**kwargs)

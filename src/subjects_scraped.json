@@ -1,0 +1,110 @@
+[
+    {
+        "naziv": "Inteligentni sustavi 2",
+        "nositelj": "dr. sc. Maja Matetić",
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/DINP_IS2_2020_2021.pdf",
+        "csv_file": "dinps/inf/13/DINP_IS2_2020_2021.csv",
+        "semestar": "2. semestar",
+        "predavanja_dan": "petkom",
+        "predavanja_vrijeme": "08:15",
+        "vjezbe_dan": "petkom",
+        "vjezbe_vrijeme": "10:00",
+        "izborni": false
+    },
+    {
+        "naziv": "Strateško planiranje informacijskih sustava",
+        "nositelj": "dr. sc. Sanja Čandrlić",
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/DINP_SPIS_2020_2021.pdf",
+        "csv_file": "dinps/inf/13/DINP_SPIS_2020_2021.csv",
+        "semestar": "2. semestar",
+        "predavanja_dan": "ponedjeljkom",
+        "predavanja_vrijeme": "08:15",
+        "vjezbe_dan": "ponedjeljkom",
+        "vjezbe_vrijeme": "10:00",
+        "izborni": false
+    },
+    {
+        "naziv": "Multimedijski i hipermedijski sustavi",
+        "nositelj": "dr. sc. Vanja Slavuj",
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/DINP_MHS_2020_2021_v2.pdf",
+        "csv_file": "dinps/inf/13/DINP_MHS_2020_2021.csv",
+        "semestar": "2. semestar",
+        "predavanja_dan": "utorkom",
+        "predavanja_vrijeme": "12:00",
+        "vjezbe_dan": "utorkom",
+        "vjezbe_vrijeme": "13:45",
+        "izborni": false
+    },
+    {
+        "naziv": "Skladišta podataka",
+        "nositelj": "dr. sc. Danijela Jakšić",
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/DINP_SP_2020_2021.pdf",
+        "csv_file": "dinps/inf/13/DINP_SP_2020_2021.csv",
+        "semestar": "2. semestar",
+        "predavanja_dan": "srijedom",
+        "predavanja_vrijeme": "12:00",
+        "vjezbe_dan": "srijedom",
+        "vjezbe_vrijeme": "13:45",
+        "izborni": false
+    },
+    {
+        "naziv": "Osnove digitalne obrade govora i slika",
+        "nositelj": "dr. sc. Miran Pobar",
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/DINP_ODOGS_2020_2021.pdf",
+        "csv_file": "dinps/inf/13/DINP_ODOGS_2020_2021.csv",
+        "semestar": "2. semestar",
+        "predavanja_dan": "utorkom",
+        "predavanja_vrijeme": "08:15",
+        "vjezbe_dan": "utorkom",
+        "vjezbe_vrijeme": "10:00",
+        "izborni": true
+    },
+    {
+        "naziv": "Sustavi za podršku odlučivanju",
+        "nositelj": "dr. sc. Sanda Martinčić-Ipšić",
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/DINP_SPO_2020_2021.pdf",
+        "csv_file": "dinps/inf/13/DINP_SPO_2020_2021.csv",
+        "semestar": "2. semestar",
+        "predavanja_dan": "srijedom",
+        "predavanja_vrijeme": "08:15",
+        "vjezbe_dan": "srijedom",
+        "vjezbe_vrijeme": "10:00",
+        "izborni": true
+    },
+    {
+        "naziv": "Logistika",
+        "nositelj": "dr. sc. Dragan Čišić",
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/DINP_Logistika_2020_2021.pdf",
+        "csv_file": "dinps/inf/13/DINP_LOG_2020_2021.csv",
+        "semestar": "2. semestar",
+        "predavanja_dan": "četvrtkom",
+        "predavanja_vrijeme": "10:00",
+        "vjezbe_dan": "četvrtkom",
+        "vjezbe_vrijeme": "11:45",
+        "izborni": true
+    },
+    {
+        "naziv": "Računalna analiza prirodnog jezika",
+        "nositelj": "dr. sc. Sanda Martinčić-Ipšić",
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/DINP_RAPJ_2020_2021.pdf",
+        "csv_file": "dinps/inf/13/DINP_RAPJ_2020_2021.csv",
+        "semestar": "2. semestar",
+        "predavanja_dan": "četvrtkom",
+        "predavanja_vrijeme": "10:00",
+        "vjezbe_dan": "četvrtkom",
+        "vjezbe_vrijeme": "11:45",
+        "izborni": true
+    },
+    {
+        "naziv": "Stručna praksa",
+        "nositelj": " dr. sc. Nataša Hoić-Božić",
+        "dinp": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/2_godina/DINP_strucna_praksa_2020_2021.pdf",
+        "csv_file": "dinps/inf/13/DINP_strucna_praksa_2020_2021.csv",
+        "semestar": "4. semestar",
+        "predavanja_dan": "",
+        "predavanja_vrijeme": "08:00",
+        "vjezbe_dan": "",
+        "vjezbe_vrijeme": "08:00",
+        "izborni": false
+    }
+]
