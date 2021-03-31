@@ -1,3 +1,4 @@
+from django.core.exceptions import NON_FIELD_ERRORS
 from django.db import models
 from django.urls import reverse
 from django.utils import timezone
@@ -32,10 +33,15 @@ class StudentSubjects(models.Model):
         verbose_name_plural = "Studenti - Kolegiji"
         unique_together = ['student', 'subject', 'academic_year']
 
-    def ingest_points(self, subject, student):
-        self.subject = subject
-        self.student = student
-        self.accomplished_points = subject.points_accomplished(student)
+    def ingest_points(self, subject=None, student=None):
+        if student and subject:
+            self.subject = subject
+            self.student = student
+        else:
+            student = self.student
+            subject = self.subject
+        
+        self.points_accomplished = subject.points_accomplished(student)
         self.points_total = subject.points_total(student)
         self.save()
 
@@ -71,7 +77,7 @@ class Student(models.Model):
     @property
     def subjects(self):
         subject_ids = set()
-        print(self.studentsubjects_set.filter(academic_year=self.get_active_academic_year()).query)
+        #print(self.studentsubjects_set.filter(academic_year=self.get_active_academic_year()).query)
         for ss in self.studentsubjects_set.filter(academic_year=self.get_active_academic_year()):
             subject_ids.add(ss.subject.id)
         return Subject.objects.filter(id__in=subject_ids)

@@ -29,10 +29,16 @@ class Command(BaseCommand):
                 subject = Subject.objects.get(name=subject['name'])
                 subject.csv_file       = scraped_subject['csv_file']
                 subject.dinp_link      = scraped_subject['dinp']
-                subject.predavanja_dan = scraped_subject['predavanja_dan']
-                subject.vjezbe_dan     = scraped_subject['vjezbe_dan']
-                subject.predavanja_vrijeme = scraped_subject['predavanja_vrijeme']
-                subject.vjezbe_vrijeme     = scraped_subject['vjezbe_vrijeme']
+                
+                try:
+                    subject.predavanja_dan = scraped_subject['predavanja_dan']
+                    subject.vjezbe_dan     = scraped_subject['vjezbe_dan']
+                    subject.predavanja_vrijeme = scraped_subject['predavanja_vrijeme']
+                    subject.vjezbe_vrijeme     = scraped_subject['vjezbe_vrijeme']
+                    subject.vjezbe_trajanje    = scraped_subject['vjezbe_trajanje']
+                except KeyError:
+                    pass
+                
                 subject.save()
 
                 for sp in subject.subjectprograms_set.filter(active=True):

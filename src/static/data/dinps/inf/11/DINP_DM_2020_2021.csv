@@ -1,0 +1,44 @@
+﻿Datum|Vrijeme|Prostor|Tema|Nastava|Bodovi|Grupa|Izvođač
+1.3.2021.|8:15-9:45|O-S32|Pojam i osnovna svojstva grafova.|P|||Marina Šimac
+1.3.2021.|10:00-11:30|O-S32|Pojam i osnovna svojstva grafova.|V|||Marina Šimac
+8.3.2021.|8:15-9:45|O-S32|Matrica incidencije i matrica susjedstva.|P|||Marina Šimac
+8.3.2021.|10:00-11:30|O-S32|Matrica incidencije i matrica susjedstva|V|||Marina Šimac
+15.3.2021.|8:15-9:45|O-S32|Šetnje, putevi, ciklusi.|P|||Marina Šimac
+15.3.2021.|10:00-11:30|O-S32|Šetnje, putevi, ciklusi.|V|||Marina Šimac
+22.3.2021.|8:15-9:45|O-S32|Stabla|P|||Marina Šimac
+22.3.2021.|10:00-11:30|O-S32|Stabla|V|||Marina Šimac
+29.3.2021.|8:15-9:45|O-S32|Rezni bridovi i rezni vrhovi|P|||Marina Šimac
+29.3.2021.|10:00-11:30|O-S32|Rezni bridovi i rezni vrhovi|V|||Marina Šimac
+12.4.2021.|8:15-9:45|O-S32|Problem najkraćeg puta i Dijkstrin algoritam.|P|||Marina Šimac
+12.4.2021.|10:00-11:30|O-S32|Problem najkraćeg puta i Dijkstrin algoritam.|V|||Marina Šimac
+19.4.2021.|8:15-9:45|O-S32|1. kolokvij|P+V|||Marina Šimac
+19.4.2021.|8:15-9:45|O-S32|1. kolokvij|K|25||Marina Šimac
+19.4.2021.|10:00-11:30|O-S32|"Problem spajanja i Kruskalov algoritam.
+Složenost algoritma u teoriji grafova."|P|||Marina Šimac
+26.4.2021.|8:15-9:45|O-S32|"Eulerove ture i Hamiltonovi ciklusi. NP-
+potpunost."|P|||Ana Grbac
+26.4.2021.|10:00-11:30|O-S32|"Eulerove ture i Hamiltonovi ciklusi. NP-
+potpunost."|V|||Ana Grbac
+3.5.2021.|8:15-9:45|O-S32|Bojenje grafova. Brooksov teorem.|P|||Ana Grbac
+3.5.2021.|10:00-11:30|O-S32|Bojenje grafova. Brooksov teorem.|V|||Ana Grbac
+10.5.2021.|8:15-9:45|O-S32|"Bojenje bridova grafa. Vizingov teorem.
+Kromatski polinomi."|P|||Ana Grbac
+10.5.2021.|10:00-11:30|O-S32|"Bojenje bridova grafa. Vizingov teorem.
+Kromatski polinomi."|V|||Ana Grbac
+17.5.2021.|8:15-9:45|O-S32|Planarni grafovi.|P|||Ana Grbac
+17.5.2021.|10:00-11:30|O-S32|Planarni grafovi.|V|||Ana Grbac
+24.5.2021.|8:15-9:45|O-S32|Eulerova formula. Grafovi poliedara.|P|||Ana Grbac
+24.5.2021.|10:00-11:30|O-S32|Eulerova formula. Grafovi poliedara.|V|||Ana Grbac
+31.5.2021.|8:15-9:45|O-S32|"Sparivanje u grafovima. Usmjereni grafovi i
+transportne mreže."|P|||Ana Grbac
+31.5.2021.|10:00-11:30|O-S32|"Sparivanje u grafovima. Usmjereni grafovi i
+transportne mreže."|V|||Ana Grbac
+7.6.2021.|8:15-11:30|O-S32|2. kolokvij|P+V|||Marina Šimac
+7.6.2021.|8:15-11:30|O-S32|2. kolokvij|K|25||Marina Šimac
+11.6.2021.|14:00-15:30|O-S32|Popravni kolokvij|PA|||Marina Šimac
+|00:00-23:59|online|1. domaća zadaća|DZ|10||
+|00:00-23:59|online|2. domaća zadaća|DZ|10||
+18.6.2021.|8:15-11:30|O-S32|Završni ispit (1. redovni rok)|Z|30||Marina Šimac
+2.7.2021.|8:15-11:30|O-S32|Završni ispit (2. redovni rok)|Z|||Marina Šimac
+6.9.2021.|8:15-11:30|O-S32|Završni ispit (1. izvanredni rok)|Z|||Marina Šimac
+20.9.2021.|8:15-11:30|O-S32|Završni ispit (2. izvanredni rok)|Z|||Marina Šimac

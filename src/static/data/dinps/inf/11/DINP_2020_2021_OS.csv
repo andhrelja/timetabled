@@ -1,0 +1,53 @@
+﻿Datum|Vrijeme|Prostor|Tema|Nastava|Bodovi|Grupa|Izvođač
+2.3.2021.|08:15-09:45|O-028|Uvodno predavanje.|P|||izv. prof. dr. sc. B. Kovačić
+3.3.2021.|12:30-14:00|O-350|Uvod u rad sa sučeljem naredbenog retka. Rad s direktorijima: stablo direktorija.|V||G1|doc. dr. sc. V. Slavuj
+3.3.2021.|14:15-15:45|O-350|Uvod u rad sa sučeljem naredbenog retka. Rad s direktorijima: stablo direktorija.|V||G2|doc. dr. sc. V. Slavuj
+9.3.2021.|08:15-09:45|O-028|Razvoj operacijskih sustava, osnovni zadaci operacijskih sustava, struktura operacijskih sustava.|P|||izv. prof. dr. sc. B. Kovačić
+10.3.2021.|12:30-14:00|O-350|Osnovni rad s datotekama i uređivači tekstualnih datoteka.|V|||doc. dr. sc. V. Slavuj
+10.3.2021.|14:15-15:45|O-350|Osnovni rad s datotekama i uređivači tekstualnih datoteka.|V|||doc. dr. sc. V. Slavuj
+16.3.2021.|08:15-09:45|online|Interakcija (veza) operacijskog sustava i strojne opreme, upravljanje procesima.|P|||izv. prof. dr. sc. B. Kovačić
+17.3.2021.|12:30-14:00|O-350|Napredni rad s datotekama: globalni izrazi i arhiviranje sadržaja.|V||G1|doc. dr. sc. V. Slavuj
+17.3.2021.|14:15-15:45|O-350|Napredni rad s datotekama: globalni izrazi i arhiviranje sadržaja.|V||G2|doc. dr. sc. V. Slavuj
+23.3.2021.|08:15-09:45|online|Konkurentnost procesa, sinkronizacija (1).|P|||izv. prof. dr. sc. B. Kovačić
+24.3.2021.|12:30-14:00|O-350|Regularni izrazi. Usporedba sadržaja datoteka.|V||G1|doc. dr. sc. V. Slavuj
+24.3.2021.|14:15-15:45|O-350|Regularni izrazi. Usporedba sadržaja datoteka.|V||G2|doc. dr. sc. V. Slavuj
+30.3.2021.|08:15-09:45|online|Konkurentnost procesa, sinkronizacija (2).|P|||izv. prof. dr. sc. B. Kovačić
+31.3.2021.|12:30-14:00|O-350|Preusmjeravanje ulaza i izlaza: cijevi i filteri.|V||G1|doc. dr. sc. V. Slavuj
+31.3.2021.|14:15-15:45|O-350|Preusmjeravanje ulaza i izlaza: cijevi i filteri.|V||G2|doc. dr. sc. V. Slavuj
+6.4.2021.|08:15-09:45|online|Zastoji.|P|||izv. prof. dr. sc. B. Kovačić
+7.4.2021.|12:30-14:00|O-350|Rad s ljuskom. Varijable ljuske i okoline. Izborni sadržaj: upravljanje korisnicima.|V||G1|doc. dr. sc. V. Slavuj
+7.4.2021.|14:15-15:45|O-350|Rad s ljuskom. Varijable ljuske i okoline. Izborni sadržaj: upravljanje korisnicima.|V||G2|doc. dr. sc. V. Slavuj
+13.4.2021.|08:15-09:45|online|Upravljanje procesorom.|P|||izv. prof. dr. sc. B. Kovačić
+14.4.2021.|12:30-14:00|O-350|Upravljanje poslovima. Nadgledanje procesa.|V||G1|doc. dr. sc. V. Slavuj
+14.4.2021.|14:15-15:45|O-350|Upravljanje poslovima. Nadgledanje procesa.|V||G2|doc. dr. sc. V. Slavuj
+20.4.2021.|08:15-09:45|O-028|Kolokvij.|P|||izv. prof. dr. sc. B. Kovačić
+20.4.2021.|08:15-09:45|O-028|Kolokvij.|K|30||izv. prof. dr. sc. B. Kovačić
+21.4.2021.|12:30-14:00|O-350|Upravljanje procesima: signali i prioritet procesa/posla.|V||G1|doc. dr. sc. V. Slavuj
+21.4.2021.|14:15-15:45|O-350|Upravljanje procesima: signali i prioritet procesa/posla.|V||G2|doc. dr. sc. V. Slavuj
+27.4.2021.|08:15-09:45|online|Upravljanje memorijom: straničenje (1).|P|||izv. prof. dr. sc. B. Kovačić
+28.4.2021.|12:30-15:45|O-350|Kontrolna zadaća.|V|||doc. dr. sc. V. Slavuj
+28.4.2021.|12:30-15:45|O-350|Kontrolna zadaća.|DZ|20||doc. dr. sc. V. Slavuj
+4.5.2021.|08:15-09:45|online|Upravljanje memorijom: straničenje (2).|P|||izv. prof. dr. sc. B. Kovačić
+5.5.2021.|12:30-14:00|O-350|Python modul OS: osnovne usluge operacijskog sustava.|V||G1|doc. dr. sc. V. Slavuj
+5.5.2021.|14:15-15:45|O-350|Python modul OS: osnovne usluge operacijskog sustava.|V||G2|doc. dr. sc. V. Slavuj
+11.5.2021.|08:15-09:45|online|Upravljanje memorijom: segmentacija.|P|||izv. prof. dr. sc. B. Kovačić
+12.5.2021.|12:30-14:00|O-350|Python moduli OS i Signal: komunikacija među procesima.|V||G1|doc. dr. sc. V. Slavuj
+12.5.2021.|14:15-15:45|O-350|Python moduli OS i Signal: komunikacija među procesima.|V||G2|doc. dr. sc. V. Slavuj
+18.5.2021.|08:15-09:45|online|Upravljanje memorijom: strategije smještaja, zaštita memorije.|P|||izv. prof. dr. sc. B. Kovačić
+19.5.2021.|12:30-14:00|O-350|Python modul Threading: višedretvenost.|V||G1|doc. dr. sc. V. Slavuj
+19.5.2021.|14:15-15:45|O-350|Python modul Threading: višedretvenost.|V||G2|doc. dr. sc. V. Slavuj
+25.5.2021.|08:15-09:45|online|Dodjeljivanje resursa, upravljanje podacima: rad s datotekama i imenicima.|P|||izv. prof. dr. sc. B. Kovačić
+26.5.2021.|12:30-14:00|O-350|Python modul Threading: usklađivanje izvođenja procesa i dretvi.|V||G1|doc. dr. sc. V. Slavuj
+26.5.2021.|14:15-15:45|O-350|Python modul Threading: usklađivanje izvođenja procesa i dretvi.|V||G2|doc. dr. sc. V. Slavuj
+1.6.2021.|08:15-09:45|online|Upravljanje ulazno-izlaznim uređajima: upravljački program uređaja (driver), hardverski upravljač uređaja (controler), obrada prekida.|P|||izv. prof. dr. sc. B. Kovačić
+2.6.2021.|12:30-14:00|O-350|Samostalna izrada seminarskog rada.|V||G1|doc. dr. sc. V. Slavuj
+2.6.2021.|14:15-15:45|O-350|Samostalna izrada seminarskog rada.|V||G2|doc. dr. sc. V. Slavuj
+8.6.2021.|08:15-09:45|online|Uloga sigurnosti i zaštite u operacijskim sustavima: mehanizmi sigurnosti, implementacija zaštite u radu procesa i dretvi.|P|||izv. prof. dr. sc. B. Kovačić
+9.6.2021.|12:30-14:00|O-350|Samostalna izrada seminarskog rada.|V||G1|doc. dr. sc. V. Slavuj
+9.6.2021.|14:15-15:45|O-350|Samostalna izrada seminarskog rada.|V||G2|doc. dr. sc. V. Slavuj
+16.6.2021.|12:30-15:45|O-350|Obrana seminarskog rada.|S|20||izv. prof. dr. sc. B. Kovačić, doc. dr. sc. V. Slavuj
+23.6.2021.|12:30-15:45|O-350|Popravna aktivnost.|PA|||izv. prof. dr. sc. B. Kovačić, doc. dr. sc. V. Slavuj
+1.7.2021.|08:15-09:45|O-350|Završni ispit (1. redovni rok)|Z|30||izv. prof. dr. sc. B. Kovačić, doc. dr. sc. V. Slavuj
+15.7.2021.|08:15-09:45|O-350|Završni ispit (2. redovni rok)|Z|||izv. prof. dr. sc. B. Kovačić, doc. dr. sc. V. Slavuj
+31.8.2021.|08:15-09:45|O-350|Završni ispit (1. izvanredni rok)|Z|||izv. prof. dr. sc. B. Kovačić, doc. dr. sc. V. Slavuj
+14.9.2021.|08:15-09:45|O-350|Završni ispit (2. izvanredni rok)|Z|||izv. prof. dr. sc. B. Kovačić, doc. dr. sc. V. Slavuj

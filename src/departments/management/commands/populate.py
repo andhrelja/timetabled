@@ -91,9 +91,9 @@ class Command(BaseCommand):
         #self.populate_universities()
         #self.populate_departments()
 
-        self.populate_subjects()
-        self.populate_activities()
-        self.bind_subjects_students()
+        #self.populate_subjects()
+        self.populate_activities(11)
+        #self.bind_subjects_students()
     
     def read_json(self, filename):
         json_path = settings.BASE_DIR / 'static' / 'data' / filename
@@ -178,10 +178,17 @@ class Command(BaseCommand):
             sp.semester = semester
             sp.academic_year = academic_year
             sp.save()
+                
 
 
-    def populate_activities(self):
-        for subject in Subject.objects.all():
+    def populate_activities(self, _program_id=None):
+        if not _program_id:
+            subjects = Subject.objects.all()
+        else:
+            subject_ids = SubjectPrograms.objects.filter(program_id=_program_id, active=True).values_list('subject_id')
+            subjects = Subject.objects.filter(id__in=subject_ids)
+        
+        for subject in subjects:
             if not subject.csv_file or ('/15/' in subject.csv_file or '404.csv' in subject.csv_file):
                 continue
 
@@ -273,20 +280,20 @@ class Command(BaseCommand):
                     if type_key in ('p', 'v', 'p+v'):
                         final_dictionary.pop('points_total')
                         GlobalClassActivity.objects.get_or_create(**final_dictionary)
-                        self.stdout.write(self.style.SUCCESS('[SUCCESS] (Class): Created Activity "{}"'.format(final_dictionary['name'])))
+                        self.stdout.write(self.style.SUCCESS('[SUCCESS][{}] (Class): Created Activity "{}"'.format(subject, final_dictionary['name'])))
                     else:
                         GlobalScoreActivity.objects.get_or_create(**final_dictionary)
-                        self.stdout.write(self.style.SUCCESS('[SUCCESS] (Score): Created Activity "{}"'.format(final_dictionary['name'])))
+                        self.stdout.write(self.style.SUCCESS('[SUCCESS][{}] (Score): Created Activity "{}"'.format(subject, final_dictionary['name'])))
 
         
     def bind_subjects_students(self):
         #if not settings.DEBUG:
         for student in Student.objects.all():
-            subject_ids = SubjectPrograms.objects.filter(program=student.program, optional=False).values_list('subject_id')
+            subject_ids = SubjectPrograms.objects.filter(program=student.program, semester=student.get_active_semester(), optional=False).values_list('subject_id')
 
             for subject in Subject.objects.filter(id__in=subject_ids):
                 ss, created = StudentSubjects.objects.get_or_create(subject=subject, student=student, academic_year=student.get_active_academic_year())
-                ss.semester = subject.subjectprograms_set.first().semester
+                ss.semester = subject.get_active_semester(student.program)
                 ss.ingest_points(subject, student)
 
                 if created:

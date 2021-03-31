@@ -16,7 +16,7 @@ class Command(BaseCommand):
         preddiplomski = 'https://www.inf.uniri.hr/izvedbeni-programi/preddiplomski-jednopredmetni'
         
 
-        subjects = self.get_subjects('13', diplomski_pi, write=True, download=False)
+        subjects = self.get_subjects('11', preddiplomski, write=True, download=True)
 
         print_str = ""
         for subject in subjects:

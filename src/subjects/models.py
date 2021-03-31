@@ -245,3 +245,7 @@ class Subject(models.Model):
     def get_active_semester_display(self, program):
         subject_program = self.subjectprograms_set.get(program=program, active=True)
         return subject_program.get_semester_display()
+
+    def get_active_semester(self, program):
+        subject_program = self.subjectprograms_set.get(program=program, active=True)
+        return subject_program.semester

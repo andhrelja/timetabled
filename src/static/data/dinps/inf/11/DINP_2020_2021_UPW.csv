@@ -1,0 +1,89 @@
+﻿Datum|Vrijeme|Prostor|Tema|Nastava|Bodovi|Grupa|Izvođač
+2.3.2021.|12:00-13:30|S-32|"Uvod u kolegij, integrirano
+razvojno okruženje, softverski
+razvojni okvir."|P|||Doc. dr. sc. Lucia Načinović Prskalo
+2.3.2021.|14:00-15:30|online|"Postavljanje alata za razvoj aplikacija (IDE). Postavljanje razvojnog okruženja za razvoj
+frontend dijela aplikacije."|V|G1||Doc. dr. sc. Lucia Načinović Prskalo
+2.3.2021.|15:45-17:15|online|"Postavljanje alata za razvoj aplikacija (IDE). Postavljanje razvojnog okruženja za razvoj
+frontend dijela aplikacije."|V|G2||Doc. dr. sc. Lucia Načinović Prskalo
+9.3.2021.|12:00-13:30|S-32|"Osnovi koncepti: klijent-poslužitelj model, višeslojna arhitektura na webu, web poslužitelj, cloud servisi.
+Sustavi za upravljanje verzijama."|P|||Doc. dr. sc. Lucia Načinović Prskalo
+9.3.2021.|14:00-15:30|online|"Postavljanje razvojnog okruženja u oblaku - baza podataka, web servis, pohrana podataka i postavljanje web aplikacije (Hosting).
+Sustavi za upravljanje verzijama."|V|G1||Doc. dr. sc. Lucia Načinović Prskalo
+9.3.2021.|15:45-17:15|online|"Postavljanje razvojnog okruženja u oblaku - baza podataka, web servis, pohrana podataka i postavljanje web aplikacije (Hosting).
+Sustavi za upravljanje verzijama."|V|G2||Doc. dr. sc. Lucia Načinović Prskalo
+16.3.2021.|12:00-13:30|S-32|"Baze podataka u web aplikacijama
+– stvaranje kolekcija i dokumenata, postavljanje
+autentikacije."|P|||Doc. dr. sc. Lucia Načinović Prskalo
+16.3.2021.|14:00-15:30|O-350|"Baze podataka u web aplikacijama
+– stvaranje kolekcija i dokumenata, postavljanje
+autentikacije."|V|G1||Doc. dr. sc. Lucia Načinović Prskalo
+16.3.2021.|15:45-17:15|O-350|"Baze podataka u web aplikacijama
+– stvaranje kolekcija i dokumenata, postavljanje
+autentikacije."|V|G2||Doc. dr. sc. Lucia Načinović Prskalo
+23.3.2021.|12:00-13:30|online|1. projektni zadatak|P|||Doc. dr. sc. Lucia Načinović Prskalo
+23.3.2021.|14:00-15:30|online|1. projektni zadatak|V|||Doc. dr. sc. Lucia Načinović Prskalo
+23.3.2021.|15:45-17:15|online|1. projektni zadatak|V|||Doc. dr. sc. Lucia Načinović Prskalo
+23.3.2021.|14:00-17:15|online|1. projektni zadatak|DZ|10||Doc. dr. sc. Lucia Načinović Prskalo
+30.3.2021.|12:00-13:30|online|"Dohvaćanje podataka, ažuriranje, sortiranje i filtriranje podataka iz
+baze podataka za web aplikacije."|P|||Doc. dr. sc. Lucia Načinović Prskalo
+30.3.2021.|14:00-15:30|online|"Dohvaćanje podataka, ažuriranje, sortiranje i filtriranje podataka iz
+baze podataka za web aplikacije."|V|G1||Doc. dr. sc. Lucia Načinović Prskalo
+30.3.2021.|15:45-17:15|online|"Dohvaćanje podataka, ažuriranje, sortiranje i filtriranje podataka iz
+baze podataka za web aplikacije."|V|G2||Doc. dr. sc. Lucia Načinović Prskalo
+6.4.2021.|12:00-13:30|S-32|"HTML elementi i atributi. Osnovni dijelovi CSS-a. Osnovni stilovi.
+Definiranje CSS stilova unutar elementa, dokumenta i u vanjskim
+datotekama."|P|||Doc. dr. sc. Lucia Načinović Prskalo
+6.4.2021.|14:00-15:30|O-350|"HTML elementi i atributi. Osnovni dijelovi CSS-a. Osnovni stilovi.
+Definiranje CSS stilova unutar elementa, dokumenta i u vanjskim
+datotekama."|V|||Doc. dr. sc. Lucia Načinović Prskalo
+6.4.2021.|15:45-17:15|O-350|"HTML elementi i atributi. Osnovni dijelovi CSS-a. Osnovni stilovi.
+Definiranje CSS stilova unutar elementa, dokumenta i u vanjskim
+datotekama."|V|||Doc. dr. sc. Lucia Načinović Prskalo
+13.4.2021.|12:00-13:30|S-32|"Osnovni koncepti JavaScripta
+(varijable, algoritamske strukture)."|P|||Doc. dr. sc. Lucia Načinović Prskalo
+13.4.2021.|14:00-15:30|O-350|"Osnovni koncepti JavaScripta
+(varijable, algoritamske strukture)."|V|G1||Doc. dr. sc. Lucia Načinović Prskalo
+13.4.2021.|15:45-17:15|O-350|"Osnovni koncepti JavaScripta
+(varijable, algoritamske strukture)."|V|G2||Doc. dr. sc. Lucia Načinović Prskalo
+20.4.2021.|12:00-13:30|online|2. projektni zadatak|P|||Doc. dr. sc. Lucia Načinović Prskalo
+20.4.2021.|14:00-15:30|online|2. projektni zadatak|V|G1||Doc. dr. sc. Lucia Načinović Prskalo
+20.4.2021.|15:45-17:15|online|2. projektni zadatak|V|G2||Doc. dr. sc. Lucia Načinović Prskalo
+20.4.2021.|14:00-17:15|online|2. projektni zadatak|DZ|15||Doc. dr. sc. Lucia Načinović Prskalo
+27.4.2021.|12:00-13:30|S-32|JavaScript – funkcije, objekti, polja.|P|||Doc. dr. sc. Lucia Načinović Prskalo
+27.4.2021.|14:00-15:30|O-350|JavaScript – funkcije, objekti, polja.|V|G1||Doc. dr. sc. Lucia Načinović Prskalo
+27.4.2021.|15:45-17:15|O-350|JavaScript – funkcije, objekti, polja.|V|G2||Doc. dr. sc. Lucia Načinović Prskalo
+4.5.2021.|12:00-13:30|online|"Događaji i JavaScript na Document
+Object Modelu HTML dokumenta."|P|||Doc. dr. sc. Lucia Načinović Prskalo
+4.5.2021.|14:00-15:30|online|"Događaji i JavaScript na Document
+Object Modelu HTML dokumenta."|V|G1||Doc. dr. sc. Lucia Načinović Prskalo
+4.5.2021.|15:45-17:15|online|"Događaji i JavaScript na Document
+Object Modelu HTML dokumenta."|V|G2||Doc. dr. sc. Lucia Načinović Prskalo
+11.5.2021.|12:00-13:30|S-32|"Osnovni koncepti razvojnog okvira Quasar. Izrada komponenti u Single File Components “.vue” dokumentu. Podjela na dijelove:
+Template, Script i Style."|P|||Doc. dr. sc. Lucia Načinović Prskalo
+11.5.2021.|14:00-15:30|O-350|"Osnovni koncepti razvojnog okvira Quasar. Izrada komponenti u Single File Components “.vue” dokumentu. Podjela na dijelove:
+Template, Script i Style."|V|G1||Doc. dr. sc. Lucia Načinović Prskalo
+11.5.2021.|15:45-17:15|O-350|"Osnovni koncepti razvojnog okvira Quasar. Izrada komponenti u Single File Components “.vue” dokumentu. Podjela na dijelove:
+Template, Script i Style."|V|G2||Doc. dr. sc. Lucia Načinović Prskalo
+18.5.2021.|12:00-13:30|O-350|Kolokvij|P|||Doc. dr. sc. Lucia Načinović Prskalo
+18.5.2021.|14:00-15:30||Kolokvij|V|G1||Doc. dr. sc. Lucia Načinović Prskalo
+18.5.2021.|15:45-17:15||Kolokvij|V|G2||Doc. dr. sc. Lucia Načinović Prskalo
+18.5.2021.|14:00-17:15||Kolokvij|K|25||Doc. dr. sc. Lucia Načinović Prskalo
+25.5.2021.|12:00-13:30|S-32|"Izrada aplikativne logike u Script dijelu Single File Components “.vue” i u JavaScript
+komponentama."|P|||Doc. dr. sc. Lucia Načinović Prskalo
+25.5.2021.|14:00-15:30|O-350|"Izrada aplikativne logike u Script dijelu Single File Components “.vue” i u JavaScript
+komponentama."|V|G1||Doc. dr. sc. Lucia Načinović Prskalo
+25.5.2021.|15:45-17:15|O-350|"Izrada aplikativne logike u Script dijelu Single File Components “.vue” i u JavaScript
+komponentama."|V|G2||Doc. dr. sc. Lucia Načinović Prskalo
+1.6.2021.|12:00-13:30|online|3. projektni zadatak|P|||Doc. dr. sc. Lucia Načinović Prskalo
+1.6.2021.|14:00-15:30|online|3. projektni zadatak|V|G1||Doc. dr. sc. Lucia Načinović Prskalo
+1.6.2021.|15:45-17:15|online|3. projektni zadatak|V|G2||Doc. dr. sc. Lucia Načinović Prskalo
+1.6.2021.|14:00-17:15|online|3. projektni zadatak|DZ|20||Doc. dr. sc. Lucia Načinović Prskalo
+8.6.2021.|12:00-13:30|S-32|"Analiza performansi web aplikacija, pregled mogućnosti
+poboljšanja performansi."|P|||Doc. dr. sc. Lucia Načinović Prskalo
+8.6.2021.|14:00-15:30|O-350|Popravni kolokvij|V|||Doc. dr. sc. Lucia Načinović Prskalo
+8.6.2021.|15:45-17:15|O-350|Popravni kolokvij|PA|||Doc. dr. sc. Lucia Načinović Prskalo
+28.6.2021.|14:00-17:15|O-350|Završni ispit (1. redovni rok)|Z|30||Doc. dr. sc. Lucia Načinović Prskalo
+12.7.2021.|14:00-17:15|O-350|Završni ispit (2. redovni rok)|Z|||Doc. dr. sc. Lucia Načinović Prskalo
+7.9.2021.|14:00-17:15|O-350|Završni ispit (1. izvanredni rok)|Z|||Doc. dr. sc. Lucia Načinović Prskalo
+14.9.2021.|14:00-17:15|O-350|Završni ispit (2. izvanredni rok)|Z|||Doc. dr. sc. Lucia Načinović Prskalo

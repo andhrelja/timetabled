@@ -15,6 +15,7 @@ class GlobalClassActivity(models.Model):
     
     subject     = models.ForeignKey("subjects.Subject", verbose_name="Kolegij", on_delete=models.CASCADE)
 
+    active      = models.BooleanField("Aktivan", null=True)
     due_date    = models.DateField("Datum")
     start_time  = models.TimeField("Vrijeme početka")
     end_time    = models.TimeField("Vrijeme završetka")

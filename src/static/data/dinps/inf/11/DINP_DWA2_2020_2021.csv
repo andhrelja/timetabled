@@ -1,0 +1,53 @@
+﻿Datum|Vrijeme|Prostor|Tema|Nastava|Bodovi|Grupa|Izvođač
+1.03.2021.|12:00-13:30|O-S32|Arhitekture web aplikacija: monolitna i servisno orjentirana. Paradigme programiranja u web aplikacijama: proceduralna, objektno orjentirana, funkcijska|P|||v. pred. dr. sc. Vedran Miletić
+4.03.2021.|14:00-15:30|O-365|Postavljanje razvojnog okruženja web aplikacija na operacijskim sustavima sličnim Unixu i Windowsima. Stvaranje projekta i organizacija koda. Korištenje dokumentacije|V||G1|Milan Petrović, mag. inf.
+4.03.2021.|15:45-17:15|O-365|Postavljanje razvojnog okruženja web aplikacija na operacijskim sustavima sličnim Unixu i Windowsima. Stvaranje projekta i organizacija koda. Korištenje dokumentacije|V||G2|Milan Petrović, mag. inf.
+8.03.2021.|12:00-13:30|O-S32|Objektno modeliranje i programiranje web aplikacija. Objektno-relacijsko preslikavanje|P|||v. pred. dr. sc. Vedran Miletić
+11.03.2021.|14:00-15:30|online|Korištenje baze podataka. Stvaranje modela i objektno-relacijsko preslikavanje|V||G1|Milan Petrović, mag. inf.
+11.03.2021.|15:45-17:15|online|Korištenje baze podataka. Stvaranje modela i objektno-relacijsko preslikavanje|V||G2|Milan Petrović, mag. inf.
+15.03.2021.|12:00-13:30|O-S32|Uzorci dizajna u web aplikacijama. Uzorci model-pogled-upravitelj i model-pogled- predložak|P|||v. pred. dr. sc. Vedran Miletić
+18.03.2021.|14:00-15:30|online|Relacije među modelima. Upiti|V||G1|Milan Petrović, mag. inf.
+18.03.2021.|15:45-17:15|online|Relacije među modelima. Upiti|V||G2|Milan Petrović, mag. inf.
+22.03.2021.|12:00-13:30|O-S32|Faktori razvoja web aplikacije: kod, ovisnosti, konfiguracija, usluge, izgradnja, procesi|P|||v. pred. dr. sc. Vedran Miletić
+25.03.2021.|14:00-15:30|online|Usmjeravanje i URL-i. Stvaranje pogleda kao odgovora na HTTP zahtjeve|V||G1|Milan Petrović, mag. inf.
+25.03.2021.|15:45-17:15|online|Usmjeravanje i URL-i. Stvaranje pogleda kao odgovora na HTTP zahtjeve|V||G2|Milan Petrović, mag. inf.
+29.03.2021.|12:00-13:30|O-S32|Faktori razvoja web aplikacije: vezivanje na vrata, konkurentnost, jednokratnost, paritet razvojne i produkcijske verzije, logging, administracijski procesi|P|||v. pred. dr. sc. Vedran Miletić
+1.04.2021.|14:00-15:30|online|Generički pogledi. Sesije|V||G1|Milan Petrović, mag. inf.
+1.04.2021.|15:45-17:15|online|Generički pogledi. Sesije|V||G2|Milan Petrović, mag. inf.
+8.04.2021.|14:00-15:30|online|Predaja obrazaca HTTP metodama GET i POST. Provjera unosa i prikaz poruka o greškama|V||G1|Milan Petrović, mag. inf.
+8.04.2021.|15:45-17:15|online|Predaja obrazaca HTTP metodama GET i POST. Provjera unosa i prikaz poruka o greškama|V||G2|Milan Petrović, mag. inf.
+12.04.2021.|12:00-13:30|O-S32|Pisanje i provođenje automatiziranih testova koda. Statička analiza koda|P|||v. pred. dr. sc. Vedran Miletić
+15.04.2021.|14:00-15:30|online|Predlošci obrazaca. Stvaranje obrazaca iz modela|V||G1|Milan Petrović, mag. inf.
+15.04.2021.|15:45-17:15|online|Predlošci obrazaca. Stvaranje obrazaca iz modela|V||G2|Milan Petrović, mag. inf.
+19.04.2021.|12:00-13:30|O-S32|Kontinuirana integracija i isporuka. Podrška za izvođenje na različitim verzijama platforme|P|||v. pred. dr. sc. Vedran Miletić
+22.04.2021.|14:00-15:30|O-365|1. kontrolna zadaća|V||G1|Milan Petrović, mag. inf.
+22.04.2021.|15:45-17:15|O-365|1. kontrolna zadaća|V||G2|Milan Petrović, mag. inf.
+22.04.2021.|14:00-17:15|O-365|1. kontrolna zadaća|LZ|25||Milan Petrović, mag. inf.
+26.04.2021.|12:00-13:30|O-S32|Mjerenje i tehnike poboljšanja performansi: smanjenje broja zahtjeva, kompresija, korištenje mreža zadistribuciju sadržaja, DNS prefetch, HTTP/2, web fontovi|P|||v. pred. dr. sc. Vedran Miletić
+29.04.2021.|14:00-15:30|online|Migracije. Sijanje|V||G1|Milan Petrović, mag. inf.
+29.04.2021.|15:45-17:15|online|Migracije. Sijanje|V||G2|Milan Petrović, mag. inf.
+3.05.2021.|12:00-13:30|O-S32|Mjerenje i tehnike poboljšanja performansi: optimizacije relacijske baze, keširanje podataka, keširanje operacija, JIT|P|||v. pred. dr. sc. Vedran Miletić
+6.05.2021.|14:00-15:30|online|Autentifikacija. Autorizacija|V||G1|Milan Petrović, mag. inf.
+6.05.2021.|15:45-17:15|online|Autentifikacija. Autorizacija|V||G2|Milan Petrović, mag. inf.
+10.05.2021.|12:00-13:30|O-S32|Sigurnost dinamičkih web aplikacija|P|||v. pred. dr. sc. Vedran Miletić
+13.05.2021.|14:00-15:30|online|Slanje e-maila. Testiranje|V||G1|Milan Petrović, mag. inf.
+13.05.2021.|15:45-17:15|online|Slanje e-maila. Testiranje|V||G2|Milan Petrović, mag. inf.
+17.05.2021.|14:00-15:30|O-365|Online test na Merlinu|V||G1|v. pred. dr. sc. Vedran Miletić
+17.05.2021.|15:45-17:15|O-365|Online test na Merlinu|V||G2|v. pred. dr. sc. Vedran Miletić
+17.05.2021.|12:00-13:30|O-365|Online test na Merlinu|SA|20||v. pred. dr. sc. Vedran Miletić
+20.05.2021.|14:00-15:30|online|Izrada REST API-ja. Primjer izvedbe projekta razvoja web aplikacije|V||G1|Milan Petrović, mag. inf.
+20.05.2021.|15:45-17:15|online|Izrada REST API-ja. Primjer izvedbe projekta razvoja web aplikacije|V||G2|Milan Petrović, mag. inf.
+24.05.2021.|12:00-13:30|O-S32|Pregled postojećih sustava za razvoj web aplikacija: stog LAMP (Linux, Apache, MySQL i PHP), okviri Laravel i Lumen|P|||v. pred. dr. sc. Vedran Miletić
+27.05.2021.|14:00-15:30|O-365|2. kontrolna zadaća|V||G1|Milan Petrović, mag. inf.
+27.05.2021.|15:45-17:15|O-365|2. kontrolna zadaća|V||G2|Milan Petrović, mag. inf.
+27.05.2021.|14:00-17:15|O-365|2. kontrolna zadaća|LZ|25||Milan Petrović, mag. inf.
+31.05.2021.|12:00-13:30|O-S32|Pregled postojećih sustava za razvoj web aplikacija: stog MERN (MongoDB, Express.js, React i Nginx)|P|||v. pred. dr. sc. Vedran Miletić
+7.06.2021.|12:00-13:30|O-S32|Pregled postojećih sustava za razvoj web aplikacija: ASP.NET Core (C#) i Spring (Java)|P|||v. pred. dr. sc. Vedran Miletić
+10.06.2021.|14:00-17:15|O-365|Konzultacije za izradu projekta|V|||Milan Petrović, mag. inf.
+10.06.2021.|14:00-17:15|O-365|Ispravak kontrolne zadaće.|PA|||Milan Petrović, mag. inf.
+14.06.2021.|12:00-13:30|O-S32|Pregled postojećih sustava za razvoj web aplikacija: Ruby on Rails i Sinatra (Ruby), Django i Flask (Python)|P|||v. pred. dr. sc. Vedran Miletić
+17.06.2021.|14:00-17:15|O-365|Konzultacije za izradu projekta|V|||Milan Petrović, mag. inf.
+28.6.2021.|14:00-17:15|online|Završni ispit (1. redovni rok)|Z|30||
+12.7.2021.|14:00-17:15|online|Završni ispit (2. redovni rok)|Z|||
+30.8.2021.|14:00-17:15|online|Završni ispit (1. izvanredni rok)|Z|||
+13.9.2021.|14:00-17:15|online|Završni ispit (2. izvanredni rok)|Z|||

@@ -26,6 +26,7 @@ class StudentScoreActivity(models.Model):
 
     # Defaults
     completed   = models.BooleanField("Predano", null=True)
+    active      = models.BooleanField("Aktivan", null=True)
 
     class Meta:
         verbose_name = "Global - Bodovna aktivnost"

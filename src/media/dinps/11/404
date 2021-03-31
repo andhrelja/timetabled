@@ -1,0 +1,32 @@
+
+<!doctype html>
+<html class="error-page" lang="hr-hr" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Greška: 404 Članak nije pronađen</title>
+
+					<link rel="icon" href="/images/favicon/favicon.png" />
+		
+					<link href="/templates/odjel_za_informatiku/css/bootstrap.min.css" rel="stylesheet">
+		
+					<link href="/templates/odjel_za_informatiku/css/custom.css" rel="stylesheet">
+		
+		<link href="/templates/odjel_za_informatiku/css/font-awesome.min.css" rel="stylesheet">
+		<link href="/templates/odjel_za_informatiku/css/template.css" rel="stylesheet">
+		
+				<link href="/templates/odjel_za_informatiku/css/presets/preset1.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+			
+			<h1 class="error-code">404</h1>
+			<h2 class="error-message">Članak nije pronađen</h2>
+
+			<a href="/index.php" class="btn btn-secondary"><span class="fa fa-home" aria-hidden="true"></span> Naslovnica</a>
+
+					</div>
+
+			</body>
+
+</html>
