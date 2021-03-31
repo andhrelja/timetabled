@@ -33,7 +33,9 @@ class StudentScoreActivityForm(forms.ModelForm):
     
     def clean_points_total(self): # TODO: Clean points_total
         cleaned_data = self.clean()
-        print(cleaned_data)
+        activity = self.instance
+        subject_total_points = activity.subject.points_total(activity.student)
+        return cleaned_data.get('points_total')
 
 
 
