@@ -3,11 +3,12 @@
     <li class="list-group-item d-flex justify-content-between align-items-center clickable-row" onclick="location.href='{{ activity.get_absolute_url }}'">
         <div class="text">
             {% if activity.due_date.year == 1 %}
-            <p class="mb-0">{{ activity.subject }}<span class="text-warning">*</span></p>
+            <p class="mb-0">{{ activity.get_type_display }}<span class="text-warning">*</span></p>
             {% else %}
-            <p class="mb-0">{{ activity.subject }}</p>
+            <p class="mb-0">{{ activity.get_type_display }}</p>
             {% endif %}
-            <small class="help-text">{{ activity.get_type_display }}</small>
+            <small class="help-text">{{ activity.subject }}</small><br>
+            <small class="help-text"><strong>{{ activity.due_date }}</strong></small>
         </div>
         {% if activity.points_total >= 10 and not activity.completed %}
             <span class="badge badge-danger badge-pill">{{ activity.points_total|floatformat }}</span>

@@ -95,7 +95,7 @@ class Command(BaseCommand):
 
         #self.populate_subjects()
         self.populate_activities(13)
-        self.bind_subjects_students(username='andhrelja')
+        #self.bind_subjects_students(username='andhrelja')
     
     def read_json(self, filename):
         json_path = settings.BASE_DIR / 'static' / 'data' / filename
