@@ -8,7 +8,7 @@
             <p class="mb-0">{{ activity.get_type_display }}</p>
             {% endif %}
             <small class="help-text">{{ activity.subject }}</small><br>
-            <small class="help-text"><strong>{{ activity.due_date }}</strong></small>
+            <small class="help-text">{{ activity.due_date|date:"l" }}, <strong>{{ activity.due_date }}</strong></small>
         </div>
         {% if activity.points_total >= 10 and not activity.completed %}
             <span class="badge badge-danger badge-pill">{{ activity.points_total|floatformat }}</span>
