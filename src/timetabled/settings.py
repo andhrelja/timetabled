@@ -1,5 +1,4 @@
 from pathlib import Path
-from django.db.models.expressions import F
 import django_heroku
 
 

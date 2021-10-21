@@ -1,4 +1,3 @@
-from django.core.exceptions import NON_FIELD_ERRORS
 from django.db import models
 from django.urls import reverse
 from django.utils import timezone
@@ -24,6 +23,7 @@ class StudentSubjects(models.Model):
     subject       = models.ForeignKey("subjects.Subject", verbose_name="Kolegij", on_delete=models.CASCADE)
     academic_year = models.IntegerField("Akademska godina", choices=ACADEMIC_YEAR_CHOICES, default=2020)
     semester      = models.CharField("Semestar", choices=SEMESTER_CHOICES, max_length=1, null=True)
+    active        = models.BooleanField("Aktivan", default=True)
 
     points_accomplished = models.FloatField("Osvojeni bodovi", default=0)
     points_total        = models.FloatField("Ukupno bodovi", default=0)
@@ -78,7 +78,7 @@ class Student(models.Model):
     def subjects(self):
         subject_ids = set()
         #print(self.studentsubjects_set.filter(academic_year=self.get_active_academic_year()).query)
-        for ss in self.studentsubjects_set.filter(academic_year=self.get_active_academic_year()):
+        for ss in self.studentsubjects_set.filter(active=True, academic_year=self.get_active_academic_year()):
             subject_ids.add(ss.subject.id)
         return Subject.objects.filter(id__in=subject_ids)
     
@@ -253,5 +253,5 @@ class Student(models.Model):
             # Zimski semestar (dio u novoj godini)
             return today.year - 1
         else:
-            # Zimski semestar (dio u staroj godini)
+            # # Zimski semestar (dio u staroj godini)
             return today.year

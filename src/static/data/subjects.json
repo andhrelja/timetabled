@@ -4,6 +4,7 @@
         "name": "Elektroničko gospodarstvo",
         "code": "EG",
         "ects": 6,
+        "description": "",
         "professor": "dr. sc. Dragan Čišić",
         "assistant": [
             "doc. dr. sc. Vanja Slavuj"
@@ -11,7 +12,7 @@
         "semester": "1",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/14/DINP_EG_2020_2021.csv",
+        "csv_file": "dinps/inf/14/csv/DINP_EG_2020_2021.csv",
         "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/DINP_EG_2020_2021.pdf",
         "predavanja_dan": "četvrtkom",
         "predavanja_vrijeme": "10:15",
@@ -26,6 +27,7 @@
         "name": "Inteligentni sustavi 1",
         "code": "IS1",
         "ects": 6,
+        "description": "",
         "professor": "dr. sc. Marina Ivašić-Kos",
         "assistant": [
             "Kristina Host"
@@ -33,7 +35,7 @@
         "semester": "1",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/14/DINP_IS1_2020_2021.csv",
+        "csv_file": "dinps/inf/14/csv/DINP_IS1_2020_2021.csv",
         "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/IS1_DINP_2020_2021_.pdf",
         "predavanja_dan": "srijedom",
         "predavanja_vrijeme": "10:15",
@@ -48,6 +50,7 @@
         "name": "Operacijska istraživanja 1",
         "code": "OPI1",
         "ects": 6,
+        "description": "",
         "professor": "doc. dr. sc. Martina Holenko Dlab",
         "assistant": [
             "doc. dr. sc. Martina Holenko Dlab"
@@ -55,7 +58,7 @@
         "semester": "1",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/14/DINP_OPI1_2020_2021.csv",
+        "csv_file": "dinps/inf/14/csv/DINP_OPI1_2020_2021.csv",
         "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/DINP_OPI1_2020_2021.pdf",
         "predavanja_dan": "utorkom",
         "predavanja_vrijeme": "08:30",
@@ -70,6 +73,7 @@
         "name": "Programsko inženjerstvo",
         "code": "PI",
         "ects": 6,
+        "description": "",
         "professor": "izv. prof. dr. sc. Sanja Čandrlić",
         "assistant": [
             "doc. dr. sc. Martina Ašenbrener Katić"
@@ -77,7 +81,7 @@
         "semester": "1",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/14/DINP_PI_2020_2021.csv",
+        "csv_file": "dinps/inf/14/csv/DINP_PI_2020_2021.csv",
         "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/DINP_PI_2020_2021.pdf",
         "predavanja_dan": "petkom",
         "predavanja_vrijeme": "10:15",
@@ -92,6 +96,7 @@
         "name": "Distribuirani sustavi",
         "code": "DS",
         "ects": 6,
+        "description": "",
         "professor": "dr. sc. Božidar Kovačić",
         "assistant": [
             "v. pred. dr. sc. Vedran Miletić"
@@ -99,7 +104,7 @@
         "semester": "1",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/14/DINP_DS_2020_2021.csv",
+        "csv_file": "dinps/inf/14/csv/DINP_DS_2020_2021.csv",
         "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/DINP_DS_2020_2021.pdf",
         "predavanja_dan": "utorkom",
         "predavanja_vrijeme": "12:15",
@@ -114,6 +119,7 @@
         "name": "Objektni programski jezici",
         "code": "OPJ",
         "ects": 6,
+        "description": "",
         "professor": "dr. sc. Marina Ivašić-Kos",
         "assistant": [
             "Ivona Franković"
@@ -121,7 +127,7 @@
         "semester": "1",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/14/DINP_OPJ_2020_2021.csv",
+        "csv_file": "dinps/inf/14/csv/DINP_OPJ_2020_2021.csv",
         "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/DINP_OPJ_2020_2021.pdf",
         "predavanja_dan": "srijedom",
         "predavanja_vrijeme": "12:15",
@@ -136,6 +142,7 @@
         "name": "Osnove e-obrazovanja",
         "code": "OeO",
         "ects": 6,
+        "description": "",
         "professor": "dr. sc. Nataša Hoić-Božić",
         "assistant": [
             "dr. sc. Nataša Hoić-Božić"
@@ -143,7 +150,7 @@
         "semester": "1",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/14/DINP_OeO_2020_2021.csv",
+        "csv_file": "dinps/inf/14/csv/DINP_OeO_2020_2021.csv",
         "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/DINP_OeO_2020_2021.pdf",
         "predavanja_dan": "ponedjeljkom",
         "predavanja_vrijeme": "08:30",
@@ -158,6 +165,7 @@
         "name": "Ekonomika poslovanja",
         "code": "EP",
         "ects": 6,
+        "description": "",
         "professor": "dr. sc. Borna Debelić",
         "assistant": [
             "Gordana Bugarinović"
@@ -165,7 +173,7 @@
         "semester": "1",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/14/DINP_EP_2020_2021.csv",
+        "csv_file": "dinps/inf/14/csv/DINP_EP_2020_2021.csv",
         "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/1_godina/DINP_Ekonomika_poslovanja_2020_2021.pdf",
         "predavanja_dan": "utorkom",
         "predavanja_vrijeme": "14:15",
@@ -180,6 +188,7 @@
         "name": "Inteligentni sustavi 2",
         "code": "IS2",
         "ects": 6,
+        "description": "",
         "professor": "dr. sc. Maja Matetić",
         "assistant": [
             "mag. educ. math. et inf. Dejan Ljubobratović"
@@ -187,7 +196,7 @@
         "semester": "2",
         "optional": 0,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/14/DINP_IS2_2019_2020.csv",
+        "csv_file": "dinps/inf/14/csv/DINP_IS2_2019_2020.csv",
         "id": 9
     },
     {
@@ -195,6 +204,7 @@
         "name": "Strateško planiranje informacijskih sustava",
         "code": "SPIS",
         "ects": 6,
+        "description": "",
         "professor": "izv. prof. dr. sc. Sanja Čandrlić",
         "assistant": [
             "mag. inf. Kristian Stančin"
@@ -202,7 +212,7 @@
         "semester": "2",
         "optional": 0,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/14/DINP_SPIS_2019_2020.csv",
+        "csv_file": "dinps/inf/14/csv/DINP_SPIS_2019_2020.csv",
         "id": 10
     },
     {
@@ -210,6 +220,7 @@
         "name": "Multimedijski i hipermedijski sustavi",
         "code": "MHS",
         "ects": 6,
+        "description": "",
         "professor": "prof. dr. sc. Nataša Hoić-Božić",
         "assistant": [
             "doc. dr. sc. Vanja Slavuj"
@@ -217,7 +228,7 @@
         "semester": "2",
         "optional": 1,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/14/DINP_MHS_2019_2020.csv",
+        "csv_file": "dinps/inf/14/csv/DINP_MHS_2019_2020.csv",
         "id": 11
     },
     {
@@ -225,6 +236,7 @@
         "name": "Skladišta podataka",
         "code": "SP",
         "ects": 6,
+        "description": "",
         "professor": "prof. dr. sc. Patrizia Poščić",
         "assistant": [
             "doc. dr. sc. Danijela Jakšić"
@@ -232,7 +244,7 @@
         "semester": "2",
         "optional": 1,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/14/DINP_SP_2019_2020.csv",
+        "csv_file": "dinps/inf/14/csv/DINP_SP_2019_2020.csv",
         "id": 12
     },
     {
@@ -240,6 +252,7 @@
         "name": "Osnove digitalne obrade govora i slika",
         "code": "ODOGS",
         "ects": 6,
+        "description": "",
         "professor": "doc. dr. sc. Miran Pobar",
         "assistant": [
             "doc. dr. sc. Miran Pobar"
@@ -247,7 +260,7 @@
         "semester": "2",
         "optional": 0,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/14/DINP_ODOGS_2019_2020.csv",
+        "csv_file": "dinps/inf/14/csv/DINP_ODOGS_2019_2020.csv",
         "id": 13
     },
     {
@@ -255,6 +268,7 @@
         "name": "Sustavi za podršku odlučivanju",
         "code": "SPO",
         "ects": 6,
+        "description": "",
         "professor": "dr. sc. Sanda Martinčić-Ipšić",
         "assistant": [
             "Karlo Babić"
@@ -262,7 +276,7 @@
         "semester": "2",
         "optional": 0,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/14/DINP_SPO_2019_2020.csv",
+        "csv_file": "dinps/inf/14/csv/DINP_SPO_2019_2020.csv",
         "id": 14
     },
     {
@@ -270,6 +284,7 @@
         "name": "Operacijska istraživanja 2",
         "code": "OPI2",
         "ects": 6,
+        "description": "",
         "professor": "doc. dr. sc. Martina Holenko Dlab",
         "assistant": [
             "doc. dr. sc. Martina Holenko Dlab"
@@ -277,7 +292,7 @@
         "semester": "2",
         "optional": 1,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/14/DINP_OPI2_2019_2020.csv",
+        "csv_file": "dinps/inf/14/csv/DINP_OPI2_2019_2020.csv",
         "id": 15
     },
     {
@@ -285,6 +300,7 @@
         "name": "Logistika",
         "code": "LOG",
         "ects": 6,
+        "description": "",
         "professor": "dr. sc. Dragan Čišić",
         "assistant": [
             "dr. sc. Dragan Čišić"
@@ -292,7 +308,7 @@
         "semester": "2",
         "optional": 1,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/14/DINP_LOG_2019_2020.csv",
+        "csv_file": "dinps/inf/14/csv/DINP_LOG_2019_2020.csv",
         "id": 16
     },
     {
@@ -300,6 +316,7 @@
         "name": "Računalna analiza prirodnog jezika",
         "code": "RAPJ",
         "ects": 6,
+        "description": "",
         "professor": "dr. sc. Sanda Martinčić-Ipšić",
         "assistant": [
             "Karlo Babić"
@@ -307,80 +324,59 @@
         "semester": "2",
         "optional": 1,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/14/DINP_RAPJ_2019_2020.csv",
+        "csv_file": "dinps/inf/14/csv/DINP_RAPJ_2019_2020.csv",
         "id": 17
+    },
+    {
+        "program_id": 13,
+        "name": "Menadžment i upravljanje",
+        "code": "MIU",
+        "ects": 6,
+        "description": "<h2>Obveze i vrednovanje studenata</h2>\n<p>Na  svakoj  aktivnosti  (osim  kolokvija)  student  mora  ostvariti  najmanje  50%  bodova  (od  ukupnih  ocjenskih bodova za tu aktivnost).</p>\n<ol>\n<li>Pohađanje nastave</li>\n    <p>\n        Predavanja i vježbe izvode se u hibridnom obliku – u bloku od po 2 sata prema rasporedu (studenti su obavezni pratiti obavijesti na Merlin stranici kolegija, vezano uz datume kada će se nastava odvijati fizički u učionici) te online (preko Merlin stranice kolegija).\n    </p>\n<li>Zadaća</li>\n    <p>\n        Tijekom  semestra  studenti  će  u  paru  riješiti  zadane  zadatke  iz  područja  teorije  igara  te  riješene  zadatke postaviti na Merlin. Vrednovat će se točnost zadatka te postupak dolaženja do rezultata. Na taj način studenti će moći skupiti maksimalno 5 bodova.\n    </p>\n<li>Projektni zadatak – virtualno poduzeće</li>\n    <p>\n        Tijekom  semestra  studenti  će  rješavati  zadane  projektne  zadatke  u  ERP  i  CRM  sustavu  te  prezentirati poslovanje  svakog  odjela  i  financijski  rezultat  virtualnog  poduzeća.  Na  taj  način  studenti  će  moći  skupiti maksimalno 40 bodova.\n    </p>\n<li>Rasprave na forumu</li>\n    <p>\n        Tijekom  semestra  od studenata se očekuje učestalo  praćenje te aktivno i  samostalno sudjelovanje u svim objavljenim raspravama na forumu na Merlinu (5-7 rasprava). Vrednovat će se način i kvaliteta obrade zadane\n    </p>\n<li>Kontinuirana provjera znanja</li>\n    <p>\n        Tijekom  semestra  pisat  će  se  jedna  kontrolna  zadaće  (kolokvij)  koje  će  uključivati  teoretska  pitanja  iz predavanja, na kojoj će student moći skupiti maksimalno 20 bodova.\n    </p>\n<li>Završni ispit</li>\n    <p>\n        Završni ispit je pisani ispit koji sadrži gradivo s predavanja i vježbi obrađeno nakon teorijskog kolokvija. Završni ispit  nosi  udio  od  maksimalno  30  ocjenskih  bodova,  a  smatra  se  položenim  samo  ako  na  njemu  student postigne minimalno 50%-ni uspjeh (ispitni prag je 50% uspješno riješenih zadataka).\n    </p>\n</ol>\n<h3>Ocjena iz kolegija Završni ispit</h3>\n<p>Kontinuiranim radom tijekom semestra na prethodno opisani način studenti mogu ostvariti najviše 70 ocjenskih bodova, a da bi mogli pristupiti završnom ispitu moraju ostvarili 50% i više bodova (najmanje 35 bodova) i zadovoljiti postavljene pragove na aktivnostima.\n   Studenti  koji  su  skupili  najmanje  35  ocjenskih  bodova  i  zadovoljili  postavljene  pragove,  mogu  pristupiti završnom ispitu.\n</p>\n<p>Završni ispit nosi udio od najviše 30 ocjenskih bodova, a smatra se položenim samo ako na njemu student postigne minimalno 50%-ni uspjeh (ispitni prag je 50% uspješno riješenog ispita).\n   Ako je završni ispit prolazan, skupljeni bodovi će se pribrojati prethodnima i prema ukupnom rezultatu formirati će se pripadajuća ocjena. U suprotnom, student ima pravo pristupa završnom ispitu još 2 puta (ukupno do 3 puta).\n</p>\n\n<h3>Konačna ocjena</h3>\n<p>Donosi se na osnovu zbroja svih bodova prikupljenih tijekom izvođenja nastave prema sljedećoj skali: </p>\n<p>\nA – 90% - 100%                           (ekvivalent: izvrstan 5)\nB – 75% - 89,9%                          (ekvivalent: vrlo dobar 4)\nC – 60% - 74,9%                          (ekvivalent: dobar 3)\nD – 50% - 59,9%                          (ekvivalent: dovoljan 2)\nF –  0% - 49,9%                          (ekvivalent: nedovoljan 1)\n</p>\n<h3>Ispitni rokovi</h3>\n<p><b>Redoviti:</b>\n2.2.2022.\n16.2.2022.\n<p>\n<p><b>Izvanredni:</b>\n23.3.2022.\n6.9.2022.\n</p>\n",
+        "professor": "dr. sc. Patrizia Poščić",
+        "assistant": [
+            "mag. inf. Kristian Stančin"
+        ],
+        "semester": "3",
+        "optional": 0,
+        "predavanja_dan": "ponedjeljkom",
+        "predavanja_vrijeme": "10:00",
+        "predavanja_trajanje": "1:30:00",
+        "vjezbe_dan": "ponedjeljkom",
+        "vjezbe_vrijeme": "08:30",
+        "vjezbe_trajanje": "1:30:00",
+        "academic_year": 2021,
+        "csv_file": "dinps/inf/13/csv/DINP_MIU_2021_2022.csv",
+        "id": 18
     },
     {
         "program_id": 14,
         "name": "Menadžment i upravljanje",
         "code": "MIU",
         "ects": 6,
+        "description": "<h2>Obveze i vrednovanje studenata</h2>\n<p>Na  svakoj  aktivnosti  (osim  kolokvija)  student  mora  ostvariti  najmanje  50%  bodova  (od  ukupnih  ocjenskih bodova za tu aktivnost).</p>\n<ol>\n<li>Pohađanje nastave</li>\n    <p>\n        Predavanja i vježbe izvode se u hibridnom obliku – u bloku od po 2 sata prema rasporedu (studenti su obavezni pratiti obavijesti na Merlin stranici kolegija, vezano uz datume kada će se nastava odvijati fizički u učionici) te online (preko Merlin stranice kolegija).\n    </p>\n<li>Zadaća</li>\n    <p>\n        Tijekom  semestra  studenti  će  u  paru  riješiti  zadane  zadatke  iz  područja  teorije  igara  te  riješene  zadatke postaviti na Merlin. Vrednovat će se točnost zadatka te postupak dolaženja do rezultata. Na taj način studenti će moći skupiti maksimalno 5 bodova.\n    </p>\n<li>Projektni zadatak – virtualno poduzeće</li>\n    <p>\n        Tijekom  semestra  studenti  će  rješavati  zadane  projektne  zadatke  u  ERP  i  CRM  sustavu  te  prezentirati poslovanje  svakog  odjela  i  financijski  rezultat  virtualnog  poduzeća.  Na  taj  način  studenti  će  moći  skupiti maksimalno 40 bodova.\n    </p>\n<li>Rasprave na forumu</li>\n    <p>\n        Tijekom  semestra  od studenata se očekuje učestalo  praćenje te aktivno i  samostalno sudjelovanje u svim objavljenim raspravama na forumu na Merlinu (5-7 rasprava). Vrednovat će se način i kvaliteta obrade zadane\n    </p>\n<li>Kontinuirana provjera znanja</li>\n    <p>\n        Tijekom  semestra  pisat  će  se  jedna  kontrolna  zadaće  (kolokvij)  koje  će  uključivati  teoretska  pitanja  iz predavanja, na kojoj će student moći skupiti maksimalno 20 bodova.\n    </p>\n<li>Završni ispit</li>\n    <p>\n        Završni ispit je pisani ispit koji sadrži gradivo s predavanja i vježbi obrađeno nakon teorijskog kolokvija. Završni ispit  nosi  udio  od  maksimalno  30  ocjenskih  bodova,  a  smatra  se  položenim  samo  ako  na  njemu  student postigne minimalno 50%-ni uspjeh (ispitni prag je 50% uspješno riješenih zadataka).\n    </p>\n</ol>\n<h3>Ocjena iz kolegija Završni ispit</h3>\n<p>Kontinuiranim radom tijekom semestra na prethodno opisani način studenti mogu ostvariti najviše 70 ocjenskih bodova, a da bi mogli pristupiti završnom ispitu moraju ostvarili 50% i više bodova (najmanje 35 bodova) i zadovoljiti postavljene pragove na aktivnostima.\n   Studenti  koji  su  skupili  najmanje  35  ocjenskih  bodova  i  zadovoljili  postavljene  pragove,  mogu  pristupiti završnom ispitu.\n</p>\n<p>Završni ispit nosi udio od najviše 30 ocjenskih bodova, a smatra se položenim samo ako na njemu student postigne minimalno 50%-ni uspjeh (ispitni prag je 50% uspješno riješenog ispita).\n   Ako je završni ispit prolazan, skupljeni bodovi će se pribrojati prethodnima i prema ukupnom rezultatu formirati će se pripadajuća ocjena. U suprotnom, student ima pravo pristupa završnom ispitu još 2 puta (ukupno do 3 puta).\n</p>\n\n<h3>Konačna ocjena</h3>\n<p>Donosi se na osnovu zbroja svih bodova prikupljenih tijekom izvođenja nastave prema sljedećoj skali: </p>\n<p>\nA – 90% - 100%                           (ekvivalent: izvrstan 5)\nB – 75% - 89,9%                          (ekvivalent: vrlo dobar 4)\nC – 60% - 74,9%                          (ekvivalent: dobar 3)\nD – 50% - 59,9%                          (ekvivalent: dovoljan 2)\nF –  0% - 49,9%                          (ekvivalent: nedovoljan 1)\n</p>\n<h3>Ispitni rokovi</h3>\n<p><b>Redoviti:</b>\n2.2.2022.\n16.2.2022.\n<p>\n<p><b>Izvanredni:</b>\n23.3.2022.\n6.9.2022.\n</p>\n",
         "professor": "dr. sc. Patrizia Poščić",
         "assistant": [
             "mag. inf. Kristian Stančin"
         ],
         "semester": "3",
-        "optional": 1,
-        "academic_year": 2020,
-        "csv_file": "dinps/inf/14/DINP_MIU_2020_2021.csv",
-        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/2_godina/MIU_DINP_2020_2021.pdf",
+        "optional": 0,
         "predavanja_dan": "ponedjeljkom",
         "predavanja_vrijeme": "10:00",
         "predavanja_trajanje": "1:30:00",
         "vjezbe_dan": "ponedjeljkom",
-        "vjezbe_vrijeme": "08:00",
+        "vjezbe_vrijeme": "08:30",
         "vjezbe_trajanje": "1:30:00",
+        "academic_year": 2021,
+        "csv_file": "dinps/inf/13/csv/DINP_MIU_2021_2022.csv",
         "id": 18
-    },
-    {
-        "program_id": 14,
-        "name": "Upravljanje informatičkim projektima",
-        "code": "UIP",
-        "ects": 6,
-        "professor": "dr. sc. Sanda Martinčić-Ipšić",
-        "assistant": [
-            "Karlo Babić"
-        ],
-        "semester": "3",
-        "optional": 1,
-        "academic_year": 2020,
-        "csv_file": "dinps/inf/14/DINP_UIP_2020_2021.csv",
-        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/2_godina/DINP_UIP_2020_2021.pdf",
-        "predavanja_dan": "četvrtkom",
-        "predavanja_vrijeme": "12:00",
-        "predavanja_trajanje": "1:30:00",
-        "vjezbe_dan": "četvrtkom",
-        "vjezbe_vrijeme": "14:00",
-        "vjezbe_trajanje": "1:30:00",
-        "id": 19
-    },
-    {
-        "program_id": 14,
-        "name": "Informacijska tehnologija i društvo",
-        "code": "ITID",
-        "ects": 6,
-        "professor": "dr. cs. Danijela Jakšić",
-        "assistant": [
-            "doc. dr. sc. Danijela Jakšić"
-        ],
-        "semester": "3",
-        "optional": 0,
-        "academic_year": 2020,
-        "csv_file": "dinps/inf/14/DINP_ITID_2020_2021.csv",
-        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/2_godina/DINP_ITID_2020_2021.pdf",
-        "predavanja_dan": "srijedom",
-        "predavanja_vrijeme": "10:00",
-        "predavanja_trajanje": "1:30:00",
-        "vjezbe_dan": "srijedom",
-        "vjezbe_vrijeme": "12:00",
-        "vjezbe_trajanje": "1:30:00",
-        "id": 20
     },
     {
         "program_id": 14,
         "name": "Komunikacija čovjek stroj",
         "code": "KCS",
         "ects": 6,
+        "description": "",
         "professor": "dr. sc. Ivo Ipšić",
         "assistant": [
             "doc. dr. sc. Miran Pobar"
@@ -388,7 +384,7 @@
         "semester": "3",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/14/DINP_KCS_2020_2021.csv",
+        "csv_file": "dinps/inf/14/csv/DINP_KCS_2020_2021.csv",
         "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/2_godina/DINP_KCS_2020_2021.pdf",
         "predavanja_dan": "četvrtkom",
         "predavanja_vrijeme": "08:30",
@@ -400,31 +396,10 @@
     },
     {
         "program_id": 14,
-        "name": "Otkrivanje znanja u podacima",
-        "code": "OZUP",
-        "ects": 6,
-        "professor": "dr. sc. Maja Matetić",
-        "assistant": [
-            "mag. educ. math. et inf. Dejan Ljubobratović"
-        ],
-        "semester": "3",
-        "optional": 1,
-        "academic_year": 2020,
-        "csv_file": "dinps/inf/14/DINP_OZUP_2020_2021.csv",
-        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/2_godina/DINP_OZUP_2020_2021.pdf",
-        "predavanja_dan": "petkom",
-        "predavanja_vrijeme": "08:15",
-        "predavanja_trajanje": "1:30:00",
-        "vjezbe_dan": "petkom",
-        "vjezbe_vrijeme": "10:00",
-        "vjezbe_trajanje": "1:30:00",
-        "id": 22
-    },
-    {
-        "program_id": 14,
         "name": "Upravljanje mrežnim sustavima",
         "code": "UMS",
         "ects": 6,
+        "description": "",
         "professor": "dr. sc. Vedran Miletić",
         "assistant": [
             "dr. sc. Vedran Miletić"
@@ -432,7 +407,7 @@
         "semester": "3",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/14/DINP_UMS_2020_2021.csv",
+        "csv_file": "dinps/inf/14/csv/DINP_UMS_2020_2021.csv",
         "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/2_godina/DINP_UMS_2020_2021.pdf",
         "predavanja_dan": "ponedjeljkom",
         "predavanja_vrijeme": "12:15",
@@ -444,31 +419,10 @@
     },
     {
         "program_id": 14,
-        "name": "Upravljanje znanjem",
-        "code": "UPZ",
-        "ects": 6,
-        "professor": "dr. sc. Ana Meštrović",
-        "assistant": [
-            "dr. sc. Slobodan Beliga"
-        ],
-        "semester": "3",
-        "optional": 0,
-        "academic_year": 2020,
-        "csv_file": "dinps/inf/14/DINP_UPZ_2020_2021.csv",
-        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/2_godina/DINP_UPZ_2020_2021.pdf",
-        "predavanja_dan": "utorkom",
-        "predavanja_vrijeme": "08:15",
-        "predavanja_trajanje": "1:30:00",
-        "vjezbe_dan": "utorkom",
-        "vjezbe_vrijeme": "10:00",
-        "vjezbe_trajanje": "1:30:00",
-        "id": 24
-    },
-    {
-        "program_id": 14,
         "name": "Informacijski sustav organizacije",
         "code": "ISO",
         "ects": 6,
+        "description": "",
         "professor": "dr. sc. Mile Pavlić",
         "assistant": [
             "izv. prof. dr. sc. Sanja Čandrlić"
@@ -476,7 +430,7 @@
         "semester": "3",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/14/DINP_ISO_2020_2021.csv",
+        "csv_file": "dinps/inf/14/csv/DINP_ISO_2020_2021.csv",
         "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/2_godina/DINP_ISO_2020_2021.pdf",
         "predavanja_dan": "petkom",
         "predavanja_vrijeme": "12:15",
@@ -491,6 +445,7 @@
         "name": "Diplomski rad",
         "code": "Završni",
         "ects": 24,
+        "description": "",
         "professor": "",
         "assistant": "",
         "semester": "4",
@@ -504,6 +459,7 @@
         "name": "Stručna praksa",
         "code": "StrucnaPraksa",
         "ects": 6,
+        "description": "",
         "professor": "dr. sc. Nataša Hoić-Božić",
         "assistant": [
             "dr. sc. Nataša Hoić-Božić"
@@ -511,7 +467,7 @@
         "semester": "4",
         "optional": 0,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/14/DINP_StrucnaPraksa_2019_2020.csv",
+        "csv_file": "dinps/inf/14/csv/DINP_StrucnaPraksa_2019_2020.csv",
         "id": 27
     },
     {
@@ -519,6 +475,7 @@
         "name": "Elektroničko gospodarstvo",
         "code": "EG",
         "ects": 6,
+        "description": "",
         "professor": "dr. sc. Dragan Čišić",
         "assistant": [
             "doc. dr. sc. Vanja Slavuj"
@@ -526,7 +483,7 @@
         "semester": "1",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/13/DINP_EG_2020_2021.csv",
+        "csv_file": "dinps/inf/13/csv/DINP_EG_2020_2021.csv",
         "id": 1
     },
     {
@@ -534,6 +491,7 @@
         "name": "Inteligentni sustavi 1",
         "code": "IS1",
         "ects": 6,
+        "description": "",
         "professor": "dr. sc. Marina Ivašić-Kos",
         "assistant": [
             "Kristina Host"
@@ -541,7 +499,7 @@
         "semester": "1",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/13/DINP_IS1_2020_2021.csv",
+        "csv_file": "dinps/inf/13/csv/DINP_IS1_2020_2021.csv",
         "id": 2
     },
     {
@@ -549,6 +507,7 @@
         "name": "Operacijska istraživanja 1",
         "code": "OPI1",
         "ects": 6,
+        "description": "",
         "professor": "doc. dr. sc. Martina Holenko Dlab",
         "assistant": [
             "doc. dr. sc. Martina Holenko Dlab"
@@ -556,7 +515,7 @@
         "semester": "1",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/13/DINP_OPI1_2020_2021.csv",
+        "csv_file": "dinps/inf/13/csv/DINP_OPI1_2020_2021.csv",
         "id": 3
     },
     {
@@ -564,6 +523,7 @@
         "name": "Programsko inženjerstvo",
         "code": "PI",
         "ects": 6,
+        "description": "",
         "professor": "izv. prof. dr. sc. Sanja Čandrlić",
         "assistant": [
             "doc. dr. sc. Martina Ašenbrener Katić"
@@ -571,7 +531,7 @@
         "semester": "1",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/13/DINP_PI_2020_2021.csv",
+        "csv_file": "dinps/inf/13/csv/DINP_PI_2020_2021.csv",
         "id": 4
     },
     {
@@ -579,6 +539,7 @@
         "name": "Distribuirani sustavi",
         "code": "DS",
         "ects": 6,
+        "description": "",
         "professor": "dr. sc. Božidar Kovačić",
         "assistant": [
             "v. pred. dr. sc. Vedran Miletić"
@@ -586,7 +547,7 @@
         "semester": "1",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/13/DINP_DS_2020_2021.csv",
+        "csv_file": "dinps/inf/13/csv/DINP_DS_2020_2021.csv",
         "id": 5
     },
     {
@@ -594,6 +555,7 @@
         "name": "Objektni programski jezici",
         "code": "OPJ",
         "ects": 6,
+        "description": "",
         "professor": "dr. sc. Marina Ivašić-Kos",
         "assistant": [
             "Ivona Franković"
@@ -601,7 +563,7 @@
         "semester": "1",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/13/DINP_OPJ_2020_2021.csv",
+        "csv_file": "dinps/inf/13/csv/DINP_OPJ_2020_2021.csv",
         "id": 6
     },
     {
@@ -609,6 +571,7 @@
         "name": "Osnove e-obrazovanja",
         "code": "OeO",
         "ects": 6,
+        "description": "",
         "professor": "dr. sc. Nataša Hoić-Božić",
         "assistant": [
             "dr. sc. Nataša Hoić-Božić"
@@ -616,7 +579,7 @@
         "semester": "1",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/13/DINP_OeO_2020_2021.csv",
+        "csv_file": "dinps/inf/13/csv/DINP_OeO_2020_2021.csv",
         "id": 7
     },
     {
@@ -624,6 +587,7 @@
         "name": "Ekonomika poslovanja",
         "code": "EP",
         "ects": 6,
+        "description": "",
         "professor": "dr. sc. Borna Debelić",
         "assistant": [
             "Gordana Bugarinović"
@@ -631,7 +595,7 @@
         "semester": "1",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/13/DINP_EP_2020_2021.csv",
+        "csv_file": "dinps/inf/13/csv/DINP_EP_2020_2021.csv",
         "id": 8
     },
     {
@@ -639,6 +603,7 @@
         "name": "Inteligentni sustavi 2",
         "code": "IS2",
         "ects": 6,
+        "description": "",
         "professor": "dr. sc. Maja Matetić",
         "assistant": [
             "mag. educ. math. et inf. Dejan Ljubobratović"
@@ -646,7 +611,7 @@
         "semester": "2",
         "optional": 0,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/13/DINP_IS2_2019_2020.csv",
+        "csv_file": "dinps/inf/13/csv/DINP_IS2_2019_2020.csv",
         "id": 9
     },
     {
@@ -654,6 +619,7 @@
         "name": "Strateško planiranje informacijskih sustava",
         "code": "SPIS",
         "ects": 6,
+        "description": "",
         "professor": "izv. prof. dr. sc. Sanja Čandrlić",
         "assistant": [
             "mag. inf. Kristian Stančin"
@@ -661,7 +627,7 @@
         "semester": "2",
         "optional": 0,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/13/DINP_SPIS_2019_2020.csv",
+        "csv_file": "dinps/inf/13/csv/DINP_SPIS_2019_2020.csv",
         "id": 10
     },
     {
@@ -669,6 +635,7 @@
         "name": "Multimedijski i hipermedijski sustavi",
         "code": "MHS",
         "ects": 6,
+        "description": "",
         "professor": "prof. dr. sc. Nataša Hoić-Božić",
         "assistant": [
             "doc. dr. sc. Vanja Slavuj"
@@ -676,7 +643,7 @@
         "semester": "2",
         "optional": 0,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/13/DINP_MHS_2019_2020.csv",
+        "csv_file": "dinps/inf/13/csv/DINP_MHS_2019_2020.csv",
         "id": 11
     },
     {
@@ -684,6 +651,7 @@
         "name": "Skladišta podataka",
         "code": "SP",
         "ects": 6,
+        "description": "",
         "professor": "prof. dr. sc. Patrizia Poščić",
         "assistant": [
             "doc. dr. sc. Danijela Jakšić"
@@ -691,7 +659,7 @@
         "semester": "2",
         "optional": 0,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/13/DINP_SP_2019_2020.csv",
+        "csv_file": "dinps/inf/13/csv/DINP_SP_2019_2020.csv",
         "id": 12
     },
     {
@@ -699,6 +667,7 @@
         "name": "Osnove digitalne obrade govora i slika",
         "code": "ODOGS",
         "ects": 6,
+        "description": "",
         "professor": "doc. dr. sc. Miran Pobar",
         "assistant": [
             "doc. dr. sc. Miran Pobar"
@@ -706,7 +675,7 @@
         "semester": "2",
         "optional": 1,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/13/DINP_ODOGS_2019_2020.csv",
+        "csv_file": "dinps/inf/13/csv/DINP_ODOGS_2019_2020.csv",
         "id": 13
     },
     {
@@ -714,6 +683,7 @@
         "name": "Sustavi za podršku odlučivanju",
         "code": "SPO",
         "ects": 6,
+        "description": "",
         "professor": "dr. sc. Sanda Martinčić-Ipšić",
         "assistant": [
             "Karlo Babić"
@@ -721,7 +691,7 @@
         "semester": "2",
         "optional": 1,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/13/DINP_SPO_2019_2020.csv",
+        "csv_file": "dinps/inf/13/csv/DINP_SPO_2019_2020.csv",
         "id": 14
     },
     {
@@ -729,6 +699,7 @@
         "name": "Operacijska istraživanja 2",
         "code": "OPI2",
         "ects": 6,
+        "description": "",
         "professor": "doc. dr. sc. Martina Holenko Dlab",
         "assistant": [
             "doc. dr. sc. Martina Holenko Dlab"
@@ -736,7 +707,7 @@
         "semester": "2",
         "optional": 1,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/13/DINP_OPI2_2019_2020.csv",
+        "csv_file": "dinps/inf/13/csv/DINP_OPI2_2019_2020.csv",
         "id": 15
     },
     {
@@ -744,6 +715,7 @@
         "name": "Logistika",
         "code": "LOG",
         "ects": 6,
+        "description": "",
         "professor": "dr. sc. Dragan Čišić",
         "assistant": [
             "dr. sc. Dragan Čišić"
@@ -751,7 +723,7 @@
         "semester": "2",
         "optional": 1,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/13/DINP_LOG_2019_2020.csv",
+        "csv_file": "dinps/inf/13/csv/DINP_LOG_2019_2020.csv",
         "id": 16
     },
     {
@@ -759,6 +731,7 @@
         "name": "Računalna analiza prirodnog jezika",
         "code": "RAPJ",
         "ects": 6,
+        "description": "",
         "professor": "dr. sc. Sanda Martinčić-Ipšić",
         "assistant": [
             "Karlo Babić"
@@ -766,52 +739,53 @@
         "semester": "2",
         "optional": 1,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/13/DINP_RAPJ_2019_2020.csv",
+        "csv_file": "dinps/inf/13/csv/DINP_RAPJ_2019_2020.csv",
         "id": 17
-    },
-    {
-        "program_id": 13,
-        "name": "Menadžment i upravljanje",
-        "code": "MIU",
-        "ects": 6,
-        "professor": "dr. sc. Patrizia Poščić",
-        "assistant": [
-            "mag. inf. Kristian Stančin"
-        ],
-        "semester": "3",
-        "optional": 0,
-        "academic_year": 2020,
-        "csv_file": "dinps/inf/13/DINP_MIU_2020_2021.csv",
-        "id": 18
-    },
-    {
-        "program_id": 13,
-        "name": "Upravljanje informatičkim projektima",
-        "code": "UIP",
-        "ects": 6,
-        "professor": "dr. sc. Sanda Martinčić-Ipšić",
-        "assistant": [
-            "Karlo Babić"
-        ],
-        "semester": "3",
-        "optional": 0,
-        "academic_year": 2020,
-        "csv_file": "dinps/inf/13/DINP_UIP_2020_2021.csv",
-        "id": 19
     },
     {
         "program_id": 13,
         "name": "Informacijska tehnologija i društvo",
         "code": "ITID",
         "ects": 6,
+        "description": "<h2>Obveze i vrednovanje studenata</h2>\n                    <ol>\n                        <li>Pohađanje nastave</li>\n                            <p>Predavanja i vježbe izvode se u hibridnom (klasičnom+online) obliku.\n                            Studenti  su  obavezni  redovito  koristiti  sustav  za  učenje  Merlin  (https://moodle.srce.hr/),  Merlin  stranicu kolegija te pratiti sve obavijesti i detaljni raspored nastave na kolegiju.</p>\n                        <li>Rasprave na forumu</li>\n                            <p>Tijekom  semestra  od studenata se  očekuje učestalo  praćenje te aktivno i  samostalno sudjelovanje u svim objavljenim raspravama na forumu na Merlinu (6 rasprava). Vrednovat će se način i kvaliteta obrade zadane teme  rasprave,  kao  i  broj  objavljivanja  (postova)  na  svaku  raspravu.  Na  taj  način  studenti  će  moći  skupiti najviše 20 bodova. Studenti moraju ostvariti najmanje 50% ukupnih bodova ove ocjenske aktivnosti (10 bodova od ukupno 20), kako bi ostvarili pravo izlaska na završni ispit.</p>\n                        <li>Startup prijava/nacrt</li>\n                            <p>Tijekom semestra studenti će u timu (nastavnik će tijekom nastave definirati broj članova tima) izraditi nacrt za prijavu  željenog  startup-a  (poslovni  plan  za  startup),  na  temelju  dobivenih  uputa,  nastavnih  materijala  i definiranih zadataka. Vrednovat će se način i kvaliteta izrade startup plana te njegovo izlaganje za svakog člana tima, prema definiranim kriterijima. Na taj način studenti će moći skupiti  najviše 30 bodova. Studenti moraju ostvariti najmanje 50% ukupnih bodova ove ocjenske aktivnosti (15 bodova od ukupno 30), kako bi ostvarili pravo izlaska na završni ispit.</p>\n                        <li>Završni ispit (seminarski rad)</li>\n                            <p>Završni ispit predstavlja izradu i obranu seminarskog rada.\n                            Svaki  student  samostalno  će  obraditi  jednu  odabranu  temu  iz  područja  kolegija  te  je  izložiti  kroz  poster prezentaciju.  Seminarski  rad  pisat  će  se  u  formi  znanstvenog  članka,  na  temelju  provedenog  pregleda literature ili anketnog istraživanja. Vrednovat će se način i kvaliteta obrade zadane teme te usvojeno znanje i razumijevanje teme i terminologije, prema definiranim kriterijima.\n                            Završni ispit nosi udio od najviše 50 ocjenskih bodova, a smatra se položenim samo ako na njemu student postigne minimalno 50%-ni uspjeh. Studenti moraju ostvariti najmanje 50% ukupnih bodova iz seminarskog\n                            rada (15 bodova od ukupno 30 za znanstveni članak i 10 bodova od ukupno 20 za poster prezentaciju, što u zbroju čini 25 bodova od ukupnih 50), kako bi ostvarili pravo na upis ocjene.\n                            </p>\n                    </ol>\n                    <h3>Ocjena iz kolegija Završni ispit</h3>\n                    <p>Kontinuiranim radom tijekom semestra na prethodno opisani način studenti mogu ostvariti najviše 50 ocjenskih bodova, a da bi mogli pristupiti završnom ispitu moraju ostvarili 50% i više bodova (najmanje 25 bodova) te zadovoljiti sve prethodno definirane bodovne pragove na nastavnim aktivnostima.\n                    Studenti koji su skupili najmanje 25 ocjenskih bodova te su postigli sve prethodno definirane bodovne pragove na nastavnim aktivnostima, mogu pristupiti završnom ispitu.</p>\n                    <p>Završni ispit nosi udio od najviše 50 ocjenskih bodova, a smatra se položenim samo ako na njemu student postigne minimalno 50%-ni uspjeh (ispitni prag je 50% uspješno izrađenog i obranjenog seminarskog rada).\n                    Ako je završni ispit prolazan, skupljeni bodovi će se pribrojati prethodnima i prema ukupnom rezultatu formirati će se pripadajuća ocjena. U suprotnom, student ima pravo pristupa završnom ispitu još 2 puta (ukupno do 3 puta).</p>\n\n                    <h3>Konačna ocjena</h3>\n                    <p>Donosi se na osnovu zbroja svih bodova prikupljenih tijekom izvođenja nastave prema sljedećoj skali: </p>\n                    <p>\n                        A – 90% - 100%                           (ekvivalent: izvrstan 5)\n                        B – 75% - 89,9%                          (ekvivalent: vrlo dobar 4)\n                        C – 60% - 74,9%                          (ekvivalent: dobar 3)\n                        D – 50% - 59,9%                          (ekvivalent: dovoljan 2)\n                        F –   0% - 49,9%                          (ekvivalent: nedovoljan 1)\n                        Ispričnice za izostanak s nastave\t\t\t\t\t\t\n                        Ispričnicu za opravdani izostanak s nastave potrebno je predati profesoru najkasnije 7 dana nakon izostanka. U suprotnom izostanak se neće opravdati.\t\t\t\t\t\t\n                    </p>\n\n                    <h3>Ispitni rokovi</h3>\n                    <p><b>Redoviti:</b>\n                    9.2.2022.\n                    23.2.2022.\n                    <p>\n                    <p><b>Izvanredni:</b>\n                    29.3.2022.\n                    7.9.2022.\n                    </p>",
         "professor": "dr. cs. Danijela Jakšić",
         "assistant": [
             "doc. dr. sc. Danijela Jakšić"
         ],
         "semester": "3",
         "optional": 0,
-        "academic_year": 2020,
-        "csv_file": "dinps/inf/13/DINP_ITID_2020_2021.csv",
+        "academic_year": 2021,
+        "csv_file": "dinps/inf/13/csv/DINP_ITID_2021_2022.csv",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/2_godina/DINP_ITID_2020_2021.pdf",
+        "predavanja_dan": "srijedom",
+        "predavanja_vrijeme": "10:00",
+        "predavanja_trajanje": "1:30:00",
+        "vjezbe_dan": "srijedom",
+        "vjezbe_vrijeme": "12:00",
+        "vjezbe_trajanje": "1:30:00",
+        "id": 20
+    },
+    {
+        "program_id": 14,
+        "name": "Informacijska tehnologija i društvo",
+        "code": "ITID",
+        "ects": 6,
+        "description": "<h2>Obveze i vrednovanje studenata</h2>\n                    <ol>\n                        <li>Pohađanje nastave</li>\n                            <p>Predavanja i vježbe izvode se u hibridnom (klasičnom+online) obliku.\n                            Studenti  su  obavezni  redovito  koristiti  sustav  za  učenje  Merlin  (https://moodle.srce.hr/),  Merlin  stranicu kolegija te pratiti sve obavijesti i detaljni raspored nastave na kolegiju.</p>\n                        <li>Rasprave na forumu</li>\n                            <p>Tijekom  semestra  od studenata se  očekuje učestalo  praćenje te aktivno i  samostalno sudjelovanje u svim objavljenim raspravama na forumu na Merlinu (6 rasprava). Vrednovat će se način i kvaliteta obrade zadane teme  rasprave,  kao  i  broj  objavljivanja  (postova)  na  svaku  raspravu.  Na  taj  način  studenti  će  moći  skupiti najviše 20 bodova. Studenti moraju ostvariti najmanje 50% ukupnih bodova ove ocjenske aktivnosti (10 bodova od ukupno 20), kako bi ostvarili pravo izlaska na završni ispit.</p>\n                        <li>Startup prijava/nacrt</li>\n                            <p>Tijekom semestra studenti će u timu (nastavnik će tijekom nastave definirati broj članova tima) izraditi nacrt za prijavu  željenog  startup-a  (poslovni  plan  za  startup),  na  temelju  dobivenih  uputa,  nastavnih  materijala  i definiranih zadataka. Vrednovat će se način i kvaliteta izrade startup plana te njegovo izlaganje za svakog člana tima, prema definiranim kriterijima. Na taj način studenti će moći skupiti  najviše 30 bodova. Studenti moraju ostvariti najmanje 50% ukupnih bodova ove ocjenske aktivnosti (15 bodova od ukupno 30), kako bi ostvarili pravo izlaska na završni ispit.</p>\n                        <li>Završni ispit (seminarski rad)</li>\n                            <p>Završni ispit predstavlja izradu i obranu seminarskog rada.\n                            Svaki  student  samostalno  će  obraditi  jednu  odabranu  temu  iz  područja  kolegija  te  je  izložiti  kroz  poster prezentaciju.  Seminarski  rad  pisat  će  se  u  formi  znanstvenog  članka,  na  temelju  provedenog  pregleda literature ili anketnog istraživanja. Vrednovat će se način i kvaliteta obrade zadane teme te usvojeno znanje i razumijevanje teme i terminologije, prema definiranim kriterijima.\n                            Završni ispit nosi udio od najviše 50 ocjenskih bodova, a smatra se položenim samo ako na njemu student postigne minimalno 50%-ni uspjeh. Studenti moraju ostvariti najmanje 50% ukupnih bodova iz seminarskog\n                            rada (15 bodova od ukupno 30 za znanstveni članak i 10 bodova od ukupno 20 za poster prezentaciju, što u zbroju čini 25 bodova od ukupnih 50), kako bi ostvarili pravo na upis ocjene.\n                            </p>\n                    </ol>\n                    <h3>Ocjena iz kolegija Završni ispit</h3>\n                    <p>Kontinuiranim radom tijekom semestra na prethodno opisani način studenti mogu ostvariti najviše 50 ocjenskih bodova, a da bi mogli pristupiti završnom ispitu moraju ostvarili 50% i više bodova (najmanje 25 bodova) te zadovoljiti sve prethodno definirane bodovne pragove na nastavnim aktivnostima.\n                    Studenti koji su skupili najmanje 25 ocjenskih bodova te su postigli sve prethodno definirane bodovne pragove na nastavnim aktivnostima, mogu pristupiti završnom ispitu.</p>\n                    <p>Završni ispit nosi udio od najviše 50 ocjenskih bodova, a smatra se položenim samo ako na njemu student postigne minimalno 50%-ni uspjeh (ispitni prag je 50% uspješno izrađenog i obranjenog seminarskog rada).\n                    Ako je završni ispit prolazan, skupljeni bodovi će se pribrojati prethodnima i prema ukupnom rezultatu formirati će se pripadajuća ocjena. U suprotnom, student ima pravo pristupa završnom ispitu još 2 puta (ukupno do 3 puta).</p>\n\n                    <h3>Konačna ocjena</h3>\n                    <p>Donosi se na osnovu zbroja svih bodova prikupljenih tijekom izvođenja nastave prema sljedećoj skali: </p>\n                    <p>\n                        A – 90% - 100%                           (ekvivalent: izvrstan 5)\n                        B – 75% - 89,9%                          (ekvivalent: vrlo dobar 4)\n                        C – 60% - 74,9%                          (ekvivalent: dobar 3)\n                        D – 50% - 59,9%                          (ekvivalent: dovoljan 2)\n                        F –   0% - 49,9%                          (ekvivalent: nedovoljan 1)\n                        Ispričnice za izostanak s nastave\t\t\t\t\t\t\n                        Ispričnicu za opravdani izostanak s nastave potrebno je predati profesoru najkasnije 7 dana nakon izostanka. U suprotnom izostanak se neće opravdati.\t\t\t\t\t\t\n                    </p>\n\n                    <h3>Ispitni rokovi</h3>\n                    <p><b>Redoviti:</b>\n                    9.2.2022.\n                    23.2.2022.\n                    <p>\n                    <p><b>Izvanredni:</b>\n                    29.3.2022.\n                    7.9.2022.\n                    </p>",
+        "professor": "dr. cs. Danijela Jakšić",
+        "assistant": [
+            "doc. dr. sc. Danijela Jakšić"
+        ],
+        "semester": "3",
+        "optional": 0,
+        "academic_year": 2021,
+        "csv_file": "dinps/inf/13/csv/DINP_ITID_2021_2022.csv",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/2_godina/DINP_ITID_2020_2021.pdf",
+        "predavanja_dan": "srijedom",
+        "predavanja_vrijeme": "10:00",
+        "predavanja_trajanje": "1:30:00",
+        "vjezbe_dan": "srijedom",
+        "vjezbe_vrijeme": "12:00",
+        "vjezbe_trajanje": "1:30:00",
         "id": 20
     },
     {
@@ -819,6 +793,7 @@
         "name": "Komunikacija čovjek stroj",
         "code": "KCS",
         "ects": 6,
+        "description": "",
         "professor": "dr. sc. Ivo Ipšić",
         "assistant": [
             "doc. dr. sc. Miran Pobar"
@@ -826,7 +801,7 @@
         "semester": "3",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/13/DINP_KCS_2020_2021.csv",
+        "csv_file": "dinps/inf/13/csv/DINP_KCS_2020_2021.csv",
         "id": 21
     },
     {
@@ -834,14 +809,45 @@
         "name": "Otkrivanje znanja u podacima",
         "code": "OZUP",
         "ects": 6,
+        "description": "<h2>Obveze i vrednovanje studenata</h2>\n<ol>\n<li>Aktivnost</li>\n    <p>\n        Nastava se odvija prema mješovitom modelu (kombinacija klasične nastave u učionici i online nastave uz pomoć  sustava  za  učenje  kako  je  naznačeno  u  tablici  rasporeda  nastave),  pri  čemu  su  studenti  dužni koristiti  sustav  za  učenje  Merlin  (https://moodle.srce.hr/).  Dodatno  se  koristi  sustav  Microsoft  Teams (Google Meet, Zoom) za sinkronu online nastavu i konzultacije.\n        Nastavnik vodi evidenciju aktivnosti na predavanju odnosno vježbama te je boduje sa ukupno najviše 5 bodova.  Predavanja  se  izvode  u  bloku  od  2  sata  prema  rasporedu  u  nastavku.  Vježbe  se  izvode  na računalima u bloku od 2 sata prema rasporedu u nastavku.\n    </p>\n<li>Praktični rad - vježbe</li>\n    <p>\n        Na vježbama studenti izvode dubinsku analizu podataka upoznajući i primjenjujući suvremene postupke strojnog učenja na zadanim skupovima podataka uz interpretaciju rezultata. Studenti pri tome koriste\n        standardne alate i programske jezike za dubinsku analizu podataka. Izrađene vježbe studenti predaju u okviru sustava Merlin te ih izlažu, a izrađena rješenja se boduju (0-30 bodova).\n    </p>\n<li>Seminarski rad</li>\n    <p>\n        Početkom  semestra studentima će biti ponuđene teme teorijskog seminarskog rada koji podrazumijeva istraživanje određene teme u okviru domene dubinske analize podataka. Rad na izradi seminarskog rada i prezentacija rada je individualan rad studenta. Vrednovati će se relevantnost sadržaja zadanoj temi uz originalnost  ideja  koje  je  student  prezentirao  u  seminaru.  Za  seminarski  rad  student  može  dobiti  0-35 bodova. Studenti za koje se utvrdi da su u seminarskom radu koristili veće dijelove doslovno kopiranog teksta dobit će 0 bodova.\n    </p>\n<li>Završni ispit: Istraživanje u okviru projekta i obrana projekta</li>\n    <p>\n        Tijekom semestra studentima će biti ponuđene teme za projektni zadatak. Obrana projekta predstavlja završni ispit. Kako se radi o izbornom kolegiju koji upisuje manji broj studenata, a kolegij studenta priprema i za kolegij Seminar diplomskog rada, rad u okviru kolegija je isključivo samostalan (individualan). Hodogram aktivnosti studenta:\n        a.    Priprema podataka za analizu, upoznavanje i odabir naprednih metoda za dubinsku analizu podataka u okviru vježbi i izvođenje eksperimenata primjenom metoda dubinske analize podataka na vježbama kao priprema za izradu projekta\n        b.    Prikaz rezultata, interpretacija rezultata\n        c.    Student predstavlja rezultate svog projekta na kraju semestra ili na ispitnom roku. Bar dva dana prije obrane potrebno je na Merlin predati projektnu dokumentaciju (kratki opis primijenjenih metoda, skupa podataka i izvedenih eksperimenata te diskusija i interpretacija rezultata).\n    </p>\n</ol>\n<h3>Ocjena iz kolegija Završni ispit</h3>\n<p>\nKontinuiranim radom tijekom semestra na prethodno opisani način studenti mogu ostvariti najviše 70 ocjenskih bodova, a da bi mogli pristupiti završnom ispitu moraju ostvarili 50% i više bodova (minimalno 35).\nStudenti koji su skupili najmanje 35 ocjenskih bodova, mogu pristupiti završnom ispitu.\n</p>\n<p>\nZavršni ispit nosi udio od maksimalno 30 ocjenskih bodova, a smatra se položenim samo ako na njemu student postigne minimalno 50%-ni uspjeh (ispitni prag je 50% bodova na temelju obrane projekta).\nUkoliko je završni ispit prolazan, skupljeni bodovi će se pribrojati prethodnima i prema ukupnom rezultatu formirati će se pripadajuća ocjena. U suprotnom, student ima pravo pristupa završnom ispitu još 2 puta (ukupno do 3 puta).\n</p>\n\n<h3>Konačna ocjena</h3>\n<p>Donosi se na osnovu zbroja svih bodova prikupljenih tijekom izvođenja nastave prema sljedećoj skali: </p>\n<p>\nA – 90% - 100%                           (ekvivalent: izvrstan 5)\nB – 75% - 89,9%                          (ekvivalent: vrlo dobar 4)\nC – 60% - 74,9%                          (ekvivalent: dobar 3)\nD – 50% - 59,9%                          (ekvivalent: dovoljan 2)\nF –  0% - 49,9%                          (ekvivalent: nedovoljan 1)\n</p>\n<h3>Ispitni rokovi</h3>\n<p><b>Redoviti:</b>\n11.02.2022.\n25.02.2022.\n<p>\n<p><b>Izvanredni:</b>\n11.03.2022.\n09.09.2022.\n</p>",
         "professor": "dr. sc. Maja Matetić",
         "assistant": [
             "mag. educ. math. et inf. Dejan Ljubobratović"
         ],
         "semester": "3",
         "optional": 1,
-        "academic_year": 2020,
-        "csv_file": "dinps/inf/13/DINP_OZUP_2020_2021.csv",
+        "academic_year": 2021,
+        "csv_file": "dinps/inf/14/csv/DINP_OZUP_2021_2022.csv",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/2_godina/DINP_OZUP_2020_2021.pdf",
+        "predavanja_dan": "petkom",
+        "predavanja_vrijeme": "08:15",
+        "predavanja_trajanje": "1:30:00",
+        "vjezbe_dan": "petkom",
+        "vjezbe_vrijeme": "10:00",
+        "vjezbe_trajanje": "1:30:00",
+        "id": 22
+    },
+    {
+        "program_id": 14,
+        "name": "Otkrivanje znanja u podacima",
+        "code": "OZUP",
+        "ects": 6,
+        "description": "<h2>Obveze i vrednovanje studenata</h2>\n<ol>\n<li>Aktivnost</li>\n    <p>\n        Nastava se odvija prema mješovitom modelu (kombinacija klasične nastave u učionici i online nastave uz pomoć  sustava  za  učenje  kako  je  naznačeno  u  tablici  rasporeda  nastave),  pri  čemu  su  studenti  dužni koristiti  sustav  za  učenje  Merlin  (https://moodle.srce.hr/).  Dodatno  se  koristi  sustav  Microsoft  Teams (Google Meet, Zoom) za sinkronu online nastavu i konzultacije.\n        Nastavnik vodi evidenciju aktivnosti na predavanju odnosno vježbama te je boduje sa ukupno najviše 5 bodova.  Predavanja  se  izvode  u  bloku  od  2  sata  prema  rasporedu  u  nastavku.  Vježbe  se  izvode  na računalima u bloku od 2 sata prema rasporedu u nastavku.\n    </p>\n<li>Praktični rad - vježbe</li>\n    <p>\n        Na vježbama studenti izvode dubinsku analizu podataka upoznajući i primjenjujući suvremene postupke strojnog učenja na zadanim skupovima podataka uz interpretaciju rezultata. Studenti pri tome koriste\n        standardne alate i programske jezike za dubinsku analizu podataka. Izrađene vježbe studenti predaju u okviru sustava Merlin te ih izlažu, a izrađena rješenja se boduju (0-30 bodova).\n    </p>\n<li>Seminarski rad</li>\n    <p>\n        Početkom  semestra studentima će biti ponuđene teme teorijskog seminarskog rada koji podrazumijeva istraživanje određene teme u okviru domene dubinske analize podataka. Rad na izradi seminarskog rada i prezentacija rada je individualan rad studenta. Vrednovati će se relevantnost sadržaja zadanoj temi uz originalnost  ideja  koje  je  student  prezentirao  u  seminaru.  Za  seminarski  rad  student  može  dobiti  0-35 bodova. Studenti za koje se utvrdi da su u seminarskom radu koristili veće dijelove doslovno kopiranog teksta dobit će 0 bodova.\n    </p>\n<li>Završni ispit: Istraživanje u okviru projekta i obrana projekta</li>\n    <p>\n        Tijekom semestra studentima će biti ponuđene teme za projektni zadatak. Obrana projekta predstavlja završni ispit. Kako se radi o izbornom kolegiju koji upisuje manji broj studenata, a kolegij studenta priprema i za kolegij Seminar diplomskog rada, rad u okviru kolegija je isključivo samostalan (individualan). Hodogram aktivnosti studenta:\n        a.    Priprema podataka za analizu, upoznavanje i odabir naprednih metoda za dubinsku analizu podataka u okviru vježbi i izvođenje eksperimenata primjenom metoda dubinske analize podataka na vježbama kao priprema za izradu projekta\n        b.    Prikaz rezultata, interpretacija rezultata\n        c.    Student predstavlja rezultate svog projekta na kraju semestra ili na ispitnom roku. Bar dva dana prije obrane potrebno je na Merlin predati projektnu dokumentaciju (kratki opis primijenjenih metoda, skupa podataka i izvedenih eksperimenata te diskusija i interpretacija rezultata).\n    </p>\n</ol>\n<h3>Ocjena iz kolegija Završni ispit</h3>\n<p>\nKontinuiranim radom tijekom semestra na prethodno opisani način studenti mogu ostvariti najviše 70 ocjenskih bodova, a da bi mogli pristupiti završnom ispitu moraju ostvarili 50% i više bodova (minimalno 35).\nStudenti koji su skupili najmanje 35 ocjenskih bodova, mogu pristupiti završnom ispitu.\n</p>\n<p>\nZavršni ispit nosi udio od maksimalno 30 ocjenskih bodova, a smatra se položenim samo ako na njemu student postigne minimalno 50%-ni uspjeh (ispitni prag je 50% bodova na temelju obrane projekta).\nUkoliko je završni ispit prolazan, skupljeni bodovi će se pribrojati prethodnima i prema ukupnom rezultatu formirati će se pripadajuća ocjena. U suprotnom, student ima pravo pristupa završnom ispitu još 2 puta (ukupno do 3 puta).\n</p>\n\n<h3>Konačna ocjena</h3>\n<p>Donosi se na osnovu zbroja svih bodova prikupljenih tijekom izvođenja nastave prema sljedećoj skali: </p>\n<p>\nA – 90% - 100%                           (ekvivalent: izvrstan 5)\nB – 75% - 89,9%                          (ekvivalent: vrlo dobar 4)\nC – 60% - 74,9%                          (ekvivalent: dobar 3)\nD – 50% - 59,9%                          (ekvivalent: dovoljan 2)\nF –  0% - 49,9%                          (ekvivalent: nedovoljan 1)\n</p>\n<h3>Ispitni rokovi</h3>\n<p><b>Redoviti:</b>\n11.02.2022.\n25.02.2022.\n<p>\n<p><b>Izvanredni:</b>\n11.03.2022.\n09.09.2022.\n</p>",
+        "professor": "dr. sc. Maja Matetić",
+        "assistant": [
+            "mag. educ. math. et inf. Dejan Ljubobratović"
+        ],
+        "semester": "3",
+        "optional": 1,
+        "academic_year": 2021,
+        "csv_file": "dinps/inf/14/csv/DINP_OZUP_2021_2022.csv",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/2_godina/DINP_OZUP_2020_2021.pdf",
+        "predavanja_dan": "petkom",
+        "predavanja_vrijeme": "08:15",
+        "predavanja_trajanje": "1:30:00",
+        "vjezbe_dan": "petkom",
+        "vjezbe_vrijeme": "10:00",
+        "vjezbe_trajanje": "1:30:00",
         "id": 22
     },
     {
@@ -849,6 +855,7 @@
         "name": "Upravljanje mrežnim sustavima",
         "code": "UMS",
         "ects": 6,
+        "description": "",
         "professor": "dr. sc. Vedran Miletić",
         "assistant": [
             "dr. sc. Vedran Miletić"
@@ -856,7 +863,7 @@
         "semester": "3",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/13/DINP_UMS_2020_2021.csv",
+        "csv_file": "dinps/inf/13/csv/DINP_UMS_2020_2021.csv",
         "id": 23
     },
     {
@@ -864,14 +871,45 @@
         "name": "Upravljanje znanjem",
         "code": "UPZ",
         "ects": 6,
+        "description": "<h2>Obveze i vrednovanje studenata</h2>\n<ol>\n<li>Pohađanje nastave</li>\n    <p>\n        Predavanja se izvode u bloku od 2 sata prema rasporedu u nastavku. Vježbe se izvode na računalima u bloku od 2 sata prema rasporedu u nastavku. Dio nastave izvodit će se online.\n        Studenti su dužni koristiti sustav za učenje Merlin (https://moodle.srce.hr/).\n    </p>\n<li>Zadaća</li>\n    <p>\n        Studenti dobivaju 2 jednostavnija zadatka koji uključuju ponavljanje gradiva s vježbi i pripremu za novo gradivo. Zadaci nose svaki po 5 bodova.\n        Aktivnost nema praga prolaska.\n    </p>\n<li>Seminarski rad</li>\n    <p>\n        Seminarski rad podrazumijeva  istraživanje  određene  teme u okviru  domene  upravljanja  znanjem  te izrada seminarskog rada na tu temu. Seminar se piše kao domaća zadaća te se predaje (uploada) u sustav za učenje i prezentira nastavniku te ostalim studentima na satu. Kriterij vrednovanja će studenti dobiti uz upute za izradu seminara. Vrednovati će se relevantnost sadržaja zadanoj temi uz originalnost ideja koje je student prezentirao u seminaru. Najveći broj bodova za seminarski rad je 10 bodova. Studenti za koje se utvrdi da su u radu koristili veće dijelove doslovno kopiranog teksta dobit će 0 bodova.\n        Aktivnost nema praga prolaska.\n    </p>\n<li>Kontinuirana provjera znanja (predavanja - teorijski dio)</li>\n    <p>\n        Tijekom  semestra  pišu se  dva  kolokvija  iz teorije.  Prvi kolokvij  iz teorije  (10 bodova) je provjera teorijskog znanja  iz  područja  upravljanja  znanjem  i  obuhvaća  uvod  u  upravljanje  znanjem,  tehnologije  upravljanja znanjem i tehnologije prikupljanja, analize podataka i ekstrakcije znanja iz podataka. Drugi kolokvij iz teorije (10 bodova) obuhvaća znanje iz područja analize društvenih mreža.\n        Aktivnost nema praga prolaska.\n    </p>\n<li>Projektni zadaci</li>\n    <p>\n        Tijekom semestra studenti će dobiti 2 projektna zadatka za samostalno rješavanje i/ili rješavanje u projektnim timovima. Projektni zadaci nose svaki po 15 bodova.\n        Aktivnost nema praga prolaska.\n    </p>\n<li>Završni ispit</li>\n    <p>\n        Završni ispit sastoji se od praktičnog dijela (20 bodova) i testa iz teorije (10 bodova). Aktivnost ima prag od 50% iz oba dijela.\n    </p>\n</ol>\n<h3>Ocjena iz kolegija Završni ispit</h3>\n<p>\nKontinuiranim radom tijekom semestra na prethodno opisani način studenti mogu ostvariti najviše 70 ocjenskih bodova, a da bi mogli pristupiti završnom ispitu moraju ostvarili 50% i više bodova (minimalno 35).\nStudenti koji su skupili najmanje 35 ocjenskih bodova, mogu pristupiti završnom ispitu.\n</p>\nZavršni ispit nosi udio od maksimalno 30 ocjenskih bodova, a smatra se položenim samo ako na njemu student postigne minimalno 50%-ni uspjeh (ispitni prag je 50% uspješno riješenih zadataka).\nUkoliko je završni ispit prolazan, skupljeni bodovi će se pribrojati prethodnima i prema ukupnom rezultatu formirati će se pripadajuća ocjena. U suprotnom, student ima pravo pristupa završnom ispitu još 2 puta (ukupno do 3 puta).\n</p>\n\n<h3>Konačna ocjena</h3>\n<p>Donosi se na osnovu zbroja svih bodova prikupljenih tijekom izvođenja nastave prema sljedećoj skali: </p>\n<p>\nA – 90% - 100%                           (ekvivalent: izvrstan 5)\nB – 75% - 89,9%                          (ekvivalent: vrlo dobar 4)\nC – 60% - 74,9%                          (ekvivalent: dobar 3)\nD – 50% - 59,9%                          (ekvivalent: dovoljan 2)\nF –  0% - 49,9%                          (ekvivalent: nedovoljan 1)\n</p>\n<h3>Ispitni rokovi</h3>\n<p><b>Redoviti:</b>\n9.2.2022.\n23.2.2022.\n<p>\n<p><b>Izvanredni:</b>\n9.3.2022.\n7.9.2022.\n</p>",
         "professor": "dr. sc. Ana Meštrović",
         "assistant": [
             "dr. sc. Slobodan Beliga"
         ],
         "semester": "3",
-        "optional": 1,
-        "academic_year": 2020,
-        "csv_file": "dinps/inf/13/DINP_UPZ_2020_2021.csv",
+        "optional": 0,
+        "academic_year": 2021,
+        "csv_file": "dinps/inf/14/csv/DINP_UPZ_2021_2022.csv",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/2_godina/DINP_UPZ_2020_2021.pdf",
+        "predavanja_dan": "utorkom",
+        "predavanja_vrijeme": "08:15",
+        "predavanja_trajanje": "1:30:00",
+        "vjezbe_dan": "utorkom",
+        "vjezbe_vrijeme": "10:00",
+        "vjezbe_trajanje": "1:30:00",
+        "id": 24
+    },
+    {
+        "program_id": 14,
+        "name": "Upravljanje znanjem",
+        "code": "UPZ",
+        "ects": 6,
+        "description": "<h2>Obveze i vrednovanje studenata</h2>\n<ol>\n<li>Pohađanje nastave</li>\n    <p>\n        Predavanja se izvode u bloku od 2 sata prema rasporedu u nastavku. Vježbe se izvode na računalima u bloku od 2 sata prema rasporedu u nastavku. Dio nastave izvodit će se online.\n        Studenti su dužni koristiti sustav za učenje Merlin (https://moodle.srce.hr/).\n    </p>\n<li>Zadaća</li>\n    <p>\n        Studenti dobivaju 2 jednostavnija zadatka koji uključuju ponavljanje gradiva s vježbi i pripremu za novo gradivo. Zadaci nose svaki po 5 bodova.\n        Aktivnost nema praga prolaska.\n    </p>\n<li>Seminarski rad</li>\n    <p>\n        Seminarski rad podrazumijeva  istraživanje  određene  teme u okviru  domene  upravljanja  znanjem  te izrada seminarskog rada na tu temu. Seminar se piše kao domaća zadaća te se predaje (uploada) u sustav za učenje i prezentira nastavniku te ostalim studentima na satu. Kriterij vrednovanja će studenti dobiti uz upute za izradu seminara. Vrednovati će se relevantnost sadržaja zadanoj temi uz originalnost ideja koje je student prezentirao u seminaru. Najveći broj bodova za seminarski rad je 10 bodova. Studenti za koje se utvrdi da su u radu koristili veće dijelove doslovno kopiranog teksta dobit će 0 bodova.\n        Aktivnost nema praga prolaska.\n    </p>\n<li>Kontinuirana provjera znanja (predavanja - teorijski dio)</li>\n    <p>\n        Tijekom  semestra  pišu se  dva  kolokvija  iz teorije.  Prvi kolokvij  iz teorije  (10 bodova) je provjera teorijskog znanja  iz  područja  upravljanja  znanjem  i  obuhvaća  uvod  u  upravljanje  znanjem,  tehnologije  upravljanja znanjem i tehnologije prikupljanja, analize podataka i ekstrakcije znanja iz podataka. Drugi kolokvij iz teorije (10 bodova) obuhvaća znanje iz područja analize društvenih mreža.\n        Aktivnost nema praga prolaska.\n    </p>\n<li>Projektni zadaci</li>\n    <p>\n        Tijekom semestra studenti će dobiti 2 projektna zadatka za samostalno rješavanje i/ili rješavanje u projektnim timovima. Projektni zadaci nose svaki po 15 bodova.\n        Aktivnost nema praga prolaska.\n    </p>\n<li>Završni ispit</li>\n    <p>\n        Završni ispit sastoji se od praktičnog dijela (20 bodova) i testa iz teorije (10 bodova). Aktivnost ima prag od 50% iz oba dijela.\n    </p>\n</ol>\n<h3>Ocjena iz kolegija Završni ispit</h3>\n<p>\nKontinuiranim radom tijekom semestra na prethodno opisani način studenti mogu ostvariti najviše 70 ocjenskih bodova, a da bi mogli pristupiti završnom ispitu moraju ostvarili 50% i više bodova (minimalno 35).\nStudenti koji su skupili najmanje 35 ocjenskih bodova, mogu pristupiti završnom ispitu.\n</p>\nZavršni ispit nosi udio od maksimalno 30 ocjenskih bodova, a smatra se položenim samo ako na njemu student postigne minimalno 50%-ni uspjeh (ispitni prag je 50% uspješno riješenih zadataka).\nUkoliko je završni ispit prolazan, skupljeni bodovi će se pribrojati prethodnima i prema ukupnom rezultatu formirati će se pripadajuća ocjena. U suprotnom, student ima pravo pristupa završnom ispitu još 2 puta (ukupno do 3 puta).\n</p>\n\n<h3>Konačna ocjena</h3>\n<p>Donosi se na osnovu zbroja svih bodova prikupljenih tijekom izvođenja nastave prema sljedećoj skali: </p>\n<p>\nA – 90% - 100%                           (ekvivalent: izvrstan 5)\nB – 75% - 89,9%                          (ekvivalent: vrlo dobar 4)\nC – 60% - 74,9%                          (ekvivalent: dobar 3)\nD – 50% - 59,9%                          (ekvivalent: dovoljan 2)\nF –  0% - 49,9%                          (ekvivalent: nedovoljan 1)\n</p>\n<h3>Ispitni rokovi</h3>\n<p><b>Redoviti:</b>\n9.2.2022.\n23.2.2022.\n<p>\n<p><b>Izvanredni:</b>\n9.3.2022.\n7.9.2022.\n</p>",
+        "professor": "dr. sc. Ana Meštrović",
+        "assistant": [
+            "dr. sc. Slobodan Beliga"
+        ],
+        "semester": "3",
+        "optional": 0,
+        "academic_year": 2021,
+        "csv_file": "dinps/inf/14/csv/DINP_UPZ_2021_2022.csv",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/2_godina/DINP_UPZ_2020_2021.pdf",
+        "predavanja_dan": "utorkom",
+        "predavanja_vrijeme": "08:15",
+        "predavanja_trajanje": "1:30:00",
+        "vjezbe_dan": "utorkom",
+        "vjezbe_vrijeme": "10:00",
+        "vjezbe_trajanje": "1:30:00",
         "id": 24
     },
     {
@@ -879,6 +917,7 @@
         "name": "Informacijski sustav organizacije",
         "code": "ISO",
         "ects": 6,
+        "description": "",
         "professor": "dr. sc. Mile Pavlić",
         "assistant": [
             "izv. prof. dr. sc. Sanja Čandrlić"
@@ -886,7 +925,7 @@
         "semester": "3",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/13/DINP_ISO_2020_2021.csv",
+        "csv_file": "dinps/inf/13/csv/DINP_ISO_2020_2021.csv",
         "id": 25
     },
     {
@@ -894,6 +933,7 @@
         "name": "Diplomski rad",
         "code": "Završni",
         "ects": 24,
+        "description": "",
         "professor": "",
         "assistant": "",
         "semester": "4",
@@ -907,6 +947,7 @@
         "name": "Stručna praksa",
         "code": "StrucnaPraksa",
         "ects": 6,
+        "description": "",
         "professor": "dr. sc. Nataša Hoić-Božić",
         "assistant": [
             "dr. sc. Nataša Hoić-Božić"
@@ -914,7 +955,7 @@
         "semester": "4",
         "optional": 0,
         "academic_year": 2019,
-        "csv_file": "dinps/inf/13/DINP_StrucnaPraksa_2019_2020.csv",
+        "csv_file": "dinps/inf/13/csv/DINP_StrucnaPraksa_2019_2020.csv",
         "id": 27
     },
     {
@@ -922,6 +963,7 @@
         "name": "Edukacijska psihologija 1",
         "code": "EP1",
         "ects": 5,
+        "description": "",
         "professor": "dr. sc. Rosanda Pahljina-Reinić",
         "assistant": [
             "Martina Bažon "
@@ -929,7 +971,7 @@
         "semester": "1",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/15/Edukacijska_psihologija_1_20_21.csv",
+        "csv_file": "dinps/inf/15/csv/Edukacijska_psihologija_1_20_21.csv",
         "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/NM/Edukacijska_psihologija_1_20_21.pdf",
         "predavanja_dan": "četvrtkom",
         "predavanja_vrijeme": "14:30",
@@ -944,6 +986,7 @@
         "name": "Inteligentni sustavi 1",
         "code": "IS1",
         "ects": 5,
+        "description": "",
         "professor": "dr. sc. Marina Ivašić-Kos",
         "assistant": [
             "Kristina Host"
@@ -951,7 +994,7 @@
         "semester": "1",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/15/IS1_DINP_2020_2021_.csv",
+        "csv_file": "dinps/inf/15/csv/IS1_DINP_2020_2021_.csv",
         "id": 2
     },
     {
@@ -959,6 +1002,7 @@
         "name": "Operacijska istraživanja 1",
         "code": "OPI1",
         "ects": 5,
+        "description": "",
         "professor": "doc. dr. sc. Martina Holenko Dlab",
         "assistant": [
             "doc. dr. sc. Martina Holenko Dlab"
@@ -966,7 +1010,7 @@
         "semester": "1",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/15/DINP_OPI1_2020_2021.csv",
+        "csv_file": "dinps/inf/15/csv/DINP_OPI1_2020_2021.csv",
         "id": 3
     },
     {
@@ -974,6 +1018,7 @@
         "name": "Opća pedagogija",
         "code": "OPED",
         "ects": 5,
+        "description": "",
         "professor": "dr. sc. Sofija Vrcelj",
         "assistant": [
             "Ines Begić"
@@ -981,7 +1026,7 @@
         "semester": "1",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/15/Opca_pedagogija__20_21.csv",
+        "csv_file": "dinps/inf/15/csv/Opca_pedagogija__20_21.csv",
         "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/NM/Opca_pedagogija__20_21.pdf",
         "predavanja_dan": "utorkom",
         "predavanja_vrijeme": "12:40",
@@ -996,6 +1041,7 @@
         "name": "Primjena hipermedije u obrazovanju 1",
         "code": "HMS1",
         "ects": 5,
+        "description": "",
         "professor": "dr. sc. Nataša Hoić-Božić",
         "assistant": [
             "dr. sc. Nataša Hoić-Božić"
@@ -1003,7 +1049,7 @@
         "semester": "1",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/15/DINP_HMS1_2020_2021.csv",
+        "csv_file": "dinps/inf/15/csv/DINP_HMS1_2020_2021.csv",
         "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/NM/DINP_HMS1_2020_2021.pdf",
         "predavanja_dan": "ponedjeljkom",
         "predavanja_vrijeme": "08:30",
@@ -1018,6 +1064,7 @@
         "name": "Razvojna psihologija",
         "code": "RP",
         "ects": 5,
+        "description": "",
         "professor": "dr. sc. Sanja Smojver-Ažić",
         "assistant": [
             "dr.sc. Sanja Bradić, vanjski suradnik"
@@ -1025,7 +1072,7 @@
         "semester": "1",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/15/Razvojna_psihologija_20_21.csv",
+        "csv_file": "dinps/inf/15/csv/Razvojna_psihologija_20_21.csv",
         "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/NM/Razvojna_psihologija_20_21.pdf",
         "predavanja_dan": "ponedjeljkom",
         "predavanja_vrijeme": "14:15",
@@ -1040,6 +1087,7 @@
         "name": "Didaktika 2",
         "code": "DID2",
         "ects": 4,
+        "description": "",
         "professor": "dr. sc. Vesna Kovač",
         "assistant": [
             "Petra Berlot"
@@ -1047,7 +1095,7 @@
         "semester": "3",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/15/Didaktika_2_20_21.csv",
+        "csv_file": "dinps/inf/15/csv/Didaktika_2_20_21.csv",
         "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/NM/Didaktika_2_20_21.pdf",
         "predavanja_dan": "ponedjeljkom",
         "predavanja_vrijeme": "14:15",
@@ -1062,6 +1110,7 @@
         "name": "Komunikacija čovjek stroj",
         "code": "KCS",
         "ects": 6,
+        "description": "",
         "professor": "dr. sc. Ivo Ipšić",
         "assistant": [
             "doc. dr. sc. Miran Pobar"
@@ -1069,7 +1118,7 @@
         "semester": "3",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/15/DINP_KCS_2020_2021.csv",
+        "csv_file": "dinps/inf/15/csv/DINP_KCS_2020_2021.csv",
         "id": 21
     },
     {
@@ -1077,6 +1126,7 @@
         "name": "Metodika nastave informatike 1",
         "code": "MNI1",
         "ects": 4,
+        "description": "",
         "professor": "dr. sc. Nataša Hoić-Božić",
         "assistant": [
             "doc. dr. sc. Martina Holenko Dlab"
@@ -1084,7 +1134,7 @@
         "semester": "3",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/15/DINP_MNI1_2020_2021.csv",
+        "csv_file": "dinps/inf/15/csv/DINP_MNI1_2020_2021.csv",
         "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/NM/DINP_MNI1_2020_2021.pdf",
         "predavanja_dan": "ponedjeljkom",
         "predavanja_vrijeme": "10:15",
@@ -1099,6 +1149,7 @@
         "name": "Osnove jezične kulture",
         "code": "OJK",
         "ects": 3,
+        "description": "",
         "professor": "dr. sc. Borana Morić-Mohorovičić",
         "assistant": [
             "doc. dr. sc. Borana Morić-Mohorovičić"
@@ -1106,7 +1157,7 @@
         "semester": "3",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/15/21.csv",
+        "csv_file": "dinps/inf/15/csv/21.csv",
         "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/NM/OJK_20-21.pdf",
         "predavanja_dan": "petkom",
         "predavanja_vrijeme": "10:15",
@@ -1121,6 +1172,7 @@
         "name": "Distribuirani sustavi",
         "code": "DS",
         "ects": 5,
+        "description": "",
         "professor": "dr. sc. Božidar Kovačić",
         "assistant": [
             "v. pred. dr. sc. Vedran Miletić"
@@ -1128,7 +1180,7 @@
         "semester": "3",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/15/DINP_DS_2020_2021.csv",
+        "csv_file": "dinps/inf/15/csv/DINP_DS_2020_2021.csv",
         "id": 5
     },
     {
@@ -1136,6 +1188,7 @@
         "name": "Elektroničko gospodarstvo",
         "code": "EG",
         "ects": 5,
+        "description": "",
         "professor": "dr. sc. Dragan Čišić",
         "assistant": [
             "doc. dr. sc. Vanja Slavuj"
@@ -1143,22 +1196,76 @@
         "semester": "3",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/15/DINP_EG_2020_2021.csv",
+        "csv_file": "dinps/inf/15/csv/DINP_EG_2020_2021.csv",
         "id": 1
+    },
+    {
+        "program_id": 13,
+        "name": "Upravljanje informatičkim projektima",
+        "code": "UIP",
+        "ects": 6,
+        "professor": "dr. sc. Sanda Martinčić-Ipšić",
+        "assistant": [
+            "Kristijan Stančin"
+        ],
+        "semester": "3",
+        "optional": 1,
+        "description": "<h2>Obveze i vrednovanje studenata</h2>\n<ol>\n<li>Prisutnost na nastavi</li>\n    <p>\n        Pohađanje nastave je obavezno, i vodi se evidencija pohađanja za svakoga studenta. Predavanja i vježbe se izvode u blokovima od 2 sata prema tablici u nastavku. Osim prisustvovanja klasičnoj nastavi na    predavanjima    i    vježbama    studenti    su    dužni    koristiti    sustav    za    učenje    Merlin (https://moodle.srce.hr/).\n    </p>\n<li>Samostalne vježbe na računalu</li>\n    <p>\n        Tijekom semestra studenti će izrađivati samostalne zadatke vezane uz sadržaj vježbi, na kojima je moguće prikupiti do 20 bodova. Za navedene zadatke nema praga prolaznosti.\n    </p>\n<li>Samostalni zadaci</li>\n    <p>\n        Tijekom  semestra  studenti  će  izrađivati  projektni  elaborat  i  plan  (projektni  seminarski  rad)  te  ga prezentirati  prema  rokovima  u  kalendaru  izvođenja.  Također  studenti  će  recenzirati  dodijeljen seminarski rad. Seminarskim radom moguće je sakupiti do 30, prezentacijom do 10, a recenzijom do 10 bodova. Za navedenu aktivnost nema praga prolaznosti.\n    </p>\n<li>Završni ispit</li>\n    <p>\n        Kontinuiranim radom tijekom semestra na prethodno opisani način studenti mogu ostvariti najviše 70 ocjenskih  bodova,  a  da  bi  mogli  pristupiti  završnom  ispitu  moraju  ostvarili  50%  i  više  bodova (minimalno 35).\n        Studenti koji su skupili najmanje 35 ocjenskih bodova, mogu pristupiti završnom ispitu.\n    </p>\n    <p>\n        Završni ispit nosi udio od maksimalno 30 ocjenskih bodova, a smatra se položenim samo ako na njemu student postigne minimalno 50%-ni uspjeh (ispitni prag je 50% uspješno riješenih zadataka).\n        Ako je završni ispit prolazan, skupljeni bodovi pribrojat će se prethodnima i prema ukupnom rezultatu formirati  pripadajuća  ocjena. U  suprotnom,  student ima pravo  pristupa  završnom  ispitu još  2  puta (ukupno do 3 puta).\n    </p>\n</ol>\n\n<h3>Konačna ocjena</h3>\n<p>Donosi se na osnovu zbroja svih bodova prikupljenih tijekom izvođenja nastave prema sljedećoj skali: </p>\n<p>\nA – 90% - 100%                           (ekvivalent: izvrstan 5)\nB – 75% - 89,9%                          (ekvivalent: vrlo dobar 4)\nC – 60% - 74,9%                          (ekvivalent: dobar 3)\nD – 50% - 59,9%                          (ekvivalent: dovoljan 2)\nF –  0% - 49,9%                          (ekvivalent: nedovoljan 1)\n</p>\n<h3>Ispitni rokovi</h3>\n<p><b>Redoviti:</b>\n8.2.2022. u 10:00\n22.2.2022. u 10:00\n<p>\n<p><b>Izvanredni:</b>\n8.3.2022. u 10:00\n13.9.2022. u 10:00\n</p>",
+        "academic_year": 2021,
+        "csv_file": "dinps/inf/14/csv/DINP_UIP_2021_2022.csv",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/2_godina/DINP_UIP_2020_2021.pdf",
+        "predavanja_dan": "utorkom",
+        "predavanja_vrijeme": "14:00",
+        "predavanja_trajanje": "1:30:00",
+        "vjezbe_dan": "utorkom",
+        "vjezbe_vrijeme": "16:00",
+        "vjezbe_trajanje": "1:30:00",
+        "id": 19
+    },
+    {
+        "program_id": 14,
+        "name": "Upravljanje informatičkim projektima",
+        "code": "UIP",
+        "ects": 6,
+        "professor": "dr. sc. Sanda Martinčić-Ipšić",
+        "assistant": [
+            "Kristijan Stančin"
+        ],
+        "semester": "3",
+        "optional": 1,
+        "description": "<h2>Obveze i vrednovanje studenata</h2>\n<ol>\n<li>Prisutnost na nastavi</li>\n    <p>\n        Pohađanje nastave je obavezno, i vodi se evidencija pohađanja za svakoga studenta. Predavanja i vježbe se izvode u blokovima od 2 sata prema tablici u nastavku. Osim prisustvovanja klasičnoj nastavi na    predavanjima    i    vježbama    studenti    su    dužni    koristiti    sustav    za    učenje    Merlin (https://moodle.srce.hr/).\n    </p>\n<li>Samostalne vježbe na računalu</li>\n    <p>\n        Tijekom semestra studenti će izrađivati samostalne zadatke vezane uz sadržaj vježbi, na kojima je moguće prikupiti do 20 bodova. Za navedene zadatke nema praga prolaznosti.\n    </p>\n<li>Samostalni zadaci</li>\n    <p>\n        Tijekom  semestra  studenti  će  izrađivati  projektni  elaborat  i  plan  (projektni  seminarski  rad)  te  ga prezentirati  prema  rokovima  u  kalendaru  izvođenja.  Također  studenti  će  recenzirati  dodijeljen seminarski rad. Seminarskim radom moguće je sakupiti do 30, prezentacijom do 10, a recenzijom do 10 bodova. Za navedenu aktivnost nema praga prolaznosti.\n    </p>\n<li>Završni ispit</li>\n    <p>\n        Kontinuiranim radom tijekom semestra na prethodno opisani način studenti mogu ostvariti najviše 70 ocjenskih  bodova,  a  da  bi  mogli  pristupiti  završnom  ispitu  moraju  ostvarili  50%  i  više  bodova (minimalno 35).\n        Studenti koji su skupili najmanje 35 ocjenskih bodova, mogu pristupiti završnom ispitu.\n    </p>\n    <p>\n        Završni ispit nosi udio od maksimalno 30 ocjenskih bodova, a smatra se položenim samo ako na njemu student postigne minimalno 50%-ni uspjeh (ispitni prag je 50% uspješno riješenih zadataka).\n        Ako je završni ispit prolazan, skupljeni bodovi pribrojat će se prethodnima i prema ukupnom rezultatu formirati  pripadajuća  ocjena. U  suprotnom,  student ima pravo  pristupa  završnom  ispitu još  2  puta (ukupno do 3 puta).\n    </p>\n</ol>\n\n<h3>Konačna ocjena</h3>\n<p>Donosi se na osnovu zbroja svih bodova prikupljenih tijekom izvođenja nastave prema sljedećoj skali: </p>\n<p>\nA – 90% - 100%                           (ekvivalent: izvrstan 5)\nB – 75% - 89,9%                          (ekvivalent: vrlo dobar 4)\nC – 60% - 74,9%                          (ekvivalent: dobar 3)\nD – 50% - 59,9%                          (ekvivalent: dovoljan 2)\nF –  0% - 49,9%                          (ekvivalent: nedovoljan 1)\n</p>\n<h3>Ispitni rokovi</h3>\n<p><b>Redoviti:</b>\n8.2.2022. u 10:00\n22.2.2022. u 10:00\n<p>\n<p><b>Izvanredni:</b>\n8.3.2022. u 10:00\n13.9.2022. u 10:00\n</p>",
+        "academic_year": 2021,
+        "csv_file": "dinps/inf/14/csv/DINP_UIP_2021_2022.csv",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/2_godina/DINP_UIP_2020_2021.pdf",
+        "predavanja_dan": "utorkom",
+        "predavanja_vrijeme": "14:00",
+        "predavanja_trajanje": "1:30:00",
+        "vjezbe_dan": "utorkom",
+        "vjezbe_vrijeme": "16:00",
+        "vjezbe_trajanje": "1:30:00",
+        "id": 19
     },
     {
         "program_id": 15,
         "name": "Upravljanje informatičkim projektima",
         "code": "UIP",
-        "ects": 5,
+        "ects": 6,
         "professor": "dr. sc. Sanda Martinčić-Ipšić",
         "assistant": [
-            "Karlo Babić"
+            "Kristijan Stančin"
         ],
         "semester": "3",
         "optional": 1,
-        "academic_year": 2020,
-        "csv_file": "dinps/inf/15/DINP_UIP_2020_2021.csv",
+        "description": "<h2>Obveze i vrednovanje studenata</h2>\n<ol>\n<li>Prisutnost na nastavi</li>\n    <p>\n        Pohađanje nastave je obavezno, i vodi se evidencija pohađanja za svakoga studenta. Predavanja i vježbe se izvode u blokovima od 2 sata prema tablici u nastavku. Osim prisustvovanja klasičnoj nastavi na    predavanjima    i    vježbama    studenti    su    dužni    koristiti    sustav    za    učenje    Merlin (https://moodle.srce.hr/).\n    </p>\n<li>Samostalne vježbe na računalu</li>\n    <p>\n        Tijekom semestra studenti će izrađivati samostalne zadatke vezane uz sadržaj vježbi, na kojima je moguće prikupiti do 20 bodova. Za navedene zadatke nema praga prolaznosti.\n    </p>\n<li>Samostalni zadaci</li>\n    <p>\n        Tijekom  semestra  studenti  će  izrađivati  projektni  elaborat  i  plan  (projektni  seminarski  rad)  te  ga prezentirati  prema  rokovima  u  kalendaru  izvođenja.  Također  studenti  će  recenzirati  dodijeljen seminarski rad. Seminarskim radom moguće je sakupiti do 30, prezentacijom do 10, a recenzijom do 10 bodova. Za navedenu aktivnost nema praga prolaznosti.\n    </p>\n<li>Završni ispit</li>\n    <p>\n        Kontinuiranim radom tijekom semestra na prethodno opisani način studenti mogu ostvariti najviše 70 ocjenskih  bodova,  a  da  bi  mogli  pristupiti  završnom  ispitu  moraju  ostvarili  50%  i  više  bodova (minimalno 35).\n        Studenti koji su skupili najmanje 35 ocjenskih bodova, mogu pristupiti završnom ispitu.\n    </p>\n    <p>\n        Završni ispit nosi udio od maksimalno 30 ocjenskih bodova, a smatra se položenim samo ako na njemu student postigne minimalno 50%-ni uspjeh (ispitni prag je 50% uspješno riješenih zadataka).\n        Ako je završni ispit prolazan, skupljeni bodovi pribrojat će se prethodnima i prema ukupnom rezultatu formirati  pripadajuća  ocjena. U  suprotnom,  student ima pravo  pristupa  završnom  ispitu još  2  puta (ukupno do 3 puta).\n    </p>\n</ol>\n\n<h3>Konačna ocjena</h3>\n<p>Donosi se na osnovu zbroja svih bodova prikupljenih tijekom izvođenja nastave prema sljedećoj skali: </p>\n<p>\nA – 90% - 100%                           (ekvivalent: izvrstan 5)\nB – 75% - 89,9%                          (ekvivalent: vrlo dobar 4)\nC – 60% - 74,9%                          (ekvivalent: dobar 3)\nD – 50% - 59,9%                          (ekvivalent: dovoljan 2)\nF –  0% - 49,9%                          (ekvivalent: nedovoljan 1)\n</p>\n<h3>Ispitni rokovi</h3>\n<p><b>Redoviti:</b>\n8.2.2022. u 10:00\n22.2.2022. u 10:00\n<p>\n<p><b>Izvanredni:</b>\n8.3.2022. u 10:00\n13.9.2022. u 10:00\n</p>",
+        "academic_year": 2021,
+        "csv_file": "dinps/inf/14/csv/DINP_UIP_2021_2022.csv",
+        "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/diplomski/2_godina/DINP_UIP_2020_2021.pdf",
+        "predavanja_dan": "utorkom",
+        "predavanja_vrijeme": "14:00",
+        "predavanja_trajanje": "1:30:00",
+        "vjezbe_dan": "utorkom",
+        "vjezbe_vrijeme": "16:00",
+        "vjezbe_trajanje": "1:30:00",
         "id": 19
     },
     {
@@ -1166,6 +1273,7 @@
         "name": "Otkrivanje znanja u podacima",
         "code": "OZUP",
         "ects": 5,
+        "description": "",
         "professor": "dr. sc. Maja Matetić",
         "assistant": [
             "mag. educ. math. et inf. Dejan Ljubobratović"
@@ -1173,7 +1281,7 @@
         "semester": "3",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/15/DINP_OZUP_2020_2021.csv",
+        "csv_file": "dinps/inf/15/csv/DINP_OZUP_2020_2021.csv",
         "id": 22
     },
     {
@@ -1181,6 +1289,7 @@
         "name": "Objektni programski jezici",
         "code": "OPJ",
         "ects": 5,
+        "description": "",
         "professor": "dr. sc. Marina Ivašić-Kos",
         "assistant": [
             "Ivona Franković"
@@ -1188,7 +1297,7 @@
         "semester": "3",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/15/DINP_OPJ_2020_2021.csv",
+        "csv_file": "dinps/inf/15/csv/DINP_OPJ_2020_2021.csv",
         "id": 6
     },
     {
@@ -1196,6 +1305,7 @@
         "name": "Matematika 1",
         "code": "MAT1",
         "ects": 6,
+        "description": "",
         "professor": "doc. dr. sc. Milena Sošić",
         "assistant": [
             "doc. dr. sc. Milena Sošić"
@@ -1203,7 +1313,7 @@
         "semester": "1",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/11/DINP_2020_2021_MAT1.csv",
+        "csv_file": "dinps/inf/11/csv/DINP_2020_2021_MAT1.csv",
         "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/1_godina/DINP_2020_2021_MAT1.pdf",
         "predavanja_dan": "ponedjeljkom",
         "predavanja_vrijeme": "14:15",
@@ -1218,6 +1328,7 @@
         "name": "Programiranje 1",
         "code": "PROG1",
         "ects": 6,
+        "description": "",
         "professor": "dr. sc. Maja Matetić",
         "assistant": [
             "mag. educ. math. et inf. Dejan Ljubobratović"
@@ -1225,7 +1336,7 @@
         "semester": "1",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/11/DINP_2020_2021_PROG1.csv",
+        "csv_file": "dinps/inf/11/csv/DINP_2020_2021_PROG1.csv",
         "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/1_godina/DINP_2020_2021_PROG1.pdf",
         "predavanja_dan": "srijedom",
         "predavanja_vrijeme": "08:15",
@@ -1240,6 +1351,7 @@
         "name": "Osnove informatike",
         "code": "OI",
         "ects": 5,
+        "description": "",
         "professor": "dr. sc. Sanda Martinčić-Ipšić",
         "assistant": [
             "dr. sc. Slobodan Beliga"
@@ -1247,7 +1359,7 @@
         "semester": "1",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/11/DINP_2020_2021_OI.csv",
+        "csv_file": "dinps/inf/11/csv/DINP_2020_2021_OI.csv",
         "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/1_godina/DINP_2020_2021_OI.pdf",
         "predavanja_dan": "utorkom",
         "predavanja_vrijeme": "12:00",
@@ -1262,6 +1374,7 @@
         "name": "Multimedijski sustavi",
         "code": "MMS",
         "ects": 5,
+        "description": "",
         "professor": "dr. sc. Nataša Hoić-Božić",
         "assistant": [
             "dr. sc. Slobodan Beliga"
@@ -1269,7 +1382,7 @@
         "semester": "1",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/11/DINP_2020_2021_MMS.csv",
+        "csv_file": "dinps/inf/11/csv/DINP_2020_2021_MMS.csv",
         "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/1_godina/DINP_2020_2021_MMS.pdf",
         "predavanja_dan": "srijedom",
         "predavanja_vrijeme": "14:15",
@@ -1284,6 +1397,7 @@
         "name": "Osnove ekonomike za informatičare",
         "code": "OE",
         "ects": 5,
+        "description": "",
         "professor": "dr. sc. Borna Debelić",
         "assistant": [
             "Gordana Bugarinović"
@@ -1291,7 +1405,7 @@
         "semester": "1",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/11/DINP_2020_2021_OE.csv",
+        "csv_file": "dinps/inf/11/csv/DINP_2020_2021_OE.csv",
         "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/1_godina/DINP_2020_2021_OE.pdf",
         "predavanja_dan": "utorkom",
         "predavanja_vrijeme": "16:15",
@@ -1306,6 +1420,7 @@
         "name": "Engleski za potrebe IT struke",
         "code": "ENG",
         "ects": 4,
+        "description": "",
         "professor": "doc. dr. sc. Lucia Načinović Prskalo",
         "assistant": [
             "doc. dr. sc. Lucia Načinović Prskalo"
@@ -1313,7 +1428,7 @@
         "semester": "1",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/11/DINP_2020_2021_ENG.csv",
+        "csv_file": "dinps/inf/11/csv/DINP_2020_2021_ENG.csv",
         "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/1_godina/DINP_2020_2021_ENG_v3.pdf",
         "predavanja_dan": "utorkom",
         "predavanja_vrijeme": "14:15",
@@ -1328,6 +1443,7 @@
         "name": "Tjelesni 1",
         "code": "TZK",
         "ects": 5,
+        "description": "",
         "professor": "Sergio de Privitellio",
         "assistant": [
             ""
@@ -1350,6 +1466,7 @@
         "name": "Matematika 3",
         "code": "MAT3",
         "ects": 5,
+        "description": "",
         "professor": "dr. sc. Marija Maksimović",
         "assistant": [
             "Matea Zubović"
@@ -1357,7 +1474,7 @@
         "semester": "3",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/11/DINP_2020_2021_MAT3_v3.csv",
+        "csv_file": "dinps/inf/11/csv/DINP_2020_2021_MAT3_v3.csv",
         "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/2_godina/DINP_2020_2021_MAT3_v3.pdf",
         "predavanja_dan": "ponedjeljkom",
         "predavanja_vrijeme": "10:15",
@@ -1372,6 +1489,7 @@
         "name": "Analiza poslovnih procesa",
         "code": "APP",
         "ects": 5,
+        "description": "",
         "professor": "dr. sc. Mile Pavlić",
         "assistant": [
             "Rebeka Lerga"
@@ -1379,7 +1497,7 @@
         "semester": "3",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/11/DINP_2020_2021_APP.csv",
+        "csv_file": "dinps/inf/11/csv/DINP_2020_2021_APP.csv",
         "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/2_godina/DINP_2020_2021_APP.pdf",
         "predavanja_dan": "petkom",
         "predavanja_vrijeme": "10:15",
@@ -1394,6 +1512,7 @@
         "name": "Objektno programiranje",
         "code": "OP",
         "ects": 5,
+        "description": "",
         "professor": "dr. sc. Marina Ivašić-Kos",
         "assistant": [
             "doc. dr. sc. Miran Pobar"
@@ -1401,7 +1520,7 @@
         "semester": "3",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/11/DINP_2020_2021_OP.csv",
+        "csv_file": "dinps/inf/11/csv/DINP_2020_2021_OP.csv",
         "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/2_godina/DINP_2020_2021_OP.pdf",
         "predavanja_dan": "utorkom",
         "predavanja_vrijeme": "08:15",
@@ -1416,6 +1535,7 @@
         "name": "Računalne mreže",
         "code": "RM",
         "ects": 5,
+        "description": "",
         "professor": "v.pred. dr. sc. Vedran Miletić",
         "assistant": [
             "v.pred. dr. sc. Vedran Miletić"
@@ -1423,7 +1543,7 @@
         "semester": "3",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/11/DINP_2020_2021_RM.csv",
+        "csv_file": "dinps/inf/11/csv/DINP_2020_2021_RM.csv",
         "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/2_godina/DINP_2020_2021_RM.pdf",
         "predavanja_dan": "utorkom",
         "predavanja_vrijeme": "10:15",
@@ -1438,6 +1558,7 @@
         "name": "Baze podataka",
         "code": "BP",
         "ects": 5,
+        "description": "",
         "professor": "dr. sc. Patrizia Poščić",
         "assistant": [
             "doc. dr. sc. Danijela Jakšić",
@@ -1446,7 +1567,7 @@
         "semester": "3",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/11/DINP_2020_2021_BP.csv",
+        "csv_file": "dinps/inf/11/csv/DINP_2020_2021_BP.csv",
         "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/2_godina/DINP_2020_2021_BP.pdf",
         "predavanja_dan": "ponedjeljkom",
         "predavanja_vrijeme": "08:30",
@@ -1461,6 +1582,7 @@
         "name": "Uvod u programsko inženjerstvo",
         "code": "UPI",
         "ects": 5,
+        "description": "",
         "professor": "izv. prof. dr. sc. Sanja Čandrlić",
         "assistant": [
             "doc. dr. sc. Martina Ašenbrener Katić"
@@ -1468,7 +1590,7 @@
         "semester": "3",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/11/DINP_2020_2021_UPI.csv",
+        "csv_file": "dinps/inf/11/csv/DINP_2020_2021_UPI.csv",
         "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/2_godina/DINP_2020_2021_UPI.pdf",
         "predavanja_dan": "ponedjeljkom",
         "predavanja_vrijeme": "12:15",
@@ -1483,6 +1605,7 @@
         "name": "Kombinatorika (stari program)",
         "code": "KOMB",
         "ects": 5,
+        "description": "",
         "professor": "dr. sc. Marija Maksimović",
         "assistant": [
             "dr. sc. Marija Maksimović"
@@ -1490,7 +1613,7 @@
         "semester": "3",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/11/DINP_2020_2021_KOMB.csv",
+        "csv_file": "dinps/inf/11/csv/DINP_2020_2021_KOMB.csv",
         "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/2_godina/DINP_2020_2021_KOMB.pdf",
         "predavanja_dan": "četvrtkom",
         "predavanja_vrijeme": "14:15",
@@ -1505,6 +1628,7 @@
         "name": "Dinamičke web aplikacije 1",
         "code": "DWA1",
         "ects": 5,
+        "description": "",
         "professor": "doc. dr. sc. Lucia Načinović Prskalo",
         "assistant": [
             "doc. dr. sc. Lucia Načinović Prskalo"
@@ -1512,7 +1636,7 @@
         "semester": "5",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/11/DINP_2020_2021_DWA1.csv",
+        "csv_file": "dinps/inf/11/csv/DINP_2020_2021_DWA1.csv",
         "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/3_godina/DINP_DWA1_2020_2021-3.pdf",
         "predavanja_dan": "utorkom",
         "predavanja_vrijeme": "12:15",
@@ -1527,6 +1651,7 @@
         "name": "Formalni jezici i jezični procesori 1",
         "code": "FJJP1",
         "ects": 5,
+        "description": "",
         "professor": "dr. sc. Sanda Martinčić-Ipšić",
         "assistant": [
             "Karlo Babić"
@@ -1534,7 +1659,7 @@
         "semester": "5",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/11/DINP_FJJP1_2020_2021.csv",
+        "csv_file": "dinps/inf/11/csv/DINP_FJJP1_2020_2021.csv",
         "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/3_godina/DINP_FJJP1_2020_2021.pdf",
         "predavanja_dan": "srijedom",
         "predavanja_vrijeme": "10:00",
@@ -1549,6 +1674,7 @@
         "name": "Modeliranje procesa",
         "code": "MP",
         "ects": 5,
+        "description": "",
         "professor": "dr. sc. Mile Pavlić",
         "assistant": [
             "izv. prof. dr. sc. Sanja Čandrlić"
@@ -1556,7 +1682,7 @@
         "semester": "5",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/11/DINP_MP_2020_2021.csv",
+        "csv_file": "dinps/inf/11/csv/DINP_MP_2020_2021.csv",
         "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/3_godina/DINP_MP_2020_2021.pdf",
         "predavanja_dan": "petkom",
         "predavanja_vrijeme": "10:00",
@@ -1571,6 +1697,7 @@
         "name": "Numerička matematika",
         "code": "NM",
         "ects": 5,
+        "description": "",
         "professor": "doc. dr. sc. Sanda Bujačić Babić",
         "assistant": [
             "doc. dr. sc. Sanda Bujačić Babić"
@@ -1578,7 +1705,7 @@
         "semester": "5",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/11/DINP_Numericka_matematika_2020_2021.csv",
+        "csv_file": "dinps/inf/11/csv/DINP_Numericka_matematika_2020_2021.csv",
         "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/3_godina/DINP_Numericka_matematika_2020_2021.pdf",
         "predavanja_dan": "utorkom",
         "predavanja_vrijeme": "08:15",
@@ -1593,6 +1720,7 @@
         "name": "Objektno orijentirano programiranje",
         "code": "OOP",
         "ects": 5,
+        "description": "",
         "professor": "dr. sc. Marina Ivašić-Kos",
         "assistant": [
             "Ivona Franković"
@@ -1600,7 +1728,7 @@
         "semester": "5",
         "optional": 0,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/11/DINP_OOP_2020_2021.csv",
+        "csv_file": "dinps/inf/11/csv/DINP_OOP_2020_2021.csv",
         "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/3_godina/DINP_OOP_2020_2021.pdf",
         "predavanja_dan": "ponedjeljkom",
         "predavanja_vrijeme": "12:00",
@@ -1615,6 +1743,7 @@
         "name": "Logičko programiranje",
         "code": "LPR",
         "ects": 5,
+        "description": "",
         "professor": "izv. prof. dr. sc. Ana Meštrović",
         "assistant": [
             "izv. prof. dr. sc. Ana Meštrović"
@@ -1622,7 +1751,7 @@
         "semester": "5",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/11/DINP_LPR_2020_2021.csv",
+        "csv_file": "dinps/inf/11/csv/DINP_LPR_2020_2021.csv",
         "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/3_godina/DINP_LPR_2020_2021.pdf",
         "predavanja_dan": "srijedom",
         "predavanja_vrijeme": "08:15",
@@ -1637,6 +1766,7 @@
         "name": "Paralelno programiranje na heterogenim sustavima",
         "code": "PPHS",
         "ects": 5,
+        "description": "",
         "professor": "izv. prof. dr. sc. Božidar Kovačić",
         "assistant": [
             "v. pred. dr. sc. Vedran Miletić"
@@ -1644,7 +1774,7 @@
         "semester": "5",
         "optional": 1,
         "academic_year": 2020,
-        "csv_file": "dinps/inf/11/DINP_PPHS_2020_2021.csv",
+        "csv_file": "dinps/inf/11/csv/DINP_PPHS_2020_2021.csv",
         "dinp_link": "https://inf.uniri.hr/images/nastava/izvedbeni/2020_2021/preddiplomski/3_godina/DINP_PPHS_2020_2021.pdf",
         "predavanja_dan": "srijedom",
         "predavanja_vrijeme": "08:15",

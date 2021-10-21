@@ -1,3 +1,4 @@
+from itertools import accumulate
 from django.core.management.base import BaseCommand
 from django.conf import settings
 from datetime import datetime, date
@@ -75,6 +76,7 @@ VALIDATE_ACTIVITIES = {
     'details'    : lambda details      : details.strip(),
     'subject'    : lambda subject      : subject,
     'group'      : lambda group        : group,
+    'active'     : lambda active       : active,
     'due_date'   : lambda datum        : datetime.strptime(datum, '%d.%m.%Y.') if datum != '' else datetime(1, 1, 1, 0, 0),
     'start_time' : lambda time_string  : time_string.split('-')[0].strip(),
     'end_time'   : lambda time_string  : time_string.split('-')[1].strip(),
@@ -92,8 +94,8 @@ class Command(BaseCommand):
         #self.populate_departments()
 
         #self.populate_subjects()
-        self.populate_activities(11)
-        #self.bind_subjects_students()
+        self.populate_activities(13)
+        self.bind_subjects_students(username='andhrelja')
     
     def read_json(self, filename):
         json_path = settings.BASE_DIR / 'static' / 'data' / filename
@@ -105,7 +107,10 @@ class Command(BaseCommand):
             csv_path = settings.BASE_DIR / 'static' / 'data' / filename
             if csv_path.is_file():
                 csv_file = open(csv_path, 'r', encoding='utf-8-sig')
-                return csv.DictReader(csv_file, delimiter='|')
+                if '2022' in filename:
+                    return csv.DictReader(csv_file, delimiter=',')
+                else:
+                    return csv.DictReader(csv_file, delimiter='|')
             else:
                 with open('missing.txt', 'a') as f:
                     f.write(str(csv_path))
@@ -120,7 +125,7 @@ class Command(BaseCommand):
             if created:
                 self.stdout.write(self.style.SUCCESS('[SUCCESS] University Created "{}"'.format(obj.code)))
             else:
-                self.stdout.write(self.style.SUCCESS('[NOTICE] University "{}" already existed'.format(obj.code)))
+                self.stdout.write(self.style.SUCCESS('[INFO] University "{}" already existed'.format(obj.code)))
             
 
     def populate_departments(self):
@@ -133,7 +138,7 @@ class Command(BaseCommand):
             if created:
                 self.stdout.write(self.style.SUCCESS('[SUCCESS] Department Created "{}"'.format(obj.code)))
             else:
-                self.stdout.write(self.style.SUCCESS('[NOTICE] Department "{}" already existed'.format(obj.code)))
+                self.stdout.write(self.style.SUCCESS('[INFO] Department "{}" already existed'.format(obj.code)))
             
             self.populate_programs(programs, obj.id)
         
@@ -149,7 +154,7 @@ class Command(BaseCommand):
             if created:
                 self.stdout.write(self.style.SUCCESS('[SUCCESS] Program Created "{}"'.format(obj.name)))
             else:
-                self.stdout.write(self.style.SUCCESS('[NOTICE] Program "{}" already existed'.format(obj.name)))
+                self.stdout.write(self.style.SUCCESS('[INFO] Program "{}" already existed'.format(obj.name)))
     
 
     def populate_subjects(self):
@@ -163,17 +168,43 @@ class Command(BaseCommand):
             optional    = dictionary.pop('optional')
             semester    = dictionary.pop('semester')
             academic_year = dictionary.pop('academic_year')
-            dictionary['assistant'] = ", ".join(dictionary['assistant'])
+            assistant = ", ".join(dictionary.pop('assistant'))
+
+            description = dictionary.pop('description')
+            csv_file = dictionary.pop('csv_file')
+
+            additional_keys = ('predavanja_dan', 'predavanja_vrijeme', 'predavanja_trajanje', 
+                             'vjezbe_dan', 'vjezbe_vrijeme', 'vjezbe_trajanje')
+            if all((
+                True if key in dictionary.keys() else False
+                for key in additional_keys
+            )):
+                predavanja_dan = dictionary.pop('predavanja_dan')
+                predavanja_vrijeme = dictionary.pop('predavanja_vrijeme')
+                predavanja_trajanje = dictionary.pop('predavanja_trajanje')
+                vjezbe_dan = dictionary.pop('vjezbe_dan')
+                vjezbe_vrijeme = dictionary.pop('vjezbe_vrijeme')
+                vjezbe_trajanje = dictionary.pop('vjezbe_trajanje')
 
             subject, created = Subject.objects.get_or_create(id=subject_id, defaults=dictionary)
 
             if created:
-                self.stdout.write(self.style.SUCCESS('[SUCCESS] Subject Created "{}"'.format(subject)))
+                self.stdout.write(self.style.SUCCESS('[CREATE] Subject Created "{}"'.format(subject)))
             else:
-                self.stdout.write(self.style.SUCCESS('[NOTICE] Subject "{}" already existed'.format(subject.code)))
+                subject.assistant = assistant
+                subject.description = description
+                subject.csv_file = csv_file
+                subject.predavanja_dan = predavanja_dan
+                subject.predavanja_vrijeme = predavanja_vrijeme
+                subject.predavanja_trajanje = predavanja_trajanje
+                subject.vjezbe_dan = vjezbe_dan
+                subject.vjezbe_vrijeme = vjezbe_vrijeme
+                subject.vjezbe_trajanje = vjezbe_trajanje
+                subject.save()
+                self.stdout.write(self.style.SUCCESS('[UPDATE] Subject "{}" already existed'.format(subject.code)))
             
             sp, _ = SubjectPrograms.objects.get_or_create(subject=subject, program=program)
-            self.stdout.write(self.style.SUCCESS('[NOTICE] Setting up SubjectPrograms for subject={}, program={}'.format(program, subject)))
+            self.stdout.write(self.style.SUCCESS('[INFO] Setting up SubjectPrograms for subject={}, program={}'.format(program, subject)))
             sp.optional = optional
             sp.semester = semester
             sp.academic_year = academic_year
@@ -185,7 +216,7 @@ class Command(BaseCommand):
         if not _program_id:
             subjects = Subject.objects.all()
         else:
-            subject_ids = SubjectPrograms.objects.filter(program_id=_program_id, active=True).values_list('subject_id')
+            subject_ids = SubjectPrograms.objects.filter(program_id=_program_id, semester='3', active=True).values_list('subject_id')
             subjects = Subject.objects.filter(id__in=subject_ids)
         
         for subject in subjects:
@@ -207,16 +238,15 @@ class Command(BaseCommand):
                         'type'       : type_key,
                         'details'    : dictionary['Tema'],
                         'subject'    : subject,
+                        'active'     : True,
                         'due_date'   : dictionary['Datum'],
                         'points_total' : dictionary['Bodovi']
                     }
 
-                    try:
+                    if 'Grupa' in dictionary.keys():
                         stage_dictionary.update({
                             'group': dictionary['Grupa']
                         })
-                    except KeyError:
-                        pass
 
                     vrijeme_ukupno = dictionary['Vrijeme']
                     if vrijeme_ukupno == '':
@@ -286,14 +316,23 @@ class Command(BaseCommand):
                         self.stdout.write(self.style.SUCCESS('[SUCCESS][{}] (Score): Created Activity "{}"'.format(subject, final_dictionary['name'])))
 
         
-    def bind_subjects_students(self):
-        #if not settings.DEBUG:
-        for student in Student.objects.all():
+    def bind_subjects_students(self, username=None):
+        if username:
+            students = Student.objects.filter(user__username=username)
+        else:
+            students = Student.objects.all()
+        
+        for student in students:
+            # deactivate old SubjectPrograms
+            for sp in SubjectPrograms.objects.filter(program=student.program, semester=student.get_active_semester()):
+                if sp.academic_year != student.get_active_academic_year():
+                    sp.active = False
+                    sp.save()
             subject_ids = SubjectPrograms.objects.filter(program=student.program, semester=student.get_active_semester(), optional=False).values_list('subject_id')
 
             for subject in Subject.objects.filter(id__in=subject_ids):
                 ss, created = StudentSubjects.objects.get_or_create(subject=subject, student=student, academic_year=student.get_active_academic_year())
-                ss.semester = subject.get_active_semester(student.program)
+                ss.semester = student.get_active_semester()
                 ss.ingest_points(subject, student)
 
                 if created:

@@ -1,4 +1,3 @@
-from typing import Optional
 from django.db import models
 from django.urls import reverse
 from datetime import date, timedelta
@@ -62,6 +61,7 @@ class Subject(models.Model):
     name            = models.CharField("Naziv", max_length=128)
     code            = models.CharField("Kod", max_length=14)
     ects            = models.IntegerField("ECTS bodovi")
+    description     = models.TextField("Opis")
 
     professor       = models.CharField("Profesor", null=True, max_length=128)
     assistant       = models.CharField("Asistent", null=True, max_length=128)
@@ -216,24 +216,28 @@ class Subject(models.Model):
 
     
     def activities_score(self, student):
-        custom_activities = self.studentscoreactivity_set.filter(student=student, global_activity_id__isnull=True) \
+        custom_activities = self.studentscoreactivity_set.filter(active=True, student=student, global_activity_id__isnull=True) \
                         .only("id", "due_date", "name", "points_total", "points_accomplished")
-        updated_global_activities = self.studentscoreactivity_set.filter(student=student, global_activity_id__isnull=False) \
+        updated_global_activities = self.studentscoreactivity_set.filter(active=True, student=student, global_activity_id__isnull=False) \
                         .only("id", "due_date", "name", "points_total", "points_accomplished")
 
-        global_activities = self.globalscoreactivity_set.only("id", "due_date", "name", "points_total", "points_accomplished") \
-                        .exclude(models.Q(id__in=updated_global_activities.values_list('global_activity_id'))) #  | models.Q(points_total=0)
+        global_activities = self.globalscoreactivity_set \
+            .filter(active=True) \
+            .only("id", "due_date", "name", "points_total", "points_accomplished") \
+            .exclude(models.Q(id__in=updated_global_activities.values_list('global_activity_id'))) #  | models.Q(points_total=0)
 
         return sorted(chain(custom_activities, updated_global_activities, global_activities), key=lambda instance: instance.due_date, reverse=False)
 
     def activities_class(self, student):
-        custom_activities = self.studentclassactivity_set.filter(student=student, global_activity_id__isnull=True) \
+        custom_activities = self.studentclassactivity_set.filter(active=True, student=student, global_activity_id__isnull=True) \
                         .only("id", "due_date", "start_time", "end_time", "name")
-        updated_global_activities = self.studentclassactivity_set.filter(student=student, global_activity_id__isnull=False) \
+        updated_global_activities = self.studentclassactivity_set.filter(active=True, student=student, global_activity_id__isnull=False) \
                         .only("id", "due_date", "start_time", "end_time", "name")
 
-        global_activities = self.globalclassactivity_set.only("id", "due_date", "start_time", "end_time", "name") \
-                        .exclude(id__in=updated_global_activities.values_list('global_activity_id'))
+        global_activities = self.globalclassactivity_set \
+            .filter(active=True) \
+            .only("id", "due_date", "start_time", "end_time", "name") \
+            .exclude(id__in=updated_global_activities.values_list('global_activity_id'))
 
         return sorted(chain(custom_activities, updated_global_activities, global_activities), key=lambda instance: (instance.due_date, instance.start_time), reverse=False)
 
