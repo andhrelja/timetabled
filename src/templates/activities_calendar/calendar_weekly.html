@@ -38,8 +38,10 @@
                         <div class="fas-icon subnav">
                             {% if activity.completed %}
                             <i class="fas fa-check-circle text-success" aria-hidden="true"></i>
+                            {% elif activity.location == "online" %}
+                            <i class="fas fa-circle text-primary" aria-hidden="true"></i>
                             {% else %}
-                            <i class="fas fa-exclamation-circle text-warning" aria-hidden="true"></i>
+                            <i class="fas fa-circle text-warning" aria-hidden="true"></i>
                             {% endif %}
                         </div>
                         <span class="font-weight-bold">{{ activity }}</span>

@@ -156,7 +156,7 @@ class Calendar(EmptyCalendar):
         super(Calendar, self).__init__(**kwargs)
         self.activities = activities
         self.full_table = list()
-        self.get_full_table()
+        self.set_full_table()
         self['full_table'] = self.full_table
     
 
@@ -167,7 +167,7 @@ class Calendar(EmptyCalendar):
                 activities.append(activity)
         self.activities = activities
     
-    def get_full_table(self):
+    def set_full_table(self):
         self.limit_activities()
         types = {
             'monthly': self.fill_monthly_table,
@@ -223,44 +223,3 @@ if __name__ == '__main__':
         score_activities = subject.all_score_activities()
         score_calendar = Calendar(score_activities, type='monthly')
         break
-
-def timetable(student, date):
-    start_date = week_start(date)
-    end_date = week_end(date)
-    delta = end_date - start_date
-
-    empty_table = table_hours()
-    header = ('', 'Ponedjeljak', 'Utorak', 'Srijeda', 'Četvrtak', 'Petak')
-    table = {hour: [] for hour in empty_table}
-
-    for i in range(delta.days + 1):
-        curr_date = week_start + timedelta(days=i)
-
-        profile_schedules = ProfileSchedule.objects.filter(
-            profile=profile, date=curr_date.date())
-        schedules = SubjectSchedule.objects.filter(
-            Q(subject__in=profile.subjects.filter(
-                semester=request.session.get('semester'),
-                academic_year=request.session.get('academic_year'))),
-                date=curr_date.date()
-        ).exclude(id__in=profile_schedules.filter(schedule__isnull=False).values_list('schedule_id'))
-
-        for hour in table_hours:
-            schedule = schedules.filter(
-                start_time__lte=hour, end_time__gt=hour)
-            profile_schedule = profile_schedules.filter(
-                start_time__lte=hour, end_time__gt=hour)
-            if profile_schedule.exists():
-                table[hour].append(profile_schedule)
-            elif not profile_schedule.exists() and schedule.exists():
-                table[hour].append(schedule)
-            elif not profile_schedule.exists() and not schedule.exists():
-                table[hour].append((0, curr_date.strftime('%Y-%m-%d')))
-
-    return {
-        'date': week_start.strftime('%Y%m%d'),
-        'week_start': week_start.strftime('%d/%m/%Y'),
-        'week_end': week_end.strftime('%d/%m/%Y'),
-        'header': header,
-        'table': table
-    }
