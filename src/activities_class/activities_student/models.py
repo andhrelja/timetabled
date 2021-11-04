@@ -46,5 +46,5 @@ class StudentClassActivity(models.Model):
         return reverse('activities_class:student-attend', kwargs={"pk": self.pk})
 
     def __str__(self):
-        return self.name.strip()
-            
+        string = "{} - {}".format(self.subject.code, self.get_type_display())
+        return string.strip()
